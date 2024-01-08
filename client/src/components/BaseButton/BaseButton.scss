@@ -1,0 +1,101 @@
+@import "src/assets/style/design.scss";
+
+.base-button {
+  min-width: 50px;
+  padding: 8px 12px;
+
+  border: none;
+  border-radius: 10px;
+
+  box-shadow: $shadow100;
+  background: $baseColor;
+  color: #ffffff;
+
+  cursor: pointer;
+
+  transition: background 0.2s ease-in-out, transform 50ms ease-in;
+
+  &:disabled {
+    opacity: 0.5;
+    background: $baseColor;
+  }
+
+  &:hover {
+    background: $baseColorHover;
+  }
+
+  &:active {
+    transform: scale(0.98);
+  }
+
+  &:disabled {
+    background: $baseColor;
+    transform: none;
+    cursor: default;
+  }
+
+  &_clear {
+    color: $baseColor;
+    background: $lighterBlue;
+
+    &:hover {
+      background-color: $lighterBlueHover;
+    }
+  }
+
+  &_red {
+    color: #ffffff;
+    background: #ff4242;
+
+    &:hover {
+      background: #dd3030;
+    }
+
+    &:disabled {
+      opacity: 0.5;
+      background: #ff4242;
+    }
+  }
+
+  &_green {
+    color: #ffffff;
+    background: $green;
+
+    &:hover {
+      background: $greenHover;
+    }
+
+    &:disabled {
+      opacity: 0.5;
+      background: $green;
+    }
+  }
+
+  &_orange {
+    color: #ffffff;
+    background: orange;
+
+    &:hover {
+      background: darkorange;
+    }
+
+    &:disabled {
+      opacity: 0.5;
+      background: orange;
+    }
+  }
+
+  &_purple {
+    color: #ffffff;
+    background: #7100ce;
+
+    &:hover {
+      background: #480181;
+    }
+
+    &:disabled {
+      opacity: 0.5;
+      background: #7100ce;
+    }
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "name": "exp",
+  "version": "1.0.0",
+  "description": "",
+  "engines": {
+    "node": "14.21.1"
+  },
+  "scripts": {
+    "server": "concurrently -n server1,server2 \"(npm run start:server1)\" \"(npm run start:server2)\"",
+    "start:server1": "PORT=3000 node --max-old-space-size=8192 ./src/server.js",
+    "start:server2": "PORT=81 node --max-old-space-size=8192 ./src/server.js",
+    "download:store": "scp -r root@185.237.99.141:/root/pokergs/src/store  /Users/pikcelll/Documents/pokergs/src/store",
+    "client": "npm start --prefix client",
+    "prettier": "prettier --config ./.prettierrc  --write .",
+    "prepare": "husky install"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fastify/autoload": "^5.4.0",
+    "@fastify/cors": "^8.2.0",
+    "@fastify/helmet": "^10.0.0",
+    "@fastify/http-proxy": "^8.2.2",
+    "@fastify/rate-limit": "^7.4.0",
+    "@fastify/static": "^6.5.0",
+    "@fastify/swagger": "^7.5.1",
+    "@rollup/plugin-commonjs": "^24.0.1",
+    "axios": "^0.23.0",
+    "compress-json": "^2.1.2",
+    "compression": "^1.7.4",
+    "concurrently": "^7.3.0",
+    "cors": "^2.8.5",
+    "cors-anywhere": "^0.4.4",
+    "cron": "^1.8.2",
+    "dotenv": "^16.0.3",
+    "exceljs": "^4.3.0",
+    "fastify": "^4.5.3",
+    "fastify-swagger": "^5.2.0",
+    "forever": "^4.0.1",
+    "husky": "^8.0.0",
+    "json-buffer": "^3.0.1",
+    "jsoneditor": "^9.5.11",
+    "jsoneditor-react": "^3.1.2",
+    "lint-staged": "^13.0.3",
+    "lodash": "^4.17.21",
+    "logrocket": "^2.1.2",
+    "moment": "^2.29.4",
+    "moment-range": "^4.0.2",
+    "mysql": "^2.18.1",
+    "node-currency": "^1.0.2",
+    "node-fetch": "^3.0.0",
+    "nodemailer": "^6.7.2",
+    "nodemon": "^2.0.19",
+    "path": "^0.12.7",
+    "pino": "^8.5.0",
+    "pino-pretty": "^9.1.0",
+    "pm2": "^5.2.2",
+    "prettier": "2.7.1",
+    "qs": "^6.11.0",
+    "rollup": "^3.17.0"
+  },
+  "lint-staged": {
+    "*.(js|jsx|ts|tsx|md|scss)": "prettier --config .prettierrc --write"
+  },
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^15.0.1",
+    "webpack-cli": "^5.0.1"
+  }
+}

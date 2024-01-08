@@ -1,0 +1,210 @@
+@import "src/assets/style/design.scss";
+
+.rules-section {
+  font-size: 20px;
+  color: $baseColor;
+  margin-top: 64px;
+  user-select: none;
+
+  &__wrp:not(:first-child) {
+    margin-top: 10px;
+  }
+
+  &__huypizda {
+    margin-top: 10px;
+    position: relative;
+    margin-bottom: 5px;
+    max-width: max-content;
+  }
+
+  &__rules {
+    margin-top: 16px;
+  }
+
+  &__rule {
+    position: relative;
+    width: max-content;
+
+    padding-left: 16px;
+    margin-bottom: 15px;
+  }
+
+  &__rule-stripe {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    display: block;
+    width: 4px;
+    height: 100%;
+    background-color: $baseColor;
+
+    &-red {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+
+      display: block;
+      width: 4px;
+      height: 100%;
+      background-color: orange;
+
+      &:before,
+      &:after {
+        content: "";
+        position: absolute;
+        top: -4px;
+        left: -50%;
+
+        display: block;
+        width: 8px;
+        height: 8px;
+        background-color: orange;
+
+        border-radius: 24px;
+      }
+
+      &:after {
+        top: unset;
+        bottom: -5px;
+      }
+    }
+
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+      top: -4px;
+      left: -50%;
+
+      display: block;
+      width: 8px;
+      height: 8px;
+      background-color: $baseColor;
+
+      border-radius: 24px;
+    }
+
+    &:after {
+      top: unset;
+      bottom: -5px;
+    }
+  }
+
+  &__offpeak {
+    margin-left: 10px;
+  }
+
+  &__rule-row {
+    display: flex;
+
+    min-height: 48px;
+    margin-top: 10px;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  &__rule-row-select {
+    width: 180px;
+  }
+
+  &__rule-row-field {
+    width: 200px;
+
+    margin-left: 10px;
+  }
+
+  &__rule-row-control-btn {
+    margin-left: 10px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &_delete {
+      position: absolute;
+      right: -245px;
+      height: 48px;
+      top: 50%;
+      transform: translateY(-50%);
+
+      &:disabled {
+        transform: translateY(-50%);
+      }
+
+      &:active {
+        transform: translateY(-50%) scale(0.98);
+      }
+    }
+
+    &_change {
+      right: -115px !important;
+    }
+
+    &_offpeak {
+      right: -350px !important;
+    }
+  }
+
+  &__title {
+    font-size: 1.2em;
+    font-weight: 700;
+  }
+
+  &__subtitle {
+    display: block;
+    margin-top: 20px;
+
+    font-weight: 700;
+    font-size: 1.05em;
+  }
+
+  &__filter {
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+    max-width: 1000px;
+  }
+
+  &__elems-toggle {
+    max-width: 764px;
+    margin-top: 16px;
+
+    &_KO {
+      margin-left: 0 !important;
+      margin-right: 8px;
+      width: 65%;
+    }
+
+    &_effmu {
+      margin-left: 0 !important;
+      width: 100%;
+    }
+
+    &_status {
+      margin-left: 8px !important;
+    }
+  }
+
+  &__elems-toggle-divider {
+    width: 4px;
+    border-radius: 10px;
+    margin: 0 8px;
+    height: 36px;
+    background-color: $baseColor;
+  }
+
+  &__filter &__elems-toggle {
+    margin-top: 0;
+    margin-left: 16px;
+  }
+
+  &__filter-network {
+    margin-left: 16px;
+    width: 205px;
+  }
+}

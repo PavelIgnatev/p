@@ -1,0 +1,169 @@
+.table {
+  display: grid;
+  border-collapse: collapse;
+  min-width: 100%;
+  grid-template-columns:
+    minmax(150px, 1.5fr) minmax(100px, 1fr) minmax(100px, 1fr) minmax(200px, 2fr) minmax(100px, 1fr) minmax(100px, 1fr) minmax(100px, 1fr) minmax(100px, 1fr) minmax(100px, 1fr) minmax(50px, 0.5fr)
+}
+
+.thead,
+.tbody,
+.tr {
+  display: contents;
+}
+
+.nodata {
+  flex: 1;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.thead {
+  background: rgb(57, 99, 162);
+}
+
+.thead .th {
+  user-select: none;
+
+  cursor: pointer;
+  position: relative;
+  top: 90px;
+  position: sticky;
+  background: rgb(57, 99, 162);
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 0px;
+  border-collapse: collapse;
+  color: white;
+
+  &:first-child {
+    border-top-left-radius: 8px;
+  }
+
+  &:last-child {
+    border-top-right-radius: 8px;
+  }
+
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    border: 6px solid transparent;
+  }
+
+  &::before {
+    border-bottom-color: #bdbdbd;
+    margin-top: -12px;
+  }
+
+  &::after {
+    border-top-color: #bdbdbd;
+    margin-top: 1px;
+  }
+
+  &.active {
+    &:not(.reverse)::after {
+      border-width: 6px;
+      right: 12px;
+      border-top-color: #6bf274;
+    }
+
+    &:not(.reverse)::before {
+      content: none;
+    }
+
+    &.reverse {
+      &::after {
+        content: none;
+      }
+
+      &::before {
+        border-width: 6px;
+        margin-top: -12px;
+        right: 12px;
+        border-bottom-color: #6bf274;
+      }
+    }
+  }
+}
+
+.tbody {
+  .tr {
+    padding: 8px;
+
+    .td {
+      background: #fbfbfbef;
+    }
+
+    &:nth-child(2n) {
+      .td {
+        background: #e2e0f0;
+      }
+    }
+  }
+
+  .td {
+    color: rgb(38, 37, 37);
+    min-height: 40px;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .tr:last-child {
+    .td {
+      &:first-child {
+        border-bottom-left-radius: 8px;
+      }
+
+      &:last-child {
+        border-bottom-right-radius: 8px;
+      }
+    }
+  }
+}
+
+.section {
+  min-height: 200px;
+  position: relative;
+  flex: 1;
+}
+
+.select {
+  margin-bottom: 10px;
+}
+
+.effmu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0px;
+  height: 90px;
+  position: sticky;
+  text-align: center;
+  font-weight: 700;
+  font-size: 24px;
+  background-color: white;
+  padding: 5px 0;
+  margin-bottom: 10px;
+}
+
+.thDisable {
+  &::before {
+    cursor: default;
+    opacity: 0;
+  }
+  
+  &::after {
+    cursor: default;
+    opacity: 0;
+  }
+}
