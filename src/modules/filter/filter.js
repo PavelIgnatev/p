@@ -399,37 +399,19 @@ if((BidGtName(20,1000,"€100 Sunday Special"))&& network === 'PS.es'&& level ==
 if((BidGtName(20,1000,"€100 Sunday Special"))&& network === 'PS.es'&& level === '10'&& isTurbo&& isGetTournaments) {
     return { valid: true, rules: true, guarantee: 1000, color: "green" };
   };
-if((BidGt(50,2000))&& network === 'WNMX'&& level === '15'&& isNormal&& isGetTournaments && (FLAGS("sat"))&& network === 'WNMX'&& level === '15'&& isNormal&& isGetTournaments) {
-    return { valid: true, rules: true, guarantee: 2000, color: "green" };
-  };
 if((BidGt(30,2000))&& network === 'WNMX'&& level === '15'&& isNormal&& isGetTournaments && (FLAGS("sat"))&& network === 'WNMX'&& level === '15'&& isNormal&& isGetTournaments) {
-    return { valid: true, rules: true, guarantee: 2000, color: "green" };
-  };
-if((BidGt(50,2000))&& network === 'WNMX'&& level === '14'&& isNormal&& isGetTournaments && (FLAGS("sat"))&& network === 'WNMX'&& level === '14'&& isNormal&& isGetTournaments) {
     return { valid: true, rules: true, guarantee: 2000, color: "green" };
   };
 if((BidGt(30,2000))&& network === 'WNMX'&& level === '14'&& isNormal&& isGetTournaments && (FLAGS("sat"))&& network === 'WNMX'&& level === '14'&& isNormal&& isGetTournaments) {
     return { valid: true, rules: true, guarantee: 2000, color: "green" };
   };
-if((BidGt(50,2000))&& network === 'WNMX'&& level === '13'&& isNormal&& isGetTournaments && (FLAGS("sat"))&& network === 'WNMX'&& level === '13'&& isNormal&& isGetTournaments) {
-    return { valid: true, rules: true, guarantee: 2000, color: "green" };
-  };
 if((BidGt(30,2000))&& network === 'WNMX'&& level === '13'&& isNormal&& isGetTournaments && (FLAGS("sat"))&& network === 'WNMX'&& level === '13'&& isNormal&& isGetTournaments) {
-    return { valid: true, rules: true, guarantee: 2000, color: "green" };
-  };
-if((BidGt(50,2000))&& network === 'WNMX'&& level === '12'&& isNormal&& isGetTournaments && (FLAGS("sat"))&& network === 'WNMX'&& level === '12'&& isNormal&& isGetTournaments) {
     return { valid: true, rules: true, guarantee: 2000, color: "green" };
   };
 if((BidGt(30,2000))&& network === 'WNMX'&& level === '12'&& isNormal&& isGetTournaments && (FLAGS("sat"))&& network === 'WNMX'&& level === '12'&& isNormal&& isGetTournaments) {
     return { valid: true, rules: true, guarantee: 2000, color: "green" };
   };
-if((BidGt(50,2000))&& network === 'WNMX'&& level === '11'&& isNormal&& isGetTournaments && (FLAGS("sat"))&& network === 'WNMX'&& level === '11'&& isNormal&& isGetTournaments) {
-    return { valid: true, rules: true, guarantee: 2000, color: "green" };
-  };
 if((BidGt(30,2000))&& network === 'WNMX'&& level === '11'&& isNormal&& isGetTournaments && (FLAGS("sat"))&& network === 'WNMX'&& level === '11'&& isNormal&& isGetTournaments) {
-    return { valid: true, rules: true, guarantee: 2000, color: "green" };
-  };
-if((BidGt(50,2000))&& network === 'WNMX'&& level === '10'&& isNormal&& isGetTournaments && (FLAGS("sat"))&& network === 'WNMX'&& level === '10'&& isNormal&& isGetTournaments) {
     return { valid: true, rules: true, guarantee: 2000, color: "green" };
   };
 if((BidGt(30,2000))&& network === 'WNMX'&& level === '10'&& isNormal&& isGetTournaments && (FLAGS("sat"))&& network === 'WNMX'&& level === '10'&& isNormal&& isGetTournaments) {
@@ -732,9 +714,6 @@ if((BidGtName(10,1000,"€100 Sunday Special"))&& network === 'PS.es'&& level ==
 if((BidGt(30,2000))&& network === 'WNMX'&& level === '9'&& isNormal&& isGetTournaments && (FLAGS("sat"))&& network === 'WNMX'&& level === '9'&& isNormal&& isGetTournaments) {
     return { valid: true, rules: true, guarantee: 2000, color: "green" };
   };
-if((BidGt(50,2000))&& network === 'WNMX'&& level === '9'&& isNormal&& isGetTournaments && (FLAGS("sat"))&& network === 'WNMX'&& level === '9'&& isNormal&& isGetTournaments) {
-    return { valid: true, rules: true, guarantee: 2000, color: "green" };
-  };
 if((BidName(125,"MAIN EVENT - DAY 1E"))&& network === 'WNMX'&& level === '9'&& isNormal&& isGetTournaments) {
     return { valid: true, rules: true, guarantee: 1, color: "green" };
   };
@@ -742,9 +721,6 @@ if((BidName(125,"MAIN EVENT - DAY 1E"))&& network === 'WNMX'&& level === '8'&& i
     return { valid: true, rules: true, guarantee: 1, color: "green" };
   };
 if((BidGt(30,2000))&& network === 'WNMX'&& level === '8'&& isNormal&& isGetTournaments && (FLAGS("sat"))&& network === 'WNMX'&& level === '8'&& isNormal&& isGetTournaments) {
-    return { valid: true, rules: true, guarantee: 2000, color: "green" };
-  };
-if((BidGt(50,2000))&& network === 'WNMX'&& level === '8'&& effmu === 'A'&& isNormal&& isGetTournaments && (FLAGS("sat"))&& network === 'WNMX'&& level === '8'&& effmu === 'A'&& isNormal&& isGetTournaments) {
     return { valid: true, rules: true, guarantee: 2000, color: "green" };
   };
 if((BidName(125,"MAIN EVENT - DAY 1E"))&& network === 'WNMX'&& level === '7'&& effmu === 'A'&& isNormal&& isGetTournaments) {
@@ -2274,6 +2250,33 @@ if((FromToName(200,300,"ROAD TO HIGHROLLER"))&& network === 'WNMX'&& level === '
 if((FromToName(200,300,"ROAD TO HIGHROLLER"))&& network === 'WNMX'&& level === '12'&& effmu === 'A'&& isNormal&& isGetTournaments) {
     return { valid: true, rules: true, guarantee: 1, color: "green" };
   };
+if((FromTo(1,1500))&& network === 'PS.eu'&& level === '17'&& effmu === 'C'&& isGetTournaments) {
+    return { valid: true, rules: true, guarantee: 1, color: "green" };
+  };
+if((BidGt(50,2000))&& network === 'WNMX'&& level === '9'&& isNormal&& isGetTournaments && (NotName("Deep Sat W Series HIGHROLLER MILLION KO"))&& network === 'WNMX'&& level === '9'&& isNormal&& isGetTournaments && (FLAGS("sat"))&& network === 'WNMX'&& level === '9'&& isNormal&& isGetTournaments) {
+    return { valid: true, rules: true, guarantee: 2000, color: "green" };
+  };
+if((BidGt(50,2000))&& network === 'WNMX'&& level === '8'&& effmu === 'A'&& isNormal&& isGetTournaments && (NotName("Deep Sat W Series HIGHROLLER MILLION KO"))&& network === 'WNMX'&& level === '8'&& effmu === 'A'&& isNormal&& isGetTournaments && (FLAGS("sat"))&& network === 'WNMX'&& level === '8'&& effmu === 'A'&& isNormal&& isGetTournaments) {
+    return { valid: true, rules: true, guarantee: 2000, color: "green" };
+  };
+if((BidGt(50,2000))&& network === 'WNMX'&& level === '10'&& isNormal&& isGetTournaments && (NotName("Deep Sat W Series HIGHROLLER MILLION KO"))&& network === 'WNMX'&& level === '10'&& isNormal&& isGetTournaments && (FLAGS("sat"))&& network === 'WNMX'&& level === '10'&& isNormal&& isGetTournaments) {
+    return { valid: true, rules: true, guarantee: 2000, color: "green" };
+  };
+if((BidGt(50,2000))&& network === 'WNMX'&& level === '11'&& isNormal&& isGetTournaments && (NotName("Deep Sat W Series HIGHROLLER MILLION KO"))&& network === 'WNMX'&& level === '11'&& isNormal&& isGetTournaments && (FLAGS("sat"))&& network === 'WNMX'&& level === '11'&& isNormal&& isGetTournaments) {
+    return { valid: true, rules: true, guarantee: 2000, color: "green" };
+  };
+if((BidGt(50,2000))&& network === 'WNMX'&& level === '12'&& isNormal&& isGetTournaments && (NotName("Deep Sat W Series HIGHROLLER MILLION KO"))&& network === 'WNMX'&& level === '12'&& isNormal&& isGetTournaments && (FLAGS("sat"))&& network === 'WNMX'&& level === '12'&& isNormal&& isGetTournaments) {
+    return { valid: true, rules: true, guarantee: 2000, color: "green" };
+  };
+if((BidGt(50,2000))&& network === 'WNMX'&& level === '13'&& isNormal&& isGetTournaments && (NotName("Deep Sat W Series HIGHROLLER MILLION KO"))&& network === 'WNMX'&& level === '13'&& isNormal&& isGetTournaments && (FLAGS("sat"))&& network === 'WNMX'&& level === '13'&& isNormal&& isGetTournaments) {
+    return { valid: true, rules: true, guarantee: 2000, color: "green" };
+  };
+if((BidGt(50,2000))&& network === 'WNMX'&& level === '14'&& isNormal&& isGetTournaments && (NotName("Deep Sat W Series HIGHROLLER MILLION KO"))&& network === 'WNMX'&& level === '14'&& isNormal&& isGetTournaments && (FLAGS("sat"))&& network === 'WNMX'&& level === '14'&& isNormal&& isGetTournaments) {
+    return { valid: true, rules: true, guarantee: 2000, color: "green" };
+  };
+if((BidGt(50,2000))&& network === 'WNMX'&& level === '15'&& isNormal&& isGetTournaments && (NotName("Deep Sat W Series HIGHROLLER MILLION KO"))&& network === 'WNMX'&& level === '15'&& isNormal&& isGetTournaments && (FLAGS("sat"))&& network === 'WNMX'&& level === '15'&& isNormal&& isGetTournaments) {
+    return { valid: true, rules: true, guarantee: 2000, color: "green" };
+  };
 if((FLAGS("rebuy"))&& network === 'PS.eu'){
     return { valid: false, guarantee: 1, rules: false };
   };
@@ -2628,6 +2631,66 @@ if((BidName(50,"Sat Siège Main Event Battle of Malta"))&& network === 'WNMX'){
 if((BidName(50,"Sat Buy-in Main Event Battle of Malta"))&& network === 'WNMX'){
     return { valid: false, guarantee: 1, rules: false };
   };
+if((BidName(50,"W POKUS MILLION KO - DAY 1"))&& network === 'WNMX'){
+    return { valid: false, guarantee: 1, rules: false };
+  };
+if((Name("10BB"))){
+    return { valid: false, guarantee: 1, rules: false };
+  };
+if((BidName(2," - DAY 1"))&& network === 'WNMX'){
+    return { valid: false, guarantee: 1, rules: false };
+  };
+if((BidName(20," - DAY 1"))&& network === 'WNMX'){
+    return { valid: false, guarantee: 1, rules: false };
+  };
+if((BidName(50," - DAY 1"))&& network === 'WNMX'){
+    return { valid: false, guarantee: 1, rules: false };
+  };
+if((BidName(5," - DAY 1"))&& network === 'WNMX'){
+    return { valid: false, guarantee: 1, rules: false };
+  };
+if((BidName(125,"W SERIES 5 MILLION EVENT KO - DAY 1"))&& network === 'WNMX'){
+    return { valid: false, guarantee: 1, rules: false };
+  };
+if((BidName(10,"W SERIES ONE TIME KO - DAY 1"))&& network === 'WNMX'){
+    return { valid: false, guarantee: 1, rules: false };
+  };
+if((Name(" Sat W Series"))&& network === 'WNMX'){
+    return { valid: false, guarantee: 1, rules: false };
+  };
+if((BidName(50," Sat W Series"))&& network === 'WNMX'){
+    return { valid: false, guarantee: 1, rules: false };
+  };
+if((BidName(50,"Deep Sat W Series"))&& network === 'WNMX'){
+    return { valid: false, guarantee: 1, rules: false };
+  };
+if((BidName(50,"Deep Sat W Series HIGHROLLER MILLION KO"))&& network === 'WNMX'){
+    return { valid: false, guarantee: 1, rules: false };
+  };
+if((BidGt(50,1000000))&& network === 'WNMX'&& level === '2' && (NotName("W SERIES MILLION EVENT MYSTERY - DAY 1"))&& network === 'WNMX'&& level === '2'){
+    return { valid: false, guarantee: 1, rules: false };
+  };
+if((BidGt(50,1000000))&& network === 'WNMX'&& level === '3' && (NotName("W SERIES MILLION EVENT MYSTERY - DAY 1"))&& network === 'WNMX'&& level === '3'){
+    return { valid: false, guarantee: 1, rules: false };
+  };
+if((BidGt(50,1000000))&& network === 'WNMX'&& level === '4' && (NotName("W SERIES MILLION EVENT MYSTERY - DAY 1"))&& network === 'WNMX'&& level === '4'){
+    return { valid: false, guarantee: 1, rules: false };
+  };
+if((BidGt(50,1000000))&& network === 'WNMX'&& level === '5' && (NotName("W SERIES MILLION EVENT MYSTERY - DAY 1"))&& network === 'WNMX'&& level === '5'){
+    return { valid: false, guarantee: 1, rules: false };
+  };
+if((BidGt(50,1000000))&& network === 'WNMX'&& level === '7' && (NotName("W SERIES MILLION EVENT MYSTERY - DAY 1"))&& network === 'WNMX'&& level === '7'){
+    return { valid: false, guarantee: 1, rules: false };
+  };
+if((BidGt(50,1000000))&& network === 'WNMX'&& level === '8' && (NotName("W SERIES MILLION EVENT MYSTERY - DAY 1"))&& network === 'WNMX'&& level === '8'){
+    return { valid: false, guarantee: 1, rules: false };
+  };
+if((BidGt(50,1000000))&& network === 'WNMX'&& level === '10' && (NotName("W SERIES MILLION EVENT MYSTERY - DAY 1"))&& network === 'WNMX'&& level === '10'){
+    return { valid: false, guarantee: 1, rules: false };
+  };
+if((BidName(50,"W SERIES MILLION EVENT MYSTERY - DAY 1"))&& network === 'WNMX'&& level === '6'){
+    return { valid: false, guarantee: 1, rules: false };
+  };
 if((BidGt(11,50000))&& network === 'PS.eu'&& level === '0'&& effmu === 'A'&& isNormal&& isKo) {
     return { valid: true, rules: true, guarantee: 50000, color: "blue" };
   };
@@ -2778,36 +2841,6 @@ if((BidGt(22,100000))&& network === '888'&& level === '1'&& effmu === 'B'&& isNo
 if((BidGt(16.5,60000))&& network === '888'&& level === '1'&& effmu === 'B'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 60000, color: "blue" };
   };
-if((FromToGt(12,15,15000))&& network === 'GG'&& level === '1'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 15000, color: "blue" };
-  };
-if((FromToGt(8.8,11,6000))&& network === 'GG'&& level === '1'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 6000, color: "blue" };
-  };
-if((FromToGt(5.6,7.6,2000))&& network === 'GG'&& level === '1'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 2000, color: "blue" };
-  };
-if((FromToGt(25,33,150000))&& network === 'GG'&& level === '1'&& effmu === 'A'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 150000, color: "blue" };
-  };
-if((FromToGt(12,15,30000))&& network === 'GG'&& level === '1'&& effmu === 'A'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 30000, color: "blue" };
-  };
-if((FromToGt(8.8,11,15000))&& network === 'GG'&& level === '1'&& effmu === 'A'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 15000, color: "blue" };
-  };
-if((FromToGt(5.6,7.6,4000))&& network === 'GG'&& level === '1'&& effmu === 'A'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 4000, color: "blue" };
-  };
-if((FromToGt(8.8,11,25000))&& network === 'GG'&& level === '1'&& effmu === 'B'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 25000, color: "blue" };
-  };
-if((FromToGt(8.8,11,40000))&& network === 'GG'&& level === '1'&& effmu === 'B'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 40000, color: "blue" };
-  };
-if((FromToGt(4.5,7.5,15000))&& network === 'GG'&& level === '1'&& effmu === 'B'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 15000, color: "blue" };
-  };
 if((BidGt(30,80000))&& network === 'WNMX'&& level === '1'&& effmu === 'A'&& isNormal&& isKo) {
     return { valid: true, rules: true, guarantee: 80000, color: "blue" };
   };
@@ -2838,8 +2871,14 @@ if((BidGt(20,100000))&& network === 'WNMX'&& level === '1'&& effmu === 'B'&& isN
 if((BidGt(15,40000))&& network === 'WNMX'&& level === '1'&& effmu === 'B'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 40000, color: "blue" };
   };
+if((BidGt(27,40000))&& network === 'PS.eu'&& level === '2'&& effmu === 'A'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 40000, color: "blue" };
+  };
 if((BidGt(22,30000))&& network === 'PS.eu'&& level === '2'&& effmu === 'A'&& isNormal&& isKo) {
     return { valid: true, rules: true, guarantee: 30000, color: "blue" };
+  };
+if((BidGt(16.5,20000))&& network === 'PS.eu'&& level === '2'&& effmu === 'A'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 20000, color: "blue" };
   };
 if((BidGt(11,10000))&& network === 'PS.eu'&& level === '2'&& effmu === 'A'&& isNormal&& isKo) {
     return { valid: true, rules: true, guarantee: 10000, color: "blue" };
@@ -2931,38 +2970,14 @@ if((BidGt(22,60000))&& network === '888'&& level === '2'&& effmu === 'B'&& isNor
 if((BidGt(16.5,40000))&& network === '888'&& level === '2'&& effmu === 'B'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 40000, color: "blue" };
   };
-if((FromToGt(34,49,150000))&& network === 'GG'&& level === '2'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 150000, color: "blue" };
-  };
-if((FromToGt(12,15,10000))&& network === 'GG'&& level === '2'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 10000, color: "blue" };
-  };
 if((FromToGt(34,49,250000))&& network === 'GG'&& level === '2'&& effmu === 'A'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 250000, color: "blue" };
-  };
-if((FromToGt(25,33,100000))&& network === 'GG'&& level === '2'&& effmu === 'A'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 100000, color: "blue" };
-  };
-if((FromToGt(12,15,20000))&& network === 'GG'&& level === '2'&& effmu === 'A'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 20000, color: "blue" };
-  };
-if((FromToGt(12,15,15000))&& network === 'GG'&& level === '2'&& effmu === 'B'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 15000, color: "blue" };
-  };
-if((FromToGt(8.8,11,6000))&& network === 'GG'&& level === '2'&& effmu === 'B'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 6000, color: "blue" };
-  };
-if((FromToGt(5.6,7.6,2000))&& network === 'GG'&& level === '2'&& effmu === 'B'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 2000, color: "blue" };
   };
 if((FromToGt(25,33,150000))&& network === 'GG'&& level === '2'&& effmu === 'B'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 150000, color: "blue" };
   };
 if((BidGt(1050,750000))&& network === 'PS.eu'&& level === '15'&& effmu === 'A'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 750000, color: "blue" };
-  };
-if((FromToGt(12,15,30000))&& network === 'GG'&& level === '2'&& effmu === 'B'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 30000, color: "blue" };
   };
 if((BidGt(530,300000))&& network === 'PS.eu'&& level === '15'&& effmu === 'A'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 300000, color: "blue" };
@@ -2975,12 +2990,6 @@ if((BidGt(215,40000))&& network === 'PS.eu'&& level === '15'&& effmu === 'A'&& i
   };
 if((BidGt(162,15000))&& network === 'PS.eu'&& level === '15'&& effmu === 'A'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 15000, color: "blue" };
-  };
-if((FromToGt(8.8,11,15000))&& network === 'GG'&& level === '2'&& effmu === 'B'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 15000, color: "blue" };
-  };
-if((FromToGt(5.6,7.6,4000))&& network === 'GG'&& level === '2'&& effmu === 'B'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 4000, color: "blue" };
   };
 if((BidGt(1050,400000))&& network === 'Party'&& level === '15'&& effmu === 'A'&& isNormal&& isKo) {
     return { valid: true, rules: true, guarantee: 400000, color: "blue" };
@@ -3101,9 +3110,6 @@ if((BidGt(16.5,20000))&& network === 'PS.eu'&& level === '3'&& effmu === 'B'&& i
   };
 if((BidGt(11,10000))&& network === 'PS.eu'&& level === '3'&& effmu === 'B'&& isNormal&& isKo) {
     return { valid: true, rules: true, guarantee: 10000, color: "blue" };
-  };
-if((BidGt(33,100000))&& network === 'PS.eu'&& level === '3'&& effmu === 'B'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 100000, color: "blue" };
   };
 if((BidGt(27,70000))&& network === 'PS.eu'&& level === '3'&& effmu === 'B'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 70000, color: "blue" };
@@ -3327,56 +3333,17 @@ if((FromToGt(67,79,1000000))&& network === 'GG'&& level === '3'&& effmu === 'A'&
 if((FromToGt(50,66,500000))&& network === 'GG'&& level === '3'&& effmu === 'A'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 500000, color: "blue" };
   };
-if((FromToGt(16,24,20000))&& network === 'GG'&& level === '3'&& effmu === 'A'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 20000, color: "blue" };
-  };
 if((FromToGt(50,66,400000))&& network === 'GG'&& level === '3'&& effmu === 'B'&& isNormal&& isKo) {
     return { valid: true, rules: true, guarantee: 400000, color: "blue" };
   };
 if((FromToGt(16,24,30000))&& network === 'GG'&& level === '3'&& effmu === 'B'&& isNormal&& isKo) {
     return { valid: true, rules: true, guarantee: 30000, color: "blue" };
   };
-if((FromToGt(12,15,10000))&& network === 'GG'&& level === '3'&& effmu === 'B'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 10000, color: "blue" };
-  };
 if((FromToGt(50,66,750000))&& network === 'GG'&& level === '3'&& effmu === 'B'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 750000, color: "blue" };
   };
 if((FromToGt(34,49,250000))&& network === 'GG'&& level === '3'&& effmu === 'B'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 250000, color: "blue" };
-  };
-if((FromToGt(25,33,100000))&& network === 'GG'&& level === '3'&& effmu === 'B'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 100000, color: "blue" };
-  };
-if((FromToGt(16,24,40000))&& network === 'GG'&& level === '3'&& effmu === 'B'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 40000, color: "blue" };
-  };
-if((FromToGt(12,15,20000))&& network === 'GG'&& level === '3'&& effmu === 'B'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 20000, color: "blue" };
-  };
-if((BidGt(70,125000))&& network === 'WNMX'&& level === '3'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 125000, color: "blue" };
-  };
-if((BidGt(40,30000))&& network === 'WNMX'&& level === '3'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 30000, color: "blue" };
-  };
-if((BidGt(30,20000))&& network === 'WNMX'&& level === '3'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 20000, color: "blue" };
-  };
-if((BidGt(70,200000))&& network === 'WNMX'&& level === '3'&& effmu === 'A'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 200000, color: "blue" };
-  };
-if((BidGt(40,40000))&& network === 'WNMX'&& level === '3'&& effmu === 'A'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 40000, color: "blue" };
-  };
-if((BidGt(30,30000))&& network === 'WNMX'&& level === '3'&& effmu === 'A'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 30000, color: "blue" };
-  };
-if((BidGt(40,35000))&& network === 'WNMX'&& level === '3'&& effmu === 'B'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 35000, color: "blue" };
-  };
-if((BidGt(30,25000))&& network === 'WNMX'&& level === '3'&& effmu === 'B'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 25000, color: "blue" };
   };
 if((BidGt(40,50000))&& network === 'WNMX'&& level === '3'&& effmu === 'B'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 50000, color: "blue" };
@@ -3392,6 +3359,9 @@ if((BidGt(162,200000))&& network === 'PS.eu'&& level === '8'&& effmu === 'A'&& i
   };
 if((BidGt(82,48000))&& network === 'PS.eu'&& level === '8'&& effmu === 'A'&& isNormal&& isKo) {
     return { valid: true, rules: true, guarantee: 48000, color: "blue" };
+  };
+if((BidGt(44,10000))&& network === 'PS.eu'&& level === '8'&& effmu === 'A'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 10000, color: "blue" };
   };
 if((BidGt(215,750000))&& network === 'PS.eu'&& level === '8'&& effmu === 'A'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 750000, color: "blue" };
@@ -3576,21 +3546,6 @@ if((FromToGt(151,255,500000))&& network === 'GG'&& level === '8'&& effmu === 'A'
 if((FromToGt(151,255,750000))&& network === 'GG'&& level === '8'&& effmu === 'A'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 750000, color: "blue" };
   };
-if((FromToGt(121,150,200000))&& network === 'GG'&& level === '8'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 200000, color: "blue" };
-  };
-if((FromToGt(67,79,50000))&& network === 'GG'&& level === '8'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 50000, color: "blue" };
-  };
-if((FromToGt(67,79,75000))&& network === 'GG'&& level === '8'&& effmu === 'A'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 75000, color: "blue" };
-  };
-if((FromToGt(50,66,50000))&& network === 'GG'&& level === '8'&& effmu === 'A'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 50000, color: "blue" };
-  };
-if((FromToGt(121,150,250000))&& network === 'GG'&& level === '8'&& effmu === 'B'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 250000, color: "blue" };
-  };
 if((BidGt(1050,750000))&& network === 'PS.eu'&& level === '13'&& effmu === 'A'&& isNormal&& isKo) {
     return { valid: true, rules: true, guarantee: 750000, color: "blue" };
   };
@@ -3632,18 +3587,6 @@ if((BidGt(320,300000))&& network === 'PS.eu'&& level === '13'&& effmu === 'B'&& 
   };
 if((BidGt(215,150000))&& network === 'PS.eu'&& level === '13'&& effmu === 'B'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 150000, color: "blue" };
-  };
-if((BidGt(200,250000))&& network === 'WNMX'&& level === '8'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 250000, color: "blue" };
-  };
-if((BidGt(200,350000))&& network === 'WNMX'&& level === '8'&& effmu === 'A'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 350000, color: "blue" };
-  };
-if((BidGt(70,isOffpeak && isGetTournaments ? 0 : 80000))&& network === 'WNMX'&& level === '8'&& effmu === 'B'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 80000, color: "blue" };
-  };
-if((BidGt(40,isOffpeak && isGetTournaments ? 0 : 10000))&& network === 'WNMX'&& level === '8'&& effmu === 'B'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 10000, color: "blue" };
   };
 if((BidGt(1050,1000000))&& network === 'Party'&& level === '13'&& effmu === 'A'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 1000000, color: "blue" };
@@ -3735,18 +3678,6 @@ if((BidGt(100,isOffpeak && isGetTournaments ? 0 : 30000))&& network === 'PS.es'&
 if((FromToGt(751,1050,1000000))&& network === 'GG'&& level === '13'&& effmu === 'A'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 1000000, color: "blue" };
   };
-if((FromToGt(376,575,300000))&& network === 'GG'&& level === '13'&& effmu === 'B'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 300000, color: "blue" };
-  };
-if((FromToGt(376,575,500000))&& network === 'GG'&& level === '13'&& effmu === 'B'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 500000, color: "blue" };
-  };
-if((FromToGt(256,375,300000))&& network === 'GG'&& level === '13'&& effmu === 'B'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 300000, color: "blue" };
-  };
-if((FromToGt(151,255,150000))&& network === 'GG'&& level === '13'&& effmu === 'B'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 150000, color: "blue" };
-  };
 if((BidGt(500,150000))&& network === 'WNMX'&& level === '13'&& effmu === 'A'&& isNormal&& isKo) {
     return { valid: true, rules: true, guarantee: 150000, color: "blue" };
   };
@@ -3756,11 +3687,17 @@ if((BidGt(500,300000))&& network === 'WNMX'&& level === '13'&& effmu === 'B'&& i
 if((BidGt(500,500000))&& network === 'WNMX'&& level === '13'&& effmu === 'B'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 500000, color: "blue" };
   };
+if((BidGt(320,600000))&& network === 'PS.eu'&& level === '9'&& effmu === 'A'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 600000, color: "blue" };
+  };
 if((BidGt(320,1000000))&& network === 'PS.eu'&& level === '9'&& effmu === 'A'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 1000000, color: "blue" };
   };
 if((BidGt(215,500000))&& network === 'PS.eu'&& level === '9'&& effmu === 'A'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 500000, color: "blue" };
+  };
+if((BidGt(162,160000))&& network === 'PS.eu'&& level === '9'&& effmu === 'A'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 160000, color: "blue" };
   };
 if((BidGt(162,250000))&& network === 'PS.eu'&& level === '9'&& effmu === 'A'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 250000, color: "blue" };
@@ -3906,9 +3843,6 @@ if((BidGt(50,isOffpeak && isGetTournaments ? 0 : 20000))&& network === 'PS.es'&&
 if((BidGt(50,50000))&& network === 'PS.es'&& level === '9'&& effmu === 'B'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 50000, color: "blue" };
   };
-if((FromToGt(256,375,500000))&& network === 'GG'&& level === '9'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 500000, color: "blue" };
-  };
 if((FromToGt(256,375,750000))&& network === 'GG'&& level === '9'&& effmu === 'A'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 750000, color: "blue" };
   };
@@ -3917,15 +3851,6 @@ if((FromToGt(151,255,400000))&& network === 'GG'&& level === '9'&& effmu === 'A'
   };
 if((FromToGt(151,255,500000))&& network === 'GG'&& level === '9'&& effmu === 'A'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 500000, color: "blue" };
-  };
-if((FromToGt(121,150,150000))&& network === 'GG'&& level === '9'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 150000, color: "blue" };
-  };
-if((FromToGt(67,79,40000))&& network === 'GG'&& level === '9'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 40000, color: "blue" };
-  };
-if((FromToGt(67,79,65000))&& network === 'GG'&& level === '9'&& effmu === 'A'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 65000, color: "blue" };
   };
 if((FromToGt(256,375,700000))&& network === 'GG'&& level === '9'&& effmu === 'B'&& isNormal&& isKo) {
     return { valid: true, rules: true, guarantee: 700000, color: "blue" };
@@ -3938,18 +3863,6 @@ if((FromToGt(151,255,500000))&& network === 'GG'&& level === '9'&& effmu === 'B'
   };
 if((FromToGt(151,255,750000))&& network === 'GG'&& level === '9'&& effmu === 'B'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 750000, color: "blue" };
-  };
-if((FromToGt(121,150,200000))&& network === 'GG'&& level === '9'&& effmu === 'B'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 200000, color: "blue" };
-  };
-if((FromToGt(67,79,50000))&& network === 'GG'&& level === '9'&& effmu === 'B'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 50000, color: "blue" };
-  };
-if((FromToGt(67,79,75000))&& network === 'GG'&& level === '9'&& effmu === 'B'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 75000, color: "blue" };
-  };
-if((BidGt(200,350000))&& network === 'WNMX'&& level === '9'&& effmu === 'B'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 350000, color: "blue" };
   };
 if((BidGt(109,750000))&& network === 'PS.eu'&& level === '4'&& effmu === 'A'&& isNormal&& isKo) {
     return { valid: true, rules: true, guarantee: 750000, color: "blue" };
@@ -4137,62 +4050,14 @@ if((BidGt(30,75000))&& network === 'PS.es'&& level === '4'&& effmu === 'B'&& isN
 if((BidGt(20,25000))&& network === 'PS.es'&& level === '4'&& effmu === 'B'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 25000, color: "blue" };
   };
-if((FromToGt(80,120,500000))&& network === 'GG'&& level === '4'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 500000, color: "blue" };
-  };
 if((FromToGt(67,79,300000))&& network === 'GG'&& level === '4'&& effmu === 'A'&& isNormal&& isKo) {
     return { valid: true, rules: true, guarantee: 300000, color: "blue" };
-  };
-if((FromToGt(50,66,150000))&& network === 'GG'&& level === '4'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 150000, color: "blue" };
-  };
-if((FromToGt(80,120,1000000))&& network === 'GG'&& level === '4'&& effmu === 'A'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 1000000, color: "blue" };
   };
 if((FromToGt(67,79,600000))&& network === 'GG'&& level === '4'&& effmu === 'A'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 600000, color: "blue" };
   };
 if((FromToGt(50,66,300000))&& network === 'GG'&& level === '4'&& effmu === 'A'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 300000, color: "blue" };
-  };
-if((FromToGt(34,49,100000))&& network === 'GG'&& level === '4'&& effmu === 'A'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 100000, color: "blue" };
-  };
-if((BidGt(70,100000))&& network === 'WNMX'&& level === '4'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 100000, color: "blue" };
-  };
-if((BidGt(40,20000))&& network === 'WNMX'&& level === '4'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 20000, color: "blue" };
-  };
-if((BidGt(30,15000))&& network === 'WNMX'&& level === '4'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 15000, color: "blue" };
-  };
-if((BidGt(70,150000))&& network === 'WNMX'&& level === '4'&& effmu === 'A'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 150000, color: "blue" };
-  };
-if((BidGt(40,25000))&& network === 'WNMX'&& level === '4'&& effmu === 'A'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 25000, color: "blue" };
-  };
-if((BidGt(30,20000))&& network === 'WNMX'&& level === '4'&& effmu === 'A'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 20000, color: "blue" };
-  };
-if((BidGt(70,125000))&& network === 'WNMX'&& level === '4'&& effmu === 'B'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 125000, color: "blue" };
-  };
-if((BidGt(40,30000))&& network === 'WNMX'&& level === '4'&& effmu === 'B'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 30000, color: "blue" };
-  };
-if((BidGt(70,200000))&& network === 'WNMX'&& level === '4'&& effmu === 'B'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 200000, color: "blue" };
-  };
-if((BidGt(40,40000))&& network === 'WNMX'&& level === '4'&& effmu === 'B'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 40000, color: "blue" };
-  };
-if((BidGt(30,30000))&& network === 'WNMX'&& level === '4'&& effmu === 'B'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 30000, color: "blue" };
-  };
-if((BidGt(30,20000))&& network === 'WNMX'&& level === '4'&& effmu === 'B'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 20000, color: "blue" };
   };
 if((BidGt(27,7500))&& network === 'PS.eu'&& level === '5'&& effmu === 'A'&& isNormal&& isKo) {
     return { valid: true, rules: true, guarantee: 7500, color: "blue" };
@@ -4350,68 +4215,23 @@ if((BidGt(20,15000))&& network === 'PS.es'&& level === '5'&& effmu === 'B'&& isN
 if((FromToGt(80,120,300000))&& network === 'GG'&& level === '5'&& effmu === 'A'&& isNormal&& isKo) {
     return { valid: true, rules: true, guarantee: 300000, color: "blue" };
   };
-if((FromToGt(67,79,175000))&& network === 'GG'&& level === '5'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 175000, color: "blue" };
-  };
-if((FromToGt(50,66,100000))&& network === 'GG'&& level === '5'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 100000, color: "blue" };
-  };
 if((FromToGt(80,120,500000))&& network === 'GG'&& level === '5'&& effmu === 'A'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 500000, color: "blue" };
   };
 if((FromToGt(67,79,375000))&& network === 'GG'&& level === '5'&& effmu === 'A'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 375000, color: "blue" };
   };
-if((FromToGt(50,66,175000))&& network === 'GG'&& level === '5'&& effmu === 'A'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 175000, color: "blue" };
-  };
-if((FromToGt(80,120,400000))&& network === 'GG'&& level === '5'&& effmu === 'B'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 400000, color: "blue" };
-  };
-if((FromToGt(80,120,800000))&& network === 'GG'&& level === '5'&& effmu === 'B'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 800000, color: "blue" };
-  };
 if((FromToGt(67,79,600000))&& network === 'GG'&& level === '5'&& effmu === 'B'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 600000, color: "blue" };
   };
-if((FromToGt(50,66,300000))&& network === 'GG'&& level === '5'&& effmu === 'B'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 300000, color: "blue" };
-  };
-if((FromToGt(34,49,100000))&& network === 'GG'&& level === '5'&& effmu === 'B'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 100000, color: "blue" };
-  };
-if((BidGt(70,80000))&& network === 'WNMX'&& level === '5'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 80000, color: "blue" };
-  };
-if((BidGt(40,15000))&& network === 'WNMX'&& level === '5'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 15000, color: "blue" };
-  };
-if((BidGt(70,120000))&& network === 'WNMX'&& level === '5'&& effmu === 'A'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 120000, color: "blue" };
-  };
-if((BidGt(40,20000))&& network === 'WNMX'&& level === '5'&& effmu === 'A'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 20000, color: "blue" };
-  };
-if((BidGt(70,100000))&& network === 'WNMX'&& level === '5'&& effmu === 'B'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 100000, color: "blue" };
-  };
-if((BidGt(40,20000))&& network === 'WNMX'&& level === '5'&& effmu === 'B'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 20000, color: "blue" };
-  };
-if((BidGt(30,15000))&& network === 'WNMX'&& level === '5'&& effmu === 'B'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 15000, color: "blue" };
-  };
-if((BidGt(70,150000))&& network === 'WNMX'&& level === '5'&& effmu === 'B'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 150000, color: "blue" };
-  };
-if((BidGt(40,25000))&& network === 'WNMX'&& level === '5'&& effmu === 'B'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 25000, color: "blue" };
-  };
-if((BidGt(30,20000))&& network === 'WNMX'&& level === '5'&& effmu === 'B'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 20000, color: "blue" };
+if((BidGt(320,400000))&& network === 'PS.eu'&& level === '10'&& effmu === 'A'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 400000, color: "blue" };
   };
 if((BidGt(320,600000))&& network === 'PS.eu'&& level === '10'&& effmu === 'A'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 600000, color: "blue" };
+  };
+if((BidGt(162,120000))&& network === 'PS.eu'&& level === '10'&& effmu === 'A'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 120000, color: "blue" };
   };
 if((BidGt(162,200000))&& network === 'PS.eu'&& level === '10'&& effmu === 'A'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 200000, color: "blue" };
@@ -4419,8 +4239,14 @@ if((BidGt(162,200000))&& network === 'PS.eu'&& level === '10'&& effmu === 'A'&& 
 if((BidGt(109,100000))&& network === 'PS.eu'&& level === '10'&& effmu === 'A'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 100000, color: "blue" };
   };
+if((BidGt(82,30000))&& network === 'PS.eu'&& level === '10'&& effmu === 'A'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 30000, color: "blue" };
+  };
 if((BidGt(82,60000))&& network === 'PS.eu'&& level === '10'&& effmu === 'A'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 60000, color: "blue" };
+  };
+if((BidGt(55,15000))&& network === 'PS.eu'&& level === '10'&& effmu === 'A'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 15000, color: "blue" };
   };
 if((BidGt(320,600000))&& network === 'PS.eu'&& level === '10'&& effmu === 'B'&& isNormal&& isKo) {
     return { valid: true, rules: true, guarantee: 600000, color: "blue" };
@@ -4572,9 +4398,6 @@ if((BidGt(50,isOffpeak && isGetTournaments ? 0 : 15000))&& network === 'PS.es'&&
 if((BidGt(50,isOffpeak && isGetTournaments ? 0 : 40000))&& network === 'PS.es'&& level === '10'&& effmu === 'B'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 40000, color: "blue" };
   };
-if((FromToGt(256,375,500000))&& network === 'GG'&& level === '10'&& effmu === 'B'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 500000, color: "blue" };
-  };
 if((FromToGt(256,375,750000))&& network === 'GG'&& level === '10'&& effmu === 'B'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 750000, color: "blue" };
   };
@@ -4583,18 +4406,6 @@ if((FromToGt(151,255,400000))&& network === 'GG'&& level === '10'&& effmu === 'B
   };
 if((FromToGt(151,255,500000))&& network === 'GG'&& level === '10'&& effmu === 'B'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 500000, color: "blue" };
-  };
-if((FromToGt(67,79,40000))&& network === 'GG'&& level === '10'&& effmu === 'B'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 40000, color: "blue" };
-  };
-if((FromToGt(67,79,65000))&& network === 'GG'&& level === '10'&& effmu === 'B'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 65000, color: "blue" };
-  };
-if((BidGt(82,100000))&& network === 'PS.eu'&& level === '6'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 100000, color: "blue" };
-  };
-if((BidGt(44,25000))&& network === 'PS.eu'&& level === '6'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 25000, color: "blue" };
   };
 if((BidGt(33,6000))&& network === 'PS.eu'&& level === '6'&& effmu === 'A'&& isNormal&& isKo) {
     return { valid: true, rules: true, guarantee: 6000, color: "blue" };
@@ -4773,14 +4584,8 @@ if((BidGt(50,125000))&& network === 'PS.es'&& level === '6'&& effmu === 'B'&& is
 if((BidGt(30,25000))&& network === 'PS.es'&& level === '6'&& effmu === 'B'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 25000, color: "blue" };
   };
-if((FromToGt(67,79,100000))&& network === 'GG'&& level === '6'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 100000, color: "blue" };
-  };
-if((FromToGt(80,120,250000))&& network === 'GG'&& level === '6'&& effmu === 'A'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 250000, color: "blue" };
-  };
-if((FromToGt(67,79,175000))&& network === 'GG'&& level === '6'&& effmu === 'A'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 175000, color: "blue" };
+if((BidGt(320,200000))&& network === 'PS.eu'&& level === '12'&& effmu === 'A'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 200000, color: "blue" };
   };
 if((BidGt(320,300000))&& network === 'PS.eu'&& level === '12'&& effmu === 'A'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 300000, color: "blue" };
@@ -4791,20 +4596,11 @@ if((BidGt(215,150000))&& network === 'PS.eu'&& level === '12'&& effmu === 'A'&& 
 if((FromToGt(80,120,300000))&& network === 'GG'&& level === '6'&& effmu === 'B'&& isNormal&& isKo) {
     return { valid: true, rules: true, guarantee: 300000, color: "blue" };
   };
-if((FromToGt(67,79,175000))&& network === 'GG'&& level === '6'&& effmu === 'B'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 175000, color: "blue" };
-  };
-if((FromToGt(50,66,100000))&& network === 'GG'&& level === '6'&& effmu === 'B'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 100000, color: "blue" };
-  };
 if((FromToGt(80,120,500000))&& network === 'GG'&& level === '6'&& effmu === 'B'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 500000, color: "blue" };
   };
 if((FromToGt(67,79,375000))&& network === 'GG'&& level === '6'&& effmu === 'B'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 375000, color: "blue" };
-  };
-if((FromToGt(50,66,175000))&& network === 'GG'&& level === '6'&& effmu === 'B'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 175000, color: "blue" };
   };
 if((BidGt(215,150000))&& network === 'PS.eu'&& level === '12'&& effmu === 'B'&& isNormal&& isKo) {
     return { valid: true, rules: true, guarantee: 150000, color: "blue" };
@@ -4821,14 +4617,17 @@ if((BidGt(82,12000))&& network === 'PS.eu'&& level === '12'&& effmu === 'B'&& is
 if((BidGt(215,250000))&& network === 'PS.eu'&& level === '12'&& effmu === 'B'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 250000, color: "blue" };
   };
-if((BidGt(162,70000))&& network === 'PS.eu'&& level === '12'&& effmu === 'B'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 70000, color: "blue" };
-  };
 if((BidGt(109,40000))&& network === 'PS.eu'&& level === '12'&& effmu === 'B'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 40000, color: "blue" };
   };
 if((BidGt(82,28000))&& network === 'PS.eu'&& level === '12'&& effmu === 'B'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 28000, color: "blue" };
+  };
+if((BidGt(109,20000))&& network === 'PS.eu'&& level === '11'&& effmu === 'A'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 20000, color: "blue" };
+  };
+if((BidGt(82,12000))&& network === 'PS.eu'&& level === '11'&& effmu === 'A'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 12000, color: "blue" };
   };
 if((BidGt(320,400000))&& network === 'PS.eu'&& level === '11'&& effmu === 'B'&& isNormal&& isKo) {
     return { valid: true, rules: true, guarantee: 400000, color: "blue" };
@@ -5109,44 +4908,14 @@ if((BidGt(100,isOffpeak && isGetTournaments ? 0 : 100000))&& network === 'PS.es'
 if((BidGt(50,isOffpeak && isGetTournaments ? 0 : 25000))&& network === 'PS.es'&& level === '11'&& effmu === 'B'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 25000, color: "blue" };
   };
-if((FromToGt(376,575,300000))&& network === 'GG'&& level === '12'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 300000, color: "blue" };
-  };
-if((FromToGt(376,575,500000))&& network === 'GG'&& level === '12'&& effmu === 'A'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 500000, color: "blue" };
-  };
-if((FromToGt(256,375,300000))&& network === 'GG'&& level === '12'&& effmu === 'A'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 300000, color: "blue" };
-  };
-if((FromToGt(151,255,150000))&& network === 'GG'&& level === '12'&& effmu === 'A'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 150000, color: "blue" };
-  };
-if((FromToGt(256,375,400000))&& network === 'GG'&& level === '11'&& effmu === 'A'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 400000, color: "blue" };
-  };
-if((FromToGt(80,120,40000))&& network === 'GG'&& level === '11'&& effmu === 'A'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 40000, color: "blue" };
-  };
-if((BidGt(500,300000))&& network === 'WNMX'&& level === '12'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 300000, color: "blue" };
-  };
 if((BidGt(500,500000))&& network === 'WNMX'&& level === '12'&& effmu === 'A'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 500000, color: "blue" };
   };
 if((BidGt(82,60000))&& network === 'PS.eu'&& level === '7'&& effmu === 'A'&& isNormal&& isKo) {
     return { valid: true, rules: true, guarantee: 60000, color: "blue" };
   };
-if((BidGt(55,30000))&& network === 'PS.eu'&& level === '7'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 30000, color: "blue" };
-  };
 if((BidGt(44,10000))&& network === 'PS.eu'&& level === '7'&& effmu === 'A'&& isNormal&& isKo) {
     return { valid: true, rules: true, guarantee: 10000, color: "blue" };
-  };
-if((BidGt(70,80000))&& network === 'WNMX'&& level === '6'&& effmu === 'B'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 80000, color: "blue" };
-  };
-if((BidGt(40,15000))&& network === 'WNMX'&& level === '6'&& effmu === 'B'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 15000, color: "blue" };
   };
 if((BidGt(82,100000))&& network === 'PS.eu'&& level === '7'&& effmu === 'A'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 100000, color: "blue" };
@@ -5304,62 +5073,11 @@ if((BidGt(125,400000))&& network === 'PS.es'&& level === '7'&& effmu === 'B'&& i
 if((BidGt(100,300000))&& network === 'PS.es'&& level === '7'&& effmu === 'B'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 300000, color: "blue" };
   };
-if((BidGt(40,isOffpeak && isGetTournaments ? 0 : 75000))&& network === 'PS.es'&& level === '7'&& effmu === 'B'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 75000, color: "blue" };
-  };
 if((BidGt(30,isOffpeak && isGetTournaments ? 0 : 15000))&& network === 'PS.es'&& level === '7'&& effmu === 'B'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 15000, color: "blue" };
   };
-if((FromToGt(67,79,75000))&& network === 'GG'&& level === '7'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 75000, color: "blue" };
-  };
-if((FromToGt(67,79,100000))&& network === 'GG'&& level === '7'&& effmu === 'A'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 100000, color: "blue" };
-  };
-if((FromToGt(50,66,60000))&& network === 'GG'&& level === '7'&& effmu === 'A'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 60000, color: "blue" };
-  };
-if((FromToGt(34,49,40000))&& network === 'GG'&& level === '7'&& effmu === 'A'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 40000, color: "blue" };
-  };
-if((FromToGt(121,150,300000))&& network === 'GG'&& level === '7'&& effmu === 'B'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 300000, color: "blue" };
-  };
-if((FromToGt(80,120,150000))&& network === 'GG'&& level === '7'&& effmu === 'B'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 150000, color: "blue" };
-  };
-if((FromToGt(67,79,100000))&& network === 'GG'&& level === '7'&& effmu === 'B'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 100000, color: "blue" };
-  };
 if((FromToGt(80,120,250000))&& network === 'GG'&& level === '7'&& effmu === 'B'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 250000, color: "blue" };
-  };
-if((FromToGt(67,79,175000))&& network === 'GG'&& level === '7'&& effmu === 'B'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 175000, color: "blue" };
-  };
-if((BidGt(70,isOffpeak && isGetTournaments ? 0 : 40000))&& network === 'WNMX'&& level === '7'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 40000, color: "blue" };
-  };
-if((BidGt(40,isOffpeak && isGetTournaments ? 0 : 5000))&& network === 'WNMX'&& level === '7'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 5000, color: "blue" };
-  };
-if((BidGt(70,isOffpeak && isGetTournaments ? 0 : 80000))&& network === 'WNMX'&& level === '7'&& effmu === 'A'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 80000, color: "blue" };
-  };
-if((BidGt(40,isOffpeak && isGetTournaments ? 0 : 10000))&& network === 'WNMX'&& level === '7'&& effmu === 'A'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 10000, color: "blue" };
-  };
-if((BidGt(70,60000))&& network === 'WNMX'&& level === '7'&& effmu === 'B'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 60000, color: "blue" };
-  };
-if((BidGt(40,10000))&& network === 'WNMX'&& level === '7'&& effmu === 'B'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 10000, color: "blue" };
-  };
-if((BidGt(70,isOffpeak && isGetTournaments ? 0 : 100000))&& network === 'WNMX'&& level === '7'&& effmu === 'B'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 100000, color: "blue" };
-  };
-if((BidGt(40,isOffpeak && isGetTournaments ? 0 : 15000))&& network === 'WNMX'&& level === '7'&& effmu === 'B'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 15000, color: "blue" };
   };
 if((BidGt(30,80000))&& network === 'IP'&& level === '1'&& effmu === 'A'&& isNormal&& isKo) {
     return { valid: true, rules: true, guarantee: 80000, color: "blue" };
@@ -5709,8 +5427,14 @@ if((BidGt(109,30000))&& network === 'PS.eu'&& level === '13'&& effmu === 'B'&& i
 if((BidGt(82,20000))&& network === 'PS.eu'&& level === '13'&& effmu === 'B'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 20000, color: "blue" };
   };
-if((BidGt(162,75000))&& network === 'PS.eu'&& level === '12'&& effmu === 'A'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 75000, color: "blue" };
+if((BidGt(162,15000))&& network === 'PS.eu'&& level === '12'&& effmu === 'A'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 15000, color: "blue" };
+  };
+if((BidGt(109,10000))&& network === 'PS.eu'&& level === '12'&& effmu === 'A'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 10000, color: "blue" };
+  };
+if((BidGt(82,10000))&& network === 'PS.eu'&& level === '12'&& effmu === 'A'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 10000, color: "blue" };
   };
 if((BidGt(109,30000))&& network === 'PS.eu'&& level === '12'&& effmu === 'A'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 30000, color: "blue" };
@@ -5766,95 +5490,11 @@ if((BidGt(109,isOffpeak && isGetTournaments ? 0 : 30000))&& network === 'Party'&
 if((FromToGt(77,88,isOffpeak && isGetTournaments ? 0 : 20000))&& network === 'Party'&& level === '12'&& effmu === 'A'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 20000, color: "blue" };
   };
-if((FromToGt(751,1050,450000))&& network === 'GG'&& level === '14'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 450000, color: "blue" };
-  };
-if((FromToGt(576,750,250000))&& network === 'GG'&& level === '14'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 250000, color: "blue" };
-  };
-if((FromToGt(376,575,150000))&& network === 'GG'&& level === '14'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 150000, color: "blue" };
-  };
-if((FromToGt(256,375,60000))&& network === 'GG'&& level === '14'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 60000, color: "blue" };
-  };
-if((FromToGt(151,255,20000))&& network === 'GG'&& level === '14'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 20000, color: "blue" };
-  };
-if((FromToGt(121,150,5000))&& network === 'GG'&& level === '14'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 5000, color: "blue" };
-  };
-if((FromToGt(751,1050,650000))&& network === 'GG'&& level === '14'&& effmu === 'A'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 650000, color: "blue" };
-  };
-if((FromToGt(576,750,350000))&& network === 'GG'&& level === '14'&& effmu === 'A'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 350000, color: "blue" };
-  };
-if((FromToGt(376,575,200000))&& network === 'GG'&& level === '14'&& effmu === 'A'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 200000, color: "blue" };
-  };
-if((FromToGt(256,375,100000))&& network === 'GG'&& level === '14'&& effmu === 'A'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 100000, color: "blue" };
-  };
-if((FromToGt(151,255,30000))&& network === 'GG'&& level === '14'&& effmu === 'A'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 30000, color: "blue" };
-  };
-if((FromToGt(121,150,10000))&& network === 'GG'&& level === '14'&& effmu === 'A'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 10000, color: "blue" };
-  };
-if((FromToGt(576,750,450000))&& network === 'GG'&& level === '14'&& effmu === 'B'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 450000, color: "blue" };
-  };
-if((FromToGt(376,575,250000))&& network === 'GG'&& level === '14'&& effmu === 'B'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 250000, color: "blue" };
-  };
-if((FromToGt(256,375,125000))&& network === 'GG'&& level === '14'&& effmu === 'B'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 125000, color: "blue" };
-  };
-if((FromToGt(151,255,60000))&& network === 'GG'&& level === '14'&& effmu === 'B'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 60000, color: "blue" };
-  };
-if((FromToGt(121,150,25000))&& network === 'GG'&& level === '14'&& effmu === 'B'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 25000, color: "blue" };
-  };
 if((FromToGt(576,750,550000))&& network === 'GG'&& level === '14'&& effmu === 'B'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 550000, color: "blue" };
   };
-if((FromToGt(376,575,300000))&& network === 'GG'&& level === '14'&& effmu === 'B'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 300000, color: "blue" };
-  };
-if((FromToGt(256,375,150000))&& network === 'GG'&& level === '14'&& effmu === 'B'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 150000, color: "blue" };
-  };
 if((FromToGt(751,1050,750000))&& network === 'GG'&& level === '13'&& effmu === 'A'&& isNormal&& isKo) {
     return { valid: true, rules: true, guarantee: 750000, color: "blue" };
-  };
-if((FromToGt(576,750,400000))&& network === 'GG'&& level === '13'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 400000, color: "blue" };
-  };
-if((FromToGt(376,575,250000))&& network === 'GG'&& level === '13'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 250000, color: "blue" };
-  };
-if((FromToGt(256,375,125000))&& network === 'GG'&& level === '13'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 125000, color: "blue" };
-  };
-if((FromToGt(151,255,60000))&& network === 'GG'&& level === '13'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 60000, color: "blue" };
-  };
-if((FromToGt(121,150,25000))&& network === 'GG'&& level === '13'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 25000, color: "blue" };
-  };
-if((FromToGt(576,750,550000))&& network === 'GG'&& level === '13'&& effmu === 'A'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 550000, color: "blue" };
-  };
-if((FromToGt(376,575,300000))&& network === 'GG'&& level === '13'&& effmu === 'A'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 300000, color: "blue" };
-  };
-if((FromToGt(256,375,150000))&& network === 'GG'&& level === '13'&& effmu === 'A'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 150000, color: "blue" };
-  };
-if((FromToGt(151,255,80000))&& network === 'GG'&& level === '13'&& effmu === 'A'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 80000, color: "blue" };
   };
 if((BidGt(320,isOffpeak && isGetTournaments ? 0 : 60000))&& network === '888'&& level === '15'&& effmu === 'A'&& isNormal&& isKo) {
     return { valid: true, rules: true, guarantee: 60000, color: "blue" };
@@ -5931,33 +5571,6 @@ if((BidGt(200,75000))&& network === 'WNMX'&& level === '13'&& effmu === 'B'&& is
 if((BidGt(200,125000))&& network === 'WNMX'&& level === '13'&& effmu === 'B'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 125000, color: "blue" };
   };
-if((BidGt(250,125000))&& network === 'WNMX'&& level === '12'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 125000, color: "blue" };
-  };
-if((BidGt(200,75000))&& network === 'WNMX'&& level === '12'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 75000, color: "blue" };
-  };
-if((BidGt(250,200000))&& network === 'WNMX'&& level === '12'&& effmu === 'A'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 200000, color: "blue" };
-  };
-if((BidGt(200,125000))&& network === 'WNMX'&& level === '12'&& effmu === 'A'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 125000, color: "blue" };
-  };
-if((BidGt(250,175000))&& network === 'WNMX'&& level === '12'&& effmu === 'B'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 175000, color: "blue" };
-  };
-if((BidGt(200,100000))&& network === 'WNMX'&& level === '12'&& effmu === 'B'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 100000, color: "blue" };
-  };
-if((BidGt(100,isOffpeak && isGetTournaments ? 0 : 15000))&& network === 'WNMX'&& level === '12'&& effmu === 'B'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 15000, color: "blue" };
-  };
-if((BidGt(250,225000))&& network === 'WNMX'&& level === '12'&& effmu === 'B'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 225000, color: "blue" };
-  };
-if((BidGt(200,150000))&& network === 'WNMX'&& level === '12'&& effmu === 'B'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 150000, color: "blue" };
-  };
 if((BidGt(500,isOffpeak && isGetTournaments ? 0 : 120000))&& network === 'IP'&& level === '15'&& effmu === 'A'&& isNormal&& isKo) {
     return { valid: true, rules: true, guarantee: 120000, color: "blue" };
   };
@@ -5972,6 +5585,9 @@ if((BidGt(500,200000))&& network === 'IP'&& level === '14'&& effmu === 'B'&& isN
   };
 if((BidGt(500,200000))&& network === 'IP'&& level === '13'&& effmu === 'A'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 200000, color: "blue" };
+  };
+if((BidGt(82,50000))&& network === 'PS.eu'&& level === '9'&& effmu === 'A'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 50000, color: "blue" };
   };
 if((BidGt(82,80000))&& network === 'PS.eu'&& level === '9'&& effmu === 'A'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 80000, color: "blue" };
@@ -6021,12 +5637,6 @@ if((BidGt(27,15000))&& network === 'PS.eu'&& level === '6'&& effmu === 'B'&& isN
 if((FromToGt(67,79,500000))&& network === 'GG'&& level === '4'&& effmu === 'B'&& isNormal&& isKo) {
     return { valid: true, rules: true, guarantee: 500000, color: "blue" };
   };
-if((FromToGt(50,66,250000))&& network === 'GG'&& level === '4'&& effmu === 'B'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 250000, color: "blue" };
-  };
-if((FromToGt(16,24,12500))&& network === 'GG'&& level === '4'&& effmu === 'B'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 12500, color: "blue" };
-  };
 if((FromToGt(50,66,500000))&& network === 'GG'&& level === '4'&& effmu === 'B'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 500000, color: "blue" };
   };
@@ -6039,9 +5649,6 @@ if((BidGt(44,isOffpeak && isGetTournaments ? 0 : 35000))&& network === 'Party'&&
 if((BidGt(44,isOffpeak && isGetTournaments ? 0 : 35000))&& network === 'Party'&& level === '8'&& effmu === 'A'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 35000, color: "blue" };
   };
-if((FromToGt(16,24,20000))&& network === 'GG'&& level === '4'&& effmu === 'B'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 20000, color: "blue" };
-  };
 if((BidGt(50,75000))&& network === 'PS.es'&& level === '5'&& effmu === 'A'&& isNormal&& isKo) {
     return { valid: true, rules: true, guarantee: 75000, color: "blue" };
   };
@@ -6051,71 +5658,14 @@ if((BidGt(30,10000))&& network === 'PS.es'&& level === '5'&& effmu === 'A'&& isN
 if((FromToGt(67,79,300000))&& network === 'GG'&& level === '5'&& effmu === 'B'&& isNormal&& isKo) {
     return { valid: true, rules: true, guarantee: 300000, color: "blue" };
   };
-if((FromToGt(50,66,150000))&& network === 'GG'&& level === '5'&& effmu === 'B'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 150000, color: "blue" };
-  };
 if((FromToGt(67,79,500000))&& network === 'GG'&& level === '3'&& effmu === 'A'&& isNormal&& isKo) {
     return { valid: true, rules: true, guarantee: 500000, color: "blue" };
-  };
-if((FromToGt(50,66,250000))&& network === 'GG'&& level === '3'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 250000, color: "blue" };
-  };
-if((FromToGt(16,24,12500))&& network === 'GG'&& level === '3'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 12500, color: "blue" };
-  };
-if((FromToGt(4.5,7.5,7500))&& network === 'GG'&& level === '1'&& effmu === 'B'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 7500, color: "blue" };
-  };
-if((BidGt(70,120000))&& network === 'WNMX'&& level === '6'&& effmu === 'B'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 120000, color: "blue" };
-  };
-if((BidGt(40,20000))&& network === 'WNMX'&& level === '6'&& effmu === 'B'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 20000, color: "blue" };
-  };
-if((FromToGt(256,375,200000))&& network === 'GG'&& level === '12'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 200000, color: "blue" };
-  };
-if((FromToGt(121,150,30000))&& network === 'GG'&& level === '12'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 30000, color: "blue" };
-  };
-if((FromToGt(121,150,40000))&& network === 'GG'&& level === '11'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 40000, color: "blue" };
-  };
-if((FromToGt(80,120,20000))&& network === 'GG'&& level === '11'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 20000, color: "blue" };
-  };
-if((FromToGt(256,375,400000))&& network === 'GG'&& level === '11'&& effmu === 'B'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 400000, color: "blue" };
-  };
-if((FromToGt(121,150,125000))&& network === 'GG'&& level === '11'&& effmu === 'B'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 125000, color: "blue" };
-  };
-if((FromToGt(67,79,20000))&& network === 'GG'&& level === '11'&& effmu === 'B'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 20000, color: "blue" };
   };
 if((FromToGt(256,375,600000))&& network === 'GG'&& level === '11'&& effmu === 'B'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 600000, color: "blue" };
   };
-if((FromToGt(67,79,45000))&& network === 'GG'&& level === '11'&& effmu === 'B'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 45000, color: "blue" };
-  };
-if((FromToGt(256,375,400000))&& network === 'GG'&& level === '10'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 400000, color: "blue" };
-  };
-if((FromToGt(121,150,125000))&& network === 'GG'&& level === '10'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 125000, color: "blue" };
-  };
-if((FromToGt(80,120,50000))&& network === 'GG'&& level === '10'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 50000, color: "blue" };
-  };
-if((FromToGt(67,79,20000))&& network === 'GG'&& level === '10'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 20000, color: "blue" };
-  };
 if((FromToGt(256,375,600000))&& network === 'GG'&& level === '10'&& effmu === 'A'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 600000, color: "blue" };
-  };
-if((FromToGt(80,120,100000))&& network === 'GG'&& level === '10'&& effmu === 'A'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 100000, color: "blue" };
   };
 if((BidGt(530,250000))&& network === 'Party'&& level === '13'&& effmu === 'A'&& isNormal&& isKo) {
     return { valid: true, rules: true, guarantee: 250000, color: "blue" };
@@ -6417,9 +5967,6 @@ if((FromToGt(256,375,600000))&& network === 'WPN'&& level === '11'&& effmu === '
 if((FromToGt(151,255,300000))&& network === 'WPN'&& level === '11'&& effmu === 'A'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 300000, color: "blue" };
   };
-if((FromToGt(121,150,200000))&& network === 'WPN'&& level === '11'&& effmu === 'A'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 200000, color: "blue" };
-  };
 if((FromToGt(80,120,isOffpeak && isGetTournaments ? 0 : 100000))&& network === 'WPN'&& level === '11'&& effmu === 'A'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 100000, color: "blue" };
   };
@@ -6474,9 +6021,6 @@ if((FromToGt(67,79,300000))&& network === 'WPN'&& level === '6'&& effmu === 'B'&
 if((FromToGt(50,66,150000))&& network === 'WPN'&& level === '6'&& effmu === 'B'&& isNormal&& isKo) {
     return { valid: true, rules: true, guarantee: 150000, color: "blue" };
   };
-if((FromToGt(34,49,50000))&& network === 'WPN'&& level === '6'&& effmu === 'B'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 50000, color: "blue" };
-  };
 if((FromToGt(80,120,800000))&& network === 'WPN'&& level === '6'&& effmu === 'B'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 800000, color: "blue" };
   };
@@ -6485,12 +6029,6 @@ if((FromToGt(67,79,600000))&& network === 'WPN'&& level === '6'&& effmu === 'B'&
   };
 if((FromToGt(50,66,300000))&& network === 'WPN'&& level === '6'&& effmu === 'B'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 300000, color: "blue" };
-  };
-if((FromToGt(34,49,80000))&& network === 'WPN'&& level === '6'&& effmu === 'B'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 80000, color: "blue" };
-  };
-if((FromToGt(80,120,600000))&& network === 'WPN'&& level === '5'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 600000, color: "blue" };
   };
 if((FromToGt(67,79,450000))&& network === 'WPN'&& level === '5'&& effmu === 'A'&& isNormal&& isKo) {
     return { valid: true, rules: true, guarantee: 450000, color: "blue" };
@@ -6506,9 +6044,6 @@ if((FromToGt(25,33,20000))&& network === 'WPN'&& level === '5'&& effmu === 'A'&&
   };
 if((FromToGt(17,24,10000))&& network === 'WPN'&& level === '5'&& effmu === 'A'&& isNormal&& isKo) {
     return { valid: true, rules: true, guarantee: 10000, color: "blue" };
-  };
-if((FromToGt(80,120,1200000))&& network === 'WPN'&& level === '5'&& effmu === 'A'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 1200000, color: "blue" };
   };
 if((FromToGt(67,79,800000))&& network === 'WPN'&& level === '5'&& effmu === 'A'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 800000, color: "blue" };
@@ -6653,12 +6188,6 @@ if((FromToGt(7.7,8.4,8000))&& network === 'WPN'&& level === '3'&& effmu === 'B'&
   };
 if((FromToGt(5.6,7.6,4000))&& network === 'WPN'&& level === '3'&& effmu === 'B'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 4000, color: "blue" };
-  };
-if((FromToGt(25,33,60000))&& network === 'WPN'&& level === '2'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 60000, color: "blue" };
-  };
-if((FromToGt(16,24,40000))&& network === 'WPN'&& level === '2'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 40000, color: "blue" };
   };
 if((FromToGt(12,15,15000))&& network === 'WPN'&& level === '2'&& effmu === 'A'&& isNormal&& isKo) {
     return { valid: true, rules: true, guarantee: 15000, color: "blue" };
@@ -7578,9 +7107,6 @@ if((FromToGt(151,255,30000))&& network === 'GG'&& level === '15'&& effmu === 'A'
 if((FromToGt(121,150,10000))&& network === 'GG'&& level === '15'&& effmu === 'A'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 10000, color: "blue" };
   };
-if((FromToGt(256,375,200000))&& network === 'GG'&& level === '13'&& effmu === 'B'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 200000, color: "blue" };
-  };
 if((BidGt(109,150000))&& network === 'PS.eu'&& level === '8'&& effmu === 'C'&& isNormal&& isKo) {
     return { valid: true, rules: true, guarantee: 150000, color: "blue" };
   };
@@ -7595,9 +7121,6 @@ if((BidGt(109,250000))&& network === 'PS.eu'&& level === '8'&& effmu === 'C'&& i
   };
 if((BidGt(44,40000))&& network === 'PS.eu'&& level === '8'&& effmu === 'C'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 40000, color: "blue" };
-  };
-if((BidGt(215,750000))&& network === 'PS.eu'&& level === '9'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 750000, color: "blue" };
   };
 if((BidGt(162,200000))&& network === 'PS.eu'&& level === '9'&& effmu === 'C'&& isNormal&& isKo) {
     return { valid: true, rules: true, guarantee: 200000, color: "blue" };
@@ -7722,83 +7245,23 @@ if((BidGt(215,120000))&& network === 'PS.eu'&& level === '14'&& effmu === 'C'&& 
 if((BidGt(162,50000))&& network === 'PS.eu'&& level === '14'&& effmu === 'C'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 50000, color: "blue" };
   };
-if((FromToGt(151,255,500000))&& network === 'GG'&& level === '9'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 500000, color: "blue" };
-  };
-if((FromToGt(121,150,200000))&& network === 'GG'&& level === '9'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 200000, color: "blue" };
-  };
-if((FromToGt(67,79,50000))&& network === 'GG'&& level === '9'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 50000, color: "blue" };
-  };
 if((FromToGt(151,255,750000))&& network === 'GG'&& level === '9'&& effmu === 'C'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 750000, color: "blue" };
-  };
-if((FromToGt(67,79,75000))&& network === 'GG'&& level === '9'&& effmu === 'C'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 75000, color: "blue" };
   };
 if((FromToGt(151,255,500000))&& network === 'GG'&& level === '10'&& effmu === 'C'&& isNormal&& isKo) {
     return { valid: true, rules: true, guarantee: 500000, color: "blue" };
   };
-if((FromToGt(67,79,40000))&& network === 'GG'&& level === '10'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 40000, color: "blue" };
-  };
 if((FromToGt(151,255,750000))&& network === 'GG'&& level === '10'&& effmu === 'C'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 750000, color: "blue" };
   };
-if((FromToGt(67,79,65000))&& network === 'GG'&& level === '10'&& effmu === 'C'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 65000, color: "blue" };
-  };
-if((FromToGt(121,150,125000))&& network === 'GG'&& level === '11'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 125000, color: "blue" };
-  };
-if((FromToGt(256,375,400000))&& network === 'GG'&& level === '12'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 400000, color: "blue" };
-  };
-if((FromToGt(256,375,500000))&& network === 'GG'&& level === '12'&& effmu === 'C'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 500000, color: "blue" };
-  };
-if((FromToGt(376,575,400000))&& network === 'GG'&& level === '13'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 400000, color: "blue" };
-  };
-if((FromToGt(256,375,200000))&& network === 'GG'&& level === '13'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 200000, color: "blue" };
-  };
 if((FromToGt(376,575,750000))&& network === 'GG'&& level === '13'&& effmu === 'C'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 750000, color: "blue" };
-  };
-if((FromToGt(256,375,300000))&& network === 'GG'&& level === '13'&& effmu === 'C'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 300000, color: "blue" };
-  };
-if((FromToGt(751,1050,900000))&& network === 'GG'&& level === '14'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 900000, color: "blue" };
-  };
-if((FromToGt(576,750,600000))&& network === 'GG'&& level === '14'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 600000, color: "blue" };
-  };
-if((FromToGt(376,575,300000))&& network === 'GG'&& level === '14'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 300000, color: "blue" };
-  };
-if((FromToGt(256,375,150000))&& network === 'GG'&& level === '14'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 150000, color: "blue" };
-  };
-if((FromToGt(151,255,75000))&& network === 'GG'&& level === '14'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 75000, color: "blue" };
-  };
-if((FromToGt(121,150,35000))&& network === 'GG'&& level === '14'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 35000, color: "blue" };
   };
 if((FromToGt(751,1050,1200000))&& network === 'GG'&& level === '14'&& effmu === 'C'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 1200000, color: "blue" };
   };
 if((FromToGt(576,750,700000))&& network === 'GG'&& level === '14'&& effmu === 'C'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 700000, color: "blue" };
-  };
-if((FromToGt(376,575,400000))&& network === 'GG'&& level === '14'&& effmu === 'C'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 400000, color: "blue" };
-  };
-if((FromToGt(256,375,200000))&& network === 'GG'&& level === '14'&& effmu === 'C'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 200000, color: "blue" };
   };
 if((BidGt(109,100000))&& network === 'Party'&& level === '8'&& effmu === 'C'&& isNormal&& isKo) {
     return { valid: true, rules: true, guarantee: 100000, color: "blue" };
@@ -8565,39 +8028,6 @@ if((BidGt(215,80000))&& network === 'Chico'&& level === '14'&& effmu === 'C'&& i
 if((BidGt(160,isOffpeak && isGetTournaments ? 0 : 50000))&& network === 'Chico'&& level === '14'&& effmu === 'C'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 50000, color: "blue" };
   };
-if((BidGt(70,40000))&& network === 'WNMX'&& level === '8'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 40000, color: "blue" };
-  };
-if((BidGt(40,5000))&& network === 'WNMX'&& level === '8'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 5000, color: "blue" };
-  };
-if((BidGt(70,isOffpeak && isGetTournaments ? 0 : 80000))&& network === 'WNMX'&& level === '8'&& effmu === 'C'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 80000, color: "blue" };
-  };
-if((BidGt(50,isOffpeak && isGetTournaments ? 0 : 15000))&& network === 'WNMX'&& level === '8'&& effmu === 'C'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 15000, color: "blue" };
-  };
-if((BidGt(40,isOffpeak && isGetTournaments ? 0 : 10000))&& network === 'WNMX'&& level === '8'&& effmu === 'C'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 10000, color: "blue" };
-  };
-if((BidGt(200,250000))&& network === 'WNMX'&& level === '9'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 250000, color: "blue" };
-  };
-if((BidGt(200,350000))&& network === 'WNMX'&& level === '9'&& effmu === 'C'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 350000, color: "blue" };
-  };
-if((BidGt(250,200000))&& network === 'WNMX'&& level === '12'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 200000, color: "blue" };
-  };
-if((BidGt(200,125000))&& network === 'WNMX'&& level === '12'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 125000, color: "blue" };
-  };
-if((BidGt(250,250000))&& network === 'WNMX'&& level === '12'&& effmu === 'C'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 250000, color: "blue" };
-  };
-if((BidGt(200,150000))&& network === 'WNMX'&& level === '12'&& effmu === 'C'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 150000, color: "blue" };
-  };
 if((BidGt(500,300000))&& network === 'WNMX'&& level === '13'&& effmu === 'C'&& isNormal&& isKo) {
     return { valid: true, rules: true, guarantee: 300000, color: "blue" };
   };
@@ -9039,9 +8469,6 @@ if((FromToGt(67,79,300000))&& network === 'WPN'&& level === '6'&& effmu === 'C'&
 if((FromToGt(50,66,150000))&& network === 'WPN'&& level === '6'&& effmu === 'C'&& isNormal&& isKo) {
     return { valid: true, rules: true, guarantee: 150000, color: "blue" };
   };
-if((FromToGt(34,49,50000))&& network === 'WPN'&& level === '6'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 50000, color: "blue" };
-  };
 if((FromToGt(67,79,600000))&& network === 'WPN'&& level === '6'&& effmu === 'C'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 600000, color: "blue" };
   };
@@ -9077,9 +8504,6 @@ if((FromToGt(17,24,30000))&& network === 'WPN'&& level === '5'&& effmu === 'C'&&
   };
 if((FromToGt(50,66,400000))&& network === 'WPN'&& level === '4'&& effmu === 'C'&& isNormal&& isKo) {
     return { valid: true, rules: true, guarantee: 400000, color: "blue" };
-  };
-if((FromToGt(34,49,150000))&& network === 'WPN'&& level === '4'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 150000, color: "blue" };
   };
 if((FromToGt(25,33,50000))&& network === 'WPN'&& level === '4'&& effmu === 'C'&& isNormal&& isKo) {
     return { valid: true, rules: true, guarantee: 50000, color: "blue" };
@@ -9267,9 +8691,6 @@ if((BidGt(22,30000))&& network === 'PS.eu'&& level === '4'&& effmu === 'C'&& isN
 if((BidGt(16.5,20000))&& network === 'PS.eu'&& level === '4'&& effmu === 'C'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 20000, color: "blue" };
   };
-if((BidGt(33,50000))&& network === 'PS.eu'&& level === '3'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 50000, color: "blue" };
-  };
 if((BidGt(27,40000))&& network === 'PS.eu'&& level === '3'&& effmu === 'C'&& isNormal&& isKo) {
     return { valid: true, rules: true, guarantee: 40000, color: "blue" };
   };
@@ -9281,9 +8702,6 @@ if((BidGt(16.5,20000))&& network === 'PS.eu'&& level === '3'&& effmu === 'C'&& i
   };
 if((BidGt(11,10000))&& network === 'PS.eu'&& level === '3'&& effmu === 'C'&& isNormal&& isKo) {
     return { valid: true, rules: true, guarantee: 10000, color: "blue" };
-  };
-if((BidGt(33,100000))&& network === 'PS.eu'&& level === '3'&& effmu === 'C'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 100000, color: "blue" };
   };
 if((BidGt(27,70000))&& network === 'PS.eu'&& level === '3'&& effmu === 'C'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 70000, color: "blue" };
@@ -9375,35 +8793,11 @@ if((BidGt(5.5,40000))&& network === 'PS.eu'&& level === '0'&& effmu === 'C'&& is
 if((BidGt(4.4,8000))&& network === 'PS.eu'&& level === '0'&& effmu === 'C'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 8000, color: "blue" };
   };
-if((FromToGt(121,150,300000))&& network === 'GG'&& level === '7'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 300000, color: "blue" };
-  };
-if((FromToGt(80,120,250000))&& network === 'GG'&& level === '7'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 250000, color: "blue" };
-  };
-if((FromToGt(67,79,100000))&& network === 'GG'&& level === '7'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 100000, color: "blue" };
-  };
 if((FromToGt(80,120,400000))&& network === 'GG'&& level === '7'&& effmu === 'C'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 400000, color: "blue" };
   };
 if((FromToGt(67,79,175000))&& network === 'GG'&& level === '7'&& effmu === 'C'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 175000, color: "blue" };
-  };
-if((FromToGt(67,79,175000))&& network === 'GG'&& level === '6'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 175000, color: "blue" };
-  };
-if((FromToGt(50,66,100000))&& network === 'GG'&& level === '6'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 100000, color: "blue" };
-  };
-if((FromToGt(67,79,375000))&& network === 'GG'&& level === '6'&& effmu === 'C'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 375000, color: "blue" };
-  };
-if((FromToGt(50,66,175000))&& network === 'GG'&& level === '6'&& effmu === 'C'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 175000, color: "blue" };
-  };
-if((FromToGt(67,79,300000))&& network === 'GG'&& level === '5'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 300000, color: "blue" };
   };
 if((FromToGt(67,79,600000))&& network === 'GG'&& level === '5'&& effmu === 'C'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 600000, color: "blue" };
@@ -9411,77 +8805,8 @@ if((FromToGt(67,79,600000))&& network === 'GG'&& level === '5'&& effmu === 'C'&&
 if((FromToGt(50,66,300000))&& network === 'GG'&& level === '5'&& effmu === 'C'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 300000, color: "blue" };
   };
-if((FromToGt(67,79,500000))&& network === 'GG'&& level === '4'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 500000, color: "blue" };
-  };
-if((FromToGt(50,66,250000))&& network === 'GG'&& level === '4'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 250000, color: "blue" };
-  };
-if((FromToGt(16,24,12500))&& network === 'GG'&& level === '4'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 12500, color: "blue" };
-  };
-if((FromToGt(67,79,1000000))&& network === 'GG'&& level === '4'&& effmu === 'C'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 1000000, color: "blue" };
-  };
-if((FromToGt(50,66,500000))&& network === 'GG'&& level === '4'&& effmu === 'C'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 500000, color: "blue" };
-  };
-if((FromToGt(50,66,400000))&& network === 'GG'&& level === '3'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 400000, color: "blue" };
-  };
-if((FromToGt(16,24,30000))&& network === 'GG'&& level === '3'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 30000, color: "blue" };
-  };
-if((FromToGt(12,15,10000))&& network === 'GG'&& level === '3'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 10000, color: "blue" };
-  };
-if((FromToGt(50,66,750000))&& network === 'GG'&& level === '3'&& effmu === 'C'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 750000, color: "blue" };
-  };
-if((FromToGt(34,49,250000))&& network === 'GG'&& level === '3'&& effmu === 'C'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 250000, color: "blue" };
-  };
-if((FromToGt(16,24,40000))&& network === 'GG'&& level === '3'&& effmu === 'C'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 40000, color: "blue" };
-  };
-if((FromToGt(12,15,20000))&& network === 'GG'&& level === '3'&& effmu === 'C'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 20000, color: "blue" };
-  };
-if((FromToGt(25,33,100000))&& network === 'GG'&& level === '2'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 100000, color: "blue" };
-  };
-if((FromToGt(12,15,15000))&& network === 'GG'&& level === '2'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 15000, color: "blue" };
-  };
-if((FromToGt(8.8,11,6000))&& network === 'GG'&& level === '2'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 6000, color: "blue" };
-  };
-if((FromToGt(5.6,7.6,2000))&& network === 'GG'&& level === '2'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 2000, color: "blue" };
-  };
 if((FromToGt(25,33,200000))&& network === 'GG'&& level === '2'&& effmu === 'C'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 200000, color: "blue" };
-  };
-if((FromToGt(12,15,30000))&& network === 'GG'&& level === '2'&& effmu === 'C'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 30000, color: "blue" };
-  };
-if((FromToGt(8.8,11,15000))&& network === 'GG'&& level === '2'&& effmu === 'C'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 15000, color: "blue" };
-  };
-if((FromToGt(5.6,7.6,4000))&& network === 'GG'&& level === '2'&& effmu === 'C'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 4000, color: "blue" };
-  };
-if((FromToGt(8.8,11,25000))&& network === 'GG'&& level === '1'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 25000, color: "blue" };
-  };
-if((FromToGt(4.5,7.5,7500))&& network === 'GG'&& level === '1'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 7500, color: "blue" };
-  };
-if((FromToGt(8.8,11,40000))&& network === 'GG'&& level === '1'&& effmu === 'C'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 40000, color: "blue" };
-  };
-if((FromToGt(4.5,7.5,15000))&& network === 'GG'&& level === '1'&& effmu === 'C'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 15000, color: "blue" };
   };
 if((FromToGt(8.8,11,80000))&& network === 'GG'&& level === '0'&& effmu === 'C'&& isNormal&& isKo) {
     return { valid: true, rules: true, guarantee: 80000, color: "blue" };
@@ -9885,66 +9210,6 @@ if((BidGt(20,100000))&& network === 'PS.es'&& level === '2'&& effmu === 'C'&& is
 if((BidGt(10,20000))&& network === 'PS.es'&& level === '2'&& effmu === 'C'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 20000, color: "blue" };
   };
-if((BidGt(70,60000))&& network === 'WNMX'&& level === '7'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 60000, color: "blue" };
-  };
-if((BidGt(40,10000))&& network === 'WNMX'&& level === '7'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 10000, color: "blue" };
-  };
-if((BidGt(70,isOffpeak && isGetTournaments ? 0 : 100000))&& network === 'WNMX'&& level === '7'&& effmu === 'C'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 100000, color: "blue" };
-  };
-if((BidGt(40,isOffpeak && isGetTournaments ? 0 : 15000))&& network === 'WNMX'&& level === '7'&& effmu === 'C'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 15000, color: "blue" };
-  };
-if((BidGt(70,isOffpeak && isGetTournaments ? 0 : 80000))&& network === 'WNMX'&& level === '6'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 80000, color: "blue" };
-  };
-if((BidGt(40,isOffpeak && isGetTournaments ? 0 : 15000))&& network === 'WNMX'&& level === '6'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 15000, color: "blue" };
-  };
-if((BidGt(70,120000))&& network === 'WNMX'&& level === '6'&& effmu === 'C'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 120000, color: "blue" };
-  };
-if((BidGt(40,20000))&& network === 'WNMX'&& level === '6'&& effmu === 'C'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 20000, color: "blue" };
-  };
-if((BidGt(70,100000))&& network === 'WNMX'&& level === '5'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 100000, color: "blue" };
-  };
-if((BidGt(40,20000))&& network === 'WNMX'&& level === '5'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 20000, color: "blue" };
-  };
-if((BidGt(30,15000))&& network === 'WNMX'&& level === '5'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 15000, color: "blue" };
-  };
-if((BidGt(70,150000))&& network === 'WNMX'&& level === '5'&& effmu === 'C'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 150000, color: "blue" };
-  };
-if((BidGt(40,25000))&& network === 'WNMX'&& level === '5'&& effmu === 'C'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 25000, color: "blue" };
-  };
-if((BidGt(30,20000))&& network === 'WNMX'&& level === '5'&& effmu === 'C'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 20000, color: "blue" };
-  };
-if((BidGt(70,125000))&& network === 'WNMX'&& level === '4'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 125000, color: "blue" };
-  };
-if((BidGt(40,30000))&& network === 'WNMX'&& level === '4'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 30000, color: "blue" };
-  };
-if((BidGt(30,20000))&& network === 'WNMX'&& level === '4'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 20000, color: "blue" };
-  };
-if((BidGt(70,200000))&& network === 'WNMX'&& level === '4'&& effmu === 'C'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 200000, color: "blue" };
-  };
-if((BidGt(40,40000))&& network === 'WNMX'&& level === '4'&& effmu === 'C'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 40000, color: "blue" };
-  };
-if((BidGt(30,30000))&& network === 'WNMX'&& level === '4'&& effmu === 'C'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 30000, color: "blue" };
-  };
 if((BidGt(40,35000))&& network === 'WNMX'&& level === '3'&& effmu === 'C'&& isNormal&& isKo) {
     return { valid: true, rules: true, guarantee: 35000, color: "blue" };
   };
@@ -10098,78 +9363,6 @@ if((FromToGt(100,125,isOffpeak && isGetTournaments ? 0 : 25000))&& network === '
 if((FromToGt(100,125,isOffpeak && isGetTournaments ? 0 : 25000))&& network === 'WNMX'&& level === '12'&& effmu === 'A'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 25000, color: "blue" };
   };
-if((FromToGt(100,125,15000))&& network === 'WNMX'&& level === '12'&& effmu === 'B'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 15000, color: "blue" };
-  };
-if((FromToGt(100,125,isOffpeak && isGetTournaments ? 0 : 30000))&& network === 'WNMX'&& level === '12'&& effmu === 'B'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 30000, color: "blue" };
-  };
-if((FromToGt(100,125,isOffpeak && isGetTournaments ? 0 : 15000))&& network === 'WNMX'&& level === '12'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 15000, color: "blue" };
-  };
-if((FromToGt(100,125,isOffpeak && isGetTournaments ? 0 : 30000))&& network === 'WNMX'&& level === '12'&& effmu === 'C'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 30000, color: "blue" };
-  };
-if((FromToGt(100,125,80000))&& network === 'WNMX'&& level === '7'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 80000, color: "blue" };
-  };
-if((FromToGt(100,125,125000))&& network === 'WNMX'&& level === '7'&& effmu === 'A'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 125000, color: "blue" };
-  };
-if((FromToGt(100,125,150000))&& network === 'WNMX'&& level === '7'&& effmu === 'B'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 150000, color: "blue" };
-  };
-if((FromToGt(100,125,150000))&& network === 'WNMX'&& level === '7'&& effmu === 'C'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 150000, color: "blue" };
-  };
-if((BidGt(70,isOffpeak && isGetTournaments ? 0 : 60000))&& network === 'WNMX'&& level === '6'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 60000, color: "blue" };
-  };
-if((BidGt(40,isOffpeak && isGetTournaments ? 0 : 10000))&& network === 'WNMX'&& level === '6'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 10000, color: "blue" };
-  };
-if((BidGt(70,100000))&& network === 'WNMX'&& level === '6'&& effmu === 'A'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 100000, color: "blue" };
-  };
-if((BidGt(40,15000))&& network === 'WNMX'&& level === '6'&& effmu === 'A'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 15000, color: "blue" };
-  };
-if((FromToGt(100,125,125000))&& network === 'WNMX'&& level === '6'&& effmu === 'B'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 125000, color: "blue" };
-  };
-if((FromToGt(100,125,200000))&& network === 'WNMX'&& level === '6'&& effmu === 'B'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 200000, color: "blue" };
-  };
-if((FromToGt(100,125,125000))&& network === 'WNMX'&& level === '6'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 125000, color: "blue" };
-  };
-if((FromToGt(100,125,200000))&& network === 'WNMX'&& level === '6'&& effmu === 'C'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 200000, color: "blue" };
-  };
-if((FromToGt(100,125,125000))&& network === 'WNMX'&& level === '5'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 125000, color: "blue" };
-  };
-if((FromToGt(100,125,200000))&& network === 'WNMX'&& level === '5'&& effmu === 'A'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 200000, color: "blue" };
-  };
-if((FromToGt(100,125,150000))&& network === 'WNMX'&& level === '5'&& effmu === 'B'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 150000, color: "blue" };
-  };
-if((FromToGt(100,125,250000))&& network === 'WNMX'&& level === '5'&& effmu === 'B'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 250000, color: "blue" };
-  };
-if((FromToGt(100,125,150000))&& network === 'WNMX'&& level === '5'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 150000, color: "blue" };
-  };
-if((FromToGt(100,125,250000))&& network === 'WNMX'&& level === '5'&& effmu === 'C'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 250000, color: "blue" };
-  };
-if((FromToGt(100,125,150000))&& network === 'WNMX'&& level === '4'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 150000, color: "blue" };
-  };
-if((FromToGt(100,125,250000))&& network === 'WNMX'&& level === '4'&& effmu === 'A'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 250000, color: "blue" };
-  };
 if((BidGt(25,100000))&& network === 'IP'&& level === '1'&& effmu === 'C'&& isNormal&& isKo) {
     return { valid: true, rules: true, guarantee: 100000, color: "blue" };
   };
@@ -10235,24 +9428,6 @@ if((BidGt(25,15000))&& network === 'IP'&& level === '4'&& effmu === 'C'&& isNorm
   };
 if((BidGt(25,20000))&& network === 'IP'&& level === '4'&& effmu === 'C'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 20000, color: "blue" };
-  };
-if((BidGt(150,30000))&& network === 'WNMX'&& level === '12'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 30000, color: "blue" };
-  };
-if((BidGt(150,50000))&& network === 'WNMX'&& level === '12'&& effmu === 'A'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 50000, color: "blue" };
-  };
-if((BidGt(150,40000))&& network === 'WNMX'&& level === '12'&& effmu === 'B'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 40000, color: "blue" };
-  };
-if((BidGt(150,75000))&& network === 'WNMX'&& level === '12'&& effmu === 'B'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 75000, color: "blue" };
-  };
-if((BidGt(150,50000))&& network === 'WNMX'&& level === '12'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 50000, color: "blue" };
-  };
-if((BidGt(150,75000))&& network === 'WNMX'&& level === '12'&& effmu === 'C'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 75000, color: "blue" };
   };
 if((FromToGt(150,200,isOffpeak && isGetTournaments ? 0 : 35000))&& network === 'WNMX'&& level === '13'&& effmu === 'A'&& isNormal&& isKo) {
     return { valid: true, rules: true, guarantee: 35000, color: "blue" };
@@ -10337,252 +9512,6 @@ if((FromToGt(250,300,isOffpeak && isGetTournaments ? 0 : 35000))&& network === '
   };
 if((FromToGt(150,200,isOffpeak && isGetTournaments ? 0 : 25000))&& network === 'WNMX'&& level === '15'&& effmu === 'A'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 25000, color: "blue" };
-  };
-if((FromToGt(250,300,175000))&& network === 'WNMX'&& level === '11'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 175000, color: "blue" };
-  };
-if((BidGt(200,100000))&& network === 'WNMX'&& level === '11'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 100000, color: "blue" };
-  };
-if((BidGt(150,40000))&& network === 'WNMX'&& level === '11'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 40000, color: "blue" };
-  };
-if((FromToGt(100,125,isOffpeak && isGetTournaments ? 0 : 15000))&& network === 'WNMX'&& level === '11'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 15000, color: "blue" };
-  };
-if((FromToGt(250,300,225000))&& network === 'WNMX'&& level === '11'&& effmu === 'A'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 225000, color: "blue" };
-  };
-if((BidGt(200,150000))&& network === 'WNMX'&& level === '11'&& effmu === 'A'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 150000, color: "blue" };
-  };
-if((BidGt(150,75000))&& network === 'WNMX'&& level === '11'&& effmu === 'A'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 75000, color: "blue" };
-  };
-if((FromToGt(100,125,isOffpeak && isGetTournaments ? 0 : 30000))&& network === 'WNMX'&& level === '11'&& effmu === 'A'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 30000, color: "blue" };
-  };
-if((FromToGt(250,300,250000))&& network === 'WNMX'&& level === '11'&& effmu === 'B'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 250000, color: "blue" };
-  };
-if((BidGt(200,150000))&& network === 'WNMX'&& level === '11'&& effmu === 'B'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 150000, color: "blue" };
-  };
-if((BidGt(150,75000))&& network === 'WNMX'&& level === '11'&& effmu === 'B'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 75000, color: "blue" };
-  };
-if((FromToGt(100,125,isOffpeak && isGetTournaments ? 0 : 40000))&& network === 'WNMX'&& level === '11'&& effmu === 'B'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 40000, color: "blue" };
-  };
-if((FromToGt(250,300,312000))&& network === 'WNMX'&& level === '11'&& effmu === 'B'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 312000, color: "blue" };
-  };
-if((BidGt(200,200000))&& network === 'WNMX'&& level === '11'&& effmu === 'B'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 200000, color: "blue" };
-  };
-if((BidGt(150,100000))&& network === 'WNMX'&& level === '11'&& effmu === 'B'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 100000, color: "blue" };
-  };
-if((FromToGt(100,125,isOffpeak && isGetTournaments ? 0 : 80000))&& network === 'WNMX'&& level === '11'&& effmu === 'B'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 80000, color: "blue" };
-  };
-if((FromToGt(250,300,250000))&& network === 'WNMX'&& level === '11'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 250000, color: "blue" };
-  };
-if((BidGt(200,150000))&& network === 'WNMX'&& level === '11'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 150000, color: "blue" };
-  };
-if((BidGt(150,75000))&& network === 'WNMX'&& level === '11'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 75000, color: "blue" };
-  };
-if((FromToGt(100,125,isOffpeak && isGetTournaments ? 0 : 40000))&& network === 'WNMX'&& level === '11'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 40000, color: "blue" };
-  };
-if((FromToGt(250,300,312000))&& network === 'WNMX'&& level === '11'&& effmu === 'C'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 312000, color: "blue" };
-  };
-if((BidGt(200,200000))&& network === 'WNMX'&& level === '11'&& effmu === 'C'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 200000, color: "blue" };
-  };
-if((BidGt(150,100000))&& network === 'WNMX'&& level === '11'&& effmu === 'C'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 100000, color: "blue" };
-  };
-if((FromToGt(100,125,isOffpeak && isGetTournaments ? 0 : 80000))&& network === 'WNMX'&& level === '11'&& effmu === 'C'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 80000, color: "blue" };
-  };
-if((FromToGt(250,300,250000))&& network === 'WNMX'&& level === '10'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 250000, color: "blue" };
-  };
-if((BidGt(200,150000))&& network === 'WNMX'&& level === '10'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 150000, color: "blue" };
-  };
-if((BidGt(150,75000))&& network === 'WNMX'&& level === '10'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 75000, color: "blue" };
-  };
-if((FromToGt(100,125,40000))&& network === 'WNMX'&& level === '10'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 40000, color: "blue" };
-  };
-if((FromToGt(250,300,312000))&& network === 'WNMX'&& level === '10'&& effmu === 'A'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 312000, color: "blue" };
-  };
-if((BidGt(200,200000))&& network === 'WNMX'&& level === '10'&& effmu === 'A'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 200000, color: "blue" };
-  };
-if((BidGt(150,100000))&& network === 'WNMX'&& level === '10'&& effmu === 'A'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 100000, color: "blue" };
-  };
-if((FromToGt(100,125,80000))&& network === 'WNMX'&& level === '10'&& effmu === 'A'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 80000, color: "blue" };
-  };
-if((FromToGt(250,300,375000))&& network === 'WNMX'&& level === '10'&& effmu === 'B'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 375000, color: "blue" };
-  };
-if((BidGt(200,200000))&& network === 'WNMX'&& level === '10'&& effmu === 'B'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 200000, color: "blue" };
-  };
-if((BidGt(150,100000))&& network === 'WNMX'&& level === '10'&& effmu === 'B'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 100000, color: "blue" };
-  };
-if((FromToGt(100,125,isOffpeak && isGetTournaments ? 0 : 50000))&& network === 'WNMX'&& level === '10'&& effmu === 'B'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 50000, color: "blue" };
-  };
-if((FromToGt(250,300,500000))&& network === 'WNMX'&& level === '10'&& effmu === 'B'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 500000, color: "blue" };
-  };
-if((BidGt(200,300000))&& network === 'WNMX'&& level === '10'&& effmu === 'B'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 300000, color: "blue" };
-  };
-if((BidGt(150,150000))&& network === 'WNMX'&& level === '10'&& effmu === 'B'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 150000, color: "blue" };
-  };
-if((FromToGt(100,125,isOffpeak && isGetTournaments ? 0 : 100000))&& network === 'WNMX'&& level === '10'&& effmu === 'B'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 100000, color: "blue" };
-  };
-if((FromToGt(250,300,400000))&& network === 'WNMX'&& level === '10'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 400000, color: "blue" };
-  };
-if((BidGt(200,300000))&& network === 'WNMX'&& level === '10'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 300000, color: "blue" };
-  };
-if((BidGt(150,100000))&& network === 'WNMX'&& level === '10'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 100000, color: "blue" };
-  };
-if((FromToGt(100,125,isOffpeak && isGetTournaments ? 0 : 50000))&& network === 'WNMX'&& level === '10'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 50000, color: "blue" };
-  };
-if((FromToGt(250,300,600000))&& network === 'WNMX'&& level === '10'&& effmu === 'C'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 600000, color: "blue" };
-  };
-if((BidGt(200,400000))&& network === 'WNMX'&& level === '10'&& effmu === 'C'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 400000, color: "blue" };
-  };
-if((BidGt(150,150000))&& network === 'WNMX'&& level === '10'&& effmu === 'C'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 150000, color: "blue" };
-  };
-if((FromToGt(100,125,isOffpeak && isGetTournaments ? 0 : 100000))&& network === 'WNMX'&& level === '10'&& effmu === 'C'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 100000, color: "blue" };
-  };
-if((FromToGt(250,300,375000))&& network === 'WNMX'&& level === '9'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 375000, color: "blue" };
-  };
-if((BidGt(200,200000))&& network === 'WNMX'&& level === '9'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 200000, color: "blue" };
-  };
-if((BidGt(150,100000))&& network === 'WNMX'&& level === '9'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 100000, color: "blue" };
-  };
-if((FromToGt(100,125,isOffpeak && isGetTournaments ? 0 : 50000))&& network === 'WNMX'&& level === '9'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 50000, color: "blue" };
-  };
-if((FromToGt(250,300,500000))&& network === 'WNMX'&& level === '9'&& effmu === 'A'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 500000, color: "blue" };
-  };
-if((BidGt(200,300000))&& network === 'WNMX'&& level === '9'&& effmu === 'A'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 300000, color: "blue" };
-  };
-if((BidGt(150,150000))&& network === 'WNMX'&& level === '9'&& effmu === 'A'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 150000, color: "blue" };
-  };
-if((FromToGt(100,125,isOffpeak && isGetTournaments ? 0 : 100000))&& network === 'WNMX'&& level === '9'&& effmu === 'A'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 100000, color: "blue" };
-  };
-if((BidGt(200,250000))&& network === 'WNMX'&& level === '9'&& effmu === 'B'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 250000, color: "blue" };
-  };
-if((BidGt(150,150000))&& network === 'WNMX'&& level === '9'&& effmu === 'B'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 150000, color: "blue" };
-  };
-if((FromToGt(100,125,75000))&& network === 'WNMX'&& level === '9'&& effmu === 'B'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 75000, color: "blue" };
-  };
-if((BidGt(70,isOffpeak && isGetTournaments ? 0 : 20000))&& network === 'WNMX'&& level === '9'&& effmu === 'B'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 20000, color: "blue" };
-  };
-if((BidGt(150,200000))&& network === 'WNMX'&& level === '9'&& effmu === 'B'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 200000, color: "blue" };
-  };
-if((FromToGt(100,125,125000))&& network === 'WNMX'&& level === '9'&& effmu === 'B'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 125000, color: "blue" };
-  };
-if((BidGt(70,isOffpeak && isGetTournaments ? 0 : 50000))&& network === 'WNMX'&& level === '9'&& effmu === 'B'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 50000, color: "blue" };
-  };
-if((BidGt(150,150000))&& network === 'WNMX'&& level === '9'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 150000, color: "blue" };
-  };
-if((BidGt(100,75000))&& network === 'WNMX'&& level === '9'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 75000, color: "blue" };
-  };
-if((BidGt(70,isOffpeak && isGetTournaments ? 0 : 20000))&& network === 'WNMX'&& level === '9'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 20000, color: "blue" };
-  };
-if((BidGt(150,200000))&& network === 'WNMX'&& level === '9'&& effmu === 'C'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 200000, color: "blue" };
-  };
-if((BidGt(100,125000))&& network === 'WNMX'&& level === '9'&& effmu === 'C'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 125000, color: "blue" };
-  };
-if((BidGt(70,isOffpeak && isGetTournaments ? 0 : 50000))&& network === 'WNMX'&& level === '9'&& effmu === 'C'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 50000, color: "blue" };
-  };
-if((BidGt(150,150000))&& network === 'WNMX'&& level === '8'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 150000, color: "blue" };
-  };
-if((FromToGt(100,125,75000))&& network === 'WNMX'&& level === '8'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 75000, color: "blue" };
-  };
-if((BidGt(70,isOffpeak && isGetTournaments ? 0 : 20000))&& network === 'WNMX'&& level === '8'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 20000, color: "blue" };
-  };
-if((BidGt(150,200000))&& network === 'WNMX'&& level === '8'&& effmu === 'A'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 200000, color: "blue" };
-  };
-if((FromToGt(100,125,125000))&& network === 'WNMX'&& level === '8'&& effmu === 'A'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 125000, color: "blue" };
-  };
-if((BidGt(70,isOffpeak && isGetTournaments ? 0 : 50000))&& network === 'WNMX'&& level === '8'&& effmu === 'A'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 50000, color: "blue" };
-  };
-if((FromToGt(100,125,80000))&& network === 'WNMX'&& level === '8'&& effmu === 'B'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 80000, color: "blue" };
-  };
-if((BidGt(70,isOffpeak && isGetTournaments ? 0 : 40000))&& network === 'WNMX'&& level === '8'&& effmu === 'B'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 40000, color: "blue" };
-  };
-if((BidGt(40,isOffpeak && isGetTournaments ? 0 : 5000))&& network === 'WNMX'&& level === '8'&& effmu === 'B'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 5000, color: "blue" };
-  };
-if((FromToGt(100,125,125000))&& network === 'WNMX'&& level === '8'&& effmu === 'B'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 125000, color: "blue" };
-  };
-if((FromToGt(100,125,125000))&& network === 'WNMX'&& level === '8'&& effmu === 'C'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 125000, color: "blue" };
-  };
-if((FromToGt(100,125,100000))&& network === 'WNMX'&& level === '6'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 100000, color: "blue" };
-  };
-if((FromToGt(100,125,150000))&& network === 'WNMX'&& level === '6'&& effmu === 'A'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 150000, color: "blue" };
   };
 if((FromToGt(250,300,isOffpeak && isGetTournaments ? 0 : 25000))&& network === 'IP'&& level === '15'&& effmu === 'A'&& isNormal&& isKo) {
     return { valid: true, rules: true, guarantee: 25000, color: "blue" };
@@ -11055,36 +9984,6 @@ if((FromToGt(7.7,8.55,30000))&& network === 'GG'&& level === '0'&& effmu === 'C'
 if((FromToGt(7.7,8.55,50000))&& network === 'GG'&& level === '0'&& effmu === 'C'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 50000, color: "blue" };
   };
-if((FromToGt(7.7,8.55,4000))&& network === 'GG'&& level === '1'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 4000, color: "blue" };
-  };
-if((FromToGt(7.7,8.55,8000))&& network === 'GG'&& level === '1'&& effmu === 'A'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 8000, color: "blue" };
-  };
-if((FromToGt(7.7,8.55,15000))&& network === 'GG'&& level === '1'&& effmu === 'B'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 15000, color: "blue" };
-  };
-if((FromToGt(7.7,8.55,30000))&& network === 'GG'&& level === '1'&& effmu === 'B'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 30000, color: "blue" };
-  };
-if((FromToGt(7.7,8.55,15000))&& network === 'GG'&& level === '1'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 15000, color: "blue" };
-  };
-if((FromToGt(7.7,8.55,30000))&& network === 'GG'&& level === '1'&& effmu === 'C'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 30000, color: "blue" };
-  };
-if((FromToGt(7.7,8.55,4000))&& network === 'GG'&& level === '2'&& effmu === 'B'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 4000, color: "blue" };
-  };
-if((FromToGt(7.7,8.55,8000))&& network === 'GG'&& level === '2'&& effmu === 'B'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 8000, color: "blue" };
-  };
-if((FromToGt(7.7,8.55,4000))&& network === 'GG'&& level === '2'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 4000, color: "blue" };
-  };
-if((FromToGt(7.7,8.55,8000))&& network === 'GG'&& level === '2'&& effmu === 'C'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 8000, color: "blue" };
-  };
 if((FromToGt(67,79,75000))&& network === 'WPN'&& level === '7'&& effmu === 'A'&& isNormal&& isKo) {
     return { valid: true, rules: true, guarantee: 75000, color: "blue" };
   };
@@ -11124,9 +10023,6 @@ if((FromToGt(67,79,200000))&& network === 'WPN'&& level === '7'&& effmu === 'B'&
 if((FromToGt(50,66,100000))&& network === 'WPN'&& level === '7'&& effmu === 'B'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 100000, color: "blue" };
   };
-if((FromToGt(34,49,50000))&& network === 'WPN'&& level === '7'&& effmu === 'B'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 50000, color: "blue" };
-  };
 if((FromToGt(25,33,28000))&& network === 'WPN'&& level === '7'&& effmu === 'B'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 28000, color: "blue" };
   };
@@ -11136,9 +10032,6 @@ if((FromToGt(67,79,125000))&& network === 'WPN'&& level === '7'&& effmu === 'C'&
 if((FromToGt(50,66,75000))&& network === 'WPN'&& level === '7'&& effmu === 'C'&& isNormal&& isKo) {
     return { valid: true, rules: true, guarantee: 75000, color: "blue" };
   };
-if((FromToGt(34,49,25000))&& network === 'WPN'&& level === '7'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 25000, color: "blue" };
-  };
 if((FromToGt(25,33,10000))&& network === 'WPN'&& level === '7'&& effmu === 'C'&& isNormal&& isKo) {
     return { valid: true, rules: true, guarantee: 10000, color: "blue" };
   };
@@ -11147,9 +10040,6 @@ if((FromToGt(67,79,200000))&& network === 'WPN'&& level === '7'&& effmu === 'C'&
   };
 if((FromToGt(50,66,100000))&& network === 'WPN'&& level === '7'&& effmu === 'C'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 100000, color: "blue" };
-  };
-if((FromToGt(34,49,50000))&& network === 'WPN'&& level === '7'&& effmu === 'C'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 50000, color: "blue" };
   };
 if((FromToGt(25,33,isOffpeak && isGetTournaments ? 0 : 28000))&& network === 'WPN'&& level === '7'&& effmu === 'C'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 28000, color: "blue" };
@@ -11162,9 +10052,6 @@ if((FromToGt(67,79,60000))&& network === 'WPN'&& level === '8'&& effmu === 'A'&&
   };
 if((FromToGt(50,66,40000))&& network === 'WPN'&& level === '8'&& effmu === 'A'&& isNormal&& isKo) {
     return { valid: true, rules: true, guarantee: 40000, color: "blue" };
-  };
-if((FromToGt(34,49,10000))&& network === 'WPN'&& level === '8'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 10000, color: "blue" };
   };
 if((FromToGt(121,150,350000))&& network === 'WPN'&& level === '8'&& effmu === 'A'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 350000, color: "blue" };
@@ -11295,9 +10182,6 @@ if((FromToGt(80,120,isOffpeak && isGetTournaments ? 0 : 100000))&& network === '
 if((FromToGt(67,79,isOffpeak && isGetTournaments ? 0 : 60000))&& network === 'WPN'&& level === '10'&& effmu === 'A'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 60000, color: "blue" };
   };
-if((FromToGt(50,66,isOffpeak && isGetTournaments ? 0 : 50000))&& network === 'WPN'&& level === '10'&& effmu === 'A'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 50000, color: "blue" };
-  };
 if((FromToGt(121,150,200000))&& network === 'WPN'&& level === '10'&& effmu === 'B'&& isNormal&& isKo) {
     return { valid: true, rules: true, guarantee: 200000, color: "blue" };
   };
@@ -11379,6 +10263,9 @@ if((FromToGt(50,55,15000))&& network === 'PS.eu'&& level === '11'&& effmu === 'C
 if((FromToGt(50,55,30000))&& network === 'PS.eu'&& level === '11'&& effmu === 'C'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 30000, color: "blue" };
   };
+if((FromToGt(50,55,15000))&& network === 'PS.eu'&& level === '10'&& effmu === 'A'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 15000, color: "blue" };
+  };
 if((FromToGt(50,55,30000))&& network === 'PS.eu'&& level === '10'&& effmu === 'A'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 30000, color: "blue" };
   };
@@ -11393,6 +10280,9 @@ if((FromToGt(50,55,20000))&& network === 'PS.eu'&& level === '10'&& effmu === 'C
   };
 if((FromToGt(50,55,40000))&& network === 'PS.eu'&& level === '10'&& effmu === 'C'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 40000, color: "blue" };
+  };
+if((FromToGt(50,55,20000))&& network === 'PS.eu'&& level === '9'&& effmu === 'A'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 20000, color: "blue" };
   };
 if((FromToGt(50,55,40000))&& network === 'PS.eu'&& level === '9'&& effmu === 'A'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 40000, color: "blue" };
@@ -11478,6 +10368,9 @@ if((BidGt(25,100000))&& network === 'PS.eu'&& level === '1'&& effmu === 'C'&& is
 if((BidGt(25,200000))&& network === 'PS.eu'&& level === '1'&& effmu === 'C'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 200000, color: "blue" };
   };
+if((BidGt(25,30000))&& network === 'PS.eu'&& level === '2'&& effmu === 'A'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 30000, color: "blue" };
+  };
 if((BidGt(25,40000))&& network === 'PS.eu'&& level === '2'&& effmu === 'A'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 40000, color: "blue" };
   };
@@ -11541,30 +10434,6 @@ if((BidGt(25,8000))&& network === 'PS.eu'&& level === '5'&& effmu === 'C'&& isNo
 if((BidGt(25,20000))&& network === 'PS.eu'&& level === '5'&& effmu === 'C'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 20000, color: "blue" };
   };
-if((FromToGt(50,60,75000))&& network === 'WNMX'&& level === '2'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 75000, color: "blue" };
-  };
-if((FromToGt(50,60,125000))&& network === 'WNMX'&& level === '2'&& effmu === 'A'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 125000, color: "blue" };
-  };
-if((FromToGt(50,60,40000))&& network === 'WNMX'&& level === '3'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 40000, color: "blue" };
-  };
-if((FromToGt(50,60,60000))&& network === 'WNMX'&& level === '3'&& effmu === 'A'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 60000, color: "blue" };
-  };
-if((FromToGt(50,60,75000))&& network === 'WNMX'&& level === '3'&& effmu === 'B'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 75000, color: "blue" };
-  };
-if((FromToGt(50,60,125000))&& network === 'WNMX'&& level === '3'&& effmu === 'B'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 125000, color: "blue" };
-  };
-if((FromToGt(50,60,75000))&& network === 'WNMX'&& level === '3'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 75000, color: "blue" };
-  };
-if((FromToGt(50,60,125000))&& network === 'WNMX'&& level === '3'&& effmu === 'C'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 125000, color: "blue" };
-  };
 if((BidGt(25,40000))&& network === 'WNMX'&& level === '1'&& effmu === 'A'&& isNormal&& isKo) {
     return { valid: true, rules: true, guarantee: 40000, color: "blue" };
   };
@@ -11601,12 +10470,6 @@ if((BidGt(25,40000))&& network === 'WNMX'&& level === '2'&& effmu === 'C'&& isNo
 if((BidGt(25,60000))&& network === 'WNMX'&& level === '2'&& effmu === 'C'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 60000, color: "blue" };
   };
-if((BidGt(25,15000))&& network === 'WNMX'&& level === '3'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 15000, color: "blue" };
-  };
-if((BidGt(25,20000))&& network === 'WNMX'&& level === '3'&& effmu === 'A'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 20000, color: "blue" };
-  };
 if((BidGt(25,20000))&& network === 'WNMX'&& level === '3'&& effmu === 'B'&& isNormal&& isKo) {
     return { valid: true, rules: true, guarantee: 20000, color: "blue" };
   };
@@ -11618,33 +10481,6 @@ if((BidGt(25,20000))&& network === 'WNMX'&& level === '3'&& effmu === 'C'&& isNo
   };
 if((BidGt(25,30000))&& network === 'WNMX'&& level === '3'&& effmu === 'C'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 30000, color: "blue" };
-  };
-if((BidGt(25,15000))&& network === 'WNMX'&& level === '4'&& effmu === 'B'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 15000, color: "blue" };
-  };
-if((BidGt(25,20000))&& network === 'WNMX'&& level === '4'&& effmu === 'B'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 20000, color: "blue" };
-  };
-if((BidGt(25,15000))&& network === 'WNMX'&& level === '4'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 15000, color: "blue" };
-  };
-if((BidGt(25,20000))&& network === 'WNMX'&& level === '4'&& effmu === 'C'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 20000, color: "blue" };
-  };
-if((FromToGt(50,60,isOffpeak && isGetTournaments ? 0 : 10000))&& network === 'WNMX'&& level === '7'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 10000, color: "blue" };
-  };
-if((FromToGt(50,60,isOffpeak && isGetTournaments ? 0 : 15000))&& network === 'WNMX'&& level === '7'&& effmu === 'A'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 15000, color: "blue" };
-  };
-if((FromToGt(50,60,isOffpeak && isGetTournaments ? 0 : 10000))&& network === 'WNMX'&& level === '8'&& effmu === 'B'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 10000, color: "blue" };
-  };
-if((FromToGt(50,60,isOffpeak && isGetTournaments ? 0 : 15000))&& network === 'WNMX'&& level === '8'&& effmu === 'B'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 15000, color: "blue" };
-  };
-if((FromToGt(50,60,10000))&& network === 'WNMX'&& level === '8'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 10000, color: "blue" };
   };
 if((BidGt(25,40000))&& network === 'IP'&& level === '1'&& effmu === 'A'&& isNormal&& isKo) {
     return { valid: true, rules: true, guarantee: 40000, color: "blue" };
@@ -12447,52 +11283,10 @@ if((FromToGt(3,4.4,8000))&& network === 'GG'&& level === 'B'&& effmu === 'C'&& i
 if((FromToGt(2.2,2.75,4000))&& network === 'GG'&& level === 'B'&& effmu === 'C'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 4000, color: "blue" };
   };
-if((FromToGt(50,60,50000))&& network === 'WNMX'&& level === '4'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 50000, color: "blue" };
-  };
-if((FromToGt(50,60,100000))&& network === 'WNMX'&& level === '4'&& effmu === 'A'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 100000, color: "blue" };
-  };
-if((FromToGt(50,60,60000))&& network === 'WNMX'&& level === '4'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 60000, color: "blue" };
-  };
-if((FromToGt(50,60,100000))&& network === 'WNMX'&& level === '4'&& effmu === 'C'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 100000, color: "blue" };
-  };
-if((FromToGt(50,60,50000))&& network === 'WNMX'&& level === '5'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 50000, color: "blue" };
-  };
-if((FromToGt(50,60,100000))&& network === 'WNMX'&& level === '5'&& effmu === 'B'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 100000, color: "blue" };
-  };
-if((FromToGt(50,60,50000))&& network === 'WNMX'&& level === '5'&& effmu === 'B'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 50000, color: "blue" };
-  };
-if((FromToGt(50,60,80000))&& network === 'WNMX'&& level === '5'&& effmu === 'A'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 80000, color: "blue" };
-  };
-if((FromToGt(50,60,40000))&& network === 'WNMX'&& level === '5'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 40000, color: "blue" };
-  };
-if((FromToGt(50,60,80000))&& network === 'WNMX'&& level === '6'&& effmu === 'C'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 80000, color: "blue" };
-  };
-if((FromToGt(50,60,80000))&& network === 'WNMX'&& level === '6'&& effmu === 'B'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 80000, color: "blue" };
-  };
-if((FromToGt(50,60,40000))&& network === 'WNMX'&& level === '6'&& effmu === 'B'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 40000, color: "blue" };
-  };
-if((FromToGt(67,79,75000))&& network === 'GG'&& level === '8'&& effmu === 'B'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 75000, color: "blue" };
-  };
 if((FromToGt(151,255,300000))&& network === 'WPN'&& level === '11'&& effmu === 'C'&& isNormal&& isKo) {
     return { valid: true, rules: true, guarantee: 300000, color: "blue" };
   };
 if((FromToGt(151,255,400000))&& network === 'WPN'&& level === '11'&& effmu === 'C'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 400000, color: "blue" };
-  };
-if((FromToGt(151,255,400000))&& network === 'GG'&& level === '11'&& effmu === 'C'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 400000, color: "blue" };
   };
 if((BidGt(215,300000))&& network === 'PS.eu'&& level === '11'&& effmu === 'C'&& isNormal&& isKo) {
@@ -12507,9 +11301,6 @@ if((BidGt(215,300000))&& network === 'PS.eu'&& level === '11'&& effmu === 'B'&& 
 if((BidGt(215,400000))&& network === 'PS.eu'&& level === '11'&& effmu === 'B'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 400000, color: "blue" };
   };
-if((FromToGt(151,255,300000))&& network === 'GG'&& level === '11'&& effmu === 'B'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 300000, color: "blue" };
-  };
 if((FromToGt(151,255,400000))&& network === 'GG'&& level === '11'&& effmu === 'B'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 400000, color: "blue" };
   };
@@ -12519,11 +11310,11 @@ if((FromToGt(151,255,300000))&& network === 'WPN'&& level === '11'&& effmu === '
 if((FromToGt(151,255,400000))&& network === 'WPN'&& level === '11'&& effmu === 'B'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 400000, color: "blue" };
   };
+if((BidGt(215,300000))&& network === 'PS.eu'&& level === '10'&& effmu === 'A'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 300000, color: "blue" };
+  };
 if((BidGt(215,400000))&& network === 'PS.eu'&& level === '10'&& effmu === 'A'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 400000, color: "blue" };
-  };
-if((FromToGt(151,255,300000))&& network === 'GG'&& level === '10'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 300000, color: "blue" };
   };
 if((FromToGt(151,255,400000))&& network === 'GG'&& level === '10'&& effmu === 'A'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 400000, color: "blue" };
@@ -12534,22 +11325,10 @@ if((FromToGt(151,255,300000))&& network === 'WPN'&& level === '10'&& effmu === '
 if((FromToGt(151,255,400000))&& network === 'WPN'&& level === '10'&& effmu === 'A'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 400000, color: "blue" };
   };
+if((BidGt(215,200000))&& network === 'PS.eu'&& level === '11'&& effmu === 'A'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 200000, color: "blue" };
+  };
 if((BidGt(215,300000))&& network === 'PS.eu'&& level === '11'&& effmu === 'A'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 300000, color: "blue" };
-  };
-if((FromToGt(151,255,200000))&& network === 'GG'&& level === '11'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 200000, color: "blue" };
-  };
-if((FromToGt(151,255,300000))&& network === 'GG'&& level === '11'&& effmu === 'A'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 300000, color: "blue" };
-  };
-if((FromToGt(151,255,300000))&& network === 'GG'&& level === '12'&& effmu === 'C'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 300000, color: "blue" };
-  };
-if((FromToGt(151,255,200000))&& network === 'GG'&& level === '12'&& effmu === 'B'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 200000, color: "blue" };
-  };
-if((FromToGt(151,255,300000))&& network === 'GG'&& level === '12'&& effmu === 'B'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 300000, color: "blue" };
   };
 if((BidGt(320,400000))&& network === 'PS.eu'&& level === '12'&& effmu === 'B'&& isNormal&& isKo) {
@@ -12564,53 +11343,8 @@ if((FromToGt(256,375,400000))&& network === 'GG'&& level === '12'&& effmu === 'B
 if((FromToGt(256,375,500000))&& network === 'GG'&& level === '12'&& effmu === 'B'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 500000, color: "blue" };
   };
-if((FromToGt(151,255,100000))&& network === 'GG'&& level === '12'&& effmu === 'A'&& isNormal&& isKo) {
+if((BidGt(215,100000))&& network === 'PS.eu'&& level === '12'&& effmu === 'A'&& isNormal&& isKo) {
     return { valid: true, rules: true, guarantee: 100000, color: "blue" };
-  };
-if((FromToGt(50,60,60000))&& network === 'WNMX'&& level === '4'&& effmu === 'B'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 60000, color: "blue" };
-  };
-if((FromToGt(50,60,100000))&& network === 'WNMX'&& level === '4'&& effmu === 'B'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 100000, color: "blue" };
-  };
-if((FromToGt(50,66,20000))&& network === 'GG'&& level === '9'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 20000, color: "blue" };
-  };
-if((FromToGt(50,66,40000))&& network === 'GG'&& level === '9'&& effmu === 'A'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 40000, color: "blue" };
-  };
-if((FromToGt(56,79,10000))&& network === 'GG'&& level === '11'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 10000, color: "blue" };
-  };
-if((FromToGt(56,79,30000))&& network === 'GG'&& level === '11'&& effmu === 'A'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 30000, color: "blue" };
-  };
-if((FromToGt(56,79,10000))&& network === 'GG'&& level === '12'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 10000, color: "blue" };
-  };
-if((FromToGt(56,79,30000))&& network === 'GG'&& level === '12'&& effmu === 'C'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 30000, color: "blue" };
-  };
-if((FromToGt(56,79,10000))&& network === 'GG'&& level === '12'&& effmu === 'B'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 10000, color: "blue" };
-  };
-if((FromToGt(56,79,30000))&& network === 'GG'&& level === '12'&& effmu === 'B'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 30000, color: "blue" };
-  };
-if((FromToGt(80,120,30000))&& network === 'GG'&& level === '12'&& effmu === 'A'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 30000, color: "blue" };
-  };
-if((FromToGt(56,79,10000))&& network === 'GG'&& level === '12'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 10000, color: "blue" };
-  };
-if((FromToGt(56,79,25000))&& network === 'GG'&& level === '12'&& effmu === 'A'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 25000, color: "blue" };
-  };
-if((FromToGt(56,79,10000))&& network === 'GG'&& level === '13'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 10000, color: "blue" };
-  };
-if((FromToGt(56,79,25000))&& network === 'GG'&& level === '13'&& effmu === 'C'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 25000, color: "blue" };
   };
 if((FromToGt(66,79,30000))&& network === 'WPN'&& level === '12'&& effmu === 'A'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 30000, color: "blue" };
@@ -12630,20 +11364,11 @@ if((FromToGt(80,120,150000))&& network === 'WPN'&& level === '7'&& effmu === 'A'
 if((FromToGt(80,120,250000))&& network === 'WPN'&& level === '7'&& effmu === 'A'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 250000, color: "blue" };
   };
-if((FromToGt(80,120,250000))&& network === 'GG'&& level === '7'&& effmu === 'A'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 250000, color: "blue" };
-  };
-if((FromToGt(80,120,150000))&& network === 'GG'&& level === '7'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 150000, color: "blue" };
-  };
 if((BidGt(109,150000))&& network === 'PS.eu'&& level === '7'&& effmu === 'A'&& isNormal&& isKo) {
     return { valid: true, rules: true, guarantee: 150000, color: "blue" };
   };
 if((BidGt(109,250000))&& network === 'PS.eu'&& level === '7'&& effmu === 'A'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 250000, color: "blue" };
-  };
-if((FromToGt(80,120,150000))&& network === 'GG'&& level === '8'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 150000, color: "blue" };
   };
 if((FromToGt(80,120,250000))&& network === 'GG'&& level === '8'&& effmu === 'C'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 250000, color: "blue" };
@@ -12657,12 +11382,6 @@ if((FromToGt(80,120,150000))&& network === 'WPN'&& level === '8'&& effmu === 'B'
 if((FromToGt(80,120,250000))&& network === 'WPN'&& level === '8'&& effmu === 'B'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 250000, color: "blue" };
   };
-if((FromToGt(80,120,250000))&& network === 'GG'&& level === '8'&& effmu === 'B'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 250000, color: "blue" };
-  };
-if((FromToGt(80,120,150000))&& network === 'GG'&& level === '8'&& effmu === 'B'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 150000, color: "blue" };
-  };
 if((BidGt(109,150000))&& network === 'PS.eu'&& level === '8'&& effmu === 'B'&& isNormal&& isKo) {
     return { valid: true, rules: true, guarantee: 150000, color: "blue" };
   };
@@ -12672,7 +11391,7 @@ if((BidGt(109,250000))&& network === 'PS.eu'&& level === '8'&& effmu === 'B'&& i
 if((BidGt(109,200000))&& network === 'PS.eu'&& level === '8'&& effmu === 'A'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 200000, color: "blue" };
   };
-if((FromToGt(80,120,125000))&& network === 'GG'&& level === '8'&& effmu === 'A'&& isNormal&& isKo) {
+if((BidGt(109,125000))&& network === 'PS.eu'&& level === '8'&& effmu === 'A'&& isNormal&& isKo) {
     return { valid: true, rules: true, guarantee: 125000, color: "blue" };
   };
 if((FromToGt(80,120,200000))&& network === 'GG'&& level === '8'&& effmu === 'A'&& isNormal&& !isKo) {
@@ -12693,9 +11412,6 @@ if((FromToGt(80,120,200000))&& network === 'WPN'&& level === '9'&& effmu === 'C'
 if((FromToGt(80,120,200000))&& network === 'GG'&& level === '9'&& effmu === 'C'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 200000, color: "blue" };
   };
-if((FromToGt(80,120,125000))&& network === 'GG'&& level === '9'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 125000, color: "blue" };
-  };
 if((BidGt(109,125000))&& network === 'PS.eu'&& level === '9'&& effmu === 'C'&& isNormal&& isKo) {
     return { valid: true, rules: true, guarantee: 125000, color: "blue" };
   };
@@ -12708,41 +11424,11 @@ if((BidGt(109,200000))&& network === 'PS.eu'&& level === '9'&& effmu === 'B'&& i
 if((BidGt(109,125000))&& network === 'PS.eu'&& level === '9'&& effmu === 'B'&& isNormal&& isKo) {
     return { valid: true, rules: true, guarantee: 125000, color: "blue" };
   };
-if((FromToGt(80,120,200000))&& network === 'GG'&& level === '9'&& effmu === 'B'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 200000, color: "blue" };
-  };
-if((FromToGt(80,120,125000))&& network === 'GG'&& level === '9'&& effmu === 'B'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 125000, color: "blue" };
-  };
 if((FromToGt(80,120,200000))&& network === 'WPN'&& level === '9'&& effmu === 'B'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 200000, color: "blue" };
   };
 if((FromToGt(80,120,125000))&& network === 'WPN'&& level === '9'&& effmu === 'B'&& isNormal&& isKo) {
     return { valid: true, rules: true, guarantee: 125000, color: "blue" };
-  };
-if((FromToGt(50,66,30000))&& network === 'GG'&& level === '8'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 30000, color: "blue" };
-  };
-if((FromToGt(50,66,40000))&& network === 'GG'&& level === '7'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 40000, color: "blue" };
-  };
-if((FromToGt(34,49,15000))&& network === 'GG'&& level === '9'&& effmu === 'B'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 15000, color: "blue" };
-  };
-if((FromToGt(34,49,30000))&& network === 'GG'&& level === '9'&& effmu === 'B'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 30000, color: "blue" };
-  };
-if((FromToGt(34,49,15000))&& network === 'GG'&& level === '9'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 15000, color: "blue" };
-  };
-if((FromToGt(34,49,30000))&& network === 'GG'&& level === '9'&& effmu === 'C'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 30000, color: "blue" };
-  };
-if((FromToGt(34,49,15000))&& network === 'GG'&& level === '8'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 15000, color: "blue" };
-  };
-if((FromToGt(34,49,30000))&& network === 'GG'&& level === '8'&& effmu === 'A'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 30000, color: "blue" };
   };
 if((FromToGt(23,33,10000))&& network === 'GG'&& level === '9'&& effmu === 'C'&& isNormal&& isKo) {
     return { valid: true, rules: true, guarantee: 10000, color: "blue" };
@@ -12774,9 +11460,6 @@ if((FromToGt(23,33,10000))&& network === 'GG'&& level === '8'&& effmu === 'C'&& 
 if((FromToGt(23,33,20000))&& network === 'GG'&& level === '8'&& effmu === 'C'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 20000, color: "blue" };
   };
-if((FromToGt(34,49,20000))&& network === 'GG'&& level === '7'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 20000, color: "blue" };
-  };
 if((FromToGt(23,33,10000))&& network === 'GG'&& level === '7'&& effmu === 'A'&& isNormal&& isKo) {
     return { valid: true, rules: true, guarantee: 10000, color: "blue" };
   };
@@ -12795,20 +11478,14 @@ if((FromToGt(23,33,10000))&& network === 'GG'&& level === '7'&& effmu === 'C'&& 
 if((FromToGt(23,33,20000))&& network === 'GG'&& level === '7'&& effmu === 'C'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 20000, color: "blue" };
   };
-if((FromToGt(25,33,6000))&& network === 'GG'&& level === '6'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 6000, color: "blue" };
-  };
-if((FromToGt(25,33,20000))&& network === 'GG'&& level === '6'&& effmu === 'A'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 20000, color: "blue" };
-  };
-if((FromToGt(80,120,100000))&& network === 'GG'&& level === '9'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 100000, color: "blue" };
-  };
 if((FromToGt(80,120,150000))&& network === 'GG'&& level === '9'&& effmu === 'A'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 150000, color: "blue" };
   };
 if((BidGt(109,150000))&& network === 'PS.eu'&& level === '9'&& effmu === 'A'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 150000, color: "blue" };
+  };
+if((BidGt(109,100000))&& network === 'PS.eu'&& level === '9'&& effmu === 'A'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 100000, color: "blue" };
   };
 if((FromToGt(80,120,100000))&& network === 'WPN'&& level === '9'&& effmu === 'A'&& isNormal&& isKo) {
     return { valid: true, rules: true, guarantee: 100000, color: "blue" };
@@ -12825,9 +11502,6 @@ if((FromToGt(80,120,150000))&& network === 'WPN'&& level === '10'&& effmu === 'C
 if((FromToGt(80,120,150000))&& network === 'GG'&& level === '10'&& effmu === 'C'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 150000, color: "blue" };
   };
-if((FromToGt(80,120,100000))&& network === 'GG'&& level === '10'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 100000, color: "blue" };
-  };
 if((BidGt(109,100000))&& network === 'PS.eu'&& level === '10'&& effmu === 'C'&& isNormal&& isKo) {
     return { valid: true, rules: true, guarantee: 100000, color: "blue" };
   };
@@ -12838,9 +11512,6 @@ if((BidGt(109,150000))&& network === 'PS.eu'&& level === '10'&& effmu === 'B'&& 
     return { valid: true, rules: true, guarantee: 150000, color: "blue" };
   };
 if((BidGt(109,100000))&& network === 'PS.eu'&& level === '10'&& effmu === 'B'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 100000, color: "blue" };
-  };
-if((FromToGt(80,120,100000))&& network === 'GG'&& level === '10'&& effmu === 'B'&& isNormal&& isKo) {
     return { valid: true, rules: true, guarantee: 100000, color: "blue" };
   };
 if((FromToGt(80,120,150000))&& network === 'GG'&& level === '10'&& effmu === 'B'&& isNormal&& !isKo) {
@@ -12888,66 +11559,6 @@ if((FromToGt(7.7,8.55,30000))&& network === 'WNMX'&& level === 'B'&& effmu === '
 if((FromToGt(7.7,8.55,30000))&& network === 'WPN'&& level === 'B'&& effmu === 'C'&& isNormal&& !isKo && (FromToGt(4.5,7.5,15000))&& network === 'WPN'&& level === 'B'&& effmu === 'C'&& isNormal&& !isKo && (FromToGt(3,4.4,5000))&& network === 'WPN'&& level === 'B'&& effmu === 'C'&& isNormal&& !isKo && (FromToGt(2.2,2.75,2000))&& network === 'WPN'&& level === 'B'&& effmu === 'C'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 30000, color: "blue" };
   };
-if((FromToGt(50,60,40000))&& network === 'WNMX'&& level === '6'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 40000, color: "blue" };
-  };
-if((FromToGt(50,60,20000))&& network === 'WNMX'&& level === '7'&& effmu === 'B'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 20000, color: "blue" };
-  };
-if((FromToGt(50,60,40000))&& network === 'WNMX'&& level === '7'&& effmu === 'B'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 40000, color: "blue" };
-  };
-if((FromToGt(50,60,20000))&& network === 'WNMX'&& level === '7'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 20000, color: "blue" };
-  };
-if((FromToGt(50,60,40000))&& network === 'WNMX'&& level === '7'&& effmu === 'C'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 40000, color: "blue" };
-  };
-if((FromToGt(50,60,20000))&& network === 'WNMX'&& level === '6'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 20000, color: "blue" };
-  };
-if((FromToGt(50,60,40000))&& network === 'WNMX'&& level === '6'&& effmu === 'A'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 40000, color: "blue" };
-  };
-if((FromToGt(100,125,75000))&& network === 'WNMX'&& level === '9'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 75000, color: "blue" };
-  };
-if((FromToGt(25,33,75000))&& network === 'GG'&& level === '2'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 75000, color: "blue" };
-  };
-if((FromToGt(16,24,50000))&& network === 'GG'&& level === '2'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 50000, color: "blue" };
-  };
-if((FromToGt(16,24,60000))&& network === 'GG'&& level === '2'&& effmu === 'A'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 60000, color: "blue" };
-  };
-if((FromToGt(25,33,100000))&& network === 'GG'&& level === '2'&& effmu === 'B'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 100000, color: "blue" };
-  };
-if((FromToGt(16,24,65000))&& network === 'GG'&& level === '2'&& effmu === 'B'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 65000, color: "blue" };
-  };
-if((FromToGt(16,24,65000))&& network === 'GG'&& level === '2'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 65000, color: "blue" };
-  };
-if((FromToGt(34,49,200000))&& network === 'GG'&& level === '3'&& effmu === 'A'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 200000, color: "blue" };
-  };
-if((FromToGt(34,49,200000))&& network === 'GG'&& level === '3'&& effmu === 'B'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 200000, color: "blue" };
-  };
-if((FromToGt(34,49,175000))&& network === 'GG'&& level === '3'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 175000, color: "blue" };
-  };
-if((FromToGt(34,49,200000))&& network === 'GG'&& level === '3'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 200000, color: "blue" };
-  };
-if((FromToGt(34,49,175000))&& network === 'GG'&& level === '4'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 175000, color: "blue" };
-  };
-if((FromToGt(25,33,100000))&& network === 'GG'&& level === '4'&& effmu === 'C'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 100000, color: "blue" };
-  };
 if((BidGt(55,125000))&& network === 'PS.eu'&& level === '7'&& effmu === 'B'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 125000, color: "blue" };
   };
@@ -12972,6 +11583,9 @@ if((BidGt(82,150000))&& network === 'PS.eu'&& level === '8'&& effmu === 'C'&& is
 if((FromToGt(50,55,125000))&& network === 'PS.eu'&& level === '8'&& effmu === 'C'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 125000, color: "blue" };
   };
+if((BidGt(215,500000))&& network === 'PS.eu'&& level === '9'&& effmu === 'A'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 500000, color: "blue" };
+  };
 if((BidGt(215,600000))&& network === 'PS.eu'&& level === '9'&& effmu === 'B'&& isNormal&& isKo) {
     return { valid: true, rules: true, guarantee: 600000, color: "blue" };
   };
@@ -12980,27 +11594,6 @@ if((BidGt(215,600000))&& network === 'PS.eu'&& level === '10'&& effmu === 'B'&& 
   };
 if((BidGt(215,600000))&& network === 'PS.eu'&& level === '10'&& effmu === 'C'&& isNormal&& isKo) {
     return { valid: true, rules: true, guarantee: 600000, color: "blue" };
-  };
-if((FromToGt(34,49,25000))&& network === 'GG'&& level === '10'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 25000, color: "blue" };
-  };
-if((FromToGt(34,49,25000))&& network === 'GG'&& level === '10'&& effmu === 'A'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 25000, color: "blue" };
-  };
-if((FromToGt(34,49,30000))&& network === 'GG'&& level === '10'&& effmu === 'B'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 30000, color: "blue" };
-  };
-if((FromToGt(34,49,30000))&& network === 'GG'&& level === '10'&& effmu === 'B'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 30000, color: "blue" };
-  };
-if((FromToGt(34,49,30000))&& network === 'GG'&& level === '10'&& effmu === 'C'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 30000, color: "blue" };
-  };
-if((FromToGt(34,49,30000))&& network === 'GG'&& level === '10'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 30000, color: "blue" };
-  };
-if((FromToGt(50,66,65000))&& network === 'GG'&& level === '10'&& effmu === 'C'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 65000, color: "blue" };
   };
 if((FromToGt(121,150,200000))&& network === 'GG'&& level === '10'&& effmu === 'C'&& isNormal&& isKo) {
     return { valid: true, rules: true, guarantee: 200000, color: "blue" };
@@ -13023,9 +11616,6 @@ if((FromToGt(576,1100,1500000))&& network === 'GG'&& level === '13'&& effmu === 
 if((FromToGt(80,120,125000))&& network === 'GG'&& level === '11'&& effmu === 'B'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 125000, color: "blue" };
   };
-if((FromToGt(80,120,125000))&& network === 'GG'&& level === '11'&& effmu === 'C'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 125000, color: "blue" };
-  };
 if((FromToGt(80,120,125000))&& network === 'WPN'&& level === '11'&& effmu === 'B'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 125000, color: "blue" };
   };
@@ -13035,38 +11625,11 @@ if((FromToGt(80,120,125000))&& network === 'WPN'&& level === '11'&& effmu === 'C
 if((FromToGt(80,120,100000))&& network === 'GG'&& level === '11'&& effmu === 'B'&& isNormal&& isKo) {
     return { valid: true, rules: true, guarantee: 100000, color: "blue" };
   };
-if((FromToGt(80,120,100000))&& network === 'GG'&& level === '11'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 100000, color: "blue" };
-  };
 if((BidGt(109,75000))&& network === 'PS.eu'&& level === '11'&& effmu === 'B'&& isNormal&& isKo) {
     return { valid: true, rules: true, guarantee: 75000, color: "blue" };
   };
-if((FromToGt(45,51,5000))&& network === 'GG'&& level === '11'&& effmu === 'B'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 5000, color: "blue" };
-  };
-if((FromToGt(45,51,15000))&& network === 'GG'&& level === '11'&& effmu === 'B'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 15000, color: "blue" };
-  };
-if((FromToGt(80,120,40000))&& network === 'GG'&& level === '12'&& effmu === 'B'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 40000, color: "blue" };
-  };
-if((FromToGt(80,120,25000))&& network === 'GG'&& level === '12'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 25000, color: "blue" };
-  };
 if((FromToGt(151,255,250000))&& network === 'WPN'&& level === '12'&& effmu === 'B'&& isNormal&& isKo) {
     return { valid: true, rules: true, guarantee: 250000, color: "blue" };
-  };
-if((FromToGt(45,55,7500))&& network === 'GG'&& level === '12'&& effmu === 'B'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 7500, color: "blue" };
-  };
-if((FromToGt(45,55,7500))&& network === 'GG'&& level === '12'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 7500, color: "blue" };
-  };
-if((FromToGt(45,55,15000))&& network === 'GG'&& level === '12'&& effmu === 'B'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 15000, color: "blue" };
-  };
-if((FromToGt(45,55,15000))&& network === 'GG'&& level === '12'&& effmu === 'C'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 15000, color: "blue" };
   };
 if((FromToGt(45,76,6000))&& network === 'Party'&& level === '12'&& effmu === 'A'&& isNormal&& isKo) {
     return { valid: true, rules: true, guarantee: 6000, color: "blue" };
@@ -13086,53 +11649,14 @@ if((FromToGt(45,76,7500))&& network === 'Party'&& level === '12'&& effmu === 'C'
 if((FromToGt(45,76,15000))&& network === 'Party'&& level === '12'&& effmu === 'C'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 15000, color: "blue" };
   };
-if((FromToGt(121,150,75000))&& network === 'GG'&& level === '12'&& effmu === 'B'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 75000, color: "blue" };
-  };
-if((FromToGt(121,150,100000))&& network === 'GG'&& level === '12'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 100000, color: "blue" };
-  };
 if((BidGt(162,25000))&& network === 'PS.eu'&& level === '13'&& effmu === 'B'&& isNormal&& isKo) {
     return { valid: true, rules: true, guarantee: 25000, color: "blue" };
   };
 if((BidGt(162,20000))&& network === 'PS.eu'&& level === '13'&& effmu === 'A'&& isNormal&& isKo) {
     return { valid: true, rules: true, guarantee: 20000, color: "blue" };
   };
-if((FromToGt(84,120,25000))&& network === 'GG'&& level === '13'&& effmu === 'B'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 25000, color: "blue" };
-  };
-if((FromToGt(80,120,25000))&& network === 'GG'&& level === '13'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 25000, color: "blue" };
-  };
-if((FromToGt(151,255,250000))&& network === 'WPN'&& level === '13'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 250000, color: "blue" };
-  };
-if((FromToGt(151,255,250000))&& network === 'WPN'&& level === '13'&& effmu === 'B'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 250000, color: "blue" };
-  };
-if((FromToGt(80,120,40000))&& network === 'GG'&& level === '13'&& effmu === 'C'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 40000, color: "blue" };
-  };
-if((FromToGt(84,120,40000))&& network === 'GG'&& level === '13'&& effmu === 'B'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 40000, color: "blue" };
-  };
-if((FromToGt(45,55,5000))&& network === 'GG'&& level === '13'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 5000, color: "blue" };
-  };
-if((FromToGt(45,55,5000))&& network === 'GG'&& level === '13'&& effmu === 'C'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 5000, color: "blue" };
-  };
-if((FromToGt(121,150,75000))&& network === 'GG'&& level === '13'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 75000, color: "blue" };
-  };
-if((FromToGt(151,255,125000))&& network === 'GG'&& level === '13'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 125000, color: "blue" };
-  };
 if((FromToGt(121,150,75000))&& network === 'GG'&& level === '13'&& effmu === 'B'&& isNormal&& isKo) {
     return { valid: true, rules: true, guarantee: 75000, color: "blue" };
-  };
-if((FromToGt(151,255,125000))&& network === 'GG'&& level === '13'&& effmu === 'B'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 125000, color: "blue" };
   };
 if((BidGt(109,10000))&& network === 'Party'&& level === '13'&& effmu === 'B'&& isNormal&& isKo) {
     return { valid: true, rules: true, guarantee: 10000, color: "blue" };
@@ -13140,41 +11664,11 @@ if((BidGt(109,10000))&& network === 'Party'&& level === '13'&& effmu === 'B'&& i
 if((BidGt(109,15000))&& network === 'Party'&& level === '13'&& effmu === 'C'&& isNormal&& isKo) {
     return { valid: true, rules: true, guarantee: 15000, color: "blue" };
   };
-if((FromToGt(151,255,125000))&& network === 'GG'&& level === '14'&& effmu === 'B'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 125000, color: "blue" };
-  };
-if((FromToGt(151,255,125000))&& network === 'GG'&& level === '14'&& effmu === 'C'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 125000, color: "blue" };
-  };
-if((FromToGt(151,255,250000))&& network === 'WPN'&& level === '14'&& effmu === 'B'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 250000, color: "blue" };
-  };
-if((FromToGt(121,150,70000))&& network === 'GG'&& level === '14'&& effmu === 'B'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 70000, color: "blue" };
-  };
-if((FromToGt(121,150,70000))&& network === 'GG'&& level === '14'&& effmu === 'C'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 70000, color: "blue" };
-  };
-if((FromToGt(151,255,300000))&& network === 'WPN'&& level === '14'&& effmu === 'C'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 300000, color: "blue" };
-  };
 if((BidGt(162,25000))&& network === 'PS.eu'&& level === '14'&& effmu === 'B'&& isNormal&& isKo) {
     return { valid: true, rules: true, guarantee: 25000, color: "blue" };
   };
 if((BidGt(162,25000))&& network === 'PS.eu'&& level === '14'&& effmu === 'C'&& isNormal&& isKo) {
     return { valid: true, rules: true, guarantee: 25000, color: "blue" };
-  };
-if((FromToGt(90,120,25000))&& network === 'GG'&& level === '14'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 25000, color: "blue" };
-  };
-if((FromToGt(56,89,5000))&& network === 'GG'&& level === '14'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 5000, color: "blue" };
-  };
-if((FromToGt(56,86,5000))&& network === 'GG'&& level === '14'&& effmu === 'C'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 5000, color: "blue" };
-  };
-if((FromToGt(87,120,30000))&& network === 'GG'&& level === '14'&& effmu === 'C'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 30000, color: "blue" };
   };
 if((BidGt(530,500000))&& network === 'PS.eu'&& level === '15'&& effmu === 'C'&& isNormal&& isKo) {
     return { valid: true, rules: true, guarantee: 500000, color: "blue" };
@@ -13194,26 +11688,11 @@ if((FromToGt(151,255,125000))&& network === 'GG'&& level === '15'&& effmu === 'C
 if((FromToGt(256,375,175000))&& network === 'GG'&& level === '15'&& effmu === 'C'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 175000, color: "blue" };
   };
-if((BidGt(215,50000))&& network === 'PS.eu'&& level === '15'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 50000, color: "blue" };
-  };
-if((BidGt(162,20000))&& network === 'PS.eu'&& level === '15'&& effmu === 'C'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 20000, color: "blue" };
-  };
 if((FromToGt(121,150,50000))&& network === 'GG'&& level === '15'&& effmu === 'C'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 50000, color: "blue" };
   };
-if((FromToGt(151,255,200000))&& network === 'GG'&& level === '13'&& effmu === 'C'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 200000, color: "blue" };
-  };
 if((FromToGt(25,33,75000))&& network === 'GG'&& level === '3'&& effmu === 'A'&& isNormal&& isKo) {
     return { valid: true, rules: true, guarantee: 75000, color: "blue" };
-  };
-if((FromToGt(25,33,75000))&& network === 'GG'&& level === '3'&& effmu === 'B'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 75000, color: "blue" };
-  };
-if((FromToGt(25,33,100000))&& network === 'GG'&& level === '3'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 100000, color: "blue" };
   };
 if((FromToGt(8,19,3000))&& network === 'PS.es'&& level === '3'&& effmu === 'A'&& isNormal&& isKo) {
     return { valid: true, rules: true, guarantee: 3000, color: "blue" };
@@ -13233,13 +11712,7 @@ if((FromToGt(8,19,8000))&& network === 'PS.es'&& level === '3'&& effmu === 'C'&&
 if((FromToGt(8,19,6000))&& network === 'PS.es'&& level === '3'&& effmu === 'C'&& isNormal&& isKo) {
     return { valid: true, rules: true, guarantee: 6000, color: "blue" };
   };
-if((FromToGt(34,49,175000))&& network === 'GG'&& level === '4'&& effmu === 'B'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 175000, color: "blue" };
-  };
 if((FromToGt(25,33,75000))&& network === 'GG'&& level === '4'&& effmu === 'B'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 75000, color: "blue" };
-  };
-if((FromToGt(25,33,75000))&& network === 'GG'&& level === '4'&& effmu === 'C'&& isNormal&& isKo) {
     return { valid: true, rules: true, guarantee: 75000, color: "blue" };
   };
 if((FromToGt(8,19,2000))&& network === 'PS.es'&& level === '4'&& effmu === 'A'&& isNormal&& isKo) {
@@ -13260,45 +11733,6 @@ if((FromToGt(8,19,5000))&& network === 'PS.es'&& level === '4'&& effmu === 'C'&&
 if((FromToGt(8,19,5000))&& network === 'PS.es'&& level === '4'&& effmu === 'C'&& isNormal&& isKo) {
     return { valid: true, rules: true, guarantee: 5000, color: "blue" };
   };
-if((FromToGt(12,24,5000))&& network === 'GG'&& level === '5'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 5000, color: "blue" };
-  };
-if((FromToGt(12,24,5000))&& network === 'GG'&& level === '5'&& effmu === 'A'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 5000, color: "blue" };
-  };
-if((FromToGt(12,24,5000))&& network === 'GG'&& level === '5'&& effmu === 'B'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 5000, color: "blue" };
-  };
-if((FromToGt(12,24,5000))&& network === 'GG'&& level === '5'&& effmu === 'B'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 5000, color: "blue" };
-  };
-if((FromToGt(12,24,7500))&& network === 'GG'&& level === '5'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 7500, color: "blue" };
-  };
-if((FromToGt(12,24,7500))&& network === 'GG'&& level === '5'&& effmu === 'C'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 7500, color: "blue" };
-  };
-if((FromToGt(34,49,175000))&& network === 'GG'&& level === '5'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 175000, color: "blue" };
-  };
-if((FromToGt(50,66,200000))&& network === 'GG'&& level === '5'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 200000, color: "blue" };
-  };
-if((FromToGt(12,24,4000))&& network === 'GG'&& level === '6'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 4000, color: "blue" };
-  };
-if((FromToGt(12,24,4000))&& network === 'GG'&& level === '6'&& effmu === 'A'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 4000, color: "blue" };
-  };
-if((FromToGt(12,24,5000))&& network === 'GG'&& level === '6'&& effmu === 'B'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 5000, color: "blue" };
-  };
-if((FromToGt(12,24,5000))&& network === 'GG'&& level === '6'&& effmu === 'B'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 5000, color: "blue" };
-  };
-if((FromToGt(12,24,5000))&& network === 'GG'&& level === '6'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 5000, color: "blue" };
-  };
 if((FromToGt(12,29,2000))&& network === 'PS.es'&& level === '6'&& effmu === 'A'&& isNormal&& isKo) {
     return { valid: true, rules: true, guarantee: 2000, color: "blue" };
   };
@@ -13317,12 +11751,6 @@ if((FromToGt(12,29,2000))&& network === 'PS.es'&& level === '6'&& effmu === 'C'&
 if((FromToGt(12,29,2000))&& network === 'PS.es'&& level === '6'&& effmu === 'C'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 2000, color: "blue" };
   };
-if((FromToGt(25,33,40000))&& network === 'WPN'&& level === '6'&& effmu === 'B'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 40000, color: "blue" };
-  };
-if((FromToGt(25,33,40000))&& network === 'WPN'&& level === '6'&& effmu === 'C'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 40000, color: "blue" };
-  };
 if((FromToGt(12,49,5000))&& network === 'PS.es'&& level === '7'&& effmu === 'A'&& isNormal&& isKo) {
     return { valid: true, rules: true, guarantee: 5000, color: "blue" };
   };
@@ -13340,9 +11768,6 @@ if((FromToGt(12,29,5000))&& network === 'PS.es'&& level === '7'&& effmu === 'C'&
   };
 if((FromToGt(12,29,8000))&& network === 'PS.es'&& level === '7'&& effmu === 'C'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 8000, color: "blue" };
-  };
-if((FromToGt(50,66,125000))&& network === 'GG'&& level === '7'&& effmu === 'B'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 125000, color: "blue" };
   };
 if((FromToGt(50,66,125000))&& network === 'GG'&& level === '7'&& effmu === 'C'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 125000, color: "blue" };
@@ -13364,12 +11789,6 @@ if((FromToGt(12,22,5000))&& network === 'GG'&& level === '7'&& effmu === 'C'&& i
   };
 if((FromToGt(12,22,5000))&& network === 'GG'&& level === '7'&& effmu === 'C'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 5000, color: "blue" };
-  };
-if((FromToGt(100,125,125000))&& network === 'WNMX'&& level === '7'&& effmu === 'B'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 125000, color: "blue" };
-  };
-if((FromToGt(100,125,125000))&& network === 'WNMX'&& level === '7'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 125000, color: "blue" };
   };
 if((FromToGt(23,43,5000))&& network === 'Party'&& level === '7'&& effmu === 'A'&& isNormal&& isKo) {
     return { valid: true, rules: true, guarantee: 5000, color: "blue" };
@@ -13407,27 +11826,6 @@ if((FromToGt(12,49,5000))&& network === 'PS.es'&& level === '8'&& effmu === 'C'&
 if((FromToGt(12,49,5000))&& network === 'PS.es'&& level === '8'&& effmu === 'C'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 5000, color: "blue" };
   };
-if((FromToGt(50,66,120000))&& network === 'GG'&& level === '8'&& effmu === 'B'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 120000, color: "blue" };
-  };
-if((FromToGt(67,79,125000))&& network === 'GG'&& level === '8'&& effmu === 'B'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 125000, color: "blue" };
-  };
-if((FromToGt(50,66,120000))&& network === 'GG'&& level === '8'&& effmu === 'C'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 120000, color: "blue" };
-  };
-if((FromToGt(67,79,125000))&& network === 'GG'&& level === '8'&& effmu === 'C'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 125000, color: "blue" };
-  };
-if((FromToGt(34,49,60000))&& network === 'GG'&& level === '8'&& effmu === 'B'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 60000, color: "blue" };
-  };
-if((FromToGt(50,66,60000))&& network === 'GG'&& level === '8'&& effmu === 'B'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 60000, color: "blue" };
-  };
-if((FromToGt(34,49,60000))&& network === 'GG'&& level === '8'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 60000, color: "blue" };
-  };
 if((FromToGt(23,33,6000))&& network === 'WPN'&& level === '8'&& effmu === 'A'&& isNormal&& isKo) {
     return { valid: true, rules: true, guarantee: 6000, color: "blue" };
   };
@@ -13455,15 +11853,6 @@ if((FromToGt(12,22,5000))&& network === 'GG'&& level === '8'&& effmu === 'C'&& i
 if((FromToGt(12,22,5000))&& network === 'GG'&& level === '8'&& effmu === 'C'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 5000, color: "blue" };
   };
-if((FromToGt(100,125,125000))&& network === 'WNMX'&& level === '8'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 125000, color: "blue" };
-  };
-if((FromToGt(50,66,80000))&& network === 'GG'&& level === '8'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 80000, color: "blue" };
-  };
-if((FromToGt(67,79,90000))&& network === 'GG'&& level === '8'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 90000, color: "blue" };
-  };
 if((FromToGt(12,49,5000))&& network === 'PS.es'&& level === '9'&& effmu === 'A'&& isNormal&& isKo) {
     return { valid: true, rules: true, guarantee: 5000, color: "blue" };
   };
@@ -13482,16 +11871,10 @@ if((FromToGt(12,49,5000))&& network === 'PS.es'&& level === '9'&& effmu === 'C'&
 if((FromToGt(12,49,5000))&& network === 'PS.es'&& level === '9'&& effmu === 'C'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 5000, color: "blue" };
   };
-if((FromToGt(50,66,60000))&& network === 'GG'&& level === '10'&& effmu === 'B'&& isNormal&& !isKo && (NotName("Seat"))&& network === 'GG'&& level === '10'&& effmu === 'B'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 60000, color: "blue" };
-  };
 if((FromToGt(121,150,750000))&& network === 'GG'&& level === '6'&& effmu === 'A'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 750000, color: "blue" };
   };
 if((FromToGt(121,150,750000))&& network === 'GG'&& level === '7'&& effmu === 'C'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 750000, color: "blue" };
-  };
-if((FromToGt(121,150,750000))&& network === 'GG'&& level === '7'&& effmu === 'B'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 750000, color: "blue" };
   };
 if((FromToGt(121,150,650000))&& network === 'GG'&& level === '7'&& effmu === 'A'&& isNormal&& !isKo) {
@@ -13518,53 +11901,14 @@ if((FromToGt(121,150,400000))&& network === 'GG'&& level === '9'&& effmu === 'A'
 if((FromToGt(121,150,400000))&& network === 'GG'&& level === '10'&& effmu === 'B'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 400000, color: "blue" };
   };
-if((FromToGt(121,150,400000))&& network === 'GG'&& level === '10'&& effmu === 'C'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 400000, color: "blue" };
-  };
 if((FromToGt(121,150,350000))&& network === 'GG'&& level === '10'&& effmu === 'A'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 350000, color: "blue" };
   };
 if((FromToGt(121,150,350000))&& network === 'GG'&& level === '11'&& effmu === 'B'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 350000, color: "blue" };
   };
-if((FromToGt(121,150,200000))&& network === 'GG'&& level === '11'&& effmu === 'A'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 200000, color: "blue" };
-  };
-if((FromToGt(121,150,350000))&& network === 'GG'&& level === '11'&& effmu === 'C'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 350000, color: "blue" };
-  };
-if((FromToGt(121,150,200000))&& network === 'GG'&& level === '12'&& effmu === 'B'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 200000, color: "blue" };
-  };
-if((FromToGt(121,150,225000))&& network === 'GG'&& level === '12'&& effmu === 'C'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 225000, color: "blue" };
-  };
-if((FromToGt(121,150,100000))&& network === 'GG'&& level === '12'&& effmu === 'A'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 100000, color: "blue" };
-  };
-if((FromToGt(121,150,100000))&& network === 'GG'&& level === '13'&& effmu === 'B'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 100000, color: "blue" };
-  };
-if((FromToGt(121,150,125000))&& network === 'GG'&& level === '13'&& effmu === 'C'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 125000, color: "blue" };
-  };
-if((FromToGt(121,150,60000))&& network === 'GG'&& level === '13'&& effmu === 'A'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 60000, color: "blue" };
-  };
-if((FromToGt(25,33,100000))&& network === 'GG'&& level === '1'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 100000, color: "blue" };
-  };
 if((FromToGt(16,24,65000))&& network === 'GG'&& level === '1'&& effmu === 'A'&& isNormal&& isKo) {
     return { valid: true, rules: true, guarantee: 65000, color: "blue" };
-  };
-if((FromToGt(16,24,80000))&& network === 'GG'&& level === '1'&& effmu === 'A'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 80000, color: "blue" };
-  };
-if((FromToGt(16,24,80000))&& network === 'GG'&& level === '2'&& effmu === 'B'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 80000, color: "blue" };
-  };
-if((FromToGt(16,24,80000))&& network === 'GG'&& level === '2'&& effmu === 'C'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 80000, color: "blue" };
   };
 if((FromToGt(25,33,100000))&& network === 'GG'&& level === '3'&& effmu === 'A'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 100000, color: "blue" };
@@ -13575,12 +11919,6 @@ if((FromToGt(25,33,75000))&& network === 'WPN'&& level === '3'&& effmu === 'A'&&
 if((FromToGt(25,33,75000))&& network === 'WPN'&& level === '3'&& effmu === 'B'&& isNormal&& isKo) {
     return { valid: true, rules: true, guarantee: 75000, color: "blue" };
   };
-if((FromToGt(25,33,125000))&& network === 'GG'&& level === '3'&& effmu === 'C'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 125000, color: "blue" };
-  };
-if((FromToGt(34,49,200000))&& network === 'GG'&& level === '4'&& effmu === 'B'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 200000, color: "blue" };
-  };
 if((FromToGt(25,33,100000))&& network === 'GG'&& level === '4'&& effmu === 'B'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 100000, color: "blue" };
   };
@@ -13590,50 +11928,11 @@ if((FromToGt(25,33,75000))&& network === 'WPN'&& level === '4'&& effmu === 'B'&&
 if((FromToGt(34,49,175000))&& network === 'WPN'&& level === '4'&& effmu === 'B'&& isNormal&& isKo) {
     return { valid: true, rules: true, guarantee: 175000, color: "blue" };
   };
-if((FromToGt(34,49,200000))&& network === 'GG'&& level === '4'&& effmu === 'C'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 200000, color: "blue" };
-  };
-if((FromToGt(16,24,20000))&& network === 'GG'&& level === '4'&& effmu === 'C'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 20000, color: "blue" };
-  };
-if((FromToGt(12,15,5000))&& network === 'GG'&& level === '3'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 5000, color: "blue" };
-  };
-if((FromToGt(12,15,5000))&& network === 'GG'&& level === '3'&& effmu === 'A'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 5000, color: "blue" };
-  };
-if((FromToGt(12,24,5000))&& network === 'GG'&& level === '4'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 5000, color: "blue" };
-  };
-if((FromToGt(12,24,5000))&& network === 'GG'&& level === '4'&& effmu === 'A'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 5000, color: "blue" };
-  };
-if((FromToGt(12,15,5000))&& network === 'GG'&& level === '4'&& effmu === 'B'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 5000, color: "blue" };
-  };
-if((FromToGt(12,15,5000))&& network === 'GG'&& level === '4'&& effmu === 'B'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 5000, color: "blue" };
-  };
-if((FromToGt(12,15,5000))&& network === 'GG'&& level === '4'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 5000, color: "blue" };
-  };
-if((FromToGt(12,15,5000))&& network === 'GG'&& level === '4'&& effmu === 'C'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 5000, color: "blue" };
-  };
 if((FromToGt(25,33,75000))&& network === 'GG'&& level === '5'&& effmu === 'C'&& isNormal&& isKo) {
     return { valid: true, rules: true, guarantee: 75000, color: "blue" };
   };
-if((FromToGt(34,49,200000))&& network === 'GG'&& level === '5'&& effmu === 'C'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 200000, color: "blue" };
-  };
 if((FromToGt(25,33,100000))&& network === 'GG'&& level === '5'&& effmu === 'C'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 100000, color: "blue" };
-  };
-if((FromToGt(80,120,150000))&& network === 'GG'&& level === '6'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 150000, color: "blue" };
-  };
-if((FromToGt(121,150,300000))&& network === 'GG'&& level === '6'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 300000, color: "blue" };
   };
 if((FromToGt(25,33,60000))&& network === 'WPN'&& level === '5'&& effmu === 'A'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 60000, color: "blue" };
@@ -13650,77 +11949,23 @@ if((FromToGt(34,49,60000))&& network === 'WPN'&& level === '7'&& effmu === 'B'&&
 if((FromToGt(34,49,70000))&& network === 'GG'&& level === '7'&& effmu === 'C'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 70000, color: "blue" };
   };
-if((FromToGt(34,49,60000))&& network === 'GG'&& level === '8'&& effmu === 'B'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 60000, color: "blue" };
-  };
-if((FromToGt(34,49,60000))&& network === 'GG'&& level === '8'&& effmu === 'C'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 60000, color: "blue" };
-  };
-if((FromToGt(50,66,10000))&& network === 'GG'&& level === '10'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 10000, color: "blue" };
-  };
-if((FromToGt(50,66,25000))&& network === 'GG'&& level === '10'&& effmu === 'A'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 25000, color: "blue" };
-  };
-if((FromToGt(67,79,45000))&& network === 'GG'&& level === '10'&& effmu === 'A'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 45000, color: "blue" };
-  };
-if((FromToGt(50,66,35000))&& network === 'GG'&& level === '10'&& effmu === 'B'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 35000, color: "blue" };
-  };
-if((FromToGt(50,66,35000))&& network === 'GG'&& level === '10'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 35000, color: "blue" };
-  };
-if((FromToGt(50,66,35000))&& network === 'GG'&& level === '9'&& effmu === 'B'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 35000, color: "blue" };
-  };
-if((FromToGt(50,66,65000))&& network === 'GG'&& level === '9'&& effmu === 'B'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 65000, color: "blue" };
-  };
-if((FromToGt(50,66,40000))&& network === 'GG'&& level === '9'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 40000, color: "blue" };
-  };
-if((FromToGt(50,66,65000))&& network === 'GG'&& level === '9'&& effmu === 'C'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 65000, color: "blue" };
-  };
-if((FromToGt(256,375,300000))&& network === 'GG'&& level === '11'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 300000, color: "blue" };
-  };
-if((FromToGt(50,66,10000))&& network === 'GG'&& level === '11'&& effmu === 'B'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 10000, color: "blue" };
-  };
-if((FromToGt(50,66,25000))&& network === 'GG'&& level === '11'&& effmu === 'B'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 25000, color: "blue" };
-  };
-if((FromToGt(67,79,40000))&& network === 'GG'&& level === '11'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 40000, color: "blue" };
-  };
-if((FromToGt(50,66,35000))&& network === 'GG'&& level === '11'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 35000, color: "blue" };
-  };
-if((FromToGt(34,49,30000))&& network === 'GG'&& level === '11'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 30000, color: "blue" };
-  };
-if((FromToGt(67,79,65000))&& network === 'GG'&& level === '11'&& effmu === 'C'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 65000, color: "blue" };
-  };
-if((FromToGt(50,66,60000))&& network === 'GG'&& level === '11'&& effmu === 'C'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 60000, color: "blue" };
-  };
-if((FromToGt(34,49,30000))&& network === 'GG'&& level === '11'&& effmu === 'C'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 30000, color: "blue" };
-  };
-if((FromToGt(80,120,60000))&& network === 'GG'&& level === '12'&& effmu === 'B'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 60000, color: "blue" };
-  };
 if((FromToGt(751,1050,750000))&& network === 'GG'&& level === '14'&& effmu === 'B'&& isNormal&& isKo) {
     return { valid: true, rules: true, guarantee: 750000, color: "blue" };
   };
 if((FromToGt(751,1050,1000000))&& network === 'GG'&& level === '14'&& effmu === 'B'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 1000000, color: "blue" };
   };
+if((BidGt(33,75000))&& network === 'PS.eu'&& level === '2'&& effmu === 'A'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 75000, color: "blue" };
+  };
 if((BidGt(215,600000))&& network === 'PS.eu'&& level === '10'&& effmu === 'B'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 600000, color: "blue" };
+  };
+if((BidGt(320,300000))&& network === 'PS.eu'&& level === '11'&& effmu === 'A'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 300000, color: "blue" };
+  };
+if((BidGt(162,40000))&& network === 'PS.eu'&& level === '11'&& effmu === 'A'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 40000, color: "blue" };
   };
 if((BidGt(1050,750000))&& network === 'PS.eu'&& level === '15'&& effmu === 'B'&& isNormal&& isKo) {
     return { valid: true, rules: true, guarantee: 750000, color: "blue" };
@@ -13836,52 +12081,7 @@ if((FromToGt(50,55,500000))&& network === 'PS.eu'&& level === '5'&& effmu === 'A
 if((BidGt(82,500000))&& network === 'PS.eu'&& level === '5'&& effmu === 'A'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 500000, color: "blue" };
   };
-if((FromToGt(25,33,70000))&& network === 'GG'&& level === '4'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 70000, color: "blue" };
-  };
-if((FromToGt(34,49,80000))&& network === 'GG'&& level === '4'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 80000, color: "blue" };
-  };
 if((FromToGt(25,33,80000))&& network === 'GG'&& level === '4'&& effmu === 'A'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 80000, color: "blue" };
-  };
-if((FromToGt(25,33,70000))&& network === 'GG'&& level === '5'&& effmu === 'B'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 70000, color: "blue" };
-  };
-if((FromToGt(25,33,80000))&& network === 'GG'&& level === '5'&& effmu === 'B'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 80000, color: "blue" };
-  };
-if((FromToGt(34,49,80000))&& network === 'GG'&& level === '5'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 80000, color: "blue" };
-  };
-if((FromToGt(25,33,70000))&& network === 'GG'&& level === '5'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 70000, color: "blue" };
-  };
-if((FromToGt(34,49,100000))&& network === 'GG'&& level === '5'&& effmu === 'A'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 100000, color: "blue" };
-  };
-if((FromToGt(25,33,80000))&& network === 'GG'&& level === '5'&& effmu === 'A'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 80000, color: "blue" };
-  };
-if((FromToGt(34,49,80000))&& network === 'GG'&& level === '6'&& effmu === 'B'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 80000, color: "blue" };
-  };
-if((FromToGt(25,33,70000))&& network === 'GG'&& level === '6'&& effmu === 'B'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 70000, color: "blue" };
-  };
-if((FromToGt(34,49,100000))&& network === 'GG'&& level === '6'&& effmu === 'B'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 100000, color: "blue" };
-  };
-if((FromToGt(25,33,80000))&& network === 'GG'&& level === '6'&& effmu === 'B'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 80000, color: "blue" };
-  };
-if((FromToGt(25,33,70000))&& network === 'GG'&& level === '6'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 70000, color: "blue" };
-  };
-if((FromToGt(34,49,100000))&& network === 'GG'&& level === '6'&& effmu === 'C'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 100000, color: "blue" };
-  };
-if((FromToGt(25,33,80000))&& network === 'GG'&& level === '6'&& effmu === 'C'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 80000, color: "blue" };
   };
 if((BidGt(109,300000))&& network === 'PS.eu'&& level === '6'&& effmu === 'A'&& isNormal&& isKo) {
@@ -13899,30 +12099,6 @@ if((BidGt(109,400000))&& network === 'PS.eu'&& level === '7'&& effmu === 'B'&& i
 if((BidGt(109,300000))&& network === 'PS.eu'&& level === '7'&& effmu === 'C'&& isNormal&& isKo) {
     return { valid: true, rules: true, guarantee: 300000, color: "blue" };
   };
-if((FromToGt(34,49,80000))&& network === 'GG'&& level === '6'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 80000, color: "blue" };
-  };
-if((FromToGt(50,66,90000))&& network === 'GG'&& level === '6'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 90000, color: "blue" };
-  };
-if((FromToGt(34,49,100000))&& network === 'GG'&& level === '6'&& effmu === 'A'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 100000, color: "blue" };
-  };
-if((FromToGt(50,66,120000))&& network === 'GG'&& level === '6'&& effmu === 'A'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 120000, color: "blue" };
-  };
-if((FromToGt(34,49,80000))&& network === 'GG'&& level === '7'&& effmu === 'B'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 80000, color: "blue" };
-  };
-if((FromToGt(50,66,90000))&& network === 'GG'&& level === '7'&& effmu === 'B'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 90000, color: "blue" };
-  };
-if((FromToGt(34,49,100000))&& network === 'GG'&& level === '7'&& effmu === 'B'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 100000, color: "blue" };
-  };
-if((FromToGt(50,66,125000))&& network === 'GG'&& level === '7'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 125000, color: "blue" };
-  };
 if((FromToGt(50,55,200000))&& network === 'PS.eu'&& level === '6'&& effmu === 'B'&& isNormal&& isKo) {
     return { valid: true, rules: true, guarantee: 200000, color: "blue" };
   };
@@ -13934,9 +12110,6 @@ if((FromToGt(50,55,250000))&& network === 'PS.eu'&& level === '6'&& effmu === 'B
   };
 if((BidGt(82,350000))&& network === 'PS.eu'&& level === '6'&& effmu === 'B'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 350000, color: "blue" };
-  };
-if((BidGt(44,100000))&& network === 'PS.eu'&& level === '6'&& effmu === 'B'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 100000, color: "blue" };
   };
 if((BidGt(44,125000))&& network === 'PS.eu'&& level === '6'&& effmu === 'B'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 125000, color: "blue" };
@@ -13964,9 +12137,6 @@ if((BidGt(33,75000))&& network === 'PS.eu'&& level === '3'&& effmu === 'A'&& isN
   };
 if((BidGt(33,100000))&& network === 'PS.eu'&& level === '3'&& effmu === 'A'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 100000, color: "blue" };
-  };
-if((BidGt(33,75000))&& network === 'PS.eu'&& level === '3'&& effmu === 'B'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 75000, color: "blue" };
   };
 if((BidGt(27,8000))&& network === 'Party'&& level === '5'&& effmu === 'A'&& isNormal&& isKo) {
     return { valid: true, rules: true, guarantee: 8000, color: "blue" };
@@ -13998,15 +12168,6 @@ if((FromToGt(25,33,20000))&& network === 'WPN'&& level === '6'&& effmu === 'B'&&
 if((FromToGt(25,33,20000))&& network === 'WPN'&& level === '6'&& effmu === 'C'&& isNormal&& isKo) {
     return { valid: true, rules: true, guarantee: 20000, color: "blue" };
   };
-if((FromToGt(34,49,90000))&& network === 'GG'&& level === '6'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 90000, color: "blue" };
-  };
-if((FromToGt(34,49,90000))&& network === 'GG'&& level === '5'&& effmu === 'B'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 90000, color: "blue" };
-  };
-if((FromToGt(34,49,90000))&& network === 'GG'&& level === '7'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 90000, color: "blue" };
-  };
 if((BidGt(33,70000))&& network === 'PS.eu'&& level === '6'&& effmu === 'C'&& isNormal&& isKo) {
     return { valid: true, rules: true, guarantee: 70000, color: "blue" };
   };
@@ -14037,80 +12198,20 @@ if((BidGt(33,70000))&& network === 'PS.eu'&& level === '5'&& effmu === 'C'&& isN
 if((BidGt(33,80000))&& network === 'PS.eu'&& level === '5'&& effmu === 'C'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 80000, color: "blue" };
   };
-if((FromToGt(50,66,50000))&& network === 'WPN'&& level === '9'&& effmu === 'B'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 50000, color: "blue" };
-  };
-if((FromToGt(50,66,60000))&& network === 'WPN'&& level === '9'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 60000, color: "blue" };
-  };
-if((FromToGt(67,79,80000))&& network === 'WPN'&& level === '9'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 80000, color: "blue" };
-  };
-if((FromToGt(50,66,60000))&& network === 'WPN'&& level === '10'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 60000, color: "blue" };
-  };
-if((FromToGt(67,79,80000))&& network === 'WPN'&& level === '10'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 80000, color: "blue" };
-  };
-if((FromToGt(80,120,100000))&& network === 'WPN'&& level === '11'&& effmu === 'B'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 100000, color: "blue" };
-  };
 if((FromToGt(80,120,125000))&& network === 'WPN'&& level === '11'&& effmu === 'C'&& isNormal&& isKo) {
     return { valid: true, rules: true, guarantee: 125000, color: "blue" };
-  };
-if((FromToGt(50,66,50000))&& network === 'WPN'&& level === '11'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 50000, color: "blue" };
-  };
-if((FromToGt(67,79,75000))&& network === 'WPN'&& level === '11'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 75000, color: "blue" };
-  };
-if((FromToGt(50,66,45000))&& network === 'WPN'&& level === '11'&& effmu === 'B'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 45000, color: "blue" };
-  };
-if((FromToGt(67,79,60000))&& network === 'WPN'&& level === '11'&& effmu === 'B'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 60000, color: "blue" };
   };
 if((FromToGt(50,66,45000))&& network === 'WPN'&& level === '10'&& effmu === 'B'&& isNormal&& isKo) {
     return { valid: true, rules: true, guarantee: 45000, color: "blue" };
   };
-if((FromToGt(50,66,45000))&& network === 'WPN'&& level === '10'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 45000, color: "blue" };
-  };
-if((FromToGt(67,79,50000))&& network === 'WPN'&& level === '10'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 50000, color: "blue" };
-  };
 if((FromToGt(80,120,80000))&& network === 'WPN'&& level === '10'&& effmu === 'A'&& isNormal&& isKo) {
     return { valid: true, rules: true, guarantee: 80000, color: "blue" };
-  };
-if((BidGt(109,100000))&& network === 'PS.eu'&& level === '11'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 100000, color: "blue" };
-  };
-if((FromToGt(151,255,350000))&& network === 'GG'&& level === '11'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 350000, color: "blue" };
   };
 if((FromToGt(80,120,125000))&& network === 'GG'&& level === '12'&& effmu === 'C'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 125000, color: "blue" };
   };
-if((BidGt(82,20000))&& network === 'PS.eu'&& level === '12'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 20000, color: "blue" };
-  };
-if((FromToGt(80,120,80000))&& network === 'GG'&& level === '12'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 80000, color: "blue" };
-  };
 if((FromToGt(151,255,350000))&& network === 'GG'&& level === '12'&& effmu === 'C'&& isNormal&& isKo) {
     return { valid: true, rules: true, guarantee: 350000, color: "blue" };
-  };
-if((BidGt(109,90000))&& network === 'PS.eu'&& level === '12'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 90000, color: "blue" };
-  };
-if((BidGt(162,120000))&& network === 'PS.eu'&& level === '12'&& effmu === 'C'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 120000, color: "blue" };
-  };
-if((BidGt(109,100000))&& network === 'PS.eu'&& level === '12'&& effmu === 'C'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 100000, color: "blue" };
-  };
-if((BidGt(162,135000))&& network === 'PS.eu'&& level === '12'&& effmu === 'C'&& isNormal&& !isKo) {
-    return { valid: true, rules: true, guarantee: 135000, color: "blue" };
   };
 if((FromToGt(40,60,500000))&& level === '2'&& effmu === 'A'&& isNormal) {
     return { valid: true, rules: true, guarantee: 500000, color: "blue" };
@@ -14127,44 +12228,1349 @@ if((FromToGt(135,150,300000))&& network === 'GG'&& level === '17'&& effmu === 'B
 if((FromToGt(300,320,300000))&& network === 'GG'&& level === '17'&& effmu === 'B'&& isNormal&& isKo) {
     return { valid: true, rules: true, guarantee: 300000, color: "blue" };
   };
-if((((UserName("16lvl"))) ? ((FromTo(21,21))&& network === 'PS.eu'&& level === '14'&& effmu === 'A'&& isNormal&& isKo) :  (FromTo(21,21))&& network === 'PS.eu'&& level === '14'&& effmu === 'A'&& isNormal&& isKo)) {
-    return { valid: true, rules: true, guarantee: 1, color: "blue" };
+if((FromToGt(34,49,200000))&& network === 'GG'&& level === '6'&& effmu === 'A'&& isNormal&& !isKo && (FromToGt(50,66,200000))&& network === 'GG'&& level === '6'&& effmu === 'A'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 200000, color: "blue" };
   };
-if((((UserName("Barca77_pocarr"))) ? ((FromTo(32,32))&& network === 'PS.eu'&& level === '12'&& effmu === 'A'&& isNormal&& isKo) :  (FromTo(32,32))&& network === 'PS.eu'&& level === '12'&& effmu === 'A'&& isNormal&& isKo) && (((UserName("brhhr_pocarr"))) ? ((FromTo(32,32))&& network === 'PS.eu'&& level === '12'&& effmu === 'A'&& isNormal&& isKo) : ((UserName("senieris_pocarr"))) ? ((FromTo(32,32))&& network === 'PS.eu'&& level === '12'&& effmu === 'A'&& isNormal&& isKo) :  (FromTo(32,32))&& network === 'PS.eu'&& level === '12'&& effmu === 'A'&& isNormal&& isKo)) {
-    return { valid: true, rules: true, guarantee: 1, color: "blue" };
+if((FromToGt(67,79,225000))&& network === 'GG'&& level === '6'&& effmu === 'A'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 225000, color: "blue" };
   };
-if((FromTo(21,21))&& network === 'PS.eu'&& level === '12'&& effmu === 'A'&& isNormal&& isKo && (FromTo(21,21))&& network === 'PS.eu'&& level === '12'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 1, color: "blue" };
+if((FromToGt(50,66,175000))&& network === 'GG'&& level === '6'&& effmu === 'B'&& isNormal&& isKo && (FromToGt(34,49,175000))&& network === 'GG'&& level === '6'&& effmu === 'B'&& isNormal&& isKo && (FromToGt(67,79,200000))&& network === 'GG'&& level === '6'&& effmu === 'B'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 200000, color: "blue" };
   };
-if((((UserName("brhhr_pocarr"))) ? ((FromTo(21,21))&& network === 'PS.eu'&& level === '12'&& effmu === 'A'&& isNormal&& isKo) :  (FromTo(21,21))&& network === 'PS.eu'&& level === '12'&& effmu === 'A'&& isNormal&& isKo) && (FromTo(21,21))&& network === 'PS.eu'&& level === '12'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 1, color: "blue" };
+if((FromToGt(50,66,250000))&& network === 'GG'&& level === '6'&& effmu === 'B'&& isNormal&& !isKo && (FromToGt(34,49,225000))&& network === 'GG'&& level === '6'&& effmu === 'B'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 250000, color: "blue" };
   };
-if((((UserName("16lvl"))) ? ((FromTo(22,22))&& network === 'PS.eu'&& level === '9'&& effmu === 'A'&& isNormal&& isKo) :  (FromTo(21,21))&& network === 'PS.eu'&& level === '9'&& effmu === 'A'&& isNormal&& isKo) && (FromTo(21,21))&& network === 'PS.eu'&& level === '9'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 1, color: "blue" };
+if((FromToGt(67,79,250000))&& network === 'GG'&& level === '6'&& effmu === 'C'&& isNormal&& isKo && (FromToGt(50,66,200000))&& network === 'GG'&& level === '6'&& effmu === 'C'&& isNormal&& isKo && (FromToGt(34,49,200000))&& network === 'GG'&& level === '6'&& effmu === 'C'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 250000, color: "blue" };
   };
-if((FromTo(321,432))&& network === 'PS.eu'&& level === '9'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 1, color: "blue" };
+if((FromToGt(34,66,250000))&& network === 'GG'&& level === '6'&& effmu === 'C'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 250000, color: "blue" };
   };
-if((BidGt(21,21))&& network === 'PS.eu'&& level === '9'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 21, color: "blue" };
+if((FromToGt(67,79,425000))&& network === 'GG'&& level === '6'&& effmu === 'C'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 425000, color: "blue" };
   };
-if((FromTo(228,228))&& network === 'PS.eu'&& level === '9'&& effmu === 'A'&& isNormal&& isKo && (UserName("16lvl"))&& network === 'PS.eu'&& level === '9'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 1, color: "blue" };
+if((FromToGt(80,120,225000))&& network === 'GG'&& level === '7'&& effmu === 'A'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 225000, color: "blue" };
   };
-if((((UserName("16lvl"))) ? ((FromTo(334,344))&& network === 'PS.eu'&& level === '9'&& effmu === 'A'&& isNormal&& isKo) :  (FromTo(339,339))&& network === 'PS.eu'&& level === '9'&& effmu === 'A'&& isNormal&& isKo)) {
-    return { valid: true, rules: true, guarantee: 1, color: "blue" };
+if((FromToGt(34,49,125000))&& network === 'GG'&& level === '7'&& effmu === 'A'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 125000, color: "blue" };
   };
-if((((UserName("16lvl"))) ? ((FromTo(21,21))&& network === 'PS.eu'&& level === '10'&& effmu === 'A'&& isNormal&& isKo) :  (FromTo(21,21))&& network === 'PS.eu'&& level === '10'&& effmu === 'A'&& isNormal&& isKo)) {
-    return { valid: true, rules: true, guarantee: 1, color: "blue" };
+if((FromToGt(50,66,125000))&& network === 'GG'&& level === '7'&& effmu === 'A'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 125000, color: "blue" };
   };
-if((((UserName("Barca77_pocarr"))) ? ((FromTo(21,21))&& network === 'PS.eu'&& level === '10'&& effmu === 'A'&& isNormal&& isKo) :  (FromTo(312,321))&& network === 'PS.eu'&& level === '10'&& effmu === 'A'&& isNormal&& isKo)) {
-    return { valid: true, rules: true, guarantee: 1, color: "blue" };
+if((FromToGt(67,79,150000))&& network === 'GG'&& level === '7'&& effmu === 'A'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 150000, color: "blue" };
   };
-if((FromTo(1,221312312312312))&& network === 'PS.eu') {
-    return { valid: true, rules: true, guarantee: 1, color: "blue" };
+if((FromToGt(80,120,300000))&& network === 'GG'&& level === '6'&& effmu === 'A'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 300000, color: "blue" };
   };
-if((FromTo(2,2))&& network === 'PS.eu'&& level === '10'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 1, color: "blue" };
+if((FromToGt(34,49,150000))&& network === 'GG'&& level === '7'&& effmu === 'B'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 150000, color: "blue" };
+  };
+if((FromToGt(50,66,150000))&& network === 'GG'&& level === '7'&& effmu === 'B'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 150000, color: "blue" };
+  };
+if((FromToGt(67,79,175000))&& network === 'GG'&& level === '7'&& effmu === 'B'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 175000, color: "blue" };
+  };
+if((FromToGt(80,120,225000))&& network === 'GG'&& level === '7'&& effmu === 'B'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 225000, color: "blue" };
+  };
+if((FromToGt(121,150,350000))&& network === 'GG'&& level === '7'&& effmu === 'B'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 350000, color: "blue" };
+  };
+if((FromToGt(34,66,175000))&& network === 'GG'&& level === '7'&& effmu === 'B'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 175000, color: "blue" };
+  };
+if((FromToGt(67,79,200000))&& network === 'GG'&& level === '7'&& effmu === 'B'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 200000, color: "blue" };
+  };
+if((FromToGt(34,66,175000))&& network === 'GG'&& level === '7'&& effmu === 'C'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 175000, color: "blue" };
+  };
+if((FromToGt(67,79,200000))&& network === 'GG'&& level === '7'&& effmu === 'C'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 200000, color: "blue" };
+  };
+if((FromToGt(121,150,400000))&& network === 'GG'&& level === '7'&& effmu === 'C'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 400000, color: "blue" };
+  };
+if((FromToGt(34,66,200000))&& network === 'GG'&& level === '7'&& effmu === 'A'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 200000, color: "blue" };
+  };
+if((FromToGt(67,79,225000))&& network === 'GG'&& level === '7'&& effmu === 'A'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 225000, color: "blue" };
+  };
+if((FromToGt(80,120,275000))&& network === 'GG'&& level === '7'&& effmu === 'A'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 275000, color: "blue" };
+  };
+if((FromToGt(121,150,700000))&& network === 'GG'&& level === '7'&& effmu === 'B'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 700000, color: "blue" };
+  };
+if((FromToGt(34,66,100000))&& network === 'GG'&& level === '8'&& effmu === 'A'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 100000, color: "blue" };
+  };
+if((FromToGt(67,79,125000))&& network === 'GG'&& level === '8'&& effmu === 'A'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 125000, color: "blue" };
+  };
+if((FromToGt(80,120,175000))&& network === 'GG'&& level === '8'&& effmu === 'A'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 175000, color: "blue" };
+  };
+if((FromToGt(121,150,250000))&& network === 'GG'&& level === '8'&& effmu === 'A'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 250000, color: "blue" };
+  };
+if((FromToGt(67,79,125000))&& network === 'GG'&& level === '8'&& effmu === 'A'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 125000, color: "blue" };
+  };
+if((FromToGt(34,66,125000))&& network === 'GG'&& level === '8'&& effmu === 'B'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 125000, color: "blue" };
+  };
+if((FromToGt(67,79,150000))&& network === 'GG'&& level === '8'&& effmu === 'B'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 150000, color: "blue" };
+  };
+if((FromToGt(121,150,275000))&& network === 'GG'&& level === '8'&& effmu === 'B'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 275000, color: "blue" };
+  };
+if((FromToGt(80,120,200000))&& network === 'GG'&& level === '8'&& effmu === 'B'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 200000, color: "blue" };
+  };
+if((FromToGt(34,66,125000))&& network === 'GG'&& level === '8'&& effmu === 'A'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 125000, color: "blue" };
+  };
+if((FromToGt(34,66,150000))&& network === 'GG'&& level === '8'&& effmu === 'B'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 150000, color: "blue" };
+  };
+if((FromToGt(67,79,175000))&& network === 'GG'&& level === '8'&& effmu === 'B'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 175000, color: "blue" };
+  };
+if((FromToGt(80,120,225000))&& network === 'GG'&& level === '8'&& effmu === 'B'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 225000, color: "blue" };
+  };
+if((FromToGt(34,66,150000))&& network === 'GG'&& level === '8'&& effmu === 'C'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 150000, color: "blue" };
+  };
+if((FromToGt(67,79,175000))&& network === 'GG'&& level === '8'&& effmu === 'C'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 175000, color: "blue" };
+  };
+if((FromToGt(80,120,225000))&& network === 'GG'&& level === '8'&& effmu === 'C'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 225000, color: "blue" };
+  };
+if((FromToGt(34,66,175000))&& network === 'GG'&& level === '8'&& effmu === 'C'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 175000, color: "blue" };
+  };
+if((FromToGt(67,79,200000))&& network === 'GG'&& level === '8'&& effmu === 'C'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 200000, color: "blue" };
+  };
+if((FromToGt(67,79,100000))&& network === 'GG'&& level === '9'&& effmu === 'A'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 100000, color: "blue" };
+  };
+if((FromToGt(80,120,125000))&& network === 'GG'&& level === '9'&& effmu === 'A'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 125000, color: "blue" };
+  };
+if((FromToGt(121,150,200000))&& network === 'GG'&& level === '9'&& effmu === 'A'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 200000, color: "blue" };
+  };
+if((FromToGt(256,375,600000))&& network === 'GG'&& level === '9'&& effmu === 'A'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 600000, color: "blue" };
+  };
+if((FromToGt(67,79,125000))&& network === 'GG'&& level === '9'&& effmu === 'A'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 125000, color: "blue" };
+  };
+if((FromToGt(34,66,100000))&& network === 'GG'&& level === '9'&& effmu === 'B'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 100000, color: "blue" };
+  };
+if((FromToGt(67,79,125000))&& network === 'GG'&& level === '9'&& effmu === 'B'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 125000, color: "blue" };
+  };
+if((FromToGt(80,120,175000))&& network === 'GG'&& level === '9'&& effmu === 'B'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 175000, color: "blue" };
+  };
+if((FromToGt(121,150,225000))&& network === 'GG'&& level === '9'&& effmu === 'B'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 225000, color: "blue" };
+  };
+if((FromToGt(34,66,125000))&& network === 'GG'&& level === '9'&& effmu === 'B'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 125000, color: "blue" };
+  };
+if((FromToGt(67,79,150000))&& network === 'GG'&& level === '9'&& effmu === 'B'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 150000, color: "blue" };
+  };
+if((FromToGt(80,120,175000))&& network === 'GG'&& level === '9'&& effmu === 'B'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 175000, color: "blue" };
+  };
+if((FromToGt(34,66,100000))&& network === 'GG'&& level === '9'&& effmu === 'C'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 100000, color: "blue" };
+  };
+if((FromToGt(67,79,125000))&& network === 'GG'&& level === '9'&& effmu === 'C'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 125000, color: "blue" };
+  };
+if((FromToGt(80,120,200000))&& network === 'GG'&& level === '9'&& effmu === 'C'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 200000, color: "blue" };
+  };
+if((FromToGt(121,150,250000))&& network === 'GG'&& level === '9'&& effmu === 'C'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 250000, color: "blue" };
+  };
+if((FromToGt(151,255,550000))&& network === 'GG'&& level === '9'&& effmu === 'C'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 550000, color: "blue" };
+  };
+if((FromToGt(34,66,125000))&& network === 'GG'&& level === '9'&& effmu === 'C'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 125000, color: "blue" };
+  };
+if((FromToGt(67,79,150000))&& network === 'GG'&& level === '9'&& effmu === 'C'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 150000, color: "blue" };
+  };
+if((FromToGt(34,66,75000))&& network === 'GG'&& level === '9'&& effmu === 'A'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 75000, color: "blue" };
+  };
+if((FromToGt(34,66,100000))&& network === 'GG'&& level === '9'&& effmu === 'A'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 100000, color: "blue" };
+  };
+if((FromToGt(34,66,50000))&& network === 'GG'&& level === '10'&& effmu === 'A'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 50000, color: "blue" };
+  };
+if((FromToGt(67,79,75000))&& network === 'GG'&& level === '10'&& effmu === 'A'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 75000, color: "blue" };
+  };
+if((FromToGt(80,120,100000))&& network === 'GG'&& level === '10'&& effmu === 'A'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 100000, color: "blue" };
+  };
+if((FromToGt(121,150,150000))&& network === 'GG'&& level === '10'&& effmu === 'A'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 150000, color: "blue" };
+  };
+if((FromToGt(151,255,350000))&& network === 'GG'&& level === '10'&& effmu === 'A'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 350000, color: "blue" };
+  };
+if((FromToGt(256,375,500000))&& network === 'GG'&& level === '10'&& effmu === 'A'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 500000, color: "blue" };
+  };
+if((FromToGt(34,66,75000))&& network === 'GG'&& level === '10'&& effmu === 'A'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 75000, color: "blue" };
+  };
+if((FromToGt(67,79,100000))&& network === 'GG'&& level === '10'&& effmu === 'A'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 100000, color: "blue" };
+  };
+if((FromToGt(80,120,125000))&& network === 'GG'&& level === '10'&& effmu === 'A'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 125000, color: "blue" };
+  };
+if((FromToGt(34,66,75000))&& network === 'GG'&& level === '10'&& effmu === 'B'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 75000, color: "blue" };
+  };
+if((FromToGt(67,79,100000))&& network === 'GG'&& level === '10'&& effmu === 'B'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 100000, color: "blue" };
+  };
+if((FromToGt(80,120,125000))&& network === 'GG'&& level === '10'&& effmu === 'B'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 125000, color: "blue" };
+  };
+if((FromToGt(256,375,550000))&& network === 'GG'&& level === '10'&& effmu === 'B'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 550000, color: "blue" };
+  };
+if((FromToGt(34,66,100000))&& network === 'GG'&& level === '10'&& effmu === 'B'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 100000, color: "blue" };
+  };
+if((FromToGt(67,79,125000))&& network === 'GG'&& level === '10'&& effmu === 'B'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 125000, color: "blue" };
+  };
+if((FromToGt(34,66,75000))&& network === 'GG'&& level === '10'&& effmu === 'C'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 75000, color: "blue" };
+  };
+if((FromToGt(67,79,100000))&& network === 'GG'&& level === '10'&& effmu === 'C'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 100000, color: "blue" };
+  };
+if((FromToGt(80,120,125000))&& network === 'GG'&& level === '10'&& effmu === 'C'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 125000, color: "blue" };
+  };
+if((FromToGt(34,66,100000))&& network === 'GG'&& level === '10'&& effmu === 'C'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 100000, color: "blue" };
+  };
+if((FromToGt(67,79,125000))&& network === 'GG'&& level === '10'&& effmu === 'C'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 125000, color: "blue" };
+  };
+if((FromToGt(121,150,450000))&& network === 'GG'&& level === '10'&& effmu === 'C'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 450000, color: "blue" };
+  };
+if((FromToGt(67,79,50000))&& network === 'GG'&& level === '11'&& effmu === 'A'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 50000, color: "blue" };
+  };
+if((FromToGt(80,120,75000))&& network === 'GG'&& level === '11'&& effmu === 'A'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 75000, color: "blue" };
+  };
+if((FromToGt(121,150,125000))&& network === 'GG'&& level === '11'&& effmu === 'A'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 125000, color: "blue" };
+  };
+if((FromToGt(151,255,300000))&& network === 'GG'&& level === '11'&& effmu === 'A'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 300000, color: "blue" };
+  };
+if((FromToGt(256,375,400000))&& network === 'GG'&& level === '11'&& effmu === 'A'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 400000, color: "blue" };
+  };
+if((FromToGt(67,79,75000))&& network === 'GG'&& level === '11'&& effmu === 'A'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 75000, color: "blue" };
+  };
+if((FromToGt(80,120,100000))&& network === 'GG'&& level === '11'&& effmu === 'A'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 100000, color: "blue" };
+  };
+if((FromToGt(121,150,300000))&& network === 'GG'&& level === '11'&& effmu === 'A'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 300000, color: "blue" };
+  };
+if((FromToGt(151,255,350000))&& network === 'GG'&& level === '11'&& effmu === 'A'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 350000, color: "blue" };
+  };
+if((FromToGt(256,375,500000))&& network === 'GG'&& level === '11'&& effmu === 'A'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 500000, color: "blue" };
+  };
+if((FromToGt(50,79,75000))&& network === 'GG'&& level === '11'&& effmu === 'B'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 75000, color: "blue" };
+  };
+if((FromToGt(121,150,150000))&& network === 'GG'&& level === '11'&& effmu === 'B'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 150000, color: "blue" };
+  };
+if((FromToGt(151,255,350000))&& network === 'GG'&& level === '11'&& effmu === 'B'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 350000, color: "blue" };
+  };
+if((FromToGt(256,375,500000))&& network === 'GG'&& level === '11'&& effmu === 'B'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 500000, color: "blue" };
+  };
+if((FromToGt(50,79,100000))&& network === 'GG'&& level === '11'&& effmu === 'B'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 100000, color: "blue" };
+  };
+if((FromToGt(34,66,75000))&& network === 'GG'&& level === '11'&& effmu === 'C'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 75000, color: "blue" };
+  };
+if((FromToGt(67,79,100000))&& network === 'GG'&& level === '11'&& effmu === 'C'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 100000, color: "blue" };
+  };
+if((FromToGt(80,120,125000))&& network === 'GG'&& level === '11'&& effmu === 'C'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 125000, color: "blue" };
+  };
+if((FromToGt(121,150,175000))&& network === 'GG'&& level === '11'&& effmu === 'C'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 175000, color: "blue" };
+  };
+if((FromToGt(151,255,400000))&& network === 'GG'&& level === '11'&& effmu === 'C'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 400000, color: "blue" };
+  };
+if((FromToGt(34,66,100000))&& network === 'GG'&& level === '11'&& effmu === 'C'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 100000, color: "blue" };
+  };
+if((FromToGt(67,79,125000))&& network === 'GG'&& level === '11'&& effmu === 'C'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 125000, color: "blue" };
+  };
+if((FromToGt(80,120,150000))&& network === 'GG'&& level === '11'&& effmu === 'C'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 150000, color: "blue" };
+  };
+if((FromToGt(121,150,400000))&& network === 'GG'&& level === '11'&& effmu === 'C'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 400000, color: "blue" };
+  };
+if((FromToGt(151,255,500000))&& network === 'GG'&& level === '11'&& effmu === 'C'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 500000, color: "blue" };
+  };
+if((FromToGt(67,79,40000))&& network === 'GG'&& level === '12'&& effmu === 'A'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 40000, color: "blue" };
+  };
+if((FromToGt(80,120,50000))&& network === 'GG'&& level === '12'&& effmu === 'A'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 50000, color: "blue" };
+  };
+if((FromToGt(121,150,80000))&& network === 'GG'&& level === '12'&& effmu === 'A'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 80000, color: "blue" };
+  };
+if((FromToGt(151,255,250000))&& network === 'GG'&& level === '12'&& effmu === 'A'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 250000, color: "blue" };
+  };
+if((FromToGt(256,375,350000))&& network === 'GG'&& level === '12'&& effmu === 'A'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 350000, color: "blue" };
+  };
+if((FromToGt(376,575,500000))&& network === 'GG'&& level === '12'&& effmu === 'A'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 500000, color: "blue" };
+  };
+if((FromToGt(67,79,65000))&& network === 'GG'&& level === '12'&& effmu === 'A'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 65000, color: "blue" };
+  };
+if((FromToGt(80,120,75000))&& network === 'GG'&& level === '12'&& effmu === 'A'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 75000, color: "blue" };
+  };
+if((FromToGt(121,150,250000))&& network === 'GG'&& level === '12'&& effmu === 'A'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 250000, color: "blue" };
+  };
+if((FromToGt(151,255,300000))&& network === 'GG'&& level === '12'&& effmu === 'A'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 300000, color: "blue" };
+  };
+if((FromToGt(256,375,400000))&& network === 'GG'&& level === '12'&& effmu === 'A'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 400000, color: "blue" };
+  };
+if((FromToGt(376,575,650000))&& network === 'GG'&& level === '12'&& effmu === 'A'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 650000, color: "blue" };
+  };
+if((FromToGt(67,79,50000))&& network === 'GG'&& level === '12'&& effmu === 'B'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 50000, color: "blue" };
+  };
+if((FromToGt(80,120,75000))&& network === 'GG'&& level === '12'&& effmu === 'B'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 75000, color: "blue" };
+  };
+if((FromToGt(121,150,125000))&& network === 'GG'&& level === '12'&& effmu === 'B'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 125000, color: "blue" };
+  };
+if((FromToGt(151,255,300000))&& network === 'GG'&& level === '12'&& effmu === 'B'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 300000, color: "blue" };
+  };
+if((FromToGt(80,120,100000))&& network === 'GG'&& level === '12'&& effmu === 'B'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 100000, color: "blue" };
+  };
+if((FromToGt(67,79,75000))&& network === 'GG'&& level === '12'&& effmu === 'B'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 75000, color: "blue" };
+  };
+if((FromToGt(121,150,300000))&& network === 'GG'&& level === '12'&& effmu === 'B'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 300000, color: "blue" };
+  };
+if((FromToGt(151,255,350000))&& network === 'GG'&& level === '12'&& effmu === 'B'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 350000, color: "blue" };
+  };
+if((FromToGt(50,79,75000))&& network === 'GG'&& level === '12'&& effmu === 'C'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 75000, color: "blue" };
+  };
+if((FromToGt(80,120,100000))&& network === 'GG'&& level === '12'&& effmu === 'C'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 100000, color: "blue" };
+  };
+if((FromToGt(121,150,150000))&& network === 'GG'&& level === '12'&& effmu === 'C'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 150000, color: "blue" };
+  };
+if((FromToGt(256,375,450000))&& network === 'GG'&& level === '12'&& effmu === 'C'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 450000, color: "blue" };
+  };
+if((FromToGt(50,79,100000))&& network === 'GG'&& level === '12'&& effmu === 'C'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 100000, color: "blue" };
+  };
+if((FromToGt(121,150,350000))&& network === 'GG'&& level === '12'&& effmu === 'C'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 350000, color: "blue" };
+  };
+if((FromToGt(151,255,400000))&& network === 'GG'&& level === '12'&& effmu === 'C'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 400000, color: "blue" };
+  };
+if((FromToGt(256,375,600000))&& network === 'GG'&& level === '12'&& effmu === 'C'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 600000, color: "blue" };
+  };
+if((FromToGt(121,150,50000))&& network === 'GG'&& level === '13'&& effmu === 'A'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 50000, color: "blue" };
+  };
+if((FromToGt(151,255,200000))&& network === 'GG'&& level === '13'&& effmu === 'A'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 200000, color: "blue" };
+  };
+if((FromToGt(256,375,275000))&& network === 'GG'&& level === '13'&& effmu === 'A'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 275000, color: "blue" };
+  };
+if((FromToGt(376,575,400000))&& network === 'GG'&& level === '13'&& effmu === 'A'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 400000, color: "blue" };
+  };
+if((FromToGt(576,750,500000))&& network === 'GG'&& level === '13'&& effmu === 'A'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 500000, color: "blue" };
+  };
+if((FromToGt(121,150,175000))&& network === 'GG'&& level === '13'&& effmu === 'A'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 175000, color: "blue" };
+  };
+if((FromToGt(151,255,225000))&& network === 'GG'&& level === '13'&& effmu === 'A'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 225000, color: "blue" };
+  };
+if((FromToGt(256,375,350000))&& network === 'GG'&& level === '13'&& effmu === 'A'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 350000, color: "blue" };
+  };
+if((FromToGt(376,575,500000))&& network === 'GG'&& level === '13'&& effmu === 'A'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 500000, color: "blue" };
+  };
+if((FromToGt(576,750,625000))&& network === 'GG'&& level === '13'&& effmu === 'A'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 625000, color: "blue" };
+  };
+if((FromToGt(151,255,250000))&& network === 'GG'&& level === '13'&& effmu === 'B'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 250000, color: "blue" };
+  };
+if((FromToGt(80,120,50000))&& network === 'GG'&& level === '13'&& effmu === 'B'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 50000, color: "blue" };
+  };
+if((FromToGt(256,375,350000))&& network === 'GG'&& level === '13'&& effmu === 'B'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 350000, color: "blue" };
+  };
+if((FromToGt(375,575,500000))&& network === 'GG'&& level === '13'&& effmu === 'B'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 500000, color: "blue" };
+  };
+if((FromToGt(80,120,75000))&& network === 'GG'&& level === '13'&& effmu === 'B'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 75000, color: "blue" };
+  };
+if((FromToGt(121,150,250000))&& network === 'GG'&& level === '13'&& effmu === 'B'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 250000, color: "blue" };
+  };
+if((FromToGt(151,255,300000))&& network === 'GG'&& level === '13'&& effmu === 'B'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 300000, color: "blue" };
+  };
+if((FromToGt(256,375,400000))&& network === 'GG'&& level === '13'&& effmu === 'B'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 400000, color: "blue" };
+  };
+if((FromToGt(376,575,650000))&& network === 'GG'&& level === '13'&& effmu === 'B'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 650000, color: "blue" };
+  };
+if((FromToGt(50,79,50000))&& network === 'GG'&& level === '13'&& effmu === 'C'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 50000, color: "blue" };
+  };
+if((FromToGt(80,120,75000))&& network === 'GG'&& level === '13'&& effmu === 'C'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 75000, color: "blue" };
+  };
+if((FromToGt(121,150,125000))&& network === 'GG'&& level === '13'&& effmu === 'C'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 125000, color: "blue" };
+  };
+if((FromToGt(151,255,300000))&& network === 'GG'&& level === '13'&& effmu === 'C'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 300000, color: "blue" };
+  };
+if((FromToGt(256,375,400000))&& network === 'GG'&& level === '13'&& effmu === 'C'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 400000, color: "blue" };
+  };
+if((FromToGt(376,575,550000))&& network === 'GG'&& level === '13'&& effmu === 'C'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 550000, color: "blue" };
+  };
+if((FromToGt(50,79,75000))&& network === 'GG'&& level === '13'&& effmu === 'C'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 75000, color: "blue" };
+  };
+if((FromToGt(80,120,100000))&& network === 'GG'&& level === '13'&& effmu === 'C'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 100000, color: "blue" };
+  };
+if((FromToGt(121,150,300000))&& network === 'GG'&& level === '13'&& effmu === 'C'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 300000, color: "blue" };
+  };
+if((FromToGt(151,255,350000))&& network === 'GG'&& level === '13'&& effmu === 'C'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 350000, color: "blue" };
+  };
+if((FromToGt(256,375,475000))&& network === 'GG'&& level === '13'&& effmu === 'C'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 475000, color: "blue" };
+  };
+if((FromToGt(151,255,100000))&& network === 'GG'&& level === '14'&& effmu === 'A'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 100000, color: "blue" };
+  };
+if((FromToGt(256,375,200000))&& network === 'GG'&& level === '14'&& effmu === 'A'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 200000, color: "blue" };
+  };
+if((FromToGt(376,575,300000))&& network === 'GG'&& level === '14'&& effmu === 'A'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 300000, color: "blue" };
+  };
+if((FromToGt(576,750,350000))&& network === 'GG'&& level === '14'&& effmu === 'A'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 350000, color: "blue" };
+  };
+if((FromToGt(751,1050,550000))&& network === 'GG'&& level === '14'&& effmu === 'A'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 550000, color: "blue" };
+  };
+if((FromToGt(121,150,50000))&& network === 'GG'&& level === '14'&& effmu === 'A'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 50000, color: "blue" };
+  };
+if((FromToGt(151,255,150000))&& network === 'GG'&& level === '14'&& effmu === 'A'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 150000, color: "blue" };
+  };
+if((FromToGt(256,375,250000))&& network === 'GG'&& level === '14'&& effmu === 'A'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 250000, color: "blue" };
+  };
+if((FromToGt(376,575,350000))&& network === 'GG'&& level === '14'&& effmu === 'A'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 350000, color: "blue" };
+  };
+if((FromToGt(576,750,450000))&& network === 'GG'&& level === '14'&& effmu === 'A'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 450000, color: "blue" };
+  };
+if((FromToGt(751,1050,600000))&& network === 'GG'&& level === '14'&& effmu === 'A'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 600000, color: "blue" };
+  };
+if((FromToGt(121,150,50000))&& network === 'GG'&& level === '14'&& effmu === 'B'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 50000, color: "blue" };
+  };
+if((FromToGt(151,255,150000))&& network === 'GG'&& level === '14'&& effmu === 'B'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 150000, color: "blue" };
+  };
+if((FromToGt(256,375,275000))&& network === 'GG'&& level === '14'&& effmu === 'B'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 275000, color: "blue" };
+  };
+if((FromToGt(376,575,400000))&& network === 'GG'&& level === '14'&& effmu === 'B'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 400000, color: "blue" };
+  };
+if((FromToGt(576,750,500000))&& network === 'GG'&& level === '14'&& effmu === 'B'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 500000, color: "blue" };
+  };
+if((FromToGt(121,150,100000))&& network === 'GG'&& level === '14'&& effmu === 'B'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 100000, color: "blue" };
+  };
+if((FromToGt(151,255,225000))&& network === 'GG'&& level === '14'&& effmu === 'B'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 225000, color: "blue" };
+  };
+if((FromToGt(256,375,350000))&& network === 'GG'&& level === '14'&& effmu === 'B'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 350000, color: "blue" };
+  };
+if((FromToGt(376,575,425000))&& network === 'GG'&& level === '14'&& effmu === 'B'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 425000, color: "blue" };
+  };
+if((FromToGt(80,120,50000))&& network === 'GG'&& level === '14'&& effmu === 'C'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 50000, color: "blue" };
+  };
+if((FromToGt(121,150,75000))&& network === 'GG'&& level === '14'&& effmu === 'C'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 75000, color: "blue" };
+  };
+if((FromToGt(151,255,200000))&& network === 'GG'&& level === '14'&& effmu === 'C'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 200000, color: "blue" };
+  };
+if((FromToGt(256,375,350000))&& network === 'GG'&& level === '14'&& effmu === 'C'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 350000, color: "blue" };
+  };
+if((FromToGt(376,575,500000))&& network === 'GG'&& level === '14'&& effmu === 'C'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 500000, color: "blue" };
+  };
+if((FromToGt(751,1050,1000000))&& network === 'GG'&& level === '14'&& effmu === 'C'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 1000000, color: "blue" };
+  };
+if((FromToGt(80,120,75000))&& network === 'GG'&& level === '14'&& effmu === 'C'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 75000, color: "blue" };
+  };
+if((FromToGt(121,150,150000))&& network === 'GG'&& level === '14'&& effmu === 'C'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 150000, color: "blue" };
+  };
+if((FromToGt(151,255,275000))&& network === 'GG'&& level === '14'&& effmu === 'C'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 275000, color: "blue" };
+  };
+if((FromToGt(256,375,400000))&& network === 'GG'&& level === '14'&& effmu === 'C'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 400000, color: "blue" };
+  };
+if((FromToGt(576,750,600000))&& network === 'GG'&& level === '14'&& effmu === 'C'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 600000, color: "blue" };
+  };
+if((FromToGt(121,150,350000))&& network === 'GG'&& level === '6'&& effmu === 'A'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 350000, color: "blue" };
+  };
+if((FromToGt(80,120,250000))&& network === 'GG'&& level === '6'&& effmu === 'A'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 250000, color: "blue" };
+  };
+if((FromToGt(25,33,30000))&& network === 'GG'&& level === '6'&& effmu === 'A'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 30000, color: "blue" };
+  };
+if((FromToGt(25,33,30000))&& network === 'GG'&& level === '6'&& effmu === 'A'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 30000, color: "blue" };
+  };
+if((FromToGt(25,33,40000))&& network === 'GG'&& level === '6'&& effmu === 'B'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 40000, color: "blue" };
+  };
+if((FromToGt(25,33,45000))&& network === 'GG'&& level === '6'&& effmu === 'B'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 45000, color: "blue" };
+  };
+if((FromToGt(25,33,50000))&& network === 'GG'&& level === '6'&& effmu === 'C'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 50000, color: "blue" };
+  };
+if((FromToGt(25,33,60000))&& network === 'GG'&& level === '6'&& effmu === 'C'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 60000, color: "blue" };
+  };
+if((FromToGt(25,33,40000))&& network === 'GG'&& level === '5'&& effmu === 'A'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 40000, color: "blue" };
+  };
+if((FromToGt(34,49,175000))&& network === 'GG'&& level === '5'&& effmu === 'A'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 175000, color: "blue" };
+  };
+if((FromToGt(50,66,200000))&& network === 'GG'&& level === '5'&& effmu === 'A'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 200000, color: "blue" };
+  };
+if((FromToGt(67,79,225000))&& network === 'GG'&& level === '5'&& effmu === 'A'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 225000, color: "blue" };
+  };
+if((FromToGt(50,66,225000))&& network === 'GG'&& level === '5'&& effmu === 'A'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 225000, color: "blue" };
+  };
+if((FromToGt(25,33,50000))&& network === 'GG'&& level === '5'&& effmu === 'B'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 50000, color: "blue" };
+  };
+if((FromToGt(34,49,200000))&& network === 'GG'&& level === '5'&& effmu === 'B'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 200000, color: "blue" };
+  };
+if((FromToGt(50,66,200000))&& network === 'GG'&& level === '5'&& effmu === 'B'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 200000, color: "blue" };
+  };
+if((FromToGt(12,24,20000))&& network === 'GG'&& level === '5'&& effmu === 'B'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 20000, color: "blue" };
+  };
+if((FromToGt(34,49,175000))&& network === 'GG'&& level === '5'&& effmu === 'A'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 175000, color: "blue" };
+  };
+if((FromToGt(34,49,200000))&& network === 'GG'&& level === '5'&& effmu === 'B'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 200000, color: "blue" };
+  };
+if((FromToGt(50,66,250000))&& network === 'GG'&& level === '5'&& effmu === 'B'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 250000, color: "blue" };
+  };
+if((FromToGt(34,49,225000))&& network === 'GG'&& level === '5'&& effmu === 'C'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 225000, color: "blue" };
+  };
+if((FromToGt(67,79,350000))&& network === 'GG'&& level === '5'&& effmu === 'C'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 350000, color: "blue" };
+  };
+if((FromToGt(50,66,300000))&& network === 'GG'&& level === '5'&& effmu === 'C'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 300000, color: "blue" };
+  };
+if((FromToGt(12,24,40000))&& network === 'GG'&& level === '5'&& effmu === 'C'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 40000, color: "blue" };
+  };
+if((FromToGt(34,49,225000))&& network === 'GG'&& level === '5'&& effmu === 'C'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 225000, color: "blue" };
+  };
+if((FromToGt(25,33,50000))&& network === 'GG'&& level === '4'&& effmu === 'A'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 50000, color: "blue" };
+  };
+if((FromToGt(25,33,55000))&& network === 'GG'&& level === '5'&& effmu === 'A'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 55000, color: "blue" };
+  };
+if((FromToGt(25,33,80000))&& network === 'GG'&& level === '5'&& effmu === 'B'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 80000, color: "blue" };
+  };
+if((FromToGt(34,49,200000))&& network === 'GG'&& level === '4'&& effmu === 'A'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 200000, color: "blue" };
+  };
+if((FromToGt(50,66,250000))&& network === 'GG'&& level === '4'&& effmu === 'A'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 250000, color: "blue" };
+  };
+if((FromToGt(12,24,20000))&& network === 'GG'&& level === '4'&& effmu === 'A'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 20000, color: "blue" };
+  };
+if((FromToGt(34,49,200000))&& network === 'GG'&& level === '4'&& effmu === 'A'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 200000, color: "blue" };
+  };
+if((FromToGt(34,49,225000))&& network === 'GG'&& level === '4'&& effmu === 'B'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 225000, color: "blue" };
+  };
+if((FromToGt(50,66,300000))&& network === 'GG'&& level === '4'&& effmu === 'B'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 300000, color: "blue" };
+  };
+if((FromToGt(12,24,40000))&& network === 'GG'&& level === '4'&& effmu === 'B'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 40000, color: "blue" };
+  };
+if((FromToGt(34,49,225000))&& network === 'GG'&& level === '4'&& effmu === 'B'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 225000, color: "blue" };
+  };
+if((FromToGt(25,33,100000))&& network === 'GG'&& level === '4'&& effmu === 'C'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 100000, color: "blue" };
+  };
+if((FromToGt(34,49,250000))&& network === 'GG'&& level === '4'&& effmu === 'C'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 250000, color: "blue" };
+  };
+if((FromToGt(50,66,350000))&& network === 'GG'&& level === '4'&& effmu === 'C'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 350000, color: "blue" };
+  };
+if((FromToGt(67,79,700000))&& network === 'GG'&& level === '4'&& effmu === 'C'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 700000, color: "blue" };
+  };
+if((FromToGt(12,24,55000))&& network === 'GG'&& level === '4'&& effmu === 'C'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 55000, color: "blue" };
+  };
+if((FromToGt(25,33,125000))&& network === 'GG'&& level === '4'&& effmu === 'C'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 125000, color: "blue" };
+  };
+if((FromToGt(34,49,250000))&& network === 'GG'&& level === '4'&& effmu === 'C'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 250000, color: "blue" };
+  };
+if((FromToGt(50,66,650000))&& network === 'GG'&& level === '4'&& effmu === 'C'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 650000, color: "blue" };
+  };
+if((FromToGt(34,49,225000))&& network === 'GG'&& level === '3'&& effmu === 'A'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 225000, color: "blue" };
+  };
+if((FromToGt(50,66,300000))&& network === 'GG'&& level === '3'&& effmu === 'A'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 300000, color: "blue" };
+  };
+if((FromToGt(16,24,40000))&& network === 'GG'&& level === '3'&& effmu === 'A'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 40000, color: "blue" };
+  };
+if((FromToGt(34,49,225000))&& network === 'GG'&& level === '3'&& effmu === 'A'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 225000, color: "blue" };
+  };
+if((FromToGt(25,33,100000))&& network === 'GG'&& level === '3'&& effmu === 'B'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 100000, color: "blue" };
+  };
+if((FromToGt(34,49,250000))&& network === 'GG'&& level === '3'&& effmu === 'B'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 250000, color: "blue" };
+  };
+if((FromToGt(12,24,60000))&& network === 'GG'&& level === '3'&& effmu === 'B'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 60000, color: "blue" };
+  };
+if((FromToGt(25,33,125000))&& network === 'GG'&& level === '3'&& effmu === 'B'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 125000, color: "blue" };
+  };
+if((FromToGt(16,24,50000))&& network === 'GG'&& level === '3'&& effmu === 'C'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 50000, color: "blue" };
+  };
+if((FromToGt(25,33,125000))&& network === 'GG'&& level === '3'&& effmu === 'C'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 125000, color: "blue" };
+  };
+if((FromToGt(34,49,300000))&& network === 'GG'&& level === '3'&& effmu === 'C'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 300000, color: "blue" };
+  };
+if((FromToGt(50,66,500000))&& network === 'GG'&& level === '3'&& effmu === 'C'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 500000, color: "blue" };
+  };
+if((FromToGt(12,24,80000))&& network === 'GG'&& level === '3'&& effmu === 'C'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 80000, color: "blue" };
+  };
+if((FromToGt(25,33,150000))&& network === 'GG'&& level === '3'&& effmu === 'C'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 150000, color: "blue" };
+  };
+if((FromToGt(34,49,275000))&& network === 'GG'&& level === '3'&& effmu === 'C'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 275000, color: "blue" };
+  };
+if((FromToGt(50,66,1000000))&& network === 'GG'&& level === '3'&& effmu === 'C'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 1000000, color: "blue" };
+  };
+if((FromToGt(16,24,30000))&& network === 'GG'&& level === '2'&& effmu === 'A'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 30000, color: "blue" };
+  };
+if((FromToGt(25,33,100000))&& network === 'GG'&& level === '2'&& effmu === 'A'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 100000, color: "blue" };
+  };
+if((FromToGt(34,49,250000))&& network === 'GG'&& level === '2'&& effmu === 'A'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 250000, color: "blue" };
+  };
+if((FromToGt(13,24,60000))&& network === 'GG'&& level === '2'&& effmu === 'A'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 60000, color: "blue" };
+  };
+if((FromToGt(25,33,125000))&& network === 'GG'&& level === '2'&& effmu === 'A'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 125000, color: "blue" };
+  };
+if((FromToGt(25,33,150000))&& network === 'GG'&& level === '2'&& effmu === 'B'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 150000, color: "blue" };
+  };
+if((FromToGt(16,24,65000))&& network === 'GG'&& level === '2'&& effmu === 'B'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 65000, color: "blue" };
+  };
+if((FromToGt(12,24,80000))&& network === 'GG'&& level === '2'&& effmu === 'B'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 80000, color: "blue" };
+  };
+if((FromToGt(16,24,85000))&& network === 'GG'&& level === '2'&& effmu === 'C'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 85000, color: "blue" };
+  };
+if((FromToGt(25,33,200000))&& network === 'GG'&& level === '2'&& effmu === 'C'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 200000, color: "blue" };
+  };
+if((FromToGt(12,24,100000))&& network === 'GG'&& level === '2'&& effmu === 'C'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 100000, color: "blue" };
+  };
+if((FromToGt(25,33,150000))&& network === 'GG'&& level === '1'&& effmu === 'A'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 150000, color: "blue" };
+  };
+if((FromToGt(12,24,80000))&& network === 'GG'&& level === '1'&& effmu === 'A'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 80000, color: "blue" };
+  };
+if((FromToGt(25,33,200000))&& network === 'GG'&& level === '1'&& effmu === 'A'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 200000, color: "blue" };
+  };
+if((FromToGt(8.8,13,40000))&& network === 'GG'&& level === '1'&& effmu === 'B'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 40000, color: "blue" };
+  };
+if((FromToGt(8.8,13,40000))&& network === 'GG'&& level === '1'&& effmu === 'B'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 40000, color: "blue" };
+  };
+if((FromToGt(8.8,13,60000))&& network === 'GG'&& level === '1'&& effmu === 'C'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 60000, color: "blue" };
+  };
+if((FromToGt(8.8,13,60000))&& network === 'GG'&& level === '1'&& effmu === 'C'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 60000, color: "blue" };
+  };
+if((FromToGt(100,150,100000))&& network === 'WNMX'&& level === '12'&& effmu === 'C'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 100000, color: "blue" };
+  };
+if((FromToGt(200,250,250000))&& network === 'WNMX'&& level === '12'&& effmu === 'C'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 250000, color: "blue" };
+  };
+if((FromToGt(100,150,100000))&& network === 'WNMX'&& level === '12'&& effmu === 'B'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 100000, color: "blue" };
+  };
+if((FromToGt(100,150,150000))&& network === 'WNMX'&& level === '12'&& effmu === 'C'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 150000, color: "blue" };
+  };
+if((FromToGt(100,150,150000))&& network === 'WNMX'&& level === '12'&& effmu === 'B'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 150000, color: "blue" };
+  };
+if((FromToGt(200,250,250000))&& network === 'WNMX'&& level === '12'&& effmu === 'B'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 250000, color: "blue" };
+  };
+if((BidGt(150,75000))&& network === 'WNMX'&& level === '12'&& effmu === 'A'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 75000, color: "blue" };
+  };
+if((FromToGt(200,250,175000))&& network === 'WNMX'&& level === '12'&& effmu === 'A'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 175000, color: "blue" };
+  };
+if((BidGt(500,400000))&& network === 'WNMX'&& level === '12'&& effmu === 'A'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 400000, color: "blue" };
+  };
+if((BidGt(150,100000))&& network === 'WNMX'&& level === '12'&& effmu === 'A'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 100000, color: "blue" };
+  };
+if((FromToGt(200,250,200000))&& network === 'WNMX'&& level === '12'&& effmu === 'A'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 200000, color: "blue" };
+  };
+if((FromToGt(100,150,100000))&& network === 'WNMX'&& level === '11'&& effmu === 'A'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 100000, color: "blue" };
+  };
+if((FromToGt(200,250,250000))&& network === 'WNMX'&& level === '11'&& effmu === 'A'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 250000, color: "blue" };
+  };
+if((FromToGt(100,150,150000))&& network === 'WNMX'&& level === '11'&& effmu === 'A'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 150000, color: "blue" };
+  };
+if((FromToGt(200,250,300000))&& network === 'WNMX'&& level === '11'&& effmu === 'A'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 300000, color: "blue" };
+  };
+if((FromToGt(100,150,125000))&& network === 'WNMX'&& level === '11'&& effmu === 'B'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 125000, color: "blue" };
+  };
+if((FromToGt(200,250,300000))&& network === 'WNMX'&& level === '11'&& effmu === 'B'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 300000, color: "blue" };
+  };
+if((FromToGt(100,150,175000))&& network === 'WNMX'&& level === '11'&& effmu === 'B'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 175000, color: "blue" };
+  };
+if((FromToGt(200,250,350000))&& network === 'WNMX'&& level === '11'&& effmu === 'B'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 350000, color: "blue" };
+  };
+if((FromToGt(100,150,125000))&& network === 'WNMX'&& level === '10'&& effmu === 'A'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 125000, color: "blue" };
+  };
+if((FromToGt(200,250,300000))&& network === 'WNMX'&& level === '10'&& effmu === 'A'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 300000, color: "blue" };
+  };
+if((FromToGt(100,150,175000))&& network === 'WNMX'&& level === '10'&& effmu === 'A'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 175000, color: "blue" };
+  };
+if((FromToGt(200,250,350000))&& network === 'WNMX'&& level === '10'&& effmu === 'A'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 350000, color: "blue" };
+  };
+if((FromToGt(100,150,150000))&& network === 'WNMX'&& level === '10'&& effmu === 'B'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 150000, color: "blue" };
+  };
+if((FromToGt(200,250,350000))&& network === 'WNMX'&& level === '10'&& effmu === 'B'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 350000, color: "blue" };
+  };
+if((FromToGt(100,150,200000))&& network === 'WNMX'&& level === '10'&& effmu === 'B'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 200000, color: "blue" };
+  };
+if((FromToGt(200,250,400000))&& network === 'WNMX'&& level === '10'&& effmu === 'B'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 400000, color: "blue" };
+  };
+if((FromToGt(100,150,175000))&& network === 'WNMX'&& level === '10'&& effmu === 'C'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 175000, color: "blue" };
+  };
+if((FromToGt(200,250,400000))&& network === 'WNMX'&& level === '10'&& effmu === 'C'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 400000, color: "blue" };
+  };
+if((FromToGt(100,150,225000))&& network === 'WNMX'&& level === '10'&& effmu === 'C'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 225000, color: "blue" };
+  };
+if((FromToGt(200,250,400000))&& network === 'WNMX'&& level === '10'&& effmu === 'C'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 400000, color: "blue" };
+  };
+if((FromToGt(100,150,150000))&& network === 'WNMX'&& level === '9'&& effmu === 'A'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 150000, color: "blue" };
+  };
+if((FromToGt(200,250,350000))&& network === 'WNMX'&& level === '9'&& effmu === 'A'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 350000, color: "blue" };
+  };
+if((FromToGt(100,150,200000))&& network === 'WNMX'&& level === '9'&& effmu === 'A'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 200000, color: "blue" };
+  };
+if((FromToGt(200,250,400000))&& network === 'WNMX'&& level === '9'&& effmu === 'A'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 400000, color: "blue" };
+  };
+if((FromToGt(100,150,175000))&& network === 'WNMX'&& level === '9'&& effmu === 'B'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 175000, color: "blue" };
+  };
+if((FromToGt(200,250,400000))&& network === 'WNMX'&& level === '9'&& effmu === 'B'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 400000, color: "blue" };
+  };
+if((FromToGt(100,150,225000))&& network === 'WNMX'&& level === '9'&& effmu === 'B'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 225000, color: "blue" };
+  };
+if((FromToGt(200,250,450000))&& network === 'WNMX'&& level === '9'&& effmu === 'B'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 450000, color: "blue" };
+  };
+if((FromToGt(100,150,200000))&& network === 'WNMX'&& level === '9'&& effmu === 'C'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 200000, color: "blue" };
+  };
+if((FromToGt(200,250,450000))&& network === 'WNMX'&& level === '9'&& effmu === 'C'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 450000, color: "blue" };
+  };
+if((FromToGt(100,150,250000))&& network === 'WNMX'&& level === '9'&& effmu === 'C'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 250000, color: "blue" };
+  };
+if((FromToGt(200,250,500000))&& network === 'WNMX'&& level === '9'&& effmu === 'C'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 500000, color: "blue" };
+  };
+if((FromToGt(100,150,175000))&& network === 'WNMX'&& level === '8'&& effmu === 'A'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 175000, color: "blue" };
+  };
+if((FromToGt(200,250,400000))&& network === 'WNMX'&& level === '8'&& effmu === 'A'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 400000, color: "blue" };
+  };
+if((FromToGt(100,150,225000))&& network === 'WNMX'&& level === '8'&& effmu === 'A'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 225000, color: "blue" };
+  };
+if((FromToGt(100,150,200000))&& network === 'WNMX'&& level === '8'&& effmu === 'B'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 200000, color: "blue" };
+  };
+if((FromToGt(100,150,225000))&& network === 'WNMX'&& level === '8'&& effmu === 'B'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 225000, color: "blue" };
+  };
+if((FromToGt(100,150,250000))&& network === 'WNMX'&& level === '8'&& effmu === 'C'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 250000, color: "blue" };
+  };
+if((BidGtName(100,150,"300000"))&& network === 'WNMX'&& level === '8'&& effmu === 'C'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 150, color: "blue" };
+  };
+if((FromToGt(100,150,200000))&& network === 'WNMX'&& level === '7'&& effmu === 'A'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 200000, color: "blue" };
+  };
+if((FromToGt(100,150,250000))&& network === 'WNMX'&& level === '7'&& effmu === 'A'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 250000, color: "blue" };
+  };
+if((FromToGt(100,150,250000))&& network === 'WNMX'&& level === '7'&& effmu === 'B'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 250000, color: "blue" };
+  };
+if((FromToGt(100,150,300000))&& network === 'WNMX'&& level === '7'&& effmu === 'B'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 300000, color: "blue" };
+  };
+if((FromToGt(100,150,300000))&& network === 'WNMX'&& level === '7'&& effmu === 'C'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 300000, color: "blue" };
+  };
+if((FromToGt(100,150,350000))&& network === 'WNMX'&& level === '7'&& effmu === 'C'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 350000, color: "blue" };
+  };
+if((FromToGt(100,150,250000))&& network === 'WNMX'&& level === '6'&& effmu === 'A'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 250000, color: "blue" };
+  };
+if((FromToGt(100,150,300000))&& network === 'WNMX'&& level === '6'&& effmu === 'A'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 300000, color: "blue" };
+  };
+if((FromToGt(100,150,300000))&& network === 'WNMX'&& level === '6'&& effmu === 'B'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 300000, color: "blue" };
+  };
+if((FromToGt(100,150,350000))&& network === 'WNMX'&& level === '6'&& effmu === 'B'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 350000, color: "blue" };
+  };
+if((FromToGt(100,150,350000))&& network === 'WNMX'&& level === '6'&& effmu === 'C'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 350000, color: "blue" };
+  };
+if((FromToGt(100,150,400000))&& network === 'WNMX'&& level === '6'&& effmu === 'C'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 400000, color: "blue" };
+  };
+if((FromToGt(100,150,300000))&& network === 'WNMX'&& level === '5'&& effmu === 'A'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 300000, color: "blue" };
+  };
+if((FromToGt(100,150,400000))&& network === 'WNMX'&& level === '5'&& effmu === 'A'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 400000, color: "blue" };
+  };
+if((FromToGt(100,150,350000))&& network === 'WNMX'&& level === '5'&& effmu === 'B'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 350000, color: "blue" };
+  };
+if((FromToGt(100,150,450000))&& network === 'WNMX'&& level === '5'&& effmu === 'B'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 450000, color: "blue" };
+  };
+if((FromToGt(100,150,400000))&& network === 'WNMX'&& level === '5'&& effmu === 'C'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 400000, color: "blue" };
+  };
+if((FromToGt(100,150,500000))&& network === 'WNMX'&& level === '5'&& effmu === 'C'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 500000, color: "blue" };
+  };
+if((FromToGt(100,150,400000))&& network === 'WNMX'&& level === '4'&& effmu === 'A'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 400000, color: "blue" };
+  };
+if((FromToGt(100,150,450000))&& network === 'WNMX'&& level === '4'&& effmu === 'A'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 450000, color: "blue" };
+  };
+if((BidGt(50,100000))&& network === 'WNMX'&& level === '3'&& effmu === 'A'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 100000, color: "blue" };
+  };
+if((BidGt(50,150000))&& network === 'WNMX'&& level === '3'&& effmu === 'A'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 150000, color: "blue" };
+  };
+if((BidGt(50,200000))&& network === 'WNMX'&& level === '3'&& effmu === 'B'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 200000, color: "blue" };
+  };
+if((BidGt(50,150000))&& network === 'WNMX'&& level === '2'&& effmu === 'A'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 150000, color: "blue" };
+  };
+if((BidGt(50,200000))&& network === 'WNMX'&& level === '2'&& effmu === 'A'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 200000, color: "blue" };
+  };
+if((BidGt(44,100000))&& network === 'PS.eu'&& level === '6'&& effmu === 'B'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 100000, color: "blue" };
+  };
+if((BidGt(44,25000))&& network === 'PS.eu'&& level === '6'&& effmu === 'A'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 25000, color: "blue" };
+  };
+if((FromToGt(34,49,150000))&& network === 'GG'&& level === '6'&& effmu === 'A'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 150000, color: "blue" };
+  };
+if((FromToGt(50,66,150000))&& network === 'GG'&& level === '6'&& effmu === 'A'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 150000, color: "blue" };
+  };
+if((FromToGt(67,79,175000))&& network === 'GG'&& level === '6'&& effmu === 'A'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 175000, color: "blue" };
+  };
+if((FromToGt(67,79,75000))&& network === 'WPN'&& level === '8'&& effmu === 'B'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 75000, color: "blue" };
+  };
+if((FromToGt(34,49,40000))&& network === 'WPN'&& level === '7'&& effmu === 'C'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 40000, color: "blue" };
+  };
+if((FromToGt(34,49,60000))&& network === 'WPN'&& level === '7'&& effmu === 'C'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 60000, color: "blue" };
+  };
+if((FromToGt(50,66,25000))&& network === 'WPN'&& level === '10'&& effmu === 'A'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 25000, color: "blue" };
+  };
+if((FromToGt(50,66,30000))&& network === 'WPN'&& level === '10'&& effmu === 'B'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 30000, color: "blue" };
+  };
+if((FromToGt(34,49,30000))&& network === 'WPN'&& level === '8'&& effmu === 'A'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 30000, color: "blue" };
+  };
+if((FromToGt(34,49,175000))&& network === 'WPN'&& level === '4'&& effmu === 'C'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 175000, color: "blue" };
+  };
+if((FromToGt(25,33,75000))&& network === 'WPN'&& level === '2'&& effmu === 'A'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 75000, color: "blue" };
+  };
+if((FromToGt(16,24,50000))&& network === 'WPN'&& level === '2'&& effmu === 'A'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 50000, color: "blue" };
+  };
+if((FromToGt(50,66,40000))&& network === 'WPN'&& level === '9'&& effmu === 'B'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 40000, color: "blue" };
+  };
+if((FromToGt(50,66,40000))&& network === 'WPN'&& level === '9'&& effmu === 'C'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 40000, color: "blue" };
+  };
+if((FromToGt(50,66,30000))&& network === 'WPN'&& level === '10'&& effmu === 'C'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 30000, color: "blue" };
+  };
+if((FromToGt(50,66,25000))&& network === 'WPN'&& level === '11'&& effmu === 'B'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 25000, color: "blue" };
+  };
+if((FromToGt(50,66,25000))&& network === 'WPN'&& level === '11'&& effmu === 'C'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 25000, color: "blue" };
+  };
+if((FromToGt(67,79,40000))&& network === 'WPN'&& level === '10'&& effmu === 'A'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 40000, color: "blue" };
+  };
+if((FromToGt(67,79,60000))&& network === 'WPN'&& level === '9'&& effmu === 'C'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 60000, color: "blue" };
+  };
+if((FromToGt(67,79,40000))&& network === 'WPN'&& level === '11'&& effmu === 'B'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 40000, color: "blue" };
+  };
+if((FromToGt(67,79,40000))&& network === 'WPN'&& level === '11'&& effmu === 'C'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 40000, color: "blue" };
+  };
+if((FromToGt(67,79,50000))&& network === 'WPN'&& level === '10'&& effmu === 'C'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 50000, color: "blue" };
+  };
+if((FromToGt(80,120,60000))&& network === 'WPN'&& level === '11'&& effmu === 'B'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 60000, color: "blue" };
+  };
+if((FromToGt(80,120,60000))&& network === 'WPN'&& level === '11'&& effmu === 'C'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 60000, color: "blue" };
+  };
+if((FromToGt(25,33,60000))&& network === 'WPN'&& level === '6'&& effmu === 'C'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 60000, color: "blue" };
+  };
+if((FromToGt(25,33,60000))&& network === 'WPN'&& level === '6'&& effmu === 'B'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 60000, color: "blue" };
+  };
+if((FromToGt(34,49,80000))&& network === 'WPN'&& level === '6'&& effmu === 'B'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 80000, color: "blue" };
+  };
+if((FromToGt(34,49,80000))&& network === 'WPN'&& level === '6'&& effmu === 'C'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 80000, color: "blue" };
+  };
+if((FromToGt(34,49,120000))&& network === 'WPN'&& level === '6'&& effmu === 'B'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 120000, color: "blue" };
+  };
+if((FromToGt(50,66,45000))&& network === 'WPN'&& level === '10'&& effmu === 'A'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 45000, color: "blue" };
+  };
+if((FromToGt(121,150,150000))&& network === 'WPN'&& level === '11'&& effmu === 'A'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 150000, color: "blue" };
+  };
+if((BidGt(33,100000))&& network === 'PS.eu'&& level === '3'&& effmu === 'B'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 100000, color: "blue" };
+  };
+if((BidGt(33,200000))&& network === 'PS.eu'&& level === '3'&& effmu === 'B'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 200000, color: "blue" };
+  };
+if((BidGt(33,100000))&& network === 'PS.eu'&& level === '3'&& effmu === 'C'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 100000, color: "blue" };
+  };
+if((BidGt(33,200000))&& network === 'PS.eu'&& level === '3'&& effmu === 'C'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 200000, color: "blue" };
+  };
+if((FromToGt(50,60,125000))&& network === 'WNMX'&& level === '3'&& effmu === 'B'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 125000, color: "blue" };
+  };
+if((FromToGt(50,60,150000))&& network === 'WNMX'&& level === '3'&& effmu === 'C'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 150000, color: "blue" };
+  };
+if((FromToGt(50,60,200000))&& network === 'WNMX'&& level === '3'&& effmu === 'C'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 200000, color: "blue" };
+  };
+if((FromToGt(50,60,80000))&& network === 'WNMX'&& level === '4'&& effmu === 'A'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 80000, color: "blue" };
+  };
+if((FromToGt(50,60,120000))&& network === 'WNMX'&& level === '4'&& effmu === 'A'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 120000, color: "blue" };
+  };
+if((FromToGt(50,60,100000))&& network === 'WNMX'&& level === '4'&& effmu === 'B'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 100000, color: "blue" };
+  };
+if((FromToGt(50,60,150000))&& network === 'WNMX'&& level === '4'&& effmu === 'B'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 150000, color: "blue" };
+  };
+if((FromToGt(50,60,100000))&& network === 'WNMX'&& level === '4'&& effmu === 'C'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 100000, color: "blue" };
+  };
+if((FromToGt(50,60,150000))&& network === 'WNMX'&& level === '4'&& effmu === 'C'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 150000, color: "blue" };
+  };
+if((FromToGt(50,60,65000))&& network === 'WNMX'&& level === '5'&& effmu === 'A'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 65000, color: "blue" };
+  };
+if((FromToGt(50,60,90000))&& network === 'WNMX'&& level === '5'&& effmu === 'A'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 90000, color: "blue" };
+  };
+if((FromToGt(50,60,80000))&& network === 'WNMX'&& level === '5'&& effmu === 'B'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 80000, color: "blue" };
+  };
+if((FromToGt(50,60,120000))&& network === 'WNMX'&& level === '5'&& effmu === 'B'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 120000, color: "blue" };
+  };
+if((FromToGt(50,60,100000))&& network === 'WNMX'&& level === '5'&& effmu === 'C'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 100000, color: "blue" };
+  };
+if((FromToGt(50,60,150000))&& network === 'WNMX'&& level === '5'&& effmu === 'C'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 150000, color: "blue" };
+  };
+if((FromToGt(50,60,50000))&& network === 'WNMX'&& level === '6'&& effmu === 'A'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 50000, color: "blue" };
+  };
+if((FromToGt(50,60,65000))&& network === 'WNMX'&& level === '6'&& effmu === 'B'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 65000, color: "blue" };
+  };
+if((FromToGt(50,60,80000))&& network === 'WNMX'&& level === '6'&& effmu === 'C'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 80000, color: "blue" };
+  };
+if((FromToGt(50,60,65000))&& network === 'WNMX'&& level === '6'&& effmu === 'A'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 65000, color: "blue" };
+  };
+if((FromToGt(50,60,75000))&& network === 'WNMX'&& level === '6'&& effmu === 'B'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 75000, color: "blue" };
+  };
+if((FromToGt(50,60,90000))&& network === 'WNMX'&& level === '6'&& effmu === 'C'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 90000, color: "blue" };
+  };
+if((FromToGt(50,60,35000))&& network === 'WNMX'&& level === '7'&& effmu === 'A'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 35000, color: "blue" };
+  };
+if((FromToGt(50,60,40000))&& network === 'WNMX'&& level === '7'&& effmu === 'B'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 40000, color: "blue" };
+  };
+if((FromToGt(50,60,45000))&& network === 'WNMX'&& level === '7'&& effmu === 'C'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 45000, color: "blue" };
+  };
+if((FromToGt(50,60,50000))&& network === 'WNMX'&& level === '7'&& effmu === 'C'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 50000, color: "blue" };
+  };
+if((FromToGt(50,60,45000))&& network === 'WNMX'&& level === '7'&& effmu === 'B'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 45000, color: "blue" };
+  };
+if((FromToGt(50,60,40000))&& network === 'WNMX'&& level === '7'&& effmu === 'A'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 40000, color: "blue" };
+  };
+if((FromToGt(50,60,40000))&& network === 'WNMX'&& level === '8'&& effmu === 'B'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 40000, color: "blue" };
+  };
+if((FromToGt(50,60,35000))&& network === 'WNMX'&& level === '8'&& effmu === 'B'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 35000, color: "blue" };
+  };
+if((FromToGt(50,60,40000))&& network === 'WNMX'&& level === '8'&& effmu === 'C'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 40000, color: "blue" };
+  };
+if((FromToGt(50,60,45000))&& network === 'WNMX'&& level === '8'&& effmu === 'C'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 45000, color: "blue" };
+  };
+if((FromToGt(200,250,350000))&& network === 'WNMX'&& level === '11'&& effmu === 'C'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 350000, color: "blue" };
+  };
+if((FromToGt(151,255,150000))&& network === 'WPN'&& level === '13'&& effmu === 'B'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 150000, color: "blue" };
+  };
+if((FromToGt(151,255,200000))&& network === 'WPN'&& level === '13'&& effmu === 'C'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 200000, color: "blue" };
+  };
+if((FromToGt(151,255,200000))&& network === 'WPN'&& level === '14'&& effmu === 'B'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 200000, color: "blue" };
+  };
+if((FromToGt(151,255,250000))&& network === 'WPN'&& level === '14'&& effmu === 'C'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 250000, color: "blue" };
+  };
+if((BidGt(82,100000))&& network === 'PS.eu'&& level === '6'&& effmu === 'A'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 100000, color: "blue" };
+  };
+if((BidGt(215,600000))&& network === 'PS.eu'&& level === '9'&& effmu === 'C'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 600000, color: "blue" };
+  };
+if((BidGt(109,75000))&& network === 'PS.eu'&& level === '11'&& effmu === 'C'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 75000, color: "blue" };
+  };
+if((BidGt(109,75000))&& network === 'PS.eu'&& level === '10'&& effmu === 'A'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 75000, color: "blue" };
+  };
+if((BidGt(82,12000))&& network === 'PS.eu'&& level === '12'&& effmu === 'C'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 12000, color: "blue" };
+  };
+if((BidGt(109,20000))&& network === 'PS.eu'&& level === '12'&& effmu === 'C'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 20000, color: "blue" };
+  };
+if((BidGt(109,40000))&& network === 'PS.eu'&& level === '12'&& effmu === 'C'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 40000, color: "blue" };
+  };
+if((BidGt(162,40000))&& network === 'PS.eu'&& level === '12'&& effmu === 'C'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 40000, color: "blue" };
+  };
+if((BidGt(162,60000))&& network === 'PS.eu'&& level === '12'&& effmu === 'A'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 60000, color: "blue" };
+  };
+if((BidGt(162,80000))&& network === 'PS.eu'&& level === '12'&& effmu === 'B'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 80000, color: "blue" };
+  };
+if((BidGt(162,100000))&& network === 'PS.eu'&& level === '12'&& effmu === 'C'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 100000, color: "blue" };
+  };
+if((BidGt(320,800000))&& network === 'PS.eu'&& level === '9'&& effmu === 'C'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 800000, color: "blue" };
+  };
+if((BidGt(320,1250000))&& network === 'PS.eu'&& level === '9'&& effmu === 'C'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 1250000, color: "blue" };
+  };
+if((BidGt(162,15000))&& network === 'PS.eu'&& level === '15'&& effmu === 'C'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 15000, color: "blue" };
+  };
+if((BidGt(215,20000))&& network === 'PS.eu'&& level === '15'&& effmu === 'C'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 20000, color: "blue" };
+  };
+if((BidGt(15,20000))&& network === 'WNMX'&& level === '1'&& effmu === 'C'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 20000, color: "blue" };
+  };
+if((BidGt(15,40000))&& network === 'WNMX'&& level === '1'&& effmu === 'C'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 40000, color: "blue" };
+  };
+if((FromToGt(100,150,250000))&& network === 'WNMX'&& level === '8'&& effmu === 'B'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 250000, color: "blue" };
+  };
+if((FromToGt(100,150,125000))&& network === 'WNMX'&& level === '11'&& effmu === 'C'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 125000, color: "blue" };
+  };
+if((FromToGt(100,150,175000))&& network === 'WNMX'&& level === '11'&& effmu === 'C'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 175000, color: "blue" };
+  };
+if((FromToGt(200,250,300000))&& network === 'WNMX'&& level === '11'&& effmu === 'C'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 300000, color: "blue" };
+  };
+if((BidGt(50,75000))&& network === 'PS.es'&& level === '7'&& effmu === 'B'&& isNormal&& !isKo) {
+    return { valid: true, rules: true, guarantee: 75000, color: "blue" };
   };
 if((BidGt(16.5,50000))&& network === 'PS.eu'&& level === '1'&& effmu === 'A'&& isTurbo&& isKo) {
     return { valid: true, rules: true, guarantee: 50000, color: "red" };

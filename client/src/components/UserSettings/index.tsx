@@ -59,12 +59,9 @@ export const UserSettings = ({ config, isAdminPage, onClose }: Props) => {
     }
 
     if (
-      ([normalTime, turboTime, superTurboTime].some(Boolean) &&
-        ![normalTime, turboTime, superTurboTime].every(Boolean)) ||
-      ([normalTime, turboTime, superTurboTime].every(Boolean) &&
-        (normalTime?.includes("-") ||
-          turboTime?.includes("-") ||
-          superTurboTime?.includes("-")))
+      normalTime?.includes("-") ||
+      turboTime?.includes("-") ||
+      superTurboTime?.includes("-")
     ) {
       return ErrNot(
         'Check that the "Filter Normal", "Filter Turbo" and "Filter Super Turbo" fields are filled in correctly.'

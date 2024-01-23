@@ -605,135 +605,8 @@ if((Name("WSOP MAIN EVENT"))) {
 if((Name("London Super"))) {
     return { score: null };
   };
-if((FromTo(21,21))&& network === 'PS.eu'&& level === '12'&& effmu === 'A'&& isNormal&& isKo) {
-    return {
-      score: 2121
-    };
-  };
-if((FromTo(21,21))&& network === 'PS.eu'&& level === '12'&& effmu === 'A'&& isNormal&& isKo) {
-    return {
-      score: 2122
-    };
-  };
-if((FromTo(2,21))&& network === 'PS.eu'&& level === '12'&& effmu === 'A'&& isNormal&& isKo) {
-    return {
-      score: 212121
-    };
-  };
-if((FromTo(21,212))&& network === 'PS.eu'&& level === '12'&& effmu === 'A'&& isNormal&& isKo) {
-    return {
-      score: 21
-    };
-  };
-if((FromTo(21,21))&& network === 'PS.eu'&& level === '12'&& effmu === 'A'&& isNormal&& isKo) {
-    return {
-      score: 212
-    };
-  };
-if((((UserName("Egor699_pocarr"))) ? ((FromTo(21,21))&& network === 'PS.eu'&& level === '12'&& effmu === 'A'&& isNormal&& isKo) :  (FromTo(21,21))&& network === 'PS.eu'&& level === '12'&& effmu === 'A'&& isNormal&& isKo)) {
-    return {
-      score: 21
-    };
-  };
-if((FromTo(1,11))&& network === 'PS.eu'&& level === '12'&& effmu === 'A'&& isNormal&& isKo) {
-    return {
-      score: UserName("Barca77_pocarr") ? 1 :  21
-    };
-  };
-if((((UserName("Egor699_pocarr"))) ? ((FromTo(2,21))&& network === 'PS.eu'&& level === '11'&& effmu === 'A'&& isNormal&& isKo) :  (FromTo(21,21))&& network === 'PS.eu'&& level === '11'&& effmu === 'A'&& isNormal&& isKo)) {
-    return {
-      score: UserName("16lvl") ? 21 : UserName("Barca77_pocarr") ? 21 :  21
-    };
-  };
-if((FromTo(21,21))&& network === 'PS.eu'&& level === '11'&& effmu === 'A'&& isNormal&& isKo) {
-    return {
-      score: 21
-    };
-  };
-if((FromTo(21,21))&& network === 'PS.eu'&& level === '11'&& effmu === 'A'&& isNormal&& isKo) {
-    return {
-      score: 212121
-    };
-  };
-if((FromTo(21212121,21))&& network === 'PS.eu'&& level === '11'&& effmu === 'A'&& isNormal&& isKo) {
-    return {
-      score: 2121
-    };
-  };
-if((FromTo(2121212,21))&& network === 'PS.eu'&& level === '11'&& effmu === 'A'&& isNormal&& isKo) {
-    return {
-      score: 21
-    };
-  };
-if((FromTo(21,212121))&& network === 'PS.eu'&& level === '11'&& effmu === 'A'&& isNormal&& isKo) {
-    return {
-      score: 21
-    };
-  };
-if((FromTo(21,2))&& network === 'PS.eu'&& level === '11'&& effmu === 'A'&& isNormal&& isKo) {
-    return {
-      score: 2121212
-    };
-  };
-if((FromTo(12,12))&& network === 'PS.eu'&& level === '11'&& effmu === 'A'&& isNormal&& isKo) {
-    return {
-      score: UserName("16lvl") ? 21 : UserName("Egor699_pocarr") ? 20 :  22
-    };
-  };
-if((FromTo(212,21))&& network === 'PS.eu'&& level === '11'&& effmu === 'A'&& isNormal&& isKo) {
-    return {
-      score: 21
-    };
-  };
-if((((UserName("Barca77_pocarr"))) ? ((BidGt(2121212,2121))&& network === 'PS.eu'&& level === '11'&& effmu === 'A'&& isNormal&& isKo) :  (BidGt(1,1212))&& network === 'PS.eu'&& level === '11'&& effmu === 'A'&& isNormal&& isKo)) {
-    return {
-      score: 1
-    };
-  };
-if((UserName("16lvl"))&& network === 'PS.eu'&& level === '9'&& effmu === 'A'&& isNormal&& isKo) {
-    return {
-      score: 21221
-    };
-  };
-if((UserName("16lvl"))&& network === 'PS.eu'&& level === '9'&& effmu === 'A'&& isNormal&& isKo) {
-    return {
-      score: UserName("16lvl") ? 21 :  21
-    };
-  };
-if((UserName("16lvl"))&& network === 'PS.eu'&& level === '9'&& effmu === 'A'&& isTurbo&& isKo) {
-    return {
-      score: 21
-    };
-  };
-if((UserName("Litas321_pocarr"))&& network === 'PS.eu'&& level === '9'&& effmu === 'A'&& isTurbo&& isKo) {
-    return {
-      score: UserName("16lvl") ? 21 :  2121
-    };
-  };
-if((FromTo(21,21))&& network === 'PS.eu'&& level === '9'&& effmu === 'B'&& isNormal&& isKo) {
-    return {
-      score: UserName("16lvl") ? 21321312 :  2123122
-    };
-  };
-if((FromTo(2,2))&& network === 'PS.eu'&& level === '10'&& effmu === 'A'&& isNormal&& isKo) {
-    return {
-      score: 2
-    };
-  };
-if((FromTo(21,21))&& network === 'PS.eu'&& level === '12'&& effmu === 'A'&& isNormal&& isKo) {
-    return {
-      score: UserName("12lvl") ? 1 :  2
-    };
-  };
-if((FromTo(1,1500))&& network === 'PS.eu'&& level === '17'&& effmu === 'A'&& isNormal&& isKo) {
-    return {
-      score: 90
-    };
-  };
-if((FromTo(1,212121))&& network === 'PS.eu'&& level === '17') {
-    return {
-      score: UserName("17lvl") ? 80 :  90
-    };
+if((Name("10BB"))) {
+    return { score: null };
   };
 if((FromTo(1,86))&& network === 'PS.eu'&& level === '8'&& effmu === 'A'&& isNormal) {
     return {
@@ -1740,11 +1613,6 @@ if((FromTo(1,500))&& network === '888'&& level === '14'&& effmu === 'A'&& isNorm
       score: 84
     };
   };
-if((FromTo(1,500))&& network === 'WNMX'&& level === '14'&& effmu === 'A'&& isNormal) {
-    return {
-      score: 84
-    };
-  };
 if((FromTo(1,500))&& network === 'WPN'&& level === '14'&& effmu === 'A'&& isNormal) {
     return {
       score: 84
@@ -2536,11 +2404,6 @@ if((FromTo(1,109))&& network === 'GG'&& level === '12'&& effmu === 'B'&& isNorma
     };
   };
 if((FromTo(1,109))&& network === '888'&& level === '12'&& effmu === 'B'&& isNormal) {
-    return {
-      score: 78
-    };
-  };
-if((FromTo(1,109))&& network === 'WNMX'&& level === '12'&& effmu === 'B'&& isNormal) {
     return {
       score: 78
     };
@@ -3545,11 +3408,6 @@ if((FromTo(1,86))&& network === '888'&& level === '9'&& effmu === 'B'&& isNormal
       score: 75
     };
   };
-if((FromTo(1,86))&& network === 'WNMX'&& level === '9'&& effmu === 'B'&& isNormal) {
-    return {
-      score: 75
-    };
-  };
 if((FromTo(1,86))&& network === 'WPN'&& level === '9'&& effmu === 'B'&& isNormal) {
     return {
       score: 75
@@ -3656,11 +3514,6 @@ if((FromTo(1,60))&& network === 'GG'&& level === '9'&& effmu === 'C'&& isNormal)
     };
   };
 if((FromTo(1,60))&& network === '888'&& level === '9'&& effmu === 'C'&& isNormal) {
-    return {
-      score: 74
-    };
-  };
-if((FromTo(1,60))&& network === 'WNMX'&& level === '9'&& effmu === 'C'&& isNormal) {
     return {
       score: 74
     };
@@ -3895,11 +3748,6 @@ if((FromTo(1,60))&& network === '888'&& level === '8'&& effmu === 'B'&& isNormal
       score: 74
     };
   };
-if((FromTo(1,60))&& network === 'WNMX'&& level === '8'&& effmu === 'B'&& isNormal) {
-    return {
-      score: 74
-    };
-  };
 if((FromTo(1,44))&& network === 'IP'&& level === '8'&& effmu === 'B'&& isTurbo) {
     return {
       score: 72
@@ -4006,11 +3854,6 @@ if((FromTo(1,60))&& network === 'GG'&& level === '8'&& effmu === 'C'&& isNormal)
     };
   };
 if((FromTo(1,60))&& network === '888'&& level === '8'&& effmu === 'C'&& isNormal) {
-    return {
-      score: 73
-    };
-  };
-if((FromTo(1,60))&& network === 'WNMX'&& level === '8'&& effmu === 'C'&& isNormal) {
     return {
       score: 73
     };
@@ -4130,11 +3973,6 @@ if((FromTo(1,60))&& network === '888'&& level === '7'&& effmu === 'A'&& isNormal
       score: 74
     };
   };
-if((FromTo(1,60))&& network === 'WNMX'&& level === '7'&& effmu === 'A'&& isNormal) {
-    return {
-      score: 74
-    };
-  };
 if((FromTo(1,60))&& network === 'WPN'&& level === '7'&& effmu === 'A'&& isNormal) {
     return {
       score: 74
@@ -4246,11 +4084,6 @@ if((FromTo(1,60))&& network === 'GG'&& level === '7'&& effmu === 'B'&& isNormal)
     };
   };
 if((FromTo(1,60))&& network === '888'&& level === '7'&& effmu === 'B'&& isNormal) {
-    return {
-      score: 73
-    };
-  };
-if((FromTo(1,60))&& network === 'WNMX'&& level === '7'&& effmu === 'B'&& isNormal) {
     return {
       score: 73
     };
@@ -6970,11 +6803,6 @@ if((FromTo(1,109))&& network === 'GG'&& level === '14'&& effmu === 'B'&& isSuper
       score: 79
     };
   };
-if((FromTo(1,60))&& network === 'WNMX'&& level === '7'&& effmu === 'C'&& isNormal) {
-    return {
-      score: 72
-    };
-  };
 if((FromTo(1,60))&& network === 'WNMX'&& level === '6'&& effmu === 'B'&& isNormal) {
     return {
       score: 72
@@ -6988,31 +6816,6 @@ if((FromTo(1,60))&& network === 'WNMX'&& level === '6'&& effmu === 'C'&& isNorma
 if((FromTo(1,60))&& network === 'WNMX'&& level === '5'&& effmu === 'A'&& isNormal) {
     return {
       score: 72
-    };
-  };
-if((FromTo(215,270))&& network === 'WNMX'&& level === '13'&& effmu === 'A'&& isNormal) {
-    return {
-      score: 81
-    };
-  };
-if((FromTo(215,270))&& network === 'WNMX'&& level === '13'&& effmu === 'B'&& isNormal) {
-    return {
-      score: 81
-    };
-  };
-if((FromTo(110,270))&& network === 'WNMX'&& level === '13'&& effmu === 'C'&& isNormal) {
-    return {
-      score: 79
-    };
-  };
-if((FromTo(215,270))&& network === 'WNMX'&& level === '14'&& effmu === 'B'&& isNormal) {
-    return {
-      score: 81
-    };
-  };
-if((FromTo(215,270))&& network === 'WNMX'&& level === '14'&& effmu === 'C'&& isNormal) {
-    return {
-      score: 80
     };
   };
 if((FromTo(12,25))&& network === 'PS.es'&& level === '2'&& effmu === 'A'&& isTurbo) {
@@ -7485,51 +7288,6 @@ if((FromTo(7,12))&& network === 'GG'&& level === '0'&& effmu === 'C'&& isNormal)
       score: 60
     };
   };
-if((FromTo(110,250))&& network === 'WNMX'&& level === '12'&& effmu === 'A'&& isNormal) {
-    return {
-      score: 78
-    };
-  };
-if((FromTo(110,250))&& network === 'WNMX'&& level === '12'&& effmu === 'C'&& isNormal) {
-    return {
-      score: 76
-    };
-  };
-if((FromTo(110,250))&& network === 'WNMX'&& level === '12'&& effmu === 'B'&& isNormal) {
-    return {
-      score: 77
-    };
-  };
-if((FromTo(110,250))&& network === 'WNMX'&& level === '11'&& effmu === 'A'&& isNormal) {
-    return {
-      score: 77
-    };
-  };
-if((FromTo(110,250))&& network === 'WNMX'&& level === '11'&& effmu === 'B'&& isNormal) {
-    return {
-      score: 76
-    };
-  };
-if((FromTo(110,250))&& network === 'WNMX'&& level === '11'&& effmu === 'C'&& isNormal) {
-    return {
-      score: 75
-    };
-  };
-if((FromTo(110,250))&& network === 'WNMX'&& level === '10'&& effmu === 'A'&& isNormal) {
-    return {
-      score: 76
-    };
-  };
-if((FromTo(110,250))&& network === 'WNMX'&& level === '10'&& effmu === 'C'&& isNormal) {
-    return {
-      score: 74
-    };
-  };
-if((FromTo(110,250))&& network === 'WNMX'&& level === '9'&& effmu === 'A'&& isNormal) {
-    return {
-      score: 75
-    };
-  };
 if((FromTo(1,2500))&& level === '15'&& effmu === 'A'&& isNormal) {
     return {
       score: 86
@@ -7623,6 +7381,126 @@ if((FromTo(151,240))&& network === 'WPN'&& level === '16'&& effmu === 'B'&& isNo
 if((FromTo(151,240))&& level === '17'&& effmu === 'B'&& isNormal&& isKo) {
     return {
       score: 77
+    };
+  };
+if((FromTo(1,109))&& network === 'WNMX'&& level === '12'&& effmu === 'B'&& isNormal) {
+    return {
+      score: 78
+    };
+  };
+if((FromTo(110,250))&& network === 'WNMX'&& level === '9'&& effmu === 'A'&& isNormal) {
+    return {
+      score: 73
+    };
+  };
+if((FromTo(1,86))&& network === 'WNMX'&& level === '9'&& effmu === 'B'&& isNormal) {
+    return {
+      score: 73
+    };
+  };
+if((FromTo(1,60))&& network === 'WNMX'&& level === '9'&& effmu === 'C'&& isNormal) {
+    return {
+      score: 72
+    };
+  };
+if((FromTo(110,250))&& network === 'WNMX'&& level === '10'&& effmu === 'A'&& isNormal) {
+    return {
+      score: 74
+    };
+  };
+if((FromTo(110,250))&& network === 'WNMX'&& level === '10'&& effmu === 'B'&& isNormal) {
+    return {
+      score: 72
+    };
+  };
+if((FromTo(110,250))&& network === 'WNMX'&& level === '10'&& effmu === 'C'&& isNormal) {
+    return {
+      score: 72
+    };
+  };
+if((FromTo(110,250))&& network === 'WNMX'&& level === '11'&& effmu === 'A'&& isNormal) {
+    return {
+      score: 75
+    };
+  };
+if((FromTo(110,250))&& network === 'WNMX'&& level === '11'&& effmu === 'B'&& isNormal) {
+    return {
+      score: 74
+    };
+  };
+if((FromTo(110,250))&& network === 'WNMX'&& level === '11'&& effmu === 'C'&& isNormal) {
+    return {
+      score: 74
+    };
+  };
+if((FromTo(110,250))&& network === 'WNMX'&& level === '12'&& effmu === 'A'&& isNormal) {
+    return {
+      score: 75
+    };
+  };
+if((FromTo(110,250))&& network === 'WNMX'&& level === '12'&& effmu === 'B'&& isNormal) {
+    return {
+      score: 75
+    };
+  };
+if((FromTo(110,250))&& network === 'WNMX'&& level === '12'&& effmu === 'C'&& isNormal) {
+    return {
+      score: 74
+    };
+  };
+if((FromTo(215,270))&& network === 'WNMX'&& level === '13'&& effmu === 'A'&& isNormal) {
+    return {
+      score: 79
+    };
+  };
+if((FromTo(215,270))&& network === 'WNMX'&& level === '13'&& effmu === 'B'&& isNormal) {
+    return {
+      score: 79
+    };
+  };
+if((FromTo(110,270))&& network === 'WNMX'&& level === '13'&& effmu === 'C'&& isNormal) {
+    return {
+      score: 77
+    };
+  };
+if((FromTo(1,500))&& network === 'WNMX'&& level === '14'&& effmu === 'A'&& isNormal) {
+    return {
+      score: 82
+    };
+  };
+if((FromTo(215,270))&& network === 'WNMX'&& level === '14'&& effmu === 'B'&& isNormal) {
+    return {
+      score: 79
+    };
+  };
+if((FromTo(215,270))&& network === 'WNMX'&& level === '14'&& effmu === 'C'&& isNormal) {
+    return {
+      score: 78
+    };
+  };
+if((FromTo(1,60))&& network === 'WNMX'&& level === '7'&& effmu === 'A'&& isNormal) {
+    return {
+      score: 72
+    };
+  };
+if((FromTo(1,60))&& network === 'WNMX'&& level === '7'&& effmu === 'B'&& isNormal) {
+    return {
+      score: 71
+    };
+  };
+if((FromTo(1,60))&& network === 'WNMX'&& level === '7'&& effmu === 'C'&& isNormal) {
+    return {
+      score: 70
+    };
+  };
+if((FromTo(1,60))&& network === 'WNMX'&& level === '8'&& effmu === 'B'&& isNormal) {
+    return {
+      score: 72
+    };
+  };
+if((FromTo(1,60))&& network === 'WNMX'&& level === '8'&& effmu === 'C'&& isNormal) {
+    return {
+      score: 71
     };
   };
 
