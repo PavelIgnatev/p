@@ -252,7 +252,7 @@ export const UserSettingsInfo: FC<Props> = ({
         </div>
       </div>
       <div className={b("settings")}>
-        <div className={b("times-wrapper")}>
+        <div className={b("times-wrapper")} style={{ display: "none" }}>
           <div className={b("times-wrapper-wrapper")}>
             <p>
               <strong>Session start time</strong>
@@ -298,7 +298,7 @@ export const UserSettingsInfo: FC<Props> = ({
             </div>
           </div>
         </div>
-        <div className={b("times-wrapper")}>
+        <div className={b("times-wrapper")}style={{ display: "none" }}>
           <div className={b("times-wrapper-wrapper")}>
             <p>
               <strong>Filter Normal</strong> after session start via
