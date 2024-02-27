@@ -2691,6 +2691,9 @@ if((BidGt(50,1000000))&& network === 'WNMX'&& level === '10' && (NotName("W SERI
 if((BidName(50,"W SERIES MILLION EVENT MYSTERY - DAY 1"))&& network === 'WNMX'&& level === '6'){
     return { valid: false, guarantee: 1, rules: false };
   };
+if((Name("PLO"))&& network === 'PS.es'){
+    return { valid: false, guarantee: 1, rules: false };
+  };
 if((BidGt(11,50000))&& network === 'PS.eu'&& level === '0'&& effmu === 'A'&& isNormal&& isKo) {
     return { valid: true, rules: true, guarantee: 50000, color: "blue" };
   };

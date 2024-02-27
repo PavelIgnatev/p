@@ -20,7 +20,7 @@ const crons = () => {
 
   const updateServerCron = new CronJob("0 0 * * *", function () {
     if (numberInArray(global.app.server.address().port)) {
-      updateServer();
+      // updateServer();
     }
   });
 

@@ -76,7 +76,7 @@ export const $filtredTableState = $tableState.map((tournaments) => {
   const { filter, scores } = $filterContent.getState();
   const stopWords = $stopWords.getState();
   const { currency: lastValue, offpeak } = $store.getState();
-  const { score1 }: any = $store.getState();
+  const { score1, evscore: evScore }: any = $store.getState();
 
   const {
     moneyStart,
@@ -114,10 +114,6 @@ export const $filtredTableState = $tableState.map((tournaments) => {
 
   // мапим все данные о турнирах
   tournaments = tournaments.map((tournament) => {
-    if (tournament["@name"] === "OSS #6 - $1,000,000 GTD Sunday High Roller") {
-      console.log(tournament);
-    }
-
     const network = getNetwork(tournament["@network"]);
     const validatedName = validateName(tournament["@name"], stopWords);
     const stake = Number(tournament["@stake"] ?? 0);
@@ -154,7 +150,8 @@ export const $filtredTableState = $tableState.map((tournaments) => {
     const score = (isMandatoryСonditions && info?.["score"]) || "-";
     const duration =
       info?.["duration"] !== "NaN:NaN:NaN" ? info?.["duration"] : "-";
-
+    console.log(evScore)
+    const evscore = evScore?.[status]?.[String(Math.round(Number(bid)))] || 0
     const sat = isSat(tournament);
 
     //Фикс гарантии для WPN и 888Poker и Chiko
@@ -224,6 +221,7 @@ export const $filtredTableState = $tableState.map((tournaments) => {
       "@prizepool": pp,
       "@network": network,
       "@score": score,
+      "@evscore": evscore,
       "@duration": duration ? getTimeBySec(duration) : "-",
       "@getWeekday": isStartDate ? getWeekday(Number(isStartDate) * 1000) : "-",
       "@scheduledStartDate": isStartDate ? getDate(startDate) : "-",
@@ -285,10 +283,6 @@ export const $filtredTableState = $tableState.map((tournaments) => {
 
     if (score !== "-" && score2 !== null && score <= score2) {
       valid = true;
-    }
-
-    if (tournament["@name"] === "OSS #6 - $1,000,000 GTD Sunday High Roller") {
-      console.log(tournament);
     }
 
     const color = "rgb(238, 236, 255)";

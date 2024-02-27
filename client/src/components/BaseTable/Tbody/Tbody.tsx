@@ -1,3 +1,4 @@
+import { Tooltip } from "antd";
 import { useStore } from "effector-react";
 import { FC } from "react";
 import CrossIcon from "../../Icon/Cross";
@@ -22,7 +23,6 @@ export const Tbody: FC<TbodyProps> = ({ data, sortedKey, isReverse }) => {
 
     localStorage.setItem("deletedItems", JSON.stringify(prevData));
   };
-
 
   return (
     <tbody className={classes.tbody}>
@@ -98,8 +98,16 @@ export const Tbody: FC<TbodyProps> = ({ data, sortedKey, isReverse }) => {
                 className={classes.td}
                 style={{ backgroundColor: item.color, marginBottom: "1px" }}
               >
-                {item["@score"]}
+                <Tooltip
+                  title={
+                    (item["@evscore"] ?? 0) +
+                    " (average rate for the last 30 days of all tournaments with this bet +- 30%)"
+                  }
+                >
+                  <span>{item["@score"]}</span>
+                </Tooltip>
               </td>
+
               <td
                 className={classes.td}
                 style={{ backgroundColor: item.color, marginBottom: "1px" }}
