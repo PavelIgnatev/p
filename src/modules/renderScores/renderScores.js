@@ -13,6 +13,21 @@ function customSort(a, s) {
   });
 }
 
+function customSort2(a, s) {
+  let result = [];
+  let delayed = [];
+
+  for (let i = 0; i < a.length; i++) {
+    let item = a[i];
+    if (item[0].color === "orange" || !s.includes(item?.[1]?.type)) {
+      result.push(item);
+    } else {
+      delayed.push(item);
+    }
+  }
+
+  return [...result, ...delayed];
+}
 async function renderScores(scores) {
   const nativeScores = [...scores];
   customSort(nativeScores, [
@@ -21,8 +36,10 @@ async function renderScores(scores) {
     "brown",
     "blue",
     "red",
-    "black"
+    "black",
   ]);
+  const sortedScores = customSort2(nativeScores, ["FromTo", "BidGt"]);
+
   const result = `const { getNetwork } = require("../../helpers/getNetwork");
   const {
     FromTo: FromToQ,
@@ -83,7 +100,7 @@ async function renderScores(scores) {
     if (!name || !bid) return { score: null };
 
 
-    ${nativeScores
+    ${sortedScores
       .map((score) => {
         if (score[0].color === "orange") {
           return renderCheckFalse(score.map(renderScore).join(" && "));

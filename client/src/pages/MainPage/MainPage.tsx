@@ -33,7 +33,6 @@ export const MainPage = () => {
     return (
       <>
         <PasswordSection onSubmit={handlePasswordSubmit} />
-        <BaseFooter />
       </>
     );
   }
@@ -42,7 +41,6 @@ export const MainPage = () => {
     <>
       <BaseHeader />
       <BaseTable data={tournaments} loading={loading} />
-      <BaseFooter />
     </>
   );
 };

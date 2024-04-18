@@ -18,7 +18,7 @@ function renderCheck(rules, ruleString) {
   });
 
   return `if(${ruleString}) {
-    return { valid: true, rules: true, guarantee: ${maxGuarantee}, color: "${color}" };
+    return { valid: true, rules: true, guarantee: ${maxGuarantee}, color: "${color}", ruleString: ${JSON.stringify(ruleString)}};
   };\n`;
 }
 

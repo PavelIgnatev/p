@@ -20,6 +20,8 @@ import StopWordsSection from "../../components/Admin.StopWordsSection";
 import { getStopWords } from "../../store/StopWords";
 import { ScoreSection } from "../../components/Admin.ScoreSection";
 import { UserSection } from "../../components/Admin.UserSection";
+import { PercentSection } from "../../components/SampleSection";
+import { Thermometer } from "../../components/Thermometer";
 
 export const AdminPage: FC = () => {
   const isAdmin = useStore($isValidAdminPassword);
@@ -52,6 +54,8 @@ export const AdminPage: FC = () => {
       <UpdateSection />
       <OffpeakSection />
       <StopWordsSection />
+      <PercentSection />
+      <Thermometer />
       <ScoreSection />
       <RulesSection />
       <AliasesSection />

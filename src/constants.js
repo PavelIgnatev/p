@@ -5,6 +5,7 @@ module.exports = {
   samplePath: "src/store/sample/sample.json",
   stopWordsPath: "src/store/stopWords/stopWords.json",
   offpeakPath: "src/store/offpeak/offpeak.json",
+  colorsPath: "src/store/colors/colors.json",
   rulesPath: "src/store/rules/rules.json",
   scoresPath: "src/store/scores/scores.json",
   username_api_key: "evolution57609805",

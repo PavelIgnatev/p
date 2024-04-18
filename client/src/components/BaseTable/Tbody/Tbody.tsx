@@ -1,10 +1,11 @@
 import { Tooltip } from "antd";
 import { useStore } from "effector-react";
-import { FC } from "react";
+import { FC, useMemo } from "react";
 import CrossIcon from "../../Icon/Cross";
 
 import classes from "../BaseTable.module.scss";
 import { $prevData, setPrevData } from "./prevData";
+import { $sample } from "../../../store/PercentScore3";
 
 type TbodyProps = {
   sortedKey: string | null;
@@ -14,6 +15,7 @@ type TbodyProps = {
 
 export const Tbody: FC<TbodyProps> = ({ data, sortedKey, isReverse }) => {
   const prevData = useStore($prevData);
+  const percentScore3 = useStore($sample);
 
   const crossClickHandler = (item: any) => {
     const prevData = JSON.parse(localStorage.getItem("deletedItems") || "[]");
@@ -23,6 +25,10 @@ export const Tbody: FC<TbodyProps> = ({ data, sortedKey, isReverse }) => {
 
     localStorage.setItem("deletedItems", JSON.stringify(prevData));
   };
+  const showDebugTooltips = useMemo(() => {
+    const searchParams = new URLSearchParams(window.location.search);
+    return searchParams.get("debug") === "true";
+  }, [window.location.search]);
 
   return (
     <tbody className={classes.tbody}>
@@ -80,7 +86,19 @@ export const Tbody: FC<TbodyProps> = ({ data, sortedKey, isReverse }) => {
                 className={classes.td}
                 style={{ backgroundColor: item.color, marginBottom: "1px" }}
               >
-                {item["@name"]}
+                {showDebugTooltips ? (
+                  <Tooltip
+                    style={{ whiteSpace: "pre-wrap" }}
+                    title={`Rule: ${item["ruleString"]
+                      ?.replace("&& isGetTournaments", "")}; Color: ${
+                      item["rColor"]
+                    }`}
+                  >
+                    <span>{item["@name"]}</span>
+                  </Tooltip>
+                ) : (
+                  item["@name"]
+                )}
               </td>
               <td
                 className={classes.td}
@@ -98,21 +116,36 @@ export const Tbody: FC<TbodyProps> = ({ data, sortedKey, isReverse }) => {
                 className={classes.td}
                 style={{ backgroundColor: item.color, marginBottom: "1px" }}
               >
-                <Tooltip
-                  title={
-                    (item["@evscore"] ?? 0) +
-                    " (average rate for the last 30 days of all tournaments with this bet +- 30%)"
-                  }
-                >
-                  <span>{item["@score"]}</span>
-                </Tooltip>
+                {showDebugTooltips ? (
+                  <Tooltip
+                    title={
+                      (item["@evscore"] ?? 0) +
+                      ` (average rate for the last 30 days of all tournaments with this bet +- ${percentScore3}%)`
+                    }
+                  >
+                    <span>{item["@score"]}</span>
+                  </Tooltip>
+                ) : (
+                  item["@score"]
+                )}
               </td>
 
               <td
                 className={classes.td}
                 style={{ backgroundColor: item.color, marginBottom: "1px" }}
               >
-                {item["score2"] ?? "-"}
+                {showDebugTooltips ? (
+                  <Tooltip
+                    title={`Rule: ${item["sRuleString"]
+                      ?.replace("&& isGetTournaments", "")}; Color: ${
+                      item["sColor"]
+                    }`}
+                  >
+                    <span>{item["score2"] ?? "-"}</span>
+                  </Tooltip>
+                ) : (
+                  item["score2"] ?? "-"
+                )}
               </td>
               <td
                 className={classes.td}

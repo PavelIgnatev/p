@@ -1,0 +1,14 @@
+.track {
+  width: 600px; // Ширина трека
+  height: 20px; // Высота трека
+  background-color: #ccc;
+  position: relative;
+}
+
+.handle {
+  width: 3px; // Ширина "палочки"
+  height: 20px; // Высота "палочки"
+  background-color: #000;
+  position: absolute;
+  cursor: pointer;
+}

@@ -21,6 +21,8 @@ import { $config } from "../Config";
 import { $filterContent } from "../Filter";
 import { $store } from "../Store";
 import { $stopWords } from "../StopWords";
+import { $colors } from "../Colors";
+
 import { dateToTimeString } from "../../helpers/dateToTimeString";
 
 export const $tableState = createStore<tableCellModel[] | null | undefined>(
@@ -77,6 +79,7 @@ export const $filtredTableState = $tableState.map((tournaments) => {
   const stopWords = $stopWords.getState();
   const { currency: lastValue, offpeak } = $store.getState();
   const { score1, evscore: evScore }: any = $store.getState();
+  const colors = $colors.getState();
 
   const {
     moneyStart,
@@ -137,7 +140,6 @@ export const $filtredTableState = $tableState.map((tournaments) => {
     const isNL = tournament["@structure"] === "NL";
     const isH = tournament["@game"] === "H";
     const rebuy = isRebuy(tournament);
-
     const isMandatoryСonditions = isNL && isH && !rebuy && !od && !sng;
 
     const info = findTournamentWithDiapzone(
@@ -150,8 +152,8 @@ export const $filtredTableState = $tableState.map((tournaments) => {
     const score = (isMandatoryСonditions && info?.["score"]) || "-";
     const duration =
       info?.["duration"] !== "NaN:NaN:NaN" ? info?.["duration"] : "-";
-    console.log(evScore)
-    const evscore = evScore?.[status]?.[String(Math.round(Number(bid)))] || 0
+
+    const evscore = evScore?.[status]?.[String(Math.round(Number(bid)))] || 0;
     const sat = isSat(tournament);
 
     //Фикс гарантии для WPN и 888Poker и Chiko
@@ -275,9 +277,18 @@ export const $filtredTableState = $tableState.map((tournaments) => {
   // определение цвета турнира
   tournaments = tournaments.map((tournament) => {
     const level = tournament["@level"];
-    let { valid } = filter(level, offpeak, tournament, config?.alias, true);
+    let data = filter(level, offpeak, tournament, config?.alias, true);
+    let {
+      valid,
+      color: rColor = "unknown",
+      ruleString = "unknown (score rule?)",
+    } = data;
 
-    const { score: score2 } = scores(level, tournament, config?.alias);
+    const {
+      score: score2,
+      color: sColor = "unknown",
+      ruleString: sRuleString = "unknown",
+    } = scores(level, tournament, config?.alias);
 
     const score = tournament["@score"];
 
@@ -285,9 +296,38 @@ export const $filtredTableState = $tableState.map((tournaments) => {
       valid = true;
     }
 
-    const color = "rgb(238, 236, 255)";
+    const diff =
+      Number(!score || score === "-" ? 100 : score) -
+      Number(tournament["@evscore"] || 100);
+    const numForGreen = colors?.[1] || 0;
+    const numForOrange= colors?.[2] || 0;
+    const numForYellow = colors?.[3] || 0
 
-    return { ...tournament, color, valid, score2 };
+    let color = '#fd6767'
+    if(-100 <= diff && diff < numForGreen) {
+      color = '#74ce74'
+    }
+     if (numForGreen <= diff && diff < numForOrange) {
+      color = '#ffa90c'
+    } 
+     if  (numForOrange <= diff && diff < numForYellow) {
+      color = 'yellow'
+    } 
+     if(score === '-' || !tournament['@evscore']) {
+      color = 'rgb(238, 236, 255)'
+    }
+
+    console.log(diff, score === '-' || !tournament['@evscore'],  tournament['@name'], colors?.[1], colors?.[2], colors?.[3]);
+    return {
+      ...tournament,
+      color,
+      valid,
+      score2,
+      rColor,
+      sColor,
+      ruleString,
+      sRuleString,
+    };
   });
 
   // фильтр по времени "от"-"до"

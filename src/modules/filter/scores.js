@@ -60,267 +60,266 @@ const { getNetwork } = require("../../helpers/getNetwork");
 
     if((BidName(500,"Day 1"))&& network === 'GG'&& level === '15'&& isNormal) {
     return {
-      score: 83
+      score: 83,
+      color: "green", ruleString: "(BidName(500,\"Day 1\"))&& network === 'GG'&& level === '15'&& isNormal"
     };
   };
 if((BidName(500,"Day 1"))&& network === 'GG'&& level === '14'&& isNormal) {
     return {
-      score: 81
+      score: 81,
+      color: "green", ruleString: "(BidName(500,\"Day 1\"))&& network === 'GG'&& level === '14'&& isNormal"
     };
   };
 if((BidName(500,"Day 1"))&& network === 'GG'&& level === '13'&& isNormal) {
     return {
-      score: 80
+      score: 80,
+      color: "green", ruleString: "(BidName(500,\"Day 1\"))&& network === 'GG'&& level === '13'&& isNormal"
     };
   };
 if((BidName(500,"Day 1"))&& network === 'GG'&& level === '12'&& isNormal) {
     return {
-      score: 79.5
+      score: 79.5,
+      color: "green", ruleString: "(BidName(500,\"Day 1\"))&& network === 'GG'&& level === '12'&& isNormal"
     };
   };
 if((BidName(500,"Day 1"))&& network === 'GG'&& level === '11'&& isNormal) {
     return {
-      score: 79.5
+      score: 79.5,
+      color: "green", ruleString: "(BidName(500,\"Day 1\"))&& network === 'GG'&& level === '11'&& isNormal"
     };
   };
 if((Name("Zodiac MILLION$ Mystery"))&& network === 'GG'&& level === '4'&& effmu === 'A'&& isNormal) {
     return {
-      score: 68
+      score: 68,
+      color: "green", ruleString: "(Name(\"Zodiac MILLION$ Mystery\"))&& network === 'GG'&& level === '4'&& effmu === 'A'&& isNormal"
     };
   };
 if((Name("278H"))&& network === 'WPN'&& level === '13'&& effmu === 'A'&& isNormal) {
     return {
-      score: 81
+      score: 81,
+      color: "green", ruleString: "(Name(\"278H\"))&& network === 'WPN'&& level === '13'&& effmu === 'A'&& isNormal"
     };
   };
 if((Name("278H"))&& network === 'WPN'&& level === '14'&& effmu === 'B'&& isNormal) {
     return {
-      score: 82
+      score: 82,
+      color: "green", ruleString: "(Name(\"278H\"))&& network === 'WPN'&& level === '14'&& effmu === 'B'&& isNormal"
     };
   };
 if((Name("278H"))&& network === 'WPN'&& level === '14'&& effmu === 'A'&& isNormal) {
     return {
-      score: 84
+      score: 84,
+      color: "green", ruleString: "(Name(\"278H\"))&& network === 'WPN'&& level === '14'&& effmu === 'A'&& isNormal"
     };
   };
 if((Name("278H"))&& network === 'WPN'&& level === '15'&& isNormal) {
     return {
-      score: 85
+      score: 85,
+      color: "green", ruleString: "(Name(\"278H\"))&& network === 'WPN'&& level === '15'&& isNormal"
     };
   };
 if((Name("278M"))&& network === 'WPN'&& level === '15'&& isNormal) {
     return {
-      score: 84
+      score: 84,
+      color: "green", ruleString: "(Name(\"278M\"))&& network === 'WPN'&& level === '15'&& isNormal"
     };
   };
 if((Name("278M"))&& network === 'WPN'&& level === '14'&& isNormal) {
     return {
-      score: 84
+      score: 84,
+      color: "green", ruleString: "(Name(\"278M\"))&& network === 'WPN'&& level === '14'&& isNormal"
     };
   };
 if((Name("278M"))&& network === 'WPN'&& level === '13'&& isNormal) {
     return {
-      score: 82
+      score: 82,
+      color: "green", ruleString: "(Name(\"278M\"))&& network === 'WPN'&& level === '13'&& isNormal"
     };
   };
 if((Name("278M"))&& network === 'WPN'&& level === '12'&& isNormal) {
     return {
-      score: 80
+      score: 80,
+      color: "green", ruleString: "(Name(\"278M\"))&& network === 'WPN'&& level === '12'&& isNormal"
     };
   };
 if((Name("278M"))&& network === 'WPN'&& level === '11'&& isNormal) {
     return {
-      score: 79
+      score: 79,
+      color: "green", ruleString: "(Name(\"278M\"))&& network === 'WPN'&& level === '11'&& isNormal"
     };
   };
 if((Name("278M"))&& network === 'WPN'&& level === '10'&& isNormal) {
     return {
-      score: 76
+      score: 76,
+      color: "green", ruleString: "(Name(\"278M\"))&& network === 'WPN'&& level === '10'&& isNormal"
     };
   };
 if((Name("278L"))&& network === 'WPN'&& level === '15'&& isNormal) {
     return {
-      score: 78
+      score: 78,
+      color: "green", ruleString: "(Name(\"278L\"))&& network === 'WPN'&& level === '15'&& isNormal"
     };
   };
 if((Name("278L"))&& network === 'WPN'&& level === '14'&& isNormal) {
     return {
-      score: 78
+      score: 78,
+      color: "green", ruleString: "(Name(\"278L\"))&& network === 'WPN'&& level === '14'&& isNormal"
     };
   };
 if((Name("278L"))&& network === 'WPN'&& level === '13'&& isNormal) {
     return {
-      score: 77
+      score: 77,
+      color: "green", ruleString: "(Name(\"278L\"))&& network === 'WPN'&& level === '13'&& isNormal"
     };
   };
 if((Name("278L"))&& network === 'WPN'&& level === '12'&& isNormal) {
     return {
-      score: 75
+      score: 75,
+      color: "green", ruleString: "(Name(\"278L\"))&& network === 'WPN'&& level === '12'&& isNormal"
     };
   };
 if((Name("278L"))&& network === 'WPN'&& level === '11'&& isNormal) {
     return {
-      score: 75
+      score: 75,
+      color: "green", ruleString: "(Name(\"278L\"))&& network === 'WPN'&& level === '11'&& isNormal"
     };
   };
 if((Name("278L"))&& network === 'WPN'&& level === '10'&& isNormal) {
     return {
-      score: 75
+      score: 75,
+      color: "green", ruleString: "(Name(\"278L\"))&& network === 'WPN'&& level === '10'&& isNormal"
     };
   };
 if((Name("278L"))&& network === 'WPN'&& level === '9'&& isNormal) {
     return {
-      score: 74
+      score: 74,
+      color: "green", ruleString: "(Name(\"278L\"))&& network === 'WPN'&& level === '9'&& isNormal"
     };
   };
 if((Name("278L"))&& network === 'WPN'&& level === '8'&& isNormal) {
     return {
-      score: 73
+      score: 73,
+      color: "green", ruleString: "(Name(\"278L\"))&& network === 'WPN'&& level === '8'&& isNormal"
     };
   };
 if((Name("278L"))&& network === 'WPN'&& level === '7'&& isNormal) {
     return {
-      score: 72
+      score: 72,
+      color: "green", ruleString: "(Name(\"278L\"))&& network === 'WPN'&& level === '7'&& isNormal"
     };
   };
 if((Name("278L"))&& network === 'WPN'&& level === '6'&& isNormal) {
     return {
-      score: 71
+      score: 71,
+      color: "green", ruleString: "(Name(\"278L\"))&& network === 'WPN'&& level === '6'&& isNormal"
     };
   };
 if((Name("278L"))&& network === 'WPN'&& level === '5'&& isNormal) {
     return {
-      score: 71
+      score: 71,
+      color: "green", ruleString: "(Name(\"278L\"))&& network === 'WPN'&& level === '5'&& isNormal"
     };
   };
 if((Name("278L"))&& network === 'WPN'&& level === '4'&& isNormal) {
     return {
-      score: 70
+      score: 70,
+      color: "green", ruleString: "(Name(\"278L\"))&& network === 'WPN'&& level === '4'&& isNormal"
     };
   };
 if((Name("278L"))&& network === 'WPN'&& level === '3'&& isNormal) {
     return {
-      score: 70
+      score: 70,
+      color: "green", ruleString: "(Name(\"278L\"))&& network === 'WPN'&& level === '3'&& isNormal"
     };
   };
 if((Name("278L"))&& network === 'WPN'&& level === '2'&& isNormal) {
     return {
-      score: 68
+      score: 68,
+      color: "green", ruleString: "(Name(\"278L\"))&& network === 'WPN'&& level === '2'&& isNormal"
     };
   };
 if((Name("278L"))&& network === 'WPN'&& level === '1'&& effmu === 'A'&& isNormal) {
     return {
-      score: 66
+      score: 66,
+      color: "green", ruleString: "(Name(\"278L\"))&& network === 'WPN'&& level === '1'&& effmu === 'A'&& isNormal"
     };
   };
 if((NotName("London"))&& network === 'GG'&& level === '15'&& isNormal && (BidName(50,"Day 1"))&& network === 'GG'&& level === '15'&& isNormal) {
     return {
-      score: 75
+      score: 75,
+      color: "green", ruleString: "(NotName(\"London\"))&& network === 'GG'&& level === '15'&& isNormal && (BidName(50,\"Day 1\"))&& network === 'GG'&& level === '15'&& isNormal"
     };
   };
 if((NotName("London"))&& network === 'GG'&& level === '14'&& isNormal && (BidName(50,"Day 1"))&& network === 'GG'&& level === '14'&& isNormal) {
     return {
-      score: 75
+      score: 75,
+      color: "green", ruleString: "(NotName(\"London\"))&& network === 'GG'&& level === '14'&& isNormal && (BidName(50,\"Day 1\"))&& network === 'GG'&& level === '14'&& isNormal"
     };
   };
 if((NotName("London"))&& network === 'GG'&& level === '13'&& isNormal && (BidName(50,"Day 1"))&& network === 'GG'&& level === '13'&& isNormal) {
     return {
-      score: 74
+      score: 74,
+      color: "green", ruleString: "(NotName(\"London\"))&& network === 'GG'&& level === '13'&& isNormal && (BidName(50,\"Day 1\"))&& network === 'GG'&& level === '13'&& isNormal"
     };
   };
 if((NotName("London"))&& network === 'GG'&& level === '12'&& isNormal && (BidName(50,"Day 1"))&& network === 'GG'&& level === '12'&& isNormal) {
     return {
-      score: 74
+      score: 74,
+      color: "green", ruleString: "(NotName(\"London\"))&& network === 'GG'&& level === '12'&& isNormal && (BidName(50,\"Day 1\"))&& network === 'GG'&& level === '12'&& isNormal"
     };
   };
 if((NotName("London"))&& network === 'GG'&& level === '11'&& isNormal && (BidName(50,"Day 1"))&& network === 'GG'&& level === '11'&& isNormal) {
     return {
-      score: 73
+      score: 73,
+      color: "green", ruleString: "(NotName(\"London\"))&& network === 'GG'&& level === '11'&& isNormal && (BidName(50,\"Day 1\"))&& network === 'GG'&& level === '11'&& isNormal"
     };
   };
 if((NotName("London"))&& network === 'GG'&& level === '10'&& isNormal && (BidName(50,"Day 1"))&& network === 'GG'&& level === '10'&& isNormal) {
     return {
-      score: 72
+      score: 72,
+      color: "green", ruleString: "(NotName(\"London\"))&& network === 'GG'&& level === '10'&& isNormal && (BidName(50,\"Day 1\"))&& network === 'GG'&& level === '10'&& isNormal"
     };
   };
 if((NotName("London"))&& network === 'GG'&& level === '9'&& isNormal && (BidName(50,"Day 1"))&& network === 'GG'&& level === '9'&& isNormal) {
     return {
-      score: 70
+      score: 70,
+      color: "green", ruleString: "(NotName(\"London\"))&& network === 'GG'&& level === '9'&& isNormal && (BidName(50,\"Day 1\"))&& network === 'GG'&& level === '9'&& isNormal"
     };
   };
 if((NotName("London"))&& network === 'GG'&& level === '8'&& isNormal && (BidName(50,"Day 1"))&& network === 'GG'&& level === '8'&& isNormal) {
     return {
-      score: 69
+      score: 69,
+      color: "green", ruleString: "(NotName(\"London\"))&& network === 'GG'&& level === '8'&& isNormal && (BidName(50,\"Day 1\"))&& network === 'GG'&& level === '8'&& isNormal"
     };
   };
 if((NotName("London"))&& network === 'GG'&& level === '7'&& isNormal && (BidName(50,"Day 1"))&& network === 'GG'&& level === '7'&& isNormal) {
     return {
-      score: 68
+      score: 68,
+      color: "green", ruleString: "(NotName(\"London\"))&& network === 'GG'&& level === '7'&& isNormal && (BidName(50,\"Day 1\"))&& network === 'GG'&& level === '7'&& isNormal"
     };
   };
 if((NotName("London"))&& network === 'GG'&& level === '6'&& isNormal && (BidName(50,"Day 1"))&& network === 'GG'&& level === '6'&& isNormal) {
     return {
-      score: 67
+      score: 67,
+      color: "green", ruleString: "(NotName(\"London\"))&& network === 'GG'&& level === '6'&& isNormal && (BidName(50,\"Day 1\"))&& network === 'GG'&& level === '6'&& isNormal"
     };
   };
 if((NotName("London"))&& network === 'GG'&& level === '5'&& isNormal && (BidName(50,"Day 1"))&& network === 'GG'&& level === '5'&& isNormal) {
     return {
-      score: 66
+      score: 66,
+      color: "green", ruleString: "(NotName(\"London\"))&& network === 'GG'&& level === '5'&& isNormal && (BidName(50,\"Day 1\"))&& network === 'GG'&& level === '5'&& isNormal"
     };
   };
 if((NotName("London"))&& network === 'GG'&& level === '4'&& isNormal && (BidName(50,"Day 1"))&& network === 'GG'&& level === '4'&& isNormal) {
     return {
-      score: 63
+      score: 63,
+      color: "green", ruleString: "(NotName(\"London\"))&& network === 'GG'&& level === '4'&& isNormal && (BidName(50,\"Day 1\"))&& network === 'GG'&& level === '4'&& isNormal"
     };
   };
 if((NotName("London"))&& network === 'GG'&& level === '3'&& isNormal && (BidName(50,"Day 1"))&& network === 'GG'&& level === '3'&& isNormal) {
     return {
-      score: 61
-    };
-  };
-if((FromTo(120,150))&& network === 'GG'&& level === '13'&& isNormal && (Name("Monday Monster Stack"))&& network === 'GG'&& level === '13'&& isNormal) {
-    return {
-      score: 82
-    };
-  };
-if((FromTo(120,150))&& network === 'GG'&& level === '14'&& isNormal && (Name("Monday Monster Stack"))&& network === 'GG'&& level === '14'&& isNormal) {
-    return {
-      score: 82
-    };
-  };
-if((FromTo(120,150))&& network === 'GG'&& level === '15'&& isNormal && (Name("Monday Monster Stack"))&& network === 'GG'&& level === '15'&& isNormal) {
-    return {
-      score: 82
-    };
-  };
-if((FromTo(200,250))&& network === 'GG'&& level === '13'&& isNormal && (Name("Bounty Hunters Big Game"))&& network === 'GG'&& level === '13'&& isNormal && (StartDay("Friday"))&& network === 'GG'&& level === '13'&& isNormal) {
-    return {
-      score: 82
-    };
-  };
-if((FromTo(200,215))&& network === 'GG'&& level === '13'&& isNormal && (Name("Bounty Hunters Big Game"))&& network === 'GG'&& level === '13'&& isNormal && (StartDay("Saturday"))&& network === 'GG'&& level === '13'&& isNormal) {
-    return {
-      score: 82
-    };
-  };
-if((FromTo(200,215))&& network === 'GG'&& level === '14'&& isNormal && (Name("Bounty Hunters Big Game"))&& network === 'GG'&& level === '14'&& isNormal && (StartDay("Friday"))&& network === 'GG'&& level === '14'&& isNormal) {
-    return {
-      score: 82
-    };
-  };
-if((FromTo(200,215))&& network === 'GG'&& level === '14'&& isNormal && (Name("Bounty Hunters Big Game"))&& network === 'GG'&& level === '14'&& isNormal && (StartDay("Saturday"))&& network === 'GG'&& level === '14'&& isNormal) {
-    return {
-      score: 82
-    };
-  };
-if((FromTo(200,215))&& network === 'GG'&& level === '15'&& isNormal && (Name("Bounty Hunters Big Game"))&& network === 'GG'&& level === '15'&& isNormal && (StartDay("Friday"))&& network === 'GG'&& level === '15'&& isNormal) {
-    return {
-      score: 82
-    };
-  };
-if((FromTo(200,215))&& network === 'GG'&& level === '15'&& isNormal && (Name("Bounty Hunters Big Game"))&& network === 'GG'&& level === '15'&& isNormal && (StartDay("Saturday"))&& network === 'GG'&& level === '15'&& isNormal) {
-    return {
-      score: 82
+      score: 61,
+      color: "green", ruleString: "(NotName(\"London\"))&& network === 'GG'&& level === '3'&& isNormal && (BidName(50,\"Day 1\"))&& network === 'GG'&& level === '3'&& isNormal"
     };
   };
 if((Name("Adrenaline"))&& network === 'PS.eu') {
@@ -608,6899 +607,8332 @@ if((Name("London Super"))) {
 if((Name("10BB"))) {
     return { score: null };
   };
+if((FromTo(120,150))&& network === 'GG'&& level === '13'&& isNormal && (Name("Monday Monster Stack"))&& network === 'GG'&& level === '13'&& isNormal) {
+    return {
+      score: 82,
+      color: "green", ruleString: "(FromTo(120,150))&& network === 'GG'&& level === '13'&& isNormal && (Name(\"Monday Monster Stack\"))&& network === 'GG'&& level === '13'&& isNormal"
+    };
+  };
+if((FromTo(120,150))&& network === 'GG'&& level === '14'&& isNormal && (Name("Monday Monster Stack"))&& network === 'GG'&& level === '14'&& isNormal) {
+    return {
+      score: 82,
+      color: "green", ruleString: "(FromTo(120,150))&& network === 'GG'&& level === '14'&& isNormal && (Name(\"Monday Monster Stack\"))&& network === 'GG'&& level === '14'&& isNormal"
+    };
+  };
+if((FromTo(120,150))&& network === 'GG'&& level === '15'&& isNormal && (Name("Monday Monster Stack"))&& network === 'GG'&& level === '15'&& isNormal) {
+    return {
+      score: 82,
+      color: "green", ruleString: "(FromTo(120,150))&& network === 'GG'&& level === '15'&& isNormal && (Name(\"Monday Monster Stack\"))&& network === 'GG'&& level === '15'&& isNormal"
+    };
+  };
+if((FromTo(200,250))&& network === 'GG'&& level === '13'&& isNormal && (Name("Bounty Hunters Big Game"))&& network === 'GG'&& level === '13'&& isNormal && (StartDay("Friday"))&& network === 'GG'&& level === '13'&& isNormal) {
+    return {
+      score: 82,
+      color: "green", ruleString: "(FromTo(200,250))&& network === 'GG'&& level === '13'&& isNormal && (Name(\"Bounty Hunters Big Game\"))&& network === 'GG'&& level === '13'&& isNormal && (StartDay(\"Friday\"))&& network === 'GG'&& level === '13'&& isNormal"
+    };
+  };
+if((FromTo(200,215))&& network === 'GG'&& level === '13'&& isNormal && (Name("Bounty Hunters Big Game"))&& network === 'GG'&& level === '13'&& isNormal && (StartDay("Saturday"))&& network === 'GG'&& level === '13'&& isNormal) {
+    return {
+      score: 82,
+      color: "green", ruleString: "(FromTo(200,215))&& network === 'GG'&& level === '13'&& isNormal && (Name(\"Bounty Hunters Big Game\"))&& network === 'GG'&& level === '13'&& isNormal && (StartDay(\"Saturday\"))&& network === 'GG'&& level === '13'&& isNormal"
+    };
+  };
+if((FromTo(200,215))&& network === 'GG'&& level === '14'&& isNormal && (Name("Bounty Hunters Big Game"))&& network === 'GG'&& level === '14'&& isNormal && (StartDay("Friday"))&& network === 'GG'&& level === '14'&& isNormal) {
+    return {
+      score: 82,
+      color: "green", ruleString: "(FromTo(200,215))&& network === 'GG'&& level === '14'&& isNormal && (Name(\"Bounty Hunters Big Game\"))&& network === 'GG'&& level === '14'&& isNormal && (StartDay(\"Friday\"))&& network === 'GG'&& level === '14'&& isNormal"
+    };
+  };
+if((FromTo(200,215))&& network === 'GG'&& level === '14'&& isNormal && (Name("Bounty Hunters Big Game"))&& network === 'GG'&& level === '14'&& isNormal && (StartDay("Saturday"))&& network === 'GG'&& level === '14'&& isNormal) {
+    return {
+      score: 82,
+      color: "green", ruleString: "(FromTo(200,215))&& network === 'GG'&& level === '14'&& isNormal && (Name(\"Bounty Hunters Big Game\"))&& network === 'GG'&& level === '14'&& isNormal && (StartDay(\"Saturday\"))&& network === 'GG'&& level === '14'&& isNormal"
+    };
+  };
+if((FromTo(200,215))&& network === 'GG'&& level === '15'&& isNormal && (Name("Bounty Hunters Big Game"))&& network === 'GG'&& level === '15'&& isNormal && (StartDay("Friday"))&& network === 'GG'&& level === '15'&& isNormal) {
+    return {
+      score: 82,
+      color: "green", ruleString: "(FromTo(200,215))&& network === 'GG'&& level === '15'&& isNormal && (Name(\"Bounty Hunters Big Game\"))&& network === 'GG'&& level === '15'&& isNormal && (StartDay(\"Friday\"))&& network === 'GG'&& level === '15'&& isNormal"
+    };
+  };
+if((FromTo(200,215))&& network === 'GG'&& level === '15'&& isNormal && (Name("Bounty Hunters Big Game"))&& network === 'GG'&& level === '15'&& isNormal && (StartDay("Saturday"))&& network === 'GG'&& level === '15'&& isNormal) {
+    return {
+      score: 82,
+      color: "green", ruleString: "(FromTo(200,215))&& network === 'GG'&& level === '15'&& isNormal && (Name(\"Bounty Hunters Big Game\"))&& network === 'GG'&& level === '15'&& isNormal && (StartDay(\"Saturday\"))&& network === 'GG'&& level === '15'&& isNormal"
+    };
+  };
 if((FromTo(1,86))&& network === 'PS.eu'&& level === '8'&& effmu === 'A'&& isNormal) {
     return {
-      score: 75
+      score: 75,
+      color: "black", ruleString: "(FromTo(1,86))&& network === 'PS.eu'&& level === '8'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,55))&& network === 'PS.eu'&& level === '8'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 73
+      score: 73,
+      color: "black", ruleString: "(FromTo(1,55))&& network === 'PS.eu'&& level === '8'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,55))&& network === 'PS.eu'&& level === '8'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 73
+      score: 73,
+      color: "black", ruleString: "(FromTo(1,55))&& network === 'PS.eu'&& level === '8'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,60))&& network === 'PS.eu'&& level === '8'&& effmu === 'B'&& isNormal) {
     return {
-      score: 74
+      score: 74,
+      color: "black", ruleString: "(FromTo(1,60))&& network === 'PS.eu'&& level === '8'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,44))&& network === 'PS.eu'&& level === '8'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 72
+      score: 72,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'PS.eu'&& level === '8'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,44))&& network === 'PS.eu'&& level === '8'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 72
+      score: 72,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'PS.eu'&& level === '8'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,60))&& network === 'PS.eu'&& level === '8'&& effmu === 'C'&& isNormal) {
     return {
-      score: 73
+      score: 73,
+      color: "black", ruleString: "(FromTo(1,60))&& network === 'PS.eu'&& level === '8'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,44))&& network === 'PS.eu'&& level === '8'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 71
+      score: 71,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'PS.eu'&& level === '8'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,44))&& network === 'PS.eu'&& level === '8'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 71
+      score: 71,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'PS.eu'&& level === '8'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,109))&& network === 'PS.eu'&& level === '9'&& effmu === 'A'&& isNormal) {
     return {
-      score: 76
+      score: 76,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'PS.eu'&& level === '9'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,82))&& network === 'PS.eu'&& level === '9'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 74
+      score: 74,
+      color: "black", ruleString: "(FromTo(1,82))&& network === 'PS.eu'&& level === '9'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,82))&& network === 'PS.eu'&& level === '9'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 74
+      score: 74,
+      color: "black", ruleString: "(FromTo(1,82))&& network === 'PS.eu'&& level === '9'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,86))&& network === 'PS.eu'&& level === '9'&& effmu === 'B'&& isNormal) {
     return {
-      score: 75
+      score: 75,
+      color: "black", ruleString: "(FromTo(1,86))&& network === 'PS.eu'&& level === '9'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,55))&& network === 'PS.eu'&& level === '9'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 73
+      score: 73,
+      color: "black", ruleString: "(FromTo(1,55))&& network === 'PS.eu'&& level === '9'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,55))&& network === 'PS.eu'&& level === '9'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 73
+      score: 73,
+      color: "black", ruleString: "(FromTo(1,55))&& network === 'PS.eu'&& level === '9'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,60))&& network === 'PS.eu'&& level === '9'&& effmu === 'C'&& isNormal) {
     return {
-      score: 74
+      score: 74,
+      color: "black", ruleString: "(FromTo(1,60))&& network === 'PS.eu'&& level === '9'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,44))&& network === 'PS.eu'&& level === '9'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 72
+      score: 72,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'PS.eu'&& level === '9'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,44))&& network === 'PS.eu'&& level === '9'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 72
+      score: 72,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'PS.eu'&& level === '9'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,82))&& network === 'PS.eu'&& level === '10'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 75
+      score: 75,
+      color: "black", ruleString: "(FromTo(1,82))&& network === 'PS.eu'&& level === '10'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,82))&& network === 'PS.eu'&& level === '10'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 75
+      score: 75,
+      color: "black", ruleString: "(FromTo(1,82))&& network === 'PS.eu'&& level === '10'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,55))&& network === 'PS.eu'&& level === '10'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 74
+      score: 74,
+      color: "black", ruleString: "(FromTo(1,55))&& network === 'PS.eu'&& level === '10'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,55))&& network === 'PS.eu'&& level === '10'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 74
+      score: 74,
+      color: "black", ruleString: "(FromTo(1,55))&& network === 'PS.eu'&& level === '10'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,55))&& network === 'PS.eu'&& level === '10'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 73
+      score: 73,
+      color: "black", ruleString: "(FromTo(1,55))&& network === 'PS.eu'&& level === '10'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,55))&& network === 'PS.eu'&& level === '10'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 73
+      score: 73,
+      color: "black", ruleString: "(FromTo(1,55))&& network === 'PS.eu'&& level === '10'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,109))&& network === 'PS.eu'&& level === '11'&& effmu === 'A'&& isNormal) {
     return {
-      score: 78
+      score: 78,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'PS.eu'&& level === '11'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,109))&& network === 'PS.eu'&& level === '11'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 76
+      score: 76,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'PS.eu'&& level === '11'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,109))&& network === 'PS.eu'&& level === '11'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 76
+      score: 76,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'PS.eu'&& level === '11'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,109))&& network === 'PS.eu'&& level === '11'&& effmu === 'B'&& isNormal) {
     return {
-      score: 77
+      score: 77,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'PS.eu'&& level === '11'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,82))&& network === 'PS.eu'&& level === '11'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 75
+      score: 75,
+      color: "black", ruleString: "(FromTo(1,82))&& network === 'PS.eu'&& level === '11'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,82))&& network === 'PS.eu'&& level === '11'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 75
+      score: 75,
+      color: "black", ruleString: "(FromTo(1,82))&& network === 'PS.eu'&& level === '11'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,109))&& network === 'PS.eu'&& level === '11'&& effmu === 'C'&& isNormal) {
     return {
-      score: 76
+      score: 76,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'PS.eu'&& level === '11'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,82))&& network === 'PS.eu'&& level === '11'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 74
+      score: 74,
+      color: "black", ruleString: "(FromTo(1,82))&& network === 'PS.eu'&& level === '11'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,82))&& network === 'PS.eu'&& level === '11'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 74
+      score: 74,
+      color: "black", ruleString: "(FromTo(1,82))&& network === 'PS.eu'&& level === '11'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,109))&& network === 'PS.eu'&& level === '12'&& effmu === 'A'&& isNormal) {
     return {
-      score: 79
+      score: 79,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'PS.eu'&& level === '12'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,109))&& network === 'PS.eu'&& level === '12'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 77
+      score: 77,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'PS.eu'&& level === '12'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,109))&& network === 'PS.eu'&& level === '12'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 77
+      score: 77,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'PS.eu'&& level === '12'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,109))&& network === 'PS.eu'&& level === '12'&& effmu === 'B'&& isNormal) {
     return {
-      score: 78
+      score: 78,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'PS.eu'&& level === '12'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,82))&& network === 'PS.eu'&& level === '12'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 76
+      score: 76,
+      color: "black", ruleString: "(FromTo(1,82))&& network === 'PS.eu'&& level === '12'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,82))&& network === 'PS.eu'&& level === '12'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 76
+      score: 76,
+      color: "black", ruleString: "(FromTo(1,82))&& network === 'PS.eu'&& level === '12'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,109))&& network === 'PS.eu'&& level === '12'&& effmu === 'C'&& isNormal) {
     return {
-      score: 77
+      score: 77,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'PS.eu'&& level === '12'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,82))&& network === 'PS.eu'&& level === '12'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 75
+      score: 75,
+      color: "black", ruleString: "(FromTo(1,82))&& network === 'PS.eu'&& level === '12'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,82))&& network === 'PS.eu'&& level === '12'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 75
+      score: 75,
+      color: "black", ruleString: "(FromTo(1,82))&& network === 'PS.eu'&& level === '12'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,215))&& network === 'PS.eu'&& level === '13'&& effmu === 'A'&& isNormal) {
     return {
-      score: 82
+      score: 82,
+      color: "black", ruleString: "(FromTo(1,215))&& network === 'PS.eu'&& level === '13'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,109))&& network === 'PS.eu'&& level === '13'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 80
+      score: 80,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'PS.eu'&& level === '13'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,109))&& network === 'PS.eu'&& level === '13'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 80
+      score: 80,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'PS.eu'&& level === '13'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,215))&& network === 'PS.eu'&& level === '13'&& effmu === 'B'&& isNormal) {
     return {
-      score: 81
+      score: 81,
+      color: "black", ruleString: "(FromTo(1,215))&& network === 'PS.eu'&& level === '13'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,109))&& network === 'PS.eu'&& level === '13'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 79
+      score: 79,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'PS.eu'&& level === '13'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,109))&& network === 'PS.eu'&& level === '13'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 79
+      score: 79,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'PS.eu'&& level === '13'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,109))&& network === 'PS.eu'&& level === '13'&& effmu === 'C'&& isNormal) {
     return {
-      score: 81
+      score: 81,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'PS.eu'&& level === '13'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,82))&& network === 'PS.eu'&& level === '13'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 79
+      score: 79,
+      color: "black", ruleString: "(FromTo(1,82))&& network === 'PS.eu'&& level === '13'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,82))&& network === 'PS.eu'&& level === '13'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 79
+      score: 79,
+      color: "black", ruleString: "(FromTo(1,82))&& network === 'PS.eu'&& level === '13'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,500))&& network === 'PS.eu'&& level === '14'&& effmu === 'A'&& isNormal) {
     return {
-      score: 84
+      score: 84,
+      color: "black", ruleString: "(FromTo(1,500))&& network === 'PS.eu'&& level === '14'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,215))&& network === 'PS.eu'&& level === '14'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 82
+      score: 82,
+      color: "black", ruleString: "(FromTo(1,215))&& network === 'PS.eu'&& level === '14'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,215))&& network === 'PS.eu'&& level === '14'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 82
+      score: 82,
+      color: "black", ruleString: "(FromTo(1,215))&& network === 'PS.eu'&& level === '14'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,215))&& network === 'PS.eu'&& level === '14'&& effmu === 'B'&& isNormal) {
     return {
-      score: 82
+      score: 82,
+      color: "black", ruleString: "(FromTo(1,215))&& network === 'PS.eu'&& level === '14'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,109))&& network === 'PS.eu'&& level === '14'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 80
+      score: 80,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'PS.eu'&& level === '14'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,109))&& network === 'PS.eu'&& level === '14'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 80
+      score: 80,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'PS.eu'&& level === '14'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,215))&& network === 'PS.eu'&& level === '14'&& effmu === 'C'&& isNormal) {
     return {
-      score: 81
+      score: 81,
+      color: "black", ruleString: "(FromTo(1,215))&& network === 'PS.eu'&& level === '14'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,109))&& network === 'PS.eu'&& level === '14'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 79
+      score: 79,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'PS.eu'&& level === '14'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,109))&& network === 'PS.eu'&& level === '14'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 79
+      score: 79,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'PS.eu'&& level === '14'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,215))&& network === 'PS.eu'&& level === '15'&& effmu === 'SuperA'&& isTurbo) {
     return {
-      score: 82
+      score: 82,
+      color: "black", ruleString: "(FromTo(1,215))&& network === 'PS.eu'&& level === '15'&& effmu === 'SuperA'&& isTurbo"
     };
   };
 if((FromTo(1,215))&& network === 'PS.eu'&& level === '15'&& effmu === 'SuperA'&& isSuperTurbo) {
     return {
-      score: 82
+      score: 82,
+      color: "black", ruleString: "(FromTo(1,215))&& network === 'PS.eu'&& level === '15'&& effmu === 'SuperA'&& isSuperTurbo"
     };
   };
 if((FromTo(1,215))&& network === 'PS.eu'&& level === '15'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 82
+      score: 82,
+      color: "black", ruleString: "(FromTo(1,215))&& network === 'PS.eu'&& level === '15'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,215))&& network === 'PS.eu'&& level === '15'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 82
+      score: 82,
+      color: "black", ruleString: "(FromTo(1,215))&& network === 'PS.eu'&& level === '15'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,215))&& network === 'PS.eu'&& level === '15'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 82
+      score: 82,
+      color: "black", ruleString: "(FromTo(1,215))&& network === 'PS.eu'&& level === '15'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,215))&& network === 'PS.eu'&& level === '15'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 82
+      score: 82,
+      color: "black", ruleString: "(FromTo(1,215))&& network === 'PS.eu'&& level === '15'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,215))&& network === 'PS.eu'&& level === '15'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 80
+      score: 80,
+      color: "black", ruleString: "(FromTo(1,215))&& network === 'PS.eu'&& level === '15'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,215))&& network === 'PS.eu'&& level === '15'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 80
+      score: 80,
+      color: "black", ruleString: "(FromTo(1,215))&& network === 'PS.eu'&& level === '15'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,60))&& network === 'PS.eu'&& level === '7'&& effmu === 'A'&& isNormal) {
     return {
-      score: 74
+      score: 74,
+      color: "black", ruleString: "(FromTo(1,60))&& network === 'PS.eu'&& level === '7'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,55))&& network === 'PS.eu'&& level === '7'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 72
+      score: 72,
+      color: "black", ruleString: "(FromTo(1,55))&& network === 'PS.eu'&& level === '7'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,55))&& network === 'PS.eu'&& level === '7'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 72
+      score: 72,
+      color: "black", ruleString: "(FromTo(1,55))&& network === 'PS.eu'&& level === '7'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,60))&& network === 'PS.eu'&& level === '7'&& effmu === 'B'&& isNormal) {
     return {
-      score: 73
+      score: 73,
+      color: "black", ruleString: "(FromTo(1,60))&& network === 'PS.eu'&& level === '7'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,44))&& network === 'PS.eu'&& level === '7'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 71
+      score: 71,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'PS.eu'&& level === '7'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,44))&& network === 'PS.eu'&& level === '7'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 71
+      score: 71,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'PS.eu'&& level === '7'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,44))&& network === 'PS.eu'&& level === '7'&& effmu === 'C'&& isNormal) {
     return {
-      score: 72
+      score: 72,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'PS.eu'&& level === '7'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,33))&& network === 'PS.eu'&& level === '7'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 70
+      score: 70,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'PS.eu'&& level === '7'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,33))&& network === 'PS.eu'&& level === '7'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 70
+      score: 70,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'PS.eu'&& level === '7'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,60))&& network === 'PS.eu'&& level === '6'&& effmu === 'A'&& isNormal) {
     return {
-      score: 73
+      score: 73,
+      color: "black", ruleString: "(FromTo(1,60))&& network === 'PS.eu'&& level === '6'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,44))&& network === 'PS.eu'&& level === '6'&& effmu === 'B'&& isNormal) {
     return {
-      score: 72
+      score: 72,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'PS.eu'&& level === '6'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,33))&& network === 'PS.eu'&& level === '6'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 70
+      score: 70,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'PS.eu'&& level === '6'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,33))&& network === 'PS.eu'&& level === '6'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 70
+      score: 70,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'PS.eu'&& level === '6'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,44))&& network === 'PS.eu'&& level === '6'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 71
+      score: 71,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'PS.eu'&& level === '6'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,44))&& network === 'PS.eu'&& level === '6'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 71
+      score: 71,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'PS.eu'&& level === '6'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,44))&& network === 'PS.eu'&& level === '6'&& effmu === 'C'&& isNormal) {
     return {
-      score: 71
+      score: 71,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'PS.eu'&& level === '6'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,33))&& network === 'PS.eu'&& level === '6'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 69
+      score: 69,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'PS.eu'&& level === '6'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,33))&& network === 'PS.eu'&& level === '6'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 69
+      score: 69,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'PS.eu'&& level === '6'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,44))&& network === 'PS.eu'&& level === '5'&& effmu === 'A'&& isNormal) {
     return {
-      score: 72
+      score: 72,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'PS.eu'&& level === '5'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,33))&& network === 'PS.eu'&& level === '5'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 70
+      score: 70,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'PS.eu'&& level === '5'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,33))&& network === 'PS.eu'&& level === '5'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 70
+      score: 70,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'PS.eu'&& level === '5'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,44))&& network === 'PS.eu'&& level === '5'&& effmu === 'B'&& isNormal) {
     return {
-      score: 71
+      score: 71,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'PS.eu'&& level === '5'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,33))&& network === 'PS.eu'&& level === '5'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 69
+      score: 69,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'PS.eu'&& level === '5'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,33))&& network === 'PS.eu'&& level === '5'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 69
+      score: 69,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'PS.eu'&& level === '5'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,33))&& network === 'PS.eu'&& level === '5'&& effmu === 'C'&& isNormal) {
     return {
-      score: 70
+      score: 70,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'PS.eu'&& level === '5'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,22))&& network === 'PS.eu'&& level === '5'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 68
+      score: 68,
+      color: "black", ruleString: "(FromTo(1,22))&& network === 'PS.eu'&& level === '5'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,22))&& network === 'PS.eu'&& level === '5'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 68
+      score: 68,
+      color: "black", ruleString: "(FromTo(1,22))&& network === 'PS.eu'&& level === '5'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,44))&& network === 'PS.eu'&& level === '4'&& effmu === 'A'&& isNormal) {
     return {
-      score: 71
+      score: 71,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'PS.eu'&& level === '4'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,33))&& network === 'PS.eu'&& level === '4'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 69
+      score: 69,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'PS.eu'&& level === '4'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,33))&& network === 'PS.eu'&& level === '4'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 69
+      score: 69,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'PS.eu'&& level === '4'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,44))&& network === 'PS.eu'&& level === '4'&& effmu === 'B'&& isNormal) {
     return {
-      score: 70
+      score: 70,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'PS.eu'&& level === '4'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,22))&& network === 'PS.eu'&& level === '4'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 68
+      score: 68,
+      color: "black", ruleString: "(FromTo(1,22))&& network === 'PS.eu'&& level === '4'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,22))&& network === 'PS.eu'&& level === '4'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 68
+      score: 68,
+      color: "black", ruleString: "(FromTo(1,22))&& network === 'PS.eu'&& level === '4'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,33))&& network === 'PS.eu'&& level === '4'&& effmu === 'C'&& isNormal) {
     return {
-      score: 69
+      score: 69,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'PS.eu'&& level === '4'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,22))&& network === 'PS.eu'&& level === '4'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 67
+      score: 67,
+      color: "black", ruleString: "(FromTo(1,22))&& network === 'PS.eu'&& level === '4'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,22))&& network === 'PS.eu'&& level === '4'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 67
+      score: 67,
+      color: "black", ruleString: "(FromTo(1,22))&& network === 'PS.eu'&& level === '4'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,33))&& network === 'PS.eu'&& level === '3'&& effmu === 'A'&& isNormal) {
     return {
-      score: 70
+      score: 70,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'PS.eu'&& level === '3'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,22))&& network === 'PS.eu'&& level === '3'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 68
+      score: 68,
+      color: "black", ruleString: "(FromTo(1,22))&& network === 'PS.eu'&& level === '3'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,22))&& network === 'PS.eu'&& level === '3'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 68
+      score: 68,
+      color: "black", ruleString: "(FromTo(1,22))&& network === 'PS.eu'&& level === '3'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,33))&& network === 'PS.eu'&& level === '3'&& effmu === 'B'&& isNormal) {
     return {
-      score: 69
+      score: 69,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'PS.eu'&& level === '3'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,22))&& network === 'PS.eu'&& level === '3'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 67
+      score: 67,
+      color: "black", ruleString: "(FromTo(1,22))&& network === 'PS.eu'&& level === '3'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,22))&& network === 'PS.eu'&& level === '3'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 67
+      score: 67,
+      color: "black", ruleString: "(FromTo(1,22))&& network === 'PS.eu'&& level === '3'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,22))&& network === 'PS.eu'&& level === '3'&& effmu === 'C'&& isNormal) {
     return {
-      score: 68
+      score: 68,
+      color: "black", ruleString: "(FromTo(1,22))&& network === 'PS.eu'&& level === '3'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,11))&& network === 'PS.eu'&& level === '3'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 66
+      score: 66,
+      color: "black", ruleString: "(FromTo(1,11))&& network === 'PS.eu'&& level === '3'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,11))&& network === 'PS.eu'&& level === '3'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 66
+      score: 66,
+      color: "black", ruleString: "(FromTo(1,11))&& network === 'PS.eu'&& level === '3'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,22))&& network === 'PS.eu'&& level === '2'&& effmu === 'A'&& isNormal) {
     return {
-      score: 69
+      score: 69,
+      color: "black", ruleString: "(FromTo(1,22))&& network === 'PS.eu'&& level === '2'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,11))&& network === 'PS.eu'&& level === '2'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 67
+      score: 67,
+      color: "black", ruleString: "(FromTo(1,11))&& network === 'PS.eu'&& level === '2'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,11))&& network === 'PS.eu'&& level === '2'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 67
+      score: 67,
+      color: "black", ruleString: "(FromTo(1,11))&& network === 'PS.eu'&& level === '2'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,22))&& network === 'PS.eu'&& level === '2'&& effmu === 'B'&& isNormal) {
     return {
-      score: 68
+      score: 68,
+      color: "black", ruleString: "(FromTo(1,22))&& network === 'PS.eu'&& level === '2'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,11))&& network === 'PS.eu'&& level === '2'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 66
+      score: 66,
+      color: "black", ruleString: "(FromTo(1,11))&& network === 'PS.eu'&& level === '2'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,11))&& network === 'PS.eu'&& level === '2'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 66
+      score: 66,
+      color: "black", ruleString: "(FromTo(1,11))&& network === 'PS.eu'&& level === '2'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,11))&& network === 'PS.eu'&& level === '2'&& effmu === 'C'&& isNormal) {
     return {
-      score: 65
+      score: 65,
+      color: "black", ruleString: "(FromTo(1,11))&& network === 'PS.eu'&& level === '2'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,7.5))&& network === 'PS.eu'&& level === '2'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 63
+      score: 63,
+      color: "black", ruleString: "(FromTo(1,7.5))&& network === 'PS.eu'&& level === '2'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,7.5))&& network === 'PS.eu'&& level === '2'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 63
+      score: 63,
+      color: "black", ruleString: "(FromTo(1,7.5))&& network === 'PS.eu'&& level === '2'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,22))&& network === 'PS.eu'&& level === '1'&& effmu === 'A'&& isNormal) {
     return {
-      score: 68
+      score: 68,
+      color: "black", ruleString: "(FromTo(1,22))&& network === 'PS.eu'&& level === '1'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,11))&& network === 'PS.eu'&& level === '1'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 66
+      score: 66,
+      color: "black", ruleString: "(FromTo(1,11))&& network === 'PS.eu'&& level === '1'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,11))&& network === 'PS.eu'&& level === '1'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 66
+      score: 66,
+      color: "black", ruleString: "(FromTo(1,11))&& network === 'PS.eu'&& level === '1'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,11))&& network === 'PS.eu'&& level === '1'&& effmu === 'B'&& isNormal) {
     return {
-      score: 65
+      score: 65,
+      color: "black", ruleString: "(FromTo(1,11))&& network === 'PS.eu'&& level === '1'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,7.5))&& network === 'PS.eu'&& level === '1'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 63
+      score: 63,
+      color: "black", ruleString: "(FromTo(1,7.5))&& network === 'PS.eu'&& level === '1'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,7.5))&& network === 'PS.eu'&& level === '1'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 63
+      score: 63,
+      color: "black", ruleString: "(FromTo(1,7.5))&& network === 'PS.eu'&& level === '1'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,11))&& network === 'PS.eu'&& level === '1'&& effmu === 'C'&& isNormal) {
     return {
-      score: 63
+      score: 63,
+      color: "black", ruleString: "(FromTo(1,11))&& network === 'PS.eu'&& level === '1'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,7.5))&& network === 'PS.eu'&& level === '1'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 61
+      score: 61,
+      color: "black", ruleString: "(FromTo(1,7.5))&& network === 'PS.eu'&& level === '1'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,7.5))&& network === 'PS.eu'&& level === '1'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 61
+      score: 61,
+      color: "black", ruleString: "(FromTo(1,7.5))&& network === 'PS.eu'&& level === '1'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,11))&& network === 'PS.eu'&& level === '0'&& effmu === 'A'&& isNormal) {
     return {
-      score: 65
+      score: 65,
+      color: "black", ruleString: "(FromTo(1,11))&& network === 'PS.eu'&& level === '0'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,7.5))&& network === 'PS.eu'&& level === '0'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 63
+      score: 63,
+      color: "black", ruleString: "(FromTo(1,7.5))&& network === 'PS.eu'&& level === '0'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,7.5))&& network === 'PS.eu'&& level === '0'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 63
+      score: 63,
+      color: "black", ruleString: "(FromTo(1,7.5))&& network === 'PS.eu'&& level === '0'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,11))&& network === 'PS.eu'&& level === '0'&& effmu === 'B'&& isNormal) {
     return {
-      score: 63
+      score: 63,
+      color: "black", ruleString: "(FromTo(1,11))&& network === 'PS.eu'&& level === '0'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,7.5))&& network === 'PS.eu'&& level === '0'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 61
+      score: 61,
+      color: "black", ruleString: "(FromTo(1,7.5))&& network === 'PS.eu'&& level === '0'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,7.5))&& network === 'PS.eu'&& level === '0'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 61
+      score: 61,
+      color: "black", ruleString: "(FromTo(1,7.5))&& network === 'PS.eu'&& level === '0'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,6))&& network === 'PS.eu'&& level === '0'&& effmu === 'C'&& isNormal) {
     return {
-      score: 61
+      score: 61,
+      color: "black", ruleString: "(FromTo(1,6))&& network === 'PS.eu'&& level === '0'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,3.5))&& network === 'PS.eu'&& level === '0'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 59
+      score: 59,
+      color: "black", ruleString: "(FromTo(1,3.5))&& network === 'PS.eu'&& level === '0'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,3.5))&& network === 'PS.eu'&& level === '0'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 59
+      score: 59,
+      color: "black", ruleString: "(FromTo(1,3.5))&& network === 'PS.eu'&& level === '0'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,215))&& network === 'IP'&& level === '15'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 82
+      score: 82,
+      color: "black", ruleString: "(FromTo(1,215))&& network === 'IP'&& level === '15'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,215))&& network === 'Chico'&& level === '15'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 82
+      score: 82,
+      color: "black", ruleString: "(FromTo(1,215))&& network === 'Chico'&& level === '15'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,215))&& network === 'PS.es'&& level === '15'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 82
+      score: 82,
+      color: "black", ruleString: "(FromTo(1,215))&& network === 'PS.es'&& level === '15'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,215))&& network === 'Party'&& level === '15'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 82
+      score: 82,
+      color: "black", ruleString: "(FromTo(1,215))&& network === 'Party'&& level === '15'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,215))&& network === 'GG'&& level === '15'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 82
+      score: 82,
+      color: "black", ruleString: "(FromTo(1,215))&& network === 'GG'&& level === '15'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,215))&& network === '888'&& level === '15'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 82
+      score: 82,
+      color: "black", ruleString: "(FromTo(1,215))&& network === '888'&& level === '15'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,215))&& network === 'WNMX'&& level === '15'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 82
+      score: 82,
+      color: "black", ruleString: "(FromTo(1,215))&& network === 'WNMX'&& level === '15'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,215))&& network === 'WPN'&& level === '15'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 82
+      score: 82,
+      color: "black", ruleString: "(FromTo(1,215))&& network === 'WPN'&& level === '15'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,215))&& network === 'IP'&& level === '15'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 82
+      score: 82,
+      color: "black", ruleString: "(FromTo(1,215))&& network === 'IP'&& level === '15'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,215))&& network === 'Chico'&& level === '15'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 82
+      score: 82,
+      color: "black", ruleString: "(FromTo(1,215))&& network === 'Chico'&& level === '15'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,215))&& network === 'PS.es'&& level === '15'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 82
+      score: 82,
+      color: "black", ruleString: "(FromTo(1,215))&& network === 'PS.es'&& level === '15'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,215))&& network === 'Party'&& level === '15'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 82
+      score: 82,
+      color: "black", ruleString: "(FromTo(1,215))&& network === 'Party'&& level === '15'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,215))&& network === 'GG'&& level === '15'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 82
+      score: 82,
+      color: "black", ruleString: "(FromTo(1,215))&& network === 'GG'&& level === '15'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,215))&& network === '888'&& level === '15'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 82
+      score: 82,
+      color: "black", ruleString: "(FromTo(1,215))&& network === '888'&& level === '15'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,215))&& network === 'WNMX'&& level === '15'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 82
+      score: 82,
+      color: "black", ruleString: "(FromTo(1,215))&& network === 'WNMX'&& level === '15'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,215))&& network === 'WPN'&& level === '15'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 82
+      score: 82,
+      color: "black", ruleString: "(FromTo(1,215))&& network === 'WPN'&& level === '15'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,215))&& network === 'IP'&& level === '15'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 82
+      score: 82,
+      color: "black", ruleString: "(FromTo(1,215))&& network === 'IP'&& level === '15'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,215))&& network === 'Chico'&& level === '15'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 82
+      score: 82,
+      color: "black", ruleString: "(FromTo(1,215))&& network === 'Chico'&& level === '15'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,215))&& network === 'PS.es'&& level === '15'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 82
+      score: 82,
+      color: "black", ruleString: "(FromTo(1,215))&& network === 'PS.es'&& level === '15'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,215))&& network === 'Party'&& level === '15'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 82
+      score: 82,
+      color: "black", ruleString: "(FromTo(1,215))&& network === 'Party'&& level === '15'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,215))&& network === 'GG'&& level === '15'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 82
+      score: 82,
+      color: "black", ruleString: "(FromTo(1,215))&& network === 'GG'&& level === '15'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,215))&& network === '888'&& level === '15'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 82
+      score: 82,
+      color: "black", ruleString: "(FromTo(1,215))&& network === '888'&& level === '15'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,215))&& network === 'WNMX'&& level === '15'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 82
+      score: 82,
+      color: "black", ruleString: "(FromTo(1,215))&& network === 'WNMX'&& level === '15'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,215))&& network === 'WPN'&& level === '15'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 82
+      score: 82,
+      color: "black", ruleString: "(FromTo(1,215))&& network === 'WPN'&& level === '15'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,215))&& network === 'IP'&& level === '15'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 82
+      score: 82,
+      color: "black", ruleString: "(FromTo(1,215))&& network === 'IP'&& level === '15'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,215))&& network === 'Chico'&& level === '15'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 82
+      score: 82,
+      color: "black", ruleString: "(FromTo(1,215))&& network === 'Chico'&& level === '15'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,215))&& network === 'PS.es'&& level === '15'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 82
+      score: 82,
+      color: "black", ruleString: "(FromTo(1,215))&& network === 'PS.es'&& level === '15'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,215))&& network === 'Party'&& level === '15'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 82
+      score: 82,
+      color: "black", ruleString: "(FromTo(1,215))&& network === 'Party'&& level === '15'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,215))&& network === 'GG'&& level === '15'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 82
+      score: 82,
+      color: "black", ruleString: "(FromTo(1,215))&& network === 'GG'&& level === '15'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,215))&& network === '888'&& level === '15'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 82
+      score: 82,
+      color: "black", ruleString: "(FromTo(1,215))&& network === '888'&& level === '15'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,215))&& network === 'WNMX'&& level === '15'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 82
+      score: 82,
+      color: "black", ruleString: "(FromTo(1,215))&& network === 'WNMX'&& level === '15'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,215))&& network === 'IP'&& level === '15'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 82
+      score: 82,
+      color: "black", ruleString: "(FromTo(1,215))&& network === 'IP'&& level === '15'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,215))&& network === 'Chico'&& level === '15'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 82
+      score: 82,
+      color: "black", ruleString: "(FromTo(1,215))&& network === 'Chico'&& level === '15'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,215))&& network === 'PS.es'&& level === '15'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 82
+      score: 82,
+      color: "black", ruleString: "(FromTo(1,215))&& network === 'PS.es'&& level === '15'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,215))&& network === 'Party'&& level === '15'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 82
+      score: 82,
+      color: "black", ruleString: "(FromTo(1,215))&& network === 'Party'&& level === '15'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,215))&& network === 'GG'&& level === '15'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 82
+      score: 82,
+      color: "black", ruleString: "(FromTo(1,215))&& network === 'GG'&& level === '15'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,215))&& network === '888'&& level === '15'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 82
+      score: 82,
+      color: "black", ruleString: "(FromTo(1,215))&& network === '888'&& level === '15'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,215))&& network === 'WNMX'&& level === '15'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 82
+      score: 82,
+      color: "black", ruleString: "(FromTo(1,215))&& network === 'WNMX'&& level === '15'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,215))&& network === 'WPN'&& level === '15'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 82
+      score: 82,
+      color: "black", ruleString: "(FromTo(1,215))&& network === 'WPN'&& level === '15'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,215))&& network === 'IP'&& level === '15'&& effmu === 'SuperA'&& isTurbo) {
     return {
-      score: 82
+      score: 82,
+      color: "black", ruleString: "(FromTo(1,215))&& network === 'IP'&& level === '15'&& effmu === 'SuperA'&& isTurbo"
     };
   };
 if((FromTo(1,215))&& network === 'Chico'&& level === '15'&& effmu === 'SuperA'&& isTurbo) {
     return {
-      score: 82
+      score: 82,
+      color: "black", ruleString: "(FromTo(1,215))&& network === 'Chico'&& level === '15'&& effmu === 'SuperA'&& isTurbo"
     };
   };
 if((FromTo(1,215))&& network === 'PS.es'&& level === '15'&& effmu === 'SuperA'&& isTurbo) {
     return {
-      score: 82
+      score: 82,
+      color: "black", ruleString: "(FromTo(1,215))&& network === 'PS.es'&& level === '15'&& effmu === 'SuperA'&& isTurbo"
     };
   };
 if((FromTo(1,215))&& network === 'Party'&& level === '15'&& effmu === 'SuperA'&& isTurbo) {
     return {
-      score: 82
+      score: 82,
+      color: "black", ruleString: "(FromTo(1,215))&& network === 'Party'&& level === '15'&& effmu === 'SuperA'&& isTurbo"
     };
   };
 if((FromTo(1,215))&& network === 'GG'&& level === '15'&& effmu === 'SuperA'&& isTurbo) {
     return {
-      score: 82
+      score: 82,
+      color: "black", ruleString: "(FromTo(1,215))&& network === 'GG'&& level === '15'&& effmu === 'SuperA'&& isTurbo"
     };
   };
 if((FromTo(1,215))&& network === '888'&& level === '15'&& effmu === 'SuperA'&& isTurbo) {
     return {
-      score: 82
+      score: 82,
+      color: "black", ruleString: "(FromTo(1,215))&& network === '888'&& level === '15'&& effmu === 'SuperA'&& isTurbo"
     };
   };
 if((FromTo(1,215))&& network === 'WNMX'&& level === '15'&& effmu === 'SuperA'&& isTurbo) {
     return {
-      score: 82
+      score: 82,
+      color: "black", ruleString: "(FromTo(1,215))&& network === 'WNMX'&& level === '15'&& effmu === 'SuperA'&& isTurbo"
     };
   };
 if((FromTo(1,215))&& network === 'WPN'&& level === '15'&& effmu === 'SuperA'&& isTurbo) {
     return {
-      score: 82
+      score: 82,
+      color: "black", ruleString: "(FromTo(1,215))&& network === 'WPN'&& level === '15'&& effmu === 'SuperA'&& isTurbo"
     };
   };
 if((FromTo(1,215))&& network === 'IP'&& level === '15'&& effmu === 'SuperA'&& isSuperTurbo) {
     return {
-      score: 82
+      score: 82,
+      color: "black", ruleString: "(FromTo(1,215))&& network === 'IP'&& level === '15'&& effmu === 'SuperA'&& isSuperTurbo"
     };
   };
 if((FromTo(1,215))&& network === 'Chico'&& level === '15'&& effmu === 'SuperA'&& isSuperTurbo) {
     return {
-      score: 82
+      score: 82,
+      color: "black", ruleString: "(FromTo(1,215))&& network === 'Chico'&& level === '15'&& effmu === 'SuperA'&& isSuperTurbo"
     };
   };
 if((FromTo(1,215))&& network === 'PS.es'&& level === '15'&& effmu === 'SuperA'&& isSuperTurbo) {
     return {
-      score: 82
+      score: 82,
+      color: "black", ruleString: "(FromTo(1,215))&& network === 'PS.es'&& level === '15'&& effmu === 'SuperA'&& isSuperTurbo"
     };
   };
 if((FromTo(1,215))&& network === 'Party'&& level === '15'&& effmu === 'SuperA'&& isSuperTurbo) {
     return {
-      score: 82
+      score: 82,
+      color: "black", ruleString: "(FromTo(1,215))&& network === 'Party'&& level === '15'&& effmu === 'SuperA'&& isSuperTurbo"
     };
   };
 if((FromTo(1,215))&& network === 'GG'&& level === '15'&& effmu === 'SuperA'&& isSuperTurbo) {
     return {
-      score: 82
+      score: 82,
+      color: "black", ruleString: "(FromTo(1,215))&& network === 'GG'&& level === '15'&& effmu === 'SuperA'&& isSuperTurbo"
     };
   };
 if((FromTo(1,215))&& network === '888'&& level === '15'&& effmu === 'SuperA'&& isSuperTurbo) {
     return {
-      score: 82
+      score: 82,
+      color: "black", ruleString: "(FromTo(1,215))&& network === '888'&& level === '15'&& effmu === 'SuperA'&& isSuperTurbo"
     };
   };
 if((FromTo(1,215))&& network === 'WNMX'&& level === '15'&& effmu === 'SuperA'&& isSuperTurbo) {
     return {
-      score: 82
+      score: 82,
+      color: "black", ruleString: "(FromTo(1,215))&& network === 'WNMX'&& level === '15'&& effmu === 'SuperA'&& isSuperTurbo"
     };
   };
 if((FromTo(1,215))&& network === 'WPN'&& level === '15'&& effmu === 'SuperA'&& isSuperTurbo) {
     return {
-      score: 82
+      score: 82,
+      color: "black", ruleString: "(FromTo(1,215))&& network === 'WPN'&& level === '15'&& effmu === 'SuperA'&& isSuperTurbo"
     };
   };
 if((FromTo(1,500))&& network === 'IP'&& level === '14'&& effmu === 'A'&& isNormal) {
     return {
-      score: 84
+      score: 84,
+      color: "black", ruleString: "(FromTo(1,500))&& network === 'IP'&& level === '14'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,500))&& network === 'Chico'&& level === '14'&& effmu === 'A'&& isNormal) {
     return {
-      score: 84
+      score: 84,
+      color: "black", ruleString: "(FromTo(1,500))&& network === 'Chico'&& level === '14'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,500))&& network === 'PS.es'&& level === '14'&& effmu === 'A'&& isNormal) {
     return {
-      score: 84
+      score: 84,
+      color: "black", ruleString: "(FromTo(1,500))&& network === 'PS.es'&& level === '14'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,500))&& network === 'Party'&& level === '14'&& effmu === 'A'&& isNormal) {
     return {
-      score: 84
+      score: 84,
+      color: "black", ruleString: "(FromTo(1,500))&& network === 'Party'&& level === '14'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,500))&& network === 'GG'&& level === '14'&& effmu === 'A'&& isNormal) {
     return {
-      score: 84
+      score: 84,
+      color: "black", ruleString: "(FromTo(1,500))&& network === 'GG'&& level === '14'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,500))&& network === '888'&& level === '14'&& effmu === 'A'&& isNormal) {
     return {
-      score: 84
+      score: 84,
+      color: "black", ruleString: "(FromTo(1,500))&& network === '888'&& level === '14'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,500))&& network === 'WPN'&& level === '14'&& effmu === 'A'&& isNormal) {
     return {
-      score: 84
+      score: 84,
+      color: "black", ruleString: "(FromTo(1,500))&& network === 'WPN'&& level === '14'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,215))&& network === 'IP'&& level === '14'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 82
+      score: 82,
+      color: "black", ruleString: "(FromTo(1,215))&& network === 'IP'&& level === '14'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,215))&& network === 'Chico'&& level === '14'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 82
+      score: 82,
+      color: "black", ruleString: "(FromTo(1,215))&& network === 'Chico'&& level === '14'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,215))&& network === 'PS.es'&& level === '14'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 82
+      score: 82,
+      color: "black", ruleString: "(FromTo(1,215))&& network === 'PS.es'&& level === '14'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,215))&& network === 'Party'&& level === '14'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 82
+      score: 82,
+      color: "black", ruleString: "(FromTo(1,215))&& network === 'Party'&& level === '14'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,215))&& network === 'GG'&& level === '14'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 82
+      score: 82,
+      color: "black", ruleString: "(FromTo(1,215))&& network === 'GG'&& level === '14'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,215))&& network === '888'&& level === '14'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 82
+      score: 82,
+      color: "black", ruleString: "(FromTo(1,215))&& network === '888'&& level === '14'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,215))&& network === 'WNMX'&& level === '14'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 82
+      score: 82,
+      color: "black", ruleString: "(FromTo(1,215))&& network === 'WNMX'&& level === '14'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,215))&& network === 'WPN'&& level === '14'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 82
+      score: 82,
+      color: "black", ruleString: "(FromTo(1,215))&& network === 'WPN'&& level === '14'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,215))&& network === 'IP'&& level === '14'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 82
+      score: 82,
+      color: "black", ruleString: "(FromTo(1,215))&& network === 'IP'&& level === '14'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,215))&& network === 'Chico'&& level === '14'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 82
+      score: 82,
+      color: "black", ruleString: "(FromTo(1,215))&& network === 'Chico'&& level === '14'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,215))&& network === 'PS.es'&& level === '14'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 82
+      score: 82,
+      color: "black", ruleString: "(FromTo(1,215))&& network === 'PS.es'&& level === '14'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,215))&& network === 'Party'&& level === '14'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 82
+      score: 82,
+      color: "black", ruleString: "(FromTo(1,215))&& network === 'Party'&& level === '14'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,215))&& network === 'GG'&& level === '14'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 82
+      score: 82,
+      color: "black", ruleString: "(FromTo(1,215))&& network === 'GG'&& level === '14'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,215))&& network === '888'&& level === '14'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 82
+      score: 82,
+      color: "black", ruleString: "(FromTo(1,215))&& network === '888'&& level === '14'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,215))&& network === 'WNMX'&& level === '14'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 82
+      score: 82,
+      color: "black", ruleString: "(FromTo(1,215))&& network === 'WNMX'&& level === '14'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,215))&& network === 'WPN'&& level === '14'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 82
+      score: 82,
+      color: "black", ruleString: "(FromTo(1,215))&& network === 'WPN'&& level === '14'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,215))&& network === 'IP'&& level === '14'&& effmu === 'B'&& isNormal) {
     return {
-      score: 82
+      score: 82,
+      color: "black", ruleString: "(FromTo(1,215))&& network === 'IP'&& level === '14'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,215))&& network === 'Chico'&& level === '14'&& effmu === 'B'&& isNormal) {
     return {
-      score: 82
+      score: 82,
+      color: "black", ruleString: "(FromTo(1,215))&& network === 'Chico'&& level === '14'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,215))&& network === 'PS.es'&& level === '14'&& effmu === 'B'&& isNormal) {
     return {
-      score: 82
+      score: 82,
+      color: "black", ruleString: "(FromTo(1,215))&& network === 'PS.es'&& level === '14'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,215))&& network === 'Party'&& level === '14'&& effmu === 'B'&& isNormal) {
     return {
-      score: 82
+      score: 82,
+      color: "black", ruleString: "(FromTo(1,215))&& network === 'Party'&& level === '14'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,215))&& network === 'GG'&& level === '14'&& effmu === 'B'&& isNormal) {
     return {
-      score: 82
+      score: 82,
+      color: "black", ruleString: "(FromTo(1,215))&& network === 'GG'&& level === '14'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,215))&& network === '888'&& level === '14'&& effmu === 'B'&& isNormal) {
     return {
-      score: 82
+      score: 82,
+      color: "black", ruleString: "(FromTo(1,215))&& network === '888'&& level === '14'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,215))&& network === 'WNMX'&& level === '14'&& effmu === 'B'&& isNormal) {
     return {
-      score: 82
+      score: 82,
+      color: "black", ruleString: "(FromTo(1,215))&& network === 'WNMX'&& level === '14'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,215))&& network === 'WPN'&& level === '14'&& effmu === 'B'&& isNormal) {
     return {
-      score: 82
+      score: 82,
+      color: "black", ruleString: "(FromTo(1,215))&& network === 'WPN'&& level === '14'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,109))&& network === 'IP'&& level === '14'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 80
+      score: 80,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'IP'&& level === '14'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,109))&& network === 'Chico'&& level === '14'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 80
+      score: 80,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'Chico'&& level === '14'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,109))&& network === 'PS.es'&& level === '14'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 80
+      score: 80,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'PS.es'&& level === '14'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,109))&& network === 'Party'&& level === '14'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 80
+      score: 80,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'Party'&& level === '14'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,109))&& network === 'GG'&& level === '14'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 80
+      score: 80,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'GG'&& level === '14'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,109))&& network === '888'&& level === '14'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 80
+      score: 80,
+      color: "black", ruleString: "(FromTo(1,109))&& network === '888'&& level === '14'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,109))&& network === 'WNMX'&& level === '14'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 80
+      score: 80,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'WNMX'&& level === '14'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,109))&& network === 'WPN'&& level === '14'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 80
+      score: 80,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'WPN'&& level === '14'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,215))&& network === 'IP'&& level === '14'&& effmu === 'C'&& isNormal) {
     return {
-      score: 81
+      score: 81,
+      color: "black", ruleString: "(FromTo(1,215))&& network === 'IP'&& level === '14'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,215))&& network === 'Chico'&& level === '14'&& effmu === 'C'&& isNormal) {
     return {
-      score: 81
+      score: 81,
+      color: "black", ruleString: "(FromTo(1,215))&& network === 'Chico'&& level === '14'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,215))&& network === 'PS.es'&& level === '14'&& effmu === 'C'&& isNormal) {
     return {
-      score: 81
+      score: 81,
+      color: "black", ruleString: "(FromTo(1,215))&& network === 'PS.es'&& level === '14'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,215))&& network === 'Party'&& level === '14'&& effmu === 'C'&& isNormal) {
     return {
-      score: 81
+      score: 81,
+      color: "black", ruleString: "(FromTo(1,215))&& network === 'Party'&& level === '14'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,215))&& network === 'GG'&& level === '14'&& effmu === 'C'&& isNormal) {
     return {
-      score: 81
+      score: 81,
+      color: "black", ruleString: "(FromTo(1,215))&& network === 'GG'&& level === '14'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,215))&& network === '888'&& level === '14'&& effmu === 'C'&& isNormal) {
     return {
-      score: 81
+      score: 81,
+      color: "black", ruleString: "(FromTo(1,215))&& network === '888'&& level === '14'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,215))&& network === 'WNMX'&& level === '14'&& effmu === 'C'&& isNormal) {
     return {
-      score: 81
+      score: 81,
+      color: "black", ruleString: "(FromTo(1,215))&& network === 'WNMX'&& level === '14'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,215))&& network === 'WPN'&& level === '14'&& effmu === 'C'&& isNormal) {
     return {
-      score: 81
+      score: 81,
+      color: "black", ruleString: "(FromTo(1,215))&& network === 'WPN'&& level === '14'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,109))&& network === 'IP'&& level === '14'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 79
+      score: 79,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'IP'&& level === '14'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,109))&& network === 'Chico'&& level === '14'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 79
+      score: 79,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'Chico'&& level === '14'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,109))&& network === 'PS.es'&& level === '14'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 79
+      score: 79,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'PS.es'&& level === '14'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,109))&& network === 'Party'&& level === '14'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 79
+      score: 79,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'Party'&& level === '14'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,109))&& network === 'GG'&& level === '14'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 79
+      score: 79,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'GG'&& level === '14'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,109))&& network === '888'&& level === '14'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 79
+      score: 79,
+      color: "black", ruleString: "(FromTo(1,109))&& network === '888'&& level === '14'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,109))&& network === 'WNMX'&& level === '14'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 79
+      score: 79,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'WNMX'&& level === '14'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,109))&& network === 'WPN'&& level === '14'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 79
+      score: 79,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'WPN'&& level === '14'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,109))&& network === 'IP'&& level === '14'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 79
+      score: 79,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'IP'&& level === '14'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,109))&& network === 'Chico'&& level === '14'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 79
+      score: 79,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'Chico'&& level === '14'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,109))&& network === 'PS.es'&& level === '14'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 79
+      score: 79,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'PS.es'&& level === '14'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,109))&& network === 'Party'&& level === '14'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 79
+      score: 79,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'Party'&& level === '14'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,109))&& network === 'GG'&& level === '14'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 79
+      score: 79,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'GG'&& level === '14'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,109))&& network === '888'&& level === '14'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 79
+      score: 79,
+      color: "black", ruleString: "(FromTo(1,109))&& network === '888'&& level === '14'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,109))&& network === 'WNMX'&& level === '14'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 79
+      score: 79,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'WNMX'&& level === '14'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,109))&& network === 'WPN'&& level === '14'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 79
+      score: 79,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'WPN'&& level === '14'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,215))&& network === 'IP'&& level === '13'&& effmu === 'A'&& isNormal) {
     return {
-      score: 82
+      score: 82,
+      color: "black", ruleString: "(FromTo(1,215))&& network === 'IP'&& level === '13'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,215))&& network === 'Chico'&& level === '13'&& effmu === 'A'&& isNormal) {
     return {
-      score: 82
+      score: 82,
+      color: "black", ruleString: "(FromTo(1,215))&& network === 'Chico'&& level === '13'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,215))&& network === 'PS.es'&& level === '13'&& effmu === 'A'&& isNormal) {
     return {
-      score: 82
+      score: 82,
+      color: "black", ruleString: "(FromTo(1,215))&& network === 'PS.es'&& level === '13'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,215))&& network === 'Party'&& level === '13'&& effmu === 'A'&& isNormal) {
     return {
-      score: 82
+      score: 82,
+      color: "black", ruleString: "(FromTo(1,215))&& network === 'Party'&& level === '13'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,215))&& network === 'GG'&& level === '13'&& effmu === 'A'&& isNormal) {
     return {
-      score: 82
+      score: 82,
+      color: "black", ruleString: "(FromTo(1,215))&& network === 'GG'&& level === '13'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,215))&& network === '888'&& level === '13'&& effmu === 'A'&& isNormal) {
     return {
-      score: 82
+      score: 82,
+      color: "black", ruleString: "(FromTo(1,215))&& network === '888'&& level === '13'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,215))&& network === 'WNMX'&& level === '13'&& effmu === 'A'&& isNormal) {
     return {
-      score: 82
+      score: 82,
+      color: "black", ruleString: "(FromTo(1,215))&& network === 'WNMX'&& level === '13'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,215))&& network === 'WPN'&& level === '13'&& effmu === 'A'&& isNormal) {
     return {
-      score: 82
+      score: 82,
+      color: "black", ruleString: "(FromTo(1,215))&& network === 'WPN'&& level === '13'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,109))&& network === 'IP'&& level === '13'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 80
+      score: 80,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'IP'&& level === '13'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,109))&& network === 'Chico'&& level === '13'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 80
+      score: 80,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'Chico'&& level === '13'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,109))&& network === 'PS.es'&& level === '13'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 80
+      score: 80,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'PS.es'&& level === '13'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,109))&& network === 'Party'&& level === '13'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 80
+      score: 80,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'Party'&& level === '13'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,109))&& network === 'GG'&& level === '13'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 80
+      score: 80,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'GG'&& level === '13'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,109))&& network === '888'&& level === '13'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 80
+      score: 80,
+      color: "black", ruleString: "(FromTo(1,109))&& network === '888'&& level === '13'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,109))&& network === 'WNMX'&& level === '13'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 80
+      score: 80,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'WNMX'&& level === '13'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,109))&& network === 'WPN'&& level === '13'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 80
+      score: 80,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'WPN'&& level === '13'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,109))&& network === 'IP'&& level === '13'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 80
+      score: 80,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'IP'&& level === '13'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,109))&& network === 'Chico'&& level === '13'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 80
+      score: 80,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'Chico'&& level === '13'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,109))&& network === 'PS.es'&& level === '13'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 80
+      score: 80,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'PS.es'&& level === '13'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,109))&& network === 'Party'&& level === '13'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 80
+      score: 80,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'Party'&& level === '13'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,109))&& network === 'GG'&& level === '13'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 80
+      score: 80,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'GG'&& level === '13'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,109))&& network === '888'&& level === '13'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 80
+      score: 80,
+      color: "black", ruleString: "(FromTo(1,109))&& network === '888'&& level === '13'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,109))&& network === 'WNMX'&& level === '13'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 80
+      score: 80,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'WNMX'&& level === '13'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,109))&& network === 'WPN'&& level === '13'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 80
+      score: 80,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'WPN'&& level === '13'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,215))&& network === 'IP'&& level === '13'&& effmu === 'B'&& isNormal) {
     return {
-      score: 81
+      score: 81,
+      color: "black", ruleString: "(FromTo(1,215))&& network === 'IP'&& level === '13'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,215))&& network === 'Chico'&& level === '13'&& effmu === 'B'&& isNormal) {
     return {
-      score: 81
+      score: 81,
+      color: "black", ruleString: "(FromTo(1,215))&& network === 'Chico'&& level === '13'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,215))&& network === 'PS.es'&& level === '13'&& effmu === 'B'&& isNormal) {
     return {
-      score: 81
+      score: 81,
+      color: "black", ruleString: "(FromTo(1,215))&& network === 'PS.es'&& level === '13'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,215))&& network === 'Party'&& level === '13'&& effmu === 'B'&& isNormal) {
     return {
-      score: 81
+      score: 81,
+      color: "black", ruleString: "(FromTo(1,215))&& network === 'Party'&& level === '13'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,215))&& network === 'GG'&& level === '13'&& effmu === 'B'&& isNormal) {
     return {
-      score: 81
+      score: 81,
+      color: "black", ruleString: "(FromTo(1,215))&& network === 'GG'&& level === '13'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,215))&& network === '888'&& level === '13'&& effmu === 'B'&& isNormal) {
     return {
-      score: 81
+      score: 81,
+      color: "black", ruleString: "(FromTo(1,215))&& network === '888'&& level === '13'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,215))&& network === 'WNMX'&& level === '13'&& effmu === 'B'&& isNormal) {
     return {
-      score: 81
+      score: 81,
+      color: "black", ruleString: "(FromTo(1,215))&& network === 'WNMX'&& level === '13'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,215))&& network === 'WPN'&& level === '13'&& effmu === 'B'&& isNormal) {
     return {
-      score: 81
+      score: 81,
+      color: "black", ruleString: "(FromTo(1,215))&& network === 'WPN'&& level === '13'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,109))&& network === 'IP'&& level === '13'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 79
+      score: 79,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'IP'&& level === '13'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,109))&& network === 'Chico'&& level === '13'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 79
+      score: 79,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'Chico'&& level === '13'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,109))&& network === 'PS.es'&& level === '13'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 79
+      score: 79,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'PS.es'&& level === '13'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,109))&& network === 'Party'&& level === '13'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 79
+      score: 79,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'Party'&& level === '13'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,109))&& network === 'GG'&& level === '13'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 79
+      score: 79,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'GG'&& level === '13'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,109))&& network === '888'&& level === '13'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 79
+      score: 79,
+      color: "black", ruleString: "(FromTo(1,109))&& network === '888'&& level === '13'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,109))&& network === 'WNMX'&& level === '13'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 79
+      score: 79,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'WNMX'&& level === '13'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,109))&& network === 'WPN'&& level === '13'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 79
+      score: 79,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'WPN'&& level === '13'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,109))&& network === 'IP'&& level === '13'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 79
+      score: 79,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'IP'&& level === '13'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,109))&& network === 'Chico'&& level === '13'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 79
+      score: 79,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'Chico'&& level === '13'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,109))&& network === 'PS.es'&& level === '13'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 79
+      score: 79,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'PS.es'&& level === '13'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,109))&& network === 'Party'&& level === '13'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 79
+      score: 79,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'Party'&& level === '13'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,109))&& network === 'GG'&& level === '13'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 79
+      score: 79,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'GG'&& level === '13'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,109))&& network === '888'&& level === '13'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 79
+      score: 79,
+      color: "black", ruleString: "(FromTo(1,109))&& network === '888'&& level === '13'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,109))&& network === 'WNMX'&& level === '13'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 79
+      score: 79,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'WNMX'&& level === '13'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,109))&& network === 'WPN'&& level === '13'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 79
+      score: 79,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'WPN'&& level === '13'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,109))&& network === 'IP'&& level === '13'&& effmu === 'C'&& isNormal) {
     return {
-      score: 81
+      score: 81,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'IP'&& level === '13'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,109))&& network === 'Chico'&& level === '13'&& effmu === 'C'&& isNormal) {
     return {
-      score: 81
+      score: 81,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'Chico'&& level === '13'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,109))&& network === 'PS.es'&& level === '13'&& effmu === 'C'&& isNormal) {
     return {
-      score: 81
+      score: 81,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'PS.es'&& level === '13'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,109))&& network === 'Party'&& level === '13'&& effmu === 'C'&& isNormal) {
     return {
-      score: 81
+      score: 81,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'Party'&& level === '13'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,109))&& network === 'GG'&& level === '13'&& effmu === 'C'&& isNormal) {
     return {
-      score: 81
+      score: 81,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'GG'&& level === '13'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,109))&& network === '888'&& level === '13'&& effmu === 'C'&& isNormal) {
     return {
-      score: 81
+      score: 81,
+      color: "black", ruleString: "(FromTo(1,109))&& network === '888'&& level === '13'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,109))&& network === 'WNMX'&& level === '13'&& effmu === 'C'&& isNormal) {
     return {
-      score: 81
+      score: 81,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'WNMX'&& level === '13'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,109))&& network === 'WPN'&& level === '13'&& effmu === 'C'&& isNormal) {
     return {
-      score: 81
+      score: 81,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'WPN'&& level === '13'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,82))&& network === 'IP'&& level === '13'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 79
+      score: 79,
+      color: "black", ruleString: "(FromTo(1,82))&& network === 'IP'&& level === '13'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,82))&& network === 'Chico'&& level === '13'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 79
+      score: 79,
+      color: "black", ruleString: "(FromTo(1,82))&& network === 'Chico'&& level === '13'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,82))&& network === 'PS.es'&& level === '13'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 79
+      score: 79,
+      color: "black", ruleString: "(FromTo(1,82))&& network === 'PS.es'&& level === '13'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,82))&& network === 'Party'&& level === '13'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 79
+      score: 79,
+      color: "black", ruleString: "(FromTo(1,82))&& network === 'Party'&& level === '13'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,82))&& network === 'GG'&& level === '13'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 79
+      score: 79,
+      color: "black", ruleString: "(FromTo(1,82))&& network === 'GG'&& level === '13'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,82))&& network === '888'&& level === '13'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 79
+      score: 79,
+      color: "black", ruleString: "(FromTo(1,82))&& network === '888'&& level === '13'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,82))&& network === 'WNMX'&& level === '13'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 79
+      score: 79,
+      color: "black", ruleString: "(FromTo(1,82))&& network === 'WNMX'&& level === '13'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,82))&& network === 'WPN'&& level === '13'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 79
+      score: 79,
+      color: "black", ruleString: "(FromTo(1,82))&& network === 'WPN'&& level === '13'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,82))&& network === 'IP'&& level === '13'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 79
+      score: 79,
+      color: "black", ruleString: "(FromTo(1,82))&& network === 'IP'&& level === '13'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,82))&& network === 'Chico'&& level === '13'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 79
+      score: 79,
+      color: "black", ruleString: "(FromTo(1,82))&& network === 'Chico'&& level === '13'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,82))&& network === 'PS.es'&& level === '13'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 79
+      score: 79,
+      color: "black", ruleString: "(FromTo(1,82))&& network === 'PS.es'&& level === '13'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,82))&& network === 'Party'&& level === '13'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 79
+      score: 79,
+      color: "black", ruleString: "(FromTo(1,82))&& network === 'Party'&& level === '13'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,82))&& network === 'GG'&& level === '13'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 79
+      score: 79,
+      color: "black", ruleString: "(FromTo(1,82))&& network === 'GG'&& level === '13'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,82))&& network === '888'&& level === '13'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 79
+      score: 79,
+      color: "black", ruleString: "(FromTo(1,82))&& network === '888'&& level === '13'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,82))&& network === 'WNMX'&& level === '13'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 79
+      score: 79,
+      color: "black", ruleString: "(FromTo(1,82))&& network === 'WNMX'&& level === '13'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,82))&& network === 'WPN'&& level === '13'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 79
+      score: 79,
+      color: "black", ruleString: "(FromTo(1,82))&& network === 'WPN'&& level === '13'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,109))&& network === 'IP'&& level === '12'&& effmu === 'A'&& isNormal) {
     return {
-      score: 79
+      score: 79,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'IP'&& level === '12'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,109))&& network === 'Chico'&& level === '12'&& effmu === 'A'&& isNormal) {
     return {
-      score: 79
+      score: 79,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'Chico'&& level === '12'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,109))&& network === 'PS.es'&& level === '12'&& effmu === 'A'&& isNormal) {
     return {
-      score: 79
+      score: 79,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'PS.es'&& level === '12'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,109))&& network === 'Party'&& level === '12'&& effmu === 'A'&& isNormal) {
     return {
-      score: 79
+      score: 79,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'Party'&& level === '12'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,109))&& network === 'GG'&& level === '12'&& effmu === 'A'&& isNormal) {
     return {
-      score: 79
+      score: 79,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'GG'&& level === '12'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,109))&& network === '888'&& level === '12'&& effmu === 'A'&& isNormal) {
     return {
-      score: 79
+      score: 79,
+      color: "black", ruleString: "(FromTo(1,109))&& network === '888'&& level === '12'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,109))&& network === 'WNMX'&& level === '12'&& effmu === 'A'&& isNormal) {
     return {
-      score: 79
+      score: 79,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'WNMX'&& level === '12'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,109))&& network === 'WPN'&& level === '12'&& effmu === 'A'&& isNormal) {
     return {
-      score: 79
+      score: 79,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'WPN'&& level === '12'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,109))&& network === 'IP'&& level === '12'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 77
+      score: 77,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'IP'&& level === '12'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,109))&& network === 'Chico'&& level === '12'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 77
+      score: 77,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'Chico'&& level === '12'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,109))&& network === 'PS.es'&& level === '12'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 77
+      score: 77,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'PS.es'&& level === '12'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,109))&& network === 'Party'&& level === '12'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 77
+      score: 77,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'Party'&& level === '12'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,109))&& network === 'GG'&& level === '12'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 77
+      score: 77,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'GG'&& level === '12'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,109))&& network === '888'&& level === '12'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 77
+      score: 77,
+      color: "black", ruleString: "(FromTo(1,109))&& network === '888'&& level === '12'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,109))&& network === 'WNMX'&& level === '12'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 77
+      score: 77,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'WNMX'&& level === '12'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,109))&& network === 'WPN'&& level === '12'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 77
+      score: 77,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'WPN'&& level === '12'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,109))&& network === 'IP'&& level === '12'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 77
+      score: 77,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'IP'&& level === '12'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,109))&& network === 'Chico'&& level === '12'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 77
+      score: 77,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'Chico'&& level === '12'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,109))&& network === 'PS.es'&& level === '12'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 77
+      score: 77,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'PS.es'&& level === '12'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,109))&& network === 'Party'&& level === '12'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 77
+      score: 77,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'Party'&& level === '12'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,109))&& network === 'GG'&& level === '12'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 77
+      score: 77,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'GG'&& level === '12'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,109))&& network === '888'&& level === '12'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 77
+      score: 77,
+      color: "black", ruleString: "(FromTo(1,109))&& network === '888'&& level === '12'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,109))&& network === 'WNMX'&& level === '12'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 77
+      score: 77,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'WNMX'&& level === '12'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,109))&& network === 'WPN'&& level === '12'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 77
+      score: 77,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'WPN'&& level === '12'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,109))&& network === 'IP'&& level === '12'&& effmu === 'B'&& isNormal) {
     return {
-      score: 78
+      score: 78,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'IP'&& level === '12'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,109))&& network === 'Chico'&& level === '12'&& effmu === 'B'&& isNormal) {
     return {
-      score: 78
+      score: 78,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'Chico'&& level === '12'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,109))&& network === 'PS.es'&& level === '12'&& effmu === 'B'&& isNormal) {
     return {
-      score: 78
+      score: 78,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'PS.es'&& level === '12'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,109))&& network === 'Party'&& level === '12'&& effmu === 'B'&& isNormal) {
     return {
-      score: 78
+      score: 78,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'Party'&& level === '12'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,109))&& network === 'GG'&& level === '12'&& effmu === 'B'&& isNormal) {
     return {
-      score: 78
+      score: 78,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'GG'&& level === '12'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,109))&& network === '888'&& level === '12'&& effmu === 'B'&& isNormal) {
     return {
-      score: 78
+      score: 78,
+      color: "black", ruleString: "(FromTo(1,109))&& network === '888'&& level === '12'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,109))&& network === 'WPN'&& level === '12'&& effmu === 'B'&& isNormal) {
     return {
-      score: 78
+      score: 78,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'WPN'&& level === '12'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,82))&& network === 'IP'&& level === '12'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 76
+      score: 76,
+      color: "black", ruleString: "(FromTo(1,82))&& network === 'IP'&& level === '12'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,82))&& network === 'Chico'&& level === '12'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 76
+      score: 76,
+      color: "black", ruleString: "(FromTo(1,82))&& network === 'Chico'&& level === '12'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,82))&& network === 'PS.es'&& level === '12'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 76
+      score: 76,
+      color: "black", ruleString: "(FromTo(1,82))&& network === 'PS.es'&& level === '12'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,82))&& network === 'Party'&& level === '12'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 76
+      score: 76,
+      color: "black", ruleString: "(FromTo(1,82))&& network === 'Party'&& level === '12'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,82))&& network === 'GG'&& level === '12'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 76
+      score: 76,
+      color: "black", ruleString: "(FromTo(1,82))&& network === 'GG'&& level === '12'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,82))&& network === '888'&& level === '12'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 76
+      score: 76,
+      color: "black", ruleString: "(FromTo(1,82))&& network === '888'&& level === '12'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,82))&& network === 'WNMX'&& level === '12'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 76
+      score: 76,
+      color: "black", ruleString: "(FromTo(1,82))&& network === 'WNMX'&& level === '12'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,82))&& network === 'WPN'&& level === '12'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 76
+      score: 76,
+      color: "black", ruleString: "(FromTo(1,82))&& network === 'WPN'&& level === '12'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,82))&& network === 'IP'&& level === '12'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 76
+      score: 76,
+      color: "black", ruleString: "(FromTo(1,82))&& network === 'IP'&& level === '12'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,82))&& network === 'Chico'&& level === '12'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 76
+      score: 76,
+      color: "black", ruleString: "(FromTo(1,82))&& network === 'Chico'&& level === '12'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,82))&& network === 'PS.es'&& level === '12'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 76
+      score: 76,
+      color: "black", ruleString: "(FromTo(1,82))&& network === 'PS.es'&& level === '12'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,82))&& network === 'Party'&& level === '12'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 76
+      score: 76,
+      color: "black", ruleString: "(FromTo(1,82))&& network === 'Party'&& level === '12'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,82))&& network === 'GG'&& level === '12'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 76
+      score: 76,
+      color: "black", ruleString: "(FromTo(1,82))&& network === 'GG'&& level === '12'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,82))&& network === '888'&& level === '12'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 76
+      score: 76,
+      color: "black", ruleString: "(FromTo(1,82))&& network === '888'&& level === '12'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,82))&& network === 'WNMX'&& level === '12'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 76
+      score: 76,
+      color: "black", ruleString: "(FromTo(1,82))&& network === 'WNMX'&& level === '12'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,82))&& network === 'WPN'&& level === '12'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 76
+      score: 76,
+      color: "black", ruleString: "(FromTo(1,82))&& network === 'WPN'&& level === '12'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,109))&& network === 'IP'&& level === '12'&& effmu === 'C'&& isNormal) {
     return {
-      score: 77
+      score: 77,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'IP'&& level === '12'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,109))&& network === 'Chico'&& level === '12'&& effmu === 'C'&& isNormal) {
     return {
-      score: 77
+      score: 77,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'Chico'&& level === '12'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,109))&& network === 'PS.es'&& level === '12'&& effmu === 'C'&& isNormal) {
     return {
-      score: 77
+      score: 77,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'PS.es'&& level === '12'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,109))&& network === 'Party'&& level === '12'&& effmu === 'C'&& isNormal) {
     return {
-      score: 77
+      score: 77,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'Party'&& level === '12'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,109))&& network === 'GG'&& level === '12'&& effmu === 'C'&& isNormal) {
     return {
-      score: 77
+      score: 77,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'GG'&& level === '12'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,109))&& network === '888'&& level === '12'&& effmu === 'C'&& isNormal) {
     return {
-      score: 77
+      score: 77,
+      color: "black", ruleString: "(FromTo(1,109))&& network === '888'&& level === '12'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,109))&& network === 'WNMX'&& level === '12'&& effmu === 'C'&& isNormal) {
     return {
-      score: 77
+      score: 77,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'WNMX'&& level === '12'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,109))&& network === 'WPN'&& level === '12'&& effmu === 'C'&& isNormal) {
     return {
-      score: 77
+      score: 77,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'WPN'&& level === '12'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,82))&& network === 'IP'&& level === '12'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 75
+      score: 75,
+      color: "black", ruleString: "(FromTo(1,82))&& network === 'IP'&& level === '12'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,82))&& network === 'Chico'&& level === '12'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 75
+      score: 75,
+      color: "black", ruleString: "(FromTo(1,82))&& network === 'Chico'&& level === '12'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,82))&& network === 'PS.es'&& level === '12'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 75
+      score: 75,
+      color: "black", ruleString: "(FromTo(1,82))&& network === 'PS.es'&& level === '12'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,82))&& network === 'Party'&& level === '12'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 75
+      score: 75,
+      color: "black", ruleString: "(FromTo(1,82))&& network === 'Party'&& level === '12'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,82))&& network === 'GG'&& level === '12'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 75
+      score: 75,
+      color: "black", ruleString: "(FromTo(1,82))&& network === 'GG'&& level === '12'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,82))&& network === '888'&& level === '12'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 75
+      score: 75,
+      color: "black", ruleString: "(FromTo(1,82))&& network === '888'&& level === '12'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,82))&& network === 'WNMX'&& level === '12'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 75
+      score: 75,
+      color: "black", ruleString: "(FromTo(1,82))&& network === 'WNMX'&& level === '12'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,82))&& network === 'WPN'&& level === '12'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 75
+      score: 75,
+      color: "black", ruleString: "(FromTo(1,82))&& network === 'WPN'&& level === '12'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,82))&& network === 'IP'&& level === '12'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 75
+      score: 75,
+      color: "black", ruleString: "(FromTo(1,82))&& network === 'IP'&& level === '12'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,82))&& network === 'Chico'&& level === '12'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 75
+      score: 75,
+      color: "black", ruleString: "(FromTo(1,82))&& network === 'Chico'&& level === '12'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,82))&& network === 'PS.es'&& level === '12'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 75
+      score: 75,
+      color: "black", ruleString: "(FromTo(1,82))&& network === 'PS.es'&& level === '12'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,82))&& network === 'Party'&& level === '12'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 75
+      score: 75,
+      color: "black", ruleString: "(FromTo(1,82))&& network === 'Party'&& level === '12'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,82))&& network === 'GG'&& level === '12'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 75
+      score: 75,
+      color: "black", ruleString: "(FromTo(1,82))&& network === 'GG'&& level === '12'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,82))&& network === '888'&& level === '12'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 75
+      score: 75,
+      color: "black", ruleString: "(FromTo(1,82))&& network === '888'&& level === '12'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,82))&& network === 'WNMX'&& level === '12'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 75
+      score: 75,
+      color: "black", ruleString: "(FromTo(1,82))&& network === 'WNMX'&& level === '12'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,82))&& network === 'WPN'&& level === '12'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 75
+      score: 75,
+      color: "black", ruleString: "(FromTo(1,82))&& network === 'WPN'&& level === '12'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,109))&& network === 'IP'&& level === '11'&& effmu === 'A'&& isNormal) {
     return {
-      score: 78
+      score: 78,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'IP'&& level === '11'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,109))&& network === 'Chico'&& level === '11'&& effmu === 'A'&& isNormal) {
     return {
-      score: 78
+      score: 78,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'Chico'&& level === '11'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,109))&& network === 'PS.es'&& level === '11'&& effmu === 'A'&& isNormal) {
     return {
-      score: 78
+      score: 78,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'PS.es'&& level === '11'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,109))&& network === 'Party'&& level === '11'&& effmu === 'A'&& isNormal) {
     return {
-      score: 78
+      score: 78,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'Party'&& level === '11'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,109))&& network === 'GG'&& level === '11'&& effmu === 'A'&& isNormal) {
     return {
-      score: 78
+      score: 78,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'GG'&& level === '11'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,109))&& network === '888'&& level === '11'&& effmu === 'A'&& isNormal) {
     return {
-      score: 78
+      score: 78,
+      color: "black", ruleString: "(FromTo(1,109))&& network === '888'&& level === '11'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,109))&& network === 'WNMX'&& level === '11'&& effmu === 'A'&& isNormal) {
     return {
-      score: 78
+      score: 78,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'WNMX'&& level === '11'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,109))&& network === 'WPN'&& level === '11'&& effmu === 'A'&& isNormal) {
     return {
-      score: 78
+      score: 78,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'WPN'&& level === '11'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,109))&& network === 'IP'&& level === '11'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 76
+      score: 76,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'IP'&& level === '11'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,109))&& network === 'Chico'&& level === '11'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 76
+      score: 76,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'Chico'&& level === '11'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,109))&& network === 'PS.es'&& level === '11'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 76
+      score: 76,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'PS.es'&& level === '11'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,109))&& network === 'Party'&& level === '11'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 76
+      score: 76,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'Party'&& level === '11'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,109))&& network === 'GG'&& level === '11'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 76
+      score: 76,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'GG'&& level === '11'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,109))&& network === '888'&& level === '11'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 76
+      score: 76,
+      color: "black", ruleString: "(FromTo(1,109))&& network === '888'&& level === '11'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,109))&& network === 'WNMX'&& level === '11'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 76
+      score: 76,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'WNMX'&& level === '11'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,109))&& network === 'WPN'&& level === '11'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 76
+      score: 76,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'WPN'&& level === '11'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,109))&& network === 'IP'&& level === '11'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 76
+      score: 76,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'IP'&& level === '11'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,109))&& network === 'Chico'&& level === '11'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 76
+      score: 76,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'Chico'&& level === '11'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,109))&& network === 'PS.es'&& level === '11'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 76
+      score: 76,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'PS.es'&& level === '11'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,109))&& network === 'Party'&& level === '11'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 76
+      score: 76,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'Party'&& level === '11'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,109))&& network === 'GG'&& level === '11'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 76
+      score: 76,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'GG'&& level === '11'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,109))&& network === '888'&& level === '11'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 76
+      score: 76,
+      color: "black", ruleString: "(FromTo(1,109))&& network === '888'&& level === '11'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,109))&& network === 'WNMX'&& level === '11'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 76
+      score: 76,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'WNMX'&& level === '11'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,109))&& network === 'WPN'&& level === '11'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 76
+      score: 76,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'WPN'&& level === '11'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,109))&& network === 'IP'&& level === '11'&& effmu === 'B'&& isNormal) {
     return {
-      score: 77
+      score: 77,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'IP'&& level === '11'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,109))&& network === 'Chico'&& level === '11'&& effmu === 'B'&& isNormal) {
     return {
-      score: 77
+      score: 77,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'Chico'&& level === '11'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,109))&& network === 'PS.es'&& level === '11'&& effmu === 'B'&& isNormal) {
     return {
-      score: 77
+      score: 77,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'PS.es'&& level === '11'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,109))&& network === 'Party'&& level === '11'&& effmu === 'B'&& isNormal) {
     return {
-      score: 77
+      score: 77,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'Party'&& level === '11'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,109))&& network === 'GG'&& level === '11'&& effmu === 'B'&& isNormal) {
     return {
-      score: 77
+      score: 77,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'GG'&& level === '11'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,109))&& network === '888'&& level === '11'&& effmu === 'B'&& isNormal) {
     return {
-      score: 77
+      score: 77,
+      color: "black", ruleString: "(FromTo(1,109))&& network === '888'&& level === '11'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,109))&& network === 'WNMX'&& level === '11'&& effmu === 'B'&& isNormal) {
     return {
-      score: 77
+      score: 77,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'WNMX'&& level === '11'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,109))&& network === 'WPN'&& level === '11'&& effmu === 'B'&& isNormal) {
     return {
-      score: 77
+      score: 77,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'WPN'&& level === '11'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,82))&& network === 'IP'&& level === '11'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 75
+      score: 75,
+      color: "black", ruleString: "(FromTo(1,82))&& network === 'IP'&& level === '11'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,82))&& network === 'Chico'&& level === '11'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 75
+      score: 75,
+      color: "black", ruleString: "(FromTo(1,82))&& network === 'Chico'&& level === '11'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,82))&& network === 'PS.es'&& level === '11'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 75
+      score: 75,
+      color: "black", ruleString: "(FromTo(1,82))&& network === 'PS.es'&& level === '11'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,82))&& network === 'Party'&& level === '11'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 75
+      score: 75,
+      color: "black", ruleString: "(FromTo(1,82))&& network === 'Party'&& level === '11'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,82))&& network === 'GG'&& level === '11'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 75
+      score: 75,
+      color: "black", ruleString: "(FromTo(1,82))&& network === 'GG'&& level === '11'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,82))&& network === '888'&& level === '11'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 75
+      score: 75,
+      color: "black", ruleString: "(FromTo(1,82))&& network === '888'&& level === '11'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,82))&& network === 'WNMX'&& level === '11'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 75
+      score: 75,
+      color: "black", ruleString: "(FromTo(1,82))&& network === 'WNMX'&& level === '11'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,82))&& network === 'WPN'&& level === '11'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 75
+      score: 75,
+      color: "black", ruleString: "(FromTo(1,82))&& network === 'WPN'&& level === '11'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,82))&& network === 'IP'&& level === '11'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 75
+      score: 75,
+      color: "black", ruleString: "(FromTo(1,82))&& network === 'IP'&& level === '11'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,82))&& network === 'Chico'&& level === '11'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 75
+      score: 75,
+      color: "black", ruleString: "(FromTo(1,82))&& network === 'Chico'&& level === '11'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,82))&& network === 'PS.es'&& level === '11'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 75
+      score: 75,
+      color: "black", ruleString: "(FromTo(1,82))&& network === 'PS.es'&& level === '11'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,82))&& network === 'Party'&& level === '11'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 75
+      score: 75,
+      color: "black", ruleString: "(FromTo(1,82))&& network === 'Party'&& level === '11'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,82))&& network === 'GG'&& level === '11'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 75
+      score: 75,
+      color: "black", ruleString: "(FromTo(1,82))&& network === 'GG'&& level === '11'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,82))&& network === '888'&& level === '11'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 75
+      score: 75,
+      color: "black", ruleString: "(FromTo(1,82))&& network === '888'&& level === '11'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,82))&& network === 'WNMX'&& level === '11'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 75
+      score: 75,
+      color: "black", ruleString: "(FromTo(1,82))&& network === 'WNMX'&& level === '11'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,82))&& network === 'WPN'&& level === '11'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 75
+      score: 75,
+      color: "black", ruleString: "(FromTo(1,82))&& network === 'WPN'&& level === '11'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,109))&& network === 'IP'&& level === '11'&& effmu === 'C'&& isNormal) {
     return {
-      score: 76
+      score: 76,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'IP'&& level === '11'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,109))&& network === 'Chico'&& level === '11'&& effmu === 'C'&& isNormal) {
     return {
-      score: 76
+      score: 76,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'Chico'&& level === '11'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,109))&& network === 'PS.es'&& level === '11'&& effmu === 'C'&& isNormal) {
     return {
-      score: 76
+      score: 76,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'PS.es'&& level === '11'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,109))&& network === 'Party'&& level === '11'&& effmu === 'C'&& isNormal) {
     return {
-      score: 76
+      score: 76,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'Party'&& level === '11'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,109))&& network === 'GG'&& level === '11'&& effmu === 'C'&& isNormal) {
     return {
-      score: 76
+      score: 76,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'GG'&& level === '11'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,109))&& network === '888'&& level === '11'&& effmu === 'C'&& isNormal) {
     return {
-      score: 76
+      score: 76,
+      color: "black", ruleString: "(FromTo(1,109))&& network === '888'&& level === '11'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,109))&& network === 'WNMX'&& level === '11'&& effmu === 'C'&& isNormal) {
     return {
-      score: 76
+      score: 76,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'WNMX'&& level === '11'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,109))&& network === 'WPN'&& level === '11'&& effmu === 'C'&& isNormal) {
     return {
-      score: 76
+      score: 76,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'WPN'&& level === '11'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,82))&& network === 'IP'&& level === '11'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 74
+      score: 74,
+      color: "black", ruleString: "(FromTo(1,82))&& network === 'IP'&& level === '11'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,82))&& network === 'Chico'&& level === '11'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 74
+      score: 74,
+      color: "black", ruleString: "(FromTo(1,82))&& network === 'Chico'&& level === '11'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,82))&& network === 'PS.es'&& level === '11'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 74
+      score: 74,
+      color: "black", ruleString: "(FromTo(1,82))&& network === 'PS.es'&& level === '11'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,82))&& network === 'Party'&& level === '11'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 74
+      score: 74,
+      color: "black", ruleString: "(FromTo(1,82))&& network === 'Party'&& level === '11'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,82))&& network === 'GG'&& level === '11'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 74
+      score: 74,
+      color: "black", ruleString: "(FromTo(1,82))&& network === 'GG'&& level === '11'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,82))&& network === '888'&& level === '11'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 74
+      score: 74,
+      color: "black", ruleString: "(FromTo(1,82))&& network === '888'&& level === '11'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,82))&& network === 'WNMX'&& level === '11'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 74
+      score: 74,
+      color: "black", ruleString: "(FromTo(1,82))&& network === 'WNMX'&& level === '11'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,82))&& network === 'WPN'&& level === '11'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 74
+      score: 74,
+      color: "black", ruleString: "(FromTo(1,82))&& network === 'WPN'&& level === '11'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,82))&& network === 'IP'&& level === '11'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 74
+      score: 74,
+      color: "black", ruleString: "(FromTo(1,82))&& network === 'IP'&& level === '11'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,82))&& network === 'Chico'&& level === '11'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 74
+      score: 74,
+      color: "black", ruleString: "(FromTo(1,82))&& network === 'Chico'&& level === '11'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,82))&& network === 'PS.es'&& level === '11'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 74
+      score: 74,
+      color: "black", ruleString: "(FromTo(1,82))&& network === 'PS.es'&& level === '11'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,82))&& network === 'Party'&& level === '11'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 74
+      score: 74,
+      color: "black", ruleString: "(FromTo(1,82))&& network === 'Party'&& level === '11'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,82))&& network === 'GG'&& level === '11'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 74
+      score: 74,
+      color: "black", ruleString: "(FromTo(1,82))&& network === 'GG'&& level === '11'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,82))&& network === '888'&& level === '11'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 74
+      score: 74,
+      color: "black", ruleString: "(FromTo(1,82))&& network === '888'&& level === '11'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,82))&& network === 'WNMX'&& level === '11'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 74
+      score: 74,
+      color: "black", ruleString: "(FromTo(1,82))&& network === 'WNMX'&& level === '11'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,82))&& network === 'WPN'&& level === '11'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 74
+      score: 74,
+      color: "black", ruleString: "(FromTo(1,82))&& network === 'WPN'&& level === '11'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,109))&& network === 'PS.eu'&& level === '10'&& effmu === 'A'&& isNormal) {
     return {
-      score: 77
+      score: 77,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'PS.eu'&& level === '10'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,109))&& network === 'IP'&& level === '10'&& effmu === 'A'&& isNormal) {
     return {
-      score: 77
+      score: 77,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'IP'&& level === '10'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,109))&& network === 'Chico'&& level === '10'&& effmu === 'A'&& isNormal) {
     return {
-      score: 77
+      score: 77,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'Chico'&& level === '10'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,109))&& network === 'PS.es'&& level === '10'&& effmu === 'A'&& isNormal) {
     return {
-      score: 77
+      score: 77,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'PS.es'&& level === '10'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,109))&& network === 'Party'&& level === '10'&& effmu === 'A'&& isNormal) {
     return {
-      score: 77
+      score: 77,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'Party'&& level === '10'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,109))&& network === 'GG'&& level === '10'&& effmu === 'A'&& isNormal) {
     return {
-      score: 77
+      score: 77,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'GG'&& level === '10'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,109))&& network === '888'&& level === '10'&& effmu === 'A'&& isNormal) {
     return {
-      score: 77
+      score: 77,
+      color: "black", ruleString: "(FromTo(1,109))&& network === '888'&& level === '10'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,109))&& network === 'WNMX'&& level === '10'&& effmu === 'A'&& isNormal) {
     return {
-      score: 77
+      score: 77,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'WNMX'&& level === '10'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,109))&& network === 'WPN'&& level === '10'&& effmu === 'A'&& isNormal) {
     return {
-      score: 77
+      score: 77,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'WPN'&& level === '10'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,82))&& network === 'IP'&& level === '10'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 75
+      score: 75,
+      color: "black", ruleString: "(FromTo(1,82))&& network === 'IP'&& level === '10'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,82))&& network === 'Chico'&& level === '10'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 75
+      score: 75,
+      color: "black", ruleString: "(FromTo(1,82))&& network === 'Chico'&& level === '10'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,82))&& network === 'PS.es'&& level === '10'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 75
+      score: 75,
+      color: "black", ruleString: "(FromTo(1,82))&& network === 'PS.es'&& level === '10'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,82))&& network === 'Party'&& level === '10'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 75
+      score: 75,
+      color: "black", ruleString: "(FromTo(1,82))&& network === 'Party'&& level === '10'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,82))&& network === 'GG'&& level === '10'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 75
+      score: 75,
+      color: "black", ruleString: "(FromTo(1,82))&& network === 'GG'&& level === '10'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,82))&& network === '888'&& level === '10'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 75
+      score: 75,
+      color: "black", ruleString: "(FromTo(1,82))&& network === '888'&& level === '10'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,82))&& network === 'WNMX'&& level === '10'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 75
+      score: 75,
+      color: "black", ruleString: "(FromTo(1,82))&& network === 'WNMX'&& level === '10'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,82))&& network === 'WPN'&& level === '10'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 75
+      score: 75,
+      color: "black", ruleString: "(FromTo(1,82))&& network === 'WPN'&& level === '10'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,82))&& network === 'IP'&& level === '10'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 75
+      score: 75,
+      color: "black", ruleString: "(FromTo(1,82))&& network === 'IP'&& level === '10'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,82))&& network === 'Chico'&& level === '10'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 75
+      score: 75,
+      color: "black", ruleString: "(FromTo(1,82))&& network === 'Chico'&& level === '10'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,82))&& network === 'PS.es'&& level === '10'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 75
+      score: 75,
+      color: "black", ruleString: "(FromTo(1,82))&& network === 'PS.es'&& level === '10'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,82))&& network === 'Party'&& level === '10'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 75
+      score: 75,
+      color: "black", ruleString: "(FromTo(1,82))&& network === 'Party'&& level === '10'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,82))&& network === 'GG'&& level === '10'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 75
+      score: 75,
+      color: "black", ruleString: "(FromTo(1,82))&& network === 'GG'&& level === '10'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,82))&& network === '888'&& level === '10'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 75
+      score: 75,
+      color: "black", ruleString: "(FromTo(1,82))&& network === '888'&& level === '10'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,82))&& network === 'WNMX'&& level === '10'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 75
+      score: 75,
+      color: "black", ruleString: "(FromTo(1,82))&& network === 'WNMX'&& level === '10'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,82))&& network === 'WPN'&& level === '10'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 75
+      score: 75,
+      color: "black", ruleString: "(FromTo(1,82))&& network === 'WPN'&& level === '10'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,55))&& network === 'IP'&& level === '10'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 74
+      score: 74,
+      color: "black", ruleString: "(FromTo(1,55))&& network === 'IP'&& level === '10'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,55))&& network === 'Chico'&& level === '10'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 74
+      score: 74,
+      color: "black", ruleString: "(FromTo(1,55))&& network === 'Chico'&& level === '10'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,55))&& network === 'PS.es'&& level === '10'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 74
+      score: 74,
+      color: "black", ruleString: "(FromTo(1,55))&& network === 'PS.es'&& level === '10'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,55))&& network === 'Party'&& level === '10'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 74
+      score: 74,
+      color: "black", ruleString: "(FromTo(1,55))&& network === 'Party'&& level === '10'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,55))&& network === 'GG'&& level === '10'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 74
+      score: 74,
+      color: "black", ruleString: "(FromTo(1,55))&& network === 'GG'&& level === '10'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,55))&& network === '888'&& level === '10'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 74
+      score: 74,
+      color: "black", ruleString: "(FromTo(1,55))&& network === '888'&& level === '10'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,55))&& network === 'WNMX'&& level === '10'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 74
+      score: 74,
+      color: "black", ruleString: "(FromTo(1,55))&& network === 'WNMX'&& level === '10'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,55))&& network === 'WPN'&& level === '10'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 74
+      score: 74,
+      color: "black", ruleString: "(FromTo(1,55))&& network === 'WPN'&& level === '10'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,55))&& network === 'IP'&& level === '10'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 74
+      score: 74,
+      color: "black", ruleString: "(FromTo(1,55))&& network === 'IP'&& level === '10'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,55))&& network === 'Chico'&& level === '10'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 74
+      score: 74,
+      color: "black", ruleString: "(FromTo(1,55))&& network === 'Chico'&& level === '10'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,55))&& network === 'PS.es'&& level === '10'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 74
+      score: 74,
+      color: "black", ruleString: "(FromTo(1,55))&& network === 'PS.es'&& level === '10'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,55))&& network === 'Party'&& level === '10'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 74
+      score: 74,
+      color: "black", ruleString: "(FromTo(1,55))&& network === 'Party'&& level === '10'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,55))&& network === 'GG'&& level === '10'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 74
+      score: 74,
+      color: "black", ruleString: "(FromTo(1,55))&& network === 'GG'&& level === '10'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,55))&& network === '888'&& level === '10'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 74
+      score: 74,
+      color: "black", ruleString: "(FromTo(1,55))&& network === '888'&& level === '10'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,55))&& network === 'WNMX'&& level === '10'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 74
+      score: 74,
+      color: "black", ruleString: "(FromTo(1,55))&& network === 'WNMX'&& level === '10'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,55))&& network === 'WPN'&& level === '10'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 74
+      score: 74,
+      color: "black", ruleString: "(FromTo(1,55))&& network === 'WPN'&& level === '10'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,55))&& network === 'IP'&& level === '10'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 73
+      score: 73,
+      color: "black", ruleString: "(FromTo(1,55))&& network === 'IP'&& level === '10'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,55))&& network === 'Chico'&& level === '10'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 73
+      score: 73,
+      color: "black", ruleString: "(FromTo(1,55))&& network === 'Chico'&& level === '10'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,55))&& network === 'PS.es'&& level === '10'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 73
+      score: 73,
+      color: "black", ruleString: "(FromTo(1,55))&& network === 'PS.es'&& level === '10'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,55))&& network === 'Party'&& level === '10'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 73
+      score: 73,
+      color: "black", ruleString: "(FromTo(1,55))&& network === 'Party'&& level === '10'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,55))&& network === 'GG'&& level === '10'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 73
+      score: 73,
+      color: "black", ruleString: "(FromTo(1,55))&& network === 'GG'&& level === '10'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,55))&& network === '888'&& level === '10'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 73
+      score: 73,
+      color: "black", ruleString: "(FromTo(1,55))&& network === '888'&& level === '10'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,55))&& network === 'WNMX'&& level === '10'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 73
+      score: 73,
+      color: "black", ruleString: "(FromTo(1,55))&& network === 'WNMX'&& level === '10'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,55))&& network === 'WPN'&& level === '10'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 73
+      score: 73,
+      color: "black", ruleString: "(FromTo(1,55))&& network === 'WPN'&& level === '10'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,55))&& network === 'IP'&& level === '10'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 73
+      score: 73,
+      color: "black", ruleString: "(FromTo(1,55))&& network === 'IP'&& level === '10'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,55))&& network === 'Chico'&& level === '10'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 73
+      score: 73,
+      color: "black", ruleString: "(FromTo(1,55))&& network === 'Chico'&& level === '10'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,55))&& network === 'PS.es'&& level === '10'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 73
+      score: 73,
+      color: "black", ruleString: "(FromTo(1,55))&& network === 'PS.es'&& level === '10'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,55))&& network === 'Party'&& level === '10'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 73
+      score: 73,
+      color: "black", ruleString: "(FromTo(1,55))&& network === 'Party'&& level === '10'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,55))&& network === 'GG'&& level === '10'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 73
+      score: 73,
+      color: "black", ruleString: "(FromTo(1,55))&& network === 'GG'&& level === '10'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,55))&& network === '888'&& level === '10'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 73
+      score: 73,
+      color: "black", ruleString: "(FromTo(1,55))&& network === '888'&& level === '10'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,55))&& network === 'WNMX'&& level === '10'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 73
+      score: 73,
+      color: "black", ruleString: "(FromTo(1,55))&& network === 'WNMX'&& level === '10'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,55))&& network === 'WPN'&& level === '10'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 73
+      score: 73,
+      color: "black", ruleString: "(FromTo(1,55))&& network === 'WPN'&& level === '10'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,109))&& network === 'IP'&& level === '9'&& effmu === 'A'&& isNormal) {
     return {
-      score: 76
+      score: 76,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'IP'&& level === '9'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,109))&& network === 'Chico'&& level === '9'&& effmu === 'A'&& isNormal) {
     return {
-      score: 76
+      score: 76,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'Chico'&& level === '9'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,109))&& network === 'PS.es'&& level === '9'&& effmu === 'A'&& isNormal) {
     return {
-      score: 76
+      score: 76,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'PS.es'&& level === '9'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,109))&& network === 'Party'&& level === '9'&& effmu === 'A'&& isNormal) {
     return {
-      score: 76
+      score: 76,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'Party'&& level === '9'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,109))&& network === 'GG'&& level === '9'&& effmu === 'A'&& isNormal) {
     return {
-      score: 76
+      score: 76,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'GG'&& level === '9'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,109))&& network === '888'&& level === '9'&& effmu === 'A'&& isNormal) {
     return {
-      score: 76
+      score: 76,
+      color: "black", ruleString: "(FromTo(1,109))&& network === '888'&& level === '9'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,109))&& network === 'WNMX'&& level === '9'&& effmu === 'A'&& isNormal) {
     return {
-      score: 76
+      score: 76,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'WNMX'&& level === '9'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,109))&& network === 'WPN'&& level === '9'&& effmu === 'A'&& isNormal) {
     return {
-      score: 76
+      score: 76,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'WPN'&& level === '9'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,82))&& network === 'IP'&& level === '9'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 74
+      score: 74,
+      color: "black", ruleString: "(FromTo(1,82))&& network === 'IP'&& level === '9'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,82))&& network === 'Chico'&& level === '9'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 74
+      score: 74,
+      color: "black", ruleString: "(FromTo(1,82))&& network === 'Chico'&& level === '9'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,82))&& network === 'PS.es'&& level === '9'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 74
+      score: 74,
+      color: "black", ruleString: "(FromTo(1,82))&& network === 'PS.es'&& level === '9'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,82))&& network === 'Party'&& level === '9'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 74
+      score: 74,
+      color: "black", ruleString: "(FromTo(1,82))&& network === 'Party'&& level === '9'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,82))&& network === 'GG'&& level === '9'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 74
+      score: 74,
+      color: "black", ruleString: "(FromTo(1,82))&& network === 'GG'&& level === '9'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,82))&& network === '888'&& level === '9'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 74
+      score: 74,
+      color: "black", ruleString: "(FromTo(1,82))&& network === '888'&& level === '9'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,82))&& network === 'WNMX'&& level === '9'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 74
+      score: 74,
+      color: "black", ruleString: "(FromTo(1,82))&& network === 'WNMX'&& level === '9'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,82))&& network === 'WPN'&& level === '9'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 74
+      score: 74,
+      color: "black", ruleString: "(FromTo(1,82))&& network === 'WPN'&& level === '9'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,82))&& network === 'IP'&& level === '9'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 74
+      score: 74,
+      color: "black", ruleString: "(FromTo(1,82))&& network === 'IP'&& level === '9'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,82))&& network === 'Chico'&& level === '9'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 74
+      score: 74,
+      color: "black", ruleString: "(FromTo(1,82))&& network === 'Chico'&& level === '9'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,82))&& network === 'PS.es'&& level === '9'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 74
+      score: 74,
+      color: "black", ruleString: "(FromTo(1,82))&& network === 'PS.es'&& level === '9'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,82))&& network === 'Party'&& level === '9'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 74
+      score: 74,
+      color: "black", ruleString: "(FromTo(1,82))&& network === 'Party'&& level === '9'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,82))&& network === 'GG'&& level === '9'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 74
+      score: 74,
+      color: "black", ruleString: "(FromTo(1,82))&& network === 'GG'&& level === '9'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,82))&& network === '888'&& level === '9'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 74
+      score: 74,
+      color: "black", ruleString: "(FromTo(1,82))&& network === '888'&& level === '9'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,82))&& network === 'WNMX'&& level === '9'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 74
+      score: 74,
+      color: "black", ruleString: "(FromTo(1,82))&& network === 'WNMX'&& level === '9'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,82))&& network === 'WPN'&& level === '9'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 74
+      score: 74,
+      color: "black", ruleString: "(FromTo(1,82))&& network === 'WPN'&& level === '9'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,86))&& network === 'IP'&& level === '9'&& effmu === 'B'&& isNormal) {
     return {
-      score: 75
+      score: 75,
+      color: "black", ruleString: "(FromTo(1,86))&& network === 'IP'&& level === '9'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,86))&& network === 'Chico'&& level === '9'&& effmu === 'B'&& isNormal) {
     return {
-      score: 75
+      score: 75,
+      color: "black", ruleString: "(FromTo(1,86))&& network === 'Chico'&& level === '9'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,86))&& network === 'PS.es'&& level === '9'&& effmu === 'B'&& isNormal) {
     return {
-      score: 75
+      score: 75,
+      color: "black", ruleString: "(FromTo(1,86))&& network === 'PS.es'&& level === '9'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,86))&& network === 'Party'&& level === '9'&& effmu === 'B'&& isNormal) {
     return {
-      score: 75
+      score: 75,
+      color: "black", ruleString: "(FromTo(1,86))&& network === 'Party'&& level === '9'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,86))&& network === 'GG'&& level === '9'&& effmu === 'B'&& isNormal) {
     return {
-      score: 75
+      score: 75,
+      color: "black", ruleString: "(FromTo(1,86))&& network === 'GG'&& level === '9'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,86))&& network === '888'&& level === '9'&& effmu === 'B'&& isNormal) {
     return {
-      score: 75
+      score: 75,
+      color: "black", ruleString: "(FromTo(1,86))&& network === '888'&& level === '9'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,86))&& network === 'WPN'&& level === '9'&& effmu === 'B'&& isNormal) {
     return {
-      score: 75
+      score: 75,
+      color: "black", ruleString: "(FromTo(1,86))&& network === 'WPN'&& level === '9'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,55))&& network === 'IP'&& level === '9'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 73
+      score: 73,
+      color: "black", ruleString: "(FromTo(1,55))&& network === 'IP'&& level === '9'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,55))&& network === 'Chico'&& level === '9'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 73
+      score: 73,
+      color: "black", ruleString: "(FromTo(1,55))&& network === 'Chico'&& level === '9'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,55))&& network === 'PS.es'&& level === '9'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 73
+      score: 73,
+      color: "black", ruleString: "(FromTo(1,55))&& network === 'PS.es'&& level === '9'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,55))&& network === 'Party'&& level === '9'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 73
+      score: 73,
+      color: "black", ruleString: "(FromTo(1,55))&& network === 'Party'&& level === '9'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,55))&& network === 'GG'&& level === '9'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 73
+      score: 73,
+      color: "black", ruleString: "(FromTo(1,55))&& network === 'GG'&& level === '9'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,55))&& network === '888'&& level === '9'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 73
+      score: 73,
+      color: "black", ruleString: "(FromTo(1,55))&& network === '888'&& level === '9'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,55))&& network === 'WNMX'&& level === '9'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 73
+      score: 73,
+      color: "black", ruleString: "(FromTo(1,55))&& network === 'WNMX'&& level === '9'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,55))&& network === 'WPN'&& level === '9'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 73
+      score: 73,
+      color: "black", ruleString: "(FromTo(1,55))&& network === 'WPN'&& level === '9'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,55))&& network === 'IP'&& level === '9'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 73
+      score: 73,
+      color: "black", ruleString: "(FromTo(1,55))&& network === 'IP'&& level === '9'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,55))&& network === 'Chico'&& level === '9'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 73
+      score: 73,
+      color: "black", ruleString: "(FromTo(1,55))&& network === 'Chico'&& level === '9'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,55))&& network === 'PS.es'&& level === '9'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 73
+      score: 73,
+      color: "black", ruleString: "(FromTo(1,55))&& network === 'PS.es'&& level === '9'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,55))&& network === 'Party'&& level === '9'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 73
+      score: 73,
+      color: "black", ruleString: "(FromTo(1,55))&& network === 'Party'&& level === '9'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,55))&& network === 'GG'&& level === '9'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 73
+      score: 73,
+      color: "black", ruleString: "(FromTo(1,55))&& network === 'GG'&& level === '9'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,55))&& network === '888'&& level === '9'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 73
+      score: 73,
+      color: "black", ruleString: "(FromTo(1,55))&& network === '888'&& level === '9'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,55))&& network === 'WNMX'&& level === '9'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 73
+      score: 73,
+      color: "black", ruleString: "(FromTo(1,55))&& network === 'WNMX'&& level === '9'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,60))&& network === 'IP'&& level === '9'&& effmu === 'C'&& isNormal) {
     return {
-      score: 74
+      score: 74,
+      color: "black", ruleString: "(FromTo(1,60))&& network === 'IP'&& level === '9'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,60))&& network === 'Chico'&& level === '9'&& effmu === 'C'&& isNormal) {
     return {
-      score: 74
+      score: 74,
+      color: "black", ruleString: "(FromTo(1,60))&& network === 'Chico'&& level === '9'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,60))&& network === 'PS.es'&& level === '9'&& effmu === 'C'&& isNormal) {
     return {
-      score: 74
+      score: 74,
+      color: "black", ruleString: "(FromTo(1,60))&& network === 'PS.es'&& level === '9'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,60))&& network === 'Party'&& level === '9'&& effmu === 'C'&& isNormal) {
     return {
-      score: 74
+      score: 74,
+      color: "black", ruleString: "(FromTo(1,60))&& network === 'Party'&& level === '9'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,60))&& network === 'GG'&& level === '9'&& effmu === 'C'&& isNormal) {
     return {
-      score: 74
+      score: 74,
+      color: "black", ruleString: "(FromTo(1,60))&& network === 'GG'&& level === '9'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,60))&& network === '888'&& level === '9'&& effmu === 'C'&& isNormal) {
     return {
-      score: 74
+      score: 74,
+      color: "black", ruleString: "(FromTo(1,60))&& network === '888'&& level === '9'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,44))&& network === 'IP'&& level === '9'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 72
+      score: 72,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'IP'&& level === '9'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,44))&& network === 'Chico'&& level === '9'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 72
+      score: 72,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'Chico'&& level === '9'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,44))&& network === 'PS.es'&& level === '9'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 72
+      score: 72,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'PS.es'&& level === '9'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,44))&& network === 'Party'&& level === '9'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 72
+      score: 72,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'Party'&& level === '9'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,44))&& network === 'GG'&& level === '9'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 72
+      score: 72,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'GG'&& level === '9'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,44))&& network === '888'&& level === '9'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 72
+      score: 72,
+      color: "black", ruleString: "(FromTo(1,44))&& network === '888'&& level === '9'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,44))&& network === 'WNMX'&& level === '9'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 72
+      score: 72,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'WNMX'&& level === '9'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,44))&& network === 'WPN'&& level === '9'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 72
+      score: 72,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'WPN'&& level === '9'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,44))&& network === 'IP'&& level === '9'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 72
+      score: 72,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'IP'&& level === '9'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,44))&& network === 'Chico'&& level === '9'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 72
+      score: 72,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'Chico'&& level === '9'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,44))&& network === 'PS.es'&& level === '9'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 72
+      score: 72,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'PS.es'&& level === '9'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,44))&& network === 'Party'&& level === '9'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 72
+      score: 72,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'Party'&& level === '9'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,44))&& network === 'GG'&& level === '9'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 72
+      score: 72,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'GG'&& level === '9'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,44))&& network === '888'&& level === '9'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 72
+      score: 72,
+      color: "black", ruleString: "(FromTo(1,44))&& network === '888'&& level === '9'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,44))&& network === 'WNMX'&& level === '9'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 72
+      score: 72,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'WNMX'&& level === '9'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,44))&& network === 'WPN'&& level === '9'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 72
+      score: 72,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'WPN'&& level === '9'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,86))&& network === 'IP'&& level === '8'&& effmu === 'A'&& isNormal) {
     return {
-      score: 75
+      score: 75,
+      color: "black", ruleString: "(FromTo(1,86))&& network === 'IP'&& level === '8'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,86))&& network === 'Chico'&& level === '8'&& effmu === 'A'&& isNormal) {
     return {
-      score: 75
+      score: 75,
+      color: "black", ruleString: "(FromTo(1,86))&& network === 'Chico'&& level === '8'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,86))&& network === 'PS.es'&& level === '8'&& effmu === 'A'&& isNormal) {
     return {
-      score: 75
+      score: 75,
+      color: "black", ruleString: "(FromTo(1,86))&& network === 'PS.es'&& level === '8'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,86))&& network === 'Party'&& level === '8'&& effmu === 'A'&& isNormal) {
     return {
-      score: 75
+      score: 75,
+      color: "black", ruleString: "(FromTo(1,86))&& network === 'Party'&& level === '8'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,86))&& network === 'GG'&& level === '8'&& effmu === 'A'&& isNormal) {
     return {
-      score: 75
+      score: 75,
+      color: "black", ruleString: "(FromTo(1,86))&& network === 'GG'&& level === '8'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,86))&& network === '888'&& level === '8'&& effmu === 'A'&& isNormal) {
     return {
-      score: 75
+      score: 75,
+      color: "black", ruleString: "(FromTo(1,86))&& network === '888'&& level === '8'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,86))&& network === 'WNMX'&& level === '8'&& effmu === 'A'&& isNormal) {
     return {
-      score: 75
+      score: 75,
+      color: "black", ruleString: "(FromTo(1,86))&& network === 'WNMX'&& level === '8'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,86))&& network === 'WPN'&& level === '8'&& effmu === 'A'&& isNormal) {
     return {
-      score: 75
+      score: 75,
+      color: "black", ruleString: "(FromTo(1,86))&& network === 'WPN'&& level === '8'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,55))&& network === 'IP'&& level === '8'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 73
+      score: 73,
+      color: "black", ruleString: "(FromTo(1,55))&& network === 'IP'&& level === '8'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,55))&& network === 'Chico'&& level === '8'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 73
+      score: 73,
+      color: "black", ruleString: "(FromTo(1,55))&& network === 'Chico'&& level === '8'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,55))&& network === 'PS.es'&& level === '8'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 73
+      score: 73,
+      color: "black", ruleString: "(FromTo(1,55))&& network === 'PS.es'&& level === '8'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,55))&& network === 'Party'&& level === '8'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 73
+      score: 73,
+      color: "black", ruleString: "(FromTo(1,55))&& network === 'Party'&& level === '8'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,55))&& network === 'GG'&& level === '8'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 73
+      score: 73,
+      color: "black", ruleString: "(FromTo(1,55))&& network === 'GG'&& level === '8'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,55))&& network === '888'&& level === '8'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 73
+      score: 73,
+      color: "black", ruleString: "(FromTo(1,55))&& network === '888'&& level === '8'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,55))&& network === 'WNMX'&& level === '8'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 73
+      score: 73,
+      color: "black", ruleString: "(FromTo(1,55))&& network === 'WNMX'&& level === '8'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,55))&& network === 'WPN'&& level === '8'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 73
+      score: 73,
+      color: "black", ruleString: "(FromTo(1,55))&& network === 'WPN'&& level === '8'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,55))&& network === 'IP'&& level === '8'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 73
+      score: 73,
+      color: "black", ruleString: "(FromTo(1,55))&& network === 'IP'&& level === '8'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,55))&& network === 'Chico'&& level === '8'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 73
+      score: 73,
+      color: "black", ruleString: "(FromTo(1,55))&& network === 'Chico'&& level === '8'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,55))&& network === 'PS.es'&& level === '8'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 73
+      score: 73,
+      color: "black", ruleString: "(FromTo(1,55))&& network === 'PS.es'&& level === '8'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,55))&& network === 'Party'&& level === '8'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 73
+      score: 73,
+      color: "black", ruleString: "(FromTo(1,55))&& network === 'Party'&& level === '8'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,55))&& network === 'GG'&& level === '8'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 73
+      score: 73,
+      color: "black", ruleString: "(FromTo(1,55))&& network === 'GG'&& level === '8'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,55))&& network === '888'&& level === '8'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 73
+      score: 73,
+      color: "black", ruleString: "(FromTo(1,55))&& network === '888'&& level === '8'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,55))&& network === 'WNMX'&& level === '8'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 73
+      score: 73,
+      color: "black", ruleString: "(FromTo(1,55))&& network === 'WNMX'&& level === '8'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,55))&& network === 'WPN'&& level === '8'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 73
+      score: 73,
+      color: "black", ruleString: "(FromTo(1,55))&& network === 'WPN'&& level === '8'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,60))&& network === 'IP'&& level === '8'&& effmu === 'B'&& isNormal) {
     return {
-      score: 74
+      score: 74,
+      color: "black", ruleString: "(FromTo(1,60))&& network === 'IP'&& level === '8'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,60))&& network === 'Chico'&& level === '8'&& effmu === 'B'&& isNormal) {
     return {
-      score: 74
+      score: 74,
+      color: "black", ruleString: "(FromTo(1,60))&& network === 'Chico'&& level === '8'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,60))&& network === 'PS.es'&& level === '8'&& effmu === 'B'&& isNormal) {
     return {
-      score: 74
+      score: 74,
+      color: "black", ruleString: "(FromTo(1,60))&& network === 'PS.es'&& level === '8'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,60))&& network === 'Party'&& level === '8'&& effmu === 'B'&& isNormal) {
     return {
-      score: 74
+      score: 74,
+      color: "black", ruleString: "(FromTo(1,60))&& network === 'Party'&& level === '8'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,60))&& network === 'GG'&& level === '8'&& effmu === 'B'&& isNormal) {
     return {
-      score: 74
+      score: 74,
+      color: "black", ruleString: "(FromTo(1,60))&& network === 'GG'&& level === '8'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,60))&& network === '888'&& level === '8'&& effmu === 'B'&& isNormal) {
     return {
-      score: 74
+      score: 74,
+      color: "black", ruleString: "(FromTo(1,60))&& network === '888'&& level === '8'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,44))&& network === 'IP'&& level === '8'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 72
+      score: 72,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'IP'&& level === '8'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,44))&& network === 'Chico'&& level === '8'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 72
+      score: 72,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'Chico'&& level === '8'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,44))&& network === 'Party'&& level === '8'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 72
+      score: 72,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'Party'&& level === '8'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,44))&& network === 'PS.es'&& level === '8'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 72
+      score: 72,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'PS.es'&& level === '8'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,44))&& network === 'GG'&& level === '8'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 72
+      score: 72,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'GG'&& level === '8'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,44))&& network === '888'&& level === '8'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 72
+      score: 72,
+      color: "black", ruleString: "(FromTo(1,44))&& network === '888'&& level === '8'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,44))&& network === 'WNMX'&& level === '8'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 72
+      score: 72,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'WNMX'&& level === '8'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,44))&& network === 'WPN'&& level === '8'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 72
+      score: 72,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'WPN'&& level === '8'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,44))&& network === 'IP'&& level === '8'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 72
+      score: 72,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'IP'&& level === '8'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,44))&& network === 'Chico'&& level === '8'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 72
+      score: 72,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'Chico'&& level === '8'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,44))&& network === 'PS.es'&& level === '8'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 72
+      score: 72,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'PS.es'&& level === '8'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,44))&& network === 'Party'&& level === '8'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 72
+      score: 72,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'Party'&& level === '8'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,44))&& network === 'GG'&& level === '8'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 72
+      score: 72,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'GG'&& level === '8'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,44))&& network === '888'&& level === '8'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 72
+      score: 72,
+      color: "black", ruleString: "(FromTo(1,44))&& network === '888'&& level === '8'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,44))&& network === 'WNMX'&& level === '8'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 72
+      score: 72,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'WNMX'&& level === '8'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,44))&& network === 'WPN'&& level === '8'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 72
+      score: 72,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'WPN'&& level === '8'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,60))&& network === 'IP'&& level === '8'&& effmu === 'C'&& isNormal) {
     return {
-      score: 73
+      score: 73,
+      color: "black", ruleString: "(FromTo(1,60))&& network === 'IP'&& level === '8'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,60))&& network === 'Chico'&& level === '8'&& effmu === 'C'&& isNormal) {
     return {
-      score: 73
+      score: 73,
+      color: "black", ruleString: "(FromTo(1,60))&& network === 'Chico'&& level === '8'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,60))&& network === 'PS.es'&& level === '8'&& effmu === 'C'&& isNormal) {
     return {
-      score: 73
+      score: 73,
+      color: "black", ruleString: "(FromTo(1,60))&& network === 'PS.es'&& level === '8'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,60))&& network === 'Party'&& level === '8'&& effmu === 'C'&& isNormal) {
     return {
-      score: 73
+      score: 73,
+      color: "black", ruleString: "(FromTo(1,60))&& network === 'Party'&& level === '8'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,60))&& network === 'GG'&& level === '8'&& effmu === 'C'&& isNormal) {
     return {
-      score: 73
+      score: 73,
+      color: "black", ruleString: "(FromTo(1,60))&& network === 'GG'&& level === '8'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,60))&& network === '888'&& level === '8'&& effmu === 'C'&& isNormal) {
     return {
-      score: 73
+      score: 73,
+      color: "black", ruleString: "(FromTo(1,60))&& network === '888'&& level === '8'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,60))&& network === 'WPN'&& level === '8'&& effmu === 'C'&& isNormal) {
     return {
-      score: 73
+      score: 73,
+      color: "black", ruleString: "(FromTo(1,60))&& network === 'WPN'&& level === '8'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,44))&& network === 'IP'&& level === '8'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 71
+      score: 71,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'IP'&& level === '8'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,44))&& network === 'Chico'&& level === '8'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 71
+      score: 71,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'Chico'&& level === '8'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,44))&& network === 'PS.es'&& level === '8'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 71
+      score: 71,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'PS.es'&& level === '8'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,44))&& network === 'Party'&& level === '8'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 71
+      score: 71,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'Party'&& level === '8'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,44))&& network === 'GG'&& level === '8'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 71
+      score: 71,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'GG'&& level === '8'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,44))&& network === '888'&& level === '8'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 71
+      score: 71,
+      color: "black", ruleString: "(FromTo(1,44))&& network === '888'&& level === '8'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,44))&& network === 'WNMX'&& level === '8'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 71
+      score: 71,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'WNMX'&& level === '8'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,44))&& network === 'WPN'&& level === '8'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 71
+      score: 71,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'WPN'&& level === '8'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,44))&& network === 'IP'&& level === '8'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 71
+      score: 71,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'IP'&& level === '8'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,44))&& network === 'Chico'&& level === '8'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 71
+      score: 71,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'Chico'&& level === '8'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,44))&& network === 'PS.es'&& level === '8'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 71
+      score: 71,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'PS.es'&& level === '8'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,44))&& network === 'Party'&& level === '8'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 71
+      score: 71,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'Party'&& level === '8'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,44))&& network === 'GG'&& level === '8'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 71
+      score: 71,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'GG'&& level === '8'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,44))&& network === '888'&& level === '8'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 71
+      score: 71,
+      color: "black", ruleString: "(FromTo(1,44))&& network === '888'&& level === '8'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,44))&& network === 'WNMX'&& level === '8'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 71
+      score: 71,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'WNMX'&& level === '8'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,44))&& network === 'WPN'&& level === '8'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 71
+      score: 71,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'WPN'&& level === '8'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,60))&& network === 'IP'&& level === '7'&& effmu === 'A'&& isNormal) {
     return {
-      score: 74
+      score: 74,
+      color: "black", ruleString: "(FromTo(1,60))&& network === 'IP'&& level === '7'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,60))&& network === 'Chico'&& level === '7'&& effmu === 'A'&& isNormal) {
     return {
-      score: 74
+      score: 74,
+      color: "black", ruleString: "(FromTo(1,60))&& network === 'Chico'&& level === '7'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,60))&& network === 'PS.es'&& level === '7'&& effmu === 'A'&& isNormal) {
     return {
-      score: 74
+      score: 74,
+      color: "black", ruleString: "(FromTo(1,60))&& network === 'PS.es'&& level === '7'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,60))&& network === 'Party'&& level === '7'&& effmu === 'A'&& isNormal) {
     return {
-      score: 74
+      score: 74,
+      color: "black", ruleString: "(FromTo(1,60))&& network === 'Party'&& level === '7'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,60))&& network === 'GG'&& level === '7'&& effmu === 'A'&& isNormal) {
     return {
-      score: 74
+      score: 74,
+      color: "black", ruleString: "(FromTo(1,60))&& network === 'GG'&& level === '7'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,60))&& network === '888'&& level === '7'&& effmu === 'A'&& isNormal) {
     return {
-      score: 74
+      score: 74,
+      color: "black", ruleString: "(FromTo(1,60))&& network === '888'&& level === '7'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,60))&& network === 'WPN'&& level === '7'&& effmu === 'A'&& isNormal) {
     return {
-      score: 74
+      score: 74,
+      color: "black", ruleString: "(FromTo(1,60))&& network === 'WPN'&& level === '7'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,55))&& network === 'IP'&& level === '7'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 72
+      score: 72,
+      color: "black", ruleString: "(FromTo(1,55))&& network === 'IP'&& level === '7'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,55))&& network === 'Chico'&& level === '7'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 72
+      score: 72,
+      color: "black", ruleString: "(FromTo(1,55))&& network === 'Chico'&& level === '7'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,55))&& network === 'PS.es'&& level === '7'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 72
+      score: 72,
+      color: "black", ruleString: "(FromTo(1,55))&& network === 'PS.es'&& level === '7'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,55))&& network === 'Party'&& level === '7'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 72
+      score: 72,
+      color: "black", ruleString: "(FromTo(1,55))&& network === 'Party'&& level === '7'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,55))&& network === 'GG'&& level === '7'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 72
+      score: 72,
+      color: "black", ruleString: "(FromTo(1,55))&& network === 'GG'&& level === '7'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,55))&& network === '888'&& level === '7'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 72
+      score: 72,
+      color: "black", ruleString: "(FromTo(1,55))&& network === '888'&& level === '7'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,55))&& network === 'WNMX'&& level === '7'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 72
+      score: 72,
+      color: "black", ruleString: "(FromTo(1,55))&& network === 'WNMX'&& level === '7'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,55))&& network === 'WPN'&& level === '7'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 72
+      score: 72,
+      color: "black", ruleString: "(FromTo(1,55))&& network === 'WPN'&& level === '7'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,55))&& network === 'IP'&& level === '7'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 72
+      score: 72,
+      color: "black", ruleString: "(FromTo(1,55))&& network === 'IP'&& level === '7'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,55))&& network === 'Chico'&& level === '7'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 72
+      score: 72,
+      color: "black", ruleString: "(FromTo(1,55))&& network === 'Chico'&& level === '7'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,55))&& network === 'PS.es'&& level === '7'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 72
+      score: 72,
+      color: "black", ruleString: "(FromTo(1,55))&& network === 'PS.es'&& level === '7'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,55))&& network === 'Party'&& level === '7'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 72
+      score: 72,
+      color: "black", ruleString: "(FromTo(1,55))&& network === 'Party'&& level === '7'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,55))&& network === 'GG'&& level === '7'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 72
+      score: 72,
+      color: "black", ruleString: "(FromTo(1,55))&& network === 'GG'&& level === '7'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,55))&& network === '888'&& level === '7'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 72
+      score: 72,
+      color: "black", ruleString: "(FromTo(1,55))&& network === '888'&& level === '7'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,55))&& network === 'WNMX'&& level === '7'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 72
+      score: 72,
+      color: "black", ruleString: "(FromTo(1,55))&& network === 'WNMX'&& level === '7'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,55))&& network === 'WPN'&& level === '7'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 72
+      score: 72,
+      color: "black", ruleString: "(FromTo(1,55))&& network === 'WPN'&& level === '7'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,60))&& network === 'IP'&& level === '7'&& effmu === 'B'&& isNormal) {
     return {
-      score: 73
+      score: 73,
+      color: "black", ruleString: "(FromTo(1,60))&& network === 'IP'&& level === '7'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,60))&& network === 'Chico'&& level === '7'&& effmu === 'B'&& isNormal) {
     return {
-      score: 73
+      score: 73,
+      color: "black", ruleString: "(FromTo(1,60))&& network === 'Chico'&& level === '7'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,60))&& network === 'PS.es'&& level === '7'&& effmu === 'B'&& isNormal) {
     return {
-      score: 73
+      score: 73,
+      color: "black", ruleString: "(FromTo(1,60))&& network === 'PS.es'&& level === '7'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,60))&& network === 'Party'&& level === '7'&& effmu === 'B'&& isNormal) {
     return {
-      score: 73
+      score: 73,
+      color: "black", ruleString: "(FromTo(1,60))&& network === 'Party'&& level === '7'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,60))&& network === 'GG'&& level === '7'&& effmu === 'B'&& isNormal) {
     return {
-      score: 73
+      score: 73,
+      color: "black", ruleString: "(FromTo(1,60))&& network === 'GG'&& level === '7'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,60))&& network === '888'&& level === '7'&& effmu === 'B'&& isNormal) {
     return {
-      score: 73
+      score: 73,
+      color: "black", ruleString: "(FromTo(1,60))&& network === '888'&& level === '7'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,60))&& network === 'WPN'&& level === '7'&& effmu === 'B'&& isNormal) {
     return {
-      score: 73
+      score: 73,
+      color: "black", ruleString: "(FromTo(1,60))&& network === 'WPN'&& level === '7'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,44))&& network === 'IP'&& level === '7'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 71
+      score: 71,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'IP'&& level === '7'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,44))&& network === 'Chico'&& level === '7'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 71
+      score: 71,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'Chico'&& level === '7'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,44))&& network === 'PS.es'&& level === '7'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 71
+      score: 71,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'PS.es'&& level === '7'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,44))&& network === 'Party'&& level === '7'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 71
+      score: 71,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'Party'&& level === '7'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,44))&& network === 'GG'&& level === '7'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 71
+      score: 71,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'GG'&& level === '7'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,44))&& network === '888'&& level === '7'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 71
+      score: 71,
+      color: "black", ruleString: "(FromTo(1,44))&& network === '888'&& level === '7'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,44))&& network === 'WNMX'&& level === '7'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 71
+      score: 71,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'WNMX'&& level === '7'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,44))&& network === 'WPN'&& level === '7'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 71
+      score: 71,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'WPN'&& level === '7'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,44))&& network === 'IP'&& level === '7'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 71
+      score: 71,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'IP'&& level === '7'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,44))&& network === 'Chico'&& level === '7'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 71
+      score: 71,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'Chico'&& level === '7'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,44))&& network === 'PS.es'&& level === '7'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 71
+      score: 71,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'PS.es'&& level === '7'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,44))&& network === 'Party'&& level === '7'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 71
+      score: 71,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'Party'&& level === '7'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,44))&& network === 'GG'&& level === '7'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 71
+      score: 71,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'GG'&& level === '7'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,44))&& network === '888'&& level === '7'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 71
+      score: 71,
+      color: "black", ruleString: "(FromTo(1,44))&& network === '888'&& level === '7'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,44))&& network === 'WNMX'&& level === '7'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 71
+      score: 71,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'WNMX'&& level === '7'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,44))&& network === 'WPN'&& level === '7'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 71
+      score: 71,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'WPN'&& level === '7'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,44))&& network === 'IP'&& level === '7'&& effmu === 'C'&& isNormal) {
     return {
-      score: 72
+      score: 72,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'IP'&& level === '7'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,44))&& network === 'Chico'&& level === '7'&& effmu === 'C'&& isNormal) {
     return {
-      score: 72
+      score: 72,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'Chico'&& level === '7'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,44))&& network === 'PS.es'&& level === '7'&& effmu === 'C'&& isNormal) {
     return {
-      score: 72
+      score: 72,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'PS.es'&& level === '7'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,44))&& network === 'Party'&& level === '7'&& effmu === 'C'&& isNormal) {
     return {
-      score: 72
+      score: 72,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'Party'&& level === '7'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,44))&& network === 'GG'&& level === '7'&& effmu === 'C'&& isNormal) {
     return {
-      score: 72
+      score: 72,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'GG'&& level === '7'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,44))&& network === '888'&& level === '7'&& effmu === 'C'&& isNormal) {
     return {
-      score: 72
+      score: 72,
+      color: "black", ruleString: "(FromTo(1,44))&& network === '888'&& level === '7'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,44))&& network === 'WPN'&& level === '7'&& effmu === 'C'&& isNormal) {
     return {
-      score: 72
+      score: 72,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'WPN'&& level === '7'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,33))&& network === 'IP'&& level === '7'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 70
+      score: 70,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'IP'&& level === '7'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,33))&& network === 'Chico'&& level === '7'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 70
+      score: 70,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'Chico'&& level === '7'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,33))&& network === 'PS.es'&& level === '7'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 70
+      score: 70,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'PS.es'&& level === '7'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,33))&& network === 'Party'&& level === '7'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 70
+      score: 70,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'Party'&& level === '7'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,33))&& network === 'GG'&& level === '7'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 70
+      score: 70,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'GG'&& level === '7'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,33))&& network === '888'&& level === '7'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 70
+      score: 70,
+      color: "black", ruleString: "(FromTo(1,33))&& network === '888'&& level === '7'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,33))&& network === 'WNMX'&& level === '7'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 70
+      score: 70,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'WNMX'&& level === '7'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,33))&& network === 'WPN'&& level === '7'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 70
+      score: 70,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'WPN'&& level === '7'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,33))&& network === 'IP'&& level === '7'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 70
+      score: 70,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'IP'&& level === '7'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,33))&& network === 'Chico'&& level === '7'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 70
+      score: 70,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'Chico'&& level === '7'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,33))&& network === 'PS.es'&& level === '7'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 70
+      score: 70,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'PS.es'&& level === '7'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,33))&& network === 'Party'&& level === '7'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 70
+      score: 70,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'Party'&& level === '7'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,33))&& network === 'GG'&& level === '7'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 70
+      score: 70,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'GG'&& level === '7'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,33))&& network === '888'&& level === '7'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 70
+      score: 70,
+      color: "black", ruleString: "(FromTo(1,33))&& network === '888'&& level === '7'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,33))&& network === 'WNMX'&& level === '7'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 70
+      score: 70,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'WNMX'&& level === '7'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,33))&& network === 'WPN'&& level === '7'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 70
+      score: 70,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'WPN'&& level === '7'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,60))&& network === 'IP'&& level === '6'&& effmu === 'A'&& isNormal) {
     return {
-      score: 73
+      score: 73,
+      color: "black", ruleString: "(FromTo(1,60))&& network === 'IP'&& level === '6'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,60))&& network === 'Chico'&& level === '6'&& effmu === 'A'&& isNormal) {
     return {
-      score: 73
+      score: 73,
+      color: "black", ruleString: "(FromTo(1,60))&& network === 'Chico'&& level === '6'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,60))&& network === 'PS.es'&& level === '6'&& effmu === 'A'&& isNormal) {
     return {
-      score: 73
+      score: 73,
+      color: "black", ruleString: "(FromTo(1,60))&& network === 'PS.es'&& level === '6'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,60))&& network === 'Party'&& level === '6'&& effmu === 'A'&& isNormal) {
     return {
-      score: 73
+      score: 73,
+      color: "black", ruleString: "(FromTo(1,60))&& network === 'Party'&& level === '6'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,60))&& network === 'GG'&& level === '6'&& effmu === 'A'&& isNormal) {
     return {
-      score: 73
+      score: 73,
+      color: "black", ruleString: "(FromTo(1,60))&& network === 'GG'&& level === '6'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,60))&& network === '888'&& level === '6'&& effmu === 'A'&& isNormal) {
     return {
-      score: 73
+      score: 73,
+      color: "black", ruleString: "(FromTo(1,60))&& network === '888'&& level === '6'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,60))&& network === 'WNMX'&& level === '6'&& effmu === 'A'&& isNormal) {
     return {
-      score: 73
+      score: 73,
+      color: "black", ruleString: "(FromTo(1,60))&& network === 'WNMX'&& level === '6'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,60))&& network === 'WPN'&& level === '6'&& effmu === 'A'&& isNormal) {
     return {
-      score: 73
+      score: 73,
+      color: "black", ruleString: "(FromTo(1,60))&& network === 'WPN'&& level === '6'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,44))&& network === 'IP'&& level === '6'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 71
+      score: 71,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'IP'&& level === '6'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,44))&& network === 'Chico'&& level === '6'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 71
+      score: 71,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'Chico'&& level === '6'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,44))&& network === 'PS.es'&& level === '6'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 71
+      score: 71,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'PS.es'&& level === '6'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,44))&& network === 'Party'&& level === '6'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 71
+      score: 71,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'Party'&& level === '6'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,44))&& network === 'GG'&& level === '6'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 71
+      score: 71,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'GG'&& level === '6'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,44))&& network === '888'&& level === '6'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 71
+      score: 71,
+      color: "black", ruleString: "(FromTo(1,44))&& network === '888'&& level === '6'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,44))&& network === 'WNMX'&& level === '6'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 71
+      score: 71,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'WNMX'&& level === '6'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,44))&& network === 'WPN'&& level === '6'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 71
+      score: 71,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'WPN'&& level === '6'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,44))&& network === 'IP'&& level === '6'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 71
+      score: 71,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'IP'&& level === '6'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,44))&& network === 'Chico'&& level === '6'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 71
+      score: 71,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'Chico'&& level === '6'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,44))&& network === 'PS.es'&& level === '6'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 71
+      score: 71,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'PS.es'&& level === '6'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,44))&& network === 'Party'&& level === '6'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 71
+      score: 71,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'Party'&& level === '6'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,44))&& network === 'GG'&& level === '6'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 71
+      score: 71,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'GG'&& level === '6'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,44))&& network === '888'&& level === '6'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 71
+      score: 71,
+      color: "black", ruleString: "(FromTo(1,44))&& network === '888'&& level === '6'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,44))&& network === 'WNMX'&& level === '6'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 71
+      score: 71,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'WNMX'&& level === '6'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,44))&& network === 'WPN'&& level === '6'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 71
+      score: 71,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'WPN'&& level === '6'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,44))&& network === 'IP'&& level === '6'&& effmu === 'B'&& isNormal) {
     return {
-      score: 72
+      score: 72,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'IP'&& level === '6'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,44))&& network === 'Chico'&& level === '6'&& effmu === 'B'&& isNormal) {
     return {
-      score: 72
+      score: 72,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'Chico'&& level === '6'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,44))&& network === 'PS.es'&& level === '6'&& effmu === 'B'&& isNormal) {
     return {
-      score: 72
+      score: 72,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'PS.es'&& level === '6'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,44))&& network === 'Party'&& level === '6'&& effmu === 'B'&& isNormal) {
     return {
-      score: 72
+      score: 72,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'Party'&& level === '6'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,44))&& network === 'GG'&& level === '6'&& effmu === 'B'&& isNormal) {
     return {
-      score: 72
+      score: 72,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'GG'&& level === '6'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,44))&& network === '888'&& level === '6'&& effmu === 'B'&& isNormal) {
     return {
-      score: 72
+      score: 72,
+      color: "black", ruleString: "(FromTo(1,44))&& network === '888'&& level === '6'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,44))&& network === 'WPN'&& level === '6'&& effmu === 'B'&& isNormal) {
     return {
-      score: 72
+      score: 72,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'WPN'&& level === '6'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,33))&& network === 'IP'&& level === '6'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 70
+      score: 70,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'IP'&& level === '6'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,33))&& network === 'Chico'&& level === '6'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 70
+      score: 70,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'Chico'&& level === '6'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,33))&& network === 'PS.es'&& level === '6'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 70
+      score: 70,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'PS.es'&& level === '6'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,33))&& network === 'Party'&& level === '6'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 70
+      score: 70,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'Party'&& level === '6'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,33))&& network === 'GG'&& level === '6'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 70
+      score: 70,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'GG'&& level === '6'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,33))&& network === '888'&& level === '6'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 70
+      score: 70,
+      color: "black", ruleString: "(FromTo(1,33))&& network === '888'&& level === '6'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,33))&& network === 'WNMX'&& level === '6'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 70
+      score: 70,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'WNMX'&& level === '6'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,33))&& network === 'WPN'&& level === '6'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 70
+      score: 70,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'WPN'&& level === '6'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,33))&& network === 'IP'&& level === '6'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 70
+      score: 70,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'IP'&& level === '6'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,33))&& network === 'Chico'&& level === '6'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 70
+      score: 70,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'Chico'&& level === '6'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,33))&& network === 'PS.es'&& level === '6'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 70
+      score: 70,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'PS.es'&& level === '6'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,33))&& network === 'Party'&& level === '6'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 70
+      score: 70,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'Party'&& level === '6'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,33))&& network === 'GG'&& level === '6'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 70
+      score: 70,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'GG'&& level === '6'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,33))&& network === '888'&& level === '6'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 70
+      score: 70,
+      color: "black", ruleString: "(FromTo(1,33))&& network === '888'&& level === '6'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,33))&& network === 'WNMX'&& level === '6'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 70
+      score: 70,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'WNMX'&& level === '6'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,33))&& network === 'WPN'&& level === '6'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 70
+      score: 70,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'WPN'&& level === '6'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,44))&& network === 'IP'&& level === '6'&& effmu === 'C'&& isNormal) {
     return {
-      score: 71
+      score: 71,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'IP'&& level === '6'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,44))&& network === 'Chico'&& level === '6'&& effmu === 'C'&& isNormal) {
     return {
-      score: 71
+      score: 71,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'Chico'&& level === '6'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,44))&& network === 'PS.es'&& level === '6'&& effmu === 'C'&& isNormal) {
     return {
-      score: 71
+      score: 71,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'PS.es'&& level === '6'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,44))&& network === 'Party'&& level === '6'&& effmu === 'C'&& isNormal) {
     return {
-      score: 71
+      score: 71,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'Party'&& level === '6'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,44))&& network === 'GG'&& level === '6'&& effmu === 'C'&& isNormal) {
     return {
-      score: 71
+      score: 71,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'GG'&& level === '6'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,44))&& network === '888'&& level === '6'&& effmu === 'C'&& isNormal) {
     return {
-      score: 71
+      score: 71,
+      color: "black", ruleString: "(FromTo(1,44))&& network === '888'&& level === '6'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,44))&& network === 'WPN'&& level === '6'&& effmu === 'C'&& isNormal) {
     return {
-      score: 71
+      score: 71,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'WPN'&& level === '6'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,33))&& network === 'IP'&& level === '6'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 69
+      score: 69,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'IP'&& level === '6'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,33))&& network === 'Chico'&& level === '6'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 69
+      score: 69,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'Chico'&& level === '6'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,33))&& network === 'PS.es'&& level === '6'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 69
+      score: 69,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'PS.es'&& level === '6'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,33))&& network === 'Party'&& level === '6'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 69
+      score: 69,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'Party'&& level === '6'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,33))&& network === 'GG'&& level === '6'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 69
+      score: 69,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'GG'&& level === '6'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,33))&& network === '888'&& level === '6'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 69
+      score: 69,
+      color: "black", ruleString: "(FromTo(1,33))&& network === '888'&& level === '6'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,33))&& network === 'WNMX'&& level === '6'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 69
+      score: 69,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'WNMX'&& level === '6'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,33))&& network === 'WPN'&& level === '6'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 69
+      score: 69,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'WPN'&& level === '6'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,33))&& network === 'IP'&& level === '6'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 69
+      score: 69,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'IP'&& level === '6'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,33))&& network === 'Chico'&& level === '6'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 69
+      score: 69,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'Chico'&& level === '6'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,33))&& network === 'PS.es'&& level === '6'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 69
+      score: 69,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'PS.es'&& level === '6'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,33))&& network === 'Party'&& level === '6'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 69
+      score: 69,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'Party'&& level === '6'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,33))&& network === 'GG'&& level === '6'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 69
+      score: 69,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'GG'&& level === '6'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,33))&& network === '888'&& level === '6'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 69
+      score: 69,
+      color: "black", ruleString: "(FromTo(1,33))&& network === '888'&& level === '6'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,33))&& network === 'WNMX'&& level === '6'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 69
+      score: 69,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'WNMX'&& level === '6'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,33))&& network === 'WPN'&& level === '6'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 69
+      score: 69,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'WPN'&& level === '6'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,44))&& network === 'IP'&& level === '5'&& effmu === 'A'&& isNormal) {
     return {
-      score: 72
+      score: 72,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'IP'&& level === '5'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,44))&& network === 'Chico'&& level === '5'&& effmu === 'A'&& isNormal) {
     return {
-      score: 72
+      score: 72,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'Chico'&& level === '5'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,44))&& network === 'PS.es'&& level === '5'&& effmu === 'A'&& isNormal) {
     return {
-      score: 72
+      score: 72,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'PS.es'&& level === '5'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,44))&& network === 'Party'&& level === '5'&& effmu === 'A'&& isNormal) {
     return {
-      score: 72
+      score: 72,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'Party'&& level === '5'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,44))&& network === 'GG'&& level === '5'&& effmu === 'A'&& isNormal) {
     return {
-      score: 72
+      score: 72,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'GG'&& level === '5'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,44))&& network === '888'&& level === '5'&& effmu === 'A'&& isNormal) {
     return {
-      score: 72
+      score: 72,
+      color: "black", ruleString: "(FromTo(1,44))&& network === '888'&& level === '5'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,44))&& network === 'WPN'&& level === '5'&& effmu === 'A'&& isNormal) {
     return {
-      score: 72
+      score: 72,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'WPN'&& level === '5'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,33))&& network === 'IP'&& level === '5'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 70
+      score: 70,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'IP'&& level === '5'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,33))&& network === 'Chico'&& level === '5'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 70
+      score: 70,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'Chico'&& level === '5'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,33))&& network === 'PS.es'&& level === '5'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 70
+      score: 70,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'PS.es'&& level === '5'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,33))&& network === 'Party'&& level === '5'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 70
+      score: 70,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'Party'&& level === '5'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,33))&& network === 'GG'&& level === '5'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 70
+      score: 70,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'GG'&& level === '5'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,33))&& network === '888'&& level === '5'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 70
+      score: 70,
+      color: "black", ruleString: "(FromTo(1,33))&& network === '888'&& level === '5'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,33))&& network === 'WNMX'&& level === '5'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 70
+      score: 70,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'WNMX'&& level === '5'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,33))&& network === 'WPN'&& level === '5'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 70
+      score: 70,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'WPN'&& level === '5'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,33))&& network === 'IP'&& level === '5'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 70
+      score: 70,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'IP'&& level === '5'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,33))&& network === 'Chico'&& level === '5'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 70
+      score: 70,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'Chico'&& level === '5'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,33))&& network === 'PS.es'&& level === '5'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 70
+      score: 70,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'PS.es'&& level === '5'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,33))&& network === 'Party'&& level === '5'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 70
+      score: 70,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'Party'&& level === '5'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,33))&& network === 'GG'&& level === '5'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 70
+      score: 70,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'GG'&& level === '5'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,33))&& network === '888'&& level === '5'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 70
+      score: 70,
+      color: "black", ruleString: "(FromTo(1,33))&& network === '888'&& level === '5'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,33))&& network === 'WNMX'&& level === '5'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 70
+      score: 70,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'WNMX'&& level === '5'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,33))&& network === 'WPN'&& level === '5'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 70
+      score: 70,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'WPN'&& level === '5'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,44))&& network === 'IP'&& level === '5'&& effmu === 'B'&& isNormal) {
     return {
-      score: 71
+      score: 71,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'IP'&& level === '5'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,44))&& network === 'Chico'&& level === '5'&& effmu === 'B'&& isNormal) {
     return {
-      score: 71
+      score: 71,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'Chico'&& level === '5'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,44))&& network === 'PS.es'&& level === '5'&& effmu === 'B'&& isNormal) {
     return {
-      score: 71
+      score: 71,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'PS.es'&& level === '5'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,44))&& network === 'Party'&& level === '5'&& effmu === 'B'&& isNormal) {
     return {
-      score: 71
+      score: 71,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'Party'&& level === '5'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,44))&& network === 'GG'&& level === '5'&& effmu === 'B'&& isNormal) {
     return {
-      score: 71
+      score: 71,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'GG'&& level === '5'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,44))&& network === '888'&& level === '5'&& effmu === 'B'&& isNormal) {
     return {
-      score: 71
+      score: 71,
+      color: "black", ruleString: "(FromTo(1,44))&& network === '888'&& level === '5'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,44))&& network === 'WNMX'&& level === '5'&& effmu === 'B'&& isNormal) {
     return {
-      score: 71
+      score: 71,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'WNMX'&& level === '5'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,44))&& network === 'WPN'&& level === '5'&& effmu === 'B'&& isNormal) {
     return {
-      score: 71
+      score: 71,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'WPN'&& level === '5'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,33))&& network === 'IP'&& level === '5'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 69
+      score: 69,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'IP'&& level === '5'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,33))&& network === 'Chico'&& level === '5'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 69
+      score: 69,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'Chico'&& level === '5'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,33))&& network === 'PS.es'&& level === '5'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 69
+      score: 69,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'PS.es'&& level === '5'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,33))&& network === 'Party'&& level === '5'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 69
+      score: 69,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'Party'&& level === '5'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,33))&& network === 'GG'&& level === '5'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 69
+      score: 69,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'GG'&& level === '5'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,33))&& network === '888'&& level === '5'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 69
+      score: 69,
+      color: "black", ruleString: "(FromTo(1,33))&& network === '888'&& level === '5'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,33))&& network === 'WNMX'&& level === '5'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 69
+      score: 69,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'WNMX'&& level === '5'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,33))&& network === 'WPN'&& level === '5'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 69
+      score: 69,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'WPN'&& level === '5'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,33))&& network === 'IP'&& level === '5'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 69
+      score: 69,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'IP'&& level === '5'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,33))&& network === 'Chico'&& level === '5'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 69
+      score: 69,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'Chico'&& level === '5'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,33))&& network === 'PS.es'&& level === '5'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 69
+      score: 69,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'PS.es'&& level === '5'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,33))&& network === 'Party'&& level === '5'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 69
+      score: 69,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'Party'&& level === '5'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,33))&& network === 'GG'&& level === '5'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 69
+      score: 69,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'GG'&& level === '5'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,33))&& network === '888'&& level === '5'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 69
+      score: 69,
+      color: "black", ruleString: "(FromTo(1,33))&& network === '888'&& level === '5'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,33))&& network === 'WNMX'&& level === '5'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 69
+      score: 69,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'WNMX'&& level === '5'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,33))&& network === 'WPN'&& level === '5'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 69
+      score: 69,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'WPN'&& level === '5'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,33))&& network === 'IP'&& level === '5'&& effmu === 'C'&& isNormal) {
     return {
-      score: 70
+      score: 70,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'IP'&& level === '5'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,33))&& network === 'Chico'&& level === '5'&& effmu === 'C'&& isNormal) {
     return {
-      score: 70
+      score: 70,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'Chico'&& level === '5'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,33))&& network === 'PS.es'&& level === '5'&& effmu === 'C'&& isNormal) {
     return {
-      score: 70
+      score: 70,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'PS.es'&& level === '5'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,33))&& network === 'Party'&& level === '5'&& effmu === 'C'&& isNormal) {
     return {
-      score: 70
+      score: 70,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'Party'&& level === '5'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,33))&& network === 'GG'&& level === '5'&& effmu === 'C'&& isNormal) {
     return {
-      score: 70
+      score: 70,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'GG'&& level === '5'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,33))&& network === '888'&& level === '5'&& effmu === 'C'&& isNormal) {
     return {
-      score: 70
+      score: 70,
+      color: "black", ruleString: "(FromTo(1,33))&& network === '888'&& level === '5'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,33))&& network === 'WNMX'&& level === '5'&& effmu === 'C'&& isNormal) {
     return {
-      score: 70
+      score: 70,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'WNMX'&& level === '5'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,33))&& network === 'WPN'&& level === '5'&& effmu === 'C'&& isNormal) {
     return {
-      score: 70
+      score: 70,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'WPN'&& level === '5'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,22))&& network === 'IP'&& level === '5'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 68
+      score: 68,
+      color: "black", ruleString: "(FromTo(1,22))&& network === 'IP'&& level === '5'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,22))&& network === 'Chico'&& level === '5'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 68
+      score: 68,
+      color: "black", ruleString: "(FromTo(1,22))&& network === 'Chico'&& level === '5'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,22))&& network === 'PS.es'&& level === '5'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 68
+      score: 68,
+      color: "black", ruleString: "(FromTo(1,22))&& network === 'PS.es'&& level === '5'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,22))&& network === 'Party'&& level === '5'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 68
+      score: 68,
+      color: "black", ruleString: "(FromTo(1,22))&& network === 'Party'&& level === '5'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,22))&& network === 'GG'&& level === '5'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 68
+      score: 68,
+      color: "black", ruleString: "(FromTo(1,22))&& network === 'GG'&& level === '5'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,22))&& network === '888'&& level === '5'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 68
+      score: 68,
+      color: "black", ruleString: "(FromTo(1,22))&& network === '888'&& level === '5'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,22))&& network === 'WNMX'&& level === '5'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 68
+      score: 68,
+      color: "black", ruleString: "(FromTo(1,22))&& network === 'WNMX'&& level === '5'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,22))&& network === 'WPN'&& level === '5'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 68
+      score: 68,
+      color: "black", ruleString: "(FromTo(1,22))&& network === 'WPN'&& level === '5'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,22))&& network === 'IP'&& level === '5'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 68
+      score: 68,
+      color: "black", ruleString: "(FromTo(1,22))&& network === 'IP'&& level === '5'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,22))&& network === 'Chico'&& level === '5'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 68
+      score: 68,
+      color: "black", ruleString: "(FromTo(1,22))&& network === 'Chico'&& level === '5'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,22))&& network === 'PS.es'&& level === '5'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 68
+      score: 68,
+      color: "black", ruleString: "(FromTo(1,22))&& network === 'PS.es'&& level === '5'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,22))&& network === 'Party'&& level === '5'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 68
+      score: 68,
+      color: "black", ruleString: "(FromTo(1,22))&& network === 'Party'&& level === '5'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,22))&& network === 'GG'&& level === '5'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 68
+      score: 68,
+      color: "black", ruleString: "(FromTo(1,22))&& network === 'GG'&& level === '5'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,22))&& network === '888'&& level === '5'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 68
+      score: 68,
+      color: "black", ruleString: "(FromTo(1,22))&& network === '888'&& level === '5'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,22))&& network === 'WNMX'&& level === '5'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 68
+      score: 68,
+      color: "black", ruleString: "(FromTo(1,22))&& network === 'WNMX'&& level === '5'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,22))&& network === 'WPN'&& level === '5'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 68
+      score: 68,
+      color: "black", ruleString: "(FromTo(1,22))&& network === 'WPN'&& level === '5'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,44))&& network === 'IP'&& level === '4'&& effmu === 'A'&& isNormal) {
     return {
-      score: 71
+      score: 71,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'IP'&& level === '4'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,44))&& network === 'Chico'&& level === '4'&& effmu === 'A'&& isNormal) {
     return {
-      score: 71
+      score: 71,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'Chico'&& level === '4'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,44))&& network === 'PS.es'&& level === '4'&& effmu === 'A'&& isNormal) {
     return {
-      score: 71
+      score: 71,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'PS.es'&& level === '4'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,44))&& network === 'Party'&& level === '4'&& effmu === 'A'&& isNormal) {
     return {
-      score: 71
+      score: 71,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'Party'&& level === '4'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,44))&& network === 'GG'&& level === '4'&& effmu === 'A'&& isNormal) {
     return {
-      score: 71
+      score: 71,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'GG'&& level === '4'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,44))&& network === '888'&& level === '4'&& effmu === 'A'&& isNormal) {
     return {
-      score: 71
+      score: 71,
+      color: "black", ruleString: "(FromTo(1,44))&& network === '888'&& level === '4'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,44))&& network === 'WNMX'&& level === '4'&& effmu === 'A'&& isNormal) {
     return {
-      score: 71
+      score: 71,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'WNMX'&& level === '4'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,44))&& network === 'WPN'&& level === '4'&& effmu === 'A'&& isNormal) {
     return {
-      score: 71
+      score: 71,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'WPN'&& level === '4'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,33))&& network === 'IP'&& level === '4'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 69
+      score: 69,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'IP'&& level === '4'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,33))&& network === 'Chico'&& level === '4'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 69
+      score: 69,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'Chico'&& level === '4'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,33))&& network === 'PS.es'&& level === '4'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 69
+      score: 69,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'PS.es'&& level === '4'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,33))&& network === 'Party'&& level === '4'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 69
+      score: 69,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'Party'&& level === '4'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,33))&& network === 'GG'&& level === '4'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 69
+      score: 69,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'GG'&& level === '4'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,33))&& network === '888'&& level === '4'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 69
+      score: 69,
+      color: "black", ruleString: "(FromTo(1,33))&& network === '888'&& level === '4'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,33))&& network === 'WNMX'&& level === '4'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 69
+      score: 69,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'WNMX'&& level === '4'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,33))&& network === 'WPN'&& level === '4'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 69
+      score: 69,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'WPN'&& level === '4'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,33))&& network === 'IP'&& level === '4'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 69
+      score: 69,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'IP'&& level === '4'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,33))&& network === 'Chico'&& level === '4'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 69
+      score: 69,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'Chico'&& level === '4'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,33))&& network === 'PS.es'&& level === '4'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 69
+      score: 69,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'PS.es'&& level === '4'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,33))&& network === 'Party'&& level === '4'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 69
+      score: 69,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'Party'&& level === '4'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,33))&& network === 'GG'&& level === '4'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 69
+      score: 69,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'GG'&& level === '4'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,33))&& network === '888'&& level === '4'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 69
+      score: 69,
+      color: "black", ruleString: "(FromTo(1,33))&& network === '888'&& level === '4'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,33))&& network === 'WNMX'&& level === '4'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 69
+      score: 69,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'WNMX'&& level === '4'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,33))&& network === 'WPN'&& level === '4'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 69
+      score: 69,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'WPN'&& level === '4'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,44))&& network === 'IP'&& level === '4'&& effmu === 'B'&& isNormal) {
     return {
-      score: 70
+      score: 70,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'IP'&& level === '4'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,44))&& network === 'Chico'&& level === '4'&& effmu === 'B'&& isNormal) {
     return {
-      score: 70
+      score: 70,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'Chico'&& level === '4'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,44))&& network === 'PS.es'&& level === '4'&& effmu === 'B'&& isNormal) {
     return {
-      score: 70
+      score: 70,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'PS.es'&& level === '4'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,44))&& network === 'Party'&& level === '4'&& effmu === 'B'&& isNormal) {
     return {
-      score: 70
+      score: 70,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'Party'&& level === '4'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,44))&& network === 'GG'&& level === '4'&& effmu === 'B'&& isNormal) {
     return {
-      score: 70
+      score: 70,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'GG'&& level === '4'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,44))&& network === '888'&& level === '4'&& effmu === 'B'&& isNormal) {
     return {
-      score: 70
+      score: 70,
+      color: "black", ruleString: "(FromTo(1,44))&& network === '888'&& level === '4'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,44))&& network === 'WNMX'&& level === '4'&& effmu === 'B'&& isNormal) {
     return {
-      score: 70
+      score: 70,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'WNMX'&& level === '4'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,44))&& network === 'WPN'&& level === '4'&& effmu === 'B'&& isNormal) {
     return {
-      score: 70
+      score: 70,
+      color: "black", ruleString: "(FromTo(1,44))&& network === 'WPN'&& level === '4'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,22))&& network === 'IP'&& level === '4'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 68
+      score: 68,
+      color: "black", ruleString: "(FromTo(1,22))&& network === 'IP'&& level === '4'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,22))&& network === 'Chico'&& level === '4'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 68
+      score: 68,
+      color: "black", ruleString: "(FromTo(1,22))&& network === 'Chico'&& level === '4'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,22))&& network === 'PS.es'&& level === '4'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 68
+      score: 68,
+      color: "black", ruleString: "(FromTo(1,22))&& network === 'PS.es'&& level === '4'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,22))&& network === 'Party'&& level === '4'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 68
+      score: 68,
+      color: "black", ruleString: "(FromTo(1,22))&& network === 'Party'&& level === '4'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,22))&& network === 'GG'&& level === '4'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 68
+      score: 68,
+      color: "black", ruleString: "(FromTo(1,22))&& network === 'GG'&& level === '4'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,22))&& network === '888'&& level === '4'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 68
+      score: 68,
+      color: "black", ruleString: "(FromTo(1,22))&& network === '888'&& level === '4'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,22))&& network === 'WNMX'&& level === '4'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 68
+      score: 68,
+      color: "black", ruleString: "(FromTo(1,22))&& network === 'WNMX'&& level === '4'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,22))&& network === 'WPN'&& level === '4'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 68
+      score: 68,
+      color: "black", ruleString: "(FromTo(1,22))&& network === 'WPN'&& level === '4'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,22))&& network === 'IP'&& level === '4'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 68
+      score: 68,
+      color: "black", ruleString: "(FromTo(1,22))&& network === 'IP'&& level === '4'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,22))&& network === 'Chico'&& level === '4'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 68
+      score: 68,
+      color: "black", ruleString: "(FromTo(1,22))&& network === 'Chico'&& level === '4'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,22))&& network === 'PS.es'&& level === '4'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 68
+      score: 68,
+      color: "black", ruleString: "(FromTo(1,22))&& network === 'PS.es'&& level === '4'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,22))&& network === 'Party'&& level === '4'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 68
+      score: 68,
+      color: "black", ruleString: "(FromTo(1,22))&& network === 'Party'&& level === '4'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,22))&& network === 'GG'&& level === '4'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 68
+      score: 68,
+      color: "black", ruleString: "(FromTo(1,22))&& network === 'GG'&& level === '4'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,22))&& network === '888'&& level === '4'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 68
+      score: 68,
+      color: "black", ruleString: "(FromTo(1,22))&& network === '888'&& level === '4'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,22))&& network === 'WNMX'&& level === '4'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 68
+      score: 68,
+      color: "black", ruleString: "(FromTo(1,22))&& network === 'WNMX'&& level === '4'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,22))&& network === 'WPN'&& level === '4'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 68
+      score: 68,
+      color: "black", ruleString: "(FromTo(1,22))&& network === 'WPN'&& level === '4'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,33))&& network === 'IP'&& level === '4'&& effmu === 'C'&& isNormal) {
     return {
-      score: 69
+      score: 69,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'IP'&& level === '4'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,33))&& network === 'Chico'&& level === '4'&& effmu === 'C'&& isNormal) {
     return {
-      score: 69
+      score: 69,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'Chico'&& level === '4'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,33))&& network === 'PS.es'&& level === '4'&& effmu === 'C'&& isNormal) {
     return {
-      score: 69
+      score: 69,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'PS.es'&& level === '4'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,33))&& network === 'Party'&& level === '4'&& effmu === 'C'&& isNormal) {
     return {
-      score: 69
+      score: 69,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'Party'&& level === '4'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,33))&& network === 'GG'&& level === '4'&& effmu === 'C'&& isNormal) {
     return {
-      score: 69
+      score: 69,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'GG'&& level === '4'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,33))&& network === '888'&& level === '4'&& effmu === 'C'&& isNormal) {
     return {
-      score: 69
+      score: 69,
+      color: "black", ruleString: "(FromTo(1,33))&& network === '888'&& level === '4'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,33))&& network === 'WNMX'&& level === '4'&& effmu === 'C'&& isNormal) {
     return {
-      score: 69
+      score: 69,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'WNMX'&& level === '4'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,33))&& network === 'WPN'&& level === '4'&& effmu === 'C'&& isNormal) {
     return {
-      score: 69
+      score: 69,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'WPN'&& level === '4'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,22))&& network === 'IP'&& level === '4'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 67
+      score: 67,
+      color: "black", ruleString: "(FromTo(1,22))&& network === 'IP'&& level === '4'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,22))&& network === 'Chico'&& level === '4'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 67
+      score: 67,
+      color: "black", ruleString: "(FromTo(1,22))&& network === 'Chico'&& level === '4'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,22))&& network === 'PS.es'&& level === '4'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 67
+      score: 67,
+      color: "black", ruleString: "(FromTo(1,22))&& network === 'PS.es'&& level === '4'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,22))&& network === 'Party'&& level === '4'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 67
+      score: 67,
+      color: "black", ruleString: "(FromTo(1,22))&& network === 'Party'&& level === '4'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,22))&& network === 'GG'&& level === '4'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 67
+      score: 67,
+      color: "black", ruleString: "(FromTo(1,22))&& network === 'GG'&& level === '4'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,22))&& network === '888'&& level === '4'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 67
+      score: 67,
+      color: "black", ruleString: "(FromTo(1,22))&& network === '888'&& level === '4'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,22))&& network === 'WNMX'&& level === '4'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 67
+      score: 67,
+      color: "black", ruleString: "(FromTo(1,22))&& network === 'WNMX'&& level === '4'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,22))&& network === 'WPN'&& level === '4'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 67
+      score: 67,
+      color: "black", ruleString: "(FromTo(1,22))&& network === 'WPN'&& level === '4'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,22))&& network === 'IP'&& level === '4'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 67
+      score: 67,
+      color: "black", ruleString: "(FromTo(1,22))&& network === 'IP'&& level === '4'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,22))&& network === 'Chico'&& level === '4'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 67
+      score: 67,
+      color: "black", ruleString: "(FromTo(1,22))&& network === 'Chico'&& level === '4'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,22))&& network === 'PS.es'&& level === '4'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 67
+      score: 67,
+      color: "black", ruleString: "(FromTo(1,22))&& network === 'PS.es'&& level === '4'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,22))&& network === 'Party'&& level === '4'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 67
+      score: 67,
+      color: "black", ruleString: "(FromTo(1,22))&& network === 'Party'&& level === '4'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,22))&& network === 'GG'&& level === '4'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 67
+      score: 67,
+      color: "black", ruleString: "(FromTo(1,22))&& network === 'GG'&& level === '4'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,22))&& network === '888'&& level === '4'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 67
+      score: 67,
+      color: "black", ruleString: "(FromTo(1,22))&& network === '888'&& level === '4'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,22))&& network === 'WNMX'&& level === '4'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 67
+      score: 67,
+      color: "black", ruleString: "(FromTo(1,22))&& network === 'WNMX'&& level === '4'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,22))&& network === 'WPN'&& level === '4'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 67
+      score: 67,
+      color: "black", ruleString: "(FromTo(1,22))&& network === 'WPN'&& level === '4'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,33))&& network === 'IP'&& level === '3'&& effmu === 'A'&& isNormal) {
     return {
-      score: 70
+      score: 70,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'IP'&& level === '3'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,33))&& network === 'Chico'&& level === '3'&& effmu === 'A'&& isNormal) {
     return {
-      score: 70
+      score: 70,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'Chico'&& level === '3'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,33))&& network === 'PS.es'&& level === '3'&& effmu === 'A'&& isNormal) {
     return {
-      score: 70
+      score: 70,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'PS.es'&& level === '3'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,33))&& network === 'Party'&& level === '3'&& effmu === 'A'&& isNormal) {
     return {
-      score: 70
+      score: 70,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'Party'&& level === '3'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,33))&& network === 'GG'&& level === '3'&& effmu === 'A'&& isNormal) {
     return {
-      score: 70
+      score: 70,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'GG'&& level === '3'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,33))&& network === '888'&& level === '3'&& effmu === 'A'&& isNormal) {
     return {
-      score: 70
+      score: 70,
+      color: "black", ruleString: "(FromTo(1,33))&& network === '888'&& level === '3'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,33))&& network === 'WNMX'&& level === '3'&& effmu === 'A'&& isNormal) {
     return {
-      score: 70
+      score: 70,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'WNMX'&& level === '3'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,33))&& network === 'WPN'&& level === '3'&& effmu === 'A'&& isNormal) {
     return {
-      score: 70
+      score: 70,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'WPN'&& level === '3'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,22))&& network === 'IP'&& level === '3'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 68
+      score: 68,
+      color: "black", ruleString: "(FromTo(1,22))&& network === 'IP'&& level === '3'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,22))&& network === 'Chico'&& level === '3'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 68
+      score: 68,
+      color: "black", ruleString: "(FromTo(1,22))&& network === 'Chico'&& level === '3'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,22))&& network === 'PS.es'&& level === '3'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 68
+      score: 68,
+      color: "black", ruleString: "(FromTo(1,22))&& network === 'PS.es'&& level === '3'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,22))&& network === 'Party'&& level === '3'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 68
+      score: 68,
+      color: "black", ruleString: "(FromTo(1,22))&& network === 'Party'&& level === '3'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,22))&& network === 'GG'&& level === '3'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 68
+      score: 68,
+      color: "black", ruleString: "(FromTo(1,22))&& network === 'GG'&& level === '3'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,22))&& network === '888'&& level === '3'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 68
+      score: 68,
+      color: "black", ruleString: "(FromTo(1,22))&& network === '888'&& level === '3'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,22))&& network === 'WNMX'&& level === '3'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 68
+      score: 68,
+      color: "black", ruleString: "(FromTo(1,22))&& network === 'WNMX'&& level === '3'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,22))&& network === 'WPN'&& level === '3'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 68
+      score: 68,
+      color: "black", ruleString: "(FromTo(1,22))&& network === 'WPN'&& level === '3'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,22))&& network === 'IP'&& level === '3'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 68
+      score: 68,
+      color: "black", ruleString: "(FromTo(1,22))&& network === 'IP'&& level === '3'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,22))&& network === 'Chico'&& level === '3'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 68
+      score: 68,
+      color: "black", ruleString: "(FromTo(1,22))&& network === 'Chico'&& level === '3'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,22))&& network === 'PS.es'&& level === '3'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 68
+      score: 68,
+      color: "black", ruleString: "(FromTo(1,22))&& network === 'PS.es'&& level === '3'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,22))&& network === 'Party'&& level === '3'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 68
+      score: 68,
+      color: "black", ruleString: "(FromTo(1,22))&& network === 'Party'&& level === '3'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,22))&& network === 'GG'&& level === '3'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 68
+      score: 68,
+      color: "black", ruleString: "(FromTo(1,22))&& network === 'GG'&& level === '3'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,22))&& network === '888'&& level === '3'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 68
+      score: 68,
+      color: "black", ruleString: "(FromTo(1,22))&& network === '888'&& level === '3'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,22))&& network === 'WNMX'&& level === '3'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 68
+      score: 68,
+      color: "black", ruleString: "(FromTo(1,22))&& network === 'WNMX'&& level === '3'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,22))&& network === 'WPN'&& level === '3'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 68
+      score: 68,
+      color: "black", ruleString: "(FromTo(1,22))&& network === 'WPN'&& level === '3'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,33))&& network === 'IP'&& level === '3'&& effmu === 'B'&& isNormal) {
     return {
-      score: 69
+      score: 69,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'IP'&& level === '3'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,33))&& network === 'Chico'&& level === '3'&& effmu === 'B'&& isNormal) {
     return {
-      score: 69
+      score: 69,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'Chico'&& level === '3'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,33))&& network === 'PS.es'&& level === '3'&& effmu === 'B'&& isNormal) {
     return {
-      score: 69
+      score: 69,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'PS.es'&& level === '3'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,33))&& network === 'Party'&& level === '3'&& effmu === 'B'&& isNormal) {
     return {
-      score: 69
+      score: 69,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'Party'&& level === '3'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,33))&& network === 'GG'&& level === '3'&& effmu === 'B'&& isNormal) {
     return {
-      score: 69
+      score: 69,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'GG'&& level === '3'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,33))&& network === '888'&& level === '3'&& effmu === 'B'&& isNormal) {
     return {
-      score: 69
+      score: 69,
+      color: "black", ruleString: "(FromTo(1,33))&& network === '888'&& level === '3'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,33))&& network === 'WNMX'&& level === '3'&& effmu === 'B'&& isNormal) {
     return {
-      score: 69
+      score: 69,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'WNMX'&& level === '3'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,22))&& network === 'IP'&& level === '3'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 67
+      score: 67,
+      color: "black", ruleString: "(FromTo(1,22))&& network === 'IP'&& level === '3'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,33))&& network === 'WPN'&& level === '3'&& effmu === 'B'&& isNormal) {
     return {
-      score: 69
+      score: 69,
+      color: "black", ruleString: "(FromTo(1,33))&& network === 'WPN'&& level === '3'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,22))&& network === 'Chico'&& level === '3'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 67
+      score: 67,
+      color: "black", ruleString: "(FromTo(1,22))&& network === 'Chico'&& level === '3'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,22))&& network === 'PS.es'&& level === '3'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 67
+      score: 67,
+      color: "black", ruleString: "(FromTo(1,22))&& network === 'PS.es'&& level === '3'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,22))&& network === 'Party'&& level === '3'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 67
+      score: 67,
+      color: "black", ruleString: "(FromTo(1,22))&& network === 'Party'&& level === '3'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,22))&& network === 'GG'&& level === '3'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 67
+      score: 67,
+      color: "black", ruleString: "(FromTo(1,22))&& network === 'GG'&& level === '3'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,22))&& network === '888'&& level === '3'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 67
+      score: 67,
+      color: "black", ruleString: "(FromTo(1,22))&& network === '888'&& level === '3'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,22))&& network === 'WNMX'&& level === '3'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 67
+      score: 67,
+      color: "black", ruleString: "(FromTo(1,22))&& network === 'WNMX'&& level === '3'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,22))&& network === 'WPN'&& level === '3'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 67
+      score: 67,
+      color: "black", ruleString: "(FromTo(1,22))&& network === 'WPN'&& level === '3'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,22))&& network === 'IP'&& level === '3'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 67
+      score: 67,
+      color: "black", ruleString: "(FromTo(1,22))&& network === 'IP'&& level === '3'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,22))&& network === 'Chico'&& level === '3'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 67
+      score: 67,
+      color: "black", ruleString: "(FromTo(1,22))&& network === 'Chico'&& level === '3'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,22))&& network === 'PS.es'&& level === '3'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 67
+      score: 67,
+      color: "black", ruleString: "(FromTo(1,22))&& network === 'PS.es'&& level === '3'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,22))&& network === 'Party'&& level === '3'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 67
+      score: 67,
+      color: "black", ruleString: "(FromTo(1,22))&& network === 'Party'&& level === '3'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,22))&& network === 'GG'&& level === '3'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 67
+      score: 67,
+      color: "black", ruleString: "(FromTo(1,22))&& network === 'GG'&& level === '3'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,22))&& network === '888'&& level === '3'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 67
+      score: 67,
+      color: "black", ruleString: "(FromTo(1,22))&& network === '888'&& level === '3'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,22))&& network === 'WNMX'&& level === '3'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 67
+      score: 67,
+      color: "black", ruleString: "(FromTo(1,22))&& network === 'WNMX'&& level === '3'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,22))&& network === 'WPN'&& level === '3'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 67
+      score: 67,
+      color: "black", ruleString: "(FromTo(1,22))&& network === 'WPN'&& level === '3'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,22))&& network === 'IP'&& level === '3'&& effmu === 'C'&& isNormal) {
     return {
-      score: 68
+      score: 68,
+      color: "black", ruleString: "(FromTo(1,22))&& network === 'IP'&& level === '3'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,22))&& network === 'Chico'&& level === '3'&& effmu === 'C'&& isNormal) {
     return {
-      score: 68
+      score: 68,
+      color: "black", ruleString: "(FromTo(1,22))&& network === 'Chico'&& level === '3'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,22))&& network === 'PS.es'&& level === '3'&& effmu === 'C'&& isNormal) {
     return {
-      score: 68
+      score: 68,
+      color: "black", ruleString: "(FromTo(1,22))&& network === 'PS.es'&& level === '3'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,22))&& network === 'Party'&& level === '3'&& effmu === 'C'&& isNormal) {
     return {
-      score: 68
+      score: 68,
+      color: "black", ruleString: "(FromTo(1,22))&& network === 'Party'&& level === '3'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,22))&& network === 'GG'&& level === '3'&& effmu === 'C'&& isNormal) {
     return {
-      score: 68
+      score: 68,
+      color: "black", ruleString: "(FromTo(1,22))&& network === 'GG'&& level === '3'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,22))&& network === '888'&& level === '3'&& effmu === 'C'&& isNormal) {
     return {
-      score: 68
+      score: 68,
+      color: "black", ruleString: "(FromTo(1,22))&& network === '888'&& level === '3'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,22))&& network === 'WNMX'&& level === '3'&& effmu === 'C'&& isNormal) {
     return {
-      score: 68
+      score: 68,
+      color: "black", ruleString: "(FromTo(1,22))&& network === 'WNMX'&& level === '3'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,22))&& network === 'WPN'&& level === '3'&& effmu === 'C'&& isNormal) {
     return {
-      score: 68
+      score: 68,
+      color: "black", ruleString: "(FromTo(1,22))&& network === 'WPN'&& level === '3'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,11))&& network === 'IP'&& level === '3'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 66
+      score: 66,
+      color: "black", ruleString: "(FromTo(1,11))&& network === 'IP'&& level === '3'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,11))&& network === 'Chico'&& level === '3'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 66
+      score: 66,
+      color: "black", ruleString: "(FromTo(1,11))&& network === 'Chico'&& level === '3'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,11))&& network === 'PS.es'&& level === '3'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 66
+      score: 66,
+      color: "black", ruleString: "(FromTo(1,11))&& network === 'PS.es'&& level === '3'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,11))&& network === 'Party'&& level === '3'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 66
+      score: 66,
+      color: "black", ruleString: "(FromTo(1,11))&& network === 'Party'&& level === '3'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,11))&& network === 'GG'&& level === '3'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 66
+      score: 66,
+      color: "black", ruleString: "(FromTo(1,11))&& network === 'GG'&& level === '3'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,11))&& network === '888'&& level === '3'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 66
+      score: 66,
+      color: "black", ruleString: "(FromTo(1,11))&& network === '888'&& level === '3'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,11))&& network === 'WNMX'&& level === '3'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 66
+      score: 66,
+      color: "black", ruleString: "(FromTo(1,11))&& network === 'WNMX'&& level === '3'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,11))&& network === 'WPN'&& level === '3'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 66
+      score: 66,
+      color: "black", ruleString: "(FromTo(1,11))&& network === 'WPN'&& level === '3'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,11))&& network === 'IP'&& level === '3'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 66
+      score: 66,
+      color: "black", ruleString: "(FromTo(1,11))&& network === 'IP'&& level === '3'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,11))&& network === 'Chico'&& level === '3'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 66
+      score: 66,
+      color: "black", ruleString: "(FromTo(1,11))&& network === 'Chico'&& level === '3'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,11))&& network === 'PS.es'&& level === '3'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 66
+      score: 66,
+      color: "black", ruleString: "(FromTo(1,11))&& network === 'PS.es'&& level === '3'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,11))&& network === 'Party'&& level === '3'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 66
+      score: 66,
+      color: "black", ruleString: "(FromTo(1,11))&& network === 'Party'&& level === '3'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,11))&& network === 'GG'&& level === '3'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 66
+      score: 66,
+      color: "black", ruleString: "(FromTo(1,11))&& network === 'GG'&& level === '3'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,11))&& network === '888'&& level === '3'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 66
+      score: 66,
+      color: "black", ruleString: "(FromTo(1,11))&& network === '888'&& level === '3'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,11))&& network === 'WNMX'&& level === '3'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 66
+      score: 66,
+      color: "black", ruleString: "(FromTo(1,11))&& network === 'WNMX'&& level === '3'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,11))&& network === 'WPN'&& level === '3'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 66
+      score: 66,
+      color: "black", ruleString: "(FromTo(1,11))&& network === 'WPN'&& level === '3'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,22))&& network === 'IP'&& level === '2'&& effmu === 'A'&& isNormal) {
     return {
-      score: 69
+      score: 69,
+      color: "black", ruleString: "(FromTo(1,22))&& network === 'IP'&& level === '2'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,22))&& network === 'Chico'&& level === '2'&& effmu === 'A'&& isNormal) {
     return {
-      score: 69
+      score: 69,
+      color: "black", ruleString: "(FromTo(1,22))&& network === 'Chico'&& level === '2'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,22))&& network === 'PS.es'&& level === '2'&& effmu === 'A'&& isNormal) {
     return {
-      score: 69
+      score: 69,
+      color: "black", ruleString: "(FromTo(1,22))&& network === 'PS.es'&& level === '2'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,22))&& network === 'Party'&& level === '2'&& effmu === 'A'&& isNormal) {
     return {
-      score: 69
+      score: 69,
+      color: "black", ruleString: "(FromTo(1,22))&& network === 'Party'&& level === '2'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,22))&& network === 'GG'&& level === '2'&& effmu === 'A'&& isNormal) {
     return {
-      score: 69
+      score: 69,
+      color: "black", ruleString: "(FromTo(1,22))&& network === 'GG'&& level === '2'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,22))&& network === '888'&& level === '2'&& effmu === 'A'&& isNormal) {
     return {
-      score: 69
+      score: 69,
+      color: "black", ruleString: "(FromTo(1,22))&& network === '888'&& level === '2'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,22))&& network === 'WNMX'&& level === '2'&& effmu === 'A'&& isNormal) {
     return {
-      score: 69
+      score: 69,
+      color: "black", ruleString: "(FromTo(1,22))&& network === 'WNMX'&& level === '2'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,22))&& network === 'WPN'&& level === '2'&& effmu === 'A'&& isNormal) {
     return {
-      score: 69
+      score: 69,
+      color: "black", ruleString: "(FromTo(1,22))&& network === 'WPN'&& level === '2'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,11))&& network === 'IP'&& level === '2'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 67
+      score: 67,
+      color: "black", ruleString: "(FromTo(1,11))&& network === 'IP'&& level === '2'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,11))&& network === 'Chico'&& level === '2'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 67
+      score: 67,
+      color: "black", ruleString: "(FromTo(1,11))&& network === 'Chico'&& level === '2'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,11))&& network === 'PS.es'&& level === '2'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 67
+      score: 67,
+      color: "black", ruleString: "(FromTo(1,11))&& network === 'PS.es'&& level === '2'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,11))&& network === 'Party'&& level === '2'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 67
+      score: 67,
+      color: "black", ruleString: "(FromTo(1,11))&& network === 'Party'&& level === '2'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,11))&& network === 'GG'&& level === '2'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 67
+      score: 67,
+      color: "black", ruleString: "(FromTo(1,11))&& network === 'GG'&& level === '2'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,11))&& network === '888'&& level === '2'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 67
+      score: 67,
+      color: "black", ruleString: "(FromTo(1,11))&& network === '888'&& level === '2'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,11))&& network === 'WNMX'&& level === '2'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 67
+      score: 67,
+      color: "black", ruleString: "(FromTo(1,11))&& network === 'WNMX'&& level === '2'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,11))&& network === 'WPN'&& level === '2'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 67
+      score: 67,
+      color: "black", ruleString: "(FromTo(1,11))&& network === 'WPN'&& level === '2'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,11))&& network === 'IP'&& level === '2'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 67
+      score: 67,
+      color: "black", ruleString: "(FromTo(1,11))&& network === 'IP'&& level === '2'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,11))&& network === 'Chico'&& level === '2'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 67
+      score: 67,
+      color: "black", ruleString: "(FromTo(1,11))&& network === 'Chico'&& level === '2'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,11))&& network === 'PS.es'&& level === '2'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 67
+      score: 67,
+      color: "black", ruleString: "(FromTo(1,11))&& network === 'PS.es'&& level === '2'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,11))&& network === 'Party'&& level === '2'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 67
+      score: 67,
+      color: "black", ruleString: "(FromTo(1,11))&& network === 'Party'&& level === '2'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,11))&& network === 'GG'&& level === '2'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 67
+      score: 67,
+      color: "black", ruleString: "(FromTo(1,11))&& network === 'GG'&& level === '2'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,11))&& network === '888'&& level === '2'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 67
+      score: 67,
+      color: "black", ruleString: "(FromTo(1,11))&& network === '888'&& level === '2'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,11))&& network === 'WNMX'&& level === '2'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 67
+      score: 67,
+      color: "black", ruleString: "(FromTo(1,11))&& network === 'WNMX'&& level === '2'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,11))&& network === 'WPN'&& level === '2'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 67
+      score: 67,
+      color: "black", ruleString: "(FromTo(1,11))&& network === 'WPN'&& level === '2'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,22))&& network === 'IP'&& level === '2'&& effmu === 'B'&& isNormal) {
     return {
-      score: 68
+      score: 68,
+      color: "black", ruleString: "(FromTo(1,22))&& network === 'IP'&& level === '2'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,22))&& network === 'Chico'&& level === '2'&& effmu === 'B'&& isNormal) {
     return {
-      score: 68
+      score: 68,
+      color: "black", ruleString: "(FromTo(1,22))&& network === 'Chico'&& level === '2'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,22))&& network === 'PS.es'&& level === '2'&& effmu === 'B'&& isNormal) {
     return {
-      score: 68
+      score: 68,
+      color: "black", ruleString: "(FromTo(1,22))&& network === 'PS.es'&& level === '2'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,22))&& network === 'Party'&& level === '2'&& effmu === 'B'&& isNormal) {
     return {
-      score: 68
+      score: 68,
+      color: "black", ruleString: "(FromTo(1,22))&& network === 'Party'&& level === '2'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,22))&& network === 'GG'&& level === '2'&& effmu === 'B'&& isNormal) {
     return {
-      score: 68
+      score: 68,
+      color: "black", ruleString: "(FromTo(1,22))&& network === 'GG'&& level === '2'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,22))&& network === '888'&& level === '2'&& effmu === 'B'&& isNormal) {
     return {
-      score: 68
+      score: 68,
+      color: "black", ruleString: "(FromTo(1,22))&& network === '888'&& level === '2'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,22))&& network === 'WNMX'&& level === '2'&& effmu === 'B'&& isNormal) {
     return {
-      score: 68
+      score: 68,
+      color: "black", ruleString: "(FromTo(1,22))&& network === 'WNMX'&& level === '2'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,22))&& network === 'WPN'&& level === '2'&& effmu === 'B'&& isNormal) {
     return {
-      score: 68
+      score: 68,
+      color: "black", ruleString: "(FromTo(1,22))&& network === 'WPN'&& level === '2'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,11))&& network === 'IP'&& level === '2'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 66
+      score: 66,
+      color: "black", ruleString: "(FromTo(1,11))&& network === 'IP'&& level === '2'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,11))&& network === 'Chico'&& level === '2'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 66
+      score: 66,
+      color: "black", ruleString: "(FromTo(1,11))&& network === 'Chico'&& level === '2'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,11))&& network === 'PS.es'&& level === '2'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 66
+      score: 66,
+      color: "black", ruleString: "(FromTo(1,11))&& network === 'PS.es'&& level === '2'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,11))&& network === 'Party'&& level === '2'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 66
+      score: 66,
+      color: "black", ruleString: "(FromTo(1,11))&& network === 'Party'&& level === '2'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,11))&& network === 'GG'&& level === '2'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 66
+      score: 66,
+      color: "black", ruleString: "(FromTo(1,11))&& network === 'GG'&& level === '2'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,11))&& network === '888'&& level === '2'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 66
+      score: 66,
+      color: "black", ruleString: "(FromTo(1,11))&& network === '888'&& level === '2'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,11))&& network === 'WNMX'&& level === '2'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 66
+      score: 66,
+      color: "black", ruleString: "(FromTo(1,11))&& network === 'WNMX'&& level === '2'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,11))&& network === 'WPN'&& level === '2'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 66
+      score: 66,
+      color: "black", ruleString: "(FromTo(1,11))&& network === 'WPN'&& level === '2'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,11))&& network === 'IP'&& level === '2'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 66
+      score: 66,
+      color: "black", ruleString: "(FromTo(1,11))&& network === 'IP'&& level === '2'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,11))&& network === 'Chico'&& level === '2'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 66
+      score: 66,
+      color: "black", ruleString: "(FromTo(1,11))&& network === 'Chico'&& level === '2'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,11))&& network === 'PS.es'&& level === '2'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 66
+      score: 66,
+      color: "black", ruleString: "(FromTo(1,11))&& network === 'PS.es'&& level === '2'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,11))&& network === 'Party'&& level === '2'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 66
+      score: 66,
+      color: "black", ruleString: "(FromTo(1,11))&& network === 'Party'&& level === '2'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,11))&& network === 'GG'&& level === '2'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 66
+      score: 66,
+      color: "black", ruleString: "(FromTo(1,11))&& network === 'GG'&& level === '2'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,11))&& network === '888'&& level === '2'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 66
+      score: 66,
+      color: "black", ruleString: "(FromTo(1,11))&& network === '888'&& level === '2'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,11))&& network === 'WNMX'&& level === '2'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 66
+      score: 66,
+      color: "black", ruleString: "(FromTo(1,11))&& network === 'WNMX'&& level === '2'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,11))&& network === 'WPN'&& level === '2'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 66
+      score: 66,
+      color: "black", ruleString: "(FromTo(1,11))&& network === 'WPN'&& level === '2'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,11))&& network === 'IP'&& level === '2'&& effmu === 'C'&& isNormal) {
     return {
-      score: 65
+      score: 65,
+      color: "black", ruleString: "(FromTo(1,11))&& network === 'IP'&& level === '2'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,11))&& network === 'Chico'&& level === '2'&& effmu === 'C'&& isNormal) {
     return {
-      score: 65
+      score: 65,
+      color: "black", ruleString: "(FromTo(1,11))&& network === 'Chico'&& level === '2'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,11))&& network === 'PS.es'&& level === '2'&& effmu === 'C'&& isNormal) {
     return {
-      score: 65
+      score: 65,
+      color: "black", ruleString: "(FromTo(1,11))&& network === 'PS.es'&& level === '2'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,11))&& network === 'Party'&& level === '2'&& effmu === 'C'&& isNormal) {
     return {
-      score: 65
+      score: 65,
+      color: "black", ruleString: "(FromTo(1,11))&& network === 'Party'&& level === '2'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,11))&& network === 'GG'&& level === '2'&& effmu === 'C'&& isNormal) {
     return {
-      score: 65
+      score: 65,
+      color: "black", ruleString: "(FromTo(1,11))&& network === 'GG'&& level === '2'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,11))&& network === '888'&& level === '2'&& effmu === 'C'&& isNormal) {
     return {
-      score: 65
+      score: 65,
+      color: "black", ruleString: "(FromTo(1,11))&& network === '888'&& level === '2'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,11))&& network === 'WNMX'&& level === '2'&& effmu === 'C'&& isNormal) {
     return {
-      score: 65
+      score: 65,
+      color: "black", ruleString: "(FromTo(1,11))&& network === 'WNMX'&& level === '2'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,11))&& network === 'WPN'&& level === '2'&& effmu === 'C'&& isNormal) {
     return {
-      score: 65
+      score: 65,
+      color: "black", ruleString: "(FromTo(1,11))&& network === 'WPN'&& level === '2'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,7.5))&& network === 'IP'&& level === '2'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 63
+      score: 63,
+      color: "black", ruleString: "(FromTo(1,7.5))&& network === 'IP'&& level === '2'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,7.5))&& network === 'Chico'&& level === '2'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 63
+      score: 63,
+      color: "black", ruleString: "(FromTo(1,7.5))&& network === 'Chico'&& level === '2'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,7.5))&& network === 'PS.es'&& level === '2'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 63
+      score: 63,
+      color: "black", ruleString: "(FromTo(1,7.5))&& network === 'PS.es'&& level === '2'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,7.5))&& network === 'Party'&& level === '2'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 63
+      score: 63,
+      color: "black", ruleString: "(FromTo(1,7.5))&& network === 'Party'&& level === '2'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,7.5))&& network === 'GG'&& level === '2'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 63
+      score: 63,
+      color: "black", ruleString: "(FromTo(1,7.5))&& network === 'GG'&& level === '2'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,7.5))&& network === '888'&& level === '2'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 63
+      score: 63,
+      color: "black", ruleString: "(FromTo(1,7.5))&& network === '888'&& level === '2'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,7.5))&& network === 'WNMX'&& level === '2'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 63
+      score: 63,
+      color: "black", ruleString: "(FromTo(1,7.5))&& network === 'WNMX'&& level === '2'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,7.5))&& network === 'WPN'&& level === '2'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 63
+      score: 63,
+      color: "black", ruleString: "(FromTo(1,7.5))&& network === 'WPN'&& level === '2'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,7.5))&& network === 'IP'&& level === '2'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 63
+      score: 63,
+      color: "black", ruleString: "(FromTo(1,7.5))&& network === 'IP'&& level === '2'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,7.5))&& network === 'Chico'&& level === '2'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 63
+      score: 63,
+      color: "black", ruleString: "(FromTo(1,7.5))&& network === 'Chico'&& level === '2'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,7.5))&& network === 'PS.es'&& level === '2'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 63
+      score: 63,
+      color: "black", ruleString: "(FromTo(1,7.5))&& network === 'PS.es'&& level === '2'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,7.5))&& network === 'Party'&& level === '2'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 63
+      score: 63,
+      color: "black", ruleString: "(FromTo(1,7.5))&& network === 'Party'&& level === '2'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,7.5))&& network === 'GG'&& level === '2'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 63
+      score: 63,
+      color: "black", ruleString: "(FromTo(1,7.5))&& network === 'GG'&& level === '2'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,7.5))&& network === '888'&& level === '2'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 63
+      score: 63,
+      color: "black", ruleString: "(FromTo(1,7.5))&& network === '888'&& level === '2'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,7.5))&& network === 'WNMX'&& level === '2'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 63
+      score: 63,
+      color: "black", ruleString: "(FromTo(1,7.5))&& network === 'WNMX'&& level === '2'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,7.5))&& network === 'WPN'&& level === '2'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 63
+      score: 63,
+      color: "black", ruleString: "(FromTo(1,7.5))&& network === 'WPN'&& level === '2'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,22))&& network === 'IP'&& level === '1'&& effmu === 'A'&& isNormal) {
     return {
-      score: 68
+      score: 68,
+      color: "black", ruleString: "(FromTo(1,22))&& network === 'IP'&& level === '1'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,22))&& network === 'Chico'&& level === '1'&& effmu === 'A'&& isNormal) {
     return {
-      score: 68
+      score: 68,
+      color: "black", ruleString: "(FromTo(1,22))&& network === 'Chico'&& level === '1'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,22))&& network === 'PS.es'&& level === '1'&& effmu === 'A'&& isNormal) {
     return {
-      score: 68
+      score: 68,
+      color: "black", ruleString: "(FromTo(1,22))&& network === 'PS.es'&& level === '1'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,22))&& network === 'Party'&& level === '1'&& effmu === 'A'&& isNormal) {
     return {
-      score: 68
+      score: 68,
+      color: "black", ruleString: "(FromTo(1,22))&& network === 'Party'&& level === '1'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,22))&& network === 'GG'&& level === '1'&& effmu === 'A'&& isNormal) {
     return {
-      score: 68
+      score: 68,
+      color: "black", ruleString: "(FromTo(1,22))&& network === 'GG'&& level === '1'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,22))&& network === '888'&& level === '1'&& effmu === 'A'&& isNormal) {
     return {
-      score: 68
+      score: 68,
+      color: "black", ruleString: "(FromTo(1,22))&& network === '888'&& level === '1'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,22))&& network === 'WNMX'&& level === '1'&& effmu === 'A'&& isNormal) {
     return {
-      score: 68
+      score: 68,
+      color: "black", ruleString: "(FromTo(1,22))&& network === 'WNMX'&& level === '1'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,22))&& network === 'WPN'&& level === '1'&& effmu === 'A'&& isNormal) {
     return {
-      score: 68
+      score: 68,
+      color: "black", ruleString: "(FromTo(1,22))&& network === 'WPN'&& level === '1'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,11))&& network === 'IP'&& level === '1'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 66
+      score: 66,
+      color: "black", ruleString: "(FromTo(1,11))&& network === 'IP'&& level === '1'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,11))&& network === 'Chico'&& level === '1'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 66
+      score: 66,
+      color: "black", ruleString: "(FromTo(1,11))&& network === 'Chico'&& level === '1'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,11))&& network === 'PS.es'&& level === '1'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 66
+      score: 66,
+      color: "black", ruleString: "(FromTo(1,11))&& network === 'PS.es'&& level === '1'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,11))&& network === 'Party'&& level === '1'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 66
+      score: 66,
+      color: "black", ruleString: "(FromTo(1,11))&& network === 'Party'&& level === '1'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,11))&& network === 'GG'&& level === '1'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 66
+      score: 66,
+      color: "black", ruleString: "(FromTo(1,11))&& network === 'GG'&& level === '1'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,11))&& network === '888'&& level === '1'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 66
+      score: 66,
+      color: "black", ruleString: "(FromTo(1,11))&& network === '888'&& level === '1'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,11))&& network === 'WNMX'&& level === '1'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 66
+      score: 66,
+      color: "black", ruleString: "(FromTo(1,11))&& network === 'WNMX'&& level === '1'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,11))&& network === 'WPN'&& level === '1'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 66
+      score: 66,
+      color: "black", ruleString: "(FromTo(1,11))&& network === 'WPN'&& level === '1'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,11))&& network === 'IP'&& level === '1'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 66
+      score: 66,
+      color: "black", ruleString: "(FromTo(1,11))&& network === 'IP'&& level === '1'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,11))&& network === 'Chico'&& level === '1'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 66
+      score: 66,
+      color: "black", ruleString: "(FromTo(1,11))&& network === 'Chico'&& level === '1'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,11))&& network === 'PS.es'&& level === '1'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 66
+      score: 66,
+      color: "black", ruleString: "(FromTo(1,11))&& network === 'PS.es'&& level === '1'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,11))&& network === 'Party'&& level === '1'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 66
+      score: 66,
+      color: "black", ruleString: "(FromTo(1,11))&& network === 'Party'&& level === '1'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,11))&& network === 'GG'&& level === '1'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 66
+      score: 66,
+      color: "black", ruleString: "(FromTo(1,11))&& network === 'GG'&& level === '1'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,11))&& network === '888'&& level === '1'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 66
+      score: 66,
+      color: "black", ruleString: "(FromTo(1,11))&& network === '888'&& level === '1'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,11))&& network === 'WNMX'&& level === '1'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 66
+      score: 66,
+      color: "black", ruleString: "(FromTo(1,11))&& network === 'WNMX'&& level === '1'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,11))&& network === 'WPN'&& level === '1'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 66
+      score: 66,
+      color: "black", ruleString: "(FromTo(1,11))&& network === 'WPN'&& level === '1'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,11))&& network === 'IP'&& level === '1'&& effmu === 'B'&& isNormal) {
     return {
-      score: 65
+      score: 65,
+      color: "black", ruleString: "(FromTo(1,11))&& network === 'IP'&& level === '1'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,11))&& network === 'Chico'&& level === '1'&& effmu === 'B'&& isNormal) {
     return {
-      score: 65
+      score: 65,
+      color: "black", ruleString: "(FromTo(1,11))&& network === 'Chico'&& level === '1'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,11))&& network === 'PS.es'&& level === '1'&& effmu === 'B'&& isNormal) {
     return {
-      score: 65
+      score: 65,
+      color: "black", ruleString: "(FromTo(1,11))&& network === 'PS.es'&& level === '1'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,11))&& network === 'Party'&& level === '1'&& effmu === 'B'&& isNormal) {
     return {
-      score: 65
+      score: 65,
+      color: "black", ruleString: "(FromTo(1,11))&& network === 'Party'&& level === '1'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,11))&& network === 'GG'&& level === '1'&& effmu === 'B'&& isNormal) {
     return {
-      score: 65
+      score: 65,
+      color: "black", ruleString: "(FromTo(1,11))&& network === 'GG'&& level === '1'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,11))&& network === '888'&& level === '1'&& effmu === 'B'&& isNormal) {
     return {
-      score: 65
+      score: 65,
+      color: "black", ruleString: "(FromTo(1,11))&& network === '888'&& level === '1'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,11))&& network === 'WNMX'&& level === '1'&& effmu === 'B'&& isNormal) {
     return {
-      score: 65
+      score: 65,
+      color: "black", ruleString: "(FromTo(1,11))&& network === 'WNMX'&& level === '1'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,11))&& network === 'WPN'&& level === '1'&& effmu === 'B'&& isNormal) {
     return {
-      score: 65
+      score: 65,
+      color: "black", ruleString: "(FromTo(1,11))&& network === 'WPN'&& level === '1'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,7.5))&& network === 'IP'&& level === '1'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 63
+      score: 63,
+      color: "black", ruleString: "(FromTo(1,7.5))&& network === 'IP'&& level === '1'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,7.5))&& network === 'Chico'&& level === '1'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 63
+      score: 63,
+      color: "black", ruleString: "(FromTo(1,7.5))&& network === 'Chico'&& level === '1'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,7.5))&& network === 'PS.es'&& level === '1'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 63
+      score: 63,
+      color: "black", ruleString: "(FromTo(1,7.5))&& network === 'PS.es'&& level === '1'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,7.5))&& network === 'Party'&& level === '1'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 63
+      score: 63,
+      color: "black", ruleString: "(FromTo(1,7.5))&& network === 'Party'&& level === '1'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,7.5))&& network === 'GG'&& level === '1'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 63
+      score: 63,
+      color: "black", ruleString: "(FromTo(1,7.5))&& network === 'GG'&& level === '1'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,7.5))&& network === '888'&& level === '1'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 63
+      score: 63,
+      color: "black", ruleString: "(FromTo(1,7.5))&& network === '888'&& level === '1'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,7.5))&& network === 'WNMX'&& level === '1'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 63
+      score: 63,
+      color: "black", ruleString: "(FromTo(1,7.5))&& network === 'WNMX'&& level === '1'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,7.5))&& network === 'WPN'&& level === '1'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 63
+      score: 63,
+      color: "black", ruleString: "(FromTo(1,7.5))&& network === 'WPN'&& level === '1'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,7.5))&& network === 'IP'&& level === '1'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 63
+      score: 63,
+      color: "black", ruleString: "(FromTo(1,7.5))&& network === 'IP'&& level === '1'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,7.5))&& network === 'Chico'&& level === '1'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 63
+      score: 63,
+      color: "black", ruleString: "(FromTo(1,7.5))&& network === 'Chico'&& level === '1'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,7.5))&& network === 'PS.es'&& level === '1'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 63
+      score: 63,
+      color: "black", ruleString: "(FromTo(1,7.5))&& network === 'PS.es'&& level === '1'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,7.5))&& network === 'Party'&& level === '1'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 63
+      score: 63,
+      color: "black", ruleString: "(FromTo(1,7.5))&& network === 'Party'&& level === '1'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,7.5))&& network === 'GG'&& level === '1'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 63
+      score: 63,
+      color: "black", ruleString: "(FromTo(1,7.5))&& network === 'GG'&& level === '1'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,7.5))&& network === '888'&& level === '1'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 63
+      score: 63,
+      color: "black", ruleString: "(FromTo(1,7.5))&& network === '888'&& level === '1'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,7.5))&& network === 'WNMX'&& level === '1'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 63
+      score: 63,
+      color: "black", ruleString: "(FromTo(1,7.5))&& network === 'WNMX'&& level === '1'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,7.5))&& network === 'WPN'&& level === '1'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 63
+      score: 63,
+      color: "black", ruleString: "(FromTo(1,7.5))&& network === 'WPN'&& level === '1'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,11))&& network === 'IP'&& level === '1'&& effmu === 'C'&& isNormal) {
     return {
-      score: 63
+      score: 63,
+      color: "black", ruleString: "(FromTo(1,11))&& network === 'IP'&& level === '1'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,11))&& network === 'Chico'&& level === '1'&& effmu === 'C'&& isNormal) {
     return {
-      score: 63
+      score: 63,
+      color: "black", ruleString: "(FromTo(1,11))&& network === 'Chico'&& level === '1'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,11))&& network === 'PS.es'&& level === '1'&& effmu === 'C'&& isNormal) {
     return {
-      score: 63
+      score: 63,
+      color: "black", ruleString: "(FromTo(1,11))&& network === 'PS.es'&& level === '1'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,11))&& network === 'Party'&& level === '1'&& effmu === 'C'&& isNormal) {
     return {
-      score: 63
+      score: 63,
+      color: "black", ruleString: "(FromTo(1,11))&& network === 'Party'&& level === '1'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,11))&& network === 'GG'&& level === '1'&& effmu === 'C'&& isNormal) {
     return {
-      score: 63
+      score: 63,
+      color: "black", ruleString: "(FromTo(1,11))&& network === 'GG'&& level === '1'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,11))&& network === '888'&& level === '1'&& effmu === 'C'&& isNormal) {
     return {
-      score: 63
+      score: 63,
+      color: "black", ruleString: "(FromTo(1,11))&& network === '888'&& level === '1'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,11))&& network === 'WNMX'&& level === '1'&& effmu === 'C'&& isNormal) {
     return {
-      score: 63
+      score: 63,
+      color: "black", ruleString: "(FromTo(1,11))&& network === 'WNMX'&& level === '1'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,11))&& network === 'WPN'&& level === '1'&& effmu === 'C'&& isNormal) {
     return {
-      score: 63
+      score: 63,
+      color: "black", ruleString: "(FromTo(1,11))&& network === 'WPN'&& level === '1'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,7.5))&& network === 'IP'&& level === '1'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 61
+      score: 61,
+      color: "black", ruleString: "(FromTo(1,7.5))&& network === 'IP'&& level === '1'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,7.5))&& network === 'Chico'&& level === '1'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 61
+      score: 61,
+      color: "black", ruleString: "(FromTo(1,7.5))&& network === 'Chico'&& level === '1'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,7.5))&& network === 'PS.es'&& level === '1'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 61
+      score: 61,
+      color: "black", ruleString: "(FromTo(1,7.5))&& network === 'PS.es'&& level === '1'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,7.5))&& network === 'Party'&& level === '1'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 61
+      score: 61,
+      color: "black", ruleString: "(FromTo(1,7.5))&& network === 'Party'&& level === '1'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,7.5))&& network === 'GG'&& level === '1'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 61
+      score: 61,
+      color: "black", ruleString: "(FromTo(1,7.5))&& network === 'GG'&& level === '1'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,7.5))&& network === '888'&& level === '1'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 61
+      score: 61,
+      color: "black", ruleString: "(FromTo(1,7.5))&& network === '888'&& level === '1'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,7.5))&& network === 'WNMX'&& level === '1'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 61
+      score: 61,
+      color: "black", ruleString: "(FromTo(1,7.5))&& network === 'WNMX'&& level === '1'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,7.5))&& network === 'WPN'&& level === '1'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 61
+      score: 61,
+      color: "black", ruleString: "(FromTo(1,7.5))&& network === 'WPN'&& level === '1'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,7.5))&& network === 'IP'&& level === '1'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 61
+      score: 61,
+      color: "black", ruleString: "(FromTo(1,7.5))&& network === 'IP'&& level === '1'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,7.5))&& network === 'Chico'&& level === '1'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 61
+      score: 61,
+      color: "black", ruleString: "(FromTo(1,7.5))&& network === 'Chico'&& level === '1'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,7.5))&& network === 'PS.es'&& level === '1'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 61
+      score: 61,
+      color: "black", ruleString: "(FromTo(1,7.5))&& network === 'PS.es'&& level === '1'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,7.5))&& network === 'Party'&& level === '1'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 61
+      score: 61,
+      color: "black", ruleString: "(FromTo(1,7.5))&& network === 'Party'&& level === '1'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,7.5))&& network === 'GG'&& level === '1'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 61
+      score: 61,
+      color: "black", ruleString: "(FromTo(1,7.5))&& network === 'GG'&& level === '1'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,7.5))&& network === '888'&& level === '1'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 61
+      score: 61,
+      color: "black", ruleString: "(FromTo(1,7.5))&& network === '888'&& level === '1'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,7.5))&& network === 'WNMX'&& level === '1'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 61
+      score: 61,
+      color: "black", ruleString: "(FromTo(1,7.5))&& network === 'WNMX'&& level === '1'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,7.5))&& network === 'WPN'&& level === '1'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 61
+      score: 61,
+      color: "black", ruleString: "(FromTo(1,7.5))&& network === 'WPN'&& level === '1'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,11))&& network === 'IP'&& level === '0'&& effmu === 'A'&& isNormal) {
     return {
-      score: 65
+      score: 65,
+      color: "black", ruleString: "(FromTo(1,11))&& network === 'IP'&& level === '0'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,11))&& network === 'Chico'&& level === '0'&& effmu === 'A'&& isNormal) {
     return {
-      score: 65
+      score: 65,
+      color: "black", ruleString: "(FromTo(1,11))&& network === 'Chico'&& level === '0'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,11))&& network === 'PS.es'&& level === '0'&& effmu === 'A'&& isNormal) {
     return {
-      score: 65
+      score: 65,
+      color: "black", ruleString: "(FromTo(1,11))&& network === 'PS.es'&& level === '0'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,11))&& network === 'Party'&& level === '0'&& effmu === 'A'&& isNormal) {
     return {
-      score: 65
+      score: 65,
+      color: "black", ruleString: "(FromTo(1,11))&& network === 'Party'&& level === '0'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,11))&& network === 'GG'&& level === '0'&& effmu === 'A'&& isNormal) {
     return {
-      score: 65
+      score: 65,
+      color: "black", ruleString: "(FromTo(1,11))&& network === 'GG'&& level === '0'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,11))&& network === '888'&& level === '0'&& effmu === 'A'&& isNormal) {
     return {
-      score: 65
+      score: 65,
+      color: "black", ruleString: "(FromTo(1,11))&& network === '888'&& level === '0'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,11))&& network === 'WNMX'&& level === '0'&& effmu === 'A'&& isNormal) {
     return {
-      score: 65
+      score: 65,
+      color: "black", ruleString: "(FromTo(1,11))&& network === 'WNMX'&& level === '0'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,11))&& network === 'WPN'&& level === '0'&& effmu === 'A'&& isNormal) {
     return {
-      score: 65
+      score: 65,
+      color: "black", ruleString: "(FromTo(1,11))&& network === 'WPN'&& level === '0'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,7.5))&& network === 'IP'&& level === '0'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 63
+      score: 63,
+      color: "black", ruleString: "(FromTo(1,7.5))&& network === 'IP'&& level === '0'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,7.5))&& network === 'Chico'&& level === '0'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 63
+      score: 63,
+      color: "black", ruleString: "(FromTo(1,7.5))&& network === 'Chico'&& level === '0'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,7.5))&& network === 'PS.es'&& level === '0'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 63
+      score: 63,
+      color: "black", ruleString: "(FromTo(1,7.5))&& network === 'PS.es'&& level === '0'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,7.5))&& network === 'Party'&& level === '0'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 63
+      score: 63,
+      color: "black", ruleString: "(FromTo(1,7.5))&& network === 'Party'&& level === '0'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,7.5))&& network === 'GG'&& level === '0'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 63
+      score: 63,
+      color: "black", ruleString: "(FromTo(1,7.5))&& network === 'GG'&& level === '0'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,7.5))&& network === '888'&& level === '0'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 63
+      score: 63,
+      color: "black", ruleString: "(FromTo(1,7.5))&& network === '888'&& level === '0'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,7.5))&& network === 'WNMX'&& level === '0'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 63
+      score: 63,
+      color: "black", ruleString: "(FromTo(1,7.5))&& network === 'WNMX'&& level === '0'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,7.5))&& network === 'WPN'&& level === '0'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 63
+      score: 63,
+      color: "black", ruleString: "(FromTo(1,7.5))&& network === 'WPN'&& level === '0'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(1,7.5))&& network === 'IP'&& level === '0'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 63
+      score: 63,
+      color: "black", ruleString: "(FromTo(1,7.5))&& network === 'IP'&& level === '0'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,7.5))&& network === 'Chico'&& level === '0'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 63
+      score: 63,
+      color: "black", ruleString: "(FromTo(1,7.5))&& network === 'Chico'&& level === '0'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,7.5))&& network === 'PS.es'&& level === '0'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 63
+      score: 63,
+      color: "black", ruleString: "(FromTo(1,7.5))&& network === 'PS.es'&& level === '0'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,7.5))&& network === 'Party'&& level === '0'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 63
+      score: 63,
+      color: "black", ruleString: "(FromTo(1,7.5))&& network === 'Party'&& level === '0'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,7.5))&& network === 'GG'&& level === '0'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 63
+      score: 63,
+      color: "black", ruleString: "(FromTo(1,7.5))&& network === 'GG'&& level === '0'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,7.5))&& network === '888'&& level === '0'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 63
+      score: 63,
+      color: "black", ruleString: "(FromTo(1,7.5))&& network === '888'&& level === '0'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,7.5))&& network === 'WNMX'&& level === '0'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 63
+      score: 63,
+      color: "black", ruleString: "(FromTo(1,7.5))&& network === 'WNMX'&& level === '0'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,7.5))&& network === 'WPN'&& level === '0'&& effmu === 'A'&& isSuperTurbo) {
     return {
-      score: 63
+      score: 63,
+      color: "black", ruleString: "(FromTo(1,7.5))&& network === 'WPN'&& level === '0'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,11))&& network === 'IP'&& level === '0'&& effmu === 'B'&& isNormal) {
     return {
-      score: 63
+      score: 63,
+      color: "black", ruleString: "(FromTo(1,11))&& network === 'IP'&& level === '0'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,11))&& network === 'Chico'&& level === '0'&& effmu === 'B'&& isNormal) {
     return {
-      score: 63
+      score: 63,
+      color: "black", ruleString: "(FromTo(1,11))&& network === 'Chico'&& level === '0'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,11))&& network === 'PS.es'&& level === '0'&& effmu === 'B'&& isNormal) {
     return {
-      score: 63
+      score: 63,
+      color: "black", ruleString: "(FromTo(1,11))&& network === 'PS.es'&& level === '0'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,11))&& network === 'Party'&& level === '0'&& effmu === 'B'&& isNormal) {
     return {
-      score: 63
+      score: 63,
+      color: "black", ruleString: "(FromTo(1,11))&& network === 'Party'&& level === '0'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,11))&& network === 'GG'&& level === '0'&& effmu === 'B'&& isNormal) {
     return {
-      score: 63
+      score: 63,
+      color: "black", ruleString: "(FromTo(1,11))&& network === 'GG'&& level === '0'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,11))&& network === '888'&& level === '0'&& effmu === 'B'&& isNormal) {
     return {
-      score: 63
+      score: 63,
+      color: "black", ruleString: "(FromTo(1,11))&& network === '888'&& level === '0'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,11))&& network === 'WNMX'&& level === '0'&& effmu === 'B'&& isNormal) {
     return {
-      score: 63
+      score: 63,
+      color: "black", ruleString: "(FromTo(1,11))&& network === 'WNMX'&& level === '0'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,11))&& network === 'WPN'&& level === '0'&& effmu === 'B'&& isNormal) {
     return {
-      score: 63
+      score: 63,
+      color: "black", ruleString: "(FromTo(1,11))&& network === 'WPN'&& level === '0'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,7.5))&& network === 'IP'&& level === '0'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 61
+      score: 61,
+      color: "black", ruleString: "(FromTo(1,7.5))&& network === 'IP'&& level === '0'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,7.5))&& network === 'Chico'&& level === '0'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 61
+      score: 61,
+      color: "black", ruleString: "(FromTo(1,7.5))&& network === 'Chico'&& level === '0'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,7.5))&& network === 'PS.es'&& level === '0'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 61
+      score: 61,
+      color: "black", ruleString: "(FromTo(1,7.5))&& network === 'PS.es'&& level === '0'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,7.5))&& network === 'Party'&& level === '0'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 61
+      score: 61,
+      color: "black", ruleString: "(FromTo(1,7.5))&& network === 'Party'&& level === '0'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,7.5))&& network === 'GG'&& level === '0'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 61
+      score: 61,
+      color: "black", ruleString: "(FromTo(1,7.5))&& network === 'GG'&& level === '0'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,7.5))&& network === '888'&& level === '0'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 61
+      score: 61,
+      color: "black", ruleString: "(FromTo(1,7.5))&& network === '888'&& level === '0'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,7.5))&& network === 'WNMX'&& level === '0'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 61
+      score: 61,
+      color: "black", ruleString: "(FromTo(1,7.5))&& network === 'WNMX'&& level === '0'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,7.5))&& network === 'WPN'&& level === '0'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 61
+      score: 61,
+      color: "black", ruleString: "(FromTo(1,7.5))&& network === 'WPN'&& level === '0'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,7.5))&& network === 'IP'&& level === '0'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 61
+      score: 61,
+      color: "black", ruleString: "(FromTo(1,7.5))&& network === 'IP'&& level === '0'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,7.5))&& network === 'Chico'&& level === '0'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 61
+      score: 61,
+      color: "black", ruleString: "(FromTo(1,7.5))&& network === 'Chico'&& level === '0'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,7.5))&& network === 'PS.es'&& level === '0'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 61
+      score: 61,
+      color: "black", ruleString: "(FromTo(1,7.5))&& network === 'PS.es'&& level === '0'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,7.5))&& network === 'Party'&& level === '0'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 61
+      score: 61,
+      color: "black", ruleString: "(FromTo(1,7.5))&& network === 'Party'&& level === '0'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,7.5))&& network === 'GG'&& level === '0'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 61
+      score: 61,
+      color: "black", ruleString: "(FromTo(1,7.5))&& network === 'GG'&& level === '0'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,7.5))&& network === '888'&& level === '0'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 61
+      score: 61,
+      color: "black", ruleString: "(FromTo(1,7.5))&& network === '888'&& level === '0'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,7.5))&& network === 'WNMX'&& level === '0'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 61
+      score: 61,
+      color: "black", ruleString: "(FromTo(1,7.5))&& network === 'WNMX'&& level === '0'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,7.5))&& network === 'WPN'&& level === '0'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 61
+      score: 61,
+      color: "black", ruleString: "(FromTo(1,7.5))&& network === 'WPN'&& level === '0'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,6))&& network === 'IP'&& level === '0'&& effmu === 'C'&& isNormal) {
     return {
-      score: 61
+      score: 61,
+      color: "black", ruleString: "(FromTo(1,6))&& network === 'IP'&& level === '0'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,6))&& network === 'Chico'&& level === '0'&& effmu === 'C'&& isNormal) {
     return {
-      score: 61
+      score: 61,
+      color: "black", ruleString: "(FromTo(1,6))&& network === 'Chico'&& level === '0'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,6))&& network === 'PS.es'&& level === '0'&& effmu === 'C'&& isNormal) {
     return {
-      score: 61
+      score: 61,
+      color: "black", ruleString: "(FromTo(1,6))&& network === 'PS.es'&& level === '0'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,6))&& network === 'Party'&& level === '0'&& effmu === 'C'&& isNormal) {
     return {
-      score: 61
+      score: 61,
+      color: "black", ruleString: "(FromTo(1,6))&& network === 'Party'&& level === '0'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,6))&& network === 'GG'&& level === '0'&& effmu === 'C'&& isNormal) {
     return {
-      score: 61
+      score: 61,
+      color: "black", ruleString: "(FromTo(1,6))&& network === 'GG'&& level === '0'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,6))&& network === '888'&& level === '0'&& effmu === 'C'&& isNormal) {
     return {
-      score: 61
+      score: 61,
+      color: "black", ruleString: "(FromTo(1,6))&& network === '888'&& level === '0'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,6))&& network === 'WNMX'&& level === '0'&& effmu === 'C'&& isNormal) {
     return {
-      score: 61
+      score: 61,
+      color: "black", ruleString: "(FromTo(1,6))&& network === 'WNMX'&& level === '0'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,6))&& network === 'WPN'&& level === '0'&& effmu === 'C'&& isNormal) {
     return {
-      score: 61
+      score: 61,
+      color: "black", ruleString: "(FromTo(1,6))&& network === 'WPN'&& level === '0'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,3.5))&& network === 'IP'&& level === '0'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 59
+      score: 59,
+      color: "black", ruleString: "(FromTo(1,3.5))&& network === 'IP'&& level === '0'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,3.5))&& network === 'Chico'&& level === '0'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 59
+      score: 59,
+      color: "black", ruleString: "(FromTo(1,3.5))&& network === 'Chico'&& level === '0'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,3.5))&& network === 'PS.es'&& level === '0'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 59
+      score: 59,
+      color: "black", ruleString: "(FromTo(1,3.5))&& network === 'PS.es'&& level === '0'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,3.5))&& network === 'Party'&& level === '0'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 59
+      score: 59,
+      color: "black", ruleString: "(FromTo(1,3.5))&& network === 'Party'&& level === '0'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,3.5))&& network === 'GG'&& level === '0'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 59
+      score: 59,
+      color: "black", ruleString: "(FromTo(1,3.5))&& network === 'GG'&& level === '0'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,3.5))&& network === '888'&& level === '0'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 59
+      score: 59,
+      color: "black", ruleString: "(FromTo(1,3.5))&& network === '888'&& level === '0'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,3.5))&& network === 'WNMX'&& level === '0'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 59
+      score: 59,
+      color: "black", ruleString: "(FromTo(1,3.5))&& network === 'WNMX'&& level === '0'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,3.5))&& network === 'WPN'&& level === '0'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 59
+      score: 59,
+      color: "black", ruleString: "(FromTo(1,3.5))&& network === 'WPN'&& level === '0'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(1,3.5))&& network === 'IP'&& level === '0'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 59
+      score: 59,
+      color: "black", ruleString: "(FromTo(1,3.5))&& network === 'IP'&& level === '0'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,3.5))&& network === 'Chico'&& level === '0'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 59
+      score: 59,
+      color: "black", ruleString: "(FromTo(1,3.5))&& network === 'Chico'&& level === '0'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,3.5))&& network === 'PS.es'&& level === '0'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 59
+      score: 59,
+      color: "black", ruleString: "(FromTo(1,3.5))&& network === 'PS.es'&& level === '0'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,3.5))&& network === 'Party'&& level === '0'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 59
+      score: 59,
+      color: "black", ruleString: "(FromTo(1,3.5))&& network === 'Party'&& level === '0'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,3.5))&& network === 'GG'&& level === '0'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 59
+      score: 59,
+      color: "black", ruleString: "(FromTo(1,3.5))&& network === 'GG'&& level === '0'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,3.5))&& network === '888'&& level === '0'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 59
+      score: 59,
+      color: "black", ruleString: "(FromTo(1,3.5))&& network === '888'&& level === '0'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,3.5))&& network === 'WNMX'&& level === '0'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 59
+      score: 59,
+      color: "black", ruleString: "(FromTo(1,3.5))&& network === 'WNMX'&& level === '0'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,3.5))&& network === 'WPN'&& level === '0'&& effmu === 'C'&& isSuperTurbo) {
     return {
-      score: 59
+      score: 59,
+      color: "black", ruleString: "(FromTo(1,3.5))&& network === 'WPN'&& level === '0'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,60))&& network === 'WPN'&& level === '9'&& effmu === 'C'&& isNormal) {
     return {
-      score: 74
+      score: 74,
+      color: "black", ruleString: "(FromTo(1,60))&& network === 'WPN'&& level === '9'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,109))&& network === 'GG'&& level === '14'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 79
+      score: 79,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'GG'&& level === '14'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,60))&& network === 'WNMX'&& level === '6'&& effmu === 'B'&& isNormal) {
     return {
-      score: 72
+      score: 72,
+      color: "black", ruleString: "(FromTo(1,60))&& network === 'WNMX'&& level === '6'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,60))&& network === 'WNMX'&& level === '6'&& effmu === 'C'&& isNormal) {
     return {
-      score: 71
+      score: 71,
+      color: "black", ruleString: "(FromTo(1,60))&& network === 'WNMX'&& level === '6'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,60))&& network === 'WNMX'&& level === '5'&& effmu === 'A'&& isNormal) {
     return {
-      score: 72
+      score: 72,
+      color: "black", ruleString: "(FromTo(1,60))&& network === 'WNMX'&& level === '5'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(12,25))&& network === 'PS.es'&& level === '2'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 66
+      score: 66,
+      color: "black", ruleString: "(FromTo(12,25))&& network === 'PS.es'&& level === '2'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(12,25))&& network === 'WNMX'&& level === '2'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 65
+      score: 65,
+      color: "black", ruleString: "(FromTo(12,25))&& network === 'WNMX'&& level === '2'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(12,25))&& network === 'WNMX'&& level === '1'&& effmu === 'A'&& isTurbo) {
     return {
-      score: 65
+      score: 65,
+      color: "black", ruleString: "(FromTo(12,25))&& network === 'WNMX'&& level === '1'&& effmu === 'A'&& isTurbo"
     };
   };
 if((FromTo(23,30))&& network === 'WNMX'&& level === '1'&& effmu === 'A'&& isNormal) {
     return {
-      score: 67
+      score: 67,
+      color: "black", ruleString: "(FromTo(23,30))&& network === 'WNMX'&& level === '1'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(12,25))&& network === 'WNMX'&& level === '1'&& effmu === 'B'&& isNormal) {
     return {
-      score: 64
+      score: 64,
+      color: "black", ruleString: "(FromTo(12,25))&& network === 'WNMX'&& level === '1'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(12,25))&& network === 'WNMX'&& level === '1'&& effmu === 'C'&& isNormal) {
     return {
-      score: 62
+      score: 62,
+      color: "black", ruleString: "(FromTo(12,25))&& network === 'WNMX'&& level === '1'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(12,28))&& network === 'PS.es'&& level === '2'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 65
+      score: 65,
+      color: "black", ruleString: "(FromTo(12,28))&& network === 'PS.es'&& level === '2'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(8,28))&& network === 'PS.es'&& level === '2'&& effmu === 'C'&& isTurbo) {
     return {
-      score: 62
+      score: 62,
+      color: "black", ruleString: "(FromTo(8,28))&& network === 'PS.es'&& level === '2'&& effmu === 'C'&& isTurbo"
     };
   };
 if((FromTo(501,1100))&& network === 'PS.eu'&& level === '14'&& effmu === 'A'&& isNormal) {
     return {
-      score: 83
+      score: 83,
+      color: "black", ruleString: "(FromTo(501,1100))&& network === 'PS.eu'&& level === '14'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(216,1100))&& network === 'PS.eu'&& level === '14'&& effmu === 'B'&& isNormal) {
     return {
-      score: 81
+      score: 81,
+      color: "black", ruleString: "(FromTo(216,1100))&& network === 'PS.eu'&& level === '14'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(216,1100))&& network === 'PS.eu'&& level === '14'&& effmu === 'C'&& isNormal) {
     return {
-      score: 80
+      score: 80,
+      color: "black", ruleString: "(FromTo(216,1100))&& network === 'PS.eu'&& level === '14'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(501,1100))&& network === 'GG'&& level === '14'&& effmu === 'A'&& isNormal) {
     return {
-      score: 83
+      score: 83,
+      color: "black", ruleString: "(FromTo(501,1100))&& network === 'GG'&& level === '14'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(216,1100))&& network === 'GG'&& level === '14'&& effmu === 'B'&& isNormal) {
     return {
-      score: 81
+      score: 81,
+      color: "black", ruleString: "(FromTo(216,1100))&& network === 'GG'&& level === '14'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(216,1100))&& network === 'GG'&& level === '14'&& effmu === 'C'&& isNormal) {
     return {
-      score: 80
+      score: 80,
+      color: "black", ruleString: "(FromTo(216,1100))&& network === 'GG'&& level === '14'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(216,1100))&& network === 'PS.eu'&& level === '13'&& effmu === 'A'&& isNormal) {
     return {
-      score: 81
+      score: 81,
+      color: "black", ruleString: "(FromTo(216,1100))&& network === 'PS.eu'&& level === '13'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(216,1100))&& network === 'PS.eu'&& level === '13'&& effmu === 'B'&& isNormal) {
     return {
-      score: 79
+      score: 79,
+      color: "black", ruleString: "(FromTo(216,1100))&& network === 'PS.eu'&& level === '13'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(110,256))&& network === 'PS.eu'&& level === '13'&& effmu === 'C'&& isNormal) {
     return {
-      score: 79
+      score: 79,
+      color: "black", ruleString: "(FromTo(110,256))&& network === 'PS.eu'&& level === '13'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(216,1100))&& network === 'GG'&& level === '13'&& effmu === 'A'&& isNormal) {
     return {
-      score: 80
+      score: 80,
+      color: "black", ruleString: "(FromTo(216,1100))&& network === 'GG'&& level === '13'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(216,1100))&& network === 'GG'&& level === '13'&& effmu === 'B'&& isNormal) {
     return {
-      score: 79
+      score: 79,
+      color: "black", ruleString: "(FromTo(216,1100))&& network === 'GG'&& level === '13'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(110,256))&& network === 'GG'&& level === '13'&& effmu === 'C'&& isNormal) {
     return {
-      score: 79
+      score: 79,
+      color: "black", ruleString: "(FromTo(110,256))&& network === 'GG'&& level === '13'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(110,256))&& network === 'PS.eu'&& level === '12'&& effmu === 'A'&& isNormal) {
     return {
-      score: 78
+      score: 78,
+      color: "black", ruleString: "(FromTo(110,256))&& network === 'PS.eu'&& level === '12'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(110,256))&& network === 'GG'&& level === '12'&& effmu === 'A'&& isNormal) {
     return {
-      score: 78
+      score: 78,
+      color: "black", ruleString: "(FromTo(110,256))&& network === 'GG'&& level === '12'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(110,240))&& network === 'PS.eu'&& level === '12'&& effmu === 'B'&& isNormal) {
     return {
-      score: 77
+      score: 77,
+      color: "black", ruleString: "(FromTo(110,240))&& network === 'PS.eu'&& level === '12'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(110,240))&& network === 'GG'&& level === '12'&& effmu === 'B'&& isNormal) {
     return {
-      score: 77
+      score: 77,
+      color: "black", ruleString: "(FromTo(110,240))&& network === 'GG'&& level === '12'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(110,220))&& network === 'PS.eu'&& level === '12'&& effmu === 'C'&& isNormal) {
     return {
-      score: 76
+      score: 76,
+      color: "black", ruleString: "(FromTo(110,220))&& network === 'PS.eu'&& level === '12'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(110,220))&& network === 'GG'&& level === '12'&& effmu === 'C'&& isNormal) {
     return {
-      score: 76
+      score: 76,
+      color: "black", ruleString: "(FromTo(110,220))&& network === 'GG'&& level === '12'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(110,220))&& network === 'PS.eu'&& level === '11'&& effmu === 'A'&& isNormal) {
     return {
-      score: 77
+      score: 77,
+      color: "black", ruleString: "(FromTo(110,220))&& network === 'PS.eu'&& level === '11'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(110,220))&& network === 'GG'&& level === '11'&& effmu === 'A'&& isNormal) {
     return {
-      score: 77
+      score: 77,
+      color: "black", ruleString: "(FromTo(110,220))&& network === 'GG'&& level === '11'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(110,220))&& network === 'PS.eu'&& level === '11'&& effmu === 'B'&& isNormal) {
     return {
-      score: 76
+      score: 76,
+      color: "black", ruleString: "(FromTo(110,220))&& network === 'PS.eu'&& level === '11'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(110,220))&& network === 'GG'&& level === '11'&& effmu === 'B'&& isNormal) {
     return {
-      score: 76
+      score: 76,
+      color: "black", ruleString: "(FromTo(110,220))&& network === 'GG'&& level === '11'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(110,170))&& network === 'PS.eu'&& level === '11'&& effmu === 'C'&& isNormal) {
     return {
-      score: 75
+      score: 75,
+      color: "black", ruleString: "(FromTo(110,170))&& network === 'PS.eu'&& level === '11'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(110,170))&& network === 'GG'&& level === '11'&& effmu === 'C'&& isNormal) {
     return {
-      score: 75
+      score: 75,
+      color: "black", ruleString: "(FromTo(110,170))&& network === 'GG'&& level === '11'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(110,170))&& network === 'PS.eu'&& level === '10'&& effmu === 'A'&& isNormal) {
     return {
-      score: 76
+      score: 76,
+      color: "black", ruleString: "(FromTo(110,170))&& network === 'PS.eu'&& level === '10'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(110,170))&& network === 'GG'&& level === '10'&& effmu === 'A'&& isNormal) {
     return {
-      score: 76
+      score: 76,
+      color: "black", ruleString: "(FromTo(110,170))&& network === 'GG'&& level === '10'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(110,170))&& network === 'PS.eu'&& level === '9'&& effmu === 'A'&& isNormal) {
     return {
-      score: 75
+      score: 75,
+      color: "black", ruleString: "(FromTo(110,170))&& network === 'PS.eu'&& level === '9'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(110,170))&& network === 'GG'&& level === '9'&& effmu === 'A'&& isNormal) {
     return {
-      score: 75
+      score: 75,
+      color: "black", ruleString: "(FromTo(110,170))&& network === 'GG'&& level === '9'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(87,120))&& network === 'PS.eu'&& level === '9'&& effmu === 'B'&& isNormal) {
     return {
-      score: 74
+      score: 74,
+      color: "black", ruleString: "(FromTo(87,120))&& network === 'PS.eu'&& level === '9'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(87,120))&& network === 'GG'&& level === '9'&& effmu === 'B'&& isNormal) {
     return {
-      score: 74
+      score: 74,
+      color: "black", ruleString: "(FromTo(87,120))&& network === 'GG'&& level === '9'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(61,110))&& network === 'PS.eu'&& level === '9'&& effmu === 'C'&& isNormal) {
     return {
-      score: 73
+      score: 73,
+      color: "black", ruleString: "(FromTo(61,110))&& network === 'PS.eu'&& level === '9'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(61,110))&& network === 'GG'&& level === '9'&& effmu === 'C'&& isNormal) {
     return {
-      score: 73
+      score: 73,
+      color: "black", ruleString: "(FromTo(61,110))&& network === 'GG'&& level === '9'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(87,220))&& network === 'PS.eu'&& level === '8'&& effmu === 'A'&& isNormal) {
     return {
-      score: 74
+      score: 74,
+      color: "black", ruleString: "(FromTo(87,220))&& network === 'PS.eu'&& level === '8'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(87,220))&& network === 'GG'&& level === '8'&& effmu === 'A'&& isNormal) {
     return {
-      score: 74
+      score: 74,
+      color: "black", ruleString: "(FromTo(87,220))&& network === 'GG'&& level === '8'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(61,110))&& network === 'GG'&& level === '8'&& effmu === 'B'&& isNormal) {
     return {
-      score: 73
+      score: 73,
+      color: "black", ruleString: "(FromTo(61,110))&& network === 'GG'&& level === '8'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(61,110))&& network === 'PS.eu'&& level === '8'&& effmu === 'B'&& isNormal) {
     return {
-      score: 73
+      score: 73,
+      color: "black", ruleString: "(FromTo(61,110))&& network === 'PS.eu'&& level === '8'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(61,110))&& network === 'PS.eu'&& level === '8'&& effmu === 'C'&& isNormal) {
     return {
-      score: 72
+      score: 72,
+      color: "black", ruleString: "(FromTo(61,110))&& network === 'PS.eu'&& level === '8'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(61,110))&& network === 'GG'&& level === '8'&& effmu === 'C'&& isNormal) {
     return {
-      score: 72
+      score: 72,
+      color: "black", ruleString: "(FromTo(61,110))&& network === 'GG'&& level === '8'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(61,220))&& network === 'PS.eu'&& level === '7'&& effmu === 'A'&& isNormal) {
     return {
-      score: 73
+      score: 73,
+      color: "black", ruleString: "(FromTo(61,220))&& network === 'PS.eu'&& level === '7'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(61,220))&& network === 'GG'&& level === '7'&& effmu === 'A'&& isNormal) {
     return {
-      score: 73
+      score: 73,
+      color: "black", ruleString: "(FromTo(61,220))&& network === 'GG'&& level === '7'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(61,110))&& network === 'PS.eu'&& level === '7'&& effmu === 'B'&& isNormal) {
     return {
-      score: 72
+      score: 72,
+      color: "black", ruleString: "(FromTo(61,110))&& network === 'PS.eu'&& level === '7'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(61,110))&& network === 'GG'&& level === '7'&& effmu === 'B'&& isNormal) {
     return {
-      score: 72
+      score: 72,
+      color: "black", ruleString: "(FromTo(61,110))&& network === 'GG'&& level === '7'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(45,110))&& network === 'PS.eu'&& level === '7'&& effmu === 'C'&& isNormal) {
     return {
-      score: 71
+      score: 71,
+      color: "black", ruleString: "(FromTo(45,110))&& network === 'PS.eu'&& level === '7'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(45,110))&& network === 'GG'&& level === '7'&& effmu === 'C'&& isNormal) {
     return {
-      score: 71
+      score: 71,
+      color: "black", ruleString: "(FromTo(45,110))&& network === 'GG'&& level === '7'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(61,110))&& network === 'PS.eu'&& level === '6'&& effmu === 'A'&& isNormal) {
     return {
-      score: 72
+      score: 72,
+      color: "black", ruleString: "(FromTo(61,110))&& network === 'PS.eu'&& level === '6'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(61,110))&& network === 'GG'&& level === '6'&& effmu === 'A'&& isNormal) {
     return {
-      score: 72
+      score: 72,
+      color: "black", ruleString: "(FromTo(61,110))&& network === 'GG'&& level === '6'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(45,110))&& network === 'PS.eu'&& level === '6'&& effmu === 'B'&& isNormal) {
     return {
-      score: 71
+      score: 71,
+      color: "black", ruleString: "(FromTo(45,110))&& network === 'PS.eu'&& level === '6'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(45,110))&& network === 'GG'&& level === '6'&& effmu === 'B'&& isNormal) {
     return {
-      score: 71
+      score: 71,
+      color: "black", ruleString: "(FromTo(45,110))&& network === 'GG'&& level === '6'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(45,110))&& network === 'PS.eu'&& level === '6'&& effmu === 'C'&& isNormal) {
     return {
-      score: 70
+      score: 70,
+      color: "black", ruleString: "(FromTo(45,110))&& network === 'PS.eu'&& level === '6'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(45,110))&& network === 'GG'&& level === '6'&& effmu === 'C'&& isNormal) {
     return {
-      score: 70
+      score: 70,
+      color: "black", ruleString: "(FromTo(45,110))&& network === 'GG'&& level === '6'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(45,110))&& network === 'PS.eu'&& level === '5'&& effmu === 'A'&& isNormal) {
     return {
-      score: 71
+      score: 71,
+      color: "black", ruleString: "(FromTo(45,110))&& network === 'PS.eu'&& level === '5'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(45,110))&& network === 'GG'&& level === '5'&& effmu === 'A'&& isNormal) {
     return {
-      score: 71
+      score: 71,
+      color: "black", ruleString: "(FromTo(45,110))&& network === 'GG'&& level === '5'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(45,110))&& network === 'PS.eu'&& level === '5'&& effmu === 'B'&& isNormal) {
     return {
-      score: 70
+      score: 70,
+      color: "black", ruleString: "(FromTo(45,110))&& network === 'PS.eu'&& level === '5'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(45,110))&& network === 'GG'&& level === '5'&& effmu === 'B'&& isNormal) {
     return {
-      score: 70
+      score: 70,
+      color: "black", ruleString: "(FromTo(45,110))&& network === 'GG'&& level === '5'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(34,60))&& network === 'PS.eu'&& level === '5'&& effmu === 'C'&& isNormal) {
     return {
-      score: 69
+      score: 69,
+      color: "black", ruleString: "(FromTo(34,60))&& network === 'PS.eu'&& level === '5'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(34,60))&& network === 'GG'&& level === '5'&& effmu === 'C'&& isNormal) {
     return {
-      score: 69
+      score: 69,
+      color: "black", ruleString: "(FromTo(34,60))&& network === 'GG'&& level === '5'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(45,110))&& network === 'PS.eu'&& level === '4'&& effmu === 'A'&& isNormal) {
     return {
-      score: 70
+      score: 70,
+      color: "black", ruleString: "(FromTo(45,110))&& network === 'PS.eu'&& level === '4'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(45,110))&& network === 'GG'&& level === '4'&& effmu === 'A'&& isNormal) {
     return {
-      score: 70
+      score: 70,
+      color: "black", ruleString: "(FromTo(45,110))&& network === 'GG'&& level === '4'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(45,60))&& network === 'PS.eu'&& level === '4'&& effmu === 'B'&& isNormal) {
     return {
-      score: 69
+      score: 69,
+      color: "black", ruleString: "(FromTo(45,60))&& network === 'PS.eu'&& level === '4'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(45,60))&& network === 'GG'&& level === '4'&& effmu === 'B'&& isNormal) {
     return {
-      score: 69
+      score: 69,
+      color: "black", ruleString: "(FromTo(45,60))&& network === 'GG'&& level === '4'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(34,60))&& network === 'PS.eu'&& level === '4'&& effmu === 'C'&& isNormal) {
     return {
-      score: 68
+      score: 68,
+      color: "black", ruleString: "(FromTo(34,60))&& network === 'PS.eu'&& level === '4'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(34,60))&& network === 'GG'&& level === '4'&& effmu === 'C'&& isNormal) {
     return {
-      score: 68
+      score: 68,
+      color: "black", ruleString: "(FromTo(34,60))&& network === 'GG'&& level === '4'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(34,60))&& network === 'PS.eu'&& level === '3'&& effmu === 'A'&& isNormal) {
     return {
-      score: 69
+      score: 69,
+      color: "black", ruleString: "(FromTo(34,60))&& network === 'PS.eu'&& level === '3'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(34,60))&& network === 'GG'&& level === '3'&& effmu === 'A'&& isNormal) {
     return {
-      score: 69
+      score: 69,
+      color: "black", ruleString: "(FromTo(34,60))&& network === 'GG'&& level === '3'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(34,60))&& network === 'PS.eu'&& level === '3'&& effmu === 'B'&& isNormal) {
     return {
-      score: 68
+      score: 68,
+      color: "black", ruleString: "(FromTo(34,60))&& network === 'PS.eu'&& level === '3'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(34,60))&& network === 'GG'&& level === '3'&& effmu === 'B'&& isNormal) {
     return {
-      score: 68
+      score: 68,
+      color: "black", ruleString: "(FromTo(34,60))&& network === 'GG'&& level === '3'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(23,45))&& network === 'PS.eu'&& level === '3'&& effmu === 'C'&& isNormal) {
     return {
-      score: 67
+      score: 67,
+      color: "black", ruleString: "(FromTo(23,45))&& network === 'PS.eu'&& level === '3'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(23,45))&& network === 'GG'&& level === '3'&& effmu === 'C'&& isNormal) {
     return {
-      score: 67
+      score: 67,
+      color: "black", ruleString: "(FromTo(23,45))&& network === 'GG'&& level === '3'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(23,45))&& network === 'PS.eu'&& level === '2'&& effmu === 'A'&& isNormal) {
     return {
-      score: 68
+      score: 68,
+      color: "black", ruleString: "(FromTo(23,45))&& network === 'PS.eu'&& level === '2'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(23,45))&& network === 'GG'&& level === '2'&& effmu === 'A'&& isNormal) {
     return {
-      score: 68
+      score: 68,
+      color: "black", ruleString: "(FromTo(23,45))&& network === 'GG'&& level === '2'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(23,35))&& network === 'PS.eu'&& level === '2'&& effmu === 'B'&& isNormal) {
     return {
-      score: 67
+      score: 67,
+      color: "black", ruleString: "(FromTo(23,35))&& network === 'PS.eu'&& level === '2'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(23,35))&& network === 'GG'&& level === '2'&& effmu === 'B'&& isNormal) {
     return {
-      score: 67
+      score: 67,
+      color: "black", ruleString: "(FromTo(23,35))&& network === 'GG'&& level === '2'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(12,24))&& network === 'PS.eu'&& level === '2'&& effmu === 'C'&& isNormal) {
     return {
-      score: 64
+      score: 64,
+      color: "black", ruleString: "(FromTo(12,24))&& network === 'PS.eu'&& level === '2'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(12,24))&& network === 'GG'&& level === '2'&& effmu === 'C'&& isNormal) {
     return {
-      score: 64
+      score: 64,
+      color: "black", ruleString: "(FromTo(12,24))&& network === 'GG'&& level === '2'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(23,34))&& network === 'PS.eu'&& level === '1'&& effmu === 'A'&& isNormal) {
     return {
-      score: 66
+      score: 66,
+      color: "black", ruleString: "(FromTo(23,34))&& network === 'PS.eu'&& level === '1'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(23,34))&& network === 'GG'&& level === '1'&& effmu === 'A'&& isNormal) {
     return {
-      score: 66
+      score: 66,
+      color: "black", ruleString: "(FromTo(23,34))&& network === 'GG'&& level === '1'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(12,23))&& network === 'PS.eu'&& level === '1'&& effmu === 'B'&& isNormal) {
     return {
-      score: 64
+      score: 64,
+      color: "black", ruleString: "(FromTo(12,23))&& network === 'PS.eu'&& level === '1'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(12,23))&& network === 'GG'&& level === '1'&& effmu === 'B'&& isNormal) {
     return {
-      score: 64
+      score: 64,
+      color: "black", ruleString: "(FromTo(12,23))&& network === 'GG'&& level === '1'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(12,23))&& network === 'PS.eu'&& level === '1'&& effmu === 'C'&& isNormal) {
     return {
-      score: 62
+      score: 62,
+      color: "black", ruleString: "(FromTo(12,23))&& network === 'PS.eu'&& level === '1'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(12,23))&& network === 'GG'&& level === '1'&& effmu === 'C'&& isNormal) {
     return {
-      score: 62
+      score: 62,
+      color: "black", ruleString: "(FromTo(12,23))&& network === 'GG'&& level === '1'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(12,23))&& network === 'PS.eu'&& level === '0'&& effmu === 'A'&& isNormal) {
     return {
-      score: 62
+      score: 62,
+      color: "black", ruleString: "(FromTo(12,23))&& network === 'PS.eu'&& level === '0'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(12,23))&& network === 'GG'&& level === '0'&& effmu === 'A'&& isNormal) {
     return {
-      score: 62
+      score: 62,
+      color: "black", ruleString: "(FromTo(12,23))&& network === 'GG'&& level === '0'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(12,23))&& network === 'PS.eu'&& level === '0'&& effmu === 'B'&& isNormal) {
     return {
-      score: 61
+      score: 61,
+      color: "black", ruleString: "(FromTo(12,23))&& network === 'PS.eu'&& level === '0'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(12,23))&& network === 'GG'&& level === '0'&& effmu === 'B'&& isNormal) {
     return {
-      score: 61
+      score: 61,
+      color: "black", ruleString: "(FromTo(12,23))&& network === 'GG'&& level === '0'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(7,12))&& network === 'PS.eu'&& level === '0'&& effmu === 'C'&& isNormal) {
     return {
-      score: 60
+      score: 60,
+      color: "black", ruleString: "(FromTo(7,12))&& network === 'PS.eu'&& level === '0'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(7,12))&& network === 'GG'&& level === '0'&& effmu === 'C'&& isNormal) {
     return {
-      score: 60
+      score: 60,
+      color: "black", ruleString: "(FromTo(7,12))&& network === 'GG'&& level === '0'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,2500))&& level === '15'&& effmu === 'A'&& isNormal) {
     return {
-      score: 86
+      score: 86,
+      color: "black", ruleString: "(FromTo(1,2500))&& level === '15'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,3000))&& level === '15'&& effmu === 'SuperA'&& isNormal) {
     return {
-      score: 87
+      score: 87,
+      color: "black", ruleString: "(FromTo(1,3000))&& level === '15'&& effmu === 'SuperA'&& isNormal"
     };
   };
 if((FromTo(1,500))&& level === '15'&& effmu === 'B'&& isNormal) {
     return {
-      score: 84
+      score: 84,
+      color: "black", ruleString: "(FromTo(1,500))&& level === '15'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(501,1100))&& level === '15'&& effmu === 'B'&& isNormal) {
     return {
-      score: 83
+      score: 83,
+      color: "black", ruleString: "(FromTo(501,1100))&& level === '15'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,215))&& level === '15'&& effmu === 'C'&& isNormal) {
     return {
-      score: 82
+      score: 82,
+      color: "black", ruleString: "(FromTo(1,215))&& level === '15'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(216,1100))&& level === '15'&& effmu === 'C'&& isNormal) {
     return {
-      score: 81
+      score: 81,
+      color: "black", ruleString: "(FromTo(216,1100))&& level === '15'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,170))&& level === '10'&& effmu === 'B'&& isNormal) {
     return {
-      score: 75
+      score: 75,
+      color: "black", ruleString: "(FromTo(1,170))&& level === '10'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,86))&& level === '10'&& effmu === 'C'&& isNormal) {
     return {
-      score: 75
+      score: 75,
+      color: "black", ruleString: "(FromTo(1,86))&& level === '10'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(87,120))&& level === '10'&& effmu === 'C'&& isNormal) {
     return {
-      score: 74
+      score: 74,
+      color: "black", ruleString: "(FromTo(87,120))&& level === '10'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(110,240))&& level === '17'&& effmu === 'B'&& isNormal&& !isKo) {
     return {
-      score: 77
+      score: 77,
+      color: "black", ruleString: "(FromTo(110,240))&& level === '17'&& effmu === 'B'&& isNormal&& !isKo"
     };
   };
 if((FromTo(1,150))&& level === '17'&& effmu === 'B'&& isNormal&& isKo) {
     return {
-      score: 83
+      score: 83,
+      color: "black", ruleString: "(FromTo(1,150))&& level === '17'&& effmu === 'B'&& isNormal&& isKo"
     };
   };
 if((FromTo(1,82))&& level === '17'&& effmu === 'B'&& isTurbo) {
     return {
-      score: 76
+      score: 76,
+      color: "black", ruleString: "(FromTo(1,82))&& level === '17'&& effmu === 'B'&& isTurbo"
     };
   };
 if((FromTo(1,82))&& level === '17'&& effmu === 'B'&& isSuperTurbo) {
     return {
-      score: 76
+      score: 76,
+      color: "black", ruleString: "(FromTo(1,82))&& level === '17'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(67,109))&& level === '17'&& effmu === 'B'&& isNormal&& !isKo) {
     return {
-      score: 78
+      score: 78,
+      color: "black", ruleString: "(FromTo(67,109))&& level === '17'&& effmu === 'B'&& isNormal&& !isKo"
     };
   };
 if((FromTo(1,66))&& level === '17'&& effmu === 'B'&& isNormal&& !isKo) {
     return {
-      score: 81
+      score: 81,
+      color: "black", ruleString: "(FromTo(1,66))&& level === '17'&& effmu === 'B'&& isNormal&& !isKo"
     };
   };
 if((FromTo(1,66))&& network === 'WPN'&& level === '16'&& effmu === 'B'&& isNormal) {
     return {
-      score: 81
+      score: 81,
+      color: "black", ruleString: "(FromTo(1,66))&& network === 'WPN'&& level === '16'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,150))&& network === 'WPN'&& level === '16'&& effmu === 'B'&& isNormal&& isKo) {
     return {
-      score: 83
+      score: 83,
+      color: "black", ruleString: "(FromTo(1,150))&& network === 'WPN'&& level === '16'&& effmu === 'B'&& isNormal&& isKo"
     };
   };
 if((FromTo(151,240))&& network === 'WPN'&& level === '16'&& effmu === 'B'&& isNormal&& isKo) {
     return {
-      score: 77
+      score: 77,
+      color: "black", ruleString: "(FromTo(151,240))&& network === 'WPN'&& level === '16'&& effmu === 'B'&& isNormal&& isKo"
     };
   };
 if((FromTo(151,240))&& level === '17'&& effmu === 'B'&& isNormal&& isKo) {
     return {
-      score: 77
+      score: 77,
+      color: "black", ruleString: "(FromTo(151,240))&& level === '17'&& effmu === 'B'&& isNormal&& isKo"
     };
   };
 if((FromTo(1,109))&& network === 'WNMX'&& level === '12'&& effmu === 'B'&& isNormal) {
     return {
-      score: 78
+      score: 78,
+      color: "black", ruleString: "(FromTo(1,109))&& network === 'WNMX'&& level === '12'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(110,250))&& network === 'WNMX'&& level === '9'&& effmu === 'A'&& isNormal) {
     return {
-      score: 73
+      score: 73,
+      color: "black", ruleString: "(FromTo(110,250))&& network === 'WNMX'&& level === '9'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,86))&& network === 'WNMX'&& level === '9'&& effmu === 'B'&& isNormal) {
     return {
-      score: 73
+      score: 73,
+      color: "black", ruleString: "(FromTo(1,86))&& network === 'WNMX'&& level === '9'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,60))&& network === 'WNMX'&& level === '9'&& effmu === 'C'&& isNormal) {
     return {
-      score: 72
+      score: 72,
+      color: "black", ruleString: "(FromTo(1,60))&& network === 'WNMX'&& level === '9'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(110,250))&& network === 'WNMX'&& level === '10'&& effmu === 'A'&& isNormal) {
     return {
-      score: 74
+      score: 74,
+      color: "black", ruleString: "(FromTo(110,250))&& network === 'WNMX'&& level === '10'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(110,250))&& network === 'WNMX'&& level === '10'&& effmu === 'B'&& isNormal) {
     return {
-      score: 72
+      score: 72,
+      color: "black", ruleString: "(FromTo(110,250))&& network === 'WNMX'&& level === '10'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(110,250))&& network === 'WNMX'&& level === '10'&& effmu === 'C'&& isNormal) {
     return {
-      score: 72
+      score: 72,
+      color: "black", ruleString: "(FromTo(110,250))&& network === 'WNMX'&& level === '10'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(110,250))&& network === 'WNMX'&& level === '11'&& effmu === 'A'&& isNormal) {
     return {
-      score: 75
+      score: 75,
+      color: "black", ruleString: "(FromTo(110,250))&& network === 'WNMX'&& level === '11'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(110,250))&& network === 'WNMX'&& level === '11'&& effmu === 'B'&& isNormal) {
     return {
-      score: 74
+      score: 74,
+      color: "black", ruleString: "(FromTo(110,250))&& network === 'WNMX'&& level === '11'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(110,250))&& network === 'WNMX'&& level === '11'&& effmu === 'C'&& isNormal) {
     return {
-      score: 74
+      score: 74,
+      color: "black", ruleString: "(FromTo(110,250))&& network === 'WNMX'&& level === '11'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(110,250))&& network === 'WNMX'&& level === '12'&& effmu === 'A'&& isNormal) {
     return {
-      score: 75
+      score: 75,
+      color: "black", ruleString: "(FromTo(110,250))&& network === 'WNMX'&& level === '12'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(110,250))&& network === 'WNMX'&& level === '12'&& effmu === 'B'&& isNormal) {
     return {
-      score: 75
+      score: 75,
+      color: "black", ruleString: "(FromTo(110,250))&& network === 'WNMX'&& level === '12'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(110,250))&& network === 'WNMX'&& level === '12'&& effmu === 'C'&& isNormal) {
     return {
-      score: 74
+      score: 74,
+      color: "black", ruleString: "(FromTo(110,250))&& network === 'WNMX'&& level === '12'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(215,270))&& network === 'WNMX'&& level === '13'&& effmu === 'A'&& isNormal) {
     return {
-      score: 79
+      score: 79,
+      color: "black", ruleString: "(FromTo(215,270))&& network === 'WNMX'&& level === '13'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(215,270))&& network === 'WNMX'&& level === '13'&& effmu === 'B'&& isNormal) {
     return {
-      score: 79
+      score: 79,
+      color: "black", ruleString: "(FromTo(215,270))&& network === 'WNMX'&& level === '13'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(110,270))&& network === 'WNMX'&& level === '13'&& effmu === 'C'&& isNormal) {
     return {
-      score: 77
+      score: 77,
+      color: "black", ruleString: "(FromTo(110,270))&& network === 'WNMX'&& level === '13'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,500))&& network === 'WNMX'&& level === '14'&& effmu === 'A'&& isNormal) {
     return {
-      score: 82
+      score: 82,
+      color: "black", ruleString: "(FromTo(1,500))&& network === 'WNMX'&& level === '14'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(215,270))&& network === 'WNMX'&& level === '14'&& effmu === 'B'&& isNormal) {
     return {
-      score: 79
+      score: 79,
+      color: "black", ruleString: "(FromTo(215,270))&& network === 'WNMX'&& level === '14'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(215,270))&& network === 'WNMX'&& level === '14'&& effmu === 'C'&& isNormal) {
     return {
-      score: 78
+      score: 78,
+      color: "black", ruleString: "(FromTo(215,270))&& network === 'WNMX'&& level === '14'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,60))&& network === 'WNMX'&& level === '7'&& effmu === 'A'&& isNormal) {
     return {
-      score: 72
+      score: 72,
+      color: "black", ruleString: "(FromTo(1,60))&& network === 'WNMX'&& level === '7'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(1,60))&& network === 'WNMX'&& level === '7'&& effmu === 'B'&& isNormal) {
     return {
-      score: 71
+      score: 71,
+      color: "black", ruleString: "(FromTo(1,60))&& network === 'WNMX'&& level === '7'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,60))&& network === 'WNMX'&& level === '7'&& effmu === 'C'&& isNormal) {
     return {
-      score: 70
+      score: 70,
+      color: "black", ruleString: "(FromTo(1,60))&& network === 'WNMX'&& level === '7'&& effmu === 'C'&& isNormal"
     };
   };
 if((FromTo(1,60))&& network === 'WNMX'&& level === '8'&& effmu === 'B'&& isNormal) {
     return {
-      score: 72
+      score: 72,
+      color: "black", ruleString: "(FromTo(1,60))&& network === 'WNMX'&& level === '8'&& effmu === 'B'&& isNormal"
     };
   };
 if((FromTo(1,60))&& network === 'WNMX'&& level === '8'&& effmu === 'C'&& isNormal) {
     return {
-      score: 71
+      score: 71,
+      color: "black", ruleString: "(FromTo(1,60))&& network === 'WNMX'&& level === '8'&& effmu === 'C'&& isNormal"
     };
   };
 

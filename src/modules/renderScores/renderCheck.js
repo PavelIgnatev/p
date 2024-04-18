@@ -2,7 +2,7 @@ const fs = require("fs");
 
 function renderCheck(scores, scoreString) {
   const score = Number(scores[0].values[0]);
-  const { exceptions } = scores[0];
+  const { exceptions, color } = scores[0];
 
   return `if(${scoreString}) {
     return {
@@ -19,7 +19,8 @@ function renderCheck(scores, scoreString) {
               })
               .join("")} ${score}`
           : score
-      }
+      },
+      color: "${color}", ruleString: ${JSON.stringify(scoreString)}
     };
   };\n`;
 }

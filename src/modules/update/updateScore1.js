@@ -1,21 +1,21 @@
 const { readFile, writeFile } = require("../../utils/promisify");
-const { getTimeByMS } = require("../../helpers/getTimeByMS");
 const { getNetwork } = require("../../helpers/getNetwork");
 const { stopWordsPath } = require("../../constants");
 const { getScores } = require("../../helpers/getScores");
 const { getStatus } = require("../../helpers/getStatus");
+const { getSample } = require("../../utils/sample");
 
-function calculateAverageDifficulty(data) {
+function calculateAverageDifficulty(data, count) {
   const maxBet = Math.max(...Object.keys(data).map(Number));
+  const percent = count / 100;
 
   const result = {};
 
   for (let i = 1; i <= maxBet; i++) {
     let count = 0;
     let sum = 0;
-
-    const minBet = i * 0.7;
-    const maxPotentialBet = i * 1.3;
+    const minBet = i * (1 - percent);
+    const maxPotentialBet = i * (1 + percent);
 
     for (const key in data) {
       const bet = parseInt(key);
@@ -113,28 +113,39 @@ const updateScore1 = async () => {
     await writeFile("src/store/score1/score1.json", JSON.stringify(obj));
 
     const evObj = {};
-    Object.values(scores).slice(0, 30).forEach((networks) => {
-      Object.keys(networks).forEach((networkName) => {
-        networks[networkName].forEach((tournament) => {
-          const score = tournament["score"];
-          const network = getNetwork(networkName);
-          const bid = Math.ceil(Number(tournament["Buy_In"]))
-          const status = getStatus({ ...tournament, '@name': tournament.Flags, '@flags': tournament.Flags, "@network": tournament.Network })
+    Object.values(scores)
+      .slice(0, 30)
+      .forEach((networks) => {
+        Object.keys(networks).forEach((networkName) => {
+          networks[networkName].forEach((tournament) => {
+            const score = tournament["score"];
+            const network = getNetwork(networkName);
+            const bid = Math.ceil(Number(tournament["Buy_In"]));
+            const status = getStatus({
+              ...tournament,
+              "@name": tournament.Name,
+              "@flags": tournament.Flags,
+              "@network": tournament.Network,
+            });
 
+            if (
+              !network ||
+              !bid ||
+              !status ||
+              network === "IP" ||
+              network === "Party"
+            ) {
+              return;
+            }
 
-          if (!network || !bid || !status || network === "IP" || network === "Party") {
-            return;
-          }
+            if (!evObj) evObj = {};
+            if (!evObj[status]) evObj[status] = {};
+            if (!evObj[status][bid]) evObj[status][bid] = [];
 
-          if (!evObj) evObj = {};
-          if (!evObj[status]) evObj[status] = {};
-          if (!evObj[status][bid]) evObj[status][bid] = []
-
-          if (score) evObj[status][bid].push(score)
+            if (score) evObj[status][bid].push(score);
+          });
         });
       });
-    });
-
 
     Object.keys(evObj).forEach((status) => {
       Object.keys(evObj[status]).forEach((bid) => {
@@ -147,12 +158,17 @@ const updateScore1 = async () => {
       });
     });
 
-    await writeFile("src/store/evscore/prev_evscore.json", JSON.stringify(evObj));
+    await writeFile(
+      "src/store/evscore/prev_evscore.json",
+      JSON.stringify(evObj)
+    );
+
+    const sample = await getSample();
+    const { count = 0 } = sample || { count: 0 };
 
     Object.keys(evObj).forEach((status) => {
-      evObj[status] = calculateAverageDifficulty(evObj[status])
+      evObj[status] = calculateAverageDifficulty(evObj[status], count);
     });
-
 
     await writeFile("src/store/evscore/evscore.json", JSON.stringify(evObj));
   } catch (error) {

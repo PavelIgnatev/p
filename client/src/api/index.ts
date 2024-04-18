@@ -38,6 +38,9 @@ class Api extends ConfigApi {
   async postScores(scores: scoresModel[]) {
     return await axios.post(`/api/scores`, { scores });
   }
+  async postColors(colors: number[]) {
+    return await axios.post(`/api/colors`, { colors });
+  }
   async patchRules(rules: rulesModel[], offpeak: boolean) {
     return await axios.patch(`/api/rules`, { rules, offpeak });
   }

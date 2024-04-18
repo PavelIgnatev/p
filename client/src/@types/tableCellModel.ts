@@ -24,6 +24,7 @@ export interface tableCellModel {
   "@prizepool": string | number;
   "@ko"?: boolean;
   "@duration": string;
+  "@evscore": number | undefined;
   "@timezone": string | undefined;
   "@level": string;
   "@status": string;

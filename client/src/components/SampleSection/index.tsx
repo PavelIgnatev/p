@@ -1,19 +1,19 @@
 import b_ from "b_";
 import { useStore } from "effector-react";
-import { $sample, handleChangeSample, postSample } from "../../store/Sample";
+import { $sample, handleChangeSample, postSample } from "../../store/PercentScore3";
 import { BaseButton } from "../BaseButton";
 import { BaseInputNumber } from "../BaseInputNumber";
 
 import "./index.scss";
 
-export const b = b_.with("sample-section");
+export const b = b_.with("percent-section");
 
-export const SampleSection = () => {
+export const PercentSection = () => {
   const sample = useStore($sample);
 
   return (
     <section className={b()}>
-      <h2 className={b("title")}>Sample:</h2>
+      <h2 className={b("title")}>Percent (to calculate the average score):</h2>
       <div className={b("wrapper")}>
         <BaseInputNumber
           value={sample}
