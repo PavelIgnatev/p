@@ -153,7 +153,8 @@ export const $filtredTableState = $tableState.map((tournaments) => {
     const duration =
       info?.["duration"] !== "NaN:NaN:NaN" ? info?.["duration"] : "-";
 
-    const evscore = evScore?.[status]?.[Math.round(Number(stake))] || 0;
+    const evscore =
+      evScore?.[status]?.[Math.round(Number(stake) + Number(rake))] || 0;
     const sat = isSat(tournament);
 
     console.log(tournament["@name"], status, Math.round(Number(stake)));
@@ -310,10 +311,10 @@ export const $filtredTableState = $tableState.map((tournaments) => {
       color = "#74ce74";
     }
     if (numForGreen <= diff && diff < numForOrange) {
-      color = "#ffa90c";
+      color = "yellow";
     }
     if (numForOrange <= diff && diff < numForYellow) {
-      color = "yellow";
+      color = "#ffa90c";
     }
     if (score === "-" || !tournament["@evscore"]) {
       color = "rgb(238, 236, 255)";
