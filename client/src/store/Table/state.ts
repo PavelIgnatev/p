@@ -153,8 +153,10 @@ export const $filtredTableState = $tableState.map((tournaments) => {
     const duration =
       info?.["duration"] !== "NaN:NaN:NaN" ? info?.["duration"] : "-";
 
-    const evscore = evScore?.[status]?.[String(Math.round(Number(bid)))] || 0;
+    const evscore = evScore?.[status]?.[Math.round(Number(stake))] || 0;
     const sat = isSat(tournament);
+
+    console.log(tournament["@name"], status, Math.round(Number(stake)));
 
     //Фикс гарантии для WPN и 888Poker и Chiko
     if (network === "WPN" || network === "888" || network === "Chico") {
@@ -300,24 +302,23 @@ export const $filtredTableState = $tableState.map((tournaments) => {
       Number(!score || score === "-" ? 100 : score) -
       Number(tournament["@evscore"] || 100);
     const numForGreen = colors?.[1] || 0;
-    const numForOrange= colors?.[2] || 0;
-    const numForYellow = colors?.[3] || 0
+    const numForOrange = colors?.[2] || 0;
+    const numForYellow = colors?.[3] || 0;
 
-    let color = '#fd6767'
-    if(-100 <= diff && diff < numForGreen) {
-      color = '#74ce74'
+    let color = "#fd6767";
+    if (-100 <= diff && diff < numForGreen) {
+      color = "#74ce74";
     }
-     if (numForGreen <= diff && diff < numForOrange) {
-      color = '#ffa90c'
-    } 
-     if  (numForOrange <= diff && diff < numForYellow) {
-      color = 'yellow'
-    } 
-     if(score === '-' || !tournament['@evscore']) {
-      color = 'rgb(238, 236, 255)'
+    if (numForGreen <= diff && diff < numForOrange) {
+      color = "#ffa90c";
+    }
+    if (numForOrange <= diff && diff < numForYellow) {
+      color = "yellow";
+    }
+    if (score === "-" || !tournament["@evscore"]) {
+      color = "rgb(238, 236, 255)";
     }
 
-    console.log(diff, score === '-' || !tournament['@evscore'],  tournament['@name'], colors?.[1], colors?.[2], colors?.[3]);
     return {
       ...tournament,
       color,

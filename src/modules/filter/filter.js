@@ -13578,6 +13578,9 @@ if((FromToGt(200,250,300000))&& network === 'WNMX'&& level === '11'&& effmu === 
 if((BidGt(50,75000))&& network === 'PS.es'&& level === '7'&& effmu === 'B'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 75000, color: "blue", ruleString: "(BidGt(50,75000))&& network === 'PS.es'&& level === '7'&& effmu === 'B'&& isNormal&& !isKo"};
   };
+if((FromTo(0,1000))) {
+    return { valid: true, rules: true, guarantee: 1, color: "blue", ruleString: "(FromTo(0,1000))"};
+  };
 if((BidGt(16.5,50000))&& network === 'PS.eu'&& level === '1'&& effmu === 'A'&& isTurbo&& isKo) {
     return { valid: true, rules: true, guarantee: 50000, color: "red", ruleString: "(BidGt(16.5,50000))&& network === 'PS.eu'&& level === '1'&& effmu === 'A'&& isTurbo&& isKo"};
   };

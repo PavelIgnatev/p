@@ -120,7 +120,7 @@ const updateScore1 = async () => {
           networks[networkName].forEach((tournament) => {
             const score = tournament["score"];
             const network = getNetwork(networkName);
-            const bid = Math.ceil(Number(tournament["Buy_In"]));
+            const bid = Math.round(Number(tournament["Buy_In"]));
             const status = getStatus({
               ...tournament,
               "@name": tournament.Name,
