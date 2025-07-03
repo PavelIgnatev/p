@@ -8,12 +8,28 @@
 
 .menu {
   width: 100%;
-  padding: 30px 50px;
+  padding: 30px;
   background: var(--background-secondary);
   border-radius: 20px;
   display: flex;
   justify-content: space-between;
   transition: background-color 0.3s ease;
+
+  :global {
+    .select__control--is-focused,
+    .select__control--menu-is-open {
+      .select__single-value {
+        color: #fff !important;
+      }
+    }
+
+    .select__menu {
+      .select__option--is-focused,
+      .select__option--is-selected {
+        color: #fff !important;
+      }
+    }
+  }
 }
 
 .content {
@@ -40,6 +56,10 @@
   color: var(--text-secondary);
   display: flex;
   transition: color 0.3s ease;
+
+  [data-theme="dark"] & {
+    color: #fff;
+  }
 }
 
 .checkboxWrapper {
@@ -90,7 +110,9 @@
   width: 50px;
   height: 38px;
   text-align: center;
-  font-weight: 600;
+  font-weight: 400 !important;
+  background-color: var(--background-main);
+  color: var(--text-color);
 }
 
 .button {
@@ -116,11 +138,14 @@
   width: 32px;
   height: 32px;
   filter: brightness(1);
-  transition: filter 0.3s ease;
+  transition: all 0.3s ease;
+  border-radius: 50%;
+
 }
 
 [data-theme="dark"] .profileImage {
-  filter: brightness(1.2) contrast(1.1);
+  filter: brightness(1.4) contrast(1.2);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
 }
 
 .alias {
@@ -128,6 +153,10 @@
   font-size: 18px;
   color: var(--text-color);
   transition: color 0.3s ease;
+
+  p {
+    margin: 0;
+  }
 }
 
 .dot {
@@ -143,11 +172,11 @@
 .userInfo {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 20px;
 }
 
 .info {
-  margin-top: 10px;
+  margin: 10px 0;
   padding: 0 50px;
   width: 100%;
   display: flex;
@@ -169,12 +198,12 @@
 
 .themeSwitch {
   margin-right: 8px;
-  
+
   &:focus {
     outline: none !important;
     box-shadow: none !important;
   }
-  
+
   * {
     &:focus {
       outline: none !important;
@@ -193,6 +222,13 @@
   height: 26px;
   border-radius: 20px;
   transition: background-color 0.3s ease;
+}
+
+.mail {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 18px;
 }
 
 /* Мобильная адаптация */
@@ -238,6 +274,7 @@
   .inputTime {
     width: 45px;
     height: 36px;
+    font-weight: 400 !important;
   }
 
   .button {
@@ -304,6 +341,7 @@
   .inputTime {
     width: 40px;
     height: 32px;
+    font-weight: 400 !important;
   }
 
   .button {
@@ -335,5 +373,3 @@
     font-size: 13px;
   }
 }
-
-

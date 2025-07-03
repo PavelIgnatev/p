@@ -2,6 +2,9 @@
 .section {
   width: 100%;
   position: relative;
+  min-height: 500px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
 }
 
 /* Основная таблица */
@@ -9,6 +12,8 @@
   width: 100%;
   border-collapse: collapse;
   table-layout: fixed;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
   min-width: 1000px; /* Минимальная ширина для предотвращения сжатия */
   background: white;
   border-radius: 8px;
@@ -22,21 +27,21 @@
   /* Скрыть скроллбары на мобильных */
   scrollbar-width: thin;
   scrollbar-color: rgba(0, 0, 0, 0.3) transparent;
-  
+
   &::-webkit-scrollbar {
     width: 8px;
     height: 8px;
   }
-  
+
   &::-webkit-scrollbar-track {
     background: transparent;
   }
-  
+
   &::-webkit-scrollbar-thumb {
     background: rgba(0, 0, 0, 0.3);
     border-radius: 4px;
   }
-  
+
   &::-webkit-scrollbar-thumb:hover {
     background: rgba(0, 0, 0, 0.5);
   }
@@ -81,7 +86,7 @@
   /* Стрелки сортировки */
   &::before,
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     top: 50%;
     right: 8px;
@@ -123,7 +128,7 @@
   /* Отключенная сортировка */
   &.thDisable {
     cursor: default;
-    
+
     &::before,
     &::after {
       display: none;
@@ -164,6 +169,7 @@
   word-wrap: break-word;
   overflow: hidden;
   text-overflow: ellipsis;
+  position: relative;
 }
 
 /* Скругления последней строки */
@@ -179,52 +185,72 @@
 
 /* Ширины колонок */
 .table th:nth-child(1),
-.table td:nth-child(1) { width: 140px; } /* Start */
+.table td:nth-child(1) {
+  width: 140px;
+} /* Start */
 
 .table th:nth-child(2),
-.table td:nth-child(2) { width: 100px; } /* Late Reg */
+.table td:nth-child(2) {
+  width: 100px;
+} /* Late Reg */
 
 .table th:nth-child(3),
-.table td:nth-child(3) { width: 80px; } /* Network */
+.table td:nth-child(3) {
+  width: 80px;
+} /* Network */
 
 .table th:nth-child(4),
-.table td:nth-child(4) { width: 280px; } /* Name */
+.table td:nth-child(4) {
+  width: 280px;
+} /* Name */
 
 .table th:nth-child(5),
-.table td:nth-child(5) { width: 90px; } /* Buy-in */
+.table td:nth-child(5) {
+  width: 90px;
+} /* Buy-in */
 
 .table th:nth-child(6),
-.table td:nth-child(6) { width: 100px; } /* Guarantee */
+.table td:nth-child(6) {
+  width: 100px;
+} /* Guarantee */
 
 .table th:nth-child(7),
-.table td:nth-child(7) { width: 70px; } /* Score */
+.table td:nth-child(7) {
+  width: 70px;
+} /* Score */
 
 .table th:nth-child(8),
-.table td:nth-child(8) { width: 70px; } /* Score2 */
+.table td:nth-child(8) {
+  width: 70px;
+} /* Score2 */
 
 .table th:nth-child(9),
-.table td:nth-child(9) { width: 80px; } /* Duration */
+.table td:nth-child(9) {
+  width: 80px;
+} /* Duration */
 
 .table th:nth-child(10),
-.table td:nth-child(10) { width: 50px; } /* Action */
+.table td:nth-child(10) {
+  width: 50px;
+} /* Action */
 
 /* Мобильная адаптация */
 @media (max-width: 768px) {
   .section {
     padding: 0 10px 20px;
   }
-  
+
   .table {
     font-size: 12px;
     min-width: 800px; /* Уменьшенная минимальная ширина для мобильных */
   }
-  
+
   .thead .th {
     font-size: 11px;
     padding: 8px 4px;
     height: 40px;
   }
-  
+
   .tbody .td {
     font-size: 10px;
     padding: 6px 4px;
@@ -232,34 +258,54 @@
 
   /* Адаптация ширин колонок для мобильных */
   .table th:nth-child(1),
-  .table td:nth-child(1) { width: 100px; } /* Start */
+  .table td:nth-child(1) {
+    width: 100px;
+  } /* Start */
 
   .table th:nth-child(2),
-  .table td:nth-child(2) { width: 80px; } /* Late Reg */
+  .table td:nth-child(2) {
+    width: 80px;
+  } /* Late Reg */
 
   .table th:nth-child(3),
-  .table td:nth-child(3) { width: 60px; } /* Network */
+  .table td:nth-child(3) {
+    width: 60px;
+  } /* Network */
 
   .table th:nth-child(4),
-  .table td:nth-child(4) { width: 200px; } /* Name */
+  .table td:nth-child(4) {
+    width: 200px;
+  } /* Name */
 
   .table th:nth-child(5),
-  .table td:nth-child(5) { width: 70px; } /* Buy-in */
+  .table td:nth-child(5) {
+    width: 70px;
+  } /* Buy-in */
 
   .table th:nth-child(6),
-  .table td:nth-child(6) { width: 80px; } /* Guarantee */
+  .table td:nth-child(6) {
+    width: 80px;
+  } /* Guarantee */
 
   .table th:nth-child(7),
-  .table td:nth-child(7) { width: 50px; } /* Score */
+  .table td:nth-child(7) {
+    width: 50px;
+  } /* Score */
 
   .table th:nth-child(8),
-  .table td:nth-child(8) { width: 50px; } /* Score2 */
+  .table td:nth-child(8) {
+    width: 50px;
+  } /* Score2 */
 
   .table th:nth-child(9),
-  .table td:nth-child(9) { width: 60px; } /* Duration */
+  .table td:nth-child(9) {
+    width: 60px;
+  } /* Duration */
 
   .table th:nth-child(10),
-  .table td:nth-child(10) { width: 40px; } /* Action */
+  .table td:nth-child(10) {
+    width: 40px;
+  } /* Action */
 }
 
 @media (max-width: 480px) {
@@ -276,7 +322,7 @@
     padding: 6px 2px;
     height: 36px;
   }
-  
+
   .tbody .td {
     font-size: 9px;
     padding: 4px 2px;
@@ -284,34 +330,54 @@
 
   /* Еще более компактные колонки */
   .table th:nth-child(1),
-  .table td:nth-child(1) { width: 90px; }
+  .table td:nth-child(1) {
+    width: 90px;
+  }
 
   .table th:nth-child(2),
-  .table td:nth-child(2) { width: 70px; }
+  .table td:nth-child(2) {
+    width: 70px;
+  }
 
   .table th:nth-child(3),
-  .table td:nth-child(3) { width: 50px; }
+  .table td:nth-child(3) {
+    width: 50px;
+  }
 
   .table th:nth-child(4),
-  .table td:nth-child(4) { width: 180px; }
+  .table td:nth-child(4) {
+    width: 180px;
+  }
 
   .table th:nth-child(5),
-  .table td:nth-child(5) { width: 60px; }
+  .table td:nth-child(5) {
+    width: 60px;
+  }
 
   .table th:nth-child(6),
-  .table td:nth-child(6) { width: 70px; }
+  .table td:nth-child(6) {
+    width: 70px;
+  }
 
   .table th:nth-child(7),
-  .table td:nth-child(7) { width: 45px; }
+  .table td:nth-child(7) {
+    width: 45px;
+  }
 
   .table th:nth-child(8),
-  .table td:nth-child(8) { width: 45px; }
+  .table td:nth-child(8) {
+    width: 45px;
+  }
 
   .table th:nth-child(9),
-  .table td:nth-child(9) { width: 50px; }
+  .table td:nth-child(9) {
+    width: 50px;
+  }
 
   .table th:nth-child(10),
-  .table td:nth-child(10) { width: 35px; }
+  .table td:nth-child(10) {
+    width: 35px;
+  }
 }
 
 /* Темная тема */
@@ -323,11 +389,11 @@
   .thead {
     background: rgb(40, 70, 115);
   }
-  
+
   .thead .th {
     background: rgb(40, 70, 115);
   }
-  
+
   .tbody .tr:nth-child(even) .td {
     background: #2a2a3e;
   }
@@ -335,7 +401,7 @@
   .tbody .tr:nth-child(odd) .td {
     background: #1f1f2e;
   }
-  
+
   .tbody .td {
     color: #e5e5e5;
   }

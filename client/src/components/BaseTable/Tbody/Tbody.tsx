@@ -2,6 +2,7 @@ import { Tooltip } from "antd";
 import { useStore } from "effector-react";
 import { FC, useMemo } from "react";
 import CrossIcon from "../../Icon/Cross";
+import { $theme } from "../../../store/Theme";
 
 import classes from "../BaseTable.module.scss";
 import { $prevData, setPrevData } from "./prevData";
@@ -16,6 +17,7 @@ type TbodyProps = {
 export const Tbody: FC<TbodyProps> = ({ data, sortedKey, isReverse }) => {
   const prevData = useStore($prevData);
   const percentScore3 = useStore($sample);
+  const theme = useStore($theme);
 
   const crossClickHandler = (item: any) => {
     const prevData = JSON.parse(localStorage.getItem("deletedItems") || "[]");
@@ -157,7 +159,7 @@ export const Tbody: FC<TbodyProps> = ({ data, sortedKey, isReverse }) => {
                 className={classes.td}
                 style={{ backgroundColor: item.color, marginBottom: "1px" }}
               >
-                <CrossIcon onClick={() => crossClickHandler(item)} />
+                <CrossIcon onClick={() => crossClickHandler(item)} theme={theme} />
               </td>
             </tr>
           );

@@ -1,8 +1,19 @@
 .checkbox {
   transition: 0.2s all ease-in-out;
+  cursor: pointer;
+  user-select: none;
+  color: var(--text-color);
+
+  &.selected {
+    color: #fff;
+  }
+}
+
+.checkbox {
   padding: 4px 8px;
   border-radius: 20px;
   margin: 0 2px;
+  color: black;
 }
 
 .selected {
