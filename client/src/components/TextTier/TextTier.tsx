@@ -321,14 +321,22 @@ export const TextTier = ({ levelAndEffmu }: any) => {
   };
 
   return (
-    <div style={{ height: "auto", minHeight: 100 }} className={classes.div}>
-        <div style={{ color: "black" }}>
-        {textTierOptions?.[levelAndEffmu]?.["main title"] ?? ""}
-      </div>
-      <div>{textTierOptions?.[levelAndEffmu]?.title ?? ""}</div>
-      <div className={classes.red}>
-        {textTierOptions?.[levelAndEffmu]?.subtitle ?? ""}
-      </div>
+    <div className={classes.div}>
+      {textTierOptions?.[levelAndEffmu]?.["main title"] && (
+        <div className={classes.mainTitle}>
+          {textTierOptions[levelAndEffmu]["main title"]}
+        </div>
+      )}
+      {textTierOptions?.[levelAndEffmu]?.title && (
+        <div className={classes.title}>
+          {textTierOptions[levelAndEffmu].title}
+        </div>
+      )}
+      {textTierOptions?.[levelAndEffmu]?.subtitle && (
+        <div className={classes.red}>
+          {textTierOptions[levelAndEffmu].subtitle}
+        </div>
+      )}
     </div>
   );
 };

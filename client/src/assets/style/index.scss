@@ -4,6 +4,7 @@
 
 :root {
   --primary-color: #4a72ff;
+  --primary-color-rgb: 74, 114, 255;
   --primary-hover: #3157de;
   --text-color: #333333;
   --text-secondary: #666666;
@@ -15,6 +16,7 @@
 
 [data-theme="dark"] {
   --primary-color: #6c8fff;
+  --primary-color-rgb: 108, 143, 255;
   --primary-hover: #8fa4ff;
   --text-color: #e0e0e0;
   --text-secondary: #b0b0b0;

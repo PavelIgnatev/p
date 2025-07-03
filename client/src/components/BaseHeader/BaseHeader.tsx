@@ -17,6 +17,7 @@ import { BaseButton } from "../BaseButton";
 import { fetchUserReposFx } from "../../store/Table";
 import { $config, getConfigRequest } from "../../store/Config";
 import { $theme, toggleTheme } from "../../store/Theme";
+import { ErrNot } from "../NotificationService";
 import profileSrc from "../../assets/icons/Profile.svg";
 
 import { Modal, ModalRef } from "../Modal";
@@ -46,6 +47,37 @@ export const BaseHeader: FC = () => {
   useEffect(() => {
     settingsModalRef.current?.open();
   }, []);
+
+  const handleGamesSearch = () => {
+    const settings = tournamentsSettings;
+
+    // Проверка network
+    if (!settings.network || settings.network.length === 0) {
+      ErrNot("Please select at least one network");
+      return;
+    }
+
+    // Проверка time
+    if (!settings.time) {
+      ErrNot("Please select a time range (Starts)");
+      return;
+    }
+
+    const formatLeftSelected = settings.KO || settings.freezout;
+    const formatRightSelected =
+      settings.normal || settings.turbo || settings.superTurbo;
+
+    console.log(formatLeftSelected, formatRightSelected);
+    if (!formatLeftSelected || !formatRightSelected) {
+      ErrNot(
+        "Please select format: at least one from the left (KO or Freezout) AND at least one from the right (Normal, Turbo or Super Turbo)"
+      );
+      return;
+    }
+
+    // Если все проверки прошли, вызываем запрос
+    fetchUserReposFx();
+  };
 
   return (
     <header className={classes.header}>
@@ -77,17 +109,38 @@ export const BaseHeader: FC = () => {
             offHandleColor="#ffffff"
             handleDiameter={24}
             uncheckedIcon={
-              <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100%' }}>
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#6b7280" strokeWidth="2">
-                  <circle cx="12" cy="12" r="5"/>
-                  <path d="M12 1v2m0 18v2M4.22 4.22l1.42 1.42m12.72 12.72l1.42 1.42M1 12h2m18 0h2M4.22 19.78l1.42-1.42m12.72-12.72l1.42-1.42"/>
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  height: "100%",
+                }}
+              >
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#6b7280"
+                  strokeWidth="2"
+                >
+                  <circle cx="12" cy="12" r="5" />
+                  <path d="M12 1v2m0 18v2M4.22 4.22l1.42 1.42m12.72 12.72l1.42 1.42M1 12h2m18 0h2M4.22 19.78l1.42-1.42m12.72-12.72l1.42-1.42" />
                 </svg>
               </div>
             }
             checkedIcon={
-              <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100%' }}>
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  height: "100%",
+                }}
+              >
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="#d1d5db">
-                  <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                  <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
                 </svg>
               </div>
             }
@@ -260,7 +313,7 @@ export const BaseHeader: FC = () => {
         <div className={classes.content}>
           <BaseButton
             disabled={loading}
-            onClick={fetchUserReposFx}
+            onClick={handleGamesSearch}
             className={classes.button}
           >
             Games search
