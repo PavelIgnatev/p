@@ -66,11 +66,9 @@ export const BaseHeader: FC = () => {
     const formatLeftSelected = settings.KO || settings.freezout;
     const formatRightSelected =
       settings.normal || settings.turbo || settings.superTurbo;
-
-    console.log(formatLeftSelected, formatRightSelected);
     if (!formatLeftSelected || !formatRightSelected) {
       ErrNot(
-        "Please select format: at least one from the left (KO or Freezout) AND at least one from the right (Normal, Turbo or Super Turbo)"
+        "Please select a format: at least one of KO or Freezout and at least one of Normal, Turbo or Super Turbo"
       );
       return;
     }

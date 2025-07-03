@@ -1,7 +1,18 @@
+import React from "react";
 import classes from "./TextTier.module.scss";
 
-export const TextTier = ({ levelAndEffmu }: any) => {
-  const textTierOptions: any = {
+interface TierOption {
+  title?: string;
+  subtitle?: string;
+  "main title"?: string;
+}
+
+interface TextTierProps {
+  levelAndEffmu: string;
+}
+
+export const TextTier: React.FC<TextTierProps> = ({ levelAndEffmu }) => {
+  const textTierOptions: Record<string, TierOption> = {
     AA: {
       title:
         "You may late register and/or re-enter if you will have: 50+ big blinds in KO's, 10+ big blinds in non-KO's with 1,500+ entrants, >40 or <15 big blinds in non-KO's with 1499- entrants",
@@ -320,23 +331,19 @@ export const TextTier = ({ levelAndEffmu }: any) => {
     },
   };
 
+  const option = textTierOptions[levelAndEffmu];
+
+  if (!option) {
+    return null;
+  }
+
   return (
     <div className={classes.div}>
-      {textTierOptions?.[levelAndEffmu]?.["main title"] && (
-        <div className={classes.mainTitle}>
-          {textTierOptions[levelAndEffmu]["main title"]}
-        </div>
+      {option["main title"] && (
+        <div className={classes.mainTitle}>{option["main title"]}</div>
       )}
-      {textTierOptions?.[levelAndEffmu]?.title && (
-        <div className={classes.title}>
-          {textTierOptions[levelAndEffmu].title}
-        </div>
-      )}
-      {textTierOptions?.[levelAndEffmu]?.subtitle && (
-        <div className={classes.red}>
-          {textTierOptions[levelAndEffmu].subtitle}
-        </div>
-      )}
+      {option.title && <div className={classes.title}>{option.title}</div>}
+      {option.subtitle && <div className={classes.red}>{option.subtitle}</div>}
     </div>
   );
 };

@@ -1,44 +1,76 @@
+/* Контейнер таблицы */
+.section {
+  width: 100%;
+  position: relative;
+  padding: 0 20px 40px;
+}
+
+/* Основная таблица */
 .table {
-  display: grid;
+  width: 100%;
   border-collapse: collapse;
-  min-width: 100%;
-  grid-template-columns:
-    minmax(150px, 1.5fr) minmax(100px, 1fr) minmax(100px, 1fr) minmax(200px, 2fr) minmax(100px, 1fr) minmax(100px, 1fr) minmax(100px, 1fr) minmax(100px, 1fr) minmax(100px, 1fr) minmax(50px, 0.5fr)
+  table-layout: fixed;
+  min-width: 1000px; /* Минимальная ширина для предотвращения сжатия */
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  /* Улучшения производительности */
+  will-change: scroll-position;
+  transform: translateZ(0);
+  /* Скрыть скроллбары на мобильных */
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 0, 0, 0.3) transparent;
+  
+  &::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  &::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+  }
+  
+  &::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.5);
+  }
 }
 
-.thead,
-.tbody,
-.tr {
-  display: contents;
-}
-
-.nodata {
-  flex: 1;
-  margin-top: 50px;
-  text-align: center;
-}
-
+/* Заголовок таблицы */
 .thead {
+  position: sticky;
+  top: 0; /* Крепится к верху viewport'а */
+  z-index: 100;
   background: rgb(57, 99, 162);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.thead .tr {
+  display: table-row;
 }
 
 .thead .th {
-  user-select: none;
-
-  cursor: pointer;
-  position: relative;
-  top: 90px;
-  position: sticky;
   background: rgb(57, 99, 162);
-  height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  border: 0px;
-  border-collapse: collapse;
   color: white;
+  font-weight: 600;
+  font-size: 14px;
+  height: 50px;
+  padding: 12px 8px;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  border: none;
+  position: relative;
 
+  /* Скругления углов */
   &:first-child {
     border-top-left-radius: 8px;
   }
@@ -47,123 +79,280 @@
     border-top-right-radius: 8px;
   }
 
-
+  /* Стрелки сортировки */
   &::before,
   &::after {
     content: '';
     position: absolute;
     top: 50%;
-    right: 12px;
-    border: 6px solid transparent;
+    right: 8px;
+    border: 4px solid transparent;
+    opacity: 0.6;
   }
 
   &::before {
-    border-bottom-color: #bdbdbd;
-    margin-top: -12px;
+    border-bottom-color: #ffffff;
+    margin-top: -8px;
   }
 
   &::after {
-    border-top-color: #bdbdbd;
-    margin-top: 1px;
+    border-top-color: #ffffff;
+    margin-top: 2px;
   }
 
+  /* Активная сортировка */
   &.active {
     &:not(.reverse)::after {
-      border-width: 6px;
-      right: 12px;
       border-top-color: #6bf274;
+      opacity: 1;
     }
 
     &:not(.reverse)::before {
-      content: none;
+      opacity: 0.3;
     }
 
-    &.reverse {
-      &::after {
-        content: none;
-      }
+    &.reverse::before {
+      border-bottom-color: #6bf274;
+      opacity: 1;
+    }
 
-      &::before {
-        border-width: 6px;
-        margin-top: -12px;
-        right: 12px;
-        border-bottom-color: #6bf274;
-      }
+    &.reverse::after {
+      opacity: 0.3;
+    }
+  }
+
+  /* Отключенная сортировка */
+  &.thDisable {
+    cursor: default;
+    
+    &::before,
+    &::after {
+      display: none;
     }
   }
 }
 
+/* Тело таблицы */
 .tbody {
-  .tr {
-    padding: 8px;
+  background: transparent;
+}
 
-    .td {
-      background: #fbfbfbef;
-    }
+.tbody .tr {
+  display: table-row;
+  transition: background-color 0.15s ease;
 
-    &:nth-child(2n) {
-      .td {
-        background: #e2e0f0;
-      }
-    }
+  &:hover {
+    filter: brightness(1.05);
   }
 
-  .td {
-    color: rgb(38, 37, 37);
-    min-height: 40px;
-    padding: 8px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
+  /* Чередование цветов строк */
+  &:nth-child(even) .td {
+    background: #e8e6f3;
   }
 
-  .tr:last-child {
-    .td {
-      &:first-child {
-        border-bottom-left-radius: 8px;
-      }
-
-      &:last-child {
-        border-bottom-right-radius: 8px;
-      }
-    }
+  &:nth-child(odd) .td {
+    background: #f8f7fc;
   }
 }
 
-.section {
-  min-height: 200px;
-  position: relative;
-  flex: 1;
+.tbody .td {
+  padding: 10px 8px;
+  text-align: center;
+  vertical-align: middle;
+  color: #2c2c2c;
+  border: none;
+  font-size: 13px;
+  word-wrap: break-word;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
-.select {
-  margin-bottom: 10px;
+/* Скругления последней строки */
+.tbody .tr:last-child .td {
+  &:first-child {
+    border-bottom-left-radius: 8px;
+  }
+
+  &:last-child {
+    border-bottom-right-radius: 8px;
+  }
 }
 
-.effmu {
+/* Ширины колонок */
+.table th:nth-child(1),
+.table td:nth-child(1) { width: 140px; } /* Start */
+
+.table th:nth-child(2),
+.table td:nth-child(2) { width: 100px; } /* Late Reg */
+
+.table th:nth-child(3),
+.table td:nth-child(3) { width: 80px; } /* Network */
+
+.table th:nth-child(4),
+.table td:nth-child(4) { width: 280px; } /* Name */
+
+.table th:nth-child(5),
+.table td:nth-child(5) { width: 90px; } /* Buy-in */
+
+.table th:nth-child(6),
+.table td:nth-child(6) { width: 100px; } /* Guarantee */
+
+.table th:nth-child(7),
+.table td:nth-child(7) { width: 70px; } /* Score */
+
+.table th:nth-child(8),
+.table td:nth-child(8) { width: 70px; } /* Score2 */
+
+.table th:nth-child(9),
+.table td:nth-child(9) { width: 80px; } /* Duration */
+
+.table th:nth-child(10),
+.table td:nth-child(10) { width: 50px; } /* Action */
+
+/* Мобильная адаптация */
+@media (max-width: 768px) {
+  .section {
+    padding: 0 10px 20px;
+  }
+  
+  .table {
+    font-size: 12px;
+    min-width: 800px; /* Уменьшенная минимальная ширина для мобильных */
+  }
+  
+  .thead .th {
+    font-size: 11px;
+    padding: 8px 4px;
+    height: 40px;
+  }
+  
+  .tbody .td {
+    font-size: 10px;
+    padding: 6px 4px;
+  }
+
+  /* Адаптация ширин колонок для мобильных */
+  .table th:nth-child(1),
+  .table td:nth-child(1) { width: 100px; } /* Start */
+
+  .table th:nth-child(2),
+  .table td:nth-child(2) { width: 80px; } /* Late Reg */
+
+  .table th:nth-child(3),
+  .table td:nth-child(3) { width: 60px; } /* Network */
+
+  .table th:nth-child(4),
+  .table td:nth-child(4) { width: 200px; } /* Name */
+
+  .table th:nth-child(5),
+  .table td:nth-child(5) { width: 70px; } /* Buy-in */
+
+  .table th:nth-child(6),
+  .table td:nth-child(6) { width: 80px; } /* Guarantee */
+
+  .table th:nth-child(7),
+  .table td:nth-child(7) { width: 50px; } /* Score */
+
+  .table th:nth-child(8),
+  .table td:nth-child(8) { width: 50px; } /* Score2 */
+
+  .table th:nth-child(9),
+  .table td:nth-child(9) { width: 60px; } /* Duration */
+
+  .table th:nth-child(10),
+  .table td:nth-child(10) { width: 40px; } /* Action */
+}
+
+@media (max-width: 480px) {
+  .section {
+    padding: 0 5px 15px;
+  }
+
+  .table {
+    min-width: 700px; /* Еще меньше для очень маленьких экранов */
+  }
+
+  .thead .th {
+    font-size: 10px;
+    padding: 6px 2px;
+    height: 36px;
+  }
+  
+  .tbody .td {
+    font-size: 9px;
+    padding: 4px 2px;
+  }
+
+  /* Еще более компактные колонки */
+  .table th:nth-child(1),
+  .table td:nth-child(1) { width: 90px; }
+
+  .table th:nth-child(2),
+  .table td:nth-child(2) { width: 70px; }
+
+  .table th:nth-child(3),
+  .table td:nth-child(3) { width: 50px; }
+
+  .table th:nth-child(4),
+  .table td:nth-child(4) { width: 180px; }
+
+  .table th:nth-child(5),
+  .table td:nth-child(5) { width: 60px; }
+
+  .table th:nth-child(6),
+  .table td:nth-child(6) { width: 70px; }
+
+  .table th:nth-child(7),
+  .table td:nth-child(7) { width: 45px; }
+
+  .table th:nth-child(8),
+  .table td:nth-child(8) { width: 45px; }
+
+  .table th:nth-child(9),
+  .table td:nth-child(9) { width: 50px; }
+
+  .table th:nth-child(10),
+  .table td:nth-child(10) { width: 35px; }
+}
+
+/* Темная тема */
+[data-theme="dark"] {
+  .table {
+    background: #2a2a3e;
+  }
+
+  .thead {
+    background: rgb(40, 70, 115);
+  }
+  
+  .thead .th {
+    background: rgb(40, 70, 115);
+  }
+  
+  .tbody .tr:nth-child(even) .td {
+    background: #2a2a3e;
+  }
+
+  .tbody .tr:nth-child(odd) .td {
+    background: #1f1f2e;
+  }
+  
+  .tbody .td {
+    color: #e5e5e5;
+  }
+}
+
+.nodata {
   display: flex;
   align-items: center;
   justify-content: center;
-  top: 0px;
-  height: 90px;
-  position: sticky;
+  height: 200px;
+  color: #666;
+  font-size: 16px;
   text-align: center;
-  font-weight: 700;
-  font-size: 24px;
-  background-color: white;
-  padding: 5px 0;
-  margin-bottom: 10px;
 }
 
-.thDisable {
-  &::before {
-    cursor: default;
-    opacity: 0;
-  }
-  
-  &::after {
-    cursor: default;
-    opacity: 0;
-  }
+/* Селект */
+.select {
+  margin-bottom: 10px;
 }

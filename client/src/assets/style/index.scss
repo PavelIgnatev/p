@@ -41,6 +41,7 @@
 
 html {
   overflow-y: scroll;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -58,6 +59,21 @@ body {
 
 * {
   box-sizing: border-box;
+}
+
+/* Улучшенная прокрутка */
+* {
+  -webkit-overflow-scrolling: touch;
+}
+
+body, html {
+  overscroll-behavior: none;
+}
+
+/* Оптимизация производительности для таблиц */
+table {
+  will-change: scroll-position;
+  transform: translateZ(0);
 }
 
 

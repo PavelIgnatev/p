@@ -11,7 +11,6 @@ import {
 import { useIntervalWorker } from "../../hooks/useIntervalWorker";
 import { BaseFooter } from "../../components/BaseFooter";
 
-
 export const MainPage = () => {
   const loading = useStore(fetchUserReposFx.pending);
   const tournaments = useStore($filtredTableState);
