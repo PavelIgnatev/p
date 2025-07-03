@@ -95,7 +95,6 @@ export const BaseTable: FC<BaseTableProps> = ({ data, loading }) => {
   return (
     <section className={classes.section}>
       <TextTier levelAndEffmu={levelAndEffmu} />
-      
       <table id="grid" className={classes.table}>
         <Thead
           setSortedKey={setSortedKey}
