@@ -17,7 +17,7 @@ const multiSelectStyles = {
     backgroundColor: state.isSelected 
       ? getComputedColor('--primary-color', '#4A72FF')
       : state.isFocused 
-        ? getComputedColor('--background-secondary', '#F5F8FF')
+        ? `${getComputedColor('--primary-color', '#4A72FF')}1A`
         : getComputedColor('--background-main', '#FFFFFF'),
     transition: 'all 0.2s ease',
   }),
@@ -33,13 +33,14 @@ const multiSelectStyles = {
     cursor: "pointer",
     height: "100%",
     transition: 'all 0.2s ease',
+    "&:hover": {
+      border: `1px solid ${getComputedColor('--primary-color', '#4A72FF')} !important`,
+    }
   }),
   container: (provided: any, state: any) => ({
     ...provided,
-    transition: "200ms ease-out box-shadow",
-    boxShadow: state.selectProps.menuIsOpen 
-      ? `0 4px 15px ${getComputedColor('--shadow-color', 'rgba(0, 0, 0, 0.15)')}` 
-      : `0 2px 8px ${getComputedColor('--shadow-color', 'rgba(0, 0, 0, 0.1)')}`,
+    transition: "200ms ease-out all",
+    boxShadow: "none",
     borderRadius: "8px",
   }),
   multiValue: (provided: object) => ({
@@ -82,7 +83,8 @@ const multiSelectStyles = {
     ...provided,
     backgroundColor: getComputedColor('--background-main', '#FFFFFF'),
     border: `1px solid ${getComputedColor('--border-color', '#e0e0e0')}`,
-    boxShadow: `0 8px 25px ${getComputedColor('--shadow-color', 'rgba(0, 0, 0, 0.15)')}`,
+    boxShadow: "none",
+    marginTop: "4px",
   }),
 };
 

@@ -63,7 +63,7 @@ export const PasswordSection: FC<Props> = ({ onSubmit, type }) => {
     <section className={b()}>
       <div className={b("content-wrapper")}>
         <h1 className={b("title")}>
-          {isAdmin ? "Admin Access" : "Authentication"}
+          {isAdmin ? "Admin Access" : "Pocarr"}
         </h1>
 
         {isAlias && (

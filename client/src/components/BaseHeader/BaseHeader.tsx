@@ -33,7 +33,7 @@ export const BaseHeader: FC = () => {
   const theme = useStore($theme);
 
   const [drawerOpen, setDrawerOpen] = React.useState(false);
-  
+
   const handleSettingsModalOpen = async () => {
     if (config?.alias && config?.password) {
       await getConfigRequest({
@@ -116,12 +116,9 @@ export const BaseHeader: FC = () => {
                     width="14"
                     height="14"
                     viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="#6b7280"
-                    strokeWidth="2"
+                    fill="black"
                   >
-                    <circle cx="12" cy="12" r="5" />
-                    <path d="M12 1v2m0 18v2M4.22 4.22l1.42 1.42m12.72 12.72l1.42 1.42M1 12h2m18 0h2M4.22 19.78l1.42-1.42m12.72-12.72l1.42-1.42" />
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
                   </svg>
                 </div>
               }
@@ -134,8 +131,16 @@ export const BaseHeader: FC = () => {
                     height: "100%",
                   }}
                 >
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="#d1d5db">
-                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="white"
+                    strokeWidth="2"
+                  >
+                    <circle cx="12" cy="12" r="5" />
+                    <path d="M12 1v2m0 18v2M4.22 4.22l1.42 1.42m12.72 12.72l1.42 1.42M1 12h2m18 0h2M4.22 19.78l1.42-1.42m12.72-12.72l1.42-1.42" />
                   </svg>
                 </div>
               }
@@ -175,14 +180,19 @@ export const BaseHeader: FC = () => {
                 />
                 <BaseInput
                   value={tournamentsSettings.moneyEnd}
-                  handleChange={editableTournamentsSettings.handleChangeMoneyEnd}
+                  handleChange={
+                    editableTournamentsSettings.handleChangeMoneyEnd
+                  }
                   max={100000}
                   placeholder="To"
                   className={classes.input}
                 />
               </div>
             </ComponentCategory>
-            <ComponentCategory category="Prizepool" className={classes.prizepool}>
+            <ComponentCategory
+              category="Prizepool"
+              className={classes.prizepool}
+            >
               <div className={classes.inputWrapper}>
                 <BaseInput
                   value={tournamentsSettings.prizepoolStart}
@@ -191,6 +201,7 @@ export const BaseHeader: FC = () => {
                   }
                   max={tournamentsSettings.prizepoolEnd}
                   placeholder="From"
+                  htmlId="prizepool-from"
                   className={classes.input}
                 />
                 <BaseInput
@@ -200,6 +211,7 @@ export const BaseHeader: FC = () => {
                   }
                   max={10000000}
                   placeholder="To"
+                  htmlId="prizepool-to"
                   className={classes.input}
                 />
               </div>
@@ -230,7 +242,9 @@ export const BaseHeader: FC = () => {
                   <BaseInputMask
                     placeholder="To(h)"
                     value={tournamentsSettings.dateEnd}
-                    handleChange={editableTournamentsSettings.handleChangeDateEnd}
+                    handleChange={
+                      editableTournamentsSettings.handleChangeDateEnd
+                    }
                     className={cx(classes.input, classes.inputTime)}
                   />
                 </div>
@@ -310,15 +324,15 @@ export const BaseHeader: FC = () => {
         </div>
       </header>
       <Drawer
-        title={`Settings: ${config?.alias || ''}`}
+        title={`Settings: ${config?.alias || ""}`}
         placement="right"
         onClose={() => setDrawerOpen(false)}
         open={drawerOpen}
         width={800}
         bodyStyle={{
-          padding: '32px'
+          padding: "32px",
         }}
-        className={theme === 'dark' ? 'dark-theme' : ''}
+        className={theme === "dark" ? "dark-theme" : ""}
       >
         {config ? (
           <UserSettings

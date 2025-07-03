@@ -410,8 +410,7 @@ export const RulesSectionRules = (props: RulesSectionRulesProps) => {
                     {!isEditable && isLastRow && (
                                               <Popconfirm
                           placement="topRight"
-                          title="Really change the tournament?"
-                          description="This action will remove the tournament from the rules, but will move the data to the edit functionality"
+                          title="Are you sure you want to remove this tournament? This action will remove the tournament from the rules, but will move the data to the edit functionality"
                           okText="Yes"
                           cancelText="No"
                         onConfirm={() =>
@@ -451,8 +450,7 @@ export const RulesSectionRules = (props: RulesSectionRulesProps) => {
                     {!isEditable && isLastRow && (
                       <Popconfirm
                         placement="topRight"
-                        title="Really delete the tournament?"
-                        description="This action will remove the tournament from the rules"
+                        title="Really delete the tournament? This action will remove the tournament from the rules"
                         okText="Yes"
                         cancelText="No"
                         onConfirm={() => deleteRulesRequest(rules[ruleIndex])}

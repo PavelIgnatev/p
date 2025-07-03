@@ -22,6 +22,7 @@ import { Modal, ModalRef } from "../../Modal";
 import { ApprovalSection } from "../../ApprovalSection";
 import TimeField from "react-simple-timefield";
 
+
 // type ColorsType = "green" | "yellow" | "red" | "rgb(152, 183, 201)";
 interface Props {
   config: ConfigModel;
@@ -191,32 +192,26 @@ export const UserSettingsInfo: FC<Props> = ({
 
   return (
     <div className={b()}>
-      <div className={b("header")}>
-        <div className={b("header-conent")}>
-          <span className={b("header-alias")}>
-            <b>Alias:</b> {alias}
-          </span>
+      <div className={b("header-wrapper")}>
+        <div className={b("header")}>
           {!isAdminPage && (
-            <>
+            <div className={b("header-content")}    onClick={toggleShowPassword}
+            style={{ cursor: "pointer" }}>
               <span
                 className={b("header-password")}
-                style={{
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "center",
-                }}
+             
               >
-                <b>Password:</b>
+                <b>Password: </b>
                 <div
                   className={b("header-password-block")}
-                  onClick={toggleShowPassword}
+                  style={{ marginLeft: "8px" }}
                 >
                   <span
                     className={b("header-password-text", {
                       hidden: !showPassword,
                     })}
                   >
-                    {showPassword ? password : "****"}
+                    {showPassword ? ` ${password}` : "****"}
                   </span>
                   <img
                     className={b("header-password-img")}
@@ -224,41 +219,41 @@ export const UserSettingsInfo: FC<Props> = ({
                     alt=""
                   />
                 </div>
-                <BaseButton
-                  style={{
-                    fontSize: 16,
-                    marginLeft: 10,
-                    width: 120,
-                    height: 34,
-                  }}
-                  onClick={() => handleModalOpen(deleteModalRef)}
-                  disabled={false}
-                >
-                  Clear cache
-                </BaseButton>
-                <Modal ref={deleteModalRef}>
-                  <ApprovalSection
-                    title="Do you really want to clear the account cache?"
-                    onApprove={() => {
-                      onDeleteCache();
-                      handleModalClose(deleteModalRef);
-                    }}
-                    onClose={() => handleModalClose(deleteModalRef)}
-                  />
-                </Modal>
               </span>
-            </>
+            </div>
           )}
         </div>
+
+        {!isAdminPage && (
+          <div className={b("cache-section")}>
+            <BaseButton
+              className={b("clear-cache")}
+              onClick={() => handleModalOpen(deleteModalRef)}
+              red
+            >
+              CLEAR CACHE
+            </BaseButton>
+            <Modal ref={deleteModalRef}>
+              <ApprovalSection
+                title="Do you really want to clear the account cache?"
+                onApprove={() => {
+                  onDeleteCache();
+                  handleModalClose(deleteModalRef);
+                }}
+                onClose={() => handleModalClose(deleteModalRef)}
+              />
+            </Modal>
+          </div>
+        )}
       </div>
+
       <div className={b("settings")}>
         <div className={b("times-wrapper")}>
           <div className={b("times-wrapper-wrapper")}>
             <p>
               <strong>Session start time</strong>
             </p>
-
-            <div style={{ display: "flex", width: "100%" }}>
+            <div className="input-container">
               <TimeField
                 value={config?.time1 ?? "--:--"}
                 onChange={(e, value) =>
@@ -266,21 +261,20 @@ export const UserSettingsInfo: FC<Props> = ({
                 }
                 style={{ width: "100%" }}
               />
-              <BaseButton
-                className={b("rule-row-control-btn")}
+              <button
+                className="clear-button"
                 onClick={() => editableConfigEvents.handleChangeTime1(null)}
-                style={{ marginLeft: "10px" }}
-              >
-                Х
-              </BaseButton>
+                type="button"
+                aria-label="Clear input"
+              />
             </div>
           </div>
+
           <div className={b("times-wrapper-wrapper")}>
             <p>
               <strong>Session end time</strong>
             </p>
-
-            <div style={{ display: "flex", width: "100%" }}>
+            <div className="input-container">
               <TimeField
                 value={config?.time2 ?? "--:--"}
                 onChange={(e, value) =>
@@ -288,23 +282,20 @@ export const UserSettingsInfo: FC<Props> = ({
                 }
                 style={{ width: "100%" }}
               />
-              <BaseButton
-                className={b("rule-row-control-btn")}
+              <button
+                className="clear-button"
                 onClick={() => editableConfigEvents.handleChangeTime2(null)}
-                style={{ marginLeft: "10px" }}
-              >
-                Х
-              </BaseButton>
+                type="button"
+                aria-label="Clear input"
+              />
             </div>
           </div>
-        </div>
-        <div className={b("times-wrapper")}>
+
           <div className={b("times-wrapper-wrapper")}>
             <p>
               <strong>Filter Normal</strong> after session start via
             </p>
-
-            <div style={{ display: "flex", width: "100%" }}>
+            <div className="input-container">
               <TimeField
                 value={config?.normalTime ?? "--:--"}
                 onChange={(e, value) =>
@@ -312,23 +303,20 @@ export const UserSettingsInfo: FC<Props> = ({
                 }
                 style={{ width: "100%" }}
               />
-              <BaseButton
-                className={b("rule-row-control-btn")}
-                onClick={() =>
-                  editableConfigEvents.handleChangeNormalTime(null)
-                }
-                style={{ marginLeft: "10px" }}
-              >
-                Х
-              </BaseButton>
+              <button
+                className="clear-button"
+                onClick={() => editableConfigEvents.handleChangeNormalTime(null)}
+                type="button"
+                aria-label="Clear input"
+              />
             </div>
           </div>
+
           <div className={b("times-wrapper-wrapper")}>
             <p>
               <strong>Filter Turbo</strong> after session start via
             </p>
-
-            <div style={{ display: "flex", width: "100%" }}>
+            <div className="input-container">
               <TimeField
                 value={config?.turboTime ?? "--:--"}
                 onChange={(e, value) =>
@@ -336,21 +324,20 @@ export const UserSettingsInfo: FC<Props> = ({
                 }
                 style={{ width: "100%" }}
               />
-              <BaseButton
-                className={b("rule-row-control-btn")}
+              <button
+                className="clear-button"
                 onClick={() => editableConfigEvents.handleChangeTurboTime(null)}
-                style={{ marginLeft: "10px" }}
-              >
-                Х
-              </BaseButton>
+                type="button"
+                aria-label="Clear input"
+              />
             </div>
           </div>
+
           <div className={b("times-wrapper-wrapper")}>
             <p>
               <strong>Filter Super Turbo</strong> after session start via
             </p>
-
-            <div style={{ display: "flex", width: "100%" }}>
+            <div className="input-container">
               <TimeField
                 value={config?.superTurboTime ?? "--:--"}
                 onChange={(e, value) =>
@@ -358,15 +345,12 @@ export const UserSettingsInfo: FC<Props> = ({
                 }
                 style={{ width: "100%" }}
               />
-              <BaseButton
-                className={b("rule-row-control-btn")}
-                onClick={() =>
-                  editableConfigEvents.handleChangeSuperTurboTime(null)
-                }
-                style={{ marginLeft: "10px" }}
-              >
-                Х
-              </BaseButton>
+              <button
+                className="clear-button"
+                onClick={() => editableConfigEvents.handleChangeSuperTurboTime(null)}
+                type="button"
+                aria-label="Clear input"
+              />
             </div>
           </div>
         </div>

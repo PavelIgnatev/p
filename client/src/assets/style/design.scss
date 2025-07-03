@@ -1,7 +1,9 @@
+@use "sass:color";
+
 $baseColor: #4a72ff;
 $baseColorHover: #3d5dd3;
 
-$borderColor: transparentize($baseColor, 0.75);
+$borderColor: color.scale($baseColor, $alpha: -75%);
 
 $lightBlue: #dde7ff;
 $lighterBlue: #f5f8ff;
@@ -16,3 +18,43 @@ $shadow200: 0 0 1px 1px rgba(0, 0, 0, 0.02), 0 0.3px 0.5px rgba(0, 0, 0, 0.1),
   0 2px 4px rgba(0, 0, 0, 0.2);
 $shadow300: 0 0 1px 1px rgba(0, 0, 0, 0.02), 0 0.4px 0.8px rgba(0, 0, 0, 0.1),
   0 3px 6px rgba(0, 0, 0, 0.2);
+
+input[type="time"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 8px 12px;
+  font-size: 16px;
+  width: 100%;
+  margin-bottom: 15px;
+  
+  &::-webkit-calendar-picker-indicator {
+    display: none;
+  }
+  
+  &::-webkit-datetime-edit {
+    padding: 0;
+  }
+  
+  &::-webkit-datetime-edit-fields-wrapper {
+    padding: 0;
+  }
+  
+  &::-webkit-datetime-edit-text {
+    padding: 0 4px;
+  }
+  
+  &::-webkit-datetime-edit-hour-field,
+  &::-webkit-datetime-edit-minute-field {
+    padding: 0 2px;
+  }
+  
+  &:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+  }
+}

@@ -7,18 +7,17 @@ export const BaseInput: FC<BaseInputModel> = ({
   handleChange,
   value,
   max,
+  min = 0,
   placeholder,
   className,
+  htmlId,
 }) => {
   const onChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     handleChange(
       Math.max(
-        Math.min(
-          Number(/\d+/.test(String(Number(e.currentTarget.value))) ? e.target.value : value ?? 0),
-          max,
-        ),
-        0,
-      ),
+        min,
+        Math.min(max, e.target.value === "" ? min : Number(e.target.value))
+      )
     );
   };
 
@@ -28,11 +27,13 @@ export const BaseInput: FC<BaseInputModel> = ({
         {placeholder}:
       </label>
       <input
-        id={placeholder}
-        value={value ?? 0}
+        id={htmlId}
+        value={value ?? ""}
         onChange={onChange}
         placeholder={placeholder}
         className={cx(classes.input, className)}
+        max={max}
+        min={min}
       />
     </div>
   );

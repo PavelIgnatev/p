@@ -5,4 +5,5 @@ export interface BaseInputModel {
   min?: number;
   placeholder: string;
   className?: string;
+  htmlId?: string;
 }
