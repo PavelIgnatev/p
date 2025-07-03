@@ -11,6 +11,7 @@ import {
   patchConfigRequest,
 } from "../../store/Config";
 
+
 import { BaseButton } from "../BaseButton";
 
 import { UserSettingsTable } from "./__Table";
@@ -34,6 +35,7 @@ export const UserSettings = ({ config, isAdminPage, onClose }: Props) => {
   const { alias, networks, password: newPassword, ...props } = editableConfig;
 
   const password = useStore($password);
+
 
   React.useEffect(() => {
     editableConfigEvents.setConfig(config);

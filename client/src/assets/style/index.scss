@@ -2,6 +2,28 @@
 @import "./normalize";
 @import "./media";
 
+:root {
+  --primary-color: #4a72ff;
+  --primary-hover: #3157de;
+  --text-color: #333333;
+  --text-secondary: #666666;
+  --background-main: #ffffff;
+  --background-secondary: #f5f8ff;
+  --border-color: #e0e0e0;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="dark"] {
+  --primary-color: #6c8fff;
+  --primary-hover: #8fa4ff;
+  --text-color: #e0e0e0;
+  --text-secondary: #b0b0b0;
+  --background-main: #1a1a1a;
+  --background-secondary: #2d2d2d;
+  --border-color: #404040;
+  --shadow-color: rgba(0, 0, 0, 0.3);
+}
+
 .Toastify__toast-icon {
   display: none !important;
 }
@@ -21,6 +43,9 @@ html {
 
 body {
   min-height: 100vh;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  background-color: var(--background-main);
+  color: var(--text-color);
 }
 
 #root {
@@ -32,3 +57,5 @@ body {
 * {
   box-sizing: border-box;
 }
+
+

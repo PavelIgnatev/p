@@ -11,3 +11,4 @@ import "./Store";
 import "./Update";
 import "./Filter";
 import "./Colors";
+import "./Theme";

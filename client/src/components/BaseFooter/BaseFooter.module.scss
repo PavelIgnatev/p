@@ -1,26 +1,27 @@
 .footer {
   margin-top: 10px;
-  background: #f5f8ff;
-
+  background: var(--background-secondary);
+  transition: background-color 0.3s ease;
+  box-shadow: 0 -2px 10px var(--shadow-color);
 }
 
 .content {
   padding: 15px 50px;
   text-align: center;
-  background: #f5f8ff;
-  background: #f5f8ff;
+  background: var(--background-secondary);
   width: 100%;
-
   font-weight: 500;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  color: var(--text-color);
 }
 
 .a {
   font-weight: 700;
-  color: #4a72ff;
-
+  color: var(--primary-color);
   text-decoration: none;
+  transition: color 0.3s ease;
 
   &:hover {
-    color: #3157de;
+    color: var(--primary-hover);
   }
 }

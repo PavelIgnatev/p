@@ -10,10 +10,12 @@
 .menu {
   width: 100%;
   padding: 30px 50px;
-  background: #f5f8ff;
+  background: var(--background-secondary);
   border-radius: 20px;
   display: flex;
   justify-content: space-between;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 15px var(--shadow-color);
 }
 
 .content {
@@ -37,8 +39,9 @@
 
 .inputWrapper {
   margin-left: 20px;
-  color: hsl(0, 0%, 20%);
+  color: var(--text-secondary);
   display: flex;
+  transition: color 0.3s ease;
 }
 
 .checkboxWrapper {
@@ -51,14 +54,16 @@
 .checkbox {
   user-select: none;
   cursor: pointer;
+  transition: color 0.3s ease;
+  color: var(--text-color);
 }
 
 .input {
   display: flex;
-  color: hsl(0, 0%, 20%);
+  color: var(--text-color);
   font-size: 100%;
-  background-color: hsl(0, 0%, 100%);
-  border-color: hsl(0, 0%, 80%);
+  background-color: var(--background-main);
+  border-color: var(--border-color);
   border-radius: 4px;
   border-style: solid;
   border-width: 1px;
@@ -72,8 +77,8 @@
   &:focus,
   &:active {
     outline: none;
-    box-shadow: 0 0 0 1px #2684ff;
-    border-color: #2684ff;
+    box-shadow: 0 0 0 1px var(--primary-color);
+    border-color: var(--primary-color);
   }
 }
 
@@ -82,11 +87,17 @@
 }
 
 .button {
-  background: #4a72ff;
+  background: var(--primary-color);
   border-radius: 10px;
   font-weight: 700;
   height: 38px;
   width: 145px;
+  color: white;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background: var(--primary-hover);
+  }
 }
 
 .starts {
@@ -97,18 +108,27 @@
   display: block;
   width: 32px;
   height: 32px;
+  filter: brightness(1);
+  transition: filter 0.3s ease;
+}
+
+[data-theme="dark"] .profileImage {
+  filter: brightness(1.2) contrast(1.1);
 }
 
 .alias {
   display: flex;
   font-size: 18px;
+  color: var(--text-color);
+  transition: color 0.3s ease;
 }
 
 .dot {
   width: 6px;
   height: 6px;
-  background-color: #4a72ff;
+  background-color: var(--primary-color);
   border-radius: 50%;
+  transition: background-color 0.3s ease;
 }
 
 .info,
@@ -125,15 +145,34 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
+  transition: color 0.3s ease;
+  color: var(--text-color);
 }
 
 .settings {
   cursor: pointer;
   font-weight: 700;
-  color: #4a72ff;
+  color: var(--primary-color);
+  transition: color 0.3s ease;
 
   &:hover {
-    color: #3157de;
+    color: var(--primary-hover);
+  }
+}
+
+.themeSwitch {
+  margin-right: 8px;
+  
+  &:focus {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+  
+  * {
+    &:focus {
+      outline: none !important;
+      box-shadow: none !important;
+    }
   }
 }
 
@@ -143,7 +182,10 @@
 
 .line {
   width: 2px;
-  background-color: #4a72ff;
+  background-color: var(--primary-color);
   height: 26px;
   border-radius: 20px;
+  transition: background-color 0.3s ease;
 }
+
+

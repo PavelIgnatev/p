@@ -41,6 +41,9 @@ export const TIMERANGE = [
   { value: "3600", label: "<1 hour" },
   { value: "43200", label: "<12 hours" },
   { value: "86400", label: "<24 hours" },
+  { value: "172800", label: "<2 days" },
+  { value: "259200", label: "<3 days" },
+  { value: "432000", label: "<5 days" },
   { value: "604800", label: "<1 week" },
 ];
 

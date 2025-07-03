@@ -16,24 +16,30 @@ import { ComponentCategory } from "../ComponentCategory";
 import { BaseButton } from "../BaseButton";
 import { fetchUserReposFx } from "../../store/Table";
 import { $config, getConfigRequest } from "../../store/Config";
+import { $theme, toggleTheme } from "../../store/Theme";
 import profileSrc from "../../assets/icons/Profile.svg";
 
 import { Modal, ModalRef } from "../Modal";
 
 import classes from "./BaseHeader.module.scss";
 import { UserSettings } from "../UserSettings";
+import Switch from "react-switch";
 
 export const BaseHeader: FC = () => {
   const tournamentsSettings = useStore($tournamentsSettings);
   const loading = useStore(fetchUserReposFx.pending);
 
   const config = useStore($config);
+  const theme = useStore($theme);
 
   const settingsModalRef = React.useRef<ModalRef>(null);
   const handleSettingsModalOpen = async () => {
     // вот тут запрос
-    await getConfigRequest({ alias: config?.alias ?? '', password: config?.password ?? '' });
-    settingsModalRef.current?.open()
+    await getConfigRequest({
+      alias: config?.alias ?? "",
+      password: config?.password ?? "",
+    });
+    settingsModalRef.current?.open();
   };
   const handleSettingsModalClose = () => settingsModalRef.current?.close();
 
@@ -46,7 +52,11 @@ export const BaseHeader: FC = () => {
       <div className={classes.info}>
         <div className={classes.userInfo}>
           <div className={classes.alias}>
-            <img className={classes.profileImage} src={profileSrc} alt="profile" />
+            <img
+              className={classes.profileImage}
+              src={profileSrc}
+              alt="profile"
+            />
             <p>
               Hello, <strong>{config?.alias}!</strong>
             </p>
@@ -57,8 +67,37 @@ export const BaseHeader: FC = () => {
             {config?.mail}
           </div>
         </div>
-        <div className={classes.settings} onClick={handleSettingsModalOpen}>
-          Edit settings
+        <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
+          <Switch
+            onChange={() => toggleTheme()}
+            checked={theme === "dark"}
+            onColor="#374151"
+            offColor="#e5e7eb"
+            onHandleColor="#ffffff"
+            offHandleColor="#ffffff"
+            handleDiameter={24}
+            uncheckedIcon={
+              <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100%' }}>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#6b7280" strokeWidth="2">
+                  <circle cx="12" cy="12" r="5"/>
+                  <path d="M12 1v2m0 18v2M4.22 4.22l1.42 1.42m12.72 12.72l1.42 1.42M1 12h2m18 0h2M4.22 19.78l1.42-1.42m12.72-12.72l1.42-1.42"/>
+                </svg>
+              </div>
+            }
+            checkedIcon={
+              <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100%' }}>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#d1d5db">
+                  <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                </svg>
+              </div>
+            }
+            width={60}
+            height={32}
+            className={classes.themeSwitch}
+          />
+          <div className={classes.settings} onClick={handleSettingsModalOpen}>
+            Edit settings
+          </div>
         </div>
         <Modal ref={settingsModalRef}>
           {config ? (
@@ -74,7 +113,9 @@ export const BaseHeader: FC = () => {
             <BaseSelectMulti
               value={tournamentsSettings.network || null}
               className={classes.network}
-              children={(tournamentsSettings.network?.length ?? 0) + " networks"}
+              children={
+                (tournamentsSettings.network?.length ?? 0) + " networks"
+              }
               options={NETWORKS}
               onChange={editableTournamentsSettings.handleChangeNetwork}
               placeholder="Network"
@@ -84,7 +125,9 @@ export const BaseHeader: FC = () => {
             <div className={classes.inputWrapper}>
               <BaseInput
                 value={tournamentsSettings.moneyStart}
-                handleChange={editableTournamentsSettings.handleChangeMoneyStart}
+                handleChange={
+                  editableTournamentsSettings.handleChangeMoneyStart
+                }
                 max={tournamentsSettings.moneyEnd ?? 0}
                 placeholder="From"
                 className={classes.input}
@@ -102,14 +145,18 @@ export const BaseHeader: FC = () => {
             <div className={classes.inputWrapper}>
               <BaseInput
                 value={tournamentsSettings.prizepoolStart}
-                handleChange={editableTournamentsSettings.handleChangePrizepoolStart}
+                handleChange={
+                  editableTournamentsSettings.handleChangePrizepoolStart
+                }
                 max={tournamentsSettings.prizepoolEnd}
                 placeholder="From"
                 className={classes.input}
               />
               <BaseInput
                 value={tournamentsSettings.prizepoolEnd}
-                handleChange={editableTournamentsSettings.handleChangePrizepoolEnd}
+                handleChange={
+                  editableTournamentsSettings.handleChangePrizepoolEnd
+                }
                 max={10000000}
                 placeholder="To"
                 className={classes.input}
@@ -134,7 +181,9 @@ export const BaseHeader: FC = () => {
                 <BaseInputMask
                   placeholder="From(h)"
                   value={tournamentsSettings.dateStart}
-                  handleChange={editableTournamentsSettings.handleChangeDateStart}
+                  handleChange={
+                    editableTournamentsSettings.handleChangeDateStart
+                  }
                   className={cx(classes.input, classes.inputTime)}
                 />
                 <BaseInputMask
@@ -151,7 +200,11 @@ export const BaseHeader: FC = () => {
             <div className={classes.checkboxWrapper}>
               <BaseCheckbox
                 selected={!tournamentsSettings.KO}
-                onClick={() => editableTournamentsSettings.handleChangeKo(!tournamentsSettings.KO)}
+                onClick={() =>
+                  editableTournamentsSettings.handleChangeKo(
+                    !tournamentsSettings.KO
+                  )
+                }
                 className={classes.checkbox}
               >
                 KO
@@ -159,7 +212,9 @@ export const BaseHeader: FC = () => {
               <BaseCheckbox
                 selected={!tournamentsSettings.freezout}
                 onClick={() =>
-                  editableTournamentsSettings.handleChangeFreezout(!tournamentsSettings.freezout)
+                  editableTournamentsSettings.handleChangeFreezout(
+                    !tournamentsSettings.freezout
+                  )
                 }
                 className={classes.checkbox}
               >
@@ -169,7 +224,9 @@ export const BaseHeader: FC = () => {
               <BaseCheckbox
                 selected={!tournamentsSettings.normal}
                 onClick={() =>
-                  editableTournamentsSettings.handleChangeNormal(!tournamentsSettings.normal)
+                  editableTournamentsSettings.handleChangeNormal(
+                    !tournamentsSettings.normal
+                  )
                 }
                 className={classes.checkbox}
               >
@@ -178,7 +235,9 @@ export const BaseHeader: FC = () => {
               <BaseCheckbox
                 selected={!tournamentsSettings.turbo}
                 onClick={() =>
-                  editableTournamentsSettings.handleChangeTurbo(!tournamentsSettings.turbo)
+                  editableTournamentsSettings.handleChangeTurbo(
+                    !tournamentsSettings.turbo
+                  )
                 }
                 className={classes.checkbox}
               >
@@ -188,7 +247,7 @@ export const BaseHeader: FC = () => {
                 selected={!tournamentsSettings.superTurbo}
                 onClick={() =>
                   editableTournamentsSettings.handleChangeSuperTurbo(
-                    !tournamentsSettings.superTurbo,
+                    !tournamentsSettings.superTurbo
                   )
                 }
                 className={classes.checkbox}
@@ -199,7 +258,11 @@ export const BaseHeader: FC = () => {
           </ComponentCategory>
         </div>
         <div className={classes.content}>
-          <BaseButton disabled={loading} onClick={fetchUserReposFx} className={classes.button}>
+          <BaseButton
+            disabled={loading}
+            onClick={fetchUserReposFx}
+            className={classes.button}
+          >
             Games search
           </BaseButton>
         </div>
