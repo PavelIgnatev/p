@@ -2,7 +2,6 @@ import { useStore } from "effector-react";
 import React from "react";
 import b_ from "b_";
 
-import CloseIcon from "../../assets/icons/close.svg";
 import { $password } from "../../store/Password";
 import { ConfigModel } from "../../@types/configModel";
 import {
@@ -11,14 +10,14 @@ import {
   patchConfigRequest,
 } from "../../store/Config";
 
-
 import { BaseButton } from "../BaseButton";
-
 import { UserSettingsTable } from "./__Table";
 import { UserSettingsInfo } from "./__Info";
-
 import "./index.scss";
 import { ErrNot } from "../NotificationService";
+import { Modal, ModalRef } from "../Modal";
+import { ApprovalSection } from "../ApprovalSection";
+import { useModal } from "../../hooks/useModal";
 
 interface Props {
   config: ConfigModel;
@@ -30,16 +29,14 @@ export const b = b_.with("user-settings");
 
 export const UserSettings = ({ config, isAdminPage, onClose }: Props) => {
   const [progress, setProgress] = React.useState(false);
-
   const editableConfig = useStore($editableConfig);
   const { alias, networks, password: newPassword, ...props } = editableConfig;
-
   const password = useStore($password);
-
+  const deleteModalRef = React.useRef<ModalRef>(null);
+  const { handleModalOpen, handleModalClose } = useModal();
 
   React.useEffect(() => {
     editableConfigEvents.setConfig(config);
-
     return editableConfigEvents.clearConfig;
   }, [config]);
 
@@ -109,34 +106,36 @@ export const UserSettings = ({ config, isAdminPage, onClose }: Props) => {
   };
 
   return (
-    <div className={b()}>
-      <button onClick={onClose} className={b("close-icon")}>
-        <img src={CloseIcon} alt="close" />
-      </button>
-      <div className={b("content")}>
-        <div className={b("content-main-block")}>
-          <UserSettingsInfo
-            config={editableConfig}
-            isAdminPage={isAdminPage}
-            onDeleteCache={handleDeleteCache}
-            children={
-              <UserSettingsTable
-                networks={networks}
-                canChangeLevels={isAdminPage}
-              />
-            }
-          />
-        </div>
-        <div className={b("content-main-block")}>
-          <BaseButton
-            onClick={handleSubmit}
-            className={b("save-button")}
-            disabled={progress}
-          >
-            Save changes
-          </BaseButton>
-        </div>
-      </div>
-    </div>
+    <>
+      <UserSettingsInfo
+        config={editableConfig}
+        isAdminPage={isAdminPage}
+        onDeleteCache={handleDeleteCache}
+      >
+        <UserSettingsTable
+          networks={networks}
+          canChangeLevels={isAdminPage}
+        />
+      </UserSettingsInfo>
+
+      <BaseButton
+        onClick={handleSubmit}
+        className={b("save-button")}
+        disabled={progress}
+      >
+        Save changes
+      </BaseButton>
+
+      <Modal ref={deleteModalRef}>
+        <ApprovalSection
+          title="Do you really want to clear the account cache?"
+          onApprove={() => {
+            onClose();
+            handleModalClose(deleteModalRef);
+          }}
+          onClose={() => handleModalClose(deleteModalRef)}
+        />
+      </Modal>
+    </>
   );
 };

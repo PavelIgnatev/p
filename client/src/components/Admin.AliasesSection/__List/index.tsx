@@ -1,5 +1,6 @@
 import { useStore } from "effector-react";
 import React, { FC, RefObject } from "react";
+import { Drawer } from "antd";
 
 import CloseIcon from "../../../assets/icons/close.svg";
 import {
@@ -43,6 +44,7 @@ export const AliasesSectionList: FC<Props> = ({ selectedLevel, search }) => {
     }) ?? [];
 
   const aliasesLoading = useStore(getAliasesRequest.pending);
+  const [drawerOpen, setDrawerOpen] = React.useState(false);
 
   if (selectedLevel === null) {
     return null;
@@ -54,7 +56,7 @@ export const AliasesSectionList: FC<Props> = ({ selectedLevel, search }) => {
 
   const handleAliasClick = (alias: string) => async () => {
     await getConfigRequest({ alias, password });
-    handleModalOpen(settingsModalRef);
+    setDrawerOpen(true);
   };
 
   const handleAliasDelete = (alias: string) => async () => {
@@ -88,17 +90,25 @@ export const AliasesSectionList: FC<Props> = ({ selectedLevel, search }) => {
       ) : (
         <div>Nothing found</div>
       )}
-      <Modal ref={settingsModalRef}>
+      <Drawer
+        title={selectedConfig ? `Alias: ${selectedConfig.alias}` : "Настройки"}
+        placement="right"
+        onClose={() => setDrawerOpen(false)}
+        open={drawerOpen}
+        width={600}
+        bodyStyle={{ padding: 24 }}
+        destroyOnClose
+      >
         {selectedConfig ? (
           <UserSettings
             config={selectedConfig}
             isAdminPage={isAdminPage}
-            onClose={() => handleModalClose(settingsModalRef)}
+            onClose={() => setDrawerOpen(false)}
           />
         ) : (
           <div style={{ padding: 50 }}>Loading config</div>
         )}
-      </Modal>
+      </Drawer>
       <Modal ref={deleteModalRef}>
         <ApprovalSection
           title="Do you really want to delete this alias?"

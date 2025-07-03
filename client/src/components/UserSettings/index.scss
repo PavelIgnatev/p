@@ -1,58 +1,259 @@
 @import "src/assets/style/design.scss";
 
 .user-settings {
-  overflow-y: scroll;
+  overflow-y: auto;
   position: relative;
-  max-width: 70vw;
-  max-height: 80vh;
+  max-width: 480px;
+  max-height: 90vh;
   box-sizing: border-box;
-  font-size: 22px;
-  padding: 35px 55px;
+  font-size: 16px;
+  background: var(--background-color);
+  box-shadow: -4px 0 16px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
 
-  &__content-main-block {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  &::-webkit-scrollbar {
+    width: 6px;
   }
 
-  &__close-icon {
-    position: absolute;
-    border: none;
-    background: none;
-    padding: 0;
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
 
-    cursor: pointer;
-
-    top: 37px;
-    right: 40px;
-    transition: 50ms ease-in transform;
-
-    &:active {
-      transform: scale(0.9);
-    }
-
-    img {
-      display: block;
-      pointer-events: none;
-    }
+  &::-webkit-scrollbar-thumb {
+    background: var(--border-color);
+    border-radius: 3px;
   }
 
   &__save-button {
-    margin-top: 36px;
-    padding: 16px 0;
+    padding: 12px 24px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    background: var(--primary-color);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s;
+    margin: 16px 32px 32px;
+    align-self: flex-end;
 
-    border-radius: 20px;
-    text-align: center;
-    font-weight: 700;
+    &:hover:not(:disabled) {
+      background: var(--primary-color-hover);
+      transform: translateY(-1px);
+    }
+
+    &:active:not(:disabled) {
+      transform: translateY(0);
+    }
+
+    &:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
   }
 
+  &__header {
+    border-bottom: 1px solid var(--border-color);
 
+    &-password {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+
+      strong {
+        color: var(--text-secondary);
+        font-size: 14px;
+        font-weight: 500;
+        margin-right: 4px;
+      }
+
+      &-block {
+        display: flex;
+        align-items: center;
+        background: var(--input-bg);
+        padding: 8px 12px;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: all 0.2s;
+        border: 1px solid var(--border-color);
+        margin-right: auto;
+
+        &:hover {
+          background: var(--input-hover-bg);
+          border-color: var(--primary-color);
+        }
+      }
+
+      &-text {
+        font-family: monospace;
+        font-size: 14px;
+        margin-right: 8px;
+        color: var(--text-color);
+        letter-spacing: 1px;
+      }
+
+      &-img {
+        width: 14px;
+        height: 14px;
+        opacity: 0.6;
+        transition: opacity 0.2s;
+
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+
+  &__clear-cache-button {
+    padding: 8px 16px;
+    font-size: 14px;
+    color: #fff;
+    background: var(--danger-color, #dc3545);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-weight: 500;
+    white-space: nowrap;
+
+    &:hover {
+      background: var(--danger-hover-color, #c82333);
+      transform: translateY(-1px);
+    }
+
+    &:active {
+      transform: translateY(0);
+    }
+  }
+
+  .time-input-section {
+    padding: 24px 32px;
+
+    h3 {
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--text-color);
+      margin: 0 0 24px;
+    }
+  }
+
+  input[type="text"] {
+    width: 100%;
+    padding: 12px 16px;
+    font-size: 14px;
+    background: var(--input-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    color: var(--text-color);
+    transition: all 0.2s;
+    margin-bottom: 16px;
+
+    &:hover {
+      border-color: var(--primary-color);
+    }
+
+    &:focus {
+      outline: none;
+      border-color: var(--primary-color);
+      box-shadow: 0 0 0 3px var(--primary-color-light);
+    }
+
+    &::placeholder {
+      color: var(--text-secondary);
+    }
+  }
+
+  table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin: 24px 0;
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    overflow: hidden;
+    background: var(--table-bg);
+
+    th {
+      text-align: left;
+      padding: 14px 16px;
+      background: var(--table-header-bg);
+      color: var(--text-color);
+      font-weight: 600;
+      font-size: 14px;
+      border-bottom: 1px solid var(--border-color);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    td {
+      padding: 12px 16px;
+      color: var(--text-color);
+      font-size: 14px;
+      border-bottom: 1px solid var(--border-color);
+      background: var(--table-cell-bg);
+      transition: background 0.2s;
+    }
+
+    tr:last-child td {
+      border-bottom: none;
+    }
+
+    tr:hover td {
+      background: var(--table-row-hover);
+    }
+  }
 }
 
-[data-theme="dark"] .user-settings {
-  background-color: var(--background-secondary);
-  color: var(--text-color);
-  border: 1px solid var(--border-color);
+:global {
+  .ant-drawer-header {
+    display: flex;
+    align-items: center;
+    padding: 16px 24px;
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  .ant-drawer-title {
+    flex: 1;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+  }
+}
+
+// CSS переменные для тем
+:root {
+  --text-color: #1f2937;
+  --text-secondary: #6b7280;
+  --border-color: #e5e7eb;
+  --input-bg: #f9fafb;
+  --input-hover-bg: #f3f4f6;
+  --table-header-bg: #f8fafc;
+  --table-cell-bg: #ffffff;
+  --table-row-hover: #f9fafb;
+  --button-secondary-bg: #f3f4f6;
+  --button-secondary-hover: #e5e7eb;
+  --primary-color: #4f46e5;
+  --primary-color-hover: #4338ca;
+  --primary-color-light: rgba(79, 70, 229, 0.1);
+}
+
+[data-theme="dark"] {
+  --text-color: #f3f4f6;
+  --text-secondary: #9ca3af;
+  --border-color: #374151;
+  --input-bg: #1f2937;
+  --input-hover-bg: #374151;
+  --table-header-bg: #1f2937;
+  --table-cell-bg: #111827;
+  --table-row-hover: #1f2937;
+  --button-secondary-bg: #374151;
+  --button-secondary-hover: #4b5563;
+  --primary-color: #6366f1;
+  --primary-color-hover: #4f46e5;
+  --primary-color-light: rgba(99, 102, 241, 0.1);
 }
 
 .user-settings-table {

@@ -1,5 +1,5 @@
 import classNames from "classnames";
-import { FC } from "react";
+import { FC, KeyboardEvent } from "react";
 import "./BaseInputString.scss";
 
 type BaseInputStringProps = {
@@ -8,6 +8,11 @@ type BaseInputStringProps = {
   className?: string;
   disabled?: boolean;
   placeholder?: string;
+  type?: string;
+  onKeyPress?: (e: KeyboardEvent<HTMLInputElement>) => void;
+  autoComplete?: string;
+  autoCorrect?: string;
+  spellCheck?: boolean;
 };
 
 export const BaseInputString: FC<BaseInputStringProps> = ({
@@ -15,7 +20,12 @@ export const BaseInputString: FC<BaseInputStringProps> = ({
   className,
   value,
   disabled,
-  placeholder
+  placeholder,
+  type = "text",
+  onKeyPress,
+  autoComplete = "off",
+  autoCorrect = "off",
+  spellCheck = false
 }) => {
   return (
     <input
@@ -24,6 +34,11 @@ export const BaseInputString: FC<BaseInputStringProps> = ({
       onChange={(e) => onChange(e.currentTarget.value)}
       disabled={disabled}
       placeholder={placeholder}
+      type={type}
+      onKeyPress={onKeyPress}
+      autoComplete={autoComplete}
+      autoCorrect={autoCorrect}
+      spellCheck={spellCheck}
     />
   );
 };
