@@ -2,61 +2,151 @@
 
 .approval-section {
   position: relative;
-  padding: 52px 80px;
+  padding: 40px;
   box-sizing: border-box;
-  max-width: 70vw;
+  max-width: 600px;
+  width: 100%;
   max-height: 92vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background: var(--background-main);
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+
+  [data-theme="dark"] & {
+    background: #1f2937;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
+  }
 
   &__title {
-    color: #4a72ff;
+    color: var(--primary-color, #4a72ff);
     margin: 0;
-    font-size: 30px;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    transition: color 0.3s ease;
+
+    [data-theme="dark"] & {
+      color: #6366f1;
+    }
   }
 
   &__subtitle {
-    margin: 10px 0 15px 0;
-    font-size: 23px;
+    margin: 16px 0 0 0;
+    font-size: 16px;
     font-weight: 400;
+    text-align: center;
+    color: var(--text-secondary);
+    max-width: 400px;
+    line-height: 1.5;
+    transition: color 0.3s ease;
+
+    [data-theme="dark"] & {
+      color: #9ca3af;
+    }
   }
 
   &__button-wrapper {
-    margin-top: 20px;
+    margin-top: 32px;
     display: flex;
-    justify-content: space-between;
-    gap: 20px;
+    justify-content: center;
+    gap: 12px;
+    width: 100%;
+    max-width: 360px;
   }
 
   &__approve-button,
   &__close-button {
-    width: 150px;
-    height: 50px;
-
+    flex: 1;
+    height: 40px;
     font-weight: 500;
+    font-size: 14px;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+  }
+
+  &__approve-button {
+    background: var(--primary-color, #4a72ff);
+    color: white;
+    border: none;
+
+    &:hover {
+      background: var(--primary-hover, #3d5eff);
+    }
+
+    [data-theme="dark"] & {
+      background: #6366f1;
+
+      &:hover {
+        background: #4f46e5;
+      }
+    }
+  }
+
+  &__close-button {
+    background: transparent;
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+
+    &:hover {
+      background: var(--background-secondary);
+      border-color: var(--text-secondary);
+    }
+
+    [data-theme="dark"] & {
+      color: #e5e7eb;
+      border-color: #374151;
+
+      &:hover {
+        background: #374151;
+        border-color: #4b5563;
+      }
+    }
   }
 
   &__close-icon {
     position: absolute;
     border: none;
     background: none;
-    padding: 0;
-
+    padding: 8px;
     cursor: pointer;
+    top: 16px;
+    right: 16px;
+    transition: all 0.2s ease;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-    top: 30px;
-    right: 30px;
-    transition: 50ms ease-in transform;
+    &:hover {
+      background: var(--background-secondary);
+    }
 
     &:active {
-      transform: scale(0.9);
+      transform: scale(0.95);
+    }
+
+    [data-theme="dark"] & {
+      &:hover {
+        background: #374151;
+      }
     }
 
     img {
       display: block;
+      width: 16px;
+      height: 16px;
       pointer-events: none;
+      opacity: 0.6;
+      transition: opacity 0.2s ease;
+
+      [data-theme="dark"] & {
+        filter: invert(1);
+        opacity: 0.8;
+      }
     }
   }
 }

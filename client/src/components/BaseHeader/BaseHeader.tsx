@@ -15,25 +15,39 @@ import { BaseCheckbox } from "../BaseCheckbox";
 import { BaseInputMask } from "../BaseInputMask";
 import { ComponentCategory } from "../ComponentCategory";
 import { BaseButton } from "../BaseButton";
-import { fetchUserReposFx } from "../../store/Table";
+import { fetchUserReposFx, $tableState } from "../../store/Table";
 import { $config, getConfigRequest } from "../../store/Config";
-import { $theme, toggleTheme } from "../../store/Theme";
+import {
+  $theme,
+  toggleTheme,
+  setCanToggleTheme,
+  $canToggleTheme,
+} from "../../store/Theme";
 import { ErrNot } from "../NotificationService";
 import profileSrc from "../../assets/icons/Profile.svg";
 
 import classes from "./BaseHeader.module.scss";
 import { UserSettings, UserSettingsRef } from "../UserSettings";
 import Switch from "react-switch";
+import { Tooltip } from "antd";
 
 export const BaseHeader: FC = () => {
   const tournamentsSettings = useStore($tournamentsSettings);
   const loading = useStore(fetchUserReposFx.pending);
-
+  const tableData = useStore($tableState);
   const config = useStore($config);
   const theme = useStore($theme);
+  const canToggleTheme = useStore($canToggleTheme);
 
   const [drawerOpen, setDrawerOpen] = React.useState(false);
   const userSettingsRef = React.createRef<UserSettingsRef>();
+
+  // Эффект для управления возможностью переключения темы
+  useEffect(() => {
+    // Запрещаем переключение если идет поиск или есть данные
+    const canToggle = !loading && (!tableData || tableData.length === 0);
+    setCanToggleTheme(canToggle);
+  }, [loading, tableData]);
 
   const handleSettingsModalOpen = async () => {
     if (config?.alias && config?.password) {
@@ -134,54 +148,66 @@ export const BaseHeader: FC = () => {
             </div>
           </div>
           <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
-            <Switch
-              onChange={() => toggleTheme()}
-              checked={theme === "dark"}
-              onColor="#374151"
-              offColor="#e5e7eb"
-              onHandleColor="#ffffff"
-              offHandleColor="#ffffff"
-              handleDiameter={24}
-              uncheckedIcon={
-                <div
-                  style={{
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center",
-                    height: "100%",
-                  }}
-                >
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="black">
-                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
-                  </svg>
-                </div>
-              }
-              checkedIcon={
-                <div
-                  style={{
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center",
-                    height: "100%",
-                  }}
-                >
-                  <svg
-                    width="14"
-                    height="14"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="white"
-                    strokeWidth="2"
-                  >
-                    <circle cx="12" cy="12" r="5" />
-                    <path d="M12 1v2m0 18v2M4.22 4.22l1.42 1.42m12.72 12.72l1.42 1.42M1 12h2m18 0h2M4.22 19.78l1.42-1.42m12.72-12.72l1.42-1.42" />
-                  </svg>
-                </div>
-              }
-              width={60}
-              height={32}
-              className={classes.themeSwitch}
-            />
+            <Tooltip
+              title={!canToggleTheme ? "Refresh page to change theme" : ""}
+            >
+              <div style={{ opacity: canToggleTheme ? 1 : 0.5 }}>
+                <Switch
+                  onChange={() => toggleTheme()}
+                  checked={theme === "dark"}
+                  onColor="#374151"
+                  offColor="#e5e7eb"
+                  onHandleColor="#ffffff"
+                  offHandleColor="#ffffff"
+                  handleDiameter={24}
+                  disabled={!canToggleTheme}
+                  uncheckedIcon={
+                    <div
+                      style={{
+                        display: "flex",
+                        justifyContent: "center",
+                        alignItems: "center",
+                        height: "100%",
+                      }}
+                    >
+                      <svg
+                        width="14"
+                        height="14"
+                        viewBox="0 0 24 24"
+                        fill="black"
+                      >
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+                      </svg>
+                    </div>
+                  }
+                  checkedIcon={
+                    <div
+                      style={{
+                        display: "flex",
+                        justifyContent: "center",
+                        alignItems: "center",
+                        height: "100%",
+                      }}
+                    >
+                      <svg
+                        width="14"
+                        height="14"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="white"
+                        strokeWidth="2"
+                      >
+                        <circle cx="12" cy="12" r="5" />
+                        <path d="M12 1v2m0 18v2M4.22 4.22l1.42 1.42m12.72 12.72l1.42 1.42M1 12h2m18 0h2M4.22 19.78l1.42-1.42m12.72-12.72l1.42-1.42" />
+                      </svg>
+                    </div>
+                  }
+                  width={60}
+                  height={32}
+                  className={classes.themeSwitch}
+                />
+              </div>
+            </Tooltip>
             <div className={classes.settings} onClick={handleSettingsModalOpen}>
               Edit settings
             </div>

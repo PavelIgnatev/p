@@ -1,6 +1,7 @@
 import { timeStringToMilliseconds } from "./../../helpers/timeStringToMilliseconds";
 import { findTournamentWithDiapzone } from "./../../helpers/findTournamentWithDiapzone";
 import { createStore, combine } from "effector";
+import { Theme } from "../types";
 
 import { getDate } from "./../../helpers/getDate";
 import { getWeekday } from "./../../helpers/getWeekday";

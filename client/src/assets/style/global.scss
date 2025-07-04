@@ -1,0 +1,45 @@
+/* Убираем outline у переключателя темы */
+.react-switch-handle {
+  outline: none !important;
+  box-shadow: none !important;
+  border: none !important;
+
+  &:focus,
+  &:active,
+  &:hover {
+    outline: none !important;
+    box-shadow: none !important;
+    border: none !important;
+  }
+}
+
+/* Убираем outline у контейнера переключателя */
+.react-switch {
+  outline: none !important;
+  box-shadow: none !important;
+  border: none !important;
+
+  &:focus,
+  &:active,
+  &:hover {
+    outline: none !important;
+    box-shadow: none !important;
+    border: none !important;
+  }
+}
+
+/* Убираем outline у всех элементов переключателя */
+.react-switch * {
+  outline: none !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+/* Запрещаем выделение текста на переключателе */
+.react-switch-handle,
+.react-switch {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+} 

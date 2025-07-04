@@ -15,7 +15,7 @@
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   min-width: 1000px; /* Минимальная ширина для предотвращения сжатия */
-  background: white;
+  background: var(--background-main);
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
@@ -28,6 +28,12 @@
   scrollbar-width: thin;
   scrollbar-color: rgba(0, 0, 0, 0.3) transparent;
 
+  [data-theme="dark"] & {
+    background: #1a1a1a;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    scrollbar-color: rgba(255, 255, 255, 0.2) transparent;
+  }
+
   &::-webkit-scrollbar {
     width: 8px;
     height: 8px;
@@ -38,12 +44,12 @@
   }
 
   &::-webkit-scrollbar-thumb {
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(255, 255, 255, 0.2);
     border-radius: 4px;
   }
 
   &::-webkit-scrollbar-thumb:hover {
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(255, 255, 255, 0.3);
   }
 }
 
@@ -52,8 +58,13 @@
   position: sticky;
   top: 0; /* Крепится к верху viewport'а */
   z-index: 100;
-  background: rgb(57, 99, 162);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  background: #4a5568;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  [data-theme="dark"] & {
+    background: #2c3e50;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  }
 }
 
 .thead .tr {
@@ -61,7 +72,7 @@
 }
 
 .thead .th {
-  background: rgb(57, 99, 162);
+  background: #4a5568;
   color: white;
   font-weight: 600;
   font-size: 14px;
@@ -107,7 +118,7 @@
   /* Активная сортировка */
   &.active {
     &:not(.reverse)::after {
-      border-top-color: #6bf274;
+      border-top-color: #4CAF50;
       opacity: 1;
     }
 
@@ -116,7 +127,7 @@
     }
 
     &.reverse::before {
-      border-bottom-color: #6bf274;
+      border-bottom-color: #4CAF50;
       opacity: 1;
     }
 
@@ -134,6 +145,10 @@
       display: none;
     }
   }
+
+  [data-theme="dark"] & {
+    background: #2c3e50;
+  }
 }
 
 /* Тело таблицы */
@@ -146,16 +161,61 @@
   transition: background-color 0.15s ease;
 
   &:hover {
-    filter: brightness(1.05);
+    filter: brightness(0.95);
+
+    [data-theme="dark"] & {
+      filter: brightness(1.1);
+    }
   }
 
   /* Чередование цветов строк */
   &:nth-child(even) .td {
-    background: #e8e6f3;
+    background: #f3f4f6;
+
+    [data-theme="dark"] & {
+      background: #262626;
+    }
   }
 
   &:nth-child(odd) .td {
-    background: #f8f7fc;
+    background: #ffffff;
+
+    [data-theme="dark"] & {
+      background: #2d2d2d;
+    }
+  }
+
+  /* Цветовые варианты для разных типов строк */
+  &.green .td {
+    background: rgba(34, 197, 94, 0.1);
+
+    [data-theme="dark"] & {
+      background: rgba(76, 175, 80, 0.15);
+    }
+  }
+
+  &.yellow .td {
+    background: rgba(234, 179, 8, 0.1);
+
+    [data-theme="dark"] & {
+      background: rgba(255, 193, 7, 0.15);
+    }
+  }
+
+  &.orange .td {
+    background: rgba(249, 115, 22, 0.1);
+
+    [data-theme="dark"] & {
+      background: rgba(255, 152, 0, 0.15);
+    }
+  }
+
+  &.red .td {
+    background: rgba(239, 68, 68, 0.1);
+
+    [data-theme="dark"] & {
+      background: rgba(244, 67, 54, 0.15);
+    }
   }
 }
 
@@ -163,13 +223,17 @@
   padding: 10px 8px;
   text-align: center;
   vertical-align: middle;
-  color: #2c2c2c;
+  color: #1f2937;
   border: none;
   font-size: 13px;
   word-wrap: break-word;
   overflow: hidden;
   text-overflow: ellipsis;
   position: relative;
+
+  [data-theme="dark"] & {
+    color: #e0e0e0;
+  }
 }
 
 /* Скругления последней строки */
