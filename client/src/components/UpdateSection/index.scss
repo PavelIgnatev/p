@@ -1,14 +1,14 @@
 $baseColor: green;
 
 .update-section {
-  color: $baseColor;
+  color: #000000; // Черный текст в светлой теме
   font-size: 20px;
   margin-top: 28px;
 
   &__title {
     margin-bottom: 20px;
-
     font-size: 1.2em;
+    color: #000000; // Черный заголовок в светлой теме
 
     &_red {
       color: red;
@@ -19,5 +19,20 @@ $baseColor: green;
     font-size: 0.8em;
     height: 60px;
     width: 120px;
+  }
+}
+
+// Стили для темной темы
+[data-theme="dark"] {
+  .update-section {
+    color: #ffffff;
+
+    &__title {
+      color: #ffffff;
+
+      &_red {
+        color: #ff6b6b;
+      }
+    }
   }
 }

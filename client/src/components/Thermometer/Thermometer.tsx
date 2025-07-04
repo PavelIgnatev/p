@@ -3,6 +3,7 @@ import { useStore } from "effector-react";
 import { Slider, Rail, Handles, Tracks } from "react-compound-slider";
 import { Box, Typography, styled } from "@mui/material";
 import { $colors, handleChangeColors, postColors } from "../../store/Colors";
+import "./Thermometer.scss";
 
 const SliderBox = styled(Box)({
   position: "relative",
@@ -88,13 +89,13 @@ export const Thermometer: React.FC = () => {
   };
 
   if (!values) {
-    return <section>'Loading...'</section>;
+    return <section className="thermometer-section">Loading...</section>;
   }
 
   return (
-    <section style={{ marginTop: "20px" }}>
-      <h2 style={{ color: "#4a72ff", marginBottom: "-5px" }}>Color section</h2>
-      <p style={{ width: "500px" }}>
+    <section className="thermometer-section">
+      <h2 className="thermometer-title">Color section</h2>
+      <p className="thermometer-description">
         Selecting a color for the tournament relative to the difference between
         the score and the average score
       </p>
@@ -168,7 +169,7 @@ export const Thermometer: React.FC = () => {
           { range: `${values[2]}<=X<${values[3]}`, color: "orange" },
           { range: `${values[3]}<=X<=${values[4]}`, color: "red" },
         ].map((desc) => (
-          <p key={desc.range} style={{ margin: "0", marginTop: "5px" }}>
+          <p key={desc.range} className="thermometer-rule">
             if {desc.range} then {desc.color}
           </p>
         ))}

@@ -1,7 +1,7 @@
 $baseColor: #4a72ff;
 
 .percent-section {
-  color: $baseColor;
+  color: #000000; // Черный текст в светлой теме
   font-size: 20px;
 
   &__wrapper {
@@ -11,8 +11,8 @@ $baseColor: #4a72ff;
 
   &__title {
     margin-bottom: 20px;
-
     font-size: 1.2em;
+    color: #000000; // Черный заголовок в светлой теме
   }
 
   &__input,
@@ -23,5 +23,16 @@ $baseColor: #4a72ff;
 
   &__button {
     margin-left: 10px;
+  }
+}
+
+// Стили для темной темы
+[data-theme="dark"] {
+  .percent-section {
+    color: #ffffff;
+
+    &__title {
+      color: #ffffff;
+    }
   }
 }

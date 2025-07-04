@@ -22,9 +22,13 @@ import { ScoreSection } from "../../components/Admin.ScoreSection";
 import { UserSection } from "../../components/Admin.UserSection";
 import { PercentSection } from "../../components/SampleSection";
 import { Thermometer } from "../../components/Thermometer";
+import { $theme, toggleTheme } from "../../store/Theme";
+import Switch from "react-switch";
+import classes from "./AdminPage.module.scss";
 
 export const AdminPage: FC = () => {
   const isAdmin = useStore($isValidAdminPassword);
+  const theme = useStore($theme);
 
   useEffect(() => {
     getStopWords();
@@ -46,10 +50,61 @@ export const AdminPage: FC = () => {
 
   return (
     <>
-      <section
-        style={{ marginTop: "20px", color: "#FF4242", fontSize: "18px" }}
-      >
-        Welcome to <strong>Admin Panel</strong>
+      <section className={classes.header}>
+        <div className={classes.title}>
+          Welcome to <strong>Admin Panel</strong>
+        </div>
+        <div className={classes.themeToggle}>
+          <Switch
+            onChange={() => toggleTheme()}
+            checked={theme === "dark"}
+            onColor="#374151"
+            offColor="#e5e7eb"
+            onHandleColor="#ffffff"
+            offHandleColor="#ffffff"
+            handleDiameter={24}
+            className={classes.themeSwitchButton}
+            uncheckedIcon={
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  height: "100%",
+                }}
+              >
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="black"
+                >
+                  <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+                </svg>
+              </div>
+            }
+            checkedIcon={
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  height: "100%",
+                }}
+              >
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="gold"
+                >
+                  <circle cx="12" cy="12" r="5" />
+                  <path d="M12 1v6M12 17v6M4.22 4.22l4.24 4.24M15.54 15.54l4.24 4.24M1 12h6M17 12h6M4.22 19.78l4.24-4.24M15.54 8.46l4.24-4.24" />
+                </svg>
+              </div>
+            }
+          />
+        </div>
       </section>
       <UpdateSection />
       <OffpeakSection />

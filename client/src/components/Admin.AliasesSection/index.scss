@@ -4,12 +4,12 @@
   margin-top: 64px;
 
   font-size: 20px;
-  color: $baseColor;
+  color: #000000; // Черный текст в светлой теме
 
   &__title {
     margin: 0;
-
     font-size: 1.2em;
+    color: #000000; // Черный заголовок в светлой теме
   }
 
   &__subtitle-wrapper {
@@ -24,6 +24,7 @@
     min-width: 192px;
     margin: 0;
     font-size: 1.1em;
+    color: #000000; // Черный подзаголовок в светлой теме
   }
 
   &__alias-form {
@@ -129,6 +130,60 @@
 
     &:hover {
       background-color: #f1f1f1;
+    }
+  }
+}
+
+// Стили для темной темы
+[data-theme="dark"] {
+  .aliases-section {
+    color: #ffffff;
+
+    &__title {
+      color: #ffffff;
+    }
+
+    &__subtitle {
+      color: #ffffff;
+    }
+
+    &__alias-form {
+      &-select {
+        span[aria-relevant="additions text"]+div {
+          background: #2a2a2a;
+          box-shadow: 0 0 0 1px #555555;
+
+          & * div {
+            color: rgba(255, 255, 255, 0.5);
+          }
+
+          & * div:not([id]) {
+            color: white !important;
+          }
+
+          svg {
+            color: rgba(255, 255, 255, 0.5) !important;
+          }
+        }
+      }
+    }
+
+    &__alias-item {
+      background-color: #2a2a2a;
+      box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.1), 0 0.1px 0.3px rgba(255, 255, 255, 0.1), 0 1px 2px rgba(255, 255, 255, 0.2);
+      color: #ffffff;
+    }
+
+    &__alias-item-text {
+      color: #ffffff;
+    }
+
+    &__alias-item-delete-wrapper {
+      background-color: #3a3a3a;
+
+      &:hover {
+        background-color: #4a4a4a;
+      }
     }
   }
 }

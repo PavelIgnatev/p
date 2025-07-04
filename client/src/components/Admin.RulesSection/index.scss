@@ -2,7 +2,7 @@
 
 .rules-section {
   font-size: 20px;
-  color: $baseColor;
+  color: #000000; // Черный текст в светлой теме
   margin-top: 64px;
   user-select: none;
 
@@ -153,6 +153,7 @@
   &__title {
     font-size: 1.2em;
     font-weight: 700;
+    color: #000000; // Черный заголовок в светлой теме
   }
 
   &__subtitle {
@@ -161,6 +162,7 @@
 
     font-weight: 700;
     font-size: 1.05em;
+    color: #000000; // Черный подзаголовок в светлой теме
   }
 
   &__filter {
@@ -206,5 +208,33 @@
   &__filter-network {
     margin-left: 16px;
     width: 205px;
+  }
+}
+
+// Стили для темной темы
+[data-theme="dark"] {
+  .rules-section {
+    color: #ffffff;
+
+    &__title {
+      color: #ffffff;
+    }
+
+    &__subtitle {
+      color: #ffffff;
+    }
+
+    &__rule-stripe {
+      background-color: #6b85ff;
+
+      &:before,
+      &:after {
+        background-color: #6b85ff;
+      }
+    }
+
+    &__elems-toggle-divider {
+      background-color: #6b85ff;
+    }
   }
 }

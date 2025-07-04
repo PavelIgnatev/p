@@ -1,0 +1,49 @@
+.thermometer-section {
+  margin-top: 20px;
+}
+
+.thermometer-title {
+  color: #000000; // Черный заголовок в светлой теме
+  margin-bottom: -5px;
+}
+
+.thermometer-description {
+  width: 500px;
+  color: #000000; // Черный текст в светлой теме
+}
+
+.thermometer-rule {
+  margin: 0;
+  margin-top: 5px;
+  color: #000000; // Черный текст в светлой теме
+}
+
+// Стили для компонентов MUI Typography
+.MuiTypography-root {
+  color: #000000; // Черный текст в светлой теме
+}
+
+// Стили для темной темы
+[data-theme="dark"] {
+  .thermometer-section {
+    color: #ffffff;
+  }
+
+  .thermometer-title {
+    color: #ffffff;
+  }
+
+  .thermometer-description {
+    color: #ffffff;
+  }
+
+  .thermometer-rule {
+    color: #ffffff;
+  }
+
+  // MUI Typography в темной теме
+  .MuiTypography-root,
+  .MuiTypography-body1 {
+    color: #ffffff !important;
+  }
+} 

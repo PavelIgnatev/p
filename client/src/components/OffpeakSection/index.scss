@@ -26,8 +26,8 @@ $baseColor: #4a72ff;
 
   &__title {
     margin-bottom: 20px;
-
     font-size: 1.2em;
+    color: #000000; // Черный заголовок в светлой теме
   }
 
   &__input,
@@ -45,5 +45,22 @@ $baseColor: #4a72ff;
     border-style: solid;
     border-width: 1px;
     padding-left: 8px;
+  }
+}
+
+// Стили для темной темы
+[data-theme="dark"] {
+  .offpeak-section {
+    color: #ffffff;
+
+    &__title {
+      color: #ffffff;
+    }
+
+    &__input {
+      color: #ffffff;
+      background-color: #2a2a2a;
+      border-color: #555555;
+    }
   }
 }

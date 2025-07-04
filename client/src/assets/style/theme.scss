@@ -27,6 +27,92 @@
   --table-header-bg: #1f1f1f;
   --table-row-hover: #262626;
   --modal-bg-color: #1f1f1f;
+  
+  // Все заголовки белые в темной теме
+  h1, h2, h3, h4, h5, h6 {
+    color: #ffffff !important;
+  }
+  
+  // Все заголовки секций белые
+  section > h1, section > h2, section > h3, section > h4, section > h5, section > h6 {
+    color: #ffffff !important;
+  }
+  
+  // Заголовки в компонентах админ панели
+  .component-title, .section-title {
+    color: #ffffff !important;
+  }
+  
+  // Заголовки в BEM стилях
+  .aliases-section__title,
+  .aliases-section__subtitle,
+  .rules-section__title,
+  .rules-section__subtitle,
+  .user-section__title,
+  .user-section__subtitle,
+  .score-section__title,
+  .score-section__subtitle,
+  .offpeak-section__title,
+  .offpeak-section__subtitle,
+  .stop-words-section__title,
+  .stop-words-section__subtitle {
+    color: #ffffff !important;
+  }
+  
+  // Общие стили для всех элементов с классом title
+  [class*="title"],
+  [class*="__title"],
+  [class*="subtitle"],
+  [class*="__subtitle"] {
+    color: #ffffff !important;
+  }
+  
+  // Стили для span элементов с заголовками
+  span[class*="title"],
+  span[class*="__title"] {
+    color: #ffffff !important;
+  }
+  
+  // Стили для текста секций
+  section {
+    color: #ffffff;
+  }
+  
+  // Стили для всех элементов с BEM классами
+  [class*="__title"],
+  [class*="title"] {
+    color: #ffffff !important;
+  }
+  
+  // MUI Typography компоненты в темной теме
+  .MuiTypography-root,
+  .MuiTypography-body1,
+  .MuiTypography-body2,
+  .MuiTypography-h1,
+  .MuiTypography-h2,
+  .MuiTypography-h3,
+  .MuiTypography-h4,
+  .MuiTypography-h5,
+  .MuiTypography-h6,
+  [class*="MuiTypography-root"],
+  [class*="css-"][class*="-MuiTypography-root"] {
+    color: #ffffff !important;
+  }
+}
+
+// Стили для MUI компонентов в светлой теме
+.MuiTypography-root,
+.MuiTypography-body1,
+.MuiTypography-body2,
+.MuiTypography-h1,
+.MuiTypography-h2,
+.MuiTypography-h3,
+.MuiTypography-h4,
+.MuiTypography-h5,
+.MuiTypography-h6,
+[class*="MuiTypography-root"],
+[class*="css-"][class*="-MuiTypography-root"] {
+  color: #000000 !important;
 }
 
 body {

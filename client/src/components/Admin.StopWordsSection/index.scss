@@ -3,7 +3,7 @@
 
 .stop-words-section {
   &__title {
-    color: $baseColor;
+    color: #000000; // Черный заголовок в светлой теме
     margin-top: 50px;
   }
 
@@ -43,7 +43,28 @@
   }
 
   &__title {
-    color: $baseColor;
+    color: #000000; // Черный заголовок в светлой теме
   }
 
+}
+
+// Стили для темной темы
+[data-theme="dark"] {
+  .stop-words-section {
+    &__title {
+      color: #ffffff;
+    }
+
+    &__words {
+      &__word {
+        color: #ffffff;
+        background: #2a2a2a;
+        box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.1), 0 0.1px 0.3px rgba(255, 255, 255, 0.1), 0 1px 2px rgba(255, 255, 255, 0.2);
+
+        &:hover {
+          background-color: #4a4a4a;
+        }
+      }
+    }
+  }
 }

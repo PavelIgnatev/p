@@ -1,20 +1,26 @@
 .header {
   margin-top: 20px;
-  padding: 16px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: var(--background-secondary);
-  border-radius: 10px;
-  border: var(--border-width) solid var(--border-color);
 }
 
 .title {
-  color: rgb(99, 102, 241);
+  color: var(--text-color);
   font-size: 18px;
   
   strong {
     color: rgb(99, 102, 241);
+  }
+}
+
+[data-theme="dark"] {
+  .title {
+    color: #ffffff;
+    
+    strong {
+      color: #ffffff;
+    }
   }
 }
 
