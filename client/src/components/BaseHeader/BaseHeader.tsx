@@ -1,4 +1,4 @@
-import React, { FC, useEffect } from "react";
+import React, { FC, useEffect, useRef, Ref } from "react";
 import cx from "classnames";
 import { Drawer } from "antd";
 import {
@@ -22,7 +22,7 @@ import { ErrNot } from "../NotificationService";
 import profileSrc from "../../assets/icons/Profile.svg";
 
 import classes from "./BaseHeader.module.scss";
-import { UserSettings } from "../UserSettings";
+import { UserSettings, UserSettingsRef } from "../UserSettings";
 import Switch from "react-switch";
 
 export const BaseHeader: FC = () => {
@@ -33,6 +33,7 @@ export const BaseHeader: FC = () => {
   const theme = useStore($theme);
 
   const [drawerOpen, setDrawerOpen] = React.useState(false);
+  const userSettingsRef = React.createRef<UserSettingsRef>();
 
   const handleSettingsModalOpen = async () => {
     if (config?.alias && config?.password) {
@@ -73,25 +74,63 @@ export const BaseHeader: FC = () => {
     fetchUserReposFx();
   };
 
+  const showEmail = config?.mail && config.mail.length >= 5;
+
   return (
     <>
       <header className={classes.header}>
         <div className={classes.info}>
           <div className={classes.userInfo}>
-            <div className={classes.alias}>
-              <img
-                className={classes.profileImage}
-                src={profileSrc}
-                alt="profile"
-              />
-              <p>
-                Hello, <strong>{config?.alias}!</strong>
-              </p>
-            </div>
-            <div className={classes.dot}></div>
-            <div className={classes.mail}>
-              <strong>Your e-mail: </strong>
-              {config?.mail}
+            <div
+              className={classes.userProfile}
+              onClick={handleSettingsModalOpen}
+            >
+              <div className={classes.avatar}>
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="rgb(99, 102, 241)"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+              </div>
+              <div className={classes.userDetails}>
+                <div className={classes.userInfo}>
+                  <div className={classes.userName}>
+                    Hello, <strong>{config?.alias || "Guest"}</strong>
+                  </div>
+
+                  {showEmail && (
+                    <>
+                      <div className={classes.dot}></div>
+                      <div className={classes.userEmail}>
+                        <svg
+                          width="14"
+                          height="14"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="rgb(99, 102, 241)"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        >
+                          <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                          <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                        <span style={{ marginLeft: "2px" }}>
+                          {config?.mail?.toLowerCase()}
+                        </span>
+                      </div>
+                    </>
+                  )}
+                </div>
+              </div>
             </div>
           </div>
           <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
@@ -112,12 +151,7 @@ export const BaseHeader: FC = () => {
                     height: "100%",
                   }}
                 >
-                  <svg
-                    width="14"
-                    height="14"
-                    viewBox="0 0 24 24"
-                    fill="black"
-                  >
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="black">
                     <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
                   </svg>
                 </div>
@@ -333,12 +367,28 @@ export const BaseHeader: FC = () => {
           padding: "16px 32px",
         }}
         className={theme === "dark" ? "dark-theme" : ""}
+        extra={
+          <BaseButton
+            onClick={async () => {
+              const ref = userSettingsRef.current;
+              if (ref) {
+                await ref.handleSubmit();
+                setDrawerOpen(false);
+              }
+            }}
+            className={classes.drawerSaveButton}
+          >
+            Save changes
+          </BaseButton>
+        }
       >
-        {config ? (
+        {config && userSettingsRef ? (
           <UserSettings
+            ref={userSettingsRef}
             config={config}
             isAdminPage={false}
             onClose={() => setDrawerOpen(false)}
+            onSave={() => setDrawerOpen(false)}
           />
         ) : (
           <div style={{ padding: 50 }}>Loading config</div>

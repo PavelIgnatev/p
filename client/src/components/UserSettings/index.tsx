@@ -1,5 +1,5 @@
 import { useStore } from "effector-react";
-import React from "react";
+import React, { forwardRef, useImperativeHandle } from "react";
 import b_ from "b_";
 
 import { $password } from "../../store/Password";
@@ -19,15 +19,25 @@ import { Modal, ModalRef } from "../Modal";
 import { ApprovalSection } from "../ApprovalSection";
 import { useModal } from "../../hooks/useModal";
 
+const b = b_.with("user-settings");
+
 interface Props {
   config: ConfigModel;
   isAdminPage?: boolean;
   onClose: () => void;
+  onSave?: () => void;
 }
 
-export const b = b_.with("user-settings");
+export interface UserSettingsRef {
+  handleSubmit: () => Promise<void>;
+}
 
-export const UserSettings = ({ config, isAdminPage, onClose }: Props) => {
+export const UserSettings = forwardRef<UserSettingsRef, Props>(({
+  config,
+  isAdminPage,
+  onClose,
+  onSave,
+}, ref) => {
   const [progress, setProgress] = React.useState(false);
   const editableConfig = useStore($editableConfig);
   const { alias, networks, password: newPassword, ...props } = editableConfig;
@@ -39,10 +49,6 @@ export const UserSettings = ({ config, isAdminPage, onClose }: Props) => {
     editableConfigEvents.setConfig(config);
     return editableConfigEvents.clearConfig;
   }, [config]);
-
-  if (!alias) {
-    return null;
-  }
 
   const handleSubmit = async () => {
     const { time1, time2, normalTime, turboTime, superTurboTime } = props;
@@ -80,8 +86,17 @@ export const UserSettings = ({ config, isAdminPage, onClose }: Props) => {
     });
     setProgress(false);
 
+    onSave?.();
     onClose();
   };
+
+  useImperativeHandle(ref, () => ({
+    handleSubmit
+  }));
+
+  if (!alias) {
+    return null;
+  }
 
   const handleDeleteCache = async () => {
     setProgress(true);
@@ -112,19 +127,8 @@ export const UserSettings = ({ config, isAdminPage, onClose }: Props) => {
         isAdminPage={isAdminPage}
         onDeleteCache={handleDeleteCache}
       >
-        <UserSettingsTable
-          networks={networks}
-          canChangeLevels={isAdminPage}
-        />
+        <UserSettingsTable networks={networks} canChangeLevels={isAdminPage} />
       </UserSettingsInfo>
-
-      <BaseButton
-        onClick={handleSubmit}
-        className={b("save-button")}
-        disabled={progress}
-      >
-        Save changes
-      </BaseButton>
 
       <Modal ref={deleteModalRef}>
         <ApprovalSection
@@ -138,4 +142,4 @@ export const UserSettings = ({ config, isAdminPage, onClose }: Props) => {
       </Modal>
     </>
   );
-};
+});

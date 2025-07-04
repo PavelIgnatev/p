@@ -4,10 +4,10 @@
   "private": true,
   "scripts": {
     "start": "PORT=3001 serve -s build",
-    "start:dev": "PORT=3001 react-scripts start",
-    "build": "react-scripts build",
-    "start:prod": "PORT=3001 BROWSER=none react-scripts start",
-    "test": "react-scripts test",
+    "start:dev": "PORT=3001 react-app-rewired start",
+    "build": "react-app-rewired build",
+    "start:prod": "PORT=3001 BROWSER=none react-app-rewired start",
+    "test": "react-app-rewired test",
     "eject": "react-scripts eject"
   },
   "dependencies": {
@@ -45,7 +45,6 @@
     "react-switch": "^7.1.0",
     "react-toastify": "^8.0.3",
     "react-use": "^17.4.0",
-    "react-window": "^1.8.11",
     "typescript": "^4.4.3"
   },
   "eslintConfig": {
@@ -63,6 +62,7 @@
     "@typescript-eslint/eslint-plugin": "^4.28.4",
     "@typescript-eslint/parser": "^4.28.4",
     "eslint-config-react-app": "^6.0.0",
+    "react-app-rewired": "^2.2.1",
     "sass": "^1.89.2"
   },
   "browserslist": {

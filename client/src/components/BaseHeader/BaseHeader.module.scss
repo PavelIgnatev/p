@@ -10,7 +10,7 @@
   width: 100%;
   padding: 30px;
   background: var(--background-secondary);
-  border-radius: 20px;
+  border-radius: 10px;
   display: flex;
   justify-content: space-between;
   transition: background-color 0.3s ease;
@@ -72,8 +72,19 @@
 .checkbox {
   user-select: none;
   cursor: pointer;
-  transition: color 0.3s ease;
+  transition: all 0.3s ease;
   color: var(--text-color);
+  padding: 6px 12px;
+  border-radius: 6px;
+
+  &.selected {
+    background: rgb(99, 102, 241);
+    color: white;
+
+    &:hover {
+      background: rgb(79, 70, 229);
+    }
+  }
 }
 
 .input {
@@ -116,7 +127,7 @@
 }
 
 .button {
-  background: var(--primary-color);
+  background: rgb(99, 102, 241);
   border-radius: 10px;
   font-weight: 700;
   height: 38px;
@@ -124,8 +135,13 @@
   color: white;
   transition: background-color 0.3s ease;
 
-  &:hover {
-    background: var(--primary-hover);
+  &:hover:not(:disabled) {
+    background: rgb(79, 70, 229);
+  }
+
+  &:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
   }
 }
 
@@ -137,14 +153,13 @@
   display: block;
   width: 32px;
   height: 32px;
-  filter: brightness(1);
+  filter: brightness(1) sepia(1) saturate(5) hue-rotate(175deg);
   transition: all 0.3s ease;
   border-radius: 50%;
-
 }
 
 [data-theme="dark"] .profileImage {
-  filter: brightness(1.4) contrast(1.2);
+  filter: brightness(2.5);
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
 }
 
@@ -160,11 +175,11 @@
 }
 
 .dot {
-  width: 6px;
-  height: 6px;
-  background-color: var(--primary-color);
+  width: 3px;
+  height: 3px;
   border-radius: 50%;
-  transition: background-color 0.3s ease;
+  background-color: var(--text-secondary);
+  margin: 0 4px;
 }
 
 .info,
@@ -177,7 +192,7 @@
 
 .info {
   margin: 10px 0;
-  padding: 0 50px;
+  padding: 0 15px;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -185,15 +200,61 @@
   color: var(--text-color);
 }
 
+.userProfile {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+}
+
+.avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(99, 102, 241, 0.1);
+  border-radius: 50%;
+}
+
+.userDetails {
+  display: flex;
+  align-items: center;
+}
+
+.userName {
+  font-size: 16px;
+  color: var(--text-color);
+  
+  strong {
+    color: rgb(99, 102, 241);
+  }
+}
+
+.userEmail {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 14px;
+  color: var(--text-secondary);
+
+  svg {
+    flex-shrink: 0;
+  }
+
+  span {
+    max-width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+
 .settings {
   cursor: pointer;
-  font-weight: 700;
-  color: var(--primary-color);
   transition: color 0.3s ease;
-
-  &:hover {
-    color: var(--primary-hover);
-  }
+  color: rgb(99, 102, 241);
+  font-weight: 500;
 }
 
 .themeSwitch {
@@ -220,7 +281,7 @@
   width: 2px;
   background-color: var(--primary-color);
   height: 26px;
-  border-radius: 20px;
+  border-radius: 10px;
   transition: background-color 0.3s ease;
 }
 
@@ -372,4 +433,9 @@
   .checkbox {
     font-size: 13px;
   }
+}
+
+.drawerSaveButton {
+  composes: button;
+  width: 145px;
 }

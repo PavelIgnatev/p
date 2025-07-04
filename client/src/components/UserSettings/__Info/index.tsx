@@ -22,7 +22,6 @@ import { Modal, ModalRef } from "../../Modal";
 import { ApprovalSection } from "../../ApprovalSection";
 import TimeField from "react-simple-timefield";
 
-
 // type ColorsType = "green" | "yellow" | "red" | "rgb(152, 183, 201)";
 interface Props {
   config: ConfigModel;
@@ -30,13 +29,58 @@ interface Props {
   onDeleteCache: () => void;
 }
 
-const nativeSelectStyles = {
+const selectStyles = {
   ...specialSelectStyles,
+  option: (provided: object, state: any) => ({
+    ...specialSelectStyles.option(provided, state),
+    fontSize: "14px",
+    padding: "6px 10px",
+  }),
   control: (provided: object, state: any) => ({
     ...specialSelectStyles.control(provided, state),
-    fontWeight: 700,
-    fontSize: "20px",
-    width: "150px",
+    fontSize: "14px",
+    minWidth: "140px",
+    minHeight: "36px",
+    border: "1px solid var(--border-color)",
+    borderRadius: "8px",
+    background: "var(--background-main)",
+    boxShadow: "none",
+    "&:hover": {
+      borderColor: "var(--primary-color)",
+      boxShadow: "0 2px 4px rgba(0, 0, 0, 0.05)",
+    },
+  }),
+  menu: (provided: object) => ({
+    ...provided,
+    background: "var(--background-main)",
+    border: "1px solid var(--border-color)",
+    borderRadius: "8px",
+    boxShadow: "0 4px 12px rgba(0, 0, 0, 0.1)",
+    overflow: "hidden",
+    zIndex: 10,
+  }),
+  valueContainer: (provided: object) => ({
+    ...provided,
+    padding: "0 8px",
+  }),
+  indicatorsContainer: (provided: object) => ({
+    ...provided,
+    height: "36px",
+  }),
+  indicatorSeparator: () => ({
+    display: "none",
+  }),
+  dropdownIndicator: (provided: object, state: any) => ({
+    ...provided,
+    color: "var(--text-secondary)",
+    padding: "0 8px",
+    "&:hover": {
+      color: "var(--text-color)",
+    },
+  }),
+  singleValue: (provided: object) => ({
+    ...provided,
+    color: "var(--text-color)",
   }),
 };
 
@@ -195,12 +239,12 @@ export const UserSettingsInfo: FC<Props> = ({
       <div className={b("header-wrapper")}>
         <div className={b("header")}>
           {!isAdminPage && (
-            <div className={b("header-content")}    onClick={toggleShowPassword}
-            style={{ cursor: "pointer" }}>
-              <span
-                className={b("header-password")}
-             
-              >
+            <div
+              className={b("header-content")}
+              onClick={toggleShowPassword}
+              style={{ cursor: "pointer", height: "38px" }}
+            >
+              <span className={b("header-password")} >
                 <b>Password: </b>
                 <div
                   className={b("header-password-block")}
@@ -231,7 +275,7 @@ export const UserSettingsInfo: FC<Props> = ({
               onClick={() => handleModalOpen(deleteModalRef)}
               red
             >
-              CLEAR CACHE
+              Clear cache
             </BaseButton>
             <Modal ref={deleteModalRef}>
               <ApprovalSection
@@ -305,7 +349,9 @@ export const UserSettingsInfo: FC<Props> = ({
               />
               <button
                 className="clear-button"
-                onClick={() => editableConfigEvents.handleChangeNormalTime(null)}
+                onClick={() =>
+                  editableConfigEvents.handleChangeNormalTime(null)
+                }
                 type="button"
                 aria-label="Clear input"
               />
@@ -347,7 +393,9 @@ export const UserSettingsInfo: FC<Props> = ({
               />
               <button
                 className="clear-button"
-                onClick={() => editableConfigEvents.handleChangeSuperTurboTime(null)}
+                onClick={() =>
+                  editableConfigEvents.handleChangeSuperTurboTime(null)
+                }
                 type="button"
                 aria-label="Clear input"
               />
@@ -369,7 +417,7 @@ export const UserSettingsInfo: FC<Props> = ({
               // @ts-ignore
               onChange={handleAllEffmuChange}
               className={b("input", { effmu: true })}
-              styles={nativeSelectStyles}
+              styles={selectStyles}
               placeholder="Effmu all"
             />
           </div>
@@ -381,7 +429,7 @@ export const UserSettingsInfo: FC<Props> = ({
               // @ts-ignore
               onChange={handleTimezoneChange}
               className={b("input", { timezone: true })}
-              styles={nativeSelectStyles}
+              styles={selectStyles}
             />
           </div>
           {isAdminPage && (
@@ -393,7 +441,7 @@ export const UserSettingsInfo: FC<Props> = ({
                 // @ts-ignore
                 onChange={handleAddressChange}
                 className={b("input", { timezone: true })}
-                styles={nativeSelectStyles}
+                styles={selectStyles}
               />
             </div>
           )}

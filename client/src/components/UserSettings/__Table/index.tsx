@@ -13,16 +13,39 @@ import { editableConfigEvents } from "../../../store/Config";
 
 import { specialSelectStyles } from "../../BaseSelect";
 
+import "./index.scss";
+
 const selectStyles = {
   ...specialSelectStyles,
   option: (provided: object, state: any) => ({
     ...specialSelectStyles.option(provided, state),
-    fontSize: "20px",
+    fontSize: "14px",
+    padding: "6px 10px",
   }),
   control: (provided: object, state: any) => ({
     ...specialSelectStyles.control(provided, state),
-    fontSize: "20px",
-    width: "110px",
+    fontSize: "14px",
+    minWidth: "90px",
+    minHeight: "36px",
+    border: "1px solid var(--border-color)",
+    borderRadius: "8px",
+    background: "var(--background-main)",
+  }),
+  menu: (provided: object) => ({
+    ...provided,
+    background: "var(--background-main)",
+    border: "1px solid var(--border-color)",
+    borderRadius: "6px",
+    boxShadow: "0 4px 12px rgba(0, 0, 0, 0.1)",
+    overflow: "hidden",
+  }),
+  valueContainer: (provided: object) => ({
+    ...provided,
+    padding: "0 8px",
+  }),
+  indicatorsContainer: (provided: object) => ({
+    ...provided,
+    height: "32px",
   }),
   noOptionsMessage: (provided: object) => ({
     display: "none",
@@ -99,18 +122,8 @@ export const UserSettingsTable: FC<Props> = ({ networks, canChangeLevels }) => {
           return [
             <div className={b("row")} key={type + network}>
               <div className={b("cell")}>{network}</div>
-
-              <div
-                className={b("cell")}
-                style={{ padding: "6px 0", borderRight: 0 }}
-              >
-                {type}
-              </div>
-
-              <div
-                className={b("cell")}
-                style={{ padding: "6px 0", borderRight: 0 }}
-              >
+              <div className={b("cell")}>{type}</div>
+              <div className={b("cell")}>
                 {canChangeLevels ? (
                   <Select
                     defaultValue={defaultOption}
@@ -118,13 +131,14 @@ export const UserSettingsTable: FC<Props> = ({ networks, canChangeLevels }) => {
                     // @ts-ignore все работает
                     onChange={handleLevelChange}
                     className={b("input", { select: true })}
+                    classNamePrefix="select"
                     styles={selectStyles}
                   />
                 ) : (
                   networks[type][network].level
                 )}
               </div>
-              <div className={b("cell")} style={{ padding: "10px 0" }}>
+              <div className={b("cell")}>
                 <Select
                   options={
                     effmu === "SuperA" || level === 15
@@ -148,26 +162,12 @@ export const UserSettingsTable: FC<Props> = ({ networks, canChangeLevels }) => {
   return (
     <div className={b({ "select-in-cells": canChangeLevels })}>
       <div className={b("row", { headline: true })}>
-        <div className={b("cell")} style={{ fontWeight: 700 }}>
-          Network
-        </div>
-        <div className={b("cell")} style={{ fontWeight: 700 }}>
-          Type
-        </div>
-        <div className={b("cell")} style={{ fontWeight: 700 }}>
-          Level
-        </div>
-        <div className={b("cell")} style={{ fontWeight: 700 }}>
-          Eff mu
-        </div>
+        <div className={b("cell")}>Network</div>
+        <div className={b("cell")}>Type</div>
+        <div className={b("cell")}>Level</div>
+        <div className={b("cell")}>Eff mu</div>
       </div>
       {combineArraysByAlternateElements(renderContent)}
-      <div className={b("row")}>
-        <div className={b("cell")} style={{ padding: 0 }} />
-        <div className={b("cell")} style={{ padding: 0 }} />
-        <div className={b("cell")} style={{ padding: 0 }} />
-        <div className={b("cell")} style={{ padding: 0 }} />
-      </div>
     </div>
   );
 };

@@ -1,0 +1,73 @@
+.user-settings-info {
+  &__settings-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-bottom: 16px;
+  }
+
+  &__effmu-wrapper,
+  &__timezones-wrapper,
+  &__address-wrapper {
+    min-width: 140px;
+  }
+
+  &__label {
+    display: block;
+    font-size: 15px;
+    color: var(--text-secondary);
+    margin-bottom: 6px;
+    font-weight: 500;
+
+    &_content {
+      font-size: 16px;
+      color: var(--text-color);
+      margin-bottom: 8px;
+    }
+  }
+
+  &__input {
+    &_timezone,
+    &_effmu {
+      width: 100%;
+    }
+  }
+
+  &__effmu {
+    margin: 4px 0;
+    font-size: 18px;
+    line-height: 1.6;
+    color: var(--text-color);
+
+    &-content {
+      display: flex;
+      gap: 32px;
+      margin-top: 24px;
+      margin-bottom: 24px;
+      padding: 20px;
+      background: var(--background-main);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+    }
+  }
+
+  &__level-info {
+    margin-top: 24px;
+    font-size: 15px;
+    line-height: 1.5;
+    color: var(--text-color);
+    background: var(--background-main);
+    padding: 16px;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+
+    p {
+      margin: 0;
+      margin-bottom: 8px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+} 

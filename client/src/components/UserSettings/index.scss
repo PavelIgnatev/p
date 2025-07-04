@@ -25,18 +25,35 @@
     border-radius: 3px;
   }
 
-  &__save-button {
-    padding: 12px 24px;
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 24px;
+    border-bottom: 1px solid var(--border-color);
+    background: var(--background-main);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+
+  &__title {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text-color);
+    margin: 0;
+  }
+
+  &__header-save-button {
+    padding: 8px 16px;
     font-size: 14px;
     font-weight: 600;
     color: #fff;
     background: var(--primary-color);
     border: none;
-    border-radius: 8px;
+    border-radius: 6px;
     cursor: pointer;
     transition: all 0.2s;
-    margin: 16px 32px 32px;
-    align-self: flex-end;
 
     &:hover:not(:disabled) {
       background: var(--primary-color-hover);
@@ -53,114 +70,26 @@
     }
   }
 
-  &__header {
-    border-bottom: 1px solid var(--border-color);
-    padding: 16px 24px;
+  &__save-button {
+    background: rgb(99, 102, 241);
+    border-radius: 10px;
+    font-weight: 700;
+    height: 38px;
+    width: 145px;
+    color: white;
+    transition: background-color 0.3s ease;
+    align-self: flex-end;
+    margin-top: 16px;
 
-    &-content {
-      display: flex;
-      align-items: center;
+    &:hover:not(:disabled) {
+      background: rgb(79, 70, 229);
     }
 
-    &-password {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      flex-wrap: wrap;
-
-      strong {
-        color: var(--text-secondary);
-        font-size: 14px;
-        font-weight: 500;
-        margin-right: 4px;
-      }
-
-      &-block {
-        display: flex;
-        align-items: center;
-        background: linear-gradient(
-          135deg,
-          var(--background-main) 0%,
-          var(--input-bg) 100%
-        );
-        padding: 16px 20px;
-        border-radius: 16px;
-        cursor: pointer;
-        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        border: 1px solid var(--primary-color);
-        margin-right: auto;
-        position: relative;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1),
-          0 0 0 1px rgba(255, 255, 255, 0.2),
-          inset 0 1px 0 rgba(255, 255, 255, 0.1);
-        backdrop-filter: blur(10px);
-        min-width: 120px;
-
-        &::before {
-          content: "";
-          position: absolute;
-          top: -2px;
-          left: -2px;
-          right: -2px;
-          bottom: -2px;
-          background: linear-gradient(
-            45deg,
-            var(--primary-color),
-            var(--primary-color-hover),
-            var(--primary-color)
-          );
-          border-radius: 18px;
-          z-index: -1;
-          opacity: 0;
-          transition: opacity 0.3s ease;
-        }
-
-        &:hover {
-          border-color: var(--primary-color-hover);
-          background: linear-gradient(
-            135deg,
-            var(--input-bg) 0%,
-            var(--background-main) 100%
-          );
-          box-shadow: 0 8px 25px rgba(var(--primary-color-rgb), 0.25),
-            0 0 0 4px rgba(var(--primary-color-rgb), 0.1),
-            inset 0 1px 0 rgba(255, 255, 255, 0.2);
-          transform: translateY(-2px);
-
-          &::before {
-            opacity: 0.1;
-          }
-        }
-
-        &:active {
-          transform: translateY(-1px);
-          box-shadow: 0 4px 15px rgba(var(--primary-color-rgb), 0.2),
-            0 0 0 2px rgba(var(--primary-color-rgb), 0.15),
-            inset 0 1px 0 rgba(255, 255, 255, 0.1);
-        }
-      }
-
-      &-text {
-        font-family: monospace;
-        font-size: 16px;
-        margin-right: 12px;
-        color: var(--text-color);
-        letter-spacing: 1px;
-      }
-
-      &-img {
-        width: 20px;
-        height: 20px;
-        opacity: 0.6;
-        transition: opacity 0.2s;
-
-        &:hover {
-          opacity: 1;
-        }
-      }
+    &:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
     }
   }
-
 
   &__clear-cache-button {
     padding: 8px 16px;
@@ -521,7 +450,7 @@
   flex: 1;
 
   &__clear-cache {
-    height: 44px;
+    height: 38px;
   }
 
   &__header {
@@ -586,7 +515,7 @@
     display: flex;
     flex-direction: column;
     gap: 16px;
-    margin: 16px 0 24px;
+    margin: 16px 0 16px;
     background: var(--background-main);
     border: 1px solid var(--border-color);
     border-radius: 12px;
@@ -700,7 +629,7 @@
 
   &__effmu {
     margin: 10px 0;
-    font-size: 0.85em;
+    font-size: 1em;
     line-height: 1.1em;
     color: var(--primary-color);
 
@@ -722,7 +651,7 @@
 
   &__label {
     display: block;
-    font-size: 14px;
+    font-size: 18px;
     color: var(--text-color);
     margin-bottom: 8px;
     font-weight: 500;

@@ -27,6 +27,7 @@ export const Tbody: FC<TbodyProps> = ({ data, sortedKey, isReverse }) => {
 
     localStorage.setItem("deletedItems", JSON.stringify(prevData));
   };
+
   const showDebugTooltips = useMemo(() => {
     const searchParams = new URLSearchParams(window.location.search);
     return searchParams.get("debug") === "true";
@@ -131,7 +132,6 @@ export const Tbody: FC<TbodyProps> = ({ data, sortedKey, isReverse }) => {
                   item["@score"]
                 )}
               </td>
-
               <td
                 className={classes.td}
                 style={{ backgroundColor: item.color, marginBottom: "1px" }}

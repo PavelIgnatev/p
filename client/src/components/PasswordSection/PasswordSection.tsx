@@ -63,7 +63,7 @@ export const PasswordSection: FC<Props> = ({ onSubmit, type }) => {
     <section className={b()}>
       <div className={b("content-wrapper")}>
         <h1 className={b("title")}>
-          {isAdmin ? "Admin Access" : "Pocarr"}
+          {isAdmin ? "Admin Access" : "Pocarr game search"}
         </h1>
 
         {isAlias && (
@@ -100,7 +100,7 @@ export const PasswordSection: FC<Props> = ({ onSubmit, type }) => {
           onClick={handleSubmit}
           disabled={!password.trim() || (isAlias && !login.trim())}
         >
-          LOGIN
+          Login
         </BaseButton>
       </div>
     </section>
