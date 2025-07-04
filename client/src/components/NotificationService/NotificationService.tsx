@@ -27,3 +27,18 @@ export function ErrNot(content: string) {
     },
   );
 }
+
+//Уведомление для обучения
+export function TutorialNot(content: string) {
+  toast.info(
+    <div className={classes.NotificationContent}>
+      <span role="img" aria-label="tutorial" className={classes.NotificationIcon}>💡</span> 
+      {content}
+    </div>,
+    {
+      className: classes.NotificationTutorial,
+      autoClose: 10000, // 10 секунд
+      position: "bottom-right",
+    },
+  );
+}
