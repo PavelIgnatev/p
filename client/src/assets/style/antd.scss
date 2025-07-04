@@ -1,5 +1,11 @@
 @import "antd/dist/antd.css";
 
+.ant-drawer {
+  .ant-drawer-header {
+    padding: 16px 32px;
+    
+  }
+}
 // Кастомизация Drawer для поддержки тёмной темы
 [data-theme="dark"] {
   .ant-drawer {
