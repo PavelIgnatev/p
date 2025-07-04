@@ -12,7 +12,7 @@ const hasSeenTutorial = localStorage.getItem("theme_tutorial_shown") === "true";
 // Показываем обучающее уведомление, если пользователь еще не видел его
 if (!hasSeenTutorial) {
   setTimeout(() => {
-    TutorialNot("Попробуйте темную тему! Нажмите на переключатель в правом верхнем углу 🌙");
+    TutorialNot("Try the dark theme! Click on the switch in the upper right corner 🌙");
     localStorage.setItem("theme_tutorial_shown", "true");
   }, 2000); // Показываем через 2 секунды после загрузки
 }
