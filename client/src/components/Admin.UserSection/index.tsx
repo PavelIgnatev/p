@@ -73,7 +73,7 @@ export const UserSection = () => {
 
   return (
     <>
-      <section className={b()} style={{ marginBottom: "60vh" }}>
+      <section className={b()}>
         <span className={b("title")}>Rules for UserName:</span>
         <Select
           style={{ margin: 0 }}

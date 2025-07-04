@@ -41,4 +41,23 @@
       box-shadow: none !important;
     }
   }
+}
+
+.section {
+  padding: 32px 0;
+  border-bottom: 1px solid var(--border-color);
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+:global {
+  [data-theme="light"] {
+    --border-color: #e5e7eb;
+  }
+
+  [data-theme="dark"] {
+    --border-color: #374151;
+  }
 } 

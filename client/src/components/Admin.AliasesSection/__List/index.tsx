@@ -16,8 +16,9 @@ import {
 import { $isValidAdminPassword, $password } from "../../../store/Password";
 
 import { ApprovalSection } from "../../ApprovalSection";
-import { UserSettings } from "../../UserSettings";
+import { UserSettings, UserSettingsRef } from "../../UserSettings";
 import { Modal, ModalRef } from "../../Modal";
+import { BaseButton } from "../../BaseButton";
 
 import { b } from "../index";
 
@@ -28,6 +29,7 @@ interface Props {
 
 export const AliasesSectionList: FC<Props> = ({ selectedLevel, search }) => {
   const settingsModalRef = React.useRef<ModalRef>(null);
+  const userSettingsRef = React.useRef<UserSettingsRef>(null);
   const [selectedAlias, setSelectedAlias] = React.useState<string>("");
   const deleteModalRef = React.useRef<ModalRef>(null);
   const handleModalOpen = (ref: RefObject<ModalRef>) => ref.current?.open();
@@ -96,14 +98,33 @@ export const AliasesSectionList: FC<Props> = ({ selectedLevel, search }) => {
         onClose={() => setDrawerOpen(false)}
         open={drawerOpen}
         width={600}
-        bodyStyle={{ padding: 24 }}
+        bodyStyle={{ padding: "16px 24px" }}
         destroyOnClose
+        extra={
+          <BaseButton
+            onClick={async () => {
+              const ref = userSettingsRef.current;
+              if (ref) {
+                await ref.handleSubmit();
+                setDrawerOpen(false);
+              }
+            }}
+            style={{
+              height: "38px",
+            }}
+            className="drawer-save-button"
+          >
+            Save changes
+          </BaseButton>
+        }
       >
         {selectedConfig ? (
           <UserSettings
+            ref={userSettingsRef}
             config={selectedConfig}
             isAdminPage={isAdminPage}
             onClose={() => setDrawerOpen(false)}
+            onSave={() => setDrawerOpen(false)}
           />
         ) : (
           <div style={{ padding: 50 }}>Loading config</div>

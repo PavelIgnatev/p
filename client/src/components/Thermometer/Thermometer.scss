@@ -1,5 +1,17 @@
 .thermometer-section {
-  margin-top: 20px;
+  color: #000000;
+  font-size: 20px;
+
+  &__title {
+    font-size: 1.2em;
+    color: #000000;
+  }
+
+  &__description {
+    font-size: 1em;
+    color: #666666;
+    margin-top: 10px;
+  }
 }
 
 .thermometer-title {
@@ -27,6 +39,14 @@
 [data-theme="dark"] {
   .thermometer-section {
     color: #ffffff;
+
+    &__title {
+      color: #ffffff;
+    }
+
+    &__description {
+      color: #999999;
+    }
   }
 
   .thermometer-title {

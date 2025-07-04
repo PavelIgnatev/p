@@ -3,7 +3,6 @@ $baseColor: #4a72ff;
 .offpeak-section {
   color: $baseColor;
   font-size: 20px;
-  margin-top: 28px;
 
   &__wrapper {
     display: flex;
@@ -20,12 +19,14 @@ $baseColor: #4a72ff;
   }
 
   &__line {
-    margin-top: 10px;
     display: flex;
+
+    &:not(:first-child) {
+      margin-top: 10px;
+    }
   }
 
   &__title {
-    margin-bottom: 20px;
     font-size: 1.2em;
     color: #000000; // Черный заголовок в светлой теме
   }

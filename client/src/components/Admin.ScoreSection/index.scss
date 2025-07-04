@@ -3,17 +3,15 @@
 .rules-section {
   font-size: 20px;
   color: #000000; // Черный текст в светлой теме
-  margin-top: 64px;
 
   &__rules {
-    margin-top: 16px;
+    margin-top: 10px;
   }
 
   &__rule {
     position: relative;
-
     padding-left: 16px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
   }
 
   &__rule-stripe {
@@ -49,9 +47,7 @@
   }
 
   &__huypizda {
-    margin-top: 10px;
     position: relative;
-    margin-bottom: 5px;
     max-width: max-content;
   }
 
@@ -61,11 +57,10 @@
 
   &__rule-row {
     display: flex;
-
     min-height: 48px;
-    margin-top: 10px;
-    &:first-child {
-      margin-top: 0;
+
+    &:not(:first-child) {
+      margin-top: 10px;
     }
   }
 
@@ -95,7 +90,7 @@
 
   &__subtitle {
     display: block;
-    margin-top: 20px;
+    margin-top: 10px;
 
     font-weight: 700;
     font-size: 1.05em;
@@ -105,13 +100,13 @@
   &__filter {
     display: flex;
     align-items: center;
-    margin-top: 16px;
+    margin-top: 10px;
     max-width: 1000px;
   }
 
   &__elems-toggle {
     max-width: 764px;
-    margin-top: 16px;
+    margin-top: 10px;
 
     &_KO {
       margin-left: 0 !important;

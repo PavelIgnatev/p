@@ -1,16 +1,13 @@
 @import "src/assets/style/design.scss";
 
-
 .stop-words-section {
   &__title {
     color: #000000; // Черный заголовок в светлой теме
-    margin-top: 50px;
   }
 
   &__input-wrapper {
     display: flex;
     gap: 15px;
-    margin-bottom: 20px;
   }
 
   .BaseInputString {
@@ -21,6 +18,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
+    margin-top: 20px;
 
     &__word {
       display: flex;
@@ -41,11 +39,6 @@
       }
     }
   }
-
-  &__title {
-    color: #000000; // Черный заголовок в светлой теме
-  }
-
 }
 
 // Стили для темной темы

@@ -30,6 +30,24 @@ export const MainPage = () => {
     }
   }, [config?.alias, config?.password]);
 
+  useEffect(() => {
+    if (drawerOpen) {
+      document.body.style.position = 'relative';
+      document.body.style.width = '100%';
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.position = '';
+      document.body.style.width = '';
+      document.body.style.overflow = '';
+    }
+
+    return () => {
+      document.body.style.position = '';
+      document.body.style.width = '';
+      document.body.style.overflow = '';
+    };
+  }, [drawerOpen]);
+
   const handleSettingsModalOpen = async () => {
     if (config?.alias && config?.password && !isSettingsLoading) {
       setIsSettingsLoading(true);

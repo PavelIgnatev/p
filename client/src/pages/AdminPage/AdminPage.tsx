@@ -106,15 +106,33 @@ export const AdminPage: FC = () => {
           />
         </div>
       </section>
-      <UpdateSection />
-      <OffpeakSection />
-      <StopWordsSection />
-      <PercentSection />
-      <Thermometer />
-      <ScoreSection />
-      <RulesSection />
-      <AliasesSection />
-      <UserSection />
+      <div className={classes.section}>
+        <UpdateSection />
+      </div>
+      <div className={classes.section}>
+        <AliasesSection />
+      </div>
+      <div className={classes.section}>
+        <RulesSection />
+      </div>
+      <div className={classes.section}>
+        <ScoreSection />
+      </div>
+      <div className={classes.section}>
+        <UserSection />
+      </div>
+      <div className={classes.section}>
+        <OffpeakSection />
+      </div>
+      <div className={classes.section}>
+        <Thermometer />
+      </div>
+      <div className={classes.section}>
+        <StopWordsSection />
+      </div>
+      <div className={classes.section} style={{ marginBottom: "10vh", borderBottom: '0px' }}>
+        <PercentSection />
+      </div>
     </>
   );
 };

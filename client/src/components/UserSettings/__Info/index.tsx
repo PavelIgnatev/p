@@ -236,15 +236,15 @@ export const UserSettingsInfo: FC<Props> = ({
 
   return (
     <div className={b()}>
-      <div className={b("header-wrapper")}>
-        <div className={b("header")}>
-          {!isAdminPage && (
+      {!isAdminPage && (
+        <div className={b("header-wrapper")} style={{ marginBottom: "16px" }}>
+          <div className={b("header")}>
             <div
               className={b("header-content")}
               onClick={toggleShowPassword}
               style={{ cursor: "pointer", height: "38px" }}
             >
-              <span className={b("header-password")} >
+              <span className={b("header-password")}>
                 <b>Password: </b>
                 <div
                   className={b("header-password-block")}
@@ -265,31 +265,31 @@ export const UserSettingsInfo: FC<Props> = ({
                 </div>
               </span>
             </div>
+          </div>
+
+          {!isAdminPage && (
+            <div className={b("cache-section")}>
+              <BaseButton
+                className={b("clear-cache")}
+                onClick={() => handleModalOpen(deleteModalRef)}
+                red
+              >
+                Clear cache
+              </BaseButton>
+              <Modal ref={deleteModalRef}>
+                <ApprovalSection
+                  title="Do you really want to clear the account cache?"
+                  onApprove={() => {
+                    onDeleteCache();
+                    handleModalClose(deleteModalRef);
+                  }}
+                  onClose={() => handleModalClose(deleteModalRef)}
+                />
+              </Modal>
+            </div>
           )}
         </div>
-
-        {!isAdminPage && (
-          <div className={b("cache-section")}>
-            <BaseButton
-              className={b("clear-cache")}
-              onClick={() => handleModalOpen(deleteModalRef)}
-              red
-            >
-              Clear cache
-            </BaseButton>
-            <Modal ref={deleteModalRef}>
-              <ApprovalSection
-                title="Do you really want to clear the account cache?"
-                onApprove={() => {
-                  onDeleteCache();
-                  handleModalClose(deleteModalRef);
-                }}
-                onClose={() => handleModalClose(deleteModalRef)}
-              />
-            </Modal>
-          </div>
-        )}
-      </div>
+      )}
 
       <div className={b("settings")}>
         <div className={b("times-wrapper")}>
@@ -458,7 +458,7 @@ export const UserSettingsInfo: FC<Props> = ({
         )}
       </div>
       {isAdminPage && (
-        <div className={b("password-wrapper")}>
+        <div className={b("password-wrapper")} style={{ marginTop: "16px" }}>
           <b className={b("label")}>Password</b>
           <BaseInputString
             value={password}
