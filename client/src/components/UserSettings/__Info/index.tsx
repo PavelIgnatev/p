@@ -3,7 +3,6 @@ import Select from "react-select";
 
 import { SelectOption } from "../../../@types/selectsModel";
 import { ConfigModel } from "../../../@types/configModel";
-import EyeIcon from "../../../assets/icons/eye.svg";
 import { editableConfigEvents } from "../../../store/Config";
 import {
   editableTournamentsSettings,
@@ -257,11 +256,28 @@ export const UserSettingsInfo: FC<Props> = ({
                   >
                     {showPassword ? ` ${password}` : "****"}
                   </span>
-                  <img
+                  <svg 
+                    width="24" 
+                    height="18" 
+                    viewBox="0 0 44 34" 
+                    fill="#bbbbbb" 
+                    xmlns="http://www.w3.org/2000/svg"
                     className={b("header-password-img")}
-                    src={EyeIcon}
-                    alt=""
-                  />
+                  >
+                    <path 
+                      d="M3 17C3 17 10 3 22.25 3C34.5 3 41.5 17 41.5 17C41.5 17 34.5 31 22.25 31C10 31 3 17 3 17Z" 
+                      strokeWidth="5" 
+                      strokeLinecap="round" 
+                      strokeLinejoin="round"
+                    />
+                    <path 
+                      d="M22.25 22.25C25.1495 22.25 27.5 19.8995 27.5 17C27.5 14.1005 25.1495 11.75 22.25 11.75C19.3505 11.75 17 14.1005 17 17C17 19.8995 19.3505 22.25 22.25 22.25Z" 
+                      stroke="white" 
+                      strokeWidth="5" 
+                      strokeLinecap="round" 
+                      strokeLinejoin="round"
+                    />
+                  </svg>
                 </div>
               </span>
             </div>
