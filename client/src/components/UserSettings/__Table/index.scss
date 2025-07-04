@@ -19,6 +19,11 @@
       border-top-right-radius: 8px;
       background: var(--background-color);
       border-bottom: 1px solid var(--border-color);
+
+      .user-settings-table__cell {
+        font-weight: 600;
+        color: var(--text-color);
+      }
     }
   }
 
@@ -27,6 +32,7 @@
     display: flex;
     align-items: center;
     font-size: 14px;
+    font-weight: 600;
     color: var(--text-color);
     border-right: 1px solid var(--border-color);
     min-height: 42px;
@@ -68,6 +74,7 @@
       padding: 8px 12px !important;
       cursor: pointer !important;
       font-size: 14px !important;
+      font-weight: 600 !important;
       color: var(--text-color) !important;
 
       &--is-focused {
@@ -102,6 +109,7 @@
 
     &__single-value {
       color: var(--text-color) !important;
+      font-weight: 600 !important;
     }
 
     &__indicator-separator {

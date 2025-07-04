@@ -76,8 +76,8 @@
   color: white;
   font-weight: 600;
   font-size: 14px;
-  height: 50px;
-  padding: 12px 8px;
+  height: 40px; /* Уменьшена высота */
+  padding: 8px; /* Уменьшены отступы */
   text-align: center;
   vertical-align: middle;
   cursor: pointer;
@@ -198,15 +198,15 @@
     background: rgba(234, 179, 8, 0.1);
 
     [data-theme="dark"] & {
-      background: rgba(255, 193, 7, 0.15);
+      background: rgba(234, 179, 8, 0.15);
     }
   }
 
   &.orange .td {
-    background: rgba(249, 115, 22, 0.1);
+    background: rgba(245, 158, 11, 0.1);
 
     [data-theme="dark"] & {
-      background: rgba(255, 152, 0, 0.15);
+      background: rgba(245, 158, 11, 0.15);
     }
   }
 
@@ -214,25 +214,46 @@
     background: rgba(239, 68, 68, 0.1);
 
     [data-theme="dark"] & {
-      background: rgba(244, 67, 54, 0.15);
+      background: rgba(239, 68, 68, 0.15);
     }
   }
 }
 
-.tbody .td {
-  padding: 10px 8px;
+/* Ячейки таблицы */
+.td {
+  padding: 8px; /* Уменьшены отступы */
+  height: 36px; /* Уменьшена высота */
   text-align: center;
   vertical-align: middle;
-  color: #1f2937;
+  font-size: 14px;
+  font-weight: 600; /* Сделан жирным шрифт */
+  color: var(--text-color);
   border: none;
-  font-size: 13px;
-  word-wrap: break-word;
+  transition: background-color 0.15s ease;
+  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   position: relative;
 
   [data-theme="dark"] & {
-    color: #e0e0e0;
+    color: #e5e7eb;
+  }
+
+  /* Стили для ячейки с крестиком */
+  &:last-child {
+    width: 40px;
+    padding: 0;
+    cursor: pointer;
+
+    &:hover {
+      svg {
+        transform: scale(1.1);
+      }
+    }
+
+    svg {
+      transition: transform 0.2s ease;
+    }
   }
 }
 
@@ -484,4 +505,22 @@
 /* Селект */
 .select {
   margin-bottom: 10px;
+}
+
+/* Стили для пустой таблицы */
+.empty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  font-size: 16px;
+  color: var(--text-secondary);
+  background: var(--background-main);
+  border-radius: 8px;
+  margin-top: 16px;
+
+  [data-theme="dark"] & {
+    background: #1a1a1a;
+    color: #9ca3af;
+  }
 }

@@ -10,10 +10,8 @@ const CrossIcon: FC<Props> = ({ onClick, theme = 'light' }) => {
     <svg
       style={{
         cursor: "pointer",
-        position: "absolute",
-        left: "50%",
-        top: "50%",
-        transform: "translate(-50%, -50%)",
+        display: "block",
+        margin: "0 auto",
       }}
       onClick={onClick}
       width="16"
