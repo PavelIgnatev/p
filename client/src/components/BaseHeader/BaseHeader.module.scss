@@ -8,12 +8,13 @@
 
 .menu {
   width: 100%;
-  padding: 30px;
+  padding: 16px;
   background: var(--background-secondary);
   border-radius: 10px;
   display: flex;
   justify-content: space-between;
   transition: background-color 0.3s ease;
+  border: var(--border-width) solid var(--border-color);
 
   :global {
     .select__control--is-focused,
@@ -192,12 +193,15 @@
 
 .info {
   margin: 10px 0;
-  padding: 0 15px;
+  padding: 8px 16px;
   width: 100%;
   display: flex;
   justify-content: space-between;
-  transition: color 0.3s ease;
+  transition: background-color 0.3s ease;
   color: var(--text-color);
+  background: var(--background-secondary);
+  border-radius: 10px;
+  border: var(--border-width) solid var(--border-color);
 }
 
 .userProfile {
@@ -437,5 +441,5 @@
 
 .drawerSaveButton {
   composes: button;
-  width: 145px;
+  font-size: 15px;
 }
