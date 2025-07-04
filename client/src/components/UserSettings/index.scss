@@ -29,7 +29,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 16px 24px;
+    padding: 16px 32px;
     border-bottom: 1px solid var(--border-color);
     background: var(--background-main);
     position: sticky;
@@ -75,6 +75,7 @@
     border-radius: 10px;
     font-weight: 700;
     height: 38px;
+    
     width: 145px;
     color: white;
     transition: background-color 0.3s ease;
@@ -669,7 +670,7 @@
   .ant-drawer-header {
     display: flex;
     align-items: center;
-    padding: 16px 24px;
+    padding: 16px 32px;
     border-bottom: 1px solid var(--border-color);
   }
 

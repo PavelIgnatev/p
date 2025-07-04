@@ -45,7 +45,13 @@ export const MainPage = () => {
     }
   };
 
-  const handlePasswordSubmit = ({ password, login }: { password: string; login: string }) => {
+  const handlePasswordSubmit = ({
+    password,
+    login,
+  }: {
+    password: string;
+    login: string;
+  }) => {
     return getConfigRequest({ alias: login, password });
   };
 
@@ -72,8 +78,10 @@ export const MainPage = () => {
               const ref = userSettingsRef.current;
               if (ref) {
                 await ref.handleSubmit();
-                setDrawerOpen(false);
               }
+            }}
+            style={{
+              height: "38px",
             }}
             className="drawer-save-button"
           >

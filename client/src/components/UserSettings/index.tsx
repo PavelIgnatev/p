@@ -32,6 +32,17 @@ export interface UserSettingsRef {
   handleSubmit: () => Promise<void>;
 }
 
+const validateTimeFormat = (time: string | null): boolean => {
+  if (!time) return true;
+  const timeRegex = /^([0-1]?[0-9]|2[0-3]):[0-5][0-9]$/;
+  return timeRegex.test(time);
+};
+
+const parseTimeToMinutes = (time: string): number => {
+  const [hours, minutes] = time.split(":").map(Number);
+  return hours * 60 + minutes;
+};
+
 export const UserSettings = forwardRef<UserSettingsRef, Props>(({
   config,
   isAdminPage,
@@ -50,44 +61,77 @@ export const UserSettings = forwardRef<UserSettingsRef, Props>(({
     return editableConfigEvents.clearConfig;
   }, [config]);
 
+  const validateSessionTimes = (time1: string | null, time2: string | null): string | null => {
+    // Проверяем, что оба поля времени либо заполнены, либо пусты
+    if ([time1, time2].some(Boolean) && ![time1, time2].every(Boolean)) {
+      return 'Both "Session start time" and "Session end time" fields must be filled in';
+    }
+
+    // Если оба поля пустые - всё ок
+    if (!time1 || !time2) return null;
+
+    // Проверяем формат времени
+    if (!validateTimeFormat(time1) || !validateTimeFormat(time2)) {
+      return 'Please check time format (HH:MM) in "Session start time" and "Session end time" fields';
+    }
+
+    // Проверяем, что время начала меньше времени окончания
+    const startTime = parseTimeToMinutes(time1);
+    const endTime = parseTimeToMinutes(time2);
+
+    if (startTime >= endTime) {
+      return 'Session start time must be earlier than session end time';
+    }
+
+    return null;
+  };
+
+  const validateFilterTimes = (times: (string | null)[]): string | null => {
+    for (const time of times) {
+      if (time && !validateTimeFormat(time)) {
+        return 'Please check time format (HH:MM) in filter time fields';
+      }
+    }
+    return null;
+  };
+
   const handleSubmit = async () => {
     const { time1, time2, normalTime, turboTime, superTurboTime } = props;
 
-    if (
-      ([time1, time2].some(Boolean) && ![time1, time2].every(Boolean)) ||
-      ([time1, time2].every(Boolean) &&
-        (time1?.includes("-") || time2?.includes("-")))
-    ) {
-      return ErrNot(
-        'Check that the "Session start time" and "Session end time" fields are filled in correctly.'
-      );
+    // Валидация времени сессии
+    const sessionTimeError = validateSessionTimes(time1, time2);
+    if (sessionTimeError) {
+      ErrNot(sessionTimeError);
+      return;
     }
 
-    if (
-      normalTime?.includes("-") ||
-      turboTime?.includes("-") ||
-      superTurboTime?.includes("-")
-    ) {
-      return ErrNot(
-        'Check that the "Filter Normal", "Filter Turbo" and "Filter Super Turbo" fields are filled in correctly.'
-      );
+    // Валидация времени фильтров
+    const filterTimeError = validateFilterTimes([normalTime, turboTime, superTurboTime]);
+    if (filterTimeError) {
+      ErrNot(filterTimeError);
+      return;
     }
 
     setProgress(true);
-    await patchConfigRequest({
-      alias,
-      config: {
-        ...props,
-        networks,
-        password: isAdminPage ? newPassword : config.password,
+    try {
+      await patchConfigRequest({
         alias,
-      },
-      password,
-    });
-    setProgress(false);
-
-    onSave?.();
-    onClose();
+        config: {
+          ...props,
+          networks,
+          password: isAdminPage ? newPassword : config.password,
+          alias,
+        },
+        password,
+      });
+      
+      onSave?.();
+      onClose();
+    } catch (error) {
+      // Ошибка уже будет показана через ErrNot в configDomain.onCreateEffect
+    } finally {
+      setProgress(false);
+    }
   };
 
   useImperativeHandle(ref, () => ({
