@@ -12,6 +12,7 @@ import { getStatus } from "./../../helpers/getStatus";
 import { isSuperTurbo } from "./../../helpers/isSuperTurbo";
 import { isTurbo } from "./../../helpers/isTurbo";
 import { isNormal } from "./../../helpers/isNormal";
+import { isMystery } from "./../../helpers/isMystery";
 import { getTimeByMS } from "./../../helpers/getTimeByMS";
 
 import { tableCellModel } from "../../@types/tableCellModel";
@@ -133,13 +134,16 @@ export const $filtredTableState = combine(
       const regDate = Number(isRegDate) * 1000 + Number(timezone);
       const time = getTimeByMS(Number(`${isStartDate}000`));
       const bounty = isNormal(tournament);
+      const mystery = isMystery(tournament);
       const turbo = isTurbo(tournament);
       const superturbo = isSuperTurbo(tournament);
       const status = getStatus(tournament);
       const currency = tournament["@currency"];
       const od = tournament["@flags"]?.includes("OD");
       const { level: networksLevel = 1, effmu = "A" } =
-        networks?.[bounty ? "ko" : "freezout"]?.[network] ?? {};
+        networks?.[mystery ? "mystery" : bounty ? "ko" : "freezout"]?.[
+          network
+        ] ?? {};
       const level = networksLevel + effmu;
       const sng = tournament["@gameClass"]?.includes("sng");
       const isNL = tournament["@structure"] === "NL";
@@ -221,7 +225,9 @@ export const $filtredTableState = combine(
         "@turbo": !!turbo,
         "@rebuy": !!rebuy,
         "@od": !!tournament["@flags"]?.includes("OD"),
-        "@bounty": !!bounty,
+        "@bounty":
+          !!bounty ||
+          (networksLevel === 16 || networksLevel === 17 ? !!mystery : false),
         "@sat": !!sat,
         "@sng": !!tournament["@gameClass"]?.includes("sng"),
         "@deepstack": !!tournament["@flags"]?.includes("D"),
@@ -290,6 +296,7 @@ export const $filtredTableState = combine(
     tournaments = tournaments.map((tournament) => {
       const level = tournament["@level"];
       let data = filter(level, offpeak, tournament, config?.alias, true);
+
       let {
         valid,
         color: rColor = "unknown",

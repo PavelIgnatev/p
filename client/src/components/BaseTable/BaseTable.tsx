@@ -16,7 +16,7 @@ type BaseTableProps = {
 export const BaseTable: FC<BaseTableProps> = ({ data, loading }) => {
   const [sortedKey, setSortedKey] = useState<string | null>("@date");
   const [isReverse, setIsReverse] = useState(false);
-  const { networks: fakeNetworks = { ko: {}, freezout: {} } } =
+  const { networks: fakeNetworks = { ko: {}, freezout: {}, mystery: {} } } =
     useStore($config) ?? {};
 
   const levelAndEffmu = useMemo(() => {
@@ -48,7 +48,7 @@ export const BaseTable: FC<BaseTableProps> = ({ data, loading }) => {
     let minSecondLetter = Infinity;
 
     for (let type of Object.keys(fakeNetworks)) {
-      const networks = fakeNetworks[type as "ko" | "freezout"];
+      const networks = fakeNetworks[type as "ko" | "freezout" | 'mystery'];
 
       const keys = Object.keys(networks);
       for (let key in keys) {

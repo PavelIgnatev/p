@@ -72,7 +72,7 @@ export const editableConfigEvents = createApi($editableConfig, {
       network,
       effmu,
       type,
-    }: { network: Network; effmu: Effmu; type: "ko" | "freezout" }
+    }: { network: Network; effmu: Effmu; type: "ko" | "freezout" | "mystery" }
   ) => ({
     ...config,
     networks: {
@@ -89,7 +89,7 @@ export const editableConfigEvents = createApi($editableConfig, {
       network,
       level,
       type,
-    }: { network: Network; level: Level; type: "ko" | "freezout" }
+    }: { network: Network; level: Level; type: "ko" | "freezout" | "mystery" }
   ) => ({
     ...config,
     networks: {
@@ -120,6 +120,12 @@ export const editableConfigEvents = createApi($editableConfig, {
           return {
             ...acc,
             [network]: { ...config.networks.freezout[network], effmu },
+          };
+        }, {}),
+        mystery: Object.keys(config.networks.mystery).reduce((acc, network) => {
+          return {
+            ...acc,
+            [network]: { ...config.networks.mystery[network], effmu },
           };
         }, {}),
       },

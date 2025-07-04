@@ -2,7 +2,7 @@ import { Networks } from "./common";
 
 export interface ConfigModel {
   alias: string;
-  networks: { [key in "ko" | "freezout"]: Networks };
+  networks: { [key in "ko" | "freezout" | "mystery"]: Networks };
   mail: string;
   password: string;
   timezone: string;

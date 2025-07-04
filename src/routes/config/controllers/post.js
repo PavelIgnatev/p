@@ -36,7 +36,7 @@ module.exports = async (req, res) => {
   config[alias] = {
     alias,
     mail,
-    networks: { ko: {}, freezout: {} },
+    networks: { ko: {}, freezout: {}, mystery: {} },
     password,
     timezone,
     time1,
@@ -46,6 +46,7 @@ module.exports = async (req, res) => {
   networks.forEach((network) => {
     config[alias].networks["ko"][network] = { level, effmu: "A" };
     config[alias].networks["freezout"][network] = { level, effmu: "A" };
+    config[alias].networks["mystery"][network] = { level, effmu: "A" };
   });
 
   await saveConfig(config);

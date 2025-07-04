@@ -8,7 +8,7 @@ export const $config = createStore<ConfigModel | null>(null);
 
 export const DEFAULT_EDITABLE_CONFIG: ConfigModel = {
   alias: "",
-  networks: { ko: {}, freezout: {} },
+  networks: { ko: {}, freezout: {}, mystery: {} },
   mail: "",
   password: "",
   timezone: TIMEZONES[0].value,

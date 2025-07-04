@@ -97,7 +97,11 @@ export const BaseHeader: FC<BaseHeaderProps> = ({ onSettingsClick }) => {
     <header className={classes.header}>
       <div className={classes.info}>
         <div className={classes.userInfo}>
-          <div className={classes.userProfile} onClick={onSettingsClick} style={{ cursor: 'pointer' }}>
+          <div
+            className={classes.userProfile}
+            onClick={onSettingsClick}
+            style={{ cursor: "pointer" }}
+          >
             <div className={classes.avatar}>
               <svg
                 width="24"
@@ -207,10 +211,10 @@ export const BaseHeader: FC<BaseHeaderProps> = ({ onSettingsClick }) => {
               />
             </div>
           </Tooltip>
-          <div 
-            className={classes.settings} 
+          <div
+            className={classes.settings}
             onClick={onSettingsClick}
-            style={{ cursor: 'pointer' }}
+            style={{ cursor: "pointer" }}
           >
             Edit settings
           </div>
@@ -243,19 +247,14 @@ export const BaseHeader: FC<BaseHeaderProps> = ({ onSettingsClick }) => {
               />
               <BaseInput
                 value={tournamentsSettings.moneyEnd}
-                handleChange={
-                  editableTournamentsSettings.handleChangeMoneyEnd
-                }
+                handleChange={editableTournamentsSettings.handleChangeMoneyEnd}
                 max={100000}
                 placeholder="To"
                 className={classes.input}
               />
             </div>
           </ComponentCategory>
-          <ComponentCategory
-            category="Prizepool"
-            className={classes.prizepool}
-          >
+          <ComponentCategory category="Prizepool" className={classes.prizepool}>
             <div className={classes.inputWrapper}>
               <BaseInput
                 value={tournamentsSettings.prizepoolStart}
@@ -305,9 +304,7 @@ export const BaseHeader: FC<BaseHeaderProps> = ({ onSettingsClick }) => {
                 <BaseInputMask
                   placeholder="To(h)"
                   value={tournamentsSettings.dateEnd}
-                  handleChange={
-                    editableTournamentsSettings.handleChangeDateEnd
-                  }
+                  handleChange={editableTournamentsSettings.handleChangeDateEnd}
                   className={cx(classes.input, classes.inputTime)}
                 />
               </div>
@@ -338,7 +335,7 @@ export const BaseHeader: FC<BaseHeaderProps> = ({ onSettingsClick }) => {
               >
                 Freezout
               </BaseCheckbox>
-              <div className={classes.line} />
+              <div className={classes.line} style={{ margin: "0 2px" }} />
               <BaseCheckbox
                 selected={!tournamentsSettings.normal}
                 onClick={() =>

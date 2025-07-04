@@ -1453,34 +1453,10 @@ if((FromTo(1,11))&& network === 'PS.eu'&& level === '0'&& effmu === 'A'&& isNorm
       color: "black", ruleString: "(FromTo(1,11))&& network === 'PS.eu'&& level === '0'&& effmu === 'A'&& isNormal"
     };
   };
-if((FromTo(1,7.5))&& network === 'PS.eu'&& level === '0'&& effmu === 'A'&& isTurbo) {
-    return {
-      score: 63,
-      color: "black", ruleString: "(FromTo(1,7.5))&& network === 'PS.eu'&& level === '0'&& effmu === 'A'&& isTurbo"
-    };
-  };
-if((FromTo(1,7.5))&& network === 'PS.eu'&& level === '0'&& effmu === 'A'&& isSuperTurbo) {
-    return {
-      score: 63,
-      color: "black", ruleString: "(FromTo(1,7.5))&& network === 'PS.eu'&& level === '0'&& effmu === 'A'&& isSuperTurbo"
-    };
-  };
 if((FromTo(1,11))&& network === 'PS.eu'&& level === '0'&& effmu === 'B'&& isNormal) {
     return {
       score: 63,
       color: "black", ruleString: "(FromTo(1,11))&& network === 'PS.eu'&& level === '0'&& effmu === 'B'&& isNormal"
-    };
-  };
-if((FromTo(1,7.5))&& network === 'PS.eu'&& level === '0'&& effmu === 'B'&& isTurbo) {
-    return {
-      score: 61,
-      color: "black", ruleString: "(FromTo(1,7.5))&& network === 'PS.eu'&& level === '0'&& effmu === 'B'&& isTurbo"
-    };
-  };
-if((FromTo(1,7.5))&& network === 'PS.eu'&& level === '0'&& effmu === 'B'&& isSuperTurbo) {
-    return {
-      score: 61,
-      color: "black", ruleString: "(FromTo(1,7.5))&& network === 'PS.eu'&& level === '0'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,6))&& network === 'PS.eu'&& level === '0'&& effmu === 'C'&& isNormal) {
@@ -5101,12 +5077,6 @@ if((FromTo(1,60))&& network === 'Party'&& level === '6'&& effmu === 'A'&& isNorm
       color: "black", ruleString: "(FromTo(1,60))&& network === 'Party'&& level === '6'&& effmu === 'A'&& isNormal"
     };
   };
-if((FromTo(1,60))&& network === 'GG'&& level === '6'&& effmu === 'A'&& isNormal) {
-    return {
-      score: 73,
-      color: "black", ruleString: "(FromTo(1,60))&& network === 'GG'&& level === '6'&& effmu === 'A'&& isNormal"
-    };
-  };
 if((FromTo(1,60))&& network === '888'&& level === '6'&& effmu === 'A'&& isNormal) {
     return {
       score: 73,
@@ -7723,12 +7693,6 @@ if((FromTo(1,7.5))&& network === 'Party'&& level === '0'&& effmu === 'A'&& isTur
       color: "black", ruleString: "(FromTo(1,7.5))&& network === 'Party'&& level === '0'&& effmu === 'A'&& isTurbo"
     };
   };
-if((FromTo(1,7.5))&& network === 'GG'&& level === '0'&& effmu === 'A'&& isTurbo) {
-    return {
-      score: 63,
-      color: "black", ruleString: "(FromTo(1,7.5))&& network === 'GG'&& level === '0'&& effmu === 'A'&& isTurbo"
-    };
-  };
 if((FromTo(1,7.5))&& network === '888'&& level === '0'&& effmu === 'A'&& isTurbo) {
     return {
       score: 63,
@@ -7769,12 +7733,6 @@ if((FromTo(1,7.5))&& network === 'Party'&& level === '0'&& effmu === 'A'&& isSup
     return {
       score: 63,
       color: "black", ruleString: "(FromTo(1,7.5))&& network === 'Party'&& level === '0'&& effmu === 'A'&& isSuperTurbo"
-    };
-  };
-if((FromTo(1,7.5))&& network === 'GG'&& level === '0'&& effmu === 'A'&& isSuperTurbo) {
-    return {
-      score: 63,
-      color: "black", ruleString: "(FromTo(1,7.5))&& network === 'GG'&& level === '0'&& effmu === 'A'&& isSuperTurbo"
     };
   };
 if((FromTo(1,7.5))&& network === '888'&& level === '0'&& effmu === 'A'&& isSuperTurbo) {
@@ -7867,12 +7825,6 @@ if((FromTo(1,7.5))&& network === 'Party'&& level === '0'&& effmu === 'B'&& isTur
       color: "black", ruleString: "(FromTo(1,7.5))&& network === 'Party'&& level === '0'&& effmu === 'B'&& isTurbo"
     };
   };
-if((FromTo(1,7.5))&& network === 'GG'&& level === '0'&& effmu === 'B'&& isTurbo) {
-    return {
-      score: 61,
-      color: "black", ruleString: "(FromTo(1,7.5))&& network === 'GG'&& level === '0'&& effmu === 'B'&& isTurbo"
-    };
-  };
 if((FromTo(1,7.5))&& network === '888'&& level === '0'&& effmu === 'B'&& isTurbo) {
     return {
       score: 61,
@@ -7913,12 +7865,6 @@ if((FromTo(1,7.5))&& network === 'Party'&& level === '0'&& effmu === 'B'&& isSup
     return {
       score: 61,
       color: "black", ruleString: "(FromTo(1,7.5))&& network === 'Party'&& level === '0'&& effmu === 'B'&& isSuperTurbo"
-    };
-  };
-if((FromTo(1,7.5))&& network === 'GG'&& level === '0'&& effmu === 'B'&& isSuperTurbo) {
-    return {
-      score: 61,
-      color: "black", ruleString: "(FromTo(1,7.5))&& network === 'GG'&& level === '0'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 if((FromTo(1,7.5))&& network === '888'&& level === '0'&& effmu === 'B'&& isSuperTurbo) {
@@ -8011,12 +7957,6 @@ if((FromTo(1,3.5))&& network === 'Party'&& level === '0'&& effmu === 'C'&& isTur
       color: "black", ruleString: "(FromTo(1,3.5))&& network === 'Party'&& level === '0'&& effmu === 'C'&& isTurbo"
     };
   };
-if((FromTo(1,3.5))&& network === 'GG'&& level === '0'&& effmu === 'C'&& isTurbo) {
-    return {
-      score: 59,
-      color: "black", ruleString: "(FromTo(1,3.5))&& network === 'GG'&& level === '0'&& effmu === 'C'&& isTurbo"
-    };
-  };
 if((FromTo(1,3.5))&& network === '888'&& level === '0'&& effmu === 'C'&& isTurbo) {
     return {
       score: 59,
@@ -8057,12 +7997,6 @@ if((FromTo(1,3.5))&& network === 'Party'&& level === '0'&& effmu === 'C'&& isSup
     return {
       score: 59,
       color: "black", ruleString: "(FromTo(1,3.5))&& network === 'Party'&& level === '0'&& effmu === 'C'&& isSuperTurbo"
-    };
-  };
-if((FromTo(1,3.5))&& network === 'GG'&& level === '0'&& effmu === 'C'&& isSuperTurbo) {
-    return {
-      score: 59,
-      color: "black", ruleString: "(FromTo(1,3.5))&& network === 'GG'&& level === '0'&& effmu === 'C'&& isSuperTurbo"
     };
   };
 if((FromTo(1,3.5))&& network === '888'&& level === '0'&& effmu === 'C'&& isSuperTurbo) {
@@ -8429,12 +8363,6 @@ if((FromTo(61,110))&& network === 'PS.eu'&& level === '6'&& effmu === 'A'&& isNo
     return {
       score: 72,
       color: "black", ruleString: "(FromTo(61,110))&& network === 'PS.eu'&& level === '6'&& effmu === 'A'&& isNormal"
-    };
-  };
-if((FromTo(61,110))&& network === 'GG'&& level === '6'&& effmu === 'A'&& isNormal) {
-    return {
-      score: 72,
-      color: "black", ruleString: "(FromTo(61,110))&& network === 'GG'&& level === '6'&& effmu === 'A'&& isNormal"
     };
   };
 if((FromTo(45,110))&& network === 'PS.eu'&& level === '6'&& effmu === 'B'&& isNormal) {
@@ -8933,6 +8861,42 @@ if((FromTo(1,60))&& network === 'WNMX'&& level === '8'&& effmu === 'C'&& isNorma
     return {
       score: 71,
       color: "black", ruleString: "(FromTo(1,60))&& network === 'WNMX'&& level === '8'&& effmu === 'C'&& isNormal"
+    };
+  };
+if((FromTo(61,110))&& network === 'GG'&& level === '6'&& effmu === 'A'&& isNormal) {
+    return {
+      score: 73,
+      color: "black", ruleString: "(FromTo(61,110))&& network === 'GG'&& level === '6'&& effmu === 'A'&& isNormal"
+    };
+  };
+if((FromTo(1,60))&& network === 'GG'&& level === '6'&& effmu === 'A'&& isNormal && (NotName("sunday forty"))&& network === 'GG'&& level === '6'&& effmu === 'A'&& isNormal) {
+    return {
+      score: 72,
+      color: "black", ruleString: "(FromTo(1,60))&& network === 'GG'&& level === '6'&& effmu === 'A'&& isNormal && (NotName(\"sunday forty\"))&& network === 'GG'&& level === '6'&& effmu === 'A'&& isNormal"
+    };
+  };
+if((FromTo(1,3.5))&& network === 'PS.eu'&& level === '0'&& effmu === 'A'&& isSuperTurbo) {
+    return {
+      score: 63,
+      color: "black", ruleString: "(FromTo(1,3.5))&& network === 'PS.eu'&& level === '0'&& effmu === 'A'&& isSuperTurbo"
+    };
+  };
+if((FromTo(1,5.5))&& network === 'PS.eu'&& level === '0'&& effmu === 'A'&& isTurbo) {
+    return {
+      score: 63,
+      color: "black", ruleString: "(FromTo(1,5.5))&& network === 'PS.eu'&& level === '0'&& effmu === 'A'&& isTurbo"
+    };
+  };
+if((FromTo(1,5.5))&& network === 'PS.eu'&& level === '0'&& effmu === 'B'&& isTurbo) {
+    return {
+      score: 61,
+      color: "black", ruleString: "(FromTo(1,5.5))&& network === 'PS.eu'&& level === '0'&& effmu === 'B'&& isTurbo"
+    };
+  };
+if((FromTo(1,3.5))&& network === 'PS.eu'&& level === '0'&& effmu === 'B'&& isSuperTurbo) {
+    return {
+      score: 61,
+      color: "black", ruleString: "(FromTo(1,3.5))&& network === 'PS.eu'&& level === '0'&& effmu === 'B'&& isSuperTurbo"
     };
   };
 
