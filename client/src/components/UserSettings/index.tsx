@@ -98,18 +98,24 @@ export const UserSettings = forwardRef<UserSettingsRef, Props>(({
   const handleSubmit = async () => {
     const { time1, time2, normalTime, turboTime, superTurboTime } = props;
 
-    // Валидация времени сессии
-    const sessionTimeError = validateSessionTimes(time1, time2);
-    if (sessionTimeError) {
-      ErrNot(sessionTimeError);
-      return;
+    if (
+      ([time1, time2].some(Boolean) && ![time1, time2].every(Boolean)) ||
+      ([time1, time2].every(Boolean) &&
+        (time1?.includes("-") || time2?.includes("-")))
+    ) {
+      return ErrNot(
+        'Check that the "Session start time" and "Session end time" fields are filled in correctly.'
+      );
     }
 
-    // Валидация времени фильтров
-    const filterTimeError = validateFilterTimes([normalTime, turboTime, superTurboTime]);
-    if (filterTimeError) {
-      ErrNot(filterTimeError);
-      return;
+    if (
+      normalTime?.includes("-") ||
+      turboTime?.includes("-") ||
+      superTurboTime?.includes("-")
+    ) {
+      return ErrNot(
+        'Check that the "Filter Normal", "Filter Turbo" and "Filter Super Turbo" fields are filled in correctly.'
+      );
     }
 
     setProgress(true);

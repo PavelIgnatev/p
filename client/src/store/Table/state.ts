@@ -297,6 +297,10 @@ export const $filtredTableState = combine(
       const level = tournament["@level"];
       let data = filter(level, offpeak, tournament, config?.alias, true);
 
+      if (isMystery(tournament)) {  
+        console.log(tournament, data);
+      }
+
       let {
         valid,
         color: rColor = "unknown",
