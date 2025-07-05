@@ -225,9 +225,7 @@ export const $filtredTableState = combine(
         "@turbo": !!turbo,
         "@rebuy": !!rebuy,
         "@od": !!tournament["@flags"]?.includes("OD"),
-        "@bounty":
-          !!bounty ||
-          (networksLevel === 16 || networksLevel === 17 ? !!mystery : false),
+        "@bounty": !!bounty || !!mystery,
         "@sat": !!sat,
         "@sng": !!tournament["@gameClass"]?.includes("sng"),
         "@deepstack": !!tournament["@flags"]?.includes("D"),
