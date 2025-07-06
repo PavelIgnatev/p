@@ -101,19 +101,21 @@ const collectionStatistics = async () => {
         } else {
           // Фильтруем те, которые идут не в нужный день по таймзоне EST
           Array.from(tournaments).forEach((ft) => {
-
             const t = getMoreProp(ft);
             const network = t?.["@network"];
 
             if (
-              networks?.["ko"]?.[network] &&
-              networks?.["freezout"]?.[network]
+              networks?.["ko"]?.[network] ||
+              networks?.["freezout"]?.[network] ||
+              networks?.["mystery"]?.[network]
             ) {
               const d = Number(ft["@duration"] ?? 0);
               const name = validateName(t["@name"]?.toLowerCase(), stopWords);
               const stake = t?.["@stake"];
               const { level: networksLevel, effmu } =
-                networks?.[t["@bounty"] ? "ko" : "freezout"]?.[network] ?? {};
+                networks?.[
+                  t["@mystery"] ? "mystery" : t["@bounty"] ? "ko" : "freezout"
+                ]?.[network] ?? {};
               const level = networksLevel + effmu;
               const currency = t["@currency"];
               const bid = t["@bid"];

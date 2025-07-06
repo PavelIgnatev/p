@@ -5,6 +5,7 @@ const { isSuperTurbo } = require("./isSuperTurbo");
 const { isRebuy } = require("./isRebuy");
 const { isSat } = require("./IsSat");
 const { isNormal } = require("./isNormal");
+const { isMystery } = require("./isMystery");
 
 /**
  * Возвращает объект, содержащий в себе большее количество свойств
@@ -70,6 +71,8 @@ const getMoreProp = (tournament) => {
   );
 
   const rebuy = isRebuy(tournament);
+  const normal = isNormal(tournament);
+  const mystery = isMystery(tournament);
 
   return {
     ...tournament,
@@ -78,7 +81,8 @@ const getMoreProp = (tournament) => {
     "@rebuy": rebuy,
     "@od": !!tournament["@flags"]?.includes("OD"),
     "@sat": !!sat,
-    "@bounty": isNormal(tournament),
+    "@bounty": !!normal || !!mystery,
+    "@mystery": !!mystery,
     "@sng": !!tournament["@gameClass"]?.includes("sng"),
     "@deepstack": !!tournament["@flags"]?.includes("D"),
     "@superturbo": !!isSuperTurbo(tournament),

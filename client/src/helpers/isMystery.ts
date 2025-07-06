@@ -5,6 +5,6 @@ export const isMystery = (tournament: tableCellModel) => {
 
   return !!(
     (tournament["@flags"]?.includes("B") || name?.includes("bounty")) &&
-    name?.includes("mystery")
+    name?.includes("myster")
   );
 };
