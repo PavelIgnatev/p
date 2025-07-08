@@ -342,12 +342,12 @@
   .menu {
     padding: 20px 15px;
     border-radius: 15px;
-    flex-direction: column;
+    // flex-direction: column;
     gap: 20px;
   }
 
   .content {
-    flex-direction: column;
+    // flex-direction: column;
     gap: 15px;
     width: 100%;
   }
@@ -368,7 +368,6 @@
   .inputWrapper {
     margin-left: 0;
     gap: 8px;
-    flex-wrap: wrap;
   }
 
   .input {
@@ -390,12 +389,11 @@
   }
 
   .starts {
-    flex-direction: column;
+    // flex-direction: column;
     gap: 10px;
   }
 
   .checkboxWrapper {
-    flex-wrap: wrap;
     gap: 8px;
     justify-content: flex-start;
   }
@@ -558,7 +556,7 @@
 }
 
 @media (max-width: 1260px) {
-  .content{
+  .content {
     margin-top: 6px !important;
   }
   .starts {
@@ -625,7 +623,6 @@
   }
 
   .checkboxWrapper {
-    flex-wrap: wrap;
     gap: 8px;
     justify-content: flex-start;
   }
@@ -795,9 +792,40 @@
     height: 42px !important;
     width: 500px !important;
   }
-  .content{
+  .content {
     margin-top: 15px !important;
   }
+}
+
+@media (max-width: 768px) {
+  .checkboxWrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .checkbox {
+    min-width: 50px !important;
+  }
+
+  .button {
+    margin-top: 75px !important;
+  }
+  .network,
+  .time {
+    height: 42px !important;
+    width: 220px !important;
+  }
+
+  .content {
+    margin-top: 0px !important;
+  }
+}
+
+@media (max-width: 500px) {
+  .checkbox {
+    min-width: 40px !important;
+  }
+
 }
 
 @media (max-width: 624px) {
