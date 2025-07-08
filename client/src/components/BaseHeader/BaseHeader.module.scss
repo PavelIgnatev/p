@@ -2,8 +2,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  display: flex;
   position: relative;
+  width: 100%;
 }
 
 .menu {
@@ -15,22 +15,6 @@
   justify-content: space-between;
   transition: background-color 0.3s ease;
   border: var(--border-width) solid var(--border-color);
-
-  :global {
-    .select__control--is-focused,
-    .select__control--menu-is-open {
-      .select__single-value {
-        color: #fff !important;
-      }
-    }
-
-    .select__menu {
-      .select__option--is-focused,
-      .select__option--is-selected {
-        color: #fff !important;
-      }
-    }
-  }
 }
 
 .content {
@@ -75,8 +59,9 @@
   cursor: pointer;
   transition: all 0.3s ease;
   color: var(--text-color);
-  padding: 6px 12px;
-  border-radius: 6px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 14px;
 
   &.selected {
     background: rgb(99, 102, 241);
@@ -85,6 +70,10 @@
     &:hover {
       background: rgb(79, 70, 229);
     }
+  }
+
+  &:not(.selected):hover {
+    background: rgba(99, 102, 241, 0.1);
   }
 }
 
@@ -97,13 +86,13 @@
   font-weight: 500;
   background-color: var(--background-main);
   border: 1px solid var(--border-color);
-  border-radius: 6px;
+  border-radius: 8px;
   outline: none;
   height: 38px;
   box-sizing: border-box;
   transition: all 0.2s ease;
   padding: 0 12px;
-  max-width: 90px;
+  width: 90px;
   text-align: center;
 
   &:focus,
@@ -119,22 +108,19 @@
 }
 
 .inputTime {
-  width: 50px;
-  height: 38px;
-  text-align: center;
-  font-weight: 400 !important;
-  background-color: var(--background-main);
-  color: var(--text-color);
+  composes: input;
+  width: 60px;
 }
 
 .button {
   background: rgb(99, 102, 241);
   border-radius: 10px;
-  font-weight: 700;
+  font-weight: 600;
   height: 38px;
-  width: 145px;
+  padding: 0 24px;
   color: white;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
+  font-size: 14px;
 
   &:hover:not(:disabled) {
     background: rgb(79, 70, 229);
@@ -196,12 +182,28 @@
   padding: 8px 16px;
   width: 100%;
   display: flex;
+  align-items: center;
   justify-content: space-between;
   transition: background-color 0.3s ease;
   color: var(--text-color);
   background: var(--background-secondary);
   border-radius: 10px;
   border: var(--border-width) solid var(--border-color);
+  min-width: 0;
+
+  > div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+}
+
+.userInfo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-shrink: 1;
+  min-width: 0;
 }
 
 .userProfile {
@@ -229,7 +231,7 @@
 .userName {
   font-size: 16px;
   color: var(--text-color);
-  
+
   strong {
     color: rgb(99, 102, 241);
   }
@@ -259,6 +261,45 @@
   transition: color 0.3s ease;
   color: rgb(99, 102, 241);
   font-weight: 500;
+}
+
+.searchSettingsButton {
+  display: none;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: rgb(99, 102, 241);
+  font-weight: 500;
+  transition: all 0.3s ease;
+  font-size: 14px;
+  background: rgba(99, 102, 241, 0.05);
+  border: 1px solid rgba(99, 102, 241, 0.1);
+  white-space: nowrap;
+
+  &:hover {
+    background: rgba(99, 102, 241, 0.1);
+  }
+
+  .icon {
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease;
+  }
+
+  &.expanded .icon {
+    transform: rotate(180deg);
+  }
+
+  svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.menuCollapsed {
+  display: none;
 }
 
 .themeSwitch {
@@ -369,8 +410,7 @@
   }
 
   .info {
-    padding: 0 15px;
-    flex-direction: column;
+    padding: 8px 15px;
     gap: 10px;
     align-items: center;
     text-align: center;
@@ -439,7 +479,347 @@
   }
 }
 
+@media (max-width: 624px) {
+  .menu {
+    padding: 16px;
+    gap: 16px;
+  }
+
+  .content {
+    gap: 16px;
+  }
+
+  .info {
+    justify-content: space-between;
+    gap: 12px;
+    padding: 12px;
+  }
+
+  .network,
+  .makeup,
+  .time,
+  .level {
+    height: 36px;
+  }
+
+  .inputWrapper {
+    width: 100%;
+    justify-content: space-between;
+    margin: 0;
+  }
+
+  .input {
+    width: calc(50% - 6px);
+    height: 36px;
+    font-size: 14px;
+  }
+
+  .inputTime {
+    width: calc(50% - 6px);
+  }
+
+  .starts {
+    gap: 12px;
+  }
+
+  .checkboxWrapper {
+    gap: 8px;
+    justify-content: center;
+  }
+
+  .checkbox {
+    font-size: 13px;
+    padding: 6px 12px;
+  }
+
+  .button {
+    height: 36px;
+    font-size: 14px;
+  }
+
+  .userInfo {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .settings {
+    font-size: 14px;
+  }
+
+  .searchSettingsButton {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+
 .drawerSaveButton {
   composes: button;
   font-size: 15px;
+}
+
+@media (max-width: 1260px) {
+  .searchSettingsButton {
+    display: flex;
+  }
+
+  .menu {
+    display: none;
+    padding: 16px;
+    flex-direction: column;
+    gap: 16px;
+    border-radius: 12px;
+    margin-top: 8px;
+    animation: slideDown 0.3s ease;
+
+    &.menuExpanded {
+      display: flex;
+    }
+  }
+
+  .content {
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+  }
+
+  .timezone,
+  .makeup,
+  .time,
+  .network,
+  .level {
+    width: 100%;
+  }
+
+  .inputWrapper {
+    margin-left: 0;
+    gap: 12px;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .starts {
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+  }
+
+  .checkboxWrapper {
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: flex-start;
+  }
+
+  .button {
+    width: 100%;
+    max-width: none;
+    margin-top: 8px;
+  }
+
+  .input {
+    width: calc(50% - 6px);
+    max-width: none;
+  }
+
+  .inputTime {
+    width: calc(50% - 6px);
+    max-width: none;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1260px) {
+  .info {
+    padding: 12px 20px;
+    margin: 12px 0;
+    gap: 16px;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
+    > div {
+      gap: 16px;
+    }
+  }
+
+  .userInfo {
+    flex-shrink: 0;
+    gap: 24px;
+  }
+
+  .userProfile {
+    gap: 16px;
+  }
+
+  .avatar {
+    width: 44px;
+    height: 44px;
+  }
+
+  .userName {
+    font-size: 15px;
+  }
+
+  .userEmail {
+    font-size: 13px;
+
+    span {
+      max-width: 180px;
+    }
+  }
+
+  .settings {
+    font-size: 14px;
+    padding: 8px 16px;
+    background: rgba(99, 102, 241, 0.05);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background: rgba(99, 102, 241, 0.1);
+    }
+  }
+
+  .searchSettingsButton {
+    font-size: 14px;
+    padding: 8px 16px;
+    border-radius: 8px;
+    background: rgba(99, 102, 241, 0.05);
+
+    &:hover {
+      background: rgba(99, 102, 241, 0.1);
+    }
+
+    .icon {
+      margin-left: 4px;
+    }
+  }
+
+  .menu {
+    &.menuExpanded {
+      padding: 20px;
+      gap: 20px;
+      border-radius: 12px;
+      margin-top: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+  }
+
+  .content {
+    gap: 20px;
+  }
+
+  .inputWrapper {
+    gap: 16px;
+    margin-bottom: 8px;
+  }
+
+  .input {
+    height: 42px;
+    font-size: 14px;
+    width: calc(50% - 8px);
+  }
+
+  .inputTime {
+    height: 42px;
+  }
+
+  .button {
+    height: 42px;
+    font-size: 15px;
+    margin-top: 12px;
+    background: rgb(99, 102, 241);
+    transition: all 0.3s ease;
+
+    &:hover {
+      background: rgb(79, 70, 229);
+      transform: translateY(-1px);
+    }
+  }
+
+  .checkboxWrapper {
+    gap: 12px;
+    justify-content: flex-start;
+  }
+
+  .checkbox {
+    font-size: 14px;
+    padding: 8px 16px;
+    transition: all 0.25s ease;
+
+    &.selected {
+      transform: translateY(-1px);
+    }
+  }
+
+  .themeSwitch {
+    margin-right: 12px;
+  }
+}
+
+@media (max-width: 1260px) {
+  .themeSwitch {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 624px) {
+  .info {
+    padding: 8px 12px;
+    gap: 8px;
+  }
+
+  .searchSettingsButton {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .settings {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .info {
+    padding: 6px 10px;
+    gap: 6px;
+  }
+
+  .searchSettingsButton {
+    font-size: 13px;
+    padding: 8px 16px;
+  }
+
+  .settings {
+    font-size: 13px;
+  }
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 700px) {
+  .info {
+    justify-content: flex-end !important;
+  }
+  .userInfo {
+    display: none !important;
+  }
+
+  .alls{
+    width: 100%;
+  }
+
+  .alls2{
+    flex: 1;
+    justify-content: flex-start;
+    text-align: start;
+    align-items: flex-start
+  }
 }

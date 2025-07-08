@@ -86,7 +86,7 @@ export const MainPage = () => {
         placement="right"
         onClose={() => setDrawerOpen(false)}
         open={drawerOpen}
-        width={800}
+        width={window.innerWidth < 800 ? window.innerWidth : 800}
         bodyStyle={{
           padding: "16px 32px",
         }}

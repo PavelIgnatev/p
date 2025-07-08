@@ -1,4 +1,4 @@
-import React, { FC, useEffect } from "react";
+import React, { FC, useEffect, useState } from "react";
 import cx from "classnames";
 import {
   $tournamentsSettings,
@@ -33,6 +33,7 @@ interface BaseHeaderProps {
 }
 
 export const BaseHeader: FC<BaseHeaderProps> = ({ onSettingsClick }) => {
+  const [isMenuExpanded, setIsMenuExpanded] = useState(true);
   const tournamentsSettings = useStore($tournamentsSettings);
   const loading = useStore(fetchUserReposFx.pending);
   const tableData = useStore($tableState);
@@ -88,6 +89,7 @@ export const BaseHeader: FC<BaseHeaderProps> = ({ onSettingsClick }) => {
     }
 
     // Если все проверки прошли, вызываем запрос
+    setIsMenuExpanded(false); // Скрываем меню при поиске
     fetchUserReposFx();
   };
 
@@ -150,11 +152,15 @@ export const BaseHeader: FC<BaseHeaderProps> = ({ onSettingsClick }) => {
             </div>
           </div>
         </div>
-        <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
+        <div style={{ display: "flex", alignItems: "center", gap: "10px" }} className={classes.alls}>
           <Tooltip
-            title={!canToggleTheme ? "Refresh page to change theme" : ""}
+            title={
+              canToggleTheme
+                ? "Toggle theme"
+                : "Cannot toggle theme while searching"
+            }
           >
-            <div style={{ opacity: canToggleTheme ? 1 : 0.5 }}>
+            <div style={{ opacity: canToggleTheme ? 1 : 0.5 }} className={classes.alls2}>
               <Switch
                 onChange={() => toggleTheme()}
                 checked={theme === "dark"}
@@ -212,6 +218,28 @@ export const BaseHeader: FC<BaseHeaderProps> = ({ onSettingsClick }) => {
             </div>
           </Tooltip>
           <div
+            className={cx(classes.searchSettingsButton, {
+              [classes.expanded]: isMenuExpanded,
+            })}
+            onClick={() => setIsMenuExpanded(!isMenuExpanded)}
+          >
+            <span>Search settings</span>
+            <div className={classes.icon}>
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </div>
+          </div>
+          <div
             className={classes.settings}
             onClick={onSettingsClick}
             style={{ cursor: "pointer" }}
@@ -220,7 +248,9 @@ export const BaseHeader: FC<BaseHeaderProps> = ({ onSettingsClick }) => {
           </div>
         </div>
       </div>
-      <div className={classes.menu}>
+      <div
+        className={cx(classes.menu, { [classes.menuExpanded]: isMenuExpanded })}
+      >
         <div className={classes.content}>
           <ComponentCategory category="Network">
             <BaseSelectMulti
