@@ -558,6 +558,26 @@
 }
 
 @media (max-width: 1260px) {
+  .content{
+    margin-top: 6px !important;
+  }
+  .starts {
+    gap: 0 !important;
+  }
+  .checkboxWrapper {
+    margin-top: 20px !important;
+    justify-content: flex-end !important;
+    margin-bottom: 20px !important;
+  }
+  .content {
+    gap: 0 !important;
+  }
+  .network,
+  .time {
+    height: 42px !important;
+    width: 850px !important;
+  }
+
   .searchSettingsButton {
     display: flex;
   }
@@ -761,6 +781,25 @@
   }
 }
 
+@media (max-width: 1120px) {
+  .network,
+  .time {
+    height: 42px !important;
+    width: 700px !important;
+  }
+}
+
+@media (max-width: 992px) {
+  .network,
+  .time {
+    height: 42px !important;
+    width: 500px !important;
+  }
+  .content{
+    margin-top: 15px !important;
+  }
+}
+
 @media (max-width: 624px) {
   .info {
     padding: 8px 12px;
@@ -812,14 +851,14 @@
     display: none !important;
   }
 
-  .alls{
+  .alls {
     width: 100%;
   }
 
-  .alls2{
+  .alls2 {
     flex: 1;
     justify-content: flex-start;
     text-align: start;
-    align-items: flex-start
+    align-items: flex-start;
   }
 }

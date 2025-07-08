@@ -280,7 +280,7 @@ export const BaseHeader: FC<BaseHeaderProps> = ({ onSettingsClick }) => {
               placeholder="Network"
             />
           </ComponentCategory>
-          <ComponentCategory category="Buy-in">
+          <ComponentCategory category="Buy-in" className={classes.buyinCategory}>
             <div className={classes.inputWrapper}>
               <BaseInput
                 value={tournamentsSettings.moneyStart}
@@ -327,7 +327,7 @@ export const BaseHeader: FC<BaseHeaderProps> = ({ onSettingsClick }) => {
         </div>
         <div className={classes.content}>
           <div className={classes.starts}>
-            <ComponentCategory category="Starts">
+            <ComponentCategory category="Starts" className={classes.startsCategory}>
               <BaseSelect
                 value={tournamentsSettings.time}
                 className={classes.time}
@@ -358,7 +358,6 @@ export const BaseHeader: FC<BaseHeaderProps> = ({ onSettingsClick }) => {
                 />
               </div>
             </ComponentCategory>
-            <ComponentCategory></ComponentCategory>
           </div>
           <ComponentCategory category="Format">
             <div className={classes.checkboxWrapper}>
