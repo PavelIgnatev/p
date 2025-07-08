@@ -22,6 +22,16 @@ export const MainPage = () => {
   const [drawerOpen, setDrawerOpen] = useState(false);
   const userSettingsRef = useRef<UserSettingsRef>(null);
   const [isSettingsLoading, setIsSettingsLoading] = useState(false);
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   useEffect(() => {
     // Автоматически открываем настройки при загрузке страницы
@@ -86,7 +96,7 @@ export const MainPage = () => {
         placement="right"
         onClose={() => setDrawerOpen(false)}
         open={drawerOpen}
-        width={window.innerWidth < 800 ? window.innerWidth : 800}
+        width={windowWidth < 800 ? windowWidth : 800}
         bodyStyle={{
           padding: "16px 32px",
         }}

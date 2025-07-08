@@ -40,8 +40,18 @@ export const BaseHeader: FC<BaseHeaderProps> = ({ onSettingsClick }) => {
   const config = useStore($config);
   const theme = useStore($theme);
   const canToggleTheme = useStore($canToggleTheme);
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   const { setIntervalWorker } = useIntervalWorker();
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   useEffect(() => {
     // Выкидываем из сессии каждые 12 часов
@@ -152,7 +162,10 @@ export const BaseHeader: FC<BaseHeaderProps> = ({ onSettingsClick }) => {
             </div>
           </div>
         </div>
-        <div style={{ display: "flex", alignItems: "center", gap: "10px" }} className={classes.alls}>
+        <div
+          style={{ display: "flex", alignItems: "center", gap: "10px" }}
+          className={classes.alls}
+        >
           <Tooltip
             title={
               canToggleTheme
@@ -160,7 +173,10 @@ export const BaseHeader: FC<BaseHeaderProps> = ({ onSettingsClick }) => {
                 : "Cannot toggle theme while searching"
             }
           >
-            <div style={{ opacity: canToggleTheme ? 1 : 0.5 }} className={classes.alls2}>
+            <div
+              style={{ opacity: canToggleTheme ? 1 : 0.5 }}
+              className={classes.alls2}
+            >
               <Switch
                 onChange={() => toggleTheme()}
                 checked={theme === "dark"}
@@ -321,7 +337,10 @@ export const BaseHeader: FC<BaseHeaderProps> = ({ onSettingsClick }) => {
                 placeholder="Time"
               />
             </ComponentCategory>
-            <ComponentCategory>
+
+            <ComponentCategory
+              category={windowWidth < 1260 ? "Time range" : ""}
+            >
               <div className={classes.inputWrapper}>
                 <BaseInputMask
                   placeholder="From(h)"
