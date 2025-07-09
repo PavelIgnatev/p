@@ -95,15 +95,17 @@ export const BaseTable: FC<BaseTableProps> = ({ data, loading }) => {
   return (
     <section className={classes.section}>
       <TextTier levelAndEffmu={levelAndEffmu} />
-      <table id="grid" className={classes.table}>
-        <Thead
-          setSortedKey={setSortedKey}
-          sortedKey={sortedKey}
-          setIsReverse={setIsReverse}
-          isReverse={isReverse}
-        />
-        <Tbody data={data} sortedKey={sortedKey} isReverse={isReverse} />
-      </table>
+      <div className={classes.tableWrapper}>
+        <table id="grid" className={classes.table}>
+          <Thead
+            setSortedKey={setSortedKey}
+            sortedKey={sortedKey}
+            setIsReverse={setIsReverse}
+            isReverse={isReverse}
+          />
+          <Tbody data={data} sortedKey={sortedKey} isReverse={isReverse} />
+        </table>
+      </div>
     </section>
   );
 };

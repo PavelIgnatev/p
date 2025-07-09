@@ -5,9 +5,15 @@
   background: var(--background-main);
   border: 1px solid var(--border-color);
 
+  @media screen and (max-width: 550px) {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
   &__row {
     display: grid;
-    grid-template-columns: 1.2fr 1fr 0.8fr 1fr;
+    grid-template-columns: minmax(100px, 1.2fr) minmax(100px, 1fr) minmax(80px, 0.8fr) minmax(100px, 1fr);
+    min-width: 380px; // Сумма минимальных ширин колонок
     border-bottom: 1px solid var(--border-color);
 
     &:last-child {
@@ -32,10 +38,11 @@
     display: flex;
     align-items: center;
     font-size: 14px;
-    font-weight: 600;
-    color: var(--text-color);
     border-right: 1px solid var(--border-color);
     min-height: 42px;
+    white-space: nowrap; // Предотвращаем перенос текста
+    overflow: hidden;
+    text-overflow: ellipsis;
 
     &:last-child {
       border-right: none;
