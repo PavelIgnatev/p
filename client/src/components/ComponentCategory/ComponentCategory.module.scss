@@ -10,6 +10,14 @@
   }
 }
 
+// @media (max-width: 572px) {
+//   .wrapper{
+//     &:nth-child(1) {
+//       margin-bottom: 12px !important;
+//     }
+//   }
+// }
+
 .category {
   margin-right: 35px;
   font-weight: 600;
@@ -36,6 +44,28 @@
   .category {
     min-width: 90px;
   }
+
+  .wrapper{
+    height: initial;
+  }
 }
 
 
+
+@media (max-width: 481px) {
+  .wrapper{
+    flex-direction: column !important;
+    flex-wrap: initial !important;
+    align-items: flex-start !important;
+  }
+
+  .children {
+    width: 100% !important;
+    justify-content: flex-end !important;
+  }
+
+  .category {
+    margin-right: 0 !important;
+  }
+
+}
