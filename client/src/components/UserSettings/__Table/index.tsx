@@ -1,6 +1,6 @@
 import b_ from "b_";
 import { FC, useMemo } from "react";
-import Select from "react-select";
+import { Select } from "antd";
 
 import { Effmu, Networks } from "../../../@types/common";
 import { SelectOption } from "../../../@types/selectsModel";
@@ -11,46 +11,7 @@ import {
 } from "../../../constants";
 import { editableConfigEvents } from "../../../store/Config";
 
-import { specialSelectStyles } from "../../BaseSelect";
-
 import "./index.scss";
-
-const selectStyles = {
-  ...specialSelectStyles,
-  option: (provided: object, state: any) => ({
-    ...specialSelectStyles.option(provided, state),
-    fontSize: "14px",
-    padding: "6px 10px",
-  }),
-  control: (provided: object, state: any) => ({
-    ...specialSelectStyles.control(provided, state),
-    fontSize: "14px",
-    minWidth: "90px",
-    minHeight: "36px",
-    border: "1px solid var(--border-color)",
-    borderRadius: "8px",
-    background: "var(--background-main)",
-  }),
-  menu: (provided: object) => ({
-    ...provided,
-    background: "var(--background-main)",
-    border: "1px solid var(--border-color)",
-    borderRadius: "6px",
-    boxShadow: "0 4px 12px rgba(0, 0, 0, 0.1)",
-    overflow: "hidden",
-  }),
-  valueContainer: (provided: object) => ({
-    ...provided,
-    padding: "0 8px",
-  }),
-  indicatorsContainer: (provided: object) => ({
-    ...provided,
-    height: "32px",
-  }),
-  noOptionsMessage: (provided: object) => ({
-    display: "none",
-  }),
-};
 
 interface Props {
   networks: { [key in "ko" | "freezout"]: Networks };
@@ -74,23 +35,20 @@ function combineArraysByAlternateElements(arrays: any) {
   return result;
 }
 
-const levelsOptions: SelectOption<number | string>[] = LEVELS_ARRAY.map(
-  (level) => ({
-    value: level,
-    label: level,
-  })
-);
+const levelsOptions = LEVELS_ARRAY.map((level) => ({
+  value: level,
+  label: level,
+}));
 
-const effmuOptions: SelectOption<Effmu>[] = EFFMU.map((effmu) => ({
+const effmuOptions = EFFMU.map((effmu) => ({
   value: effmu,
   label: effmu,
 }));
 
-const effmuOptionsWithoutSuperA: SelectOption<Effmu>[] =
-  EFFMUOPTIONSWITHOUTSUPERA.map((effmu) => ({
-    value: effmu,
-    label: effmu,
-  }));
+const effmuOptionsWithoutSuperA = EFFMUOPTIONSWITHOUTSUPERA.map((effmu) => ({
+  value: effmu,
+  label: effmu,
+}));
 
 export const UserSettingsTable: FC<Props> = ({ networks, canChangeLevels }) => {
   const renderContent = useMemo(
@@ -99,23 +57,16 @@ export const UserSettingsTable: FC<Props> = ({ networks, canChangeLevels }) => {
         return Object.keys(networks[type]).map((network) => {
           const { level, effmu } = networks[type][network];
 
-          const defaultOption = levelsOptions.find(
-            (option) => option.value === level
-          );
-          const defaultEffmuOption = effmuOptions.find(
-            (option) => option.value === effmu
-          );
-
-          const handleLevelChange = (option: SelectOption<number>) =>
+          const handleLevelChange = (value: number | string) =>
             editableConfigEvents.handleChangeLevel({
               network,
-              level: option.value,
+              level: value,
               type,
             });
-          const handleEffmuChange = (option: SelectOption<Effmu>) =>
+          const handleEffmuChange = (value: Effmu) =>
             editableConfigEvents.handleChangeEffmu({
               network,
-              effmu: option.value,
+              effmu: value,
               type,
             });
 
@@ -126,13 +77,10 @@ export const UserSettingsTable: FC<Props> = ({ networks, canChangeLevels }) => {
               <div className={b("cell")}>
                 {canChangeLevels ? (
                   <Select
-                    defaultValue={defaultOption}
+                    value={level}
                     options={levelsOptions}
-                    // @ts-ignore все работает
                     onChange={handleLevelChange}
                     className={b("input", { select: true })}
-                    classNamePrefix="select"
-                    styles={selectStyles}
                   />
                 ) : (
                   networks[type][network].level
@@ -145,11 +93,9 @@ export const UserSettingsTable: FC<Props> = ({ networks, canChangeLevels }) => {
                       ? effmuOptions
                       : effmuOptionsWithoutSuperA
                   }
-                  value={defaultEffmuOption}
-                  // @ts-ignore все работает
+                  value={effmu}
                   onChange={handleEffmuChange}
                   className={b("input", { select: true })}
-                  styles={selectStyles}
                 />
               </div>
             </div>,

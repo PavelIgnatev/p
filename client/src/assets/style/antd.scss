@@ -34,4 +34,81 @@
       color: rgba(255, 255, 255, 0.85);
     }
   }
+
+  // Кастомизация Select для поддержки тёмной темы
+  .ant-select {
+    .ant-select-selector {
+      background-color: #141414 !important;
+      border-color: #434343 !important;
+      color: #ffffff !important;
+
+      &:hover,
+      &:focus {
+        border-color: #1668dc !important;
+      }
+
+      .ant-select-selection-search-input {
+        color: #ffffff !important;
+      }
+
+      .ant-select-selection-placeholder {
+        color: rgba(255, 255, 255, 0.45) !important;
+      }
+
+      .ant-select-selection-item {
+        color: #ffffff !important;
+      }
+    }
+
+    &.ant-select-focused .ant-select-selector {
+      border-color: #1668dc !important;
+      box-shadow: 0 0 0 2px rgba(22, 104, 220, 0.2) !important;
+    }
+
+    .ant-select-arrow {
+      color: rgba(255, 255, 255, 0.45) !important;
+    }
+
+    &.ant-select-open .ant-select-arrow {
+      color: #1668dc !important;
+    }
+  }
+
+  // Выпадающий список Select
+  .ant-select-dropdown {
+    background-color: #1f1f1f !important;
+    border: 1px solid #434343 !important;
+
+    .ant-select-item {
+      color: rgba(255, 255, 255, 0.85) !important;
+
+      &-option {
+        &:hover {
+          background-color: rgba(255, 255, 255, 0.08) !important;
+        }
+
+        &-selected {
+          background-color: #1668dc !important;
+          color: #ffffff !important;
+        }
+
+        &-active {
+          background-color: rgba(255, 255, 255, 0.08) !important;
+        }
+      }
+    }
+
+    .ant-select-item-empty {
+      color: rgba(255, 255, 255, 0.45) !important;
+    }
+  }
+
+  // Disabled состояние
+  .ant-select.ant-select-disabled {
+    .ant-select-selector {
+      background-color: #1f1f1f !important;
+      color: rgba(255, 255, 255, 0.25) !important;
+      border-color: #303030 !important;
+    }
+  }
 } 
