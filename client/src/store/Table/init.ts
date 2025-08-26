@@ -1,5 +1,5 @@
 import { getStoreRequest } from './../Store/init';
-import { createEffect } from "effector";
+import { createEffect, createEvent } from "effector";
 
 import { tableCellModel } from "../../@types/tableCellModel";
 import { $tournamentsSettings } from "../Select";
@@ -22,4 +22,9 @@ export const fetchUserReposFx = createEffect(async () => {
   }
 });
 
+export const clearTableState = createEvent();
+
+$tableState.on(clearTableState, () => null);
+
+$tableState.on(fetchUserReposFx, () => null);
 $tableState.on(fetchUserReposFx.doneData, (_, data) => data);

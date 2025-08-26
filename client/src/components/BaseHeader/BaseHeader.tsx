@@ -98,8 +98,7 @@ export const BaseHeader: FC<BaseHeaderProps> = ({ onSettingsClick }) => {
       return;
     }
 
-    // Если все проверки прошли, вызываем запрос
-    setIsMenuExpanded(false); // Скрываем меню при поиске
+    setIsMenuExpanded(false);
     fetchUserReposFx();
   };
 

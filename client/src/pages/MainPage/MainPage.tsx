@@ -13,6 +13,7 @@ import { useEffect, useRef, useState } from "react";
 import { Drawer } from "antd";
 import { UserSettings, UserSettingsRef } from "../../components/UserSettings";
 import { BaseButton } from "../../components/BaseButton";
+import { ProcessingIndicator } from "../../components/ProcessingIndicator";
 
 export const MainPage = () => {
   const loading = useStore(fetchUserReposFx.pending);
@@ -91,6 +92,7 @@ export const MainPage = () => {
     <>
       <BaseHeader onSettingsClick={handleSettingsModalOpen} />
       <BaseTable loading={loading} data={tournament} />
+      <ProcessingIndicator />
       <Drawer
         title={`Settings: ${config?.alias || ""}`}
         placement="right"

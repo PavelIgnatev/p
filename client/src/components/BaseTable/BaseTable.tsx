@@ -6,6 +6,7 @@ import { Loader } from "../Loader/Loader";
 import classes from "./BaseTable.module.scss";
 import { useStore } from "effector-react";
 import { $config } from "../../store/Config";
+import { $isProcessing } from "../../store/Table";
 import { TextTier } from "../TextTier";
 
 type BaseTableProps = {
@@ -18,6 +19,7 @@ export const BaseTable: FC<BaseTableProps> = ({ data, loading }) => {
   const [isReverse, setIsReverse] = useState(false);
   const { networks: fakeNetworks = { ko: {}, freezout: {}, mystery: {} } } =
     useStore($config) ?? {};
+  const isProcessing = useStore($isProcessing);
 
   const levelAndEffmu = useMemo(() => {
     const first = [
@@ -83,7 +85,11 @@ export const BaseTable: FC<BaseTableProps> = ({ data, loading }) => {
     );
 
   if (!data?.length)
-    return <section className={classes.nodata}>Nothing found</section>;
+    return (
+      <section className={classes.nodata}>
+        {isProcessing ? "Tournaments are being processed..." : "Nothing found"}
+      </section>
+    );
 
   if (!data)
     return (
