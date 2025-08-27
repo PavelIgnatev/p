@@ -493,23 +493,33 @@ export const processTableDataAsync = createEffect(async (params: {
 
     const ignoredKeys = ["@id", "@lastUpdateTime"];
 
+    // Оптимизированная функция определения дубликатов
     const areObjectsEqual = (obj1: tableCellModel, obj2: tableCellModel) => {
-      const filteredObj1 = Object.fromEntries(
-        Object.entries(obj1).filter(([key]) => !ignoredKeys.includes(key))
-      );
-
-      const filteredObj2 = Object.fromEntries(
-        Object.entries(obj2).filter(([key]) => !ignoredKeys.includes(key))
-      );
-
-      return JSON.stringify(filteredObj1) === JSON.stringify(filteredObj2);
+      // Сравниваем только ключевые поля вместо всего объекта
+      const keyFields = ["@name", "@network", "@stake", "@rake", "@scheduledStartDate", "@lateRegEndDate", "@entrants", "@reEntries"];
+      
+      for (const key of keyFields) {
+        // @ts-ignore
+        if (obj1[key] !== obj2[key]) {
+          return false;
+        }
+      }
+      return true;
     };
 
-    const uniqueTournaments = finalFilteredTournaments.filter(
-      (item, index, self) =>
-        self.findIndex((otherItem) => areObjectsEqual(item, otherItem)) ===
-        index
-    );
+    // Используем Map для O(N) сложности вместо O(N²)
+    const seen = new Map<string, boolean>();
+    const uniqueTournaments = finalFilteredTournaments.filter((item) => {
+      // Создаем ключ из ключевых полей
+      const key = `${item["@name"]}_${item["@network"]}_${item["@stake"]}_${item["@rake"]}_${item["@scheduledStartDate"]}_${item["@lateRegEndDate"]}`;
+      
+      if (seen.has(key)) {
+        return false;
+      }
+      
+      seen.set(key, true);
+      return true;
+    });
 
     setProcessing(false);
     return uniqueTournaments;
@@ -541,16 +551,20 @@ export const $filtredTableState = combine(
   }
 );
 
-const triggerAsyncProcessing = (
-  tournaments: tableCellModel[] | null | undefined,
-  currentTheme: Theme,
-  tournamentsSettings: any,
-  config: any,
-  filterContent: any,
-  store: any,
-  stopWords: string[],
-  colors: any
-) => {
+export const triggerAsyncProcessing = createEvent<{
+  tournaments: tableCellModel[];
+  currentTheme: Theme;
+  tournamentsSettings: any;
+  config: any;
+  filterContent: any;
+  store: any;
+  stopWords: string[];
+  colors: any;
+}>();
+
+triggerAsyncProcessing.watch((params) => {
+  const { tournaments, currentTheme, tournamentsSettings, config, filterContent, store, stopWords, colors } = params;
+
   if (!tournaments || tournaments.length === 0) {
     clearAsyncFilteredState();
     return;
@@ -570,18 +584,4 @@ const triggerAsyncProcessing = (
     stopWords,
     colors
   });
-};
-
-combine(
-  $tableState,
-  $theme,
-  $tournamentsSettings,
-  $config,
-  $filterContent,
-  $store,
-  $stopWords,
-  $colors
-).watch((data) => {
-  const [tournaments, currentTheme, tournamentsSettings, config, filterContent, store, stopWords, colors] = data;
-  triggerAsyncProcessing(tournaments, currentTheme, tournamentsSettings, config, filterContent, store, stopWords, colors);
 });
