@@ -297,6 +297,8 @@ export const processTableDataAsync = createEffect(async (params: {
 
         // let data = filter(level, offpeak, processedTournament, config?.alias, true);
         let { valid = true, color: rColor = "unknown", ruleString = "unknown (score rule?)" } = {};
+        // let data = filter(level, offpeak, processedTournament, config?.alias, true);
+        // let { valid, color: rColor = "unknown", ruleString = "unknown (score rule?)" } = data;
 
         const {
           score: score2,
@@ -330,6 +332,7 @@ export const processTableDataAsync = createEffect(async (params: {
     });
 
     setProcessedCount(0);
+    setTotalCount(processedTournaments.length);
     const filteredTournaments = await new Promise<tableCellModel[]>((resolve) => {
       const results: tableCellModel[] = [];
       let currentIndex = 0;
@@ -384,6 +387,7 @@ export const processTableDataAsync = createEffect(async (params: {
     });
 
     setProcessedCount(0);
+    setTotalCount(filteredTournaments.length);
     const timeFilteredTournaments = await new Promise<tableCellModel[]>((resolve) => {
       const results: tableCellModel[] = [];
       let currentIndex = 0;
@@ -429,6 +433,8 @@ export const processTableDataAsync = createEffect(async (params: {
       processNext();
     });
 
+    setProcessedCount(0);
+    setTotalCount(timeFilteredTournaments.length);
     const finalFilteredTournaments = await new Promise<tableCellModel[]>((resolve) => {
       const results: tableCellModel[] = [];
       let currentIndex = 0;
