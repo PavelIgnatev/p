@@ -292,7 +292,7 @@ const isNormal = (tournament) => {
 
   return !!(
     (tournament["@flags"]?.includes("B") || name?.includes("bounty")) &&
-    !name?.includes("mystery")
+    !name?.includes("myster")
   );
 };
 
@@ -15521,6 +15521,14 @@ const { getNetwork } = getNetwork_1;
     return { valid: true, rules: true, guarantee: 28000, color: "blue", ruleString: "(FromToGt(75,82,28000))&& network === 'PS.eu'&& level === '12'&& effmu === 'B'&& isNormal&& !isKo"};
   }if((FromToGt(75,82,28000))&& network === 'PS.eu'&& level === '12'&& effmu === 'C'&& isNormal&& !isKo) {
     return { valid: true, rules: true, guarantee: 28000, color: "blue", ruleString: "(FromToGt(75,82,28000))&& network === 'PS.eu'&& level === '12'&& effmu === 'C'&& isNormal&& !isKo"};
+  }if((FromTo(1,999))&& level === '16'&& isKo) {
+    return { valid: true, rules: true, guarantee: 1, color: "blue", ruleString: "(FromTo(1,999))&& level === '16'&& isKo"};
+  }if((FromTo(1,999))&& level === '17'&& isKo) {
+    return { valid: true, rules: true, guarantee: 1, color: "blue", ruleString: "(FromTo(1,999))&& level === '17'&& isKo"};
+  }if((FromTo(1,9999))&& level === '17'&& effmu === 'A'&& isKo) {
+    return { valid: true, rules: true, guarantee: 1, color: "blue", ruleString: "(FromTo(1,9999))&& level === '17'&& effmu === 'A'&& isKo"};
+  }if((FromTo(1,50))&& level === '17'&& isNormal&& isKo) {
+    return { valid: true, rules: true, guarantee: 1, color: "blue", ruleString: "(FromTo(1,50))&& level === '17'&& isNormal&& isKo"};
   }if((BidGt(16.5,50000))&& network === 'PS.eu'&& level === '1'&& effmu === 'A'&& isTurbo&& isKo) {
     return { valid: true, rules: true, guarantee: 50000, color: "red", ruleString: "(BidGt(16.5,50000))&& network === 'PS.eu'&& level === '1'&& effmu === 'A'&& isTurbo&& isKo"};
   }if((BidGt(11,25000))&& network === 'PS.eu'&& level === '1'&& effmu === 'A'&& isTurbo&& isKo) {

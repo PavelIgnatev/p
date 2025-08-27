@@ -290,7 +290,7 @@ const isNormal = (tournament) => {
 
   return !!(
     (tournament["@flags"]?.includes("B") || name?.includes("bounty")) &&
-    !name?.includes("mystery")
+    !name?.includes("myster")
   );
 };
 

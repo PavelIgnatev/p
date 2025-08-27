@@ -113,7 +113,9 @@ const updateScore1 = async () => {
     await writeFile("src/store/score1/score1.json", JSON.stringify(obj));
 
     const evObj = {};
+
     Object.values(scores)
+      .filter(networks => networks && Object.keys(networks).length > 0)
       .slice(0, 30)
       .forEach((networks) => {
         Object.keys(networks).forEach((networkName) => {
