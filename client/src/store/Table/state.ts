@@ -323,7 +323,7 @@ export const processTableDataAsync = createEffect(async (params: {
 
         results.push(result);
         currentIndex++;
-        setTimeout(processNext, 0);
+        setTimeout(processNext, 1);
       };
 
       processNext();
@@ -377,7 +377,7 @@ export const processTableDataAsync = createEffect(async (params: {
 
         setProcessedCount(currentIndex + 1);
         currentIndex++;
-        setTimeout(processNext, 0);
+        setTimeout(processNext, 1);
       };
 
       processNext();
@@ -399,14 +399,14 @@ export const processTableDataAsync = createEffect(async (params: {
 
         if (!item.valid) {
           currentIndex++;
-          setTimeout(processNext, 0);
+          setTimeout(processNext, 1);
           return;
         }
 
         if (startDate === "-") {
           results.push(item);
           currentIndex++;
-          setTimeout(processNext, 0);
+          setTimeout(processNext, 1);
           return;
         }
 
@@ -423,7 +423,7 @@ export const processTableDataAsync = createEffect(async (params: {
 
         setProcessedCount(currentIndex + 1);
         currentIndex++;
-        setTimeout(processNext, 0);
+        setTimeout(processNext, 1);
       };
 
       processNext();
@@ -462,7 +462,7 @@ export const processTableDataAsync = createEffect(async (params: {
         ) {
           results.push(item);
           currentIndex++;
-          setTimeout(processNext, 0);
+          setTimeout(processNext, 1);
           return;
         }
 
@@ -500,7 +500,7 @@ export const processTableDataAsync = createEffect(async (params: {
             )
           ) {
             currentIndex++;
-            setTimeout(processNext, 0);
+            setTimeout(processNext, 1);
             return;
           }
         }
@@ -528,7 +528,7 @@ export const processTableDataAsync = createEffect(async (params: {
             )
           ) {
             currentIndex++;
-            setTimeout(processNext, 0);
+            setTimeout(processNext, 1);
             return;
           }
         }
@@ -556,7 +556,7 @@ export const processTableDataAsync = createEffect(async (params: {
             )
           ) {
             currentIndex++;
-            setTimeout(processNext, 0);
+            setTimeout(processNext, 1);
             return;
           }
         }
@@ -571,7 +571,7 @@ export const processTableDataAsync = createEffect(async (params: {
 
         setProcessedCount(processedTournaments.length + filteredTournaments.length + timeFilteredTournaments.length + currentIndex + 1);
         currentIndex++;
-        setTimeout(processNext, 0);
+        setTimeout(processNext, 1);
       };
 
       processNext();
