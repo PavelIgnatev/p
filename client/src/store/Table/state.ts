@@ -296,7 +296,7 @@ export const processTableDataAsync = createEffect(async (params: {
         };
 
         // let data = filter(level, offpeak, processedTournament, config?.alias, true);
-        let { valid = true, color: rColor = "unknown", ruleString = "unknown (score rule?)" } = data;
+        let { valid = true, color: rColor = "unknown", ruleString = "unknown (score rule?)" } = {};
 
         const {
           score: score2 = 51,
