@@ -87,7 +87,7 @@ export const processTableDataAsync = createEffect(async (params: {
   setProcessedCount(0);
 
   try {
-    // const { filter, scores } = filterContent;
+    const { filter, scores } = filterContent;
     const { currency: lastValue, offpeak, score1, evscore: evScore } = store;
 
     const {
@@ -299,10 +299,10 @@ export const processTableDataAsync = createEffect(async (params: {
         let { valid = true, color: rColor = "unknown", ruleString = "unknown (score rule?)" } = {};
 
         const {
-          score: score2 = 51,
+          score: score2,
           color: sColor = "unknown",
           ruleString: sRuleString = "unknown",
-        } = {};
+        } = scores(level, processedTournament, config?.alias);
 
         if (score !== "-" && score2 !== null && score <= score2) {
           valid = true;
@@ -323,12 +323,13 @@ export const processTableDataAsync = createEffect(async (params: {
 
         results.push(result);
         currentIndex++;
-        setTimeout(processNext, 5);
+        setTimeout(processNext, 0);
       };
 
       processNext();
     });
 
+    setProcessedCount(0);
     const filteredTournaments = await new Promise<tableCellModel[]>((resolve) => {
       const results: tableCellModel[] = [];
       let currentIndex = 0;
@@ -374,14 +375,15 @@ export const processTableDataAsync = createEffect(async (params: {
           results.push(tournament);
         }
 
-        setProcessedCount(processedTournaments.length + currentIndex + 1);
+        setProcessedCount(currentIndex + 1);
         currentIndex++;
-        setTimeout(processNext, 5);
+        setTimeout(processNext, 0);
       };
 
       processNext();
     });
 
+    setProcessedCount(0);
     const timeFilteredTournaments = await new Promise<tableCellModel[]>((resolve) => {
       const results: tableCellModel[] = [];
       let currentIndex = 0;
@@ -397,14 +399,14 @@ export const processTableDataAsync = createEffect(async (params: {
 
         if (!item.valid) {
           currentIndex++;
-          setTimeout(processNext, 5);
+          setTimeout(processNext, 0);
           return;
         }
 
         if (startDate === "-") {
           results.push(item);
           currentIndex++;
-          setTimeout(processNext, 5);
+          setTimeout(processNext, 0);
           return;
         }
 
@@ -419,9 +421,9 @@ export const processTableDataAsync = createEffect(async (params: {
           results.push(item);
         }
 
-        setProcessedCount(processedTournaments.length + filteredTournaments.length + currentIndex + 1);
+        setProcessedCount(currentIndex + 1);
         currentIndex++;
-        setTimeout(processNext, 5);
+        setTimeout(processNext, 0);
       };
 
       processNext();
@@ -460,7 +462,7 @@ export const processTableDataAsync = createEffect(async (params: {
         ) {
           results.push(item);
           currentIndex++;
-          setTimeout(processNext, 5);
+          setTimeout(processNext, 0);
           return;
         }
 
@@ -498,7 +500,7 @@ export const processTableDataAsync = createEffect(async (params: {
             )
           ) {
             currentIndex++;
-            setTimeout(processNext, 5);
+            setTimeout(processNext, 0);
             return;
           }
         }
@@ -526,7 +528,7 @@ export const processTableDataAsync = createEffect(async (params: {
             )
           ) {
             currentIndex++;
-            setTimeout(processNext, 5);
+            setTimeout(processNext, 0);
             return;
           }
         }
@@ -554,7 +556,7 @@ export const processTableDataAsync = createEffect(async (params: {
             )
           ) {
             currentIndex++;
-            setTimeout(processNext, 5);
+            setTimeout(processNext, 0);
             return;
           }
         }
@@ -569,7 +571,7 @@ export const processTableDataAsync = createEffect(async (params: {
 
         setProcessedCount(processedTournaments.length + filteredTournaments.length + timeFilteredTournaments.length + currentIndex + 1);
         currentIndex++;
-        setTimeout(processNext, 5);
+        setTimeout(processNext, 0);
       };
 
       processNext();
