@@ -87,10 +87,246 @@ export const processTableDataAsync = createEffect(async (params: {
   setProcessedCount(0);
 
   try {
-    const { timezone } = config ?? {};
-    const processedTournaments = tournaments.map((tournament, index) => {
-      setProcessedCount(index + 1);
-      return tournament;
+    const { filter, scores } = filterContent;
+    const { currency: lastValue, offpeak, score1, evscore: evScore } = store;
+
+    const {
+      moneyStart,
+      moneyEnd,
+      KO: isKOQ,
+      turbo: isTurboQ,
+      superTurbo: isSTurboQ,
+      freezout: isFreezoutQ,
+      normal: isNormalQ,
+      prizepoolStart,
+      prizepoolEnd,
+      dateStart,
+      dateEnd,
+    } = tournamentsSettings;
+    
+    const { networks, timezone } = config ?? {};
+
+    const validateName = (name: string, stopWords: string[]) => {
+      if (!name) return "";
+      
+      let cleanedName = name.toLowerCase()
+        .replace(/[^\w]/gi, "")
+        .replace(/\d+/g, "");
+
+      stopWords.forEach((word) => {
+        cleanedName = cleanedName.replace(new RegExp(word, 'g'), "");
+      });
+
+      return cleanedName;
+    };
+
+    const getColorByScore = (score: any, evscore: any, colors: any, isLight: boolean) => {
+      if (score === "-" || !evscore) {
+        return isLight ? "rgb(238, 236, 255)" : "rgb(80, 80, 95)";
+      }
+
+      const diff = Number(!score || score === "-" ? 100 : score) - Number(evscore || 100);
+      const numForGreen = colors?.[1] || 0;
+      const numForOrange = colors?.[2] || 0;
+      const numForYellow = colors?.[3] || 0;
+
+      if (-100 <= diff && diff < numForGreen) {
+        return isLight ? "#74ce74" : "#5bb85b";
+      }
+      if (numForGreen <= diff && diff < numForOrange) {
+        return isLight ? "yellow" : "#d4af37";
+      }
+      if (numForOrange <= diff && diff < numForYellow) {
+        return isLight ? "#ffa90c" : "#cc8a0c";
+      }
+      return isLight ? "#fd6767" : "#cc5555";
+    };
+
+    const isLight = currentTheme === "light";
+
+    let sortedTournaments = [...tournaments].sort(
+      (a, b) =>
+        Number(a["@scheduledStartDate"] ?? 0) -
+        Number(b["@scheduledStartDate"] ?? 0)
+    );
+
+    const processedTournaments = await new Promise<tableCellModel[]>((resolve) => {
+      const results: tableCellModel[] = [];
+      let currentIndex = 0;
+
+      const processNext = () => {
+        if (currentIndex >= sortedTournaments.length) {
+          resolve(results);
+          return;
+        }
+
+        const tournament = sortedTournaments[currentIndex];
+        setProcessedCount(currentIndex + 1);
+        
+        const network = getNetwork(tournament["@network"]);
+        const validatedName = validateName(tournament["@name"], stopWords);
+        const stake = Number(tournament["@stake"] ?? 0);
+        const rake = Number(tournament["@rake"] ?? 0);
+        const bid = (stake + rake).toFixed(2);
+        const isStartDate = tournament["@scheduledStartDate"] ?? 0;
+        const isRegDate = tournament["@lateRegEndDate"] ?? 0;
+        const startDate = Number(isStartDate) * 1000 + Number(timezone);
+        const regDate = Number(isRegDate) * 1000 + Number(timezone);
+        const time = getTimeByMS(Number(`${isStartDate}000`));
+        const bounty = isNormal(tournament);
+        const mystery = isMystery(tournament);
+        const turbo = isTurbo(tournament);
+        const superturbo = isSuperTurbo(tournament);
+        const status = getStatus(tournament);
+        const currency = tournament["@currency"];
+        const od = tournament["@flags"]?.includes("OD");
+        const { level: networksLevel = 1, effmu = "A" } =
+          networks?.[mystery ? "mystery" : bounty ? "ko" : "freezout"]?.[
+            network
+          ] ?? {};
+        const level = networksLevel + effmu;
+        const sng = tournament["@gameClass"]?.includes("sng");
+        const isNL = tournament["@structure"] === "NL";
+        const isH = tournament["@game"] === "H";
+        const rebuy = isRebuy(tournament);
+        const isMandatoryСonditions = isNL && isH && !rebuy && !od && !sng;
+
+        const info = findTournamentWithDiapzone(
+          score1?.[network]?.[getWeekday(Number(isStartDate) * 1000)]?.[
+            String(stake.toFixed(2))
+          ]?.[validatedName],
+          `${time}:00`
+        );
+
+        const score = (isMandatoryСonditions && info?.["score"]) || "-";
+        const duration =
+          info?.["duration"] !== "NaN:NaN:NaN" ? info?.["duration"] : "-";
+
+        const evscore =
+          evScore?.[status]?.[Math.round(Number(stake) + Number(rake))] || 0;
+        const sat = isSat(tournament);
+
+        if (network === "WPN" || network === "888" || network === "Chico") {
+          const $ = tournament["@name"].split("$");
+          if ($.length > 1) {
+            if (network === "Chico" && !sat) {
+              if (typeof +$[1][0] === "number") {
+                tournament["@guarantee"] = $[1]
+                  ?.split(" ")[0]
+                  ?.replace(")", "")
+                  ?.replace(",", "")
+                  ?.replace(",", "")
+                  ?.replace(",", "");
+              } else {
+                tournament["@guarantee"] = $[2]
+                  ?.split(" ")?.[0]
+                  ?.replace(",", "")
+                  ?.replace(",", "")
+                  ?.replace(",", "")
+                  ?.replace(".5K", "500")
+                  ?.replace("K", "000")
+                  ?.replace("M", "000000")
+                  ?.replace(".", "")
+                  ?.replace(".", "")
+                  ?.replace(".", "");
+              }
+            } else if ((network === "WPN" && !sat) || network === "888") {
+              tournament["@guarantee"] = $[1]
+                ?.split(" ")[0]
+                ?.replace(")", "")
+                ?.replace(",", "")
+                ?.replace(",", "")
+                ?.replace(",", "");
+            }
+          }
+        }
+
+        const prizepool = Math.round(
+          Math.max(
+            Number(tournament["@guarantee"] ?? 0),
+            Number(tournament["@prizePool"] ?? 0),
+            (Number(tournament["@entrants"] ?? 0) +
+              Number(tournament["@reEntries"] ?? 0)) *
+              Number(tournament["@stake"] ?? 0),
+            (Number(tournament["@totalEntrants"] ?? 0) +
+              Number(tournament["@reEntries"] ?? 0)) *
+              Number(tournament["@stake"] ?? 0)
+          )
+        );
+
+        const pp = prizepool >= 0 ? prizepool : "-";
+
+        const processedTournament = {
+          ...tournament,
+          "@date": isStartDate,
+          "@bid": bid,
+          "@realBid": bid,
+          "@turbo": !!turbo,
+          "@rebuy": !!rebuy,
+          "@od": !!tournament["@flags"]?.includes("OD"),
+          "@bounty": !!bounty || !!mystery,
+          "@sat": !!sat,
+          "@sng": !!tournament["@gameClass"]?.includes("sng"),
+          "@deepstack": !!tournament["@flags"]?.includes("D"),
+          "@superturbo": !!superturbo,
+          "@prizepool": pp,
+          "@network": network,
+          "@score": score,
+          "@evscore": evscore,
+          "@duration": duration ? getTimeBySec(duration) : "-",
+          "@getWeekday": isStartDate
+            ? getWeekday(Number(isStartDate) * 1000)
+            : "-",
+          "@scheduledStartDate": isStartDate ? getDate(startDate) : "-",
+          "@lateRegEndDate": isRegDate ? getDate(regDate) : "-",
+          "@numberLateRegEndDate": regDate,
+          "@timezone": timezone,
+          "@status": status,
+          "@level": level,
+          "@usdBid":
+            currency === "CNY"
+              ? Math.round(Number(bid) / lastValue)
+              : Number(bid),
+          "@usdPrizepool": currency === "CNY" && pp !== "-" ? pp / lastValue : pp,
+          "@msStartForRule": isStartDate
+            ? timeStringToMilliseconds(
+                dateToTimeString(Number(isStartDate) * 1000)
+              )
+            : "-",
+        };
+
+        let data = filter(level, offpeak, processedTournament, config?.alias, true);
+        let { valid, color: rColor = "unknown", ruleString = "unknown (score rule?)" } = data;
+
+        const {
+          score: score2,
+          color: sColor = "unknown",
+          ruleString: sRuleString = "unknown",
+        } = scores(level, processedTournament, config?.alias);
+
+        if (score !== "-" && score2 !== null && score <= score2) {
+          valid = true;
+        }
+
+        const color = getColorByScore(score, processedTournament["@evscore"], colors, isLight);
+
+        const result = {
+          ...processedTournament,
+          color,
+          valid,
+          score2,
+          rColor,
+          sColor,
+          ruleString,
+          sRuleString,
+        };
+
+        results.push(result);
+        currentIndex++;
+        setTimeout(processNext, 5);
+      };
+
+      processNext();
     });
 
     // const filteredTournaments = await filterArrayInChunks(
