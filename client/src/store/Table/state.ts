@@ -338,7 +338,7 @@ export const processTableDataAsync = createEffect(async (params: {
 
         results.push(result);
         currentIndex++;
-        setTimeout(processNext, 1);
+        processNext()
       };
 
       processNext();
