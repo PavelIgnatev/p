@@ -156,453 +156,397 @@ export const processTableDataAsync = createEffect(async (params: {
         Number(b["@scheduledStartDate"] ?? 0)
     );
 
-    const processedTournaments = await new Promise<tableCellModel[]>((resolve) => {
-      const results: tableCellModel[] = [];
-      let currentIndex = 0;
+    const results: tableCellModel[] = [];
+    
+    // Простой синхронный цикл вместо рекурсии
+    for (let currentIndex = 0; currentIndex < sortedTournaments.length; currentIndex++) {
+      setProcessedCount(currentIndex + 1);
+      
+      const tournament = sortedTournaments[currentIndex];
+      
+      const network = getNetwork(tournament["@network"]);
+      const validatedName = validateName(tournament["@name"], stopWords);
+      const stake = Number(tournament["@stake"] ?? 0);
+      const rake = Number(tournament["@rake"] ?? 0);
+      const bid = (stake + rake).toFixed(2);
+      const isStartDate = tournament["@scheduledStartDate"] ?? 0;
+      const isRegDate = tournament["@lateRegEndDate"] ?? 0;
+      const startDate = Number(isStartDate) * 1000 + Number(timezone);
+      const regDate = Number(isRegDate) * 1000 + Number(timezone);
+      const time = getTimeByMS(Number(`${isStartDate}000`));
+      const bounty = isNormal(tournament);
+      const mystery = isMystery(tournament);
+      const turbo = isTurbo(tournament);
+      const superturbo = isSuperTurbo(tournament);
+      const status = getStatus(tournament);
+      const currency = tournament["@currency"];
+      const od = tournament["@flags"]?.includes("OD");
+      const { level: networksLevel = 1, effmu = "A" } =
+        networks?.[mystery ? "mystery" : bounty ? "ko" : "freezout"]?.[
+          network
+        ] ?? {};
+      const level = networksLevel + effmu;
+      const sng = tournament["@gameClass"]?.includes("sng");
+      const isNL = tournament["@structure"] === "NL";
+      const isH = tournament["@game"] === "H";
+      const rebuy = isRebuy(tournament);
+      const isMandatoryСonditions = isNL && isH && !rebuy && !od && !sng;
 
-      const processNext = () => {
-        if (currentIndex >= sortedTournaments.length) {
-          resolve(results);
-          return;
-        }
+      const info = findTournamentWithDiapzone(
+        score1?.[network]?.[getWeekday(Number(isStartDate) * 1000)]?.[
+          String(stake.toFixed(2))
+        ]?.[validatedName],
+        `${time}:00`
+      );
 
-        const tournament = sortedTournaments[currentIndex];
-        setProcessedCount(currentIndex + 1);
-        
-        const network = getNetwork(tournament["@network"]);
-        const validatedName = validateName(tournament["@name"], stopWords);
-        const stake = Number(tournament["@stake"] ?? 0);
-        const rake = Number(tournament["@rake"] ?? 0);
-        const bid = (stake + rake).toFixed(2);
-        const isStartDate = tournament["@scheduledStartDate"] ?? 0;
-        const isRegDate = tournament["@lateRegEndDate"] ?? 0;
-        const startDate = Number(isStartDate) * 1000 + Number(timezone);
-        const regDate = Number(isRegDate) * 1000 + Number(timezone);
-        const time = getTimeByMS(Number(`${isStartDate}000`));
-        const bounty = isNormal(tournament);
-        const mystery = isMystery(tournament);
-        const turbo = isTurbo(tournament);
-        const superturbo = isSuperTurbo(tournament);
-        const status = getStatus(tournament);
-        const currency = tournament["@currency"];
-        const od = tournament["@flags"]?.includes("OD");
-        const { level: networksLevel = 1, effmu = "A" } =
-          networks?.[mystery ? "mystery" : bounty ? "ko" : "freezout"]?.[
-            network
-          ] ?? {};
-        const level = networksLevel + effmu;
-        const sng = tournament["@gameClass"]?.includes("sng");
-        const isNL = tournament["@structure"] === "NL";
-        const isH = tournament["@game"] === "H";
-        const rebuy = isRebuy(tournament);
-        const isMandatoryСonditions = isNL && isH && !rebuy && !od && !sng;
+      const score = (isMandatoryСonditions && info?.["score"]) || "-";
+      const duration =
+        info?.["duration"] !== "NaN:NaN:NaN" ? info?.["duration"] : "-";
 
-        const info = findTournamentWithDiapzone(
-          score1?.[network]?.[getWeekday(Number(isStartDate) * 1000)]?.[
-            String(stake.toFixed(2))
-          ]?.[validatedName],
-          `${time}:00`
-        );
+      const evscore =
+        evScore?.[status]?.[Math.round(Number(stake) + Number(rake))] || 0;
+      const sat = isSat(tournament);
 
-        const score = (isMandatoryСonditions && info?.["score"]) || "-";
-        const duration =
-          info?.["duration"] !== "NaN:NaN:NaN" ? info?.["duration"] : "-";
-
-        const evscore =
-          evScore?.[status]?.[Math.round(Number(stake) + Number(rake))] || 0;
-        const sat = isSat(tournament);
-
-        if (network === "WPN" || network === "888" || network === "Chico") {
-          const $ = tournament["@name"].split("$");
-          if ($.length > 1) {
-            if (network === "Chico" && !sat) {
-              if (typeof +$[1][0] === "number") {
-                tournament["@guarantee"] = $[1]
-                  ?.split(" ")[0]
-                  ?.replace(")", "")
-                  ?.replace(",", "")
-                  ?.replace(",", "")
-                  ?.replace(",", "");
-              } else {
-                tournament["@guarantee"] = $[2]
-                  ?.split(" ")?.[0]
-                  ?.replace(",", "")
-                  ?.replace(",", "")
-                  ?.replace(",", "")
-                  ?.replace(".5K", "500")
-                  ?.replace("K", "000")
-                  ?.replace("M", "000000")
-                  ?.replace(".", "")
-                  ?.replace(".", "")
-                  ?.replace(".", "");
-              }
-            } else if ((network === "WPN" && !sat) || network === "888") {
+      if (network === "WPN" || network === "888" || network === "Chico") {
+        const $ = tournament["@name"].split("$");
+        if ($.length > 1) {
+          if (network === "Chico" && !sat) {
+            if (typeof +$[1][0] === "number") {
               tournament["@guarantee"] = $[1]
                 ?.split(" ")[0]
                 ?.replace(")", "")
                 ?.replace(",", "")
                 ?.replace(",", "")
                 ?.replace(",", "");
+            } else {
+              tournament["@guarantee"] = $[2]
+                ?.split(" ")?.[0]
+                ?.replace(",", "")
+                ?.replace(",", "")
+                ?.replace(",", "")
+                ?.replace(".5K", "500")
+                ?.replace("K", "000")
+                ?.replace("M", "000000")
+                ?.replace(".", "")
+                ?.replace(".", "")
+                ?.replace(".", "");
             }
+          } else if ((network === "WPN" && !sat) || network === "888") {
+            tournament["@guarantee"] = $[1]
+              ?.split(" ")[0]
+              ?.replace(")", "")
+              ?.replace(",", "")
+              ?.replace(",", "")
+              ?.replace(",", "");
           }
         }
+      }
 
-        const prizepool = Math.round(
-          Math.max(
-            Number(tournament["@guarantee"] ?? 0),
-            Number(tournament["@prizePool"] ?? 0),
-            (Number(tournament["@entrants"] ?? 0) +
-              Number(tournament["@reEntries"] ?? 0)) *
-              Number(tournament["@stake"] ?? 0),
-            (Number(tournament["@totalEntrants"] ?? 0) +
-              Number(tournament["@reEntries"] ?? 0)) *
-              Number(tournament["@stake"] ?? 0)
-          )
-        );
+      const prizepool = Math.round(
+        Math.max(
+          Number(tournament["@guarantee"] ?? 0),
+          Number(tournament["@prizePool"] ?? 0),
+          (Number(tournament["@entrants"] ?? 0) +
+            Number(tournament["@reEntries"] ?? 0)) *
+            Number(tournament["@stake"] ?? 0),
+          (Number(tournament["@totalEntrants"] ?? 0) +
+            Number(tournament["@reEntries"] ?? 0)) *
+            Number(tournament["@stake"] ?? 0)
+        )
+      );
 
-        const pp = prizepool >= 0 ? prizepool : "-";
+      const pp = prizepool >= 0 ? prizepool : "-";
 
-        const processedTournament = {
-          ...tournament,
-          "@date": isStartDate,
-          "@bid": bid,
-          "@realBid": bid,
-          "@turbo": !!turbo,
-          "@rebuy": !!rebuy,
-          "@od": !!tournament["@flags"]?.includes("OD"),
-          "@bounty": !!bounty || !!mystery,
-          "@sat": !!sat,
-          "@sng": !!tournament["@gameClass"]?.includes("sng"),
-          "@deepstack": !!tournament["@flags"]?.includes("D"),
-          "@superturbo": !!superturbo,
-          "@prizepool": pp,
-          "@network": network,
-          "@score": score,
-          "@evscore": evscore,
-          "@duration": duration ? getTimeBySec(duration) : "-",
-          "@getWeekday": isStartDate
-            ? getWeekday(Number(isStartDate) * 1000)
-            : "-",
-          "@scheduledStartDate": isStartDate ? getDate(startDate) : "-",
-          "@lateRegEndDate": isRegDate ? getDate(regDate) : "-",
-          "@numberLateRegEndDate": regDate,
-          "@timezone": timezone,
-          "@status": status,
-          "@level": level,
-          "@usdBid":
-            currency === "CNY"
-              ? Math.round(Number(bid) / lastValue)
-              : Number(bid),
-          "@usdPrizepool": currency === "CNY" && pp !== "-" ? pp / lastValue : pp,
-          "@msStartForRule": isStartDate
-            ? timeStringToMilliseconds(
-                dateToTimeString(Number(isStartDate) * 1000)
-              )
-            : "-",
-        };
-
-        let data = (() => {
-          const result = filter(level, offpeak, processedTournament, config?.alias, true);
-          return result;
-        })();
-        let { valid, color: rColor = "unknown", ruleString = "unknown (score rule?)" } = data;
-
-        const {
-          score: score2,
-          color: sColor = "unknown",
-          ruleString: sRuleString = "unknown",
-        } = (() => {
-          const result = scores(level, processedTournament, config?.alias);
-          return result;
-        })();
-
-        if (score !== "-" && score2 !== null && score <= score2) {
-          valid = true;
-        }
-
-        const color = getColorByScore(score, processedTournament["@evscore"], colors, isLight);
-
-        const result = {
-          ...processedTournament,
-          color,
-          valid,
-          score2,
-          rColor,
-          sColor,
-          ruleString,
-          sRuleString,
-        };
-
-        results.push(result);
-        currentIndex++;
-        setTimeout(processNext, 1);
+      const processedTournament = {
+        ...tournament,
+        "@date": isStartDate,
+        "@bid": bid,
+        "@realBid": bid,
+        "@turbo": !!turbo,
+        "@rebuy": !!rebuy,
+        "@od": !!tournament["@flags"]?.includes("OD"),
+        "@bounty": !!bounty || !!mystery,
+        "@sat": !!sat,
+        "@sng": !!tournament["@gameClass"]?.includes("sng"),
+        "@deepstack": !!tournament["@flags"]?.includes("D"),
+        "@superturbo": !!superturbo,
+        "@prizepool": pp,
+        "@network": network,
+        "@score": score,
+        "@evscore": evscore,
+        "@duration": duration ? getTimeBySec(duration) : "-",
+        "@getWeekday": isStartDate
+          ? getWeekday(Number(isStartDate) * 1000)
+          : "-",
+        "@scheduledStartDate": isStartDate ? getDate(startDate) : "-",
+        "@lateRegEndDate": isRegDate ? getDate(regDate) : "-",
+        "@numberLateRegEndDate": regDate,
+        "@timezone": timezone,
+        "@status": status,
+        "@level": level,
+        "@usdBid":
+          currency === "CNY"
+            ? Math.round(Number(bid) / lastValue)
+            : Number(bid),
+        "@usdPrizepool": currency === "CNY" && pp !== "-" ? pp / lastValue : pp,
+        "@msStartForRule": isStartDate
+          ? timeStringToMilliseconds(
+              dateToTimeString(Number(isStartDate) * 1000)
+            )
+          : "-",
       };
 
-      processNext();
-    });
+      let data = (() => {
+        const result = filter(level, offpeak, processedTournament, config?.alias, true);
+        return result;
+      })();
+      let { valid, color: rColor = "unknown", ruleString = "unknown (score rule?)" } = data;
+
+      const {
+        score: score2,
+        color: sColor = "unknown",
+        ruleString: sRuleString = "unknown",
+      } = (() => {
+        const result = scores(level, processedTournament, config?.alias);
+        return result;
+      })();
+
+      if (score !== "-" && score2 !== null && score <= score2) {
+        valid = true;
+      }
+
+      const color = getColorByScore(score, processedTournament["@evscore"], colors, isLight);
+
+      const result = {
+        ...processedTournament,
+        color,
+        valid,
+        score2,
+        rColor,
+        sColor,
+        ruleString,
+        sRuleString,
+      };
+
+      results.push(result);
+    }
+    
+    const processedTournaments = results;
 
     setCurrentStage(2);
     setProcessedCount(0);
     setTotalCount(processedTournaments.length);
-    const filteredTournaments = await new Promise<tableCellModel[]>((resolve) => {
-      const results: tableCellModel[] = [];
-      let currentIndex = 0;
+    const filteredResults: tableCellModel[] = [];
+    
+    // Простой синхронный цикл для стадии 2
+    for (let currentIndex = 0; currentIndex < processedTournaments.length; currentIndex++) {
+      setProcessedCount(currentIndex + 1);
+      
+      const tournament = processedTournaments[currentIndex];
+      const bounty = tournament["@bounty"];
+      const turbo = tournament["@turbo"];
+      const superturbo = tournament["@superturbo"];
+      const prizepool = tournament["@usdPrizepool"];
 
-      const processNext = () => {
-        if (currentIndex >= processedTournaments.length) {
-          resolve(results);
-          return;
-        }
-
-        const tournament = processedTournaments[currentIndex];
-        const bounty = tournament["@bounty"];
-        const turbo = tournament["@turbo"];
-        const superturbo = tournament["@superturbo"];
-        const prizepool = tournament["@usdPrizepool"];
-
-        const isValid = (
-          Number(tournament["@usdBid"]) >= Number(moneyStart) &&
-          Number(tournament["@usdBid"]) <= Number(moneyEnd) &&
-          ((isKOQ !== false && isNormalQ !== false
-            ? bounty && !turbo && !superturbo
+      const isValid = (
+        Number(tournament["@usdBid"]) >= Number(moneyStart) &&
+        Number(tournament["@usdBid"]) <= Number(moneyEnd) &&
+        ((isKOQ !== false && isNormalQ !== false
+          ? bounty && !turbo && !superturbo
+          : false) ||
+          (isKOQ !== false && isTurboQ !== false ? bounty && turbo : false) ||
+          (isKOQ !== false && isSTurboQ !== false
+            ? bounty && superturbo
             : false) ||
-            (isKOQ !== false && isTurboQ !== false ? bounty && turbo : false) ||
-            (isKOQ !== false && isSTurboQ !== false
-              ? bounty && superturbo
-              : false) ||
-            (isFreezoutQ !== false && isNormalQ !== false
-              ? !bounty && !turbo && !superturbo
-              : false) ||
-            (isFreezoutQ !== false && isTurboQ !== false
-              ? !bounty && turbo
-              : false) ||
-            (isFreezoutQ !== false && isSTurboQ !== false
-              ? !bounty && superturbo
-              : false)) &&
-          (prizepool !== "-"
-            ? Number(prizepoolStart) <= Number(prizepool) &&
-              Number(prizepool) <= Number(prizepoolEnd)
-            : true)
-        );
+          (isFreezoutQ !== false && isNormalQ !== false
+            ? !bounty && !turbo && !superturbo
+            : false) ||
+          (isFreezoutQ !== false && isTurboQ !== false
+            ? !bounty && turbo
+            : false) ||
+          (isFreezoutQ !== false && isSTurboQ !== false
+            ? !bounty && superturbo
+            : false)) &&
+        (prizepool !== "-"
+          ? Number(prizepoolStart) <= Number(prizepool) &&
+            Number(prizepool) <= Number(prizepoolEnd)
+          : true)
+      );
 
-        if (isValid) {
-          results.push(tournament);
-        }
-
-        setProcessedCount(currentIndex + 1);
-        currentIndex++;
-        
-        // Стадия 2: обычная синхронная обработка без пауз (filter не вызывается)
-        processNext();
-      };
-
-      processNext();
-    });
+      if (isValid) {
+        filteredResults.push(tournament);
+      }
+    }
+    
+    const filteredTournaments = filteredResults;
 
     setCurrentStage(3);
     setProcessedCount(0);
     setTotalCount(filteredTournaments.length);
-    const timeFilteredTournaments = await new Promise<tableCellModel[]>((resolve) => {
-      const results: tableCellModel[] = [];
-      let currentIndex = 0;
+    const timeFilteredResults: tableCellModel[] = [];
+    
+    // Простой синхронный цикл для стадии 3
+    for (let currentIndex = 0; currentIndex < filteredTournaments.length; currentIndex++) {
+      setProcessedCount(currentIndex + 1);
+      
+      const item = filteredTournaments[currentIndex];
+      const startDate = item?.["@scheduledStartDate"] ?? "-";
 
-      const processNext = () => {
-        if (currentIndex >= filteredTournaments.length) {
-          resolve(results);
-          return;
-        }
+      if (!item.valid) {
+        continue;
+      }
 
-        const item = filteredTournaments[currentIndex];
-        const startDate = item?.["@scheduledStartDate"] ?? "-";
+      if (startDate === "-") {
+        timeFilteredResults.push(item);
+        continue;
+      }
 
-        if (!item.valid) {
-          currentIndex++;
-          
-          // Стадия 3: синхронная обработка без пауз (filter не вызывается)
-          processNext();
-          return;
-        }
+      const res = startDate?.split(", ")?.[1]?.split(":")?.[0];
+      const r = dateEnd === "00" && dateStart <= dateEnd ? "24" : dateEnd;
 
-        if (startDate === "-") {
-          results.push(item);
-          currentIndex++;
-          
-          // Стадия 3: синхронная обработка без пауз (filter не вызывается) 
-          processNext();
-          return;
-        }
+      const isValid = dateStart <= dateEnd
+        ? dateStart <= res && res <= r
+        : !(dateStart > res && res > dateEnd);
 
-        const res = startDate?.split(", ")?.[1]?.split(":")?.[0];
-        const r = dateEnd === "00" && dateStart <= dateEnd ? "24" : dateEnd;
-
-        const isValid = dateStart <= dateEnd
-          ? dateStart <= res && res <= r
-          : !(dateStart > res && res > dateEnd);
-
-        if (isValid) {
-          results.push(item);
-        }
-
-        setProcessedCount(currentIndex + 1);
-        currentIndex++;
-        
-        // Стадия 3: синхронная обработка без пауз (filter не вызывается)
-        processNext();
-      };
-
-      processNext();
-    });
+      if (isValid) {
+        timeFilteredResults.push(item);
+      }
+    }
+    
+    const timeFilteredTournaments = timeFilteredResults;
 
     setCurrentStage(4);
     setProcessedCount(0);
     setTotalCount(timeFilteredTournaments.length);
-    const finalFilteredTournaments = await new Promise<tableCellModel[]>((resolve) => {
-      const results: tableCellModel[] = [];
-      let currentIndex = 0;
+    const finalFilteredResults: tableCellModel[] = [];
+    
+    // Простой синхронный цикл для стадии 4
+    for (let currentIndex = 0; currentIndex < timeFilteredTournaments.length; currentIndex++) {
 
-      const processNext = () => {
-        if (currentIndex >= timeFilteredTournaments.length) {
-          resolve(results);
-          return;
-        }
+      setProcessedCount(results.length + filteredResults.length + timeFilteredResults.length + currentIndex + 1);
+      
+      const item = timeFilteredTournaments[currentIndex];
+      const duration = item?.["@duration"];
+      const { time1, time2, normalTime, turboTime, superTurboTime } = config ?? {};
+      const startDate =
+        item?.["@scheduledStartDate"] !== "-"
+          ? item?.["@scheduledStartDate"]
+          : item?.["@lateRegEndDate"] ?? "-";
+      const regDate =
+        item?.["@lateRegEndDate"] !== "-"
+          ? item?.["@lateRegEndDate"]
+          : item?.["@scheduledStartDate"] ?? "-";
+      const turbo = item?.["@turbo"];
+      const superturbo = item?.["@superturbo"];
+      const normal = !turbo && !superturbo;
 
-        const item = timeFilteredTournaments[currentIndex];
-        const duration = item?.["@duration"];
-        const { time1, time2, normalTime, turboTime, superTurboTime } = config ?? {};
-        const startDate =
-          item?.["@scheduledStartDate"] !== "-"
-            ? item?.["@scheduledStartDate"]
-            : item?.["@lateRegEndDate"] ?? "-";
-        const regDate =
-          item?.["@lateRegEndDate"] !== "-"
-            ? item?.["@lateRegEndDate"]
-            : item?.["@scheduledStartDate"] ?? "-";
-        const turbo = item?.["@turbo"];
-        const superturbo = item?.["@superturbo"];
-        const normal = !turbo && !superturbo;
+      if (
+        startDate === "-" ||
+        (startDate === "-" && (!duration || duration === "-")) ||
+        !time1 ||
+        !time2
+      ) {
+        finalFilteredResults.push(item);
+        continue;
+      }
+
+      const now = startDate?.split(", ")?.[1];
+      const reg = regDate?.split(", ")?.[1];
+      const sDate = item?.["@scheduledStartDate"]?.split(", ")?.[1];
+      const rDate = item?.["@lateRegEndDate"]?.split(", ")?.[1];
+
+      const res = addTime(
+        now,
+        !duration || duration === "-" ? "00:00" : duration
+      );
+      const r = time2 === "00:00" && time1 <= time2 ? "24:00" : time2;
+
+      if (normal && normalTime) {
+        const normalEndTime = addTime(time1, normalTime);
+        const r =
+          normalEndTime === "00:00" && time1 <= normalEndTime
+            ? "24:00"
+            : normalEndTime;
+
+        const isStartDateFull =
+          time1 <= normalEndTime
+            ? time1 <= sDate && sDate <= r
+            : !(time1 > sDate && sDate > normalEndTime);
+        const isRegDateFull =
+          time1 <= normalEndTime
+            ? time1 <= rDate && rDate <= r
+            : !(time1 > rDate && rDate > normalEndTime);
 
         if (
-          startDate === "-" ||
-          (startDate === "-" && (!duration || duration === "-")) ||
-          !time1 ||
-          !time2
+          !(
+            (sDate !== "-" && isStartDateFull) ||
+            (rDate !== "-" && isRegDateFull)
+          )
         ) {
-          results.push(item);
-          currentIndex++;
-          processNext() // Стадии 4-5: синхронная обработка без пауз;
-          return;
+          continue;
         }
+      }
 
-        const now = startDate?.split(", ")?.[1];
-        const reg = regDate?.split(", ")?.[1];
-        const sDate = item?.["@scheduledStartDate"]?.split(", ")?.[1];
-        const rDate = item?.["@lateRegEndDate"]?.split(", ")?.[1];
+      if (turbo && turboTime) {
+        const turboEndTime = addTime(time1, turboTime);
+        const r =
+          turboEndTime === "00:00" && time1 <= turboEndTime
+            ? "24:00"
+            : turboEndTime;
 
-        const res = addTime(
-          now,
-          !duration || duration === "-" ? "00:00" : duration
-        );
-        const r = time2 === "00:00" && time1 <= time2 ? "24:00" : time2;
+        const isStartDateFull =
+          time1 <= turboEndTime
+            ? time1 <= sDate && sDate <= r
+            : !(time1 > sDate && sDate > turboEndTime);
+        const isRegDateFull =
+          time1 <= turboEndTime
+            ? time1 <= rDate && rDate <= r
+            : !(time1 > rDate && rDate > turboEndTime);
 
-        if (normal && normalTime) {
-          const normalEndTime = addTime(time1, normalTime);
-          const r =
-            normalEndTime === "00:00" && time1 <= normalEndTime
-              ? "24:00"
-              : normalEndTime;
-
-          const isStartDateFull =
-            time1 <= normalEndTime
-              ? time1 <= sDate && sDate <= r
-              : !(time1 > sDate && sDate > normalEndTime);
-          const isRegDateFull =
-            time1 <= normalEndTime
-              ? time1 <= rDate && rDate <= r
-              : !(time1 > rDate && rDate > normalEndTime);
-
-          if (
-            !(
-              (sDate !== "-" && isStartDateFull) ||
-              (rDate !== "-" && isRegDateFull)
-            )
-          ) {
-            currentIndex++;
-            processNext() // Стадии 4-5: синхронная обработка без пауз;
-            return;
-          }
+        if (
+          !(
+            (sDate !== "-" && isStartDateFull) ||
+            (rDate !== "-" && isRegDateFull)
+          )
+        ) {
+          continue;
         }
+      }
 
-        if (turbo && turboTime) {
-          const turboEndTime = addTime(time1, turboTime);
-          const r =
-            turboEndTime === "00:00" && time1 <= turboEndTime
-              ? "24:00"
-              : turboEndTime;
+      if (superturbo && superTurboTime) {
+        const stEndTime = addTime(time1, superTurboTime);
+        const r =
+          stEndTime === "00:00" && time1 <= stEndTime ? "24:00" : stEndTime;
 
-          const isStartDateFull =
-            time1 <= turboEndTime
-              ? time1 <= sDate && sDate <= r
-              : !(time1 > sDate && sDate > turboEndTime);
-          const isRegDateFull =
-            time1 <= turboEndTime
-              ? time1 <= rDate && rDate <= r
-              : !(time1 > rDate && rDate > turboEndTime);
+        const isStartDateFull =
+          time1 <= stEndTime
+            ? time1 <= sDate && sDate <= r
+            : !(time1 > sDate && sDate > stEndTime);
+        const isRegDateFull =
+          time1 <= stEndTime
+            ? time1 <= rDate && rDate <= r
+            : !(time1 > rDate && rDate > stEndTime);
 
-          if (
-            !(
-              (sDate !== "-" && isStartDateFull) ||
-              (rDate !== "-" && isRegDateFull)
-            )
-          ) {
-            currentIndex++;
-            processNext() // Стадии 4-5: синхронная обработка без пауз;
-            return;
-          }
+        if (
+          !(
+            (sDate !== "-" && isStartDateFull) ||
+            (rDate !== "-" && isRegDateFull)
+          )
+        ) {
+          continue;
         }
+      }
 
-        if (superturbo && superTurboTime) {
-          const superTurboEndTime = addTime(time1, superTurboTime);
-          const r =
-            superTurboEndTime === "00:00" && time1 <= superTurboEndTime
-              ? "24:00"
-              : superTurboEndTime;
+      const isValid = time1 <= time2
+        ? time1 <= res && res <= r
+        : !(time1 > res && res > time2);
 
-          const isStartDateFull =
-            time1 <= superTurboEndTime
-              ? time1 <= sDate && sDate <= r
-              : !(time1 > sDate && sDate > superTurboEndTime);
-          const isRegDateFull =
-            time1 <= superTurboEndTime
-              ? time1 <= rDate && rDate <= r
-              : !(time1 > rDate && rDate > superTurboEndTime);
-
-          if (
-            !(
-              (sDate !== "-" && isStartDateFull) ||
-              (rDate !== "-" && isRegDateFull)
-            )
-          ) {
-            currentIndex++;
-            processNext() // Стадии 4-5: синхронная обработка без пауз;
-            return;
-          }
-        }
-
-        const isValid = time1 <= time2
-          ? time1 <= res && res <= r && time1 <= reg && reg <= r
-          : !((time1 > res && res > time2) || (time1 > reg && reg > time2));
-
-        if (isValid) {
-          results.push(item);
-        }
-
-        setProcessedCount(processedTournaments.length + filteredTournaments.length + timeFilteredTournaments.length + currentIndex + 1);
-        currentIndex++;
-        processNext() // Стадии 4-5: синхронная обработка без пауз;
-      };
-
-      processNext();
-    });
+      if (isValid) {
+        finalFilteredResults.push(item);
+      }
+    }
+    
+    const finalFilteredTournaments = finalFilteredResults;
 
     const ignoredKeys = ["@id", "@lastUpdateTime"];
 
