@@ -2,7 +2,7 @@ import { timeStringToMilliseconds } from "./../../helpers/timeStringToMillisecon
 import { findTournamentWithDiapzone } from "./../../helpers/findTournamentWithDiapzone";
 import { createStore, combine, createEvent, createEffect } from "effector";
 import { Theme } from "../types";
-import { processArrayInChunks, filterArrayInChunks } from "../../helpers/asyncProcessor";
+
 
 import { getDate } from "./../../helpers/getDate";
 import { getWeekday } from "./../../helpers/getWeekday";
@@ -410,7 +410,7 @@ export const processTableDataAsync = createEffect(async (params: {
         const res = startDate?.split(", ")?.[1]?.split(":")?.[0];
         const r = dateEnd === "00" && dateStart <= dateEnd ? "24" : dateEnd;
 
-        return dateStart <= dateEnd
+        const isValid = dateStart <= dateEnd
           ? dateStart <= res && res <= r
           : !(dateStart > res && res > dateEnd);
 
