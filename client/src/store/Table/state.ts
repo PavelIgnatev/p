@@ -329,210 +329,278 @@ export const processTableDataAsync = createEffect(async (params: {
       processNext();
     });
 
-    // const filteredTournaments = await filterArrayInChunks(
-    //   processedTournaments,
-    //   (tournament) => {
-    //     const bounty = tournament["@bounty"];
-    //     const turbo = tournament["@turbo"];
-    //     const superturbo = tournament["@superturbo"];
-    //     const prizepool = tournament["@usdPrizepool"];
+    const filteredTournaments = await new Promise<tableCellModel[]>((resolve) => {
+      const results: tableCellModel[] = [];
+      let currentIndex = 0;
 
-    //     return (
-    //       Number(tournament["@usdBid"]) >= Number(moneyStart) &&
-    //       Number(tournament["@usdBid"]) <= Number(moneyEnd) &&
-    //       ((isKOQ !== false && isNormalQ !== false
-    //         ? bounty && !turbo && !superturbo
-    //         : false) ||
-    //         (isKOQ !== false && isTurboQ !== false ? bounty && turbo : false) ||
-    //         (isKOQ !== false && isSTurboQ !== false
-    //           ? bounty && superturbo
-    //           : false) ||
-    //         (isFreezoutQ !== false && isNormalQ !== false
-    //           ? !bounty && !turbo && !superturbo
-    //           : false) ||
-    //         (isFreezoutQ !== false && isTurboQ !== false
-    //           ? !bounty && turbo
-    //           : false) ||
-    //         (isFreezoutQ !== false && isSTurboQ !== false
-    //           ? !bounty && superturbo
-    //           : false)) &&
-    //       (prizepool !== "-"
-    //         ? Number(prizepoolStart) <= Number(prizepool) &&
-    //           Number(prizepool) <= Number(prizepoolEnd)
-    //         : true)
-    //     );
-    //   },
-    //   100
-    // );
+      const processNext = () => {
+        if (currentIndex >= processedTournaments.length) {
+          resolve(results);
+          return;
+        }
 
-    // const timeFilteredTournaments = await filterArrayInChunks(
-    //   filteredTournaments,
-    //   (item) => {
-    //     const startDate = item?.["@scheduledStartDate"] ?? "-";
+        const tournament = processedTournaments[currentIndex];
+        const bounty = tournament["@bounty"];
+        const turbo = tournament["@turbo"];
+        const superturbo = tournament["@superturbo"];
+        const prizepool = tournament["@usdPrizepool"];
 
-    //     if (!item.valid) return false;
-    //     if (startDate === "-") return true;
+        const isValid = (
+          Number(tournament["@usdBid"]) >= Number(moneyStart) &&
+          Number(tournament["@usdBid"]) <= Number(moneyEnd) &&
+          ((isKOQ !== false && isNormalQ !== false
+            ? bounty && !turbo && !superturbo
+            : false) ||
+            (isKOQ !== false && isTurboQ !== false ? bounty && turbo : false) ||
+            (isKOQ !== false && isSTurboQ !== false
+              ? bounty && superturbo
+              : false) ||
+            (isFreezoutQ !== false && isNormalQ !== false
+              ? !bounty && !turbo && !superturbo
+              : false) ||
+            (isFreezoutQ !== false && isTurboQ !== false
+              ? !bounty && turbo
+              : false) ||
+            (isFreezoutQ !== false && isSTurboQ !== false
+              ? !bounty && superturbo
+              : false)) &&
+          (prizepool !== "-"
+            ? Number(prizepoolStart) <= Number(prizepool) &&
+              Number(prizepool) <= Number(prizepoolEnd)
+            : true)
+        );
 
-    //     const res = startDate?.split(", ")?.[1]?.split(":")?.[0];
-    //     const r = dateEnd === "00" && dateStart <= dateEnd ? "24" : dateEnd;
+        if (isValid) {
+          results.push(tournament);
+        }
 
-    //     return dateStart <= dateEnd
-    //       ? dateStart <= res && res <= r
-    //       : !(dateStart > res && res > dateEnd);
-    //   },
-    //   100
-    // );
+        currentIndex++;
+        setTimeout(processNext, 5);
+      };
 
-    // const finalFilteredTournaments = await filterArrayInChunks(
-    //   timeFilteredTournaments,
-    //   (item) => {
-    //     const duration = item?.["@duration"];
-    //     const { time1, time2, normalTime, turboTime, superTurboTime } = config ?? {};
-    //     const startDate =
-    //       item?.["@scheduledStartDate"] !== "-"
-    //         ? item?.["@scheduledStartDate"]
-    //         : item?.["@lateRegEndDate"] ?? "-";
-    //     const regDate =
-    //       item?.["@lateRegEndDate"] !== "-"
-    //         ? item?.["@lateRegEndDate"]
-    //         : item?.["@scheduledStartDate"] ?? "-";
-    //     const turbo = item?.["@turbo"];
-    //     const superturbo = item?.["@superturbo"];
-    //     const normal = !turbo && !superturbo;
+      processNext();
+    });
 
-    //     if (
-    //       startDate === "-" ||
-    //       (startDate === "-" && (!duration || duration === "-")) ||
-    //       !time1 ||
-    //       !time2
-    //     )
-    //       return true;
+    const timeFilteredTournaments = await new Promise<tableCellModel[]>((resolve) => {
+      const results: tableCellModel[] = [];
+      let currentIndex = 0;
 
-    //     const now = startDate?.split(", ")?.[1];
-    //     const reg = regDate?.split(", ")?.[1];
-    //     const sDate = item?.["@scheduledStartDate"]?.split(", ")?.[1];
-    //     const rDate = item?.["@lateRegEndDate"]?.split(", ")?.[1];
+      const processNext = () => {
+        if (currentIndex >= filteredTournaments.length) {
+          resolve(results);
+          return;
+        }
 
-    //     const res = addTime(
-    //       now,
-    //       !duration || duration === "-" ? "00:00" : duration
-    //     );
-    //     const r = time2 === "00:00" && time1 <= time2 ? "24:00" : time2;
+        const item = filteredTournaments[currentIndex];
+        const startDate = item?.["@scheduledStartDate"] ?? "-";
 
-    //     if (normal && normalTime) {
-    //       const normalEndTime = addTime(time1, normalTime);
-    //       const r =
-    //         normalEndTime === "00:00" && time1 <= normalEndTime
-    //           ? "24:00"
-    //           : normalEndTime;
+        if (!item.valid) {
+          currentIndex++;
+          setTimeout(processNext, 5);
+          return;
+        }
 
-    //       const isStartDateFull =
-    //         time1 <= normalEndTime
-    //           ? time1 <= sDate && sDate <= r
-    //           : !(time1 > sDate && sDate > normalEndTime);
-    //       const isRegDateFull =
-    //         time1 <= normalEndTime
-    //           ? time1 <= rDate && rDate <= r
-    //           : !(time1 > rDate && rDate > normalEndTime);
+        if (startDate === "-") {
+          results.push(item);
+          currentIndex++;
+          setTimeout(processNext, 5);
+          return;
+        }
 
-    //       if (
-    //         !(
-    //           (sDate !== "-" && isStartDateFull) ||
-    //           (rDate !== "-" && isRegDateFull)
-    //         )
-    //       ) {
-    //         return false;
-    //       }
-    //     }
+        const res = startDate?.split(", ")?.[1]?.split(":")?.[0];
+        const r = dateEnd === "00" && dateStart <= dateEnd ? "24" : dateEnd;
 
-    //     if (turbo && turboTime) {
-    //       const turboEndTime = addTime(time1, turboTime);
-    //       const r =
-    //         turboEndTime === "00:00" && time1 <= turboEndTime
-    //           ? "24:00"
-    //           : turboEndTime;
+        return dateStart <= dateEnd
+          ? dateStart <= res && res <= r
+          : !(dateStart > res && res > dateEnd);
 
-    //       const isStartDateFull =
-    //         time1 <= turboEndTime
-    //           ? time1 <= sDate && sDate <= r
-    //           : !(time1 > sDate && sDate > turboEndTime);
-    //       const isRegDateFull =
-    //         time1 <= turboEndTime
-    //           ? time1 <= rDate && rDate <= r
-    //           : !(time1 > rDate && rDate > turboEndTime);
+        if (isValid) {
+          results.push(item);
+        }
 
-    //       if (
-    //         !(
-    //           (sDate !== "-" && isStartDateFull) ||
-    //           (rDate !== "-" && isRegDateFull)
-    //         )
-    //       ) {
-    //         return false;
-    //       }
-    //     }
+        currentIndex++;
+        setTimeout(processNext, 5);
+      };
 
-    //     if (superturbo && superTurboTime) {
-    //       const superTurboEndTime = addTime(time1, superTurboTime);
-    //       const r =
-    //         superTurboEndTime === "00:00" && time1 <= superTurboEndTime
-    //           ? "24:00"
-    //           : superTurboEndTime;
+      processNext();
+    });
 
-    //       const isStartDateFull =
-    //         time1 <= superTurboEndTime
-    //           ? time1 <= sDate && sDate <= r
-    //           : !(time1 > sDate && sDate > superTurboEndTime);
-    //       const isRegDateFull =
-    //         time1 <= superTurboEndTime
-    //           ? time1 <= rDate && rDate <= r
-    //           : !(time1 > rDate && rDate > superTurboEndTime);
+    const finalFilteredTournaments = await new Promise<tableCellModel[]>((resolve) => {
+      const results: tableCellModel[] = [];
+      let currentIndex = 0;
 
-    //       if (
-    //         !(
-    //           (sDate !== "-" && isStartDateFull) ||
-    //           (rDate !== "-" && isRegDateFull)
-    //         )
-    //       ) {
-    //         return false;
-    //       }
-    //     }
+      const processNext = () => {
+        if (currentIndex >= timeFilteredTournaments.length) {
+          resolve(results);
+          return;
+        }
 
-    //     return time1 <= time2
-    //       ? time1 <= res && res <= r && time1 <= reg && reg <= r
-    //       : !((time1 > res && res > time2) || (time1 > reg && reg > time2));
-    //   },
-    //   100
-    // );
+        const item = timeFilteredTournaments[currentIndex];
+        const duration = item?.["@duration"];
+        const { time1, time2, normalTime, turboTime, superTurboTime } = config ?? {};
+        const startDate =
+          item?.["@scheduledStartDate"] !== "-"
+            ? item?.["@scheduledStartDate"]
+            : item?.["@lateRegEndDate"] ?? "-";
+        const regDate =
+          item?.["@lateRegEndDate"] !== "-"
+            ? item?.["@lateRegEndDate"]
+            : item?.["@scheduledStartDate"] ?? "-";
+        const turbo = item?.["@turbo"];
+        const superturbo = item?.["@superturbo"];
+        const normal = !turbo && !superturbo;
+
+        if (
+          startDate === "-" ||
+          (startDate === "-" && (!duration || duration === "-")) ||
+          !time1 ||
+          !time2
+        ) {
+          results.push(item);
+          currentIndex++;
+          setTimeout(processNext, 5);
+          return;
+        }
+
+        const now = startDate?.split(", ")?.[1];
+        const reg = regDate?.split(", ")?.[1];
+        const sDate = item?.["@scheduledStartDate"]?.split(", ")?.[1];
+        const rDate = item?.["@lateRegEndDate"]?.split(", ")?.[1];
+
+        const res = addTime(
+          now,
+          !duration || duration === "-" ? "00:00" : duration
+        );
+        const r = time2 === "00:00" && time1 <= time2 ? "24:00" : time2;
+
+        if (normal && normalTime) {
+          const normalEndTime = addTime(time1, normalTime);
+          const r =
+            normalEndTime === "00:00" && time1 <= normalEndTime
+              ? "24:00"
+              : normalEndTime;
+
+          const isStartDateFull =
+            time1 <= normalEndTime
+              ? time1 <= sDate && sDate <= r
+              : !(time1 > sDate && sDate > normalEndTime);
+          const isRegDateFull =
+            time1 <= normalEndTime
+              ? time1 <= rDate && rDate <= r
+              : !(time1 > rDate && rDate > normalEndTime);
+
+          if (
+            !(
+              (sDate !== "-" && isStartDateFull) ||
+              (rDate !== "-" && isRegDateFull)
+            )
+          ) {
+            currentIndex++;
+            setTimeout(processNext, 5);
+            return;
+          }
+        }
+
+        if (turbo && turboTime) {
+          const turboEndTime = addTime(time1, turboTime);
+          const r =
+            turboEndTime === "00:00" && time1 <= turboEndTime
+              ? "24:00"
+              : turboEndTime;
+
+          const isStartDateFull =
+            time1 <= turboEndTime
+              ? time1 <= sDate && sDate <= r
+              : !(time1 > sDate && sDate > turboEndTime);
+          const isRegDateFull =
+            time1 <= turboEndTime
+              ? time1 <= rDate && rDate <= r
+              : !(time1 > rDate && rDate > turboEndTime);
+
+          if (
+            !(
+              (sDate !== "-" && isStartDateFull) ||
+              (rDate !== "-" && isRegDateFull)
+            )
+          ) {
+            currentIndex++;
+            setTimeout(processNext, 5);
+            return;
+          }
+        }
+
+        if (superturbo && superTurboTime) {
+          const superTurboEndTime = addTime(time1, superTurboTime);
+          const r =
+            superTurboEndTime === "00:00" && time1 <= superTurboEndTime
+              ? "24:00"
+              : superTurboEndTime;
+
+          const isStartDateFull =
+            time1 <= superTurboEndTime
+              ? time1 <= sDate && sDate <= r
+              : !(time1 > sDate && sDate > superTurboEndTime);
+          const isRegDateFull =
+            time1 <= superTurboEndTime
+              ? time1 <= rDate && rDate <= r
+              : !(time1 > rDate && rDate > superTurboEndTime);
+
+          if (
+            !(
+              (sDate !== "-" && isStartDateFull) ||
+              (rDate !== "-" && isRegDateFull)
+            )
+          ) {
+            currentIndex++;
+            setTimeout(processNext, 5);
+            return;
+          }
+        }
+
+        const isValid = time1 <= time2
+          ? time1 <= res && res <= r && time1 <= reg && reg <= r
+          : !((time1 > res && res > time2) || (time1 > reg && reg > time2));
+
+        if (isValid) {
+          results.push(item);
+        }
+
+        currentIndex++;
+        setTimeout(processNext, 5);
+      };
+
+      processNext();
+    });
 
     const ignoredKeys = ["@id", "@lastUpdateTime"];
 
-    // // Оптимизированная функция определения дубликатов
-    // const areObjectsEqual = (obj1: tableCellModel, obj2: tableCellModel) => {
-    //   // Сравниваем только ключевые поля вместо всего объекта
-    //   const keyFields = ["@name", "@network", "@stake", "@rake", "@scheduledStartDate", "@lateRegEndDate", "@entrants", "@reEntries"];
+    // Оптимизированная функция определения дубликатов
+    const areObjectsEqual = (obj1: tableCellModel, obj2: tableCellModel) => {
+      // Сравниваем только ключевые поля вместо всего объекта
+      const keyFields = ["@name", "@network", "@stake", "@rake", "@scheduledStartDate", "@lateRegEndDate", "@entrants", "@reEntries"];
       
-    //   for (const key of keyFields) {
-    //     // @ts-ignore
-    //     if (obj1[key] !== obj2[key]) {
-    //       return false;
-    //     }
-    //   }
-    //   return true;
-    // };
+      for (const key of keyFields) {
+        // @ts-ignore
+        if (obj1[key] !== obj2[key]) {
+          return false;
+        }
+      }
+      return true;
+    };
 
-    // // Используем Map для O(N) сложности вместо O(N²)
-    // const seen = new Map<string, boolean>();
-    // const uniqueTournaments = finalFilteredTournaments.filter((item) => {
-    //   // Создаем ключ из ключевых полей
-    //   const key = `${item["@name"]}_${item["@network"]}_${item["@stake"]}_${item["@rake"]}_${item["@scheduledStartDate"]}_${item["@lateRegEndDate"]}`;
+    // Используем Map для O(N) сложности вместо O(N²)
+    const seen = new Map<string, boolean>();
+    const uniqueTournaments = finalFilteredTournaments.filter((item) => {
+      // Создаем ключ из ключевых полей
+      const key = `${item["@name"]}_${item["@network"]}_${item["@stake"]}_${item["@rake"]}_${item["@scheduledStartDate"]}_${item["@lateRegEndDate"]}`;
       
-    //   if (seen.has(key)) {
-    //     return false;
-    //   }
+      if (seen.has(key)) {
+        return false;
+      }
       
-    //   seen.set(key, true);
-    //   return true;
-    // });
+      seen.set(key, true);
+      return true;
+    });
 
     setProcessing(false);
     return processedTournaments;
