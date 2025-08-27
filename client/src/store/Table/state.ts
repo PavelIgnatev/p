@@ -340,7 +340,7 @@ export const processTableDataAsync = createEffect(async (params: {
         currentIndex++;
         
         // Даем GC больше времени каждые 1000 турниров для очистки памяти (Chrome Windows fix)
-        const shouldGiveGCTime = currentIndex % 1000 === 0;
+        const shouldGiveGCTime = currentIndex % 333 === 0;
         
         if (shouldGiveGCTime) {
           // Агрессивная помощь GC для очистки памяти
