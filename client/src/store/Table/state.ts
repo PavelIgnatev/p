@@ -339,53 +339,10 @@ export const processTableDataAsync = createEffect(async (params: {
         results.push(result);
         currentIndex++;
         
-        // Даем GC больше времени каждые 1000 турниров для очистки памяти (Chrome Windows fix)
-        const shouldGiveGCTime = currentIndex % 333 === 0;
-        
-        if (shouldGiveGCTime) {
-          // Агрессивная помощь GC для очистки памяти
-          const forceGarbageCollection = () => {
-            // 1. Принудительный GC если доступен
-            // Для включения запустите Chrome с флагом: --js-flags="--expose-gc"
-            if (typeof window !== 'undefined' && (window as any).gc) {
-              (window as any).gc();
-              console.log('Manual GC triggered via window.gc()');
-            }
-            if (typeof global !== 'undefined' && (global as any).gc) {
-              (global as any).gc();
-              console.log('Manual GC triggered via global.gc()');
-            }
-            
-            // 2. Создаем временный массив чтобы заставить GC работать
-            const temp = new Array(10000).fill(0);
-            temp.length = 0;
-            
-            // 3. Очищаем накопленные данные для освобождения памяти
-            try {
-              // Триггерим сборку мусора через создание давления на память
-              const memoryPressure = [];
-              for (let i = 0; i < 1000; i++) {
-                memoryPressure.push(new Array(100).fill(Math.random()));
-              }
-              memoryPressure.length = 0;
-            } catch (e) {
-              // Игнорируем ошибки
-            }
-            
-            // 4. Логируем использование памяти для мониторинга
-            if (typeof performance !== 'undefined' && (performance as any).memory) {
-              const memInfo = (performance as any).memory;
-              console.log(`Memory after ${currentIndex} items: ${Math.round(memInfo.usedJSHeapSize / 1024 / 1024)}MB`);
-            }
-          };
-          
-          forceGarbageCollection();
-          
-          // Увеличиваем время паузы для надежной очистки
-          setTimeout(processNext, 2000);
-        } else {
-          setTimeout(processNext, 1);
-        }
+
+
+          // setTimeout(processNext, 1);
+
       };
 
       processNext();
