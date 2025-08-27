@@ -91,7 +91,7 @@ export const MainPage = () => {
   return (
     <>
       <BaseHeader onSettingsClick={handleSettingsModalOpen} />
-      {/* <BaseTable loading={loading} data={tournament} /> */}
+      <BaseTable loading={loading} data={tournament} />
       <ProcessingIndicator />
       <Drawer
         title={`Settings: ${config?.alias || ""}`}

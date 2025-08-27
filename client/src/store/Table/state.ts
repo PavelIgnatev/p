@@ -316,213 +316,213 @@ export const processTableDataAsync = createEffect(async (params: {
       50
     );
 
-    const filteredTournaments = await filterArrayInChunks(
-      processedTournaments,
-      (tournament) => {
-        const bounty = tournament["@bounty"];
-        const turbo = tournament["@turbo"];
-        const superturbo = tournament["@superturbo"];
-        const prizepool = tournament["@usdPrizepool"];
+    // const filteredTournaments = await filterArrayInChunks(
+    //   processedTournaments,
+    //   (tournament) => {
+    //     const bounty = tournament["@bounty"];
+    //     const turbo = tournament["@turbo"];
+    //     const superturbo = tournament["@superturbo"];
+    //     const prizepool = tournament["@usdPrizepool"];
 
-        return (
-          Number(tournament["@usdBid"]) >= Number(moneyStart) &&
-          Number(tournament["@usdBid"]) <= Number(moneyEnd) &&
-          ((isKOQ !== false && isNormalQ !== false
-            ? bounty && !turbo && !superturbo
-            : false) ||
-            (isKOQ !== false && isTurboQ !== false ? bounty && turbo : false) ||
-            (isKOQ !== false && isSTurboQ !== false
-              ? bounty && superturbo
-              : false) ||
-            (isFreezoutQ !== false && isNormalQ !== false
-              ? !bounty && !turbo && !superturbo
-              : false) ||
-            (isFreezoutQ !== false && isTurboQ !== false
-              ? !bounty && turbo
-              : false) ||
-            (isFreezoutQ !== false && isSTurboQ !== false
-              ? !bounty && superturbo
-              : false)) &&
-          (prizepool !== "-"
-            ? Number(prizepoolStart) <= Number(prizepool) &&
-              Number(prizepool) <= Number(prizepoolEnd)
-            : true)
-        );
-      },
-      100
-    );
+    //     return (
+    //       Number(tournament["@usdBid"]) >= Number(moneyStart) &&
+    //       Number(tournament["@usdBid"]) <= Number(moneyEnd) &&
+    //       ((isKOQ !== false && isNormalQ !== false
+    //         ? bounty && !turbo && !superturbo
+    //         : false) ||
+    //         (isKOQ !== false && isTurboQ !== false ? bounty && turbo : false) ||
+    //         (isKOQ !== false && isSTurboQ !== false
+    //           ? bounty && superturbo
+    //           : false) ||
+    //         (isFreezoutQ !== false && isNormalQ !== false
+    //           ? !bounty && !turbo && !superturbo
+    //           : false) ||
+    //         (isFreezoutQ !== false && isTurboQ !== false
+    //           ? !bounty && turbo
+    //           : false) ||
+    //         (isFreezoutQ !== false && isSTurboQ !== false
+    //           ? !bounty && superturbo
+    //           : false)) &&
+    //       (prizepool !== "-"
+    //         ? Number(prizepoolStart) <= Number(prizepool) &&
+    //           Number(prizepool) <= Number(prizepoolEnd)
+    //         : true)
+    //     );
+    //   },
+    //   100
+    // );
 
-    const timeFilteredTournaments = await filterArrayInChunks(
-      filteredTournaments,
-      (item) => {
-        const startDate = item?.["@scheduledStartDate"] ?? "-";
+    // const timeFilteredTournaments = await filterArrayInChunks(
+    //   filteredTournaments,
+    //   (item) => {
+    //     const startDate = item?.["@scheduledStartDate"] ?? "-";
 
-        if (!item.valid) return false;
-        if (startDate === "-") return true;
+    //     if (!item.valid) return false;
+    //     if (startDate === "-") return true;
 
-        const res = startDate?.split(", ")?.[1]?.split(":")?.[0];
-        const r = dateEnd === "00" && dateStart <= dateEnd ? "24" : dateEnd;
+    //     const res = startDate?.split(", ")?.[1]?.split(":")?.[0];
+    //     const r = dateEnd === "00" && dateStart <= dateEnd ? "24" : dateEnd;
 
-        return dateStart <= dateEnd
-          ? dateStart <= res && res <= r
-          : !(dateStart > res && res > dateEnd);
-      },
-      100
-    );
+    //     return dateStart <= dateEnd
+    //       ? dateStart <= res && res <= r
+    //       : !(dateStart > res && res > dateEnd);
+    //   },
+    //   100
+    // );
 
-    const finalFilteredTournaments = await filterArrayInChunks(
-      timeFilteredTournaments,
-      (item) => {
-        const duration = item?.["@duration"];
-        const { time1, time2, normalTime, turboTime, superTurboTime } = config ?? {};
-        const startDate =
-          item?.["@scheduledStartDate"] !== "-"
-            ? item?.["@scheduledStartDate"]
-            : item?.["@lateRegEndDate"] ?? "-";
-        const regDate =
-          item?.["@lateRegEndDate"] !== "-"
-            ? item?.["@lateRegEndDate"]
-            : item?.["@scheduledStartDate"] ?? "-";
-        const turbo = item?.["@turbo"];
-        const superturbo = item?.["@superturbo"];
-        const normal = !turbo && !superturbo;
+    // const finalFilteredTournaments = await filterArrayInChunks(
+    //   timeFilteredTournaments,
+    //   (item) => {
+    //     const duration = item?.["@duration"];
+    //     const { time1, time2, normalTime, turboTime, superTurboTime } = config ?? {};
+    //     const startDate =
+    //       item?.["@scheduledStartDate"] !== "-"
+    //         ? item?.["@scheduledStartDate"]
+    //         : item?.["@lateRegEndDate"] ?? "-";
+    //     const regDate =
+    //       item?.["@lateRegEndDate"] !== "-"
+    //         ? item?.["@lateRegEndDate"]
+    //         : item?.["@scheduledStartDate"] ?? "-";
+    //     const turbo = item?.["@turbo"];
+    //     const superturbo = item?.["@superturbo"];
+    //     const normal = !turbo && !superturbo;
 
-        if (
-          startDate === "-" ||
-          (startDate === "-" && (!duration || duration === "-")) ||
-          !time1 ||
-          !time2
-        )
-          return true;
+    //     if (
+    //       startDate === "-" ||
+    //       (startDate === "-" && (!duration || duration === "-")) ||
+    //       !time1 ||
+    //       !time2
+    //     )
+    //       return true;
 
-        const now = startDate?.split(", ")?.[1];
-        const reg = regDate?.split(", ")?.[1];
-        const sDate = item?.["@scheduledStartDate"]?.split(", ")?.[1];
-        const rDate = item?.["@lateRegEndDate"]?.split(", ")?.[1];
+    //     const now = startDate?.split(", ")?.[1];
+    //     const reg = regDate?.split(", ")?.[1];
+    //     const sDate = item?.["@scheduledStartDate"]?.split(", ")?.[1];
+    //     const rDate = item?.["@lateRegEndDate"]?.split(", ")?.[1];
 
-        const res = addTime(
-          now,
-          !duration || duration === "-" ? "00:00" : duration
-        );
-        const r = time2 === "00:00" && time1 <= time2 ? "24:00" : time2;
+    //     const res = addTime(
+    //       now,
+    //       !duration || duration === "-" ? "00:00" : duration
+    //     );
+    //     const r = time2 === "00:00" && time1 <= time2 ? "24:00" : time2;
 
-        if (normal && normalTime) {
-          const normalEndTime = addTime(time1, normalTime);
-          const r =
-            normalEndTime === "00:00" && time1 <= normalEndTime
-              ? "24:00"
-              : normalEndTime;
+    //     if (normal && normalTime) {
+    //       const normalEndTime = addTime(time1, normalTime);
+    //       const r =
+    //         normalEndTime === "00:00" && time1 <= normalEndTime
+    //           ? "24:00"
+    //           : normalEndTime;
 
-          const isStartDateFull =
-            time1 <= normalEndTime
-              ? time1 <= sDate && sDate <= r
-              : !(time1 > sDate && sDate > normalEndTime);
-          const isRegDateFull =
-            time1 <= normalEndTime
-              ? time1 <= rDate && rDate <= r
-              : !(time1 > rDate && rDate > normalEndTime);
+    //       const isStartDateFull =
+    //         time1 <= normalEndTime
+    //           ? time1 <= sDate && sDate <= r
+    //           : !(time1 > sDate && sDate > normalEndTime);
+    //       const isRegDateFull =
+    //         time1 <= normalEndTime
+    //           ? time1 <= rDate && rDate <= r
+    //           : !(time1 > rDate && rDate > normalEndTime);
 
-          if (
-            !(
-              (sDate !== "-" && isStartDateFull) ||
-              (rDate !== "-" && isRegDateFull)
-            )
-          ) {
-            return false;
-          }
-        }
+    //       if (
+    //         !(
+    //           (sDate !== "-" && isStartDateFull) ||
+    //           (rDate !== "-" && isRegDateFull)
+    //         )
+    //       ) {
+    //         return false;
+    //       }
+    //     }
 
-        if (turbo && turboTime) {
-          const turboEndTime = addTime(time1, turboTime);
-          const r =
-            turboEndTime === "00:00" && time1 <= turboEndTime
-              ? "24:00"
-              : turboEndTime;
+    //     if (turbo && turboTime) {
+    //       const turboEndTime = addTime(time1, turboTime);
+    //       const r =
+    //         turboEndTime === "00:00" && time1 <= turboEndTime
+    //           ? "24:00"
+    //           : turboEndTime;
 
-          const isStartDateFull =
-            time1 <= turboEndTime
-              ? time1 <= sDate && sDate <= r
-              : !(time1 > sDate && sDate > turboEndTime);
-          const isRegDateFull =
-            time1 <= turboEndTime
-              ? time1 <= rDate && rDate <= r
-              : !(time1 > rDate && rDate > turboEndTime);
+    //       const isStartDateFull =
+    //         time1 <= turboEndTime
+    //           ? time1 <= sDate && sDate <= r
+    //           : !(time1 > sDate && sDate > turboEndTime);
+    //       const isRegDateFull =
+    //         time1 <= turboEndTime
+    //           ? time1 <= rDate && rDate <= r
+    //           : !(time1 > rDate && rDate > turboEndTime);
 
-          if (
-            !(
-              (sDate !== "-" && isStartDateFull) ||
-              (rDate !== "-" && isRegDateFull)
-            )
-          ) {
-            return false;
-          }
-        }
+    //       if (
+    //         !(
+    //           (sDate !== "-" && isStartDateFull) ||
+    //           (rDate !== "-" && isRegDateFull)
+    //         )
+    //       ) {
+    //         return false;
+    //       }
+    //     }
 
-        if (superturbo && superTurboTime) {
-          const superTurboEndTime = addTime(time1, superTurboTime);
-          const r =
-            superTurboEndTime === "00:00" && time1 <= superTurboEndTime
-              ? "24:00"
-              : superTurboEndTime;
+    //     if (superturbo && superTurboTime) {
+    //       const superTurboEndTime = addTime(time1, superTurboTime);
+    //       const r =
+    //         superTurboEndTime === "00:00" && time1 <= superTurboEndTime
+    //           ? "24:00"
+    //           : superTurboEndTime;
 
-          const isStartDateFull =
-            time1 <= superTurboEndTime
-              ? time1 <= sDate && sDate <= r
-              : !(time1 > sDate && sDate > superTurboEndTime);
-          const isRegDateFull =
-            time1 <= superTurboEndTime
-              ? time1 <= rDate && rDate <= r
-              : !(time1 > rDate && rDate > superTurboEndTime);
+    //       const isStartDateFull =
+    //         time1 <= superTurboEndTime
+    //           ? time1 <= sDate && sDate <= r
+    //           : !(time1 > sDate && sDate > superTurboEndTime);
+    //       const isRegDateFull =
+    //         time1 <= superTurboEndTime
+    //           ? time1 <= rDate && rDate <= r
+    //           : !(time1 > rDate && rDate > superTurboEndTime);
 
-          if (
-            !(
-              (sDate !== "-" && isStartDateFull) ||
-              (rDate !== "-" && isRegDateFull)
-            )
-          ) {
-            return false;
-          }
-        }
+    //       if (
+    //         !(
+    //           (sDate !== "-" && isStartDateFull) ||
+    //           (rDate !== "-" && isRegDateFull)
+    //         )
+    //       ) {
+    //         return false;
+    //       }
+    //     }
 
-        return time1 <= time2
-          ? time1 <= res && res <= r && time1 <= reg && reg <= r
-          : !((time1 > res && res > time2) || (time1 > reg && reg > time2));
-      },
-      100
-    );
+    //     return time1 <= time2
+    //       ? time1 <= res && res <= r && time1 <= reg && reg <= r
+    //       : !((time1 > res && res > time2) || (time1 > reg && reg > time2));
+    //   },
+    //   100
+    // );
 
     const ignoredKeys = ["@id", "@lastUpdateTime"];
 
-    // Оптимизированная функция определения дубликатов
-    const areObjectsEqual = (obj1: tableCellModel, obj2: tableCellModel) => {
-      // Сравниваем только ключевые поля вместо всего объекта
-      const keyFields = ["@name", "@network", "@stake", "@rake", "@scheduledStartDate", "@lateRegEndDate", "@entrants", "@reEntries"];
+    // // Оптимизированная функция определения дубликатов
+    // const areObjectsEqual = (obj1: tableCellModel, obj2: tableCellModel) => {
+    //   // Сравниваем только ключевые поля вместо всего объекта
+    //   const keyFields = ["@name", "@network", "@stake", "@rake", "@scheduledStartDate", "@lateRegEndDate", "@entrants", "@reEntries"];
       
-      for (const key of keyFields) {
-        // @ts-ignore
-        if (obj1[key] !== obj2[key]) {
-          return false;
-        }
-      }
-      return true;
-    };
+    //   for (const key of keyFields) {
+    //     // @ts-ignore
+    //     if (obj1[key] !== obj2[key]) {
+    //       return false;
+    //     }
+    //   }
+    //   return true;
+    // };
 
-    // Используем Map для O(N) сложности вместо O(N²)
-    const seen = new Map<string, boolean>();
-    const uniqueTournaments = finalFilteredTournaments.filter((item) => {
-      // Создаем ключ из ключевых полей
-      const key = `${item["@name"]}_${item["@network"]}_${item["@stake"]}_${item["@rake"]}_${item["@scheduledStartDate"]}_${item["@lateRegEndDate"]}`;
+    // // Используем Map для O(N) сложности вместо O(N²)
+    // const seen = new Map<string, boolean>();
+    // const uniqueTournaments = finalFilteredTournaments.filter((item) => {
+    //   // Создаем ключ из ключевых полей
+    //   const key = `${item["@name"]}_${item["@network"]}_${item["@stake"]}_${item["@rake"]}_${item["@scheduledStartDate"]}_${item["@lateRegEndDate"]}`;
       
-      if (seen.has(key)) {
-        return false;
-      }
+    //   if (seen.has(key)) {
+    //     return false;
+    //   }
       
-      seen.set(key, true);
-      return true;
-    });
+    //   seen.set(key, true);
+    //   return true;
+    // });
 
     setProcessing(false);
-    return uniqueTournaments;
+    return processedTournaments;
   } catch (error) {
     setProcessing(false);
     throw error;
