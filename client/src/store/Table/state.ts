@@ -338,7 +338,10 @@ export const processTableDataAsync = createEffect(async (params: {
 
         results.push(result);
         currentIndex++;
-        setTimeout(processNext, 1);
+        
+        // Даем GC больше времени каждые 1000 турниров для очистки памяти (Chrome Windows fix)
+        const shouldGiveGCTime = currentIndex % 1000 === 0;
+        setTimeout(processNext, shouldGiveGCTime ? 1000 : 1);
       };
 
       processNext();
@@ -394,7 +397,9 @@ export const processTableDataAsync = createEffect(async (params: {
 
         setProcessedCount(currentIndex + 1);
         currentIndex++;
-        setTimeout(processNext, 1);
+        
+        // Стадия 2: обычная синхронная обработка без пауз (filter не вызывается)
+        processNext();
       };
 
       processNext();
@@ -418,14 +423,18 @@ export const processTableDataAsync = createEffect(async (params: {
 
         if (!item.valid) {
           currentIndex++;
-          setTimeout(processNext, 1);
+          
+          // Стадия 3: синхронная обработка без пауз (filter не вызывается)
+          processNext();
           return;
         }
 
         if (startDate === "-") {
           results.push(item);
           currentIndex++;
-          setTimeout(processNext, 1);
+          
+          // Стадия 3: синхронная обработка без пауз (filter не вызывается) 
+          processNext();
           return;
         }
 
@@ -442,7 +451,9 @@ export const processTableDataAsync = createEffect(async (params: {
 
         setProcessedCount(currentIndex + 1);
         currentIndex++;
-        setTimeout(processNext, 1);
+        
+        // Стадия 3: синхронная обработка без пауз (filter не вызывается)
+        processNext();
       };
 
       processNext();
@@ -484,7 +495,7 @@ export const processTableDataAsync = createEffect(async (params: {
         ) {
           results.push(item);
           currentIndex++;
-          setTimeout(processNext, 1);
+          processNext() // Стадии 4-5: синхронная обработка без пауз;
           return;
         }
 
@@ -522,7 +533,7 @@ export const processTableDataAsync = createEffect(async (params: {
             )
           ) {
             currentIndex++;
-            setTimeout(processNext, 1);
+            processNext() // Стадии 4-5: синхронная обработка без пауз;
             return;
           }
         }
@@ -550,7 +561,7 @@ export const processTableDataAsync = createEffect(async (params: {
             )
           ) {
             currentIndex++;
-            setTimeout(processNext, 1);
+            processNext() // Стадии 4-5: синхронная обработка без пауз;
             return;
           }
         }
@@ -578,7 +589,7 @@ export const processTableDataAsync = createEffect(async (params: {
             )
           ) {
             currentIndex++;
-            setTimeout(processNext, 1);
+            processNext() // Стадии 4-5: синхронная обработка без пауз;
             return;
           }
         }
@@ -593,7 +604,7 @@ export const processTableDataAsync = createEffect(async (params: {
 
         setProcessedCount(processedTournaments.length + filteredTournaments.length + timeFilteredTournaments.length + currentIndex + 1);
         currentIndex++;
-        setTimeout(processNext, 1);
+        processNext() // Стадии 4-5: синхронная обработка без пауз;
       };
 
       processNext();
