@@ -19,7 +19,7 @@ export const ProcessingIndicator = () => {
   return (
     <div className={classes.container}>
       <div className={classes.content}>
-        <div className={classes.title}>Tournament processing... {currentStage}/{totalStages}</div>
+        <div className={classes.title}>Tournament processing ({currentStage}/{totalStages})...</div>
         <div className={classes.progressBar}>
           <div 
             className={classes.progressFill} 
