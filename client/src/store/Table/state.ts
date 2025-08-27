@@ -302,7 +302,7 @@ export const processTableDataAsync = createEffect(async (params: {
           score: score2 = 51,
           color: sColor = "unknown",
           ruleString: sRuleString = "unknown",
-        } = {}
+        } = {};
 
         if (score !== "-" && score2 !== null && score <= score2) {
           valid = true;
@@ -374,6 +374,7 @@ export const processTableDataAsync = createEffect(async (params: {
           results.push(tournament);
         }
 
+        setProcessedCount(processedTournaments.length + currentIndex + 1);
         currentIndex++;
         setTimeout(processNext, 5);
       };
@@ -418,6 +419,7 @@ export const processTableDataAsync = createEffect(async (params: {
           results.push(item);
         }
 
+        setProcessedCount(processedTournaments.length + filteredTournaments.length + currentIndex + 1);
         currentIndex++;
         setTimeout(processNext, 5);
       };
@@ -565,6 +567,7 @@ export const processTableDataAsync = createEffect(async (params: {
           results.push(item);
         }
 
+        setProcessedCount(processedTournaments.length + filteredTournaments.length + timeFilteredTournaments.length + currentIndex + 1);
         currentIndex++;
         setTimeout(processNext, 5);
       };
