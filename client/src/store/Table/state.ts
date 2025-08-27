@@ -36,14 +36,20 @@ export const $tableState = createStore<tableCellModel[] | null | undefined>(
 export const $isProcessing = createStore<boolean>(false);
 export const $processedCount = createStore<number>(0);
 export const $totalCount = createStore<number>(0);
+export const $currentStage = createStore<number>(1);
+export const $totalStages = createStore<number>(4);
 
 export const setProcessing = createEvent<boolean>();
 export const setProcessedCount = createEvent<number>();
 export const setTotalCount = createEvent<number>();
+export const setCurrentStage = createEvent<number>();
+export const setTotalStages = createEvent<number>();
 
 $isProcessing.on(setProcessing, (_, processing) => processing);
 $processedCount.on(setProcessedCount, (_, count) => count);
 $totalCount.on(setTotalCount, (_, count) => count);
+$currentStage.on(setCurrentStage, (_, stage) => stage);
+$totalStages.on(setTotalStages, (_, stages) => stages);
 
 function addTime(time1: string, time2: string, subtract = false) {
   var [hours1, minutes1] = time1.split(":").map(Number);
@@ -331,6 +337,7 @@ export const processTableDataAsync = createEffect(async (params: {
       processNext();
     });
 
+    setCurrentStage(1);
     setProcessedCount(0);
     setTotalCount(processedTournaments.length);
     const filteredTournaments = await new Promise<tableCellModel[]>((resolve) => {
@@ -386,6 +393,7 @@ export const processTableDataAsync = createEffect(async (params: {
       processNext();
     });
 
+    setCurrentStage(2);
     setProcessedCount(0);
     setTotalCount(filteredTournaments.length);
     const timeFilteredTournaments = await new Promise<tableCellModel[]>((resolve) => {
@@ -433,6 +441,7 @@ export const processTableDataAsync = createEffect(async (params: {
       processNext();
     });
 
+    setCurrentStage(3);
     setProcessedCount(0);
     setTotalCount(timeFilteredTournaments.length);
     const finalFilteredTournaments = await new Promise<tableCellModel[]>((resolve) => {
@@ -601,6 +610,10 @@ export const processTableDataAsync = createEffect(async (params: {
 
     // Используем Map для O(N) сложности вместо O(N²)
     const seen = new Map<string, boolean>();
+    setCurrentStage(4);
+    setProcessedCount(0);
+    setTotalCount(finalFilteredTournaments.length);
+    
     const uniqueTournaments = finalFilteredTournaments.filter((item) => {
       // Создаем ключ из ключевых полей
       const key = `${item["@name"]}_${item["@network"]}_${item["@stake"]}_${item["@rake"]}_${item["@scheduledStartDate"]}_${item["@lateRegEndDate"]}`;
@@ -614,7 +627,7 @@ export const processTableDataAsync = createEffect(async (params: {
     });
 
     setProcessing(false);
-    return processedTournaments;
+    return uniqueTournaments;
   } catch (error) {
     setProcessing(false);
     throw error;
@@ -665,6 +678,7 @@ triggerAsyncProcessing.watch((params) => {
   clearAsyncFilteredState();
   setProcessedCount(0);
   setTotalCount(0);
+  setCurrentStage(1);
 
   processTableDataAsync({
     tournaments,
