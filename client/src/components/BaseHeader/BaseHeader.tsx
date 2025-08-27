@@ -27,6 +27,7 @@ import classes from "./BaseHeader.module.scss";
 import Switch from "react-switch";
 import { Tooltip } from "antd";
 import { useIntervalWorker } from "../../hooks/useIntervalWorker";
+import { goToFirstPage } from "../BaseTable/pagination";
 
 interface BaseHeaderProps {
   onSettingsClick: () => void;
@@ -99,6 +100,7 @@ export const BaseHeader: FC<BaseHeaderProps> = ({ onSettingsClick }) => {
     }
 
     setIsMenuExpanded(false);
+    goToFirstPage();
     fetchUserReposFx();
   };
 

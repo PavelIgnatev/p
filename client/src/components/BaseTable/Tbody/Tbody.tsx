@@ -1,70 +1,107 @@
-import { Tooltip } from "antd";
 import { useStore } from "effector-react";
-import { FC, useMemo } from "react";
+import { FC, useState, useEffect } from "react";
 import CrossIcon from "../../Icon/Cross";
 import { $theme } from "../../../store/Theme";
+import { Loader } from "../../Loader/Loader";
 
 import classes from "../BaseTable.module.scss";
 import { $prevData, setPrevData } from "./prevData";
-import { $sample } from "../../../store/PercentScore3";
 
 type TbodyProps = {
   sortedKey: string | null;
   data: Array<Record<string, any>>;
   isReverse: boolean;
+  currentPage: number;
+  itemsPerPage: number;
 };
 
-export const Tbody: FC<TbodyProps> = ({ data, sortedKey, isReverse }) => {
+export const Tbody: FC<TbodyProps> = ({ data, sortedKey, isReverse, currentPage, itemsPerPage }) => {
   const prevData = useStore($prevData);
-  const percentScore3 = useStore($sample);
   const theme = useStore($theme);
+  const [sortedData, setSortedData] = useState<Array<Record<string, any>>>([]);
+  const [isSorting, setIsSorting] = useState(false);
+  const [removingId, setRemovingId] = useState<string | null>(null);
 
-  const crossClickHandler = (item: any) => {
+  useEffect(() => {
+    if (!data || !sortedKey) {
+      setSortedData(data || []);
+      return;
+    }
+
+    setIsSorting(true);
+
+    const sortData = async () => {
+      await new Promise(resolve => setTimeout(resolve, 300));
+      
+      const sorted = [...data].sort((a, b) => {
+        if (!sortedKey) {
+          return 0;
+        }
+        const dataA = String(a[sortedKey] ?? "").toLowerCase();
+        const dataB = String(b[sortedKey] ?? "").toLowerCase();
+
+        const numberDataA = Number(dataA);
+        const numberDataB = Number(dataB);
+
+        const isNumberDataA = !isNaN(numberDataA);
+        const isNumberDataB = !isNaN(numberDataB);
+
+        if (isNumberDataA && isNumberDataB) {
+          return isReverse
+            ? numberDataB - numberDataA
+            : numberDataA - numberDataB;
+        }
+        if (dataA < dataB) {
+          return isReverse ? 1 : -1;
+        }
+        if (dataA > dataB) {
+          return isReverse ? -1 : 1;
+        }
+        return 0;
+      });
+      
+      const startIndex = (currentPage - 1) * itemsPerPage;
+      const endIndex = startIndex + itemsPerPage;
+      setSortedData(sorted.slice(startIndex, endIndex));
+      setIsSorting(false);
+    };
+
+    sortData();
+  }, [data, sortedKey, isReverse, currentPage, itemsPerPage]);
+
+  const crossClickHandler = async (item: any) => {
+    setRemovingId(item["@id"]);
+    
+    await new Promise(resolve => setTimeout(resolve, 500));
+    
     const prevData = JSON.parse(localStorage.getItem("deletedItems") || "[]");
-
     prevData.push(item["@id"]);
     setPrevData(prevData);
-
     localStorage.setItem("deletedItems", JSON.stringify(prevData));
+    
+    setRemovingId(null);
   };
 
-  const showDebugTooltips = useMemo(() => {
-    const searchParams = new URLSearchParams(window.location.search);
-    return searchParams.get("debug") === "true";
-  }, [window.location.search]);
+  if (isSorting) {
+    return (
+      <tbody className={classes.tbody} style={{height: '150px'}}>
+        <tr>
+          <td colSpan={10} style={{ textAlign: "center", padding: "20px", marginTop: "20px" }}>
+            <Loader />
+          </td>
+        </tr>
+      </tbody>
+    );
+  }
 
   return (
     <tbody className={classes.tbody}>
-      {data
+      {sortedData
         .slice(0)
         .filter((item) => !prevData.includes(item["@id"]))
-        .sort((a, b) => {
-          if (!sortedKey) {
-            return 0;
-          }
-          const dataA = String(a[sortedKey] ?? "").toLowerCase();
-          const dataB = String(b[sortedKey] ?? "").toLowerCase();
-
-          const numberDataA = Number(dataA);
-          const numberDataB = Number(dataB);
-
-          const isNumberDataA = !isNaN(numberDataA);
-          const isNumberDataB = !isNaN(numberDataB);
-
-          if (isNumberDataA && isNumberDataB) {
-            return isReverse
-              ? numberDataB - numberDataA
-              : numberDataA - numberDataB;
-          }
-          if (dataA < dataB) {
-            return isReverse ? 1 : -1;
-          }
-          if (dataA > dataB) {
-            return isReverse ? -1 : 1;
-          }
-          return 0;
-        })
         .map((item, index: number) => {
+          const isRemoving = removingId === item["@id"];
+          
           return (
             <tr className={classes.tr} key={index}>
               <td
@@ -89,19 +126,7 @@ export const Tbody: FC<TbodyProps> = ({ data, sortedKey, isReverse }) => {
                 className={classes.td}
                 style={{ backgroundColor: item.color, marginBottom: "1px" }}
               >
-                {showDebugTooltips ? (
-                  <Tooltip
-                    style={{ whiteSpace: "pre-wrap" }}
-                    title={`Rule: ${item["ruleString"]
-                      ?.replace("&& isGetTournaments", "")}; Color: ${
-                      item["rColor"]
-                    }`}
-                  >
-                    <span>{item["@name"]}</span>
-                  </Tooltip>
-                ) : (
-                  item["@name"]
-                )}
+                {item["@name"]}
               </td>
               <td
                 className={classes.td}
@@ -119,35 +144,13 @@ export const Tbody: FC<TbodyProps> = ({ data, sortedKey, isReverse }) => {
                 className={classes.td}
                 style={{ backgroundColor: item.color, marginBottom: "1px" }}
               >
-                {showDebugTooltips ? (
-                  <Tooltip
-                    title={
-                      (item["@evscore"] ?? 0) +
-                      ` (average rate for the last 30 days of all tournaments with this bet +- ${percentScore3}%)`
-                    }
-                  >
-                    <span>{item["@score"]}</span>
-                  </Tooltip>
-                ) : (
-                  item["@score"]
-                )}
+                {item["@score"]}
               </td>
               <td
                 className={classes.td}
                 style={{ backgroundColor: item.color, marginBottom: "1px" }}
               >
-                {showDebugTooltips ? (
-                  <Tooltip
-                    title={`Rule: ${item["sRuleString"]
-                      ?.replace("&& isGetTournaments", "")}; Color: ${
-                      item["sColor"]
-                    }`}
-                  >
-                    <span>{item["score2"] ?? "-"}</span>
-                  </Tooltip>
-                ) : (
-                  item["score2"] ?? "-"
-                )}
+                {item["score2"] ?? "-"}
               </td>
               <td
                 className={classes.td}
@@ -159,7 +162,15 @@ export const Tbody: FC<TbodyProps> = ({ data, sortedKey, isReverse }) => {
                 className={classes.td}
                 style={{ backgroundColor: item.color, marginBottom: "1px" }}
               >
-                <CrossIcon onClick={() => crossClickHandler(item)} theme={theme} />
+                {isRemoving ? (
+                  <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
+                    <div style={{ width: "16px", height: "16px" }}>
+                      <Loader  style={{ position: 'absolute', left: '50%', top: '50%', marginTop: '-10px', transform: 'scale(0.5) translate(-90%, -65%)'}} />
+                    </div>
+                  </div>  
+                ) : (
+                  <CrossIcon onClick={() => crossClickHandler(item)} theme={theme} />
+                )}
               </td>
             </tr>
           );

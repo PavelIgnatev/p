@@ -637,3 +637,220 @@
     margin-bottom: 12px !important;
   }
 }
+
+/* Стили для пагинации */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-top: 20px;
+  padding: 16px;
+  background: var(--background-main);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+  [data-theme="dark"] & {
+    background: #1a1a1a;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  }
+}
+
+.paginationButton {
+  padding: 8px 16px;
+  border: 1px solid #d1d5db;
+  background: #ffffff;
+  color: #374151;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  min-width: 80px;
+
+  &:hover:not(:disabled) {
+    background: #f3f4f6;
+    border-color: #9ca3af;
+    transform: translateY(-1px);
+  }
+
+  &:active:not(:disabled) {
+    transform: translateY(0);
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    background: #f9fafb;
+    color: #9ca3af;
+  }
+
+  [data-theme="dark"] & {
+    background: #2d2d2d;
+    border-color: #4b5563;
+    color: #e5e7eb;
+
+    &:hover:not(:disabled) {
+      background: #374151;
+      border-color: #6b7280;
+    }
+
+    &:disabled {
+      background: #1f1f2e;
+      color: #6b7280;
+    }
+  }
+}
+
+.pageButton {
+  padding: 8px 12px;
+  border: 1px solid #d1d5db;
+  background: #ffffff;
+  color: #374151;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  min-width: 40px;
+  text-align: center;
+
+  &:hover {
+    background: #f3f4f6;
+    border-color: #9ca3af;
+    transform: translateY(-1px);
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+
+  &.activePage {
+    background: #3b82f6;
+    border-color: #3b82f6;
+    color: #ffffff;
+    font-weight: 600;
+
+    &:hover {
+      background: #2563eb;
+      border-color: #2563eb;
+    }
+  }
+
+  [data-theme="dark"] & {
+    background: #2d2d2d;
+    border-color: #4b5563;
+    color: #e5e7eb;
+
+    &:hover {
+      background: #374151;
+      border-color: #6b7280;
+    }
+
+    &.activePage {
+      background: #3b82f6;
+      border-color: #3b82f6;
+      color: #ffffff;
+
+      &:hover {
+        background: #2563eb;
+        border-color: #2563eb;
+      }
+    }
+  }
+}
+
+.pageDots {
+  padding: 8px 12px;
+  color: #6b7280;
+  font-size: 14px;
+  font-weight: 500;
+  min-width: 40px;
+  text-align: center;
+
+  [data-theme="dark"] & {
+    color: #9ca3af;
+  }
+}
+
+.pageInfo {
+  font-size: 14px;
+  font-weight: 500;
+  color: #374151;
+  padding: 8px 16px;
+  background: #f9fafb;
+  border-radius: 6px;
+  border: 1px solid #e5e7eb;
+  min-width: 120px;
+  text-align: center;
+
+  [data-theme="dark"] & {
+    background: #374151;
+    border-color: #4b5563;
+    color: #e5e7eb;
+  }
+}
+
+/* Адаптация пагинации для мобильных */
+@media (max-width: 768px) {
+  .pagination {
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 12px;
+  }
+
+  .paginationButton {
+    padding: 6px 12px;
+    font-size: 12px;
+    min-width: 60px;
+  }
+
+  .pageButton {
+    padding: 6px 10px;
+    font-size: 12px;
+    min-width: 35px;
+  }
+
+  .pageDots {
+    padding: 6px 10px;
+    font-size: 12px;
+    min-width: 35px;
+  }
+
+  .pageInfo {
+    font-size: 12px;
+    padding: 6px 12px;
+    min-width: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  .pagination {
+    gap: 6px;
+    padding: 10px;
+  }
+
+  .paginationButton {
+    padding: 5px 10px;
+    font-size: 11px;
+    min-width: 50px;
+  }
+
+  .pageButton {
+    padding: 5px 8px;
+    font-size: 11px;
+    min-width: 30px;
+  }
+
+  .pageDots {
+    padding: 5px 8px;
+    font-size: 11px;
+    min-width: 30px;
+  }
+
+  .pageInfo {
+    font-size: 11px;
+    padding: 5px 10px;
+    min-width: 90px;
+  }
+}
