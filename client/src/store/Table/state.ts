@@ -87,7 +87,7 @@ export const processTableDataAsync = createEffect(async (params: {
   setProcessedCount(0);
 
   try {
-    const { filter, scores } = filterContent;
+    // const { filter, scores } = filterContent;
     const { currency: lastValue, offpeak, score1, evscore: evScore } = store;
 
     const {
@@ -295,14 +295,14 @@ export const processTableDataAsync = createEffect(async (params: {
             : "-",
         };
 
-        let data = filter(level, offpeak, processedTournament, config?.alias, true);
-        let { valid, color: rColor = "unknown", ruleString = "unknown (score rule?)" } = data;
+        // let data = filter(level, offpeak, processedTournament, config?.alias, true);
+        let { valid = true, color: rColor = "unknown", ruleString = "unknown (score rule?)" } = data;
 
         const {
-          score: score2,
+          score: score2 = 51,
           color: sColor = "unknown",
           ruleString: sRuleString = "unknown",
-        } = scores(level, processedTournament, config?.alias);
+        } = {}
 
         if (score !== "-" && score2 !== null && score <= score2) {
           valid = true;
