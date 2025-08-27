@@ -37,7 +37,7 @@ export const $isProcessing = createStore<boolean>(false);
 export const $processedCount = createStore<number>(0);
 export const $totalCount = createStore<number>(0);
 export const $currentStage = createStore<number>(1);
-export const $totalStages = createStore<number>(4);
+export const $totalStages = createStore<number>(5);
 
 export const setProcessing = createEvent<boolean>();
 export const setProcessedCount = createEvent<number>();
@@ -337,7 +337,7 @@ export const processTableDataAsync = createEffect(async (params: {
       processNext();
     });
 
-    setCurrentStage(1);
+    setCurrentStage(2);
     setProcessedCount(0);
     setTotalCount(processedTournaments.length);
     const filteredTournaments = await new Promise<tableCellModel[]>((resolve) => {
@@ -393,7 +393,7 @@ export const processTableDataAsync = createEffect(async (params: {
       processNext();
     });
 
-    setCurrentStage(2);
+    setCurrentStage(3);
     setProcessedCount(0);
     setTotalCount(filteredTournaments.length);
     const timeFilteredTournaments = await new Promise<tableCellModel[]>((resolve) => {
@@ -441,7 +441,7 @@ export const processTableDataAsync = createEffect(async (params: {
       processNext();
     });
 
-    setCurrentStage(3);
+    setCurrentStage(4);
     setProcessedCount(0);
     setTotalCount(timeFilteredTournaments.length);
     const finalFilteredTournaments = await new Promise<tableCellModel[]>((resolve) => {
@@ -610,7 +610,7 @@ export const processTableDataAsync = createEffect(async (params: {
 
     // Используем Map для O(N) сложности вместо O(N²)
     const seen = new Map<string, boolean>();
-    setCurrentStage(4);
+    setCurrentStage(5);
     setProcessedCount(0);
     setTotalCount(finalFilteredTournaments.length);
     

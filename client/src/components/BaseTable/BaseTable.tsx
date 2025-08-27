@@ -20,7 +20,7 @@ export const BaseTable: FC<BaseTableProps> = ({ data, loading }) => {
   const [sortedKey, setSortedKey] = useState<string | null>("@date");
   const [isReverse, setIsReverse] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
-  const itemsPerPage = 10;
+  const itemsPerPage = 200;
   
   const { networks: fakeNetworks = { ko: {}, freezout: {}, mystery: {} } } =
     useStore($config) ?? {};
