@@ -373,8 +373,9 @@ export const processTableDataAsync = createEffect(async (params: {
             }
             
             // 4. Логируем использование памяти для мониторинга
-            if (typeof performance !== 'undefined' && performance.memory) {
-              console.log(`Memory after ${currentIndex} items: ${Math.round(performance.memory.usedJSHeapSize / 1024 / 1024)}MB`);
+            if (typeof performance !== 'undefined' && (performance as any).memory) {
+              const memInfo = (performance as any).memory;
+              console.log(`Memory after ${currentIndex} items: ${Math.round(memInfo.usedJSHeapSize / 1024 / 1024)}MB`);
             }
           };
           
