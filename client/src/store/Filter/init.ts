@@ -53,7 +53,9 @@ const parseModuleSafely = async (code: string, exportName: string) => {
         console.log(filter)
 
         return filter;
-      } catch {}
+      } catch (e) {
+        console.log(e)
+      }
     } finally {
       setTimeout(() => {
         if (url) URL.revokeObjectURL(url);
