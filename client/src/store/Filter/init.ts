@@ -71,6 +71,18 @@ const parseModuleSafely = async (code: string, exportName: string) => {
   return null;
 };
 
+const makeAsyncThrottled =
+  <T extends any[], R>(fn: (...a: T) => R, every = 50, delay = 0) =>
+  async (...a: T): Promise<R> => {
+    if (
+      (((makeAsyncThrottled as any).i =
+        ((makeAsyncThrottled as any).i | 0) + 1),
+      (makeAsyncThrottled as any).i % every === 0)
+    )
+      await new Promise((r) => setTimeout(r, delay));
+    return fn(...a);
+  };
+
 export const fetchFilterContent = createEffect(async () => {
   const { filter: frontFilter, scores: frontScores }: any = await api.get(
     "api/filter"
@@ -87,8 +99,12 @@ export const fetchFilterContent = createEffect(async () => {
       return { filter: [], scores: [] };
     }
 
-    return { filter: filter.filter, scores: scores.scores };
+    return {
+      filter: makeAsyncThrottled(filter.filter, 50, 0),
+      scores: scores.scores,
+    };
   } catch (error) {
+    console.log(error)
     alert("Error loading search functionality. Please try another browser.");
     return { filter: [], scores: [] };
   }

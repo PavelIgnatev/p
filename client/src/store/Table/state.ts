@@ -320,7 +320,7 @@ export const processTableDataAsync = createEffect(
             : "-",
         };
 
-        const data = filter(
+        const data = await filter(
           level,
           offpeak,
           processedTournament,
