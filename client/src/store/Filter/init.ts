@@ -6,109 +6,32 @@ import api from "../../api";
 
 const parseModuleSafely = async (code: string, exportName: string) => {
   if (exportName === "filter") {
-    let url: string | null = null;
     try {
-      throw new Error("test");
-      const esm = `const module = { exports: {} };
-          const exports = module.exports;
-          const process = { env: { NODE_ENV: 'production' } };
-          const global = globalThis;
-          ${code}
-          const __exp = module.exports;
-          const __fn  = (typeof __exp === 'function') ? __exp : (__exp && __exp.filter) || __fn;
-          export default __exp;`;
-      url = URL.createObjectURL(
-        new Blob([esm], {
-          type: "application/javascript;charset=utf-8",
-        })
+      const patched = code.replace(
+        /module\.exports\s*=\s*([^;]+);?/,
+        "return ($1);"
       );
 
-      if (!url) {
-        throw new Error("url not defined");
-      }
+      const filter = new Function(patched)();
 
-      const mod = await (0, eval)(`import(${JSON.stringify(url)})`);
-      const fn = mod.default;
-
-      if (!fn) {
-        throw new Error("fn not defined");
-      }
-
-      return { filter: fn };
+      return filter;
     } catch (e) {
-      console.log("Fallback Filter try:", e);
-
-      try {
-        const patched = code.replace(
-          /module\.exports\s*=\s*([^;]+);?/,
-          "return ($1);"
-        );
-
-        const filter = new Function(patched)();
-
-        return filter;
-      } catch (e) {
-        console.log(e);
-      }
-    } finally {
-      setTimeout(() => {
-        if (url) URL.revokeObjectURL(url);
-      }, 0);
+      console.log(e);
     }
   } else if (exportName === "scores") {
-    let url: string | null = null;
     try {
-      throw new Error("test");
-
-      const esm = `const module = { exports: {} };
-          const exports = module.exports;
-          const process = { env: { NODE_ENV: 'production' } };
-          const global = globalThis;
-          ${code}
-          const __exp = module.exports;
-          const __fn  = (typeof __exp === 'function') ? __exp : (__exp && __exp.scores) || __fn;
-          export default __exp;`;
-
-      url = URL.createObjectURL(
-        new Blob([esm], {
-          type: "application/javascript;charset=utf-8",
-        })
+      const patched = code.replace(
+        /module\.exports\s*=\s*([^;]+);?/,
+        "return ($1);"
       );
 
-      if (!url) {
-        throw new Error("url not defined");
-      }
+      const scores = new Function(patched)();
 
-      const mod = await (0, eval)(`import(${JSON.stringify(url)})`);
-      const fn = mod.default;
-
-      if (!fn) {
-        throw new Error("fn not defined");
-      }
-
-      return { scores: fn };
+      return scores;
     } catch (e) {
-      console.log("Fallback Scores try:", e);
-
-      try {
-        const patched = code.replace(
-          /module\.exports\s*=\s*([^;]+);?/,
-          "return ($1);"
-        );
-
-        const scores = new Function(patched)();
-
-        return scores;
-      } catch (e) {
-        console.log(e);
-      }
-    } finally {
-      setTimeout(() => {
-        if (url) URL.revokeObjectURL(url);
-      }, 0);
+      console.log(e);
     }
   }
-
   return null;
 };
 
@@ -141,8 +64,8 @@ export const fetchFilterContent = createEffect(async () => {
       return { filter: [], scores: [] };
     }
 
-    const factFilter = makeAsyncThrottled(filter.filter, 500, 100)
-    const factScores = makeAsyncThrottled(scores.scores, 500, 100)
+    const factFilter = makeAsyncThrottled(filter.filter, 500, 100);
+    const factScores = makeAsyncThrottled(scores.scores, 500, 100);
 
     console.log(factFilter, factScores, "after");
     return {
