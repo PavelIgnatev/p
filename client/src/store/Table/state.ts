@@ -338,19 +338,19 @@ export const processTableDataAsync = createEffect(
             : "-",
         };
 
-        const data = filter(
-          level,
-          offpeak,
-          processedTournament,
-          config?.alias,
-          true
-        );
+        // const data = filter(
+        //   level,
+        //   offpeak,
+        //   processedTournament,
+        //   config?.alias,
+        //   true
+        // );
 
         let {
-          valid,
+          valid = true,
           color: rColor = "unknown",
           ruleString = "unknown (score rule?)",
-        } = data;
+        } = {}
 
         const { score: score2, color: sColor = "unknown" } = scores(
           level,
