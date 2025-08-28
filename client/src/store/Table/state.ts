@@ -338,27 +338,25 @@ export const processTableDataAsync = createEffect(
             : "-",
         };
 
-        // const data = filter(
-        //   level,
-        //   offpeak,
-        //   processedTournament,
-        //   config?.alias,
-        //   true
-        // );
+        const data = filter(
+          level,
+          offpeak,
+          processedTournament,
+          config?.alias,
+          true
+        );
 
         let {
           valid = true,
           color: rColor = "unknown",
           ruleString = "unknown (score rule?)",
-        } = {}
+        } = data;
 
-        // const { score: score2, color: sColor = "unknown" } = scores(
-        //   level,
-        //   processedTournament,
-        //   config?.alias
-        // );
-
-        const { score: score2 = 62, color: sColor = "unknown" } =          {}
+        const { score: score2, color: sColor = "unknown" } = scores(
+          level,
+          processedTournament,
+          config?.alias
+        );
 
         if (score !== "-" && score2 !== null && score <= score2) {
           valid = true;
