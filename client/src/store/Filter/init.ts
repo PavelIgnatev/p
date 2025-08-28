@@ -8,6 +8,7 @@ const parseModuleSafely = async (code: string, exportName: string) => {
   if (exportName === "filter") {
     let url: string | null = null;
     try {
+
       const esm = `const module = { exports: {} };
           const exports = module.exports;
           const process = { env: { NODE_ENV: 'production' } };
@@ -130,7 +131,7 @@ export const fetchFilterContent = createEffect(async () => {
     const filter = await parseModuleSafely(frontFilter, "filter");
     const scores = await parseModuleSafely(frontScores, "scores");
 
-    console.log(filter, scores, "allahallah");
+    console.log(filter, scores, "before");
     if (!filter || !scores) {
       alert(
         "Search functionality is not working in your browser. Please try another browser (Opera, Firefox, Edge)."
@@ -138,9 +139,13 @@ export const fetchFilterContent = createEffect(async () => {
       return { filter: [], scores: [] };
     }
 
+    const factFilter = makeAsyncThrottled(filter.filter, 500, 100)
+    const factScores = makeAsyncThrottled(scores.scores, 500, 100)
+
+    console.log(factFilter, factScores, "after");
     return {
-      filter: makeAsyncThrottled(filter.filter, 500, 100),
-      scores: makeAsyncThrottled(scores.scores, 500, 100),
+      filter: factFilter,
+      scores: factScores,
     };
   } catch (error) {
     console.log(error);
