@@ -352,11 +352,13 @@ export const processTableDataAsync = createEffect(
           ruleString = "unknown (score rule?)",
         } = {}
 
-        const { score: score2, color: sColor = "unknown" } = scores(
-          level,
-          processedTournament,
-          config?.alias
-        );
+        // const { score: score2, color: sColor = "unknown" } = scores(
+        //   level,
+        //   processedTournament,
+        //   config?.alias
+        // );
+
+        const { score: score2 = 62, color: sColor = "unknown" } =          {}
 
         if (score !== "-" && score2 !== null && score <= score2) {
           valid = true;
