@@ -331,7 +331,6 @@ export const processTableDataAsync = createEffect(
         let {
           valid,
           color: rColor = "unknown",
-          ruleString = "unknown (score rule?)",
         } = data;
 
         const { score: score2, color: sColor = "unknown" } = await scores(

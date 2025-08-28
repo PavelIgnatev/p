@@ -36,9 +36,21 @@ module.exports = {
     } else {
       fastify.register(fastifyStatic, {
         root: path.join(__dirname, "../../client/build"),
+        cacheControl: false,
+        etag: false,
+        lastModified: false,
+        setHeaders: (res /* ServerResponse */, filePath) => {
+          // Жёстко запрещаем кэш для любых статических файлов
+          res.setHeader("Cache-Control", "no-store, no-cache, must-revalidate");
+          res.setHeader("Pragma", "no-cache");
+          res.setHeader("Expires", "0");
+        },
       });
 
       const sendIndex = async (req, reply) => {
+        reply.header("Cache-Control", "no-store, no-cache, must-revalidate");
+        reply.header("Pragma", "no-cache");
+        reply.header("Expires", "0");
         fastifySendFile(reply, "text/html", path.join(__dirname, "../../client/build/index.html"));
       };
       fastify.get("/admin", sendIndex).get("/info", sendIndex);
