@@ -305,7 +305,6 @@ export const processTableDataAsync = createEffect(async (params: {
       const {
         score: score2,
         color: sColor = "unknown",
-        ruleString: sRuleString = "unknown",
       } = (() => {
         const result = scores(level, processedTournament, config?.alias);
         return result;
@@ -324,8 +323,6 @@ export const processTableDataAsync = createEffect(async (params: {
         score2,
         rColor,
         sColor,
-        ruleString,
-        sRuleString,
       };
 
       results.push(result);
