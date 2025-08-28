@@ -8,6 +8,7 @@ const parseModuleSafely = async (code: string, exportName: string) => {
   if (exportName === "filter") {
     let url: string | null = null;
     try {
+      throw new Error("test");
       const esm = `const module = { exports: {} };
           const exports = module.exports;
           const process = { env: { NODE_ENV: 'production' } };
