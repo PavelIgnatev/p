@@ -166,60 +166,17 @@ export const processTableDataAsync = createEffect(
 
       const results: tableCellModel[] = [];
 
-      const CHUNK_SIZE = 500; // пауза каждые 200 итераций
-      const PAUSE_MS = 5000; // 1 сек
-      const PROGRESS_STEP = 50; // обновлять прогресс реже
 
-      // CPU счетчики
-      let _cpuMsWin = 0,
-        _cpuMsTotal = 0;
-      let _winStart = performance.now();
-
-      async function logMemCpu(prefix: string) {
-        // Chrome ≥ 118: честный разбор по типам
-        let memLine = "";
-        if ("measureUserAgentSpecificMemory" in performance) {
-          const r: any = await (
-            performance as any
-          ).measureUserAgentSpecificMemory();
-          const mb = (r.bytes / 1048576).toFixed(1);
-          const parts = r.breakdown
-            .map(
-              (b: any) =>
-                `${b.types.join("+")}:${(b.bytes / 1048576).toFixed(1)}MB`
-            )
-            .join(" ");
-          memLine = `heap≈${mb}MB ${parts}`;
-        } else if ("memory" in performance) {
-          // @ts-ignore
-          const mb = (
-            (performance as any).memory.usedJSHeapSize / 1048576
-          ).toFixed(1);
-          memLine = `heap≈${mb}MB`;
-        }
-
-        const wall = performance.now() - _winStart;
-        const cpuPct = wall > 0 ? Math.min(100, (_cpuMsWin / wall) * 100) : 0;
-        console.log(
-          `${prefix} | CPU≈${_cpuMsWin.toFixed(1)}ms (${cpuPct.toFixed(
-            0
-          )}%) | ${memLine}`
-        );
-
-        _cpuMsWin = 0;
-        _winStart = performance.now();
-      }
-
-      const sleep = (ms: number) => new Promise((res) => setTimeout(res, ms));
+      const PROGRESS_STEP = 50;
       let _lastProgress = 0;
       const total = sortedTournaments.length;
 
-      // Простой синхронный цикл вместо рекурсии
       for (
         let currentIndex = 0;
         currentIndex < sortedTournaments.length;
         currentIndex++
       ) {
+        await new Promise(r => setTimeout(r, 1));
         if (
           currentIndex - _lastProgress >= PROGRESS_STEP ||
           currentIndex + 1 === total
@@ -227,24 +184,7 @@ export const processTableDataAsync = createEffect(
           _lastProgress = currentIndex;
           setProcessedCount(currentIndex + 1);
         }
-        if ((currentIndex + 1) % CHUNK_SIZE === 0) {
-          if (typeof requestIdleCallback === "function") {
-            await new Promise<void>((r) =>
-              (requestIdleCallback as any)(() => r(), { timeout: PAUSE_MS })
-            );
-          } else {
-            await new Promise((r) => setTimeout(r, PAUSE_MS));
-          }
-
-          await logMemCpu(`[stage1 ${currentIndex + 1}/${total}]`);
-
-          if (performance && (performance as any).memory) {
-            const m = (performance as any).memory.usedJSHeapSize / 1048576;
-            console.log(
-              `[stage1] heap ~${m.toFixed(1)} MB @ ${currentIndex + 1}/${total}`
-            );
-          }
-        }
+       
         const tournament = sortedTournaments[currentIndex];
 
         const network = getNetwork(tournament["@network"]);
@@ -389,7 +329,7 @@ export const processTableDataAsync = createEffect(
         );
 
         let {
-          valid = true,
+          valid,
           color: rColor = "unknown",
           ruleString = "unknown (score rule?)",
         } = data;
