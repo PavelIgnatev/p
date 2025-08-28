@@ -166,8 +166,8 @@ export const processTableDataAsync = createEffect(
 
       const results: tableCellModel[] = [];
 
-      const CHUNK_SIZE = 200; // пауза каждые 200 итераций
-      const PAUSE_MS = 1000; // 1 сек
+      const CHUNK_SIZE = 500; // пауза каждые 200 итераций
+      const PAUSE_MS = 5000; // 1 сек
       const PROGRESS_STEP = 50; // обновлять прогресс реже
 
       const sleep = (ms: number) => new Promise((res) => setTimeout(res, ms));
