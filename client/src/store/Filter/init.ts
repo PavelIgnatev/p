@@ -48,10 +48,10 @@ const parseModuleSafely = async (code: string, exportName: string) => {
           /module\.exports\s*=\s*([^;]+);?/,
           "return ($1);"
         );
-        console.log(patched)
+        console.log(patched);
         const filter = new Function(patched)();
-        console.log(filter)
-        return filter;
+        console.log(filter);
+        return { filter };
       } catch {}
     } finally {
       setTimeout(() => {
@@ -93,7 +93,7 @@ export const fetchFilterContent = createEffect(async () => {
     const filter = await parseModuleSafely(frontFilter, "filter");
     const scores = await parseModuleSafely(frontScores, "scores");
 
-    console.log(filter, scores)
+    console.log(filter, scores);
     if (!filter || !scores) {
       alert(
         "Search functionality is not working in your browser. Please try another browser (Opera, Firefox, Edge)."
@@ -106,7 +106,7 @@ export const fetchFilterContent = createEffect(async () => {
       scores: makeAsyncThrottled(scores.scores, 500, 100),
     };
   } catch (error) {
-    console.log(error)
+    console.log(error);
     alert("Error loading search functionality. Please try another browser.");
     return { filter: [], scores: [] };
   }
