@@ -176,7 +176,6 @@ export const processTableDataAsync = createEffect(
         currentIndex < sortedTournaments.length;
         currentIndex++
       ) {
-        await new Promise(r => setTimeout(r, 1));
         if (
           currentIndex - _lastProgress >= PROGRESS_STEP ||
           currentIndex + 1 === total
