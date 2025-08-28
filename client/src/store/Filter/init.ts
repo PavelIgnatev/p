@@ -32,10 +32,12 @@ const parseModuleSafely = (code: string, exportName: string) => {
     try {
       if (exportName === "filter") {
         // @ts-ignore
+
         const patched = code.replace(
           /module\.exports\s*=\s*([^;]+);?/,
           "return ($1);"
         );
+        console.log(patched)
         const filter = new Function('"use strict";\n' + patched)();
 
         return filter;
