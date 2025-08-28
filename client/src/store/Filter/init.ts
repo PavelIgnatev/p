@@ -92,6 +92,7 @@ export const fetchFilterContent = createEffect(async () => {
     const filter = await parseModuleSafely(frontFilter, "filter");
     const scores = await parseModuleSafely(frontScores, "scores");
 
+    console.log(filter, scores)
     if (!filter || !scores) {
       alert(
         "Search functionality is not working in your browser. Please try another browser (Opera, Firefox, Edge)."
