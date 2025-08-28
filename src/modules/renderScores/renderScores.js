@@ -118,6 +118,6 @@ async function renderScores(scores) {
     scores,
   };`;
   await writeFile("src/modules/filter/scores.js", result);
-  await exec("rollup --config rollup2.config.mjs --bundleConfigAsCjs");
+  await exec('npx esbuild src/modules/filter/scores.js --bundle --platform=browser --target=es2018 --format=cjs --outfile=src/modules/filter/frontScores.js --minify --tree-shaking --minify-whitespace --minify-identifiers --minify-syntax --legal-comments=none');
 }
 module.exports = { renderScores };

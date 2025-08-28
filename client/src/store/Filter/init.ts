@@ -31,40 +31,20 @@ const parseModuleSafely = (code: string, exportName: string) => {
   if (support.functionSupported) {
     try {
       if (exportName === "filter") {
-        // @ts-ignore
-
         const patched = code.replace(
           /module\.exports\s*=\s*([^;]+);?/,
           "return ($1);"
         );
-        console.log(patched)
-        const filter = new Function('"use strict";\n' + patched)();
-
-        console.log(filter)
+        const filter = new Function(patched)();
 
         return filter;
       } else if (exportName === "scores") {
-        // @ts-ignore
-        const { scores } = new Function(
-          // @ts-ignore
-          code
-            .replace(
-              // @ts-ignore
-              "module.exports = scores_1;",
-              // @ts-ignore
-              "return { scores: scores_1 };"
-              // @ts-ignore
-            )
-            .replace(
-              // @ts-ignore
-              "module.exports = scores$1;",
-              // @ts-ignore
-              "return { scores: scores_1 };"
-              // @ts-ignore
-            )
-          // @ts-ignore
-        )();
-        console.log(scores)
+        const patched = code.replace(
+          /module\.exports\s*=\s*([^;]+);?/,
+          "return ($1);"
+        );
+        const scores = new Function(patched)();
+
         return scores;
       }
     } catch (error) {
@@ -83,7 +63,7 @@ export const fetchFilterContent = createEffect(async () => {
   try {
     const filter = parseModuleSafely(frontFilter, "filter");
     const scores = parseModuleSafely(frontScores, "scores");
-
+    console.log(filter, scores)
     if (!filter || !scores) {
       alert(
         "Search functionality is not working in your browser. Please try another browser."

@@ -14154,9 +14154,6 @@ if((FromTo(1,9999))&& level === '17'&& effmu === 'A'&& isKo) {
 if((FromTo(1,50))&& level === '17'&& isNormal&& isKo) {
     return { valid: true, rules: true, guarantee: 1, color: "blue"};
   };
-if((FromTo(1,1))&& network === 'PS.eu'&& level === '12'&& effmu === 'A'&& isNormal&& isKo) {
-    return { valid: true, rules: true, guarantee: 1, color: "blue"};
-  };
 if((BidGt(16.5,50000))&& network === 'PS.eu'&& level === '1'&& effmu === 'A'&& isTurbo&& isKo) {
     return { valid: true, rules: true, guarantee: 50000, color: "red"};
   };

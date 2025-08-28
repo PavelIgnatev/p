@@ -20,7 +20,7 @@ function renderCheck(scores, scoreString) {
               .join("")} ${score}`
           : score
       },
-      color: "${color}"}
+      color: "${color}"
     };
   };\n`;
 }
