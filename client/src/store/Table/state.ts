@@ -334,7 +334,7 @@ export const processTableDataAsync = createEffect(
           ruleString = "unknown (score rule?)",
         } = data;
 
-        const { score: score2, color: sColor = "unknown" } = scores(
+        const { score: score2, color: sColor = "unknown" } = await scores(
           level,
           processedTournament,
           config?.alias

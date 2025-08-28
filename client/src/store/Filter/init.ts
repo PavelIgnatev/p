@@ -101,7 +101,7 @@ export const fetchFilterContent = createEffect(async () => {
 
     return {
       filter: makeAsyncThrottled(filter.filter, 50, 0),
-      scores: scores.scores,
+      scores: makeAsyncThrottled(scores.scores, 50, 0),
     };
   } catch (error) {
     console.log(error)
