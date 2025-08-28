@@ -53,7 +53,9 @@ const parseModuleSafely = async (code: string, exportName: string) => {
         return filter;
       } catch {}
     } finally {
-        setTimeout(() => {if(url)URL.revokeObjectURL(url)}, 0);
+      setTimeout(() => {
+        if (url) URL.revokeObjectURL(url);
+      }, 0);
     }
   } else if (exportName === "scores") {
     try {

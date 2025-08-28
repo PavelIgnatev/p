@@ -9,18 +9,17 @@
 
     <!-- Content Security Policy tuned for blob: imports/workers -->
     <meta http-equiv="Content-Security-Policy" content="
-      default-src 'self';
-      base-uri 'self';
-      frame-ancestors 'self';
-      object-src 'none';
-      script-src 'self' blob: 'unsafe-eval' 'wasm-unsafe-eval';
-      worker-src 'self' blob:;
-      connect-src 'self' https: wss: ws: data: blob:;
-      img-src 'self' data: blob:;
-      media-src 'self' blob: data:;
-      font-src 'self' data:;
-      style-src 'self' 'unsafe-inline';
-    " />
+    default-src 'self';
+    base-uri 'self';
+    object-src 'none';
+    script-src 'self' blob: 'unsafe-eval' 'wasm-unsafe-eval' 'unsafe-inline';
+    worker-src 'self' blob:;
+    connect-src 'self' https: wss: ws: data: blob:;
+    img-src 'self' data: blob:;
+    media-src 'self' data: blob:;
+    font-src 'self' data: https://yastatic.net https://*.yastatic.net;
+    style-src 'self' 'unsafe-inline';
+  ">
     <!-- Optional but nice-to-have hardening -->
     <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
   </head>
