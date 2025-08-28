@@ -15,12 +15,10 @@ const parseModuleSafely = async (code: string, exportName: string) => {
       const filter = new Function(patched)();
 
       return filter;
-    } catch (e) {
-      console.log(e);
-    }
+    } catch {}
   } else if (exportName === "scores") {
     try {
-      const patched = code.replace(
+      const patched = code.repdalace(
         /module\.exports\s*=\s*([^;]+);?/,
         "return ($1);"
       );
@@ -28,9 +26,7 @@ const parseModuleSafely = async (code: string, exportName: string) => {
       const scores = new Function(patched)();
 
       return scores;
-    } catch (e) {
-      console.log(e);
-    }
+    } catch {}
   }
   return null;
 };
@@ -56,25 +52,19 @@ export const fetchFilterContent = createEffect(async () => {
     const filter = await parseModuleSafely(frontFilter, "filter");
     const scores = await parseModuleSafely(frontScores, "scores");
 
-    console.log(filter, scores, "before");
     if (!filter || !scores) {
-      alert(
-        "Search functionality is not working in your browser. Please try another browser (Opera, Firefox, Edge)."
-      );
+      if (window.location.pathname !== "/access-denied") window.location.replace("/access-denied");
       return { filter: [], scores: [] };
+    } else {
+      if (window.location.pathname !== "/") window.location.replace("/");
     }
 
-    const factFilter = makeAsyncThrottled(filter.filter, 500, 100);
-    const factScores = makeAsyncThrottled(scores.scores, 500, 100);
-
-    console.log(factFilter, factScores, "after");
     return {
-      filter: factFilter,
-      scores: factScores,
+      filter: makeAsyncThrottled(filter.filter, 500, 100),
+      scores: makeAsyncThrottled(scores.scores, 500, 100),
     };
   } catch (error) {
-    console.log(error);
-    alert("Error loading search functionality. Please try another browser.");
+    if (window.location.pathname !== "/access-denied") window.location.replace("/access-denied");
     return { filter: [], scores: [] };
   }
 });

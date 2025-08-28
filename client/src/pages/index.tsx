@@ -4,6 +4,7 @@ import { ToastContainer } from "react-toastify";
 import { AdminPage } from "./AdminPage";
 import { InfoPage } from "./InfoPage";
 import { MainPage } from "./MainPage";
+import { AccessDeniedPage } from "./AccessDeniedPage";
 
 export const Pages: FC = () => {
   return (
@@ -12,6 +13,7 @@ export const Pages: FC = () => {
         <Switch>
           <Route path="/admin" component={() => <AdminPage />} />
           <Route path="/info" component={() => <InfoPage />} />
+          <Route path="/access-denied" component={() => <AccessDeniedPage />} />
           <Route path="/*" component={() => <MainPage />} />
         </Switch>
         <ToastContainer hideProgressBar={true} />
