@@ -40,6 +40,8 @@ const parseModuleSafely = (code: string, exportName: string) => {
         console.log(patched)
         const filter = new Function('"use strict";\n' + patched)();
 
+        console.log(filter)
+
         return filter;
       } else if (exportName === "scores") {
         // @ts-ignore
@@ -62,6 +64,7 @@ const parseModuleSafely = (code: string, exportName: string) => {
             )
           // @ts-ignore
         )();
+        console.log(scores)
         return scores;
       }
     } catch (error) {
