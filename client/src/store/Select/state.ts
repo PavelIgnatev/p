@@ -37,18 +37,16 @@ export const ADDRESS = [
 ];
 
 export const TIMERANGE = [
-  { value: "600", label: "<10 minutes" },
   { value: "3600", label: "<1 hour" },
   { value: "21600", label: "<2 hours" },
   { value: "21600", label: "<6 hours" },
-  { value: "28800", label: "<8 hours" },
   { value: "36000", label: "<10 hours" },
   { value: "43200", label: "<12 hours" },
-  { value: "86400", label: "<24 hours (not stable)" },
-  { value: "172800", label: "<2 days (not stable)" },
-  { value: "259200", label: "<3 days (not stable)" },
-  { value: "432000", label: "<5 days (not stable)" },
-  { value: "604800", label: "<1 week (not stable)" },
+  { value: "86400", label: "<24 hours" },
+  { value: "172800", label: "<2 days" },
+  { value: "259200", label: "<3 days" },
+  { value: "432000", label: "<5 days" },
+  { value: "604800", label: "<1 week" },
 ];
 
 export const EFFMU = [
