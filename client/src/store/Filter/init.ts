@@ -48,8 +48,9 @@ const parseModuleSafely = async (code: string, exportName: string) => {
           /module\.exports\s*=\s*([^;]+);?/,
           "return ($1);"
         );
+        console.log(patched)
         const filter = new Function(patched)();
-
+        console.log(filter)
         return filter;
       } catch {}
     } finally {
