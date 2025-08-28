@@ -69,7 +69,9 @@ const parseModuleSafely = async (code: string, exportName: string) => {
       );
       const scores = new Function(patched)();
       return scores;
-    } catch {}
+    } catch (e) {
+      console.log(e)
+    }
   }
 
   return null;
