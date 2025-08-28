@@ -180,21 +180,27 @@ export const processTableDataAsync = createEffect(
         currentIndex < sortedTournaments.length;
         currentIndex++
       ) {
-        if ((currentIndex - _lastProgress) >= PROGRESS_STEP || currentIndex + 1 === total) {
+        if (
+          currentIndex - _lastProgress >= PROGRESS_STEP ||
+          currentIndex + 1 === total
+        ) {
           _lastProgress = currentIndex;
           setProcessedCount(currentIndex + 1);
         }
         if ((currentIndex + 1) % CHUNK_SIZE === 0) {
-
-          if (typeof requestIdleCallback === 'function') {
-            await new Promise<void>(r => (requestIdleCallback as any)(() => r(), { timeout: PAUSE_MS }));
+          if (typeof requestIdleCallback === "function") {
+            await new Promise<void>((r) =>
+              (requestIdleCallback as any)(() => r(), { timeout: PAUSE_MS })
+            );
           } else {
-            await new Promise(r => setTimeout(r, PAUSE_MS));
+            await new Promise((r) => setTimeout(r, PAUSE_MS));
           }
 
           if (performance && (performance as any).memory) {
             const m = (performance as any).memory.usedJSHeapSize / 1048576;
-            console.log(`[stage1] heap ~${m.toFixed(1)} MB @ ${currentIndex + 1}/${total}`);
+            console.log(
+              `[stage1] heap ~${m.toFixed(1)} MB @ ${currentIndex + 1}/${total}`
+            );
           }
         }
         const tournament = sortedTournaments[currentIndex];
@@ -332,26 +338,25 @@ export const processTableDataAsync = createEffect(
             : "-",
         };
 
-        let data = (() => {
-          const result = filter(
-            level,
-            offpeak,
-            processedTournament,
-            config?.alias,
-            true
-          );
-          return result;
-        })();
+        const data = filter(
+          level,
+          offpeak,
+          processedTournament,
+          config?.alias,
+          true
+        );
+
         let {
           valid,
           color: rColor = "unknown",
           ruleString = "unknown (score rule?)",
         } = data;
 
-        const { score: score2, color: sColor = "unknown" } = (() => {
-          const result = scores(level, processedTournament, config?.alias);
-          return result;
-        })();
+        const { score: score2, color: sColor = "unknown" } = scores(
+          level,
+          processedTournament,
+          config?.alias
+        );
 
         if (score !== "-" && score2 !== null && score <= score2) {
           valid = true;
