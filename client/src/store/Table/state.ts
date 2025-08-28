@@ -188,6 +188,7 @@ export const processTableDataAsync = createEffect(
           setProcessedCount(currentIndex + 1);
         }
         if ((currentIndex + 1) % CHUNK_SIZE === 0) {
+          await sleep(PAUSE_MS);
           if (typeof requestIdleCallback === "function") {
             await new Promise<void>((r) =>
               (requestIdleCallback as any)(() => r(), { timeout: PAUSE_MS })
