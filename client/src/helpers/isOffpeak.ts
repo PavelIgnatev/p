@@ -2,11 +2,6 @@ import { getESTHours } from "./getESTHours";
 import { tableCellModel } from "./../@types/tableCellModel";
 import { $store } from "../store/Store";
 
-const moment = require("moment");
-const MomentRange = require("moment-range");
-
-MomentRange.extendMoment(moment);
-
 export const isOffpeak = (tournament: tableCellModel, duration = 0) => {
   const { offpeak } = $store.getState();
 
@@ -49,7 +44,14 @@ export const isOffpeak = (tournament: tableCellModel, duration = 0) => {
     toMinutes
   );
 
-  const range = moment.range(start, end);
+  const range = {
+    start: start,
+    end: end,
+    contains: function(date: Date) {
+      const d = new Date(date);
+      return d >= this.start && d <= this.end;
+    }
+  };
 
   if (range.contains(current) || range.contains(currentWithout1)) {
     return true;

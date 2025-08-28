@@ -8,17 +8,63 @@ const parseModuleSafely = async (code: string, exportName: string) => {
   if (exportName === "filter") {
     let url: string | null = null;
     try {
-      throw new Error("test");
       const esm = `const module = { exports: {} };
           const exports = module.exports;
           const process = { env: { NODE_ENV: 'production' } };
           const global = globalThis;
           ${code}
           const __exp = module.exports;
-          const __fn  = (typeof __exp === 'function') ? __exp : (__exp && __exp.default);
-          export default __exp;
-          export const filter = (typeof __exp === 'function') ? __exp : (__exp && __exp.filter) || __fn;
-          export const scores = (typeof __exp === 'function') ? __exp : (__exp && __exp.scores) || __fn;`;
+          const __fn  = (typeof __exp === 'function') ? __exp : (__exp && __exp.filter) || __fn;
+          export default __exp;`;
+      url = URL.createObjectURL(
+        new Blob([esm], {
+          type: "application/javascript;charset=utf-8",
+        })
+      );
+
+      if (!url) {
+        throw new Error("url not defined");
+      }
+
+      const mod = await (0, eval)(`import(${JSON.stringify(url)})`);
+      const fn = mod.default;
+
+      if (!fn) {
+        throw new Error("fn not defined");
+      }
+
+      return { filter: fn };
+    } catch (e) {
+      console.log("Fallback Filter try:", e);
+
+      try {
+        const patched = code.replace(
+          /module\.exports\s*=\s*([^;]+);?/,
+          "return ($1);"
+        );
+
+        const filter = new Function(patched)();
+
+        return filter;
+      } catch (e) {
+        console.log(e);
+      }
+    } finally {
+      setTimeout(() => {
+        if (url) URL.revokeObjectURL(url);
+      }, 0);
+    }
+  } else if (exportName === "scores") {
+    let url: string | null = null;
+    try {
+      const esm = `const module = { exports: {} };
+          const exports = module.exports;
+          const process = { env: { NODE_ENV: 'production' } };
+          const global = globalThis;
+          ${code}
+          const __exp = module.exports;
+          const __fn  = (typeof __exp === 'function') ? __exp : (__exp && __exp.scores) || __fn;
+          export default __exp;`;
 
       url = URL.createObjectURL(
         new Blob([esm], {
@@ -31,47 +77,32 @@ const parseModuleSafely = async (code: string, exportName: string) => {
       }
 
       const mod = await (0, eval)(`import(${JSON.stringify(url)})`);
-      const fn =
-        typeof mod[exportName] === "function" ? mod[exportName] : false;
+      const fn = mod.default;
 
       if (!fn) {
         throw new Error("fn not defined");
       }
 
-      return { filter: fn };
+      return { scores: fn };
     } catch (e) {
-      alert(
-        "The browser does not support important features required for the software to function. Without them, the software still works, but less reliably. For example, in Windows, Google Chrome may freeze, while Opera, Firefox and Edge work normally. It is recommended to change your browser."
-      );
+      console.log("Fallback Scores try:", e);
 
       try {
         const patched = code.replace(
           /module\.exports\s*=\s*([^;]+);?/,
           "return ($1);"
         );
-        const filter = new Function('"use strict";\n' + patched)();
 
-        console.log(filter)
+        const scores = new Function(patched)();
 
-        return filter;
+        return scores;
       } catch (e) {
-        console.log(e)
+        console.log(e);
       }
     } finally {
       setTimeout(() => {
         if (url) URL.revokeObjectURL(url);
       }, 0);
-    }
-  } else if (exportName === "scores") {
-    try {
-      const patched = code.replace(
-        /module\.exports\s*=\s*([^;]+);?/,
-        "return ($1);"
-      );
-      const scores = new Function(patched)();
-      return scores;
-    } catch (e) {
-      console.log(e)
     }
   }
 
@@ -99,7 +130,7 @@ export const fetchFilterContent = createEffect(async () => {
     const filter = await parseModuleSafely(frontFilter, "filter");
     const scores = await parseModuleSafely(frontScores, "scores");
 
-    console.log(filter, scores);
+    console.log(filter, scores, "allahallah");
     if (!filter || !scores) {
       alert(
         "Search functionality is not working in your browser. Please try another browser (Opera, Firefox, Edge)."

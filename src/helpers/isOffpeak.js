@@ -1,7 +1,3 @@
-const moment = require("moment");
-const MomentRange = require("moment-range");
-MomentRange.extendMoment(moment);
-
 const { getESTHours } = require("../helpers/getESTHours");
 
 const isOffpeak = (tournament, offpeak, duration = 0) => {
@@ -26,7 +22,14 @@ const isOffpeak = (tournament, offpeak, duration = 0) => {
   const currentWithout1 = new Date(2022, 4, 23, Number(hour) + 3, minutes);
   const end = new Date(2022, 4, 23 + (toMs <= fromMs ? 1 : 0), toHour + 3, toMinutes);
 
-  const range = moment.range(start, end);
+  const range = {
+    start: start,
+    end: end,
+    contains: function(date) {
+      const d = new Date(date);
+      return d >= this.start && d <= this.end;
+    }
+  };
 
   if (range.contains(current) || range.contains(currentWithout1)) {
     return true;

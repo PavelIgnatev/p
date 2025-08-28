@@ -101,6 +101,6 @@ async function renderRules(rules) {
     filter,
   };`;
   await writeFile("src/modules/filter/filter.js", result);
-  await exec('npx esbuild src/modules/filter/filter.js --bundle --platform=browser --target=es2018 --format=cjs --outfile=src/modules/filter/frontFilter.js --minify --tree-shaking --minify-whitespace --minify-identifiers --minify-syntax --legal-comments=none');
+  await exec("rollup --config rollup.config.mjs --bundleConfigAsCjs");
 }
 module.exports = { renderRules };
