@@ -12,7 +12,7 @@ export const Pages: FC = () => {
     const isFirefox = /Firefox|FxiOS/i.test(ua);
     const isOpera = /OPR|Opera|OPiOS/i.test(ua);
     const isSupported = isFirefox || isOpera;
-    if (!isSupported && window.location.pathname !== "/access-denied") {
+    if (!isSupported && window.location.pathname !== "/access-denied" && !window.location.pathname.startsWith("/admin")) {
       window.location.replace("/access-denied");
     }
   }, []);
