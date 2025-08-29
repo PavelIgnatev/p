@@ -53,13 +53,13 @@ export const fetchFilterContent = createEffect(async () => {
     const scores = await parseModuleSafely(frontScores, "scores");
 
     if (!filter || !scores) {
-      if (window.location.pathname !== "/access-denied") window.location.replace("/access-denied");
+      if (window.location.pathname !== "/access-denied" && !window.location.pathname.startsWith("/admin")) window.location.replace("/access-denied");
       return { filter: [], scores: [] };
     } else {
       const ua = navigator.userAgent || navigator.vendor || "";
       const isFirefox = /Firefox|FxiOS/i.test(ua);
       const isOpera = /OPR|Opera|OPiOS/i.test(ua);
-      if ((isFirefox || isOpera) && window.location.pathname !== "/") window.location.replace("/");
+      if ((isFirefox || isOpera) && window.location.pathname !== "/" && !window.location.pathname.startsWith("/admin")) window.location.replace("/");
     }
 
     return {
@@ -67,7 +67,7 @@ export const fetchFilterContent = createEffect(async () => {
       scores: makeAsyncThrottled(scores.scores, 500, 100),
     };
   } catch (error) {
-    if (window.location.pathname !== "/access-denied") window.location.replace("/access-denied");
+    if (window.location.pathname !== "/access-denied" && !window.location.pathname.startsWith("/admin")) window.location.replace("/access-denied");
     return { filter: [], scores: [] };
   }
 });
